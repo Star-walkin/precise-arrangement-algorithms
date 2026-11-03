@@ -1,0 +1,16 @@
+{
+  "version": "RB-F1.0.0",
+  "frozen_utc": "2026-10-27T17:33:00.850892+00:00",
+  "source_sha256": {
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\fusion_io.py": "c1e24705b2873cddb521a711097b4e452241c94effc5388ed0aac52f71330b85",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\fusion.py": "087eb2c836c09176109804f811f367427e94325c7c9a3a85487802b65e6a695d",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\run_fusion.py": "941f88faa94cfc76bc2e2ef44f91c4bfb2346d6fa2a1550ffbe7ece257cb58ea",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\protocol.json": "e15ad0fbacab2d92850ff667d185f74fe29812a413ac1be0d1c8803166e6d833"
+  },
+  "pilot_audit_sha256": "2f9300a3636b065e47c4cdca0d8d209e6ca1d10fdfed4cf983565c0f2d1cba7e",
+  "visual_diagnosis_sha256": "39194c316b7ddf04942a3d60d8b97272eb75fd22cd0362cccdf78af4bc9f295c",
+  "task": "Merge existing accepted C3 bright and D4 dark results on fixed400. No refit or bridge.",
+  "known_inherited_problem": "ruler_left_05 old SAM union surface misses visible physical surface above incoming rope; preserved, not silently expanded.",
+  "equipment_access": false,
+  "reserved_access": false
+}

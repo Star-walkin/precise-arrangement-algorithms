@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-25",
+  "scope": "Offline whole-ROI boundary candidates, shared curve-family association and historical free-rope profile refinement",
+  "input_count": 400,
+  "roles": {"left": 200, "right": 200},
+  "input_manifest_sha256": "712859a4a830c08d556729a98cad76d039c684c290d2c4c57efa2b7ad3b45e69",
+  "fixed_qa_plan_sha256": "8b3b73673ebddda9a3bf1ee6fd45ac2fd3bda958cba472be78c27dcea351d913",
+  "reference_roi": "v1/all_001/roi/masks, copied byte-for-byte",
+  "comparison": "v2/all_002 on identical images, reference ROI and original orientation",
+  "development_plan": "Module smoke runs use only named entries of the fixed 38-image QA plan; preserve each run. Integration runs use all fixed 38 images, at most three algorithm revisions before selecting a frozen full run.",
+  "budget": "CPU only, existing environment/models, no training or dependency changes. One frozen 400-image run after fixed QA; corrections require a new run directory and explanation.",
+  "continue_gate": "All 38 complete with no pixel contract errors; visual review across both cameras, glare, stopping and ruler groups must show added coherent visible valleys and no new obvious long free-rope false tracks. No claimed precision/recall without independent labels. Disagreement and rejected regions remain recorded.",
+  "observation": "Whole reference ROI scanning, no v1/v2 observation coordinates or lattice IDs supplied to detector; image pitch may be reused as a scale prior, not row identity",
+  "inference": "Separate purple geometric proposals only, with observed endpoints and shared family support. Limited overlap with supported active-rope mask permitted only as explicitly tagged inferred-under-occlusion; unknown mask and reference-ROI exterior remain empty.",
+  "pixel_contract": "All masks uint8 0/255. Observed subset of reference ROI minus supported/unknown exclusion. Inferred subset of reference ROI minus unknown and observed. RGB retained exactly inside effective ROI, black outside. Original reference ROI and source images unchanged.",
+  "metrics": "Observation sample counts and agreement distances to v2 are descriptive coverage, not truth. Report both camera/source groups, refusals, historical detector attempts/success/fallback and geometric proposals. Fragment IDs are not rope material identities.",
+  "reserved_inputs": "No 2026-09-25 or other reserved images/videos/labels decoded or used",
+  "devices": "No camera, light, PLC, relay, line arm or servo access; no deployment"
+}

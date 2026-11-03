@@ -1,0 +1,183 @@
+{
+  "version": "RB-F3.0.0",
+  "name": "全卷面协同 F3",
+  "date": "2026-10-28",
+  "run": "all_001",
+  "summary": {
+    "version": "RB-F3.0.0",
+    "planned": 400,
+    "completed": 400,
+    "failed": 0,
+    "source_unchanged": true,
+    "exit_code": 0,
+    "by_camera": {
+      "left": 200,
+      "right": 200
+    },
+    "new_full_surface_points": 4272920,
+    "full_surface_curves": 50894,
+    "new_accepted_points": 156191,
+    "added_pixels": 691092,
+    "images_with_additions": 399,
+    "accuracy": null,
+    "equipment_access": false,
+    "reserved_access": false,
+    "html": false,
+    "finished_utc": "2026-10-28T07:57:32.277310+00:00"
+  },
+  "output_image_counts": {
+    "01_D4全卷面候选": {
+      "left_camera": 200,
+      "right_camera": 200
+    },
+    "02_F3融合边界": {
+      "left_camera": 200,
+      "right_camera": 200
+    }
+  },
+  "accepted_fragment_count": 8331,
+  "accepted_fragment_modes": {
+    "anchored_visual_row": 8280,
+    "independent_supported_fragment": 51
+  },
+  "endpoint_raster_shape_review": {
+    "accepted_groups": 8331,
+    "accepted_points": 156191,
+    "new_pixels": 691092,
+    "old_pixels_removed": 0,
+    "outside_T_changes": 0,
+    "same_x_vertical_steps_gt1px": 0,
+    "non_monotonic_groups": 0,
+    "missing_new_path_pixels": 0,
+    "endpoint_count": 12663,
+    "unanchored_fragment_ends": 3999,
+    "connection_failures": 0,
+    "endpoint_turns_gt25": 0,
+    "maximum_endpoint_angle_3px": 11.845279149878541
+  },
+  "rejection_reason_counts": {
+    "independent_fragment_weak_support+independent_fragment_spacing_not_supported": 31,
+    "insufficient_broad_groove_fraction+long_unsupported_path+independent_fragment_weak_support+independent_fragment_spacing_not_supported": 8,
+    "long_unsupported_path": 62,
+    "duplicate_or_too_short_missing_fragment": 270,
+    "independent_fragment_spacing_not_supported": 426,
+    "insufficient_broad_groove_fraction+long_unsupported_path": 28,
+    "long_unsupported_path+independent_fragment_weak_support+independent_fragment_spacing_not_supported": 16,
+    "insufficient_broad_groove_fraction": 8,
+    "independent_fragment_too_short+independent_fragment_spacing_not_supported": 4,
+    "insufficient_broad_groove_fraction+independent_fragment_weak_support+independent_fragment_spacing_not_supported": 3,
+    "insufficient_broad_groove_fraction+independent_fragment_too_short+independent_fragment_weak_support+independent_fragment_spacing_not_supported": 1,
+    "new_fragment_order_or_spacing_conflict": 5,
+    "long_unsupported_path+independent_fragment_spacing_not_supported": 1,
+    "independent_fragment_too_short": 1,
+    "insufficient_new_observations_on_fragment": 1
+  },
+  "images_without_additions": [
+    "images/right_camera/R_run_20260923_01__f001348__right.png"
+  ],
+  "zero_addition_diagnostics": [
+    {
+      "image": "images/right_camera/R_run_20260923_01__f001348__right.png",
+      "full_surface_points": 6584,
+      "full_surface_curves": 90,
+      "fusion": {
+        "parameters": {
+          "reference_residual_pitch": 0.27,
+          "reference_minimum_overlap_pitch": 1.0,
+          "reference_tangent_error": 0.4,
+          "minimum_fragment_span_pitch": 0.85,
+          "minimum_fragment_points": 4,
+          "minimum_observation_span_fraction": 0.45,
+          "minimum_broad_fraction": 0.7,
+          "broad_threshold": 0.1,
+          "maximum_unsupported_run_pitch": 0.6,
+          "body_hard_threshold": 0.65,
+          "existing_duplicate_radius_pitch": 0.4,
+          "independent_neighbor_minimum_pitch": 0.55,
+          "independent_neighbor_maximum_pitch": 1.65,
+          "independent_minimum_span_pitch": 1.5,
+          "independent_minimum_points": 7,
+          "independent_broad_fraction": 0.88,
+          "maximum_endpoint_extension_pitch": 0.7,
+          "maximum_endpoint_snap_pitch": 0.55,
+          "new_fragment_separation_pitch": 0.55
+        },
+        "old_pixels_removed": 0,
+        "source": "actual_full_surface_D4_detection",
+        "physical_material_identity": false,
+        "input_curves": 90,
+        "accepted_groups": 0,
+        "rejected_fragments": 2,
+        "new_pixels": 0,
+        "accepted_new_points": 0,
+        "accepted_modes": {},
+        "rejection_counts": {
+          "independent_fragment_spacing_not_supported": 2
+        },
+        "existing_geometry_unchanged": true,
+        "transition_outside_unchanged": true,
+        "note": "Image-supported fragment acceptance does not establish same physical rope identity or accuracy."
+      }
+    }
+  ],
+  "independent_structural_audit": {
+    "passed": 400,
+    "failed": 0,
+    "global_errors": []
+  },
+  "pilot_full_exact_image_mask_comparisons": 132,
+  "evidence_sha256": {
+    "protocol.json": "f21651fab39a6dbd0f31cb16c370de70f43d3efb61e141954b8192b69f66ccd8",
+    "freeze_all.json": "2339694b20b07141e3348889d4485eb392d8e279a00d33da9e28ee034e8e956e",
+    "diagnosis_before.json": "74ff6f827be2c0f880e3954aac594cbdde6cf33ccf43fe8f84f04ab4109e301b",
+    "diagnosis_before_statistics.json": "e52e9444bbdc4fb7d980b2243b3f683eb19a51bf4a7323aa2843097c5f65237e",
+    "pilot_001/audit_corrected.json": "63d9b536d1c01a063d30ebf6c4d7523149de3b11cdbc267e292177534b6ccad9",
+    "pilot_001/记录/qa_independent_gap_review.json": "e06182df730c8dc613f2df4b84dd7ac2daeb2c94a57c1dcedf38f812be667c2b",
+    "pilot_002/audit.json": "92d7c072d2f9606d98440628741f7aebd6e39507c5748cc55a430c74d98c5bae",
+    "pilot_002/记录/endpoint_shape_review_002.json": "5352c0664c0d6df97dc0841e1381842980682916be672426afc98a8f164e9428",
+    "pilot_002/记录/qa_surface_visual_review.json": "6dc90aaea0e881a16a71d5de204ec1c8c4d0a0dfcc95ce80b08813eb3269e12e",
+    "pilot_002/记录/qa_independent_gap_review.json": "ddd1b050fb25f5bc66822aa65d671c4606167ec62cc43b3a0b0cbe94fdc0e399",
+    "all_001/summary.json": "f17a1293ccbc38947526bc6762945e3e7c0d715ac5e6ccf38fcdd302902db9bc",
+    "all_001/audit.json": "4310ed95ecff67c5768a51f24eff0f83564866c7caf008f7b75480b462e2737e",
+    "all_001/audit_provenance.json": "275cfb0100f76ed92f278d3c94f7e5dba21b42158dfae6c5b4701e98066d8099",
+    "all_001/output_manifest.json": "0e3611465577b3d95faf25956c272d13f32ff6c099b067a92858d23e57e3adbe",
+    "all_001/pilot_full_equivalence.json": "7216e74dbecf41daa790c9c9c49b2250381266dae3627efec03c1bd51e06550d",
+    "all_001/记录/qa_additional_left.json": "f975fbbb539b9c02cc197efc1aa69ddaf774ac70d95fa07cb2f29a2cbc6961a6",
+    "all_001/记录/qa_additional_right.json": "b80fb251816716129c4ee4e92bf2b4957bc8f0e8e25b41172ae1f174c6b1f540",
+    "all_001/记录/endpoint_shape_review_all.json": "c390dec71da3f42e6064f78a637791191af28a0b1d3f38dd04b8e356cdaad8ec"
+  },
+  "diagnosis": "F2 discards new observations outside accepted old-two-endpoint bridges; fresh fitted D4 fragments are not independent outputs. Fixed12 has45796 new points but12534 not assigned to accepted bridges. This is not primarily a uniform brightness-threshold problem.",
+  "method": [
+    "Actual unchanged D4 detection/grouping/fit on full saved surface S with continuous normalization and old+new exclusions.",
+    "Compare new full D4 paths with old C3/F2 image-row evidence, preserving all old F2 boundaries.",
+    "Accept image-supported missing fragments inside frozen F2 T with one-side/reference support, or stricter independent-neighbor checks.",
+    "Use bounded smooth endpoint correction; reject unsafe attachment while retaining supported fragment. Actual source observations only."
+  ],
+  "history": [
+    {
+      "run": "pilot_001",
+      "status": "Prediction completed; short direct snapping produced small vertical end steps. Preserved.",
+      "audit_note": "Initial audit Counter(dict) programming error retained as audit.json; corrected keys-only audit_corrected.json passed without prediction change."
+    },
+    {
+      "run": "pilot_002",
+      "status": "Only endpoint correction changed; detector output107426 points/1290 curves unchanged.226 accepted fragments retained,11 ends detached instead of unsafe short snapping."
+    },
+    {
+      "run": "all_001",
+      "status": "Same400 after source freeze; no full400 tuning."
+    }
+  ],
+  "limitations": [
+    "No truth-labeled accuracy or physical material identity/contact validation.",
+    "Existing C3/D4/F2 offsets and some gaps remain. Full-surface candidates are not all final accepted boundaries.",
+    "Old SAM omissions, active-rope exclusion and low-information areas remain; no invented yellow points to fill them.",
+    "Full D4 sees entireS, but new final additions are intentionally limited to F2 transitionT; no blanket replacement of bright C3."
+  ],
+  "accuracy": null,
+  "baseline_replacement": false,
+  "equipment_access": false,
+  "reserved_access": false,
+  "html": false,
+  "finished_utc": "2026-10-28T08:18:12.522188+00:00"
+}

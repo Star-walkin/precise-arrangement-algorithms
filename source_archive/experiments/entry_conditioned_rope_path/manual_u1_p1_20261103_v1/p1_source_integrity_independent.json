@@ -1,0 +1,248 @@
+{
+  "scope": "byte-only P1 snapshot/current source validation; no media/labels decoded",
+  "manifest_sha256": "d1566b89e69510c4248616c28715b50d11172d4adbcfbd4e237cb40c0ac4464b",
+  "rows": [
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\priors.py",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "f406b8edcd6082a8d9946b9721c0653c18df3064c26b5373e5120d8ebd3a51fa"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\connect_paths.py",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "a29653bfe8d214e634732269fc3af040b98b86039e6973d7d5169a6880f47b99"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\free_candidates.py",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "75e8d840e26ae011a2efa567687d01cc571d7fa3519e0bba3ab0284f6c661c05"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\surface_tracks.py",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "879de46675662ff759cb0609c3d881668135ae55d9180f8a82fd305bd7b8d58d"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\connect_paths.py",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "befaa9f6af494bf9619346764070c927134a26f3de09492a37f7313e18d777e2"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\connect_paths.py",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "cf98f32ba270c03c2ae48db8661104667c7dd1050180f91fbed3cfb0e05b66ba"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\connect_paths.py",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "38eaae3cdbfb39ff84a42fbf87b6d7c17f2a3e92dd9b3c4455cfa6ba81690f1e"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\audit_h6.py",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "e947495ccca76ada7f865469a06ff965bd0f9f0ec69bf897918b8e882e63f533"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\check_suffix_regression.py",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "526097ccec11b42e6b66fec742c0edaa1d1064097d60993c7fbe1294f6e050ba"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\check_surface_tracks.py",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "42f4e3617eac049cfed279bec61331aebb3d28406e3741691c3ad710c2bac333"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\check_topology.py",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "615a2d621fa48872435cc5db05c55e8f5a7da41b279dc8ea6cf258d22d7af503"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\common.py",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "18edc8571dae3bdfe874bbf386903706be35a314a2b85ff715c549535af373f7"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\compare_h5_h6.py",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "a86b46638e346516fc23e52d495271cd8a5438822224232d8f7497adfb4ad5c7"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\connect_paths.py",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "517b35584e9b96e6e36344c9a5e09f9d8bcb8f5af4a110ac1ad4f42f4fcf0f2c"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\finalize_h6.py",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "2c68b24081901e65ee7cc3e5653d796c45a512b03999852eaf8bd9f0921b8ff6"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\freeze_h6.py",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "a841b1612573024086fbb16514bca1fc33d7102784556915097ff0d15a3ee549"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\heat_free.py",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "3956c9fe7e7e636c419dca71e0b9682452d92b3e6327be856cd318adc31f379e"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\register_h6.py",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "38c76a830825856c3c79b4b80e9d88299e7cdc1a46fa9fe5ba17adf965c337d5"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\run_h6.py",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "a95943823fabdada58b3e1124eb44523b66a1132d11b616caf8a078d2653d76a"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\source_continuity_statistics.py",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "3645d14a9e7490113d6e615805ccd7e9aa94d4a50d796f7ad2fb72173fa9da9a"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\surface_tracks.py",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "73b8a55c17770fadaf3f5b1b88bf6f9e94087b4dca555390a26a7d58981f6e1d"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\topology.py",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "d559038920902e903bd72797b14b2ec95ae2c7a26609cac4d44ee19af61b3dac"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\inputs.json",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "c227041a7aa4e0cc15e9a041a0d592d522687aaeaf03b78459e3a338248efa1e"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\freeze_final.json",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "7a5ed0ac9cd93dbc4a2b8bf9e1218ee2c4c3bad5c10365ed71a60dc254da1031"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\experiment_report.json",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "6782d44507b78b449f5aa4ae01d0dde73beea4715f30243992e672910f2fc315"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\environment.json",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "2919a5fb38f9769bc384f003a7616b790a49d6923144d668856ed2790582bd98"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\README.txt",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "b43bea525af786a3593e60f38663867f8f25502a1aa4ba8ad4d91feab77486f5"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\review_receipt.json",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "9532493ab8bac82e5b6c96a4f91212991a223255878a85d813e01d0a0ea07ac9"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\all_001\\summary.json",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "dff254c311926364e5857dcd71de91a0adf76988c2cad200b19bc82d77dbdb25"
+    },
+    {
+      "origin": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\all_001\\independent_geometry_audit.json",
+      "current_exists": true,
+      "snapshot_exists": true,
+      "current_match": true,
+      "snapshot_match": true,
+      "expected_sha256": "ad436abe3f51d5aa2fe1d69a2d03608be9358a8bbd4aef1afe9ea99e3c9de160"
+    }
+  ],
+  "all_current_match": true,
+  "all_snapshot_match": true
+}

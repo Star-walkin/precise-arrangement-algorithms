@@ -1,0 +1,46 @@
+[
+  {
+    "run": "pilot_001",
+    "command": [
+      "D:/precise_arrangement/vision_prototype/.venv/Scripts/python.exe",
+      "-B",
+      "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\run_p1_u1.py",
+      "--run",
+      "pilot_001",
+      "--subset",
+      "pilot",
+      "--workers",
+      "4"
+    ],
+    "actual_exit_code": 0,
+    "seconds": 7.42020280007273,
+    "summary_path": "C:\\precise_arrangement_results\\manual_u1_p1_20261103_v1\\pilot_001\\summary.json",
+    "summary_sha256": "8b03143c26e8c59b0ae59f1212d5f3be7698eba85a657ac03a66e37cb48c0c5f",
+    "planned": 4,
+    "completed": 4,
+    "entry_conditions": 5,
+    "source_unchanged": true
+  },
+  {
+    "run": "all_001",
+    "command": [
+      "D:/precise_arrangement/vision_prototype/.venv/Scripts/python.exe",
+      "-B",
+      "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\run_p1_u1.py",
+      "--run",
+      "all_001",
+      "--subset",
+      "all",
+      "--workers",
+      "4"
+    ],
+    "actual_exit_code": 0,
+    "seconds": 511.3828361000633,
+    "summary_path": "C:\\precise_arrangement_results\\manual_u1_p1_20261103_v1\\all_001\\summary.json",
+    "summary_sha256": "0996918f7305621931328320f7e7463267db17a4945c0b2d216f0d268c9d8d56",
+    "planned": 292,
+    "completed": 292,
+    "entry_conditions": 301,
+    "source_unchanged": true
+  }
+]

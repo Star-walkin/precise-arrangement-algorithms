@@ -1,0 +1,20 @@
+{
+  "version": "IR-A5.0.0",
+  "name": "差分轨道 A5",
+  "date": "2026-10-29",
+  "source_run": "pilot_003",
+  "sources_sha256": {
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_photometric_20261029_v5\\whole_io.py": "1bb1cd4ba9e602eddf13e438dc9a53bcbd0835d06b4c114882b0d66fa35569c6",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_photometric_20261029_v5\\free_rope.py": "c57f77270a1c0308570a77ff70dee67fe7caa25b2dbb55bafd2e80aae9cf60fd",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_photometric_20261029_v5\\photometric_ribbon.py": "7a2570f806e548c945271fb714a3bd7836f323c453185cb9b21876aa0557a59b",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_photometric_20261029_v5\\attached_groove.py": "484f25bc30d94caa396724f4c4469f14ef67a86285368b76ec545554a7cca24f",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_photometric_20261029_v5\\lane_candidates.py": "6196ed40e356843d29671d578be17f77f486206565e383cfe37ad52fd92d4fac",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_photometric_20261029_v5\\photometric_trace.py": "0308f2eb00080b68bdae63db78e087e8a122e22fa3f994692ef78a1d7358fb6b",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_photometric_20261029_v5\\run_experiment.py": "534e31b9a6d4f8d6e0dd42b6b480b90b597a5529358004fae3406f41b7177426",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_photometric_20261029_v5\\protocol.json": "26a868e7f2966030ea93819f860d4b675f1e2072ef37b77eab42f51317ae479c",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v2\\free_refinement.py": "65ca049228d0dec2d941a4e08bddf4f9bb52935570cf9827dc7d9adbc1272c8c"
+  },
+  "pilot_structure_audit_sha256": "940d634139b41a29f41ca66d1f34d44e75f2d0e7554f5a4244ce655afeb5c16e",
+  "scope": "Preset8 and same400 open-development export; no image accuracy or same-material acceptance. No further image tuning under this freeze.",
+  "source_manifest_sha256": "712859a4a830c08d556729a98cad76d039c684c290d2c4c57efa2b7ad3b45e69"
+}

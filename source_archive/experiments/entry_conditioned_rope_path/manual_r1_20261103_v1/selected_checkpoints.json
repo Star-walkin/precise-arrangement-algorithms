@@ -1,0 +1,11 @@
+{
+  "common_step": 800,
+  "paths": {
+    "U1": {
+      "path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\model\\checkpoints\\step_0800.pt",
+      "sha256": "a35494f57df6596f0369011a5a1b322c1d84288370a74da888528bdd2565216e"
+    }
+  },
+  "selection_rule": "last actual saved formal update; no evaluation or gallery-based model choice",
+  "actual_steps": 800
+}

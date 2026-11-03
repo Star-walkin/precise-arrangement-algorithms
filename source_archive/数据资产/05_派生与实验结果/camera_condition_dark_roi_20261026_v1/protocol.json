@@ -1,0 +1,36 @@
+{
+  "version": "DR-C3.1.0",
+  "date": "2026-10-26",
+  "input_count": 400,
+  "input_manifest_sha256": "712859a4a830c08d556729a98cad76d039c684c290d2c4c57efa2b7ad3b45e69",
+  "baseline_manifest_sha256": "1637e95b1a030478078252bb987064189d2b8220af1ebfca5fe8a3ef73232aac",
+  "camera_counts": {
+    "left": 200,
+    "right": 200
+  },
+  "pilot_images": [
+    "images/left_camera/L_run_20260923_01__f000648__left.png",
+    "images/left_camera/L_run_stop_run_20260922_01__f004601__left.png",
+    "images/left_camera/dual_20260923_101643__pair0315__left.png",
+    "images/left_camera/dual_20260924_111143__pair0585__left.png",
+    "images/left_camera/ruler_left_01.png",
+    "images/left_camera/ruler_left_05.png",
+    "images/right_camera/R_run_20260923_01__f000757__right.png",
+    "images/right_camera/R_run_stop_run_20260922_01__f002627__right.png",
+    "images/right_camera/dual_20260923_101643__pair0315__right.png",
+    "images/right_camera/dual_20260924_111143__pair0585__right.png",
+    "images/right_camera/ruler_right_01.png",
+    "images/right_camera/ruler_right_05.png"
+  ],
+  "task": "Dark surface ROI, contrast expansion, original C3 detector/grouping/conic fit on entire dark ROI",
+  "scope": "Same400 open development images. No incoming-rope prerequisite or corridor.",
+  "fixed_pilot_rule": "Each camera sorted existing QA19 indices0,3,6,10,14,18;12 total.",
+  "budget": "At most2 pilot revisions then freeze sources and process400.",
+  "roi_outside_value": 0,
+  "output_groups": 3,
+  "html": false,
+  "equipment_access": false,
+  "reserved_access": false,
+  "data_status": "unlabeled_open_development_no_new_test_split",
+  "acceptance": "Exact400 per group, original ROI pixels preserved, actual contrast spread, C3 points/curves restricted to dark ROI; not ground-truth accuracy."
+}

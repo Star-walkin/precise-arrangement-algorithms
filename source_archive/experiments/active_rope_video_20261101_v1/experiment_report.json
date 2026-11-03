@@ -1,0 +1,317 @@
+{
+  "version": "IR-V1.0.0",
+  "image_baseline": "活动绳整链基准 P1 / IR-P1.0.0",
+  "status": "completed_offline",
+  "videos": 16,
+  "source_images400": 400,
+  "video_derived_gallery_images": 390,
+  "standalone_stills": 10,
+  "independent_capture_source_groups": 11,
+  "total_source_seconds": 1061.242995619767,
+  "analysis_frames": 2061,
+  "new_B_forwards": 1528,
+  "output_video_frames": 5313,
+  "states": {
+    "UNKNOWN": 957,
+    "ACCEPTED": 744,
+    "STALE": 218,
+    "REACQUIRED": 142
+  },
+  "engine_states": {
+    "unknown_no_entry": 631,
+    "candidate": 1424,
+    "entry_without_path": 6
+  },
+  "current_image_guard_rejections": 43,
+  "temporal_rejections_with_current_image_candidate": 495,
+  "temporal_choice_differs_from_image_guard": 50,
+  "wall_seconds": 1969.2925699999323,
+  "analysis_throughput_all_workers_fps": 1.0465687178213803,
+  "online_realtime_verified": false,
+  "full_identity_accuracy_evaluated": false,
+  "model_training": false,
+  "baseline_B_changed": false,
+  "H7_used": false,
+  "reserved_sources_opened": false,
+  "devices_connected": false,
+  "source_trace_sha256": "bf1217d5ad12de5d6b5b04ba7edff992ad9e4446a0c94702ca8e031f953ca8f8",
+  "protocol_sha256": "b6a7e06622c0e71bf7be07c4599f0de5f68a81b5eb5f300653a1263ea01bda9d",
+  "source_video_library": "D:\\precise_arrangement\\数据资产\\01_原始采集\\现场视频\\训练采集",
+  "delivery_folder": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v1\\四子图视频",
+  "outputs": [
+    {
+      "video_id": "dual_20260923_101517__left",
+      "video": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v1\\四子图视频\\dual_20260923_101517__left__四子图.mp4",
+      "sha256": "2fb35a943c35e98d80a626f446702f2d31a113796b46e2cad72a55272554df2b",
+      "analysis_frames": 117,
+      "forward_count": 0,
+      "states": {
+        "UNKNOWN": 117
+      },
+      "source_duration_s": 60.0,
+      "output_duration_s": 60.0,
+      "wall_seconds": 281.79655249998905
+    },
+    {
+      "video_id": "dual_20260923_101643__left",
+      "video": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v1\\四子图视频\\dual_20260923_101643__left__四子图.mp4",
+      "sha256": "c3ecdb124c0e5bead04ab3f0c9aaabc5398706df5bb7b5515664b4bcf8849378",
+      "analysis_frames": 118,
+      "forward_count": 0,
+      "states": {
+        "UNKNOWN": 118
+      },
+      "source_duration_s": 60.1,
+      "output_duration_s": 60.2,
+      "wall_seconds": 287.5379372999305
+    },
+    {
+      "video_id": "dual_20260923_101643__right",
+      "video": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v1\\四子图视频\\dual_20260923_101643__right__四子图.mp4",
+      "sha256": "23c17bc43d98b9a3d6a9052d3f691bcf3604d310d3efa074ca8229a7ca663384",
+      "analysis_frames": 117,
+      "forward_count": 130,
+      "states": {
+        "ACCEPTED": 52,
+        "STALE": 24,
+        "UNKNOWN": 26,
+        "REACQUIRED": 15
+      },
+      "source_duration_s": 60.1,
+      "output_duration_s": 60.2,
+      "wall_seconds": 474.30593779997434
+    },
+    {
+      "video_id": "dual_20260923_101517__right",
+      "video": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v1\\四子图视频\\dual_20260923_101517__right__四子图.mp4",
+      "sha256": "194bb30a9911ce1e9aec845414655210c5afcbd5b9792f5fe72f68b7112761df",
+      "analysis_frames": 117,
+      "forward_count": 136,
+      "states": {
+        "ACCEPTED": 69,
+        "STALE": 14,
+        "UNKNOWN": 26,
+        "REACQUIRED": 8
+      },
+      "source_duration_s": 60.1,
+      "output_duration_s": 60.2,
+      "wall_seconds": 522.3726411999669
+    },
+    {
+      "video_id": "dual_20260923_113305__left",
+      "video": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v1\\四子图视频\\dual_20260923_113305__left__四子图.mp4",
+      "sha256": "643ce4552a5db85639f04e7da6ce7cb4e3d250e4f75eca13592710d799f0fd43",
+      "analysis_frames": 117,
+      "forward_count": 0,
+      "states": {
+        "UNKNOWN": 117
+      },
+      "source_duration_s": 60.1,
+      "output_duration_s": 60.2,
+      "wall_seconds": 304.0804140000837
+    },
+    {
+      "video_id": "dual_20260923_113305__right",
+      "video": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v1\\四子图视频\\dual_20260923_113305__right__四子图.mp4",
+      "sha256": "1896b1a4614f2a39035356914e07518c56f6183300d70808139ef055ed711a9e",
+      "analysis_frames": 117,
+      "forward_count": 118,
+      "states": {
+        "ACCEPTED": 30,
+        "STALE": 9,
+        "REACQUIRED": 7,
+        "UNKNOWN": 71
+      },
+      "source_duration_s": 60.0,
+      "output_duration_s": 60.0,
+      "wall_seconds": 396.6663920999272
+    },
+    {
+      "video_id": "dual_20260924_111143__left",
+      "video": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v1\\四子图视频\\dual_20260924_111143__left__四子图.mp4",
+      "sha256": "915e5e84b73ede199e6145aed78fe07de3267ea3b450cda728f1f2d98e2ac632",
+      "analysis_frames": 118,
+      "forward_count": 0,
+      "states": {
+        "UNKNOWN": 118
+      },
+      "source_duration_s": 60.1,
+      "output_duration_s": 60.2,
+      "wall_seconds": 294.80338599998504
+    },
+    {
+      "video_id": "dual_20260924_111500__right",
+      "video": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v1\\四子图视频\\dual_20260924_111500__right__四子图.mp4",
+      "sha256": "1258054783bf8a78d64f749a93b789b76a229526e5a2fd7e43158a9305972856",
+      "analysis_frames": 117,
+      "forward_count": 0,
+      "states": {
+        "UNKNOWN": 117
+      },
+      "source_duration_s": 60.1,
+      "output_duration_s": 60.2,
+      "wall_seconds": 301.677435599966
+    },
+    {
+      "video_id": "dual_20260924_111143__right",
+      "video": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v1\\四子图视频\\dual_20260924_111143__right__四子图.mp4",
+      "sha256": "2d86421378df6dec18a58097b3c2fcb4c088969da4a61cf95058c831629b3e36",
+      "analysis_frames": 117,
+      "forward_count": 111,
+      "states": {
+        "ACCEPTED": 38,
+        "STALE": 21,
+        "UNKNOWN": 42,
+        "REACQUIRED": 16
+      },
+      "source_duration_s": 60.1,
+      "output_duration_s": 60.2,
+      "wall_seconds": 469.1004372999305
+    },
+    {
+      "video_id": "L_run_20260923_01__left",
+      "video": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v1\\四子图视频\\L_run_20260923_01__left__四子图.mp4",
+      "sha256": "246daa2e32cf2b97e62ff4f1e7b8dc8a1cf372d4f9c73ab03ddfaeb34eb8dd0b",
+      "analysis_frames": 82,
+      "forward_count": 64,
+      "states": {
+        "ACCEPTED": 6,
+        "STALE": 10,
+        "UNKNOWN": 58,
+        "REACQUIRED": 8
+      },
+      "source_duration_s": 41.378001179763295,
+      "output_duration_s": 41.4,
+      "wall_seconds": 282.9972673000302
+    },
+    {
+      "video_id": "dual_20260924_111500__left",
+      "video": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v1\\四子图视频\\dual_20260924_111500__left__四子图.mp4",
+      "sha256": "550f10146282f63b5938af0875186909df330c70d2b230a588db77c1558866cc",
+      "analysis_frames": 117,
+      "forward_count": 115,
+      "states": {
+        "ACCEPTED": 33,
+        "STALE": 24,
+        "UNKNOWN": 45,
+        "REACQUIRED": 15
+      },
+      "source_duration_s": 60.1,
+      "output_duration_s": 60.2,
+      "wall_seconds": 467.4692361999769
+    },
+    {
+      "video_id": "R_run_20260923_01__right",
+      "video": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v1\\四子图视频\\R_run_20260923_01__right__四子图.mp4",
+      "sha256": "691849b1b26fc2996f96b0d2c1a63d047813441518aa8f8ef0e3ea7bc069d74c",
+      "analysis_frames": 96,
+      "forward_count": 105,
+      "states": {
+        "ACCEPTED": 23,
+        "STALE": 27,
+        "UNKNOWN": 31,
+        "REACQUIRED": 15
+      },
+      "source_duration_s": 48.36000048163681,
+      "output_duration_s": 48.4,
+      "wall_seconds": 369.206673199893
+    },
+    {
+      "video_id": "R_static_20260922_01__right",
+      "video": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v1\\四子图视频\\R_static_20260922_01__right__四子图.mp4",
+      "sha256": "54d89178dbe6d8260c48146d904a9d88f97c936bb1ce03174cc2eb017c0fdebe",
+      "analysis_frames": 57,
+      "forward_count": 83,
+      "states": {
+        "ACCEPTED": 39,
+        "STALE": 8,
+        "REACQUIRED": 6,
+        "UNKNOWN": 4
+      },
+      "source_duration_s": 31.42500064032133,
+      "output_duration_s": 31.6,
+      "wall_seconds": 227.60453430004418
+    },
+    {
+      "video_id": "L_static_20260922_01__left",
+      "video": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v1\\四子图视频\\L_static_20260922_01__left__四子图.mp4",
+      "sha256": "1bad5e1c46f80cb00c38dcc87db1684cda2f994d0a6133d2f360810d81b354e7",
+      "analysis_frames": 181,
+      "forward_count": 181,
+      "states": {
+        "ACCEPTED": 137,
+        "STALE": 29,
+        "UNKNOWN": 1,
+        "REACQUIRED": 14
+      },
+      "source_duration_s": 100.49999245750554,
+      "output_duration_s": 100.6,
+      "wall_seconds": 561.7337887999602
+    },
+    {
+      "video_id": "R_run_stop_run_20260922_01__right",
+      "video": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v1\\四子图视频\\R_run_stop_run_20260922_01__right__四子图.mp4",
+      "sha256": "29c12874fa79ae202e7d25f8c07fce9c8695d4ee207f54cd0b2a72f3dab76f19",
+      "analysis_frames": 172,
+      "forward_count": 195,
+      "states": {
+        "ACCEPTED": 98,
+        "STALE": 26,
+        "UNKNOWN": 29,
+        "REACQUIRED": 19
+      },
+      "source_duration_s": 86.7779957945042,
+      "output_duration_s": 86.8,
+      "wall_seconds": 622.5665040999884
+    },
+    {
+      "video_id": "L_run_stop_run_20260922_01__left",
+      "video": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v1\\四子图视频\\L_run_stop_run_20260922_01__left__四子图.mp4",
+      "sha256": "5df1ce25a35359527ea51514417d1518a675ea65064d5822c306fac69224ce65",
+      "analysis_frames": 301,
+      "forward_count": 290,
+      "states": {
+        "ACCEPTED": 219,
+        "STALE": 26,
+        "UNKNOWN": 37,
+        "REACQUIRED": 19
+      },
+      "source_duration_s": 152.00200506603585,
+      "output_duration_s": 152.2,
+      "wall_seconds": 976.4206091000233
+    }
+  ],
+  "limitations": [
+    "earliest allowed image scene prior; not arbitrary raw-frame cold start",
+    "SAM2/F3 geometry propagated from first anchor and checked against current image; not recomputed full F3 each frame",
+    "automatic entry can be absent or incorrect; missing response is explicitly uncomputed",
+    "temporal stability and rejection cannot establish same-rope identity or full attached-tail correctness",
+    "3seconds per projected spacing is an uncalibrated heuristic; host receipt timestamps are not exposures"
+  ],
+  "independent_audit": {
+    "path": "all_001/independent_audit.json",
+    "sha256": "a397928d6f72bc4f4da7829e00deb2d4ae2142d822f1ef382d8d1bb8a3182ed9",
+    "checks": 109920,
+    "exit_code": 0,
+    "complete_videos_decoded": 16,
+    "float_arrays_checked": 1528
+  },
+  "visual_review": {
+    "path": "audit/visual_review_agent.json",
+    "sha256": "44b52f3b6ee1682d96c3b6f7b20de9d5ef23e0c64007665a30fbc9304de9b893",
+    "videos": 16,
+    "fixed_positions": 48,
+    "not_identity_accuracy": true
+  },
+  "temporal_comparison": {
+    "path": "all_001/temporal_comparison_common_domain.json",
+    "sha256": "2495de02f6262842eb3998a2a24e62389126fc9d1174ea05291d45bc72f21970",
+    "shared_domain_pairs": 712,
+    "unchanged": 682,
+    "lower_transverse_change": 24,
+    "higher_transverse_change": 6,
+    "baseline_p95_px_per_s": 23.096,
+    "temporal_p95_px_per_s": 22.156,
+    "interpretation": "limited temporal candidate selection effect; rejections and stable errors are not accuracy gains"
+  }
+}

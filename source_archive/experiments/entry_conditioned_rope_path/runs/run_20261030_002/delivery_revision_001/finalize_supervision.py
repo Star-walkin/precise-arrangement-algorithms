@@ -1,0 +1,166 @@
+"""Summarize saved evidence; no training, selection, or parameter changes."""
+from pathlib import Path
+import argparse,json,hashlib,shutil,sys,os
+from datetime import datetime,timezone
+
+CODE=Path(__file__).resolve().parent
+def read(p):return json.loads(Path(p).read_text(encoding='utf-8'))
+def sha(p):
+    h=hashlib.sha256()
+    with Path(p).open('rb') as f:
+        for b in iter(lambda:f.read(2**20),b''):h.update(b)
+    return h.hexdigest()
+def write(p,v):Path(p).write_text(json.dumps(v,ensure_ascii=False,indent=2),encoding='utf-8')
+def f(x):return '未知' if x is None else f'{x:.4f}'
+def pct(x):return '未知' if x is None else f'{100*x:.2f}%'
+
+def main(run):
+    run=Path(run).resolve();assert not (run/'REPORT.md').exists(),'Preserve report; new revision needs a new path'
+    comp=read(run/'comparison/evaluation.json');s=comp['summary'];pair=read(run/'paired_comparison.json')
+    sup=read(run/'supervision/statistics.json');tr=read(run/'training_diagnostics/training_summary.json')
+    vr=read(run/'comparison/visualization_receipt.json');trace=read(run/'connection_trace/summary.json')
+    for item in read(run/'frozen_upstream.json')['sources'].items():assert sha(item[0])==item[1]
+    assert sha(run/'evaluation_scope/scope.json')==comp['scope_sha256']
+    assert pair['main_comparison_step']==750 and pair['all_overlapping_input_augmentation_hashes_equal']
+    report='''# 入口条件目标绳中心响应：监督方案改进对照
+
+运行：`run_20261030_002`，2026-10-30。已完成监督构建、独立小检查、A/B实际续训、共同步数完整ROI推理、冻结路径连接和分项评价。本轮得到**部分有效但整体接续退化**的结果，B不能作为已验证改善模型替换A或旧基线。
+
+## 先回答六个问题
+
+1. **实际增加什么？** 复用17,363.93原图px可信中心；新增目标正线为0。新增4张/3来源组、426.92原图px的短邻绳可见主体弱负例（742模型像素），以及10张训练图的控制盒/支架背景弱负例（479,335模型像素）。全部来自原图及旧reviewed几何核查，不以模型高响应或未标记区域自动判负。弱标注未获独立人工身份核验。
+2. **公平吗？** 两组从同一旧final权重、同一新AdamW分叉；A781步、B774步，主要比较双方保存的第750步。774个重叠更新的图像、种子、增强后旧标签/有效域哈希逐步完全相同。小检查权重未用于任一正式组。
+3. **工具/支架误响应降低吗？** 是，在事先冻结的明确背景工程代理区域显著下降；不代表整张图所有背景被解决。全ROI图中其他未监督背景仍有高响应。
+4. **正确后段保住吗？** 未充分保住。B在训练侧和评价侧的可信正中心响应均下降；评价侧存在后段漏失和拒识增多。不能用局部热图更干净抵消这项退化。
+5. **邻圈误接减少吗？** 两个固定目标/邻圈工程代理的响应差改善，但主路径覆盖明显下降，无法得出总体误接减少的结论。完整末端身份参考仍缺失，完整弧段成功率未定义。
+6. **瓶颈及下一步？** 本次最直接证据是新增负监督抑制了明确负域，也损伤目标响应；监督稀疏、缺少新的竞争后正例，并有候选传播和连接丢失。尚不能把退化唯一归因于标签、权重或网络。优先补少量“竞争之后正确目标短段＋同处错误邻段”的配对核验；暂不进入全卷面关系特征/学习连接评分，更不增加训练预算来掩盖退化。
+
+## 实际输入、监督和损失
+
+沿用开放开发10训练图/4来源组、8评价图/3来源组。近邻帧用途不变，不采用S1冲突规划；评价参考不回流。未访问9月25日等保留集，未连接设备、未更改控制权限。原始图像、旧标签、旧模型和旧运行保留原址。
+
+完整搜索域为原图4096×3000中的`[0,1050,4096,3000]`，保留原灰度与自由段，缩放0.5到975×2048，底部中性补17模型像素至992×2048。ROI内真实0不删除；原灰度光度增强在非负域执行gamma，再按同一ROI均值/标准差下限0.08归一化。图像、中心、入口、阶段和所有监督mask使用同一几何变换。
+
+旧中心sigma=3原图px；中心管限制和reviewed两侧几何、原窄负带、质量裁切保持不变。种子仅为最初120原图px自由入口、sigma=4px；没有把后段锚点作为输入。模型仍为灰度＋种子双输入的EntryUNet(base8)，既有全局入口条件机制不变。输出为0～1中心响应强度，不是概率、主体mask或物理绳宽。
+
+B的center_target/center_valid/center_stage与旧数组逐位相同；新增mask互斥、位于计算域内，与旧监督保护域冲突为0。97.03%训练域仍是ignore。C07/C08的C7以后未知尾段仍未知。
+
+`L = L_center + 0.5 mean_neighbor(p²) + 0.1 mean_background(p²)`。中心项保留原阶段及高低响应均衡；各新增组单独归一化，空组为0。A使用同一实现但两新增组置空，数值和梯度精确等价旧损失。ignore、padding和未计算域梯度为0。本轮只能说明整个监督方案对照，不能单独分离标签范围与权重组织的作用。
+
+## 训练执行及共同步数
+
+复用本地`vision_training/.venv`的PyTorch CPU环境（8线程、batch1），图像与评价复用`vision_prototype/.venv`；未安装依赖。seed=20261029，AdamW lr=0.001、weight_decay=0.0001。旧checkpoint没有优化器状态，两组均重置优化器。完整配置、版本、源hash、采样序列和逐步日志在各分支`model/`。
+
+独立副本小检查60步/84.18秒：中心MSE0.02203→0.01274，邻绳平均响应0.37213→0.01958、背景0.32683→0.06433，后段正响应0.73558→0.78128；这只证明少量训练图可拟合。该副本没有带入正式A/B。
+
+正式预算每组最多800步或1200秒，每50步及结束保存。A781步/1201.01秒，B774步/1201.22秒，均在时间门槛到达后的当前完整更新结束时停止，未为凑齐800追加。最大共同保存步750；781/774终点只在训练附录展示，所有主推理/评价严格用750。
+
+固定10张训练图、共同750步，A→B：中心MSE0.01603→0.01966；后段正响应0.75268→0.70258；邻绳弱负域平均0.27933→0.01669；背景弱负域0.25881→0.01753。训练侧已经出现压负域同时损伤正域的取舍。实际原始曲线及20步移动均值见`training_diagnostics/paired_actual_loss_and_response_curves.png`；没有平滑或重映射网络输出。
+
+## 冻结评价结果
+
+8张开放评价图、3来源组；CONDITIONAL与AUTO是相同图的不同入口条件，不是16个独立样本。全部预测和路径先保存，再评分。背景区域16块、目标/邻圈对照仅2处/2来源组，在新预测出现前根据原图及旧reviewed参考冻结，不用于训练。所有背景和邻圈统计均为工程代理；目标响应基于已有质量有效的部分中心参考，排除实际输入入口。
+
+下表响应统计是区域/图像宏平均；覆盖是按参考弧长加权、容差5原图px，拒识保留8图分母。AUTO只有5张有响应，因此背景响应统计只含其10块可计算区域；3张缺入口的响应记未知，路径主分母仍含失败。
+
+| 模式/方案 | 背景均值 | 背景P95宏均值 | 背景>0.5比例 | 后段中心均值 | 目标−邻圈Δ(仅2处) | 全参考路径覆盖 | 后段路径覆盖 | 拒识/8 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+'''
+    for mode in ['CONDITIONAL','AUTO']:
+        for v in ['OLD','A','B']:
+            r=s[v][mode];b=r['background_macro_region'];g=r['path_geometry'];c=g['selected_reference_coverage']
+            report+=f"| {mode}/{v} | {f(b['mean'])} | {f(b['p95'])} | {pct(b['fraction_gt0_5'])} | {f(r['target_macro_image']['attached']['mean'])} | {f(r['proxy_Delta_macro_pair'])} | {pct(c['all']['coverage_5px'])} | {pct(c['attached']['coverage_5px'])} | {g['rejected_images']} |\n"
+    report+='''
+OLD只作起点背景；正式效果判断是同750步A vs B。Δ上升不能替代路径正确：两个清晰局部对照改善与其余困难后段漏失同时发生。响应不是身份置信度。
+
+| 模式/方案 | 自由段覆盖 | 过渡覆盖 | 后段覆盖 | 近边缘覆盖 |
+|---|---:|---:|---:|---:|
+'''
+    for mode in ['CONDITIONAL','AUTO']:
+        for v in ['A','B']:
+            c=s[v][mode]['path_geometry']['selected_reference_coverage']
+            report+=f"| {mode}/{v} | "+' | '.join(pct(c[k]['coverage_5px']) for k in ['free','transition','attached','edge_near'])+' |\n'
+    report+='''
+“后段”“过渡”“近边缘”沿用冻结视觉位置分类，不确认三维物理接触。近边缘AUTO局部覆盖上升不等于到达正确末端。旧V28可评价完整接续/末端身份数为0；不能虚构跳圈率、完整成功率或独立身份准确率。
+
+## 固定案例及候选丢失
+
+- **right f00500退化（CONDITIONAL）**：可信后段覆盖A90.44%→B5.18%；最长后段漏失95.97→811.77px。最早≥60px持续参考偏离由约(2075.3,1918.5)提前到(2236.2,1887.0)，注意该图行进方向向左。B最早缺口139.96px内目标参考平均响应仅0.09294，无点超过0.5。网络正响应损失在这里有直接证据，不能只归咎于末尾排序。
+- **left f00550退化**：CONDITIONAL后段覆盖A49.26%→B0（拒识），B最终池最佳也仅20.18%；AUTO最终池最佳59.35%仍被拒识，主覆盖按0计。拒识不是正确识别，也不直接说明全部候选都错。
+- **left f00450局部改善但未成功**：CONDITIONAL后段覆盖19.48%→27.72%，最长后段缺口859.26→479.59px，仍有大段缺失。第一处长偏离仍在约(1596.4,2097.4)，不能称保持整条身份。
+- **right f00550的AUTO局部改善**：后段54.81%→63.18%，最长后段缺口431.99→263.99px；同图CONDITIONAL却由暂选变拒识。模式分别报告，不挑好的入口合并为成功。
+
+对预先固定的left450/right500分别重放OLD/A/B共6次，用被动行事件记录每个生成候选、进入pool及保留beam的轨迹；返回的候选、选择、元数据与原保存结果逐项完全一致。未向搜索传入参考，未改步长12px、beam18、停止或评分；参考仅后验用于距离诊断。
+
+right500：A曾生成的12px候选边邻近99.77%的部分参考、beam保留边邻近98.85%，最终路径89.95%；B相应为57.51%、54.27%、37.53%。因此B既有候选传播缺失，也有后续淘汰，不能靠最终3条的重排恢复未生成部分。left450的B生成边邻近91.67%、beam80.56%、最终44.74%，显示还有明显筛选/传播损失。以上是所有中间局部边的几何可达性并集，**不证明存在一条完整正确身份路径**；merge与top18、后续beam与最终排序未被因果分离，细分原因仍未知。详见`connection_trace/`原始节点、父节点、保留集合与逐缺口JSON。
+
+## 热图及边界核查
+
+审计确认单中心头sigmoid一次；原浮点图为3000×4096 float32，搜索域外NaN，处理版外部0；先去padding再按固定双线性方式回映，没有逐图min–max、加宽中心或平滑补线。已有400图批量拼图使用A6自动自由入口及3例旧观察入口回退，与本次固定8图的V28 AUTO不同，依据entry/inference元数据区分，不能凭标题猜测。
+
+上下计算沿附近的直线确实存在于旧float响应。8评价图旧顶部64行均值峰全部在y1067（计算起点1050内侧17px），下方峰在y2981～2986，而不是最后一行2999。A顶部峰y1073～1076，下部y2978～2981；B顶部峰降至约0.241～0.299、下部仍约0.524～0.619，峰y2980～2984。现象与人工计算域相邻，但本轮没有进行边界机制的因果消融，不能断言只由padding造成。保留两组相同输入，按原float记录，未靠绘图修掉。
+
+固定图均以灰度0～255、热图0～1显示，含色条、原图坐标、监督/ignore、实际种子、路径/竞争/拒识状态和法向剖面。训练剖面在未知监督处断线，不把未知画作零目标。全部34张新比较PNG已解码核验并检查代表图。不存在全零退化，但B部分目标被压低，未监督背景仍可高响应。
+
+## 交付、复现与缺失信息
+
+- `supervision/`：新mask、逐段/多边形来源、统计、叠图及最小补标模板；`supervision_draft_001/`保存训练前核查草案，实际训练使用最终index所指版本。
+- `input_audit/`、`audit_with_supervision/`、`supervision_qa/`：原始float/坐标审计、真实监督叠图、原图负例剖面与更大补标上下文。
+- `branches/A|B/model/`：起点、每50步/终点权重、配置、环境、完整真实日志；`paired_comparison.json`固定共同750步；`common_training_fit.json`是共同模型训练侧拟合。
+- `branches/A|B/predictions/`：每组26份推理记录，23个有效响应＋3个AUTO入口失败；原始/处理浮点图、实际入口、最多3候选有序坐标、暂选中心线示意图。无未经验证的绳体mask。
+- `comparison/`：48个OLD/A/B×两模式×8图分项JSON、总表和34张固定比较图；原始旧响应继续引用旧run，不复制伪造。
+- `connection_trace/`：6个精确重放的生成/pool/beam记录及后验诊断；不能用于回填训练真值。
+- `README.md`与项目`run_supervision_experiment.ps1`：一键入口；`execution_commands.jsonl`、各training receipt保留真实命令、耗时、退出码。`source_snapshot/`、manifest保存本轮源码和产物哈希。
+
+下一步优先在训练图left f00240及right f00130给出各一段最后可信位置之后的正确目标中心短段与竞争邻绳短段，只有确实可见时再确认目标近真实边缘锚点。模板及原图大上下文已保存，无需标整卷。它们用于未来训练时不得自动变成评价额外入口；评价末端参考需要独立确认。当前不扩大训练、不调beam、不切换复杂网络，也不将B部署或替换已有基线。
+
+本轮首个input_audit源码执行因一个多余右括号报SyntaxError，在任何训练/图像产物生成前修正；原始float未计算域的行均值另有预期NaN空行warning。均记录于执行说明。正式训练、推理、冻结评价和精确重放均退出0；否定结果和草案保留。
+'''
+    (run/'REPORT.md').write_text(report,encoding='utf-8')
+    (run/'README.md').write_text('''# 实际结果入口
+
+先读 [REPORT.md](REPORT.md)。主比较为A/B第750步：B压低明确背景，但目标后段覆盖和拒识退化，未验证完整目标弧段身份。
+
+查看图片：`comparison/visualizations/CONDITIONAL/`、`AUTO/`（每图全ROI＋固定4局部），`training_checks/`含实际监督和法向剖面。原始浮点：`branches/A/predictions/`、`branches/B/predictions/`。
+
+从工程根PowerShell运行一个**尚不存在**的运行名：
+
+```powershell
+& .\\experiments\\entry_conditioned_rope_path\\run_supervision_experiment.ps1 -RunName run_20261030_003
+```
+
+复用既有两个venv及旧`run_20261029_001`的冻结图像缓存、入口/scene、标签和权重；不下载、不访问保留集。逐阶段入口：
+
+```powershell
+& .\\vision_prototype\\.venv\\Scripts\\python.exe -B experiments/entry_conditioned_rope_path/run_supervision_experiment.py --run experiments/entry_conditioned_rope_path/runs/run_20261030_002 --stage infer --resume
+```
+
+已完成的gate跳过，不覆盖部分失败输出。训练预算按时间可能令复跑终点步数略有差异；仍取双方实际保存的最大共同步数。实际本轮训练调用由training receipts记录；infer/evaluate两个阶段已通过一键driver实际执行，完整all的新目录串联入口未为验收而额外重训第二遍。
+
+源码快照和产物manifest在本目录；工程维护代码在上两级。弱标签不是独立真值；完整末端仍未知。所有响应固定0～1显示，未计算域NaN不是低置信概率。
+''',encoding='utf-8')
+    notes={'date':'2026-10-30','initial_input_audit_failure':{'type':'SyntaxError','reason':'extra closing parenthesis','resolved_before_training':True},
+      'expected_warning':'np.nanmean over raw-response rows outside computed ROI; NaN intentional, no labels or prediction values changed',
+      'training_prelabel_refinement':'right130 negative shifted6originalpx toward visible rope center before frozen training; draft retained',
+      'actual_driver_stages':['infer --resume','evaluate --resume'],'all_pipeline_retrained_second_time':False,
+      'offline':True,'reserved_sets_read':False,'hardware_connections':False,'packages_installed':False}
+    write(run/'execution_notes.json',notes)
+    sources=['model.py','train.py','infer.py','connect.py','scene.py','evaluate.py','supervision_data.py','verify_supervision.py','supervision_qa.py',
+             'input_audit.py','paired_train.py','common_training_fit.py','plot_paired_training.py','freeze_evaluation_scope.py','compare_evaluate.py','compare_visualize.py',
+             'trace_connection.py','run_supervision_experiment.py','run_supervision_experiment.ps1','verify_inference.py','finalize_supervision.py']
+    snap=run/'source_snapshot';snap.mkdir(exist_ok=False)
+    for n in sources:shutil.copy2(CODE/n,snap/n)
+    files=[]
+    for root,dirs,names in os.walk(run,followlinks=False):
+        dirs[:]=[d for d in dirs if not (Path(root)/d).is_symlink() and not (Path(root)/d).is_junction()]
+        for n in names:
+            path=Path(root)/n
+            if path.name=='artifact_manifest.json':continue
+            files.append({'path':str(path.relative_to(run)),'bytes':path.stat().st_size,'sha256':sha(path)})
+    write(run/'artifact_manifest.json',{'created_utc':datetime.now(timezone.utc).isoformat(),'files':files,'command':sys.argv,
+      'old_sources_unchanged':True,'eval_scope_unchanged':True,'main_common_step':pair['main_comparison_step'],
+      'new_visualization_pngs':vr['png_count'],'trace_exact_replays':len(trace['items']),'source_snapshot_files':sources,'exit_code':0})
+    print(json.dumps({'report':str(run/'REPORT.md'),'files_hashed':len(files),'exit_code':0}))
+
+if __name__=='__main__':
+    p=argparse.ArgumentParser();p.add_argument('--run',required=True);main(p.parse_args().run)

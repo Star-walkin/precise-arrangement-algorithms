@@ -1,0 +1,72 @@
+A5 原图绳带差分模块（2026-10-29）
+
+用途：给定原图上的候选中心、方向与光学宽度，比较绳体内带与左右背景。
+本模块不生成路径，不读F3缺口、不依赖n-1规则，也不确认同根身份。
+
+接口
+1. build_fields(image, width, pitch)
+   输入未绘线的uint8 BGR原图；width/pitch为像素宽度/卷面绳距，不能当毫米。
+   返回原灰度与轻滤波副本，总计约5字节/像素；不修改输入原图。
+2. sample_ribbon(fields, xy, tangent, width, free_texture=None)
+   xy为N×2；tangent为N×2或单个2向量，自动单位化；width为标量或N数组。
+   返回逐点原图量测与评分。
+3. compare_ribbon_neighbors(fields, xy, tangent, width, pitch=None, free_texture=None)
+   以完全相同方法测中心及法向±1pitch邻带，返回中心全部量测并增加
+   comparison_score=center.score-max(left.score,right.score)。只有三者均
+   reliable才有有效comparison；无效邻带不能变成零分对手给中心虚增加分。
+
+核心量测
+沿切向取2.5倍绳宽、法向取2.6倍绳宽的原图窗口。切向最亮/最暗各去掉
+2个采样后平均，压制局部股间亮斑/细阴影。内带平均与两侧约一绳宽处
+背景平均相减，由这个均值差符号确定亮/暗极性，不分别寻找最大亮峰/暗谷。
+两旁背景线性插值仅用于内外均值比较；双侧外缘与边距必须来自原灰度剖面。
+宽度覆盖、切向一致性、实际双边、原始动态范围和饱和条件共同判断support。
+阴影宽度/深度是相对局部背景的暗残差描述，不能当真实几何绳径。
+内部股纹方向与两旁方向对比只是弱辅助，不能单独让候选获得实测支持。
+
+主要返回字段（逐点数组）
+score：局部差分外观分0..1；不等于概率、准确率或同根置信度。
+supported：通过原灰度差分、真实双边、宽度与沿轴一致性条件。
+reliable：原图采样本身可用，仍可能没有绳带；不可代替supported。
+single_edge_support：有限单边支持，不能作为双边实测。
+signed_body_background_difference_raw：内带减两旁平均，正亮/负暗。
+inner_mean_raw / left_background_mean_raw / right_background_mean_raw：原灰度均值。
+paired_edge_contrast_raw：按当前内外均值极性解释的较弱真实外缘反差。
+left_edge_contrast_raw / right_edge_contrast_raw：同上，两侧分别保存。
+measured_edge_width_px / measured_width_ratio：候选极性下的边距及相对width。
+left/right_shadow_width_px、left/right_shadow_depth_raw：局部相对暗残差。
+body_saturation_fraction / patch_saturation_fraction：原图饱和比例。
+body_coverage / along_consistency：整绳宽度覆盖/沿候选方向的一致比例。
+unknown_reason_bits / unknown_reason_legend：逐点拒识原因位与解释。
+
+贴轨阶段注意：卷入后内带平均可能等于相邻旧圈，均值差与其极性会不稳定。
+不能据此直接否决F3轨道。原始双边步进可恢复为：
+  L=left_edge_contrast_raw*polarity；R=right_edge_contrast_raw*polarity。
+若L*R>0，两边方向一致，可另以min(abs(L),abs(R))描述真实双边强度；
+这种轨道阶段证据仍需结合宽度、轨道几何和竞争路径，不自动证明同根。
+
+构造检查与修正
+第一次邻带比较发现：在背景插值残差上求边会把线性背景斜坡伪造成
+第二条外缘，导致真实绳的背景邻带也得到双边支持。失败诊断和当时源码
+保留于photometric_neighbor_artifact_diagnosis_001.json及mechanism_001_before/。
+随后仅将三处双边/梯度计算切换至原灰度，阈值完全不变；差异另存diff。
+修正后宽亮/暗带支持，纯背景邻带无双边支持；窄股沟、周期旧圈、照明
+斜坡、低信号和饱和构造不成为有效整绳支持。001回执保留，002为修复后。
+构造测试只证明所测机制，不能替代现场图像准确率；现场原图未用于调阈值。
+
+后续独立白饱和轮廓通道
+原均值score/reliable/supported仍按原饱和门保持未知；新增
+saturated_outline_supported与saturated_outline_score只说明外轮廓可测。
+要求白饱和内带、两侧背景未饱和、真实双边反差各至少8灰度、宽度合理、
+整带覆盖和沿轴一致性足够。全白、单边、窄亮股丝、背景也近白不通过。
+该通道不能使comparison_reliable变为真，不能把截断均值用于独特差分。
+修正前源保留mechanism_002_before，构造回执saturated_outline_synthetic_001。
+
+贴轨沟谷量测
+attached_groove.py在给定F3两条正式边界周围测原图谷心及双肩。
+sample_attached_grooves(fields, boundary_xy[N,2,2], tangent, widths, pitch=None)
+默认使用轨道法向widths作为局部像素绳距。返回逐点score/supported/available，
+以及逐边的edge_scores/edge_support、沟宽、谷深、偏移和原图可用性。
+宽沟需约0.12..0.65局部绳距，双肩原反差分别至少1/2灰度并沿切向持续。
+这解决“邻绳两边同样亮、自由段台阶差接近零”的量测类型错误，不证明
+该F3轨道就是活动绳。原图不可用、沟太窄或太宽仍保留未知。

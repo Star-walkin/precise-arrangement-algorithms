@@ -1,0 +1,50 @@
+热图接续 H1（IR-H1.0.0）算法与结果说明
+生成时间：2026-10-30T10:36:57.296648+00:00
+
+一、这次做了什么
+使用用户指定方案B的原模型与原自动入口，重新保存数值热图，再结合原图、A6/A7自由段提示和F3卷面边界搜索活动绳位置。没有新增训练，原模型、旧实验及原图保持不变。
+输入来自开放400图。旧图库实际可用292张、299个入口条件；原有108张缺入口，未在本次冒充已识别或无绳。
+这些图包含旧模型训练使用过的采集来源组，不是新的独立测试集。
+
+二、长条图从左到右的六步
+1. 原图：以50%尺寸显示。显示图使用JPEG；原始4096×3000文件内容不变。
+2. 方案B数值热图：原权重第750步推理，输入是灰度与最初120原图像素的自动入口。计算域[0,1050,4096,3000]，半尺寸2048×975；灰区未计算。固定0～1色标，响应是中心结构强度，不是概率或真实绳宽。原浮点响应保存在responses/<图名>/entry_XX.npz。
+3. 局部对比诊断：原图与热图的不同尺度高斯滤波差（DoG）显示去掉缓慢亮度变化后的亮暗结构，仍会含相邻旧圈和工具。它是诊断展示，不是路径搜索实际使用的二值候选掩膜。搜索时另对每一个位置、方向和宽度提案测量法向剖面，检查亮绳体、暗绳体或双侧亮边，并沿绳方向适度汇聚以减少细股纹干扰。
+4. 自动几何提示：沿用每个原自动入口，A6提供对应直段的入口、方向与宽度，A7用于兼容性复核和直轴提示；实际外观剖面在本次原图自由段重新测量，保存的A6外观模板只留作来源记录，未直接参与评分。F3提供卷面边界，仅是局部弱约束，不能按最近一条边界独自决定同根身份。
+5. 多路径搜索：同时保留原图与热图融合搜索、热图评分搜索，以及有原图支持时的固定直轴接续候选。自由段轴线经双边剖面修正；长弱间隙两端可按同轴重现产生候选，但间隙不算实测。根据方向、宽度、转弯平滑度和图像证据排序，保留有限竞争路径，热图搜索也使用同一几何及停止约束。末端还可基于F3成对边界提出最多3条相邻轨道尾段供复核，保留多解，不强制唯一身份。
+6. 最终叠加：绘制暂选路径及估计宽度。绿表示局部原图/热图匹配，橙表示弱证据待确认；仅靠清晰热图继续的部分仍为橙色。橙色虚线是F3竞争尾段，只在第5、6图展示，不加入主掩膜。若入口与其他已接受A7轴冲突，保留其候选供检查但不标为局部支持绳。去除无支持的末端延长；并未证明抵达正确整根终点。
+
+三、重要颜色和掩膜含义
+绿色不等于已确认同一根活动绳。光学宽度是原图像素估计，没有主体掩膜真值监督，也不是毫米绳径。
+候选绳带包含橙色弱证据连接，仅供检查；局部支持绳带只保留相邻点都具备局部支持的部分。长遮挡推断和待确认尾段不能当作实测像素。
+F3橙色虚线尾段保存在记录的entries[].f3_tail_review中，坐标为半尺寸裁剪坐标；不写入候选绳带或局部支持绳带。多条相邻轨道可能都吻合图像，因此不把排序第一当作已确认接法。
+每图有多个入口时分行展示；不会把工具入口与绳入口热图直接合并。
+
+四、实际执行与检查（以下从已保存报告读取）
+收集状态：completed_artifacts_with_preserved_trial_failures_pending_user_visual_acceptance
+全量计划/完成：292/292；退出码：0；失败条数：0。
+实际长条图：292；分步图：1794；掩膜：598；图像记录：292。
+数值响应审计退出码：0；已检查入口：299；原B图库逐入口数值范围最大差：0.0。
+数值范围一致不等于整张浮点图逐位相同；结构核验通过也不等于视觉识别正确。独立审计、逐轮视觉复核与失败记录详见experiment_report.json中带哈希的证据路径。
+原计划最多三轮先行调试，实际另有明确记录的修复执行；不能描述为只有三次且全部首次成功。原pilot003存在运行期间源码变化及图外弱热响应接续；repaired001增加可见卷面外缘退出保护，但仍有主路径与基线共用证据字典的问题；repaired002修复finalize_path中的字典共享，随后发现反向自由段前缀仍共享证据；repaired003再复制prepend_free_extent的前缀证据。两次字典隔离修复不用于改搜索几何或调参，其图像等价以实际独立回执为准。原输出、失败审计和所有修复补充协议均保留。
+实际各轮状态：pilot_001（退出码=0，源码未变=True，最新审计通过=True）；pilot_002（退出码=0，源码未变=True，最新审计通过=False）；pilot_003（退出码=0，源码未变=False，最新审计通过=False）；pilot_003_repaired_001（退出码=0，源码未变=True，最新审计通过=False）；pilot_003_repaired_002（退出码=0，源码未变=True，最新审计通过=False）；pilot_003_repaired_003（退出码=0，源码未变=True，最新审计通过=True）；extra_001（退出码=0，源码未变=True，最新审计通过=True）；all_001（退出码=0，源码未变=True，最新审计通过=True）
+冻结最终先行版本：pilot_003_repaired_003。修复前后图像是否逐字节相同，以收集的独立比较回执为准，不由修复目的推定。
+序列化修复图像核验实际回执：[{"created_utc": "2026-10-30T10:20:27.024907+00:00", "old_run": "experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\pilot_003_repaired_001", "new_run": "experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\pilot_003_repaired_002", "file_count": 124, "equal_count": 124, "result_scope": "Formal step/strip JPG and mask PNG bytes only; numeric evidence serialization intentionally changes. Equality is not identity accuracy.", "exit_code": 0}, {"created_utc": "2026-10-30T10:23:15.850915+00:00", "old_run": "experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\pilot_003_repaired_002", "new_run": "experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\pilot_003_repaired_003", "file_count": 124, "equal_count": 124, "result_scope": "Formal step/strip JPG and mask PNG bytes only; numeric evidence serialization intentionally changes. Equality is not identity accuracy.", "exit_code": 0}]
+最终视觉复核证据：{"directly_reviewed_runs": ["extra_001", "pilot_001", "pilot_002", "pilot_003", "pilot_003_repaired_003"], "full_byte_equivalence_edges": [["pilot_003_repaired_001", "pilot_003_repaired_002"], ["pilot_003_repaired_002", "pilot_003_repaired_003"]], "final_pilot_review_supported": true, "inherited_review_is_not_new_independent_accuracy_measurement": true}
+
+五、仍未验证的部分
+密集旧圈与目标活动绳的远侧同根身份、完整终点、真实接触点尚无完整真值验收。早期先行轮记录过导杆处提前转弯、工具入口误跟、亮带附近早转旧圈和弱端接续；最终哪些仍在以保存的最终视觉复核记录为准，不能因线变长或变平滑宣布解决。
+原图仍存在过曝、欠曝和遮挡，网络计算域边缘也可能有伪响应。拒识、局部支持、候选数及长度均不直接换算准确率。
+没有连接设备、改权限、读取保留集或读取S1标签；本结果不确认t0/t1/t2，不接入执行机构。
+
+六、文件位置
+strips：D:\precise_arrangement\experiments\entry_conditioned_rope_path\postprocess_b_20261030_v1\all_001\长条对照图
+steps：D:\precise_arrangement\experiments\entry_conditioned_rope_path\postprocess_b_20261030_v1\all_001\分步图像
+candidate_masks：D:\precise_arrangement\experiments\entry_conditioned_rope_path\postprocess_b_20261030_v1\all_001\掩膜\候选绳带
+local_support_masks：D:\precise_arrangement\experiments\entry_conditioned_rope_path\postprocess_b_20261030_v1\all_001\掩膜\局部支持绳带
+records：D:\precise_arrangement\experiments\entry_conditioned_rope_path\postprocess_b_20261030_v1\all_001\记录
+输入数值与推理回执：D:\precise_arrangement\experiments\entry_conditioned_rope_path\postprocess_b_20261030_v1\responses
+输入冻结协议：D:\precise_arrangement\experiments\entry_conditioned_rope_path\postprocess_b_20261030_v1\protocol_inputs.json
+实验参数与范围：D:\precise_arrangement\experiments\entry_conditioned_rope_path\postprocess_b_20261030_v1\postprocess_protocol.json
+各轮命令、源码快照、进度及退出码：对应run_start.json、source_snapshot、progress.jsonl和summary.json。
+无HTML输出。

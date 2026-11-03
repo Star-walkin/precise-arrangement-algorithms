@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-11-03T03:26:39.959050+00:00",
+  "status": "frozen_before_historical_evaluation_predictions",
+  "method_id": "IR-GEOM-G1.0.0",
+  "files": {
+    "PROTOCOL.md": "c28c2c189be41e59f38adc76aae1fade3f865d124dbe370b65a5e23ee9ba8168",
+    "config.json": "fe9092efa2fad56789e1b7d5d3d234e8e7925b6fabf5031d1d001cab8340459f",
+    "inputs.json": "69f37567c378717d76a4fb660fb83891ca7af3e1d250c9e43c7065d2b8093850",
+    "evaluation_inputs.json": "3dced00bdef05d2aa76214860397e3822c038bf0181031a3fc09a0b0cc5a5919",
+    "geometry_core.py": "9d924f61844da41ab16a4720b5a701f7ca464c0eaeb9b5640cc9d221a031045f",
+    "run_geometry.py": "1461adb984b431f28af232265c0c8882ede05a3dbdef1cdc9ebe5b57703bd602",
+    "evaluation_adapter.py": "786f462c15b652d623cbfaf12afa6780f110a79167209e06cf9b5a43f6bca76f",
+    "audit_outputs.py": "2d39591f36c3f4db6e2a52b6f1f0fc38f9690db9d95f8ffa6ff9d733b30ab126"
+  },
+  "pilot_003_receipt_sha256": "43ffbf49265b36601bc4d854de1266829d1dc5ca73a05dfa7b67ff8f6bc22755",
+  "python": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "output_root": "C:\\precise_arrangement_results\\geometry_direction_20261103_v1",
+  "network_heat_or_model_used": false,
+  "target_reference_read_before_freeze": false
+}

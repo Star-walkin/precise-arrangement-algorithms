@@ -1,0 +1,1481 @@
+{
+  "version": "DR-D4.0.0",
+  "name": "沟宽筛选 D4",
+  "finished_utc": "2026-10-27T14:33:29.903778+00:00",
+  "summary": {
+    "version": "DR-D4.0.0",
+    "planned": 400,
+    "completed": 400,
+    "failed": 0,
+    "source_unchanged": true,
+    "exit_code": 0,
+    "by_camera": {
+      "left": 200,
+      "right": 200
+    },
+    "total_new_points": 2254599,
+    "total_curves": 36458,
+    "images_with_curves": 400,
+    "finished_utc": "2026-10-27T14:26:37.337840+00:00",
+    "accuracy": null,
+    "html_generated": false,
+    "equipment_access": false,
+    "reserved_access": false
+  },
+  "output_image_counts": {
+    "01_阴影二值化": {
+      "left_camera": 200,
+      "right_camera": 200
+    },
+    "02_去细股阴影": {
+      "left_camera": 200,
+      "right_camera": 200
+    },
+    "03_新黄点": {
+      "left_camera": 200,
+      "right_camera": 200
+    },
+    "04_边界结果": {
+      "left_camera": 200,
+      "right_camera": 200
+    }
+  },
+  "source_groups": {
+    "dual_20260923_101517": 40,
+    "dual_20260923_101643": 40,
+    "dual_20260923_113305": 40,
+    "dual_20260924_111143": 40,
+    "dual_20260924_111500": 40,
+    "L_run_20260923_01": 40,
+    "R_run_20260923_01": 40,
+    "L_run_stop_run_20260922_01": 50,
+    "R_run_stop_run_20260922_01": 50,
+    "L_static_20260922_01": 5,
+    "R_static_20260922_01": 5,
+    "ruler_test_离开38.5mm（包括活动绳共计8.5根）": 1,
+    "ruler_test_离开95mm（包括活动绳共计21根）": 1,
+    "ruler_test_靠近23mm": 1,
+    "ruler_test_靠近43mm": 1,
+    "ruler_test_靠近77mm": 1,
+    "ruler_test_离开107.5mm （包括活动绳共计24根）": 1,
+    "ruler_test_离开49mm（包括活动绳共计11根）": 1,
+    "ruler_test_靠近41mm": 1,
+    "ruler_test_靠近80mm": 1,
+    "ruler_test_靠近9.5mm": 1
+  },
+  "scope": "Same400 open development images. Offline dark-region boundary experiment. No claim of independent400conditions.",
+  "input_manifest_sha256": "712859a4a830c08d556729a98cad76d039c684c290d2c4c57efa2b7ad3b45e69",
+  "d1_fixed_output_manifest_sha256": "771d577a960a59d0bbb44be330465a30b22f6a01c5d99a31bb23176e03b9be5c",
+  "freeze_sha256": "18d7b382a23a3a714ef1febac1ca4a81f42a083fd7fa95c0dfecdc39355c03be",
+  "audit": {
+    "planned": 400,
+    "passed": 400,
+    "failed": 0,
+    "limited_body_cases": 0,
+    "images_without_accepted_curves": 0,
+    "global_errors": []
+  },
+  "audit_sha256": "213f8494831bac12285377807729c9e69119b8074ef798da7c17d8f5390737fc",
+  "output_manifest_sha256": "b6956299199ee3cdc504c8da0fdb6fa3b2035f7449c443a985c1e5b33a26035a",
+  "synthetic_check": {
+    "created_utc": "2026-10-27T14:05:40.362491+00:00",
+    "scope": "pure synthetic mechanism and rejection-rule checks; no real images decoded",
+    "accuracy_claim": "none: these checks do not measure real-image boundary accuracy, material identity, contact, or device safety",
+    "source_files": {
+      "selfcheck": {
+        "path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\D4selfcheck.py",
+        "sha256_before": "2e7b22ac7c2026e11f6f49048c36f19979cac2a1cb127bab766c84405911f909",
+        "sha256_after": "2e7b22ac7c2026e11f6f49048c36f19979cac2a1cb127bab766c84405911f909"
+      },
+      "shadow_width": {
+        "path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\shadow_width.py",
+        "sha256_before": "c61a28ca9d6444360fe4067cd5cb25d358458af6c0ca34dd276290638a4731b6",
+        "sha256_after": "c61a28ca9d6444360fe4067cd5cb25d358458af6c0ca34dd276290638a4731b6"
+      },
+      "ribbon_curves": {
+        "path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\ribbon_curves.py",
+        "sha256_before": "655afa84bab0a10038e2cf7646b6c8b97731faa83f58e6b8ee1b8e5ffc93a764",
+        "sha256_after": "655afa84bab0a10038e2cf7646b6c8b97731faa83f58e6b8ee1b8e5ffc93a764"
+      }
+    },
+    "sources_unchanged": true,
+    "cases": [
+      {
+        "name": "shadow_width_mechanism",
+        "status": "passed",
+        "values": {
+          "narrow_2px_binary_pixels": 480,
+          "narrow_2px_cleaned_pixels": 0,
+          "broad_8px_binary_pixels": 960,
+          "broad_8px_cleaned_pixels": 960,
+          "binary_subset_and_array_contracts_passed": true
+        },
+        "elapsed_seconds": 0.04086549999192357
+      },
+      {
+        "name": "shadow_direction_and_empty",
+        "status": "passed",
+        "values": {
+          "vertical_band_supported_pixels": 0,
+          "flat_supported_pixels": 0,
+          "empty_roi_and_none_reference_passed": true
+        },
+        "elapsed_seconds": 0.08028759999433532
+      },
+      {
+        "name": "convex_variable_curvature",
+        "status": "passed",
+        "values": {
+          "minimum_float32_second_difference": -1.52587890625e-05,
+          "analytic_derivative_decrease": 0.0,
+          "edge_minus_center_mean_slope": 0.8762340545654297,
+          "weighted_pava_known_answer": [
+            0.25,
+            0.25,
+            3.0
+          ],
+          "fit_statistics": {
+            "residual_median_px": 0.6513043645169319,
+            "residual_q90_px": 1.9109796505551542,
+            "window_px": 100.0,
+            "knot_count": 41,
+            "vertical_shift_px": 50.52891529366039,
+            "convexity_prior_applied": true,
+            "secant_adjustment_rms": 0.05390349291670717,
+            "derivative_decrease_after_projection": 0.0
+          }
+        },
+        "elapsed_seconds": 0.00641819997690618
+      },
+      {
+        "name": "raster_staircase_rejection",
+        "status": "passed",
+        "values": {
+          "bad_unknown_columns": [
+            10
+          ],
+          "bad_roi_columns": [
+            10
+          ],
+          "fixture_has_clear_endpoints_and_invalid_intermediate_raster_pixel": true
+        },
+        "elapsed_seconds": 0.00013689999468624592
+      },
+      {
+        "name": "full_curve_rules",
+        "status": "passed",
+        "values": {
+          "plain": {
+            "accepted_curves": 1,
+            "rejection_records": 0,
+            "refit_attempts": 0,
+            "inferred_pixels": 0
+          },
+          "body": {
+            "accepted_curves": 2,
+            "rejection_records": 9,
+            "refit_attempts": 0,
+            "inferred_pixels": 0
+          },
+          "unknown": {
+            "accepted_curves": 2,
+            "rejection_records": 9,
+            "refit_attempts": 0,
+            "inferred_pixels": 0
+          },
+          "duplicate": {
+            "accepted_curves": 1,
+            "rejection_records": 1,
+            "refit_attempts": 0,
+            "inferred_pixels": 0
+          },
+          "empty": {
+            "accepted_curves": 0,
+            "rejection_records": 0,
+            "refit_attempts": 0,
+            "inferred_pixels": 0
+          },
+          "short_gap": {
+            "accepted_curves": 1,
+            "rejection_records": 0,
+            "refit_attempts": 0,
+            "inferred_pixels": 14
+          },
+          "long_gap": {
+            "accepted_curves": 2,
+            "rejection_records": 2,
+            "refit_attempts": 1,
+            "inferred_pixels": 0
+          }
+        },
+        "elapsed_seconds": 0.06673580000642687
+      }
+    ],
+    "passed_cases": 5,
+    "total_cases": 5,
+    "exit_code": 0,
+    "environment": {
+      "python": "3.14.6",
+      "numpy": "2.5.1",
+      "opencv": "5.0.0",
+      "platform": "Windows-10-10.0.19045-SP0",
+      "executable": "D:\\precise_arrangement\\vision_prototype\\.venv\\Scripts\\python.exe"
+    },
+    "command_argv": [
+      "数据资产/05_派生与实验结果/camera_condition_dark_width_20261027_v4/D4selfcheck.py",
+      "--output",
+      "数据资产/05_派生与实验结果/camera_condition_dark_width_20261027_v4/selfcheck_records/final_algorithm_synthetic_001.json"
+    ],
+    "reproduce_command": "\"D:\\precise_arrangement\\vision_prototype\\.venv\\Scripts\\python.exe\" -B \"D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\D4selfcheck.py\""
+  },
+  "pilots": [
+    {
+      "run": "pilot_001",
+      "summary": {
+        "version": "DR-D4.0.0",
+        "planned": 12,
+        "completed": 12,
+        "failed": 0,
+        "source_unchanged": true,
+        "exit_code": 0,
+        "by_camera": {
+          "left": 6,
+          "right": 6
+        },
+        "total_new_points": 58700,
+        "total_curves": 1116,
+        "images_with_curves": 12,
+        "finished_utc": "2026-10-27T13:41:05.662899+00:00",
+        "accuracy": null,
+        "html_generated": false,
+        "equipment_access": false,
+        "reserved_access": false
+      },
+      "independent_visual_review": {
+        "version": "DR-D4.0.0",
+        "run": "pilot_001",
+        "reviewer": "independent_agent_d4_diagnosis",
+        "method": "Viewed saved comparison and stage images for exactly three fixed pilot components; no algorithm rerun or truth labels.",
+        "decision": "needs_revision_before_final400",
+        "structural_audit": {
+          "planned": 12,
+          "passed": 12,
+          "failed": 0,
+          "limited_body_cases": 12,
+          "global_errors": []
+        },
+        "conclusion": "Opening suppresses some narrow connections, but beaded remnants, low-information block supports and fragmented/wavy tracks remain. Structural passing is not visual accuracy.",
+        "ground_truth_accuracy": null,
+        "equipment_access": false,
+        "reserved_access": false,
+        "entries": [
+          {
+            "output_file": "images/right_camera/ruler_right_05.png",
+            "bbox_xyxy": [
+              2316,
+              2310,
+              2714,
+              3000
+            ],
+            "paths": [
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_001\\记录\\qa_partial\\ruler_right_05__part0_compare.jpg",
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_001\\记录\\qa_partial\\ruler_right_05__part0_stages.jpg"
+            ],
+            "sha256": {
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_001\\记录\\qa_partial\\ruler_right_05__part0_compare.jpg": "c159b4af9211f41f3614f70d0655d9d6fac325c7c69c526b94cd9d1def754c0f",
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_001\\记录\\qa_partial\\ruler_right_05__part0_stages.jpg": "502a4b8bfddffeac99517ef656bed7ea046dafddc66860d276c8f46470624585"
+            },
+            "actually_viewed": [
+              "compare",
+              "stages"
+            ],
+            "observations": [
+              "原增强图可见较连续、整体向右下弯曲的宽沟及叠加的更细斜股纹。",
+              "开运算移除了不少窄连接，但剩余前景呈串珠、短块状，不能直接称为纯绳间阴影。",
+              "D4新黄点仍在这些短块中出现密集、位置上下变化的排列；接受曲线中部有局部上下起伏及明显断段。",
+              "相比D3，部分右侧曲线能跟随较大的弯曲；但不能凭减少橙线或增加黄点推断识别准确率提升。"
+            ],
+            "recommendations": [
+              "沿局部主切向统计支持持续性，而非把所有足够宽的块都当作有效宽沟。",
+              "抑制短尺度串珠形摆动，保留邻近长沟的平滑方向约束；无证据段继续拒绝。"
+            ]
+          },
+          {
+            "output_file": "images/left_camera/L_run_20260923_01__f000648__left.png",
+            "bbox_xyxy": [
+              886,
+              2369,
+              1312,
+              3000
+            ],
+            "paths": [
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_001\\记录\\qa_partial\\L_run_20260923_01__f000648__left__part0_compare.jpg",
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_001\\记录\\qa_partial\\L_run_20260923_01__f000648__left__part0_stages.jpg"
+            ],
+            "sha256": {
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_001\\记录\\qa_partial\\L_run_20260923_01__f000648__left__part0_compare.jpg": "57aa7a8ca3d806db19c6f08b33a9f4d5be25b46ebbb340862371518bce167e99",
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_001\\记录\\qa_partial\\L_run_20260923_01__f000648__left__part0_stages.jpg": "32150ee8510ccb2afbbd406f1125224d8bb435560536a388e7453cd37e152948"
+            },
+            "actually_viewed": [
+              "compare",
+              "stages"
+            ],
+            "observations": [
+              "中左部分增强后主要呈粗块、竖条和低信息暗区；右侧才有更清楚的重复绳纹。",
+              "Raw和Opened均保留大片纵向块状前景。开运算的宽度测试无法区分这种宽块与真实绳间沟。",
+              "新点出现在低信息区的零散块边。D4部分顶部及中部接受曲线缺乏图中可见的连续同向绳沟支持。",
+              "不能断言这些像素的真实边界位置；现有图只能支持低置信或未解析，而不能把块状变化解释成精确绳边。"
+            ],
+            "recommendations": [
+              "原图局部方向一致性和多条近似周期绳沟证据不足时进入unknown/拒识。",
+              "不要仅增加阈值或开运算尺寸；宽块仍可通过且会损坏真实细窄沟。"
+            ]
+          },
+          {
+            "output_file": "images/right_camera/dual_20260923_101643__pair0315__right.png",
+            "bbox_xyxy": [
+              2376,
+              2073,
+              2973,
+              3000
+            ],
+            "paths": [
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_001\\记录\\qa_partial\\dual_20260923_101643__pair0315__right__part0_compare.jpg",
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_001\\记录\\qa_partial\\dual_20260923_101643__pair0315__right__part0_stages.jpg"
+            ],
+            "sha256": {
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_001\\记录\\qa_partial\\dual_20260923_101643__pair0315__right__part0_compare.jpg": "1d6dc9e0304e4267648463d2b4b34baa562640b7cb4b870d28e3ee94e5fb5e1a",
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_001\\记录\\qa_partial\\dual_20260923_101643__pair0315__right__part0_stages.jpg": "a6c55d16898144eb99ec2485255bd4c303c0f8703a59322011606646bceff8f0"
+            },
+            "actually_viewed": [
+              "compare",
+              "stages"
+            ],
+            "observations": [
+              "左半部二值化宽条较连续，D4接受曲线总体顺着可见条纹。",
+              "靠右侧圆柱轮廓处，前景从长宽条变成短斜块并混入细股纹；新黄点散乱和曲线终止/分裂随之增多。",
+              "白色斜活动绳横跨区域未被整条拟合直接贯穿，是当前拒绝遮挡补线规则的正面表现。",
+              "右缘局部仍有短碎片，不能从其数学平滑或结构审计推定它们属于同一真实绳间沟。"
+            ],
+            "recommendations": [
+              "在透视压缩区采用局部切向/法向尺度并要求沿切向支持持续；避免固定尺寸核全面加大。",
+              "继续把斜活动绳作为未知遮挡，不能用其亮体/阴影重新定义卷面相邻绳的身份。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "run": "pilot_002",
+      "summary": {
+        "version": "DR-D4.0.0",
+        "planned": 12,
+        "completed": 12,
+        "failed": 0,
+        "source_unchanged": true,
+        "exit_code": 0,
+        "by_camera": {
+          "left": 6,
+          "right": 6
+        },
+        "total_new_points": 58541,
+        "total_curves": 972,
+        "images_with_curves": 12,
+        "finished_utc": "2026-10-27T13:56:57.578868+00:00",
+        "accuracy": null,
+        "html_generated": false,
+        "equipment_access": false,
+        "reserved_access": false
+      },
+      "independent_visual_review": {
+        "version": "DR-D4.0.0",
+        "run": "pilot_002",
+        "reviewer": "independent_agent_d4_diagnosis",
+        "assessment": "improved_but_mixed_and_incomplete",
+        "method": "Actual visual review of same three fixed component comparison and stage images; compare to viewed pilot001 and unchanged D3.0.1, no tuning.",
+        "conclusion": "Broad groove extraction and rejection of low-information false support visibly improved. Middle/side fragments and local wavy tracks remain. Do not present structural passing or point counts as accuracy.",
+        "structural_audit": {
+          "planned": 12,
+          "passed": 12,
+          "failed": 0,
+          "limited_body_cases": 0,
+          "global_errors": []
+        },
+        "body_validation": "All12 use saved float32 NPZ; no PNG-limited body validation cases.",
+        "ground_truth_accuracy": null,
+        "equipment_access": false,
+        "reserved_access": false,
+        "entries": [
+          {
+            "output_file": "images/right_camera/ruler_right_05.png",
+            "bbox_xyxy": [
+              2316,
+              2310,
+              2714,
+              3000
+            ],
+            "paths": [
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_002\\记录\\qa_comparisons\\ruler_right_05__part0_compare.jpg",
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_002\\记录\\qa_comparisons\\ruler_right_05__part0_stages.jpg"
+            ],
+            "sha256": {
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_002\\记录\\qa_comparisons\\ruler_right_05__part0_compare.jpg": "bc0a7f6137c3cf8124857937be048fb4ca1a79850e515c61b10ea051c7220c7f",
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_002\\记录\\qa_comparisons\\ruler_right_05__part0_stages.jpg": "208dcfe59cbdd5139cd54dbc5d1a82a571484435a26e48cee7bfe784020d421e"
+            },
+            "actually_viewed": [
+              "compare",
+              "stages"
+            ],
+            "pilot001_reference_paths": [
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_001\\记录\\qa_partial\\ruler_right_05__part0_compare.jpg",
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_001\\记录\\qa_partial\\ruler_right_05__part0_stages.jpg"
+            ],
+            "assessment": "improved_with_remaining_wavy_and_broken_midsection",
+            "visible_changes": [
+              "对照pilot001，开运算后的长宽条更连贯，串珠/短块明显减少。",
+              "接受曲线仍在中部存在断段、局部小幅上下起伏，尚未成为连续平滑的整组边界。",
+              "相比D3不再把大量弱证据区用长橙线连接，但这不等于所有新短段都对应正确的绳间沟。"
+            ],
+            "remaining_limit": "缺失区域和细股竞争仍存在；仅凭二值条带更顺不能证明物理或像素级准确。"
+          },
+          {
+            "output_file": "images/left_camera/L_run_20260923_01__f000648__left.png",
+            "bbox_xyxy": [
+              886,
+              2369,
+              1312,
+              3000
+            ],
+            "paths": [
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_002\\记录\\qa_comparisons\\L_run_20260923_01__f000648__left__part0_compare.jpg",
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_002\\记录\\qa_comparisons\\L_run_20260923_01__f000648__left__part0_stages.jpg"
+            ],
+            "sha256": {
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_002\\记录\\qa_comparisons\\L_run_20260923_01__f000648__left__part0_compare.jpg": "929b170d71addce60e92249e7e9a399d0a03536ed79ee4dab56e1c5e175446d3",
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_002\\记录\\qa_comparisons\\L_run_20260923_01__f000648__left__part0_stages.jpg": "c3a116905f999a4c6799bca75656c1bd9c52dee6779748c570fca1b64ac2cadf"
+            },
+            "actually_viewed": [
+              "compare",
+              "stages"
+            ],
+            "pilot001_reference_paths": [
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_001\\记录\\qa_partial\\L_run_20260923_01__f000648__left__part0_compare.jpg",
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_001\\记录\\qa_partial\\L_run_20260923_01__f000648__left__part0_stages.jpg"
+            ],
+            "assessment": "improved_rejection_in_low_information_region",
+            "visible_changes": [
+              "pilot001顶部和中左低信息块状区域的一些无清晰连续沟支持的曲线，在pilot002中不再接受。",
+              "有效输出主要集中到右侧可见重复纹理，视觉上降低了把宽块/竖条当成绳边的风险。",
+              "Raw/Opened仍包含宽大块和纵向变化，新点仍有零星响应，但大部分未变成接受曲线。"
+            ],
+            "remaining_limit": "这是拒识改善，不能说该区域边界被恢复；原增强图中不能确定精确边界位置。"
+          },
+          {
+            "output_file": "images/right_camera/dual_20260923_101643__pair0315__right.png",
+            "bbox_xyxy": [
+              2376,
+              2073,
+              2973,
+              3000
+            ],
+            "paths": [
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_002\\记录\\qa_comparisons\\dual_20260923_101643__pair0315__right__part0_compare.jpg",
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_002\\记录\\qa_comparisons\\dual_20260923_101643__pair0315__right__part0_stages.jpg"
+            ],
+            "sha256": {
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_002\\记录\\qa_comparisons\\dual_20260923_101643__pair0315__right__part0_compare.jpg": "d53ffd9bd9654563285e31bbd3fb0d8a35acf216e8e6f9f1efa70f69e26fcb09",
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_002\\记录\\qa_comparisons\\dual_20260923_101643__pair0315__right__part0_stages.jpg": "cc487a7e70d1f1d217cb44f776abd9cf4e61bf17d68e08a5b2bb9d9c9a41eb5d"
+            },
+            "actually_viewed": [
+              "compare",
+              "stages"
+            ],
+            "pilot001_reference_paths": [
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_001\\记录\\qa_partial\\dual_20260923_101643__pair0315__right__part0_compare.jpg",
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_001\\记录\\qa_partial\\dual_20260923_101643__pair0315__right__part0_stages.jpg"
+            ],
+            "assessment": "improved_broad_bands_but_right_edge_still_incomplete",
+            "visible_changes": [
+              "左中部宽条比pilot001更干净顺滑，接受曲线总体跟随可见宽沟走势。",
+              "白色斜活动绳区域仍未被整条拟合强行贯穿。",
+              "最右侧仍有短段、漏段、细股纹竞争；部分曲线提前结束，没有完成全部侧缘。"
+            ],
+            "remaining_limit": "侧缘覆盖与同一真实绳沟身份仍未经过独立真值验证。"
+          }
+        ]
+      }
+    },
+    {
+      "run": "pilot_003",
+      "summary": {
+        "version": "DR-D4.0.0",
+        "planned": 12,
+        "completed": 12,
+        "failed": 0,
+        "source_unchanged": true,
+        "exit_code": 0,
+        "by_camera": {
+          "left": 6,
+          "right": 6
+        },
+        "total_new_points": 58541,
+        "total_curves": 992,
+        "images_with_curves": 12,
+        "finished_utc": "2026-10-27T14:03:59.340948+00:00",
+        "accuracy": null,
+        "html_generated": false,
+        "equipment_access": false,
+        "reserved_access": false
+      },
+      "independent_visual_review": {
+        "version": "DR-D4.0.0",
+        "run": "pilot_003",
+        "reviewer": "independent_agent_d4_diagnosis",
+        "decision": "acceptable_to_freeze_as_experimental_version_for_same400_user_review",
+        "limits": "Not an assertion of all-correct segmentation, complete coverage, material identity or industrial validation. Remaining gaps/fragments must be disclosed.",
+        "method": "Actual same3 fixed comparison images viewed against earlier viewed002 and unchangedD3. No algorithm edits or tuning.",
+        "structural_audit": {
+          "planned": 12,
+          "passed": 12,
+          "failed": 0,
+          "limited_body_cases": 0,
+          "global_errors": []
+        },
+        "shape_diagnostic": {
+          "run": "pilot_003",
+          "method": "Saved samples only; independent second difference diagnostic for curves explicitly declaring convexity prior. No fitting rerun or gate relaxation.",
+          "tolerance": 0.001,
+          "curve_count": 992,
+          "curves_with_negative_second_difference_beyond_tolerance": 0,
+          "minimum_second_difference": -0.000244140625,
+          "visual_accuracy": null
+        },
+        "ground_truth_accuracy": null,
+        "equipment_access": false,
+        "reserved_access": false,
+        "entries": [
+          {
+            "output_file": "images/right_camera/ruler_right_05.png",
+            "bbox_xyxy": [
+              2316,
+              2310,
+              2714,
+              3000
+            ],
+            "paths": [
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_003\\记录\\qa_comparisons\\ruler_right_05__part0_compare.jpg",
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_003\\记录\\qa_comparisons\\ruler_right_05__part0_stages.jpg"
+            ],
+            "sha256": {
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_003\\记录\\qa_comparisons\\ruler_right_05__part0_compare.jpg": "199ae33a90ff7757d45ca566d2ee909b429d0399c67268345eb3e402f6b97fd7",
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_003\\记录\\qa_comparisons\\ruler_right_05__part0_stages.jpg": "208dcfe59cbdd5139cd54dbc5d1a82a571484435a26e48cee7bfe784020d421e"
+            },
+            "actually_viewed": [
+              "compare"
+            ],
+            "pilot002_reference_paths": [
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_002\\记录\\qa_comparisons\\ruler_right_05__part0_compare.jpg",
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_002\\记录\\qa_comparisons\\ruler_right_05__part0_stages.jpg"
+            ],
+            "observations": [
+              "相比002，接受片段减少了小尺度反复起伏，主要弯曲方向更一致。",
+              "中段仍有断段与短片段，右缘也未形成所有边界连续覆盖。",
+              "相比D3减少了跨弱证据区域的长连接；不能将平滑性当作真实边界正确性。"
+            ]
+          },
+          {
+            "output_file": "images/left_camera/L_run_20260923_01__f000648__left.png",
+            "bbox_xyxy": [
+              886,
+              2369,
+              1312,
+              3000
+            ],
+            "paths": [
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_003\\记录\\qa_comparisons\\L_run_20260923_01__f000648__left__part0_compare.jpg",
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_003\\记录\\qa_comparisons\\L_run_20260923_01__f000648__left__part0_stages.jpg"
+            ],
+            "sha256": {
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_003\\记录\\qa_comparisons\\L_run_20260923_01__f000648__left__part0_compare.jpg": "213d20b3fbddbaa8ff70b1595cb3ebbd118b72852bf764c1a1d58c4734943dbc",
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_003\\记录\\qa_comparisons\\L_run_20260923_01__f000648__left__part0_stages.jpg": "c3a116905f999a4c6799bca75656c1bd9c52dee6779748c570fca1b64ac2cadf"
+            },
+            "actually_viewed": [
+              "compare"
+            ],
+            "pilot002_reference_paths": [
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_002\\记录\\qa_comparisons\\L_run_20260923_01__f000648__left__part0_compare.jpg",
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_002\\记录\\qa_comparisons\\L_run_20260923_01__f000648__left__part0_stages.jpg"
+            ],
+            "observations": [
+              "与002相同，中左缺少清楚沟纹的块状区域主要拒识；输出集中右侧可辨重复纹理。",
+              "未见重新恢复001中的低信息区长波浪误连，拒识改善保留。",
+              "右侧局部短线较顺，但此图没有恢复整块暗区边界。"
+            ]
+          },
+          {
+            "output_file": "images/right_camera/dual_20260923_101643__pair0315__right.png",
+            "bbox_xyxy": [
+              2376,
+              2073,
+              2973,
+              3000
+            ],
+            "paths": [
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_003\\记录\\qa_comparisons\\dual_20260923_101643__pair0315__right__part0_compare.jpg",
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_003\\记录\\qa_comparisons\\dual_20260923_101643__pair0315__right__part0_stages.jpg"
+            ],
+            "sha256": {
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_003\\记录\\qa_comparisons\\dual_20260923_101643__pair0315__right__part0_compare.jpg": "ad0b17831a4d79521989654b141463b2a424fcf8c9a1108a631148bc2ec3793a",
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_003\\记录\\qa_comparisons\\dual_20260923_101643__pair0315__right__part0_stages.jpg": "cc487a7e70d1f1d217cb44f776abd9cf4e61bf17d68e08a5b2bb9d9c9a41eb5d"
+            },
+            "actually_viewed": [
+              "compare"
+            ],
+            "pilot002_reference_paths": [
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_002\\记录\\qa_comparisons\\dual_20260923_101643__pair0315__right__part0_compare.jpg",
+              "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\pilot_002\\记录\\qa_comparisons\\dual_20260923_101643__pair0315__right__part0_stages.jpg"
+            ],
+            "observations": [
+              "纹理较清楚区域接受曲线较顺，白色活动绳附近仍断开。",
+              "对比002总体形态相近、少了局部摆动；右侧边缘仍有短段与缺口。",
+              "对比D3没有用长橙线强制覆盖所有缺失，优势主要是约束与拒识而非全部覆盖。"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "post_freeze_fixed_extra12_reviews": [
+    {
+      "version": "DR-D4.0.0",
+      "run": "all_001",
+      "reviewer": "independent_agent_d4_diagnosis",
+      "camera": "left",
+      "method": "Actually viewed all13 major-component D1/D3.0.1/D4 side-by-side comparisons of fixed additional6 left images after final freeze and400 completion. No tuning or label use.",
+      "selection_rule": "Existing QA19 sorted indices1,5,8,11,15,17; open development material, not independent blind test.",
+      "overall_assessment": "mixed: useful smooth local segments and less unsupported extension; remaining gaps, weak-dark-region segments and incomplete coverage.",
+      "viewed_image_count": 6,
+      "viewed_component_count": 13,
+      "ground_truth_accuracy": null,
+      "equipment_access": false,
+      "reserved_access": false,
+      "warning": "Do not translate structural400/400 passing, number of yellow points, or visually smoother lines into segmentation accuracy. All original failures and empty regions remain visible.",
+      "qa_index_sha256": "e2dc701b6c2ace4ca8ed51c94ce80d0f05b363798910b1379d181d356346029c",
+      "entries": [
+        {
+          "output_file": "images/left_camera/L_run_stop_run_20260922_01__f000046__left.png",
+          "assessment": "mixed_better_low_information_rejection_but_more_fragments",
+          "improvement": "低信息块状区上较长的D3延长线减少；清楚纹理处仍能形成成排边界。",
+          "limitation": "条纹过渡到量化块的区域仍有短段，既有疑似残余假支持，也有漏段；无法由视觉比较确定全部归属。",
+          "coverage_change": "最暗块状区覆盖收缩，纹理区整体保留但连续性下降。",
+          "components": [
+            {
+              "output_file": "images/left_camera/L_run_stop_run_20260922_01__f000046__left.png",
+              "bbox_xyxy": [
+                1996,
+                2174,
+                2668,
+                2997
+              ],
+              "component_area_px": 448671,
+              "original_wh": [
+                4096,
+                3000
+              ],
+              "display_scale": 0.9720534629404617,
+              "panel_wh": [
+                653,
+                830
+              ],
+              "comparison": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\记录\\qa_additional\\L_run_stop_run_20260922_01__f000046__left__part0.jpg",
+              "sha256": "7d9f9d0bb9818afabdea3ffc7e9ddd02fc3f36a869bc87e278217574a01d8236",
+              "input_sha256": {
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\all_001\\记录\\masks\\dark_roi\\left_camera\\L_run_stop_run_20260922_01__f000046__left.png": "3474165c3d31f0e39748cd4894336bf3824bdd05b40896ea672839a61082585c",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\all_001\\图像结果\\02_对比度增强ROI\\left_camera\\L_run_stop_run_20260922_01__f000046__left.png": "233033283361de3f043418e4fcb386f921cbc3992f430877ebb9716d016f4ca4",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\all_001\\图像结果\\left_camera\\L_run_stop_run_20260922_01__f000046__left.png": "5131df393bdb7e6f5ff4995109bb43aa5fcd742d9ef2d29d1271b6a1f1feded9",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\图像结果\\04_边界结果\\left_camera\\L_run_stop_run_20260922_01__f000046__left.png": "4f30a04c66d2782354e7c15b2d1128b64b203cc005a21e07ac67336e1196eeb7"
+              },
+              "actually_viewed": true,
+              "visible_improvement": "左中纹理区域仍有多条顺着绳纹的曲线，D4在右侧大块暗区之前较早结束。",
+              "remaining_limitation": "中段断接和短片段较多，少数线终点仍靠近块状过渡。",
+              "coverage_change": "与D3相比右侧延伸缩短。"
+            },
+            {
+              "output_file": "images/left_camera/L_run_stop_run_20260922_01__f000046__left.png",
+              "bbox_xyxy": [
+                418,
+                2298,
+                1180,
+                3000
+              ],
+              "component_area_px": 446505,
+              "original_wh": [
+                4096,
+                3000
+              ],
+              "display_scale": 1.0,
+              "panel_wh": [
+                762,
+                732
+              ],
+              "comparison": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\记录\\qa_additional\\L_run_stop_run_20260922_01__f000046__left__part1.jpg",
+              "sha256": "cc7f6173f42341a658d536fddf373039c3e22dae131a049963b94149f54f37cf",
+              "input_sha256": {
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\all_001\\记录\\masks\\dark_roi\\left_camera\\L_run_stop_run_20260922_01__f000046__left.png": "3474165c3d31f0e39748cd4894336bf3824bdd05b40896ea672839a61082585c",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\all_001\\图像结果\\02_对比度增强ROI\\left_camera\\L_run_stop_run_20260922_01__f000046__left.png": "233033283361de3f043418e4fcb386f921cbc3992f430877ebb9716d016f4ca4",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\all_001\\图像结果\\left_camera\\L_run_stop_run_20260922_01__f000046__left.png": "5131df393bdb7e6f5ff4995109bb43aa5fcd742d9ef2d29d1271b6a1f1feded9",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\图像结果\\04_边界结果\\left_camera\\L_run_stop_run_20260922_01__f000046__left.png": "4f30a04c66d2782354e7c15b2d1128b64b203cc005a21e07ac67336e1196eeb7"
+              },
+              "actually_viewed": true,
+              "visible_improvement": "极左低信息区没有强行铺线，右侧较清晰纹理仍有分组。",
+              "remaining_limitation": "中间大量短段不再连成D3长弧，覆盖不能算全面提高。",
+              "coverage_change": "暗侧收缩且连续边界变碎。"
+            },
+            {
+              "output_file": "images/left_camera/L_run_stop_run_20260922_01__f000046__left.png",
+              "bbox_xyxy": [
+                664,
+                2131,
+                1180,
+                2347
+              ],
+              "component_area_px": 65588,
+              "original_wh": [
+                4096,
+                3000
+              ],
+              "display_scale": 1.0,
+              "panel_wh": [
+                516,
+                246
+              ],
+              "comparison": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\记录\\qa_additional\\L_run_stop_run_20260922_01__f000046__left__part2.jpg",
+              "sha256": "d6037339f8e7f8ce63f1f413a170416a8c61ceae26cabaad3071f3bdfdc60353",
+              "input_sha256": {
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\all_001\\记录\\masks\\dark_roi\\left_camera\\L_run_stop_run_20260922_01__f000046__left.png": "3474165c3d31f0e39748cd4894336bf3824bdd05b40896ea672839a61082585c",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\all_001\\图像结果\\02_对比度增强ROI\\left_camera\\L_run_stop_run_20260922_01__f000046__left.png": "233033283361de3f043418e4fcb386f921cbc3992f430877ebb9716d016f4ca4",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\all_001\\图像结果\\left_camera\\L_run_stop_run_20260922_01__f000046__left.png": "5131df393bdb7e6f5ff4995109bb43aa5fcd742d9ef2d29d1271b6a1f1feded9",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\图像结果\\04_边界结果\\left_camera\\L_run_stop_run_20260922_01__f000046__left.png": "4f30a04c66d2782354e7c15b2d1128b64b203cc005a21e07ac67336e1196eeb7"
+              },
+              "actually_viewed": true,
+              "visible_improvement": "D3延伸至左侧块状尖端的长线被去掉，D4主要保留右侧有纹理段。",
+              "remaining_limitation": "较清楚的右侧仍有空缺和短线。",
+              "coverage_change": "拒识增多；左端没有恢复边界。"
+            }
+          ]
+        },
+        {
+          "output_file": "images/left_camera/dual_20260923_101517__pair0315__left.png",
+          "assessment": "mostly_plausible_broad_curve_shape_with_local_gaps",
+          "improvement": "两侧较清楚的宽沟上，接受曲线大体顺着弯曲走势；大量D3橙色强延长变成有支持的短段或留空。",
+          "limitation": "part0中下部有明显缺口；形态平顺并不能排除相邻细股纹错归。",
+          "coverage_change": "part1较连续；part0局部覆盖破碎，不能称全图增益。",
+          "components": [
+            {
+              "output_file": "images/left_camera/dual_20260923_101517__pair0315__left.png",
+              "bbox_xyxy": [
+                592,
+                2284,
+                1240,
+                3000
+              ],
+              "component_area_px": 378869,
+              "original_wh": [
+                4096,
+                3000
+              ],
+              "display_scale": 1.0,
+              "panel_wh": [
+                648,
+                746
+              ],
+              "comparison": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\记录\\qa_additional\\dual_20260923_101517__pair0315__left__part0.jpg",
+              "sha256": "58ec87734ce1deb2db13353ea0dfcb9c7510148652759548d69d06b7ad4b11c8",
+              "input_sha256": {
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\all_001\\记录\\masks\\dark_roi\\left_camera\\dual_20260923_101517__pair0315__left.png": "0e5d07fe6bce03c25505656903cf9dbf873cf8f97216ac636acbb08d1056acb1",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\all_001\\图像结果\\02_对比度增强ROI\\left_camera\\dual_20260923_101517__pair0315__left.png": "415c25a0ac71e6c9cd6086ecd33762b7faa0532d2b7a9bf9ffb110f0aebeb30b",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\all_001\\图像结果\\left_camera\\dual_20260923_101517__pair0315__left.png": "aaf20fc918565e5db864b19b82e1237490468cc73fc9f6ba8268013087f49c83",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\图像结果\\04_边界结果\\left_camera\\dual_20260923_101517__pair0315__left.png": "4d272ff113d680a61bc17f18e3ac7be72367c3c83363f1c872326b946ac96e9c"
+              },
+              "actually_viewed": true,
+              "visible_improvement": "上半及左侧弯曲区域的曲线家族较平顺。",
+              "remaining_limitation": "中下部有成片短段和断裂，原图仍可见多条纹理。",
+              "coverage_change": "连续性低于D3的长弧展示，正确覆盖比例未知。"
+            },
+            {
+              "output_file": "images/left_camera/dual_20260923_101517__pair0315__left.png",
+              "bbox_xyxy": [
+                1912,
+                2313,
+                2444,
+                3000
+              ],
+              "component_area_px": 303849,
+              "original_wh": [
+                4096,
+                3000
+              ],
+              "display_scale": 1.0,
+              "panel_wh": [
+                532,
+                717
+              ],
+              "comparison": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\记录\\qa_additional\\dual_20260923_101517__pair0315__left__part1.jpg",
+              "sha256": "b44d0bfaca5e55d845a8d7c9863d1e5332fe32b20123f527fc63d901f6b03c9f",
+              "input_sha256": {
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\all_001\\记录\\masks\\dark_roi\\left_camera\\dual_20260923_101517__pair0315__left.png": "0e5d07fe6bce03c25505656903cf9dbf873cf8f97216ac636acbb08d1056acb1",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\all_001\\图像结果\\02_对比度增强ROI\\left_camera\\dual_20260923_101517__pair0315__left.png": "415c25a0ac71e6c9cd6086ecd33762b7faa0532d2b7a9bf9ffb110f0aebeb30b",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\all_001\\图像结果\\left_camera\\dual_20260923_101517__pair0315__left.png": "aaf20fc918565e5db864b19b82e1237490468cc73fc9f6ba8268013087f49c83",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\图像结果\\04_边界结果\\left_camera\\dual_20260923_101517__pair0315__left.png": "4d272ff113d680a61bc17f18e3ac7be72367c3c83363f1c872326b946ac96e9c"
+              },
+              "actually_viewed": true,
+              "visible_improvement": "多数宽沟条纹上的曲线贯穿较长距离，右侧弯曲趋势自然。",
+              "remaining_limitation": "边缘处仍有个别提前停止、短缺口，未确认逐根归属。",
+              "coverage_change": "是额外左样本中较完整的一块；没有量化真值评价。"
+            }
+          ]
+        },
+        {
+          "output_file": "images/left_camera/dual_20260924_111143__pair0015__left.png",
+          "assessment": "mixed_broad_shapes_retained_dark_edge_still_weak",
+          "improvement": "清楚纹理一侧保留了较顺的宽沟走向。",
+          "limitation": "暗端有孤立接受片段，原图支持弱；另一侧中部断裂较多。",
+          "coverage_change": "左暗端与中部的覆盖仍不完整，不能将所有拒识都视作改进。",
+          "components": [
+            {
+              "output_file": "images/left_camera/dual_20260924_111143__pair0015__left.png",
+              "bbox_xyxy": [
+                504,
+                2239,
+                1212,
+                3000
+              ],
+              "component_area_px": 437757,
+              "original_wh": [
+                4096,
+                3000
+              ],
+              "display_scale": 1.0,
+              "panel_wh": [
+                708,
+                791
+              ],
+              "comparison": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\记录\\qa_additional\\dual_20260924_111143__pair0015__left__part0.jpg",
+              "sha256": "3abcc192fc055545e9c1e719fd8259c499df58fc6a6d0914e9a37fdbd59a5a88",
+              "input_sha256": {
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\all_001\\记录\\masks\\dark_roi\\left_camera\\dual_20260924_111143__pair0015__left.png": "5e0faa022e7a24fbda8c967429a94e47b18e40b32c141baf2672cbec5c754a9c",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\all_001\\图像结果\\02_对比度增强ROI\\left_camera\\dual_20260924_111143__pair0015__left.png": "ef666c5e0729b399a313b2c5394c61724a28cf6651536771ec6f61576b36aa09",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\all_001\\图像结果\\left_camera\\dual_20260924_111143__pair0015__left.png": "a5bae62041d70b9ab9bfccdf3daee11eaad2a12c904c7b75c96308c446f84408",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\图像结果\\04_边界结果\\left_camera\\dual_20260924_111143__pair0015__left.png": "93cb880afca9f5efd3e32ee5ac50144720d81067cd39e8e7261ab17b74157a0c"
+              },
+              "actually_viewed": true,
+              "visible_improvement": "右侧条纹较清晰区域的曲线与大体弯曲趋势一致。",
+              "remaining_limitation": "左下极暗区仍出现少量孤立短段，不能从图上确认它们属于真实绳间沟。",
+              "coverage_change": "从亮侧向暗侧逐渐碎裂，没有完整恢复最暗侧。"
+            },
+            {
+              "output_file": "images/left_camera/dual_20260924_111143__pair0015__left.png",
+              "bbox_xyxy": [
+                1936,
+                2279,
+                2517,
+                3000
+              ],
+              "component_area_px": 338544,
+              "original_wh": [
+                4096,
+                3000
+              ],
+              "display_scale": 1.0,
+              "panel_wh": [
+                581,
+                751
+              ],
+              "comparison": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\记录\\qa_additional\\dual_20260924_111143__pair0015__left__part1.jpg",
+              "sha256": "c1f5638978f715af8a93a908ab2143c41cb7e389f71e9be386b469b6199ce10e",
+              "input_sha256": {
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\all_001\\记录\\masks\\dark_roi\\left_camera\\dual_20260924_111143__pair0015__left.png": "5e0faa022e7a24fbda8c967429a94e47b18e40b32c141baf2672cbec5c754a9c",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\all_001\\图像结果\\02_对比度增强ROI\\left_camera\\dual_20260924_111143__pair0015__left.png": "ef666c5e0729b399a313b2c5394c61724a28cf6651536771ec6f61576b36aa09",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\all_001\\图像结果\\left_camera\\dual_20260924_111143__pair0015__left.png": "a5bae62041d70b9ab9bfccdf3daee11eaad2a12c904c7b75c96308c446f84408",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\图像结果\\04_边界结果\\left_camera\\dual_20260924_111143__pair0015__left.png": "93cb880afca9f5efd3e32ee5ac50144720d81067cd39e8e7261ab17b74157a0c"
+              },
+              "actually_viewed": true,
+              "visible_improvement": "右侧曲率较大区域的多条接受曲线顺着总体轮廓。",
+              "remaining_limitation": "中部与下部存在缺口，部分有可见纹理的位置也没有连续输出。",
+              "coverage_change": "相对D3强延长减少，但连续覆盖明显破碎。"
+            }
+          ]
+        },
+        {
+          "output_file": "images/left_camera/dual_20260924_111500__pair0015__left.png",
+          "assessment": "mixed_partial_curvature_fit_and_rejection",
+          "improvement": "右侧较清晰条纹上的成排曲线较顺，明显长距离无依据补线减少。",
+          "limitation": "极暗左侧残留独立短段；另一块中间有多段缺失。",
+          "coverage_change": "有纹理区域保留大量边界段，但暗端与中部没有形成完整连续边界。",
+          "components": [
+            {
+              "output_file": "images/left_camera/dual_20260924_111500__pair0015__left.png",
+              "bbox_xyxy": [
+                480,
+                2278,
+                1192,
+                3000
+              ],
+              "component_area_px": 424202,
+              "original_wh": [
+                4096,
+                3000
+              ],
+              "display_scale": 1.0,
+              "panel_wh": [
+                712,
+                752
+              ],
+              "comparison": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\记录\\qa_additional\\dual_20260924_111500__pair0015__left__part0.jpg",
+              "sha256": "74b9c36b8600f27761d4a01b3e374c35d10724ef2b1d8f758f2469d12a12832f",
+              "input_sha256": {
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\all_001\\记录\\masks\\dark_roi\\left_camera\\dual_20260924_111500__pair0015__left.png": "a775fa193eaf67f6c89771cba7c5f320a0411101c8b547cbf0a28cc1b352fe91",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\all_001\\图像结果\\02_对比度增强ROI\\left_camera\\dual_20260924_111500__pair0015__left.png": "d107682a9fc39b20cd1bd7fe3997815ec8f357e3b7a8eb7e613d4372cbb147d7",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\all_001\\图像结果\\left_camera\\dual_20260924_111500__pair0015__left.png": "383e3f401dbe07c4b1f3f88f0b72ace016e9900f31551533f3333887338ec42a",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\图像结果\\04_边界结果\\left_camera\\dual_20260924_111500__pair0015__left.png": "89bc31c29d5161805407368590fd51e3c9c8326267a2da55ef508db1fa3fee32"
+              },
+              "actually_viewed": true,
+              "visible_improvement": "清楚一侧的曲线沿可见绳纹展开，弯曲方向一致。",
+              "remaining_limitation": "左侧较暗区域的短斜片段证据不足；下部少数孤立段仍需人工复核。",
+              "coverage_change": "不再像D3一样整体铺长弧，但没有填完暗侧。"
+            },
+            {
+              "output_file": "images/left_camera/dual_20260924_111500__pair0015__left.png",
+              "bbox_xyxy": [
+                1932,
+                2272,
+                2536,
+                3000
+              ],
+              "component_area_px": 359479,
+              "original_wh": [
+                4096,
+                3000
+              ],
+              "display_scale": 1.0,
+              "panel_wh": [
+                604,
+                758
+              ],
+              "comparison": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\记录\\qa_additional\\dual_20260924_111500__pair0015__left__part1.jpg",
+              "sha256": "066b296bd77bc87e392315df0dc45218bfd7b053604229a9b281bba44a74b2d7",
+              "input_sha256": {
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\all_001\\记录\\masks\\dark_roi\\left_camera\\dual_20260924_111500__pair0015__left.png": "a775fa193eaf67f6c89771cba7c5f320a0411101c8b547cbf0a28cc1b352fe91",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\all_001\\图像结果\\02_对比度增强ROI\\left_camera\\dual_20260924_111500__pair0015__left.png": "d107682a9fc39b20cd1bd7fe3997815ec8f357e3b7a8eb7e613d4372cbb147d7",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\all_001\\图像结果\\left_camera\\dual_20260924_111500__pair0015__left.png": "383e3f401dbe07c4b1f3f88f0b72ace016e9900f31551533f3333887338ec42a",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\图像结果\\04_边界结果\\left_camera\\dual_20260924_111500__pair0015__left.png": "89bc31c29d5161805407368590fd51e3c9c8326267a2da55ef508db1fa3fee32"
+              },
+              "actually_viewed": true,
+              "visible_improvement": "左右两端不少局部曲线较顺。",
+              "remaining_limitation": "中间多处断口，不能仅靠更细的蓝线判为更准。",
+              "coverage_change": "较D3的连续长弧更碎，有可见纹理处仍存在输出空缺。"
+            }
+          ]
+        },
+        {
+          "output_file": "images/left_camera/ruler_left_02.png",
+          "assessment": "occlusion_respected_but_surface_coverage_partial",
+          "improvement": "斜活动绳横跨处保持分离，没有用整组长线直接穿过白色绳体。",
+          "limitation": "下面暗侧和另一块中部仍有碎片与缺口，细股纹干扰未能从这些图证明完全消除。",
+          "coverage_change": "活动绳附近合理断开；其余表面也有非遮挡缺口。",
+          "components": [
+            {
+              "output_file": "images/left_camera/ruler_left_02.png",
+              "bbox_xyxy": [
+                409,
+                2427,
+                1256,
+                3000
+              ],
+              "component_area_px": 258086,
+              "original_wh": [
+                4096,
+                3000
+              ],
+              "display_scale": 0.9445100354191264,
+              "panel_wh": [
+                800,
+                571
+              ],
+              "comparison": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\记录\\qa_additional\\ruler_left_02__part0.jpg",
+              "sha256": "ffbdf37bd1ca5e2af4c09fe561227e91449e876c33a28d99eb9cde8b6b7e5f89",
+              "input_sha256": {
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\all_001\\记录\\masks\\dark_roi\\left_camera\\ruler_left_02.png": "4451f6064fc32086849f67be57949d9dc676d2268aacd619465c709307ce634e",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\all_001\\图像结果\\02_对比度增强ROI\\left_camera\\ruler_left_02.png": "aa70f5f7516568fd1a027a9ebaaa78a14ab83966a66c3962324b7c402922d3c3",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\all_001\\图像结果\\left_camera\\ruler_left_02.png": "34d0713cbc2530e6ff28931e74c3f66e15a1673d8e4709e10153145c4f80bced",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\图像结果\\04_边界结果\\left_camera\\ruler_left_02.png": "56ffb826932fdd7a8a85f3bf5c9d6e1b382c474a044fbe939edf25460f8d2ddd"
+              },
+              "actually_viewed": true,
+              "visible_improvement": "活动绳上下分别形成曲线段，白色斜绳处不强连接。",
+              "remaining_limitation": "卷面较暗左端短段较多；无法在活动绳下推定真实边界。",
+              "coverage_change": "遮挡内拒识，局部清楚区域仍有边界输出。"
+            },
+            {
+              "output_file": "images/left_camera/ruler_left_02.png",
+              "bbox_xyxy": [
+                1860,
+                2438,
+                2340,
+                2998
+              ],
+              "component_area_px": 221189,
+              "original_wh": [
+                4096,
+                3000
+              ],
+              "display_scale": 1.0,
+              "panel_wh": [
+                480,
+                590
+              ],
+              "comparison": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\记录\\qa_additional\\ruler_left_02__part1.jpg",
+              "sha256": "ab1b9ab705cf9f873416afdd727a29af566af9d3691ecb7d145533929624d2df",
+              "input_sha256": {
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\all_001\\记录\\masks\\dark_roi\\left_camera\\ruler_left_02.png": "4451f6064fc32086849f67be57949d9dc676d2268aacd619465c709307ce634e",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\all_001\\图像结果\\02_对比度增强ROI\\left_camera\\ruler_left_02.png": "aa70f5f7516568fd1a027a9ebaaa78a14ab83966a66c3962324b7c402922d3c3",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\all_001\\图像结果\\left_camera\\ruler_left_02.png": "34d0713cbc2530e6ff28931e74c3f66e15a1673d8e4709e10153145c4f80bced",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\图像结果\\04_边界结果\\left_camera\\ruler_left_02.png": "56ffb826932fdd7a8a85f3bf5c9d6e1b382c474a044fbe939edf25460f8d2ddd"
+              },
+              "actually_viewed": true,
+              "visible_improvement": "右侧较大弯曲趋势总体保留。",
+              "remaining_limitation": "左中部分近水平短段多，存在明显断接和空白。",
+              "coverage_change": "减少D3长橙线后，整块连续性仍不足。"
+            }
+          ]
+        },
+        {
+          "output_file": "images/left_camera/ruler_left_04.png",
+          "assessment": "mixed_plausible_smooth_segments_with_remaining_gaps",
+          "improvement": "大部分接受片段走势平顺，未见pilot001那种普遍反复波浪。",
+          "limitation": "没有实现每条边界全程连续；中部、暗缘仍会断裂或留下孤立段。",
+          "coverage_change": "两侧均有较多可用局部段，但不足以宣称覆盖提升或每根识别正确。",
+          "components": [
+            {
+              "output_file": "images/left_camera/ruler_left_04.png",
+              "bbox_xyxy": [
+                701,
+                2459,
+                1208,
+                2998
+              ],
+              "component_area_px": 231873,
+              "original_wh": [
+                4096,
+                3000
+              ],
+              "display_scale": 1.0,
+              "panel_wh": [
+                507,
+                569
+              ],
+              "comparison": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\记录\\qa_additional\\ruler_left_04__part0.jpg",
+              "sha256": "c5537a62671db981f464866e653d1aee0e3d1f0653435d698f66637f619a0211",
+              "input_sha256": {
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\all_001\\记录\\masks\\dark_roi\\left_camera\\ruler_left_04.png": "441c3764db12f212892657bdb668f8156948967253f6b36abeb081f4459856e4",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\all_001\\图像结果\\02_对比度增强ROI\\left_camera\\ruler_left_04.png": "b85f41a574e113426a2b1bf403082c76dd3b03c3832910b536647c550a634967",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\all_001\\图像结果\\left_camera\\ruler_left_04.png": "c049762c172f9e4ad2d63ad159f80ceb710c3014fc6ad77267af5d30bb38fcbe",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\图像结果\\04_边界结果\\left_camera\\ruler_left_04.png": "62aceb6ae8fdb7d20d907830fedf9757870ab0f00f039a87ad2fcad61406b77d"
+              },
+              "actually_viewed": true,
+              "visible_improvement": "较清楚区域曲线大体跟随可见沟槽，上侧弯曲方向较一致。",
+              "remaining_limitation": "左暗端和中部仍有断段，局部孤立短线无法确认同根身份。",
+              "coverage_change": "比D3长弧更局部化，不等于完整曲线恢复。"
+            },
+            {
+              "output_file": "images/left_camera/ruler_left_04.png",
+              "bbox_xyxy": [
+                1860,
+                2457,
+                2318,
+                2998
+              ],
+              "component_area_px": 210114,
+              "original_wh": [
+                4096,
+                3000
+              ],
+              "display_scale": 1.0,
+              "panel_wh": [
+                458,
+                571
+              ],
+              "comparison": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\记录\\qa_additional\\ruler_left_04__part1.jpg",
+              "sha256": "35c69c52577b621101204b8f01afff806634e0e2ff631ecf7e8a0cede08f5977",
+              "input_sha256": {
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\all_001\\记录\\masks\\dark_roi\\left_camera\\ruler_left_04.png": "441c3764db12f212892657bdb668f8156948967253f6b36abeb081f4459856e4",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\all_001\\图像结果\\02_对比度增强ROI\\left_camera\\ruler_left_04.png": "b85f41a574e113426a2b1bf403082c76dd3b03c3832910b536647c550a634967",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\all_001\\图像结果\\left_camera\\ruler_left_04.png": "c049762c172f9e4ad2d63ad159f80ceb710c3014fc6ad77267af5d30bb38fcbe",
+                "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\图像结果\\04_边界结果\\left_camera\\ruler_left_04.png": "62aceb6ae8fdb7d20d907830fedf9757870ab0f00f039a87ad2fcad61406b77d"
+              },
+              "actually_viewed": true,
+              "visible_improvement": "右侧弯曲区的片段较顺且方向一致。",
+              "remaining_limitation": "中左与下部断口较多，部分有可见纹理的区段未被连起来。",
+              "coverage_change": "保留大量局部边界，但连续覆盖仍不足。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": "DR-D4.0.0",
+      "run": "all_001",
+      "reviewed_utc": "2026-10-27T14:32:01.073752+00:00",
+      "camera_role": "right",
+      "status": "qualitative_review_completed",
+      "source_index": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\记录\\qa_additional\\index.json",
+      "source_index_sha256": "e2dc701b6c2ace4ca8ed51c94ce80d0f05b363798910b1379d181d356346029c",
+      "freeze_sha256": "18d7b382a23a3a714ef1febac1ca4a81f42a083fd7fa95c0dfecdc39355c03be",
+      "run_context_sha256": "b491826364453a786c350f1f1b4ab035163ca2a7d9a1e29ecb9d382f87c0c421",
+      "images_reviewed": 6,
+      "components_reviewed": 13,
+      "selection_rule": "each camera sorted existing QA19 indices1,5,8,11,15,17; fixed before final run; no further tuning",
+      "method": "逐个实际打开13个同坐标D1增强图/D3.0.1/D4冻结结果对照组件；没有根据结构审计通过推断真值正确，没有新生成图像或调参。",
+      "reference_limit": "D1增强图只提供视觉参照，D3不是标注真值。此为开放开发图定性复查，不是独立盲测；缩放对照不能提供像素级误差或同根身份。",
+      "overall_visual_assessment": "较明晰区域多数保留弧段更贴合宽纹理走向，细纹碎珠和长缺口强接有所减少；高曲率暗侧与纹理混杂区仍存在明显漏段、碎片和相位竞争，部分可见宽沟也因保守筛选失去覆盖。未达到全部欠曝光边界完整可靠恢复。",
+      "strongest_coverage_tradeoff_examples": [
+        "dual_20260924_111143__pair0015__right__part0.jpg",
+        "dual_20260924_111500__pair0015__right__part0.jpg",
+        "ruler_right_02__part0.jpg",
+        "ruler_right_04__part2.jpg"
+      ],
+      "accuracy": null,
+      "ground_truth_used": false,
+      "algorithm_modified": false,
+      "new_images_generated": false,
+      "equipment_access": false,
+      "reserved_access": false,
+      "image_summaries": [
+        {
+          "output_file": "images/right_camera/R_run_stop_run_20260922_01__f000026__right.png",
+          "components_reviewed": 2,
+          "component_files": [
+            "R_run_stop_run_20260922_01__f000026__right__part0.jpg",
+            "R_run_stop_run_20260922_01__f000026__right__part1.jpg"
+          ],
+          "assessment": "局部走向和平滑性有改善，同时存在覆盖下降；不能将全部拒识当正确或给出总体准确率。"
+        },
+        {
+          "output_file": "images/right_camera/dual_20260923_101517__pair0315__right.png",
+          "components_reviewed": 2,
+          "component_files": [
+            "dual_20260923_101517__pair0315__right__part0.jpg",
+            "dual_20260923_101517__pair0315__right__part1.jpg"
+          ],
+          "assessment": "局部走向和平滑性有改善，同时存在覆盖下降；不能将全部拒识当正确或给出总体准确率。"
+        },
+        {
+          "output_file": "images/right_camera/dual_20260924_111143__pair0015__right.png",
+          "components_reviewed": 2,
+          "component_files": [
+            "dual_20260924_111143__pair0015__right__part0.jpg",
+            "dual_20260924_111143__pair0015__right__part1.jpg"
+          ],
+          "assessment": "局部走向和平滑性有改善，同时存在覆盖下降；不能将全部拒识当正确或给出总体准确率。"
+        },
+        {
+          "output_file": "images/right_camera/dual_20260924_111500__pair0015__right.png",
+          "components_reviewed": 2,
+          "component_files": [
+            "dual_20260924_111500__pair0015__right__part0.jpg",
+            "dual_20260924_111500__pair0015__right__part1.jpg"
+          ],
+          "assessment": "局部走向和平滑性有改善，同时存在覆盖下降；不能将全部拒识当正确或给出总体准确率。"
+        },
+        {
+          "output_file": "images/right_camera/ruler_right_02.png",
+          "components_reviewed": 2,
+          "component_files": [
+            "ruler_right_02__part0.jpg",
+            "ruler_right_02__part1.jpg"
+          ],
+          "assessment": "局部走向和平滑性有改善，同时存在覆盖下降；不能将全部拒识当正确或给出总体准确率。"
+        },
+        {
+          "output_file": "images/right_camera/ruler_right_04.png",
+          "components_reviewed": 3,
+          "component_files": [
+            "ruler_right_04__part0.jpg",
+            "ruler_right_04__part1.jpg",
+            "ruler_right_04__part2.jpg"
+          ],
+          "assessment": "局部走向和平滑性有改善，同时存在覆盖下降；不能将全部拒识当正确或给出总体准确率。"
+        }
+      ],
+      "components": [
+        {
+          "output_file": "images/right_camera/R_run_stop_run_20260922_01__f000026__right.png",
+          "comparison": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\记录\\qa_additional\\R_run_stop_run_20260922_01__f000026__right__part0.jpg",
+          "comparison_sha256": "a136db73588ab2985d65ad4a1ea88d5449375d206b67293f1934cfbd41885529",
+          "bbox_xyxy": [
+            2312,
+            2086,
+            2891,
+            3000
+          ],
+          "display_scale": 0.87527352297593,
+          "actually_viewed": true,
+          "view_method": "tools.view_image",
+          "visual_improvement": "D4多数黄点和短曲线集中在左侧尚可辨认的宽纹理上；相较D3，向右侧低纹理块状区伸出的长线减少。白色斜条上下的主要结果分开。",
+          "remaining_limitations": "暗区过渡处仍有横向孤立短段，右下方也有少量孤立输出，其真实沟槽归属不能仅据该对照确认；白条周围分离不代表已经精确分割活动绳。",
+          "coverage_change": "较亮侧覆盖保留，靠右暗端更早截断；部分原可连的边界也变为短段。",
+          "accuracy": null,
+          "material_identity": "not_evaluated"
+        },
+        {
+          "output_file": "images/right_camera/R_run_stop_run_20260922_01__f000026__right.png",
+          "comparison": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\记录\\qa_additional\\R_run_stop_run_20260922_01__f000026__right__part1.jpg",
+          "comparison_sha256": "3ee12c98ab40db91b2b8ca1df2d65e43afaea422870e3a1c1ca8aa47ba4ecffd",
+          "bbox_xyxy": [
+            1147,
+            2099,
+            1668,
+            3000
+          ],
+          "display_scale": 0.8879023307436182,
+          "actually_viewed": true,
+          "view_method": "tools.view_image",
+          "visual_improvement": "D4在右侧可辨纹理中保留较平滑的弧段，减少D3上半部橙色长连接向左侧暗块伸展的现象。",
+          "remaining_limitations": "中上部和暗亮过渡带断段较多，仍有孤立短线；不能把少画的暗区全部计为正确拒识。",
+          "coverage_change": "右侧较亮部分仍有密集边界，左侧暗块基本留空；总连续覆盖比D3降低。",
+          "accuracy": null,
+          "material_identity": "not_evaluated"
+        },
+        {
+          "output_file": "images/right_camera/dual_20260923_101517__pair0315__right.png",
+          "comparison": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\记录\\qa_additional\\dual_20260923_101517__pair0315__right__part0.jpg",
+          "comparison_sha256": "517ddd3d4736a65e4df8511e7629fe0dcdd76f0d9201280ab3c345fefa9fbef5",
+          "bbox_xyxy": [
+            2376,
+            2089,
+            2973,
+            3000
+          ],
+          "display_scale": 0.8781558726673985,
+          "actually_viewed": true,
+          "view_method": "tools.view_image",
+          "visual_improvement": "D4的较长弧段总体随可见宽沟方向弯曲，右侧大弯曲区减少了D3成排长虚线强行接续；顶部遮挡附近未形成大片跨越连线。",
+          "remaining_limitations": "右侧弯曲末端和中间若干纹理混杂带仍有明显碎片、漏段；部分短段可能仍受细股斜纹影响，不能据平滑性确认绳间边界。",
+          "coverage_change": "亮侧和中下部保持较多输出，最右侧与上部缺口处覆盖收缩、碎片增加。",
+          "accuracy": null,
+          "material_identity": "not_evaluated"
+        },
+        {
+          "output_file": "images/right_camera/dual_20260923_101517__pair0315__right.png",
+          "comparison": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\记录\\qa_additional\\dual_20260923_101517__pair0315__right__part1.jpg",
+          "comparison_sha256": "9f46b162e8a4db8cf74f7ef7eaab8cee65b213b8b6baba2f2f7905063c7bbcb3",
+          "bbox_xyxy": [
+            1181,
+            2114,
+            1716,
+            3000
+          ],
+          "display_scale": 0.9029345372460497,
+          "actually_viewed": true,
+          "view_method": "tools.view_image",
+          "visual_improvement": "D4在上半部及右侧较亮区域形成顺着宽纹理的平滑弧段，减少了D3几乎整片橙色虚线的强制串接。",
+          "remaining_limitations": "左侧中下部的暗纹区仍有漏段与短段竞争；局部存在贴近细纹或亮股的候选，像素级相位是否正确尚不可评价。",
+          "coverage_change": "右侧覆盖较充分，左侧暗端及中间纹理模糊处明显断开，连续覆盖有所降低。",
+          "accuracy": null,
+          "material_identity": "not_evaluated"
+        },
+        {
+          "output_file": "images/right_camera/dual_20260924_111143__pair0015__right.png",
+          "comparison": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\记录\\qa_additional\\dual_20260924_111143__pair0015__right__part0.jpg",
+          "comparison_sha256": "03ec55dc11a95c9ba0b0de27c95fcf9123bb19bfd79008655ceb08b2521de74d",
+          "bbox_xyxy": [
+            2412,
+            2028,
+            3066,
+            3000
+          ],
+          "display_scale": 0.823045267489712,
+          "actually_viewed": true,
+          "view_method": "tools.view_image",
+          "visual_improvement": "D4右侧高曲率区域的局部曲线更随可见弯曲方向变化，未将中部所有缺口强行接成长线。",
+          "remaining_limitations": "中部出现大片碎片和断口，其中D1仍可辨认若干宽沟，说明保守拒绝也造成了实质漏段；短横段的归类和相位仍需关注。",
+          "coverage_change": "两侧保留较多输出，中间连续覆盖明显弱于D3；这是降低强制连接同时牺牲覆盖的混合结果。",
+          "accuracy": null,
+          "material_identity": "not_evaluated"
+        },
+        {
+          "output_file": "images/right_camera/dual_20260924_111143__pair0015__right.png",
+          "comparison": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\记录\\qa_additional\\dual_20260924_111143__pair0015__right__part1.jpg",
+          "comparison_sha256": "d6a2c88fbdc978622384521e2a02f37a0e9c9ad68c206c73fc4349b81caa4ea6",
+          "bbox_xyxy": [
+            1115,
+            2053,
+            1700,
+            3000
+          ],
+          "display_scale": 0.8447729672650475,
+          "actually_viewed": true,
+          "view_method": "tools.view_image",
+          "visual_improvement": "D4在上部和右侧大部分可见宽沟上形成平滑、有序的弧段，侧缘弯曲形态比D3大量长虚线更贴近局部图像走向。",
+          "remaining_limitations": "左侧深暗边缘和中下部仍有短缺口；邻近细股竞争与像素级边界位置不能从整幅缩放对照作定量认定。",
+          "coverage_change": "右侧明晰区域覆盖保留较好，左侧暗端提前停止，局部牺牲连续性。",
+          "accuracy": null,
+          "material_identity": "not_evaluated"
+        },
+        {
+          "output_file": "images/right_camera/dual_20260924_111500__pair0015__right.png",
+          "comparison": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\记录\\qa_additional\\dual_20260924_111500__pair0015__right__part0.jpg",
+          "comparison_sha256": "005f8c95f6ec385d18d59af7838110bf56fb26f033d2f3ab5233717a15ac65f4",
+          "bbox_xyxy": [
+            2408,
+            2010,
+            3074,
+            3000
+          ],
+          "display_scale": 0.8080808080808081,
+          "actually_viewed": true,
+          "view_method": "tools.view_image",
+          "visual_improvement": "D4在右侧高曲率区域保留局部弧段，较D3减少贯穿中间纹理混杂带的整排长连接。",
+          "remaining_limitations": "中上部与中下部存在大量断段，若干D1中可见的宽沟没有完整输出；细股纹理很强处仍无法确认所有短段归为正确边界。",
+          "coverage_change": "左侧与右侧输出较多，中部覆盖显著断裂；不能把减少连线直接解释成整体准确率提高。",
+          "accuracy": null,
+          "material_identity": "not_evaluated"
+        },
+        {
+          "output_file": "images/right_camera/dual_20260924_111500__pair0015__right.png",
+          "comparison": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\记录\\qa_additional\\dual_20260924_111500__pair0015__right__part1.jpg",
+          "comparison_sha256": "9024205401878c5d907e08581895331c5d3d743c7099c00b5d206ca6fb444573",
+          "bbox_xyxy": [
+            1110,
+            2034,
+            1712,
+            3000
+          ],
+          "display_scale": 0.8281573498964804,
+          "actually_viewed": true,
+          "view_method": "tools.view_image",
+          "visual_improvement": "D4上部及右侧的较长弧段总体顺着可见宽沟，弱化了D3反复成排的长虚线接续。",
+          "remaining_limitations": "左侧深暗区和中下部仍有缺口及短段，若干边界在可见纹理中途结束；同根身份与每条黄点的准确相位仍未验收。",
+          "coverage_change": "明晰区域覆盖较完整，暗侧端部与部分中段缩短，输出更保守。",
+          "accuracy": null,
+          "material_identity": "not_evaluated"
+        },
+        {
+          "output_file": "images/right_camera/ruler_right_02.png",
+          "comparison": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\记录\\qa_additional\\ruler_right_02__part0.jpg",
+          "comparison_sha256": "6861d38a12eeb017777cde172fece735a6435c9a75f40f98ad7dcee0663b602a",
+          "bbox_xyxy": [
+            2320,
+            2259,
+            2823,
+            2998
+          ],
+          "display_scale": 1.0,
+          "actually_viewed": true,
+          "view_method": "tools.view_image",
+          "visual_improvement": "D4上方及右侧弯曲明显处的曲线能随局部宽纹理变化，少了D3一部分跨越弱证据带的长连接。",
+          "remaining_limitations": "上中部与中部横向缺口很明显，D1中仍可见边界；几条长弧被分成不连续短段，局部归类仍可能失配。",
+          "coverage_change": "较清晰的上下部仍覆盖较多，中间区域连续覆盖下降明显。",
+          "accuracy": null,
+          "material_identity": "not_evaluated"
+        },
+        {
+          "output_file": "images/right_camera/ruler_right_02.png",
+          "comparison": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\记录\\qa_additional\\ruler_right_02__part1.jpg",
+          "comparison_sha256": "7dee379ba6a84446f6b95df6fbd85e271ce6ab3b568f6fe27c95442a723717b8",
+          "bbox_xyxy": [
+            1294,
+            2278,
+            1728,
+            2998
+          ],
+          "display_scale": 1.0,
+          "actually_viewed": true,
+          "view_method": "tools.view_image",
+          "visual_improvement": "D4在上部和右侧明晰区域输出平滑弧段，中央暗楔附近采用中断或较短接续，减少整条硬连。",
+          "remaining_limitations": "暗楔边缘与左下方仍有漏段；少数端点对应的细纹/宽沟相位不能仅靠当前图判断。",
+          "coverage_change": "上部及右侧覆盖保留较好，左侧与暗楔附近更早截断。",
+          "accuracy": null,
+          "material_identity": "not_evaluated"
+        },
+        {
+          "output_file": "images/right_camera/ruler_right_04.png",
+          "comparison": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\记录\\qa_additional\\ruler_right_04__part0.jpg",
+          "comparison_sha256": "530a92a34e2b341bf2c2ec7454b76fd7be1685817c9e908994066e26da9816f5",
+          "bbox_xyxy": [
+            2376,
+            2366,
+            2903,
+            3000
+          ],
+          "display_scale": 1.0,
+          "actually_viewed": true,
+          "view_method": "tools.view_image",
+          "visual_improvement": "D4在右上大弯曲区及下方多条可辨宽纹理上形成局部平滑弧，减少D3一部分长虚线与跨弱证据连接。",
+          "remaining_limitations": "上部左侧、中央若干行和下部仍有明显断口与短段；细股纹很强，不能认定所有保留黄点均位于绳间沟槽。",
+          "coverage_change": "上下较长纹理保留部分覆盖，中间及顶部邻近遮挡处覆盖收缩。",
+          "accuracy": null,
+          "material_identity": "not_evaluated"
+        },
+        {
+          "output_file": "images/right_camera/ruler_right_04.png",
+          "comparison": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\记录\\qa_additional\\ruler_right_04__part1.jpg",
+          "comparison_sha256": "1e8a77b45e80e245bdfceb23f386893b705784d93a637898be134262bf55a2e7",
+          "bbox_xyxy": [
+            1311,
+            2261,
+            1768,
+            2998
+          ],
+          "display_scale": 1.0,
+          "actually_viewed": true,
+          "view_method": "tools.view_image",
+          "visual_improvement": "D4多数可见长弧段与宽纹理走向一致，较D3大片橙色长虚线更依赖局部支持；高曲率左端保留了若干合理弯段。",
+          "remaining_limitations": "左侧中部暗带仍有缺口及较短输出，个别位置只有较远两端点；未获得人工逐点真值，不能量化正确率。",
+          "coverage_change": "右侧及上部较完整，左侧暗端和中部个别沟槽覆盖降低。",
+          "accuracy": null,
+          "material_identity": "not_evaluated"
+        },
+        {
+          "output_file": "images/right_camera/ruler_right_04.png",
+          "comparison": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\记录\\qa_additional\\ruler_right_04__part2.jpg",
+          "comparison_sha256": "de6ca14dd557002be4bf41dee847b1e44584e82110576db3b9540d5bf2f08c57",
+          "bbox_xyxy": [
+            2388,
+            2240,
+            2699,
+            2405
+          ],
+          "display_scale": 1.0,
+          "actually_viewed": true,
+          "view_method": "tools.view_image",
+          "visual_improvement": "D4小上部组件保留了一些与纹理走向一致的短弧，没有把组件下方黑色缺口连成整片。",
+          "remaining_limitations": "与D3相比多数线被分裂；该D1组件仍有较清楚纹理，说明存在可见边界漏检，而非所有空白都合理。",
+          "coverage_change": "小组件连续覆盖显著下降，主要剩分散短段。",
+          "accuracy": null,
+          "material_identity": "not_evaluated"
+        }
+      ]
+    }
+  ],
+  "method_changes": [
+    "Fresh yellow candidates: coarse tangent averaging before adaptive threshold, width opening and raw-image bright flanks.",
+    "Projected coarse/fine texture periodicity diagnostic and independently estimated broad bright-body barriers.",
+    "New ordered local groups with pixel-path veto; old D2/D3 observations are not inputs.",
+    "Local robust fits plus monotonic derivative projection, variable-curvature integral, all-group-point vertical alignment.",
+    "Split and refit on body/unknown/long-evidence gaps; true raster ROI/unknown validation; no forced extrapolation."
+  ],
+  "known_limitations": [
+    "Fine-strand crossings can still mimic wide grooves; morphology cannot guarantee pure inter-rope shadows.",
+    "Extreme dark block artifacts, side-edge foreshortening, partial shadow and competing phases remain uncertain.",
+    "Rejection reduces misleading long curves but can also remove correct boundaries and reduce coverage.",
+    "Current image-y convexity prior assumes this dataset camera orientation, not every future view.",
+    "Image-supported smooth curves, periodicity and audit success do not establish physical material identity or contact."
+  ],
+  "actual_boundary_accuracy": null,
+  "baseline_replacement": false,
+  "original_pixels_changed": false,
+  "html_generated": false,
+  "equipment_access": false,
+  "reserved_access": false,
+  "files_changed": "New D4 directory and appended three navigation indexes only; all20 baseline files verified unchanged."
+}

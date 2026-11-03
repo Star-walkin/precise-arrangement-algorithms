@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-25",
+  "name": "RB-C2 local conic completion within internal gaps only",
+  "baseline": "camera_condition_bright_rope_boundaries_20261025_v3/all_001",
+  "user_acceptance_scope": "User visually considers boundaries within green ROI basically accurate; no numerical accuracy claim",
+  "input_manifest_sha256": "712859a4a830c08d556729a98cad76d039c684c290d2c4c57efa2b7ad3b45e69",
+  "qa_plan_sha256": "8b3b73673ebddda9a3bf1ee6fd45ac2fd3bda958cba472be78c27dcea351d913",
+  "planned_images": 400,
+  "fixed_development_qa_images": 38,
+  "budget": "New local-gap branch: at most two integrated revisions on the same already-open QA38. Prior C1 global-curve branch ended after its predeclared three revisions, all failed the fixed primary criterion; those results remain immutable. This adds development iterations, not independent test data. Freeze chosen source before one full400 run.",
+  "model": "Keep the frozen C1 pilot002 fitter as visible-span geometric baseline. Fit local positive-curvature conics only inside two-sided internal gaps, using nearby observed points, shared curvature, ordering and neighbor spacing. Save distinct pieces and coefficients; do not claim one exact conic for an entire rope.",
+  "inputs_to_fitter": "B1 visible yellow points only, optical pitch, reference ROI and B1 orange/blue exclusions. No legacy purple points, no hidden proxy targets.",
+  "pixel_contract": "B1 yellow mask, reference ROI, effective ROI, effective RGB, supported/unknown exclusions are byte-preserved. New smooth mask is uint8 0/255 within effective ROI; original image pixels unchanged. Every new smooth pixel is a model result. Separate geometric_gap mask from nearby-observation fitted curve, both subsets of smooth mask.",
+  "prediction_scope": "No extrapolation beyond visible support span. Overexposed internal gaps may have conic inference when matching, curvature and spacing evidence allow. Excluded active-rope/unknown pixels stay empty. No physical rope identity or event conclusion.",
+  "validation": "Independent evaluator hides predeclared x-bands of existing yellow points, refits from remaining points and compares with withheld yellow points plus a straight-line baseline. This is development consistency, not blind-test accuracy or real saturation ground truth. Evaluator freezes its settings separately before execution.",
+  "continue_gate": "38 outputs complete, unchanged B1 files and mask constraints pass. Both-camera visible residual/withheld consistency do not show material degradation versus straight interpolation, and visual inspection shows coherent smooth central bridges without obvious adjacent-course jumps. Insufficient cases keep local curves or reject; report coverage and all refusals. If conic adds no consistent benefit over straight baseline, do not label it better.",
+  "truth_boundary": "No reserved 2026-09-25 media or labels; no new labels invented. User feedback is a qualitative baseline acceptance, not per-pixel ground truth.",
+  "devices": "No cameras, lights, PLC, relays, line arm, servo, deployment or permission changes",
+  "reason_for_new_branch": "C1 pilot003 forced a gap-endpoint conic across visible spans; strong-glare left pair0315 yellow agreement fell from .984344 to .772994. C1 best primary-loss gain was 7.906%, below fixed 10% threshold. Stop whole-curve-anchor branch; address this scope mismatch via gap-local modeling. Same metric thresholds, denominators, and inputs; no declaring prior failures successes.",
+  "created_utc": "2026-10-25T14:50:32.625680+00:00"
+}

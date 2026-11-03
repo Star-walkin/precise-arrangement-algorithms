@@ -1,0 +1,591 @@
+{
+  "version": "DR-D2.1.1",
+  "name": "暗纹锚定 D2",
+  "date": "2026-10-27",
+  "source": "same frozen open400, left200/right200; original PNG hashes in case records",
+  "roi_and_enhancement": "D1 approved cached pixels reused unchanged and verified against frozen manifest",
+  "baseline": "RB-C3.0.0 original observation/grouping/fitting sources unchanged",
+  "method": "C3 bright original-point anchors; directional averaging; adaptive noise thresholds and original bilateral-valley recheck; ordered dark point classes; shared cubic B-spline displacement/spacing plus smooth per-row residual and ordered spacing projection.",
+  "summary": {
+    "version": "DR-D2.1.1",
+    "variant": "anchored",
+    "planned": 400,
+    "completed": 400,
+    "failed": 0,
+    "source_unchanged": true,
+    "exit_code": 0,
+    "by_camera": {
+      "left": 200,
+      "right": 200
+    },
+    "images_with_observations": 399,
+    "images_with_curves": 399,
+    "total_observed_points": 1961902,
+    "total_curves": 15450,
+    "uncertain_fit_curves": 6234,
+    "old_d1_points": 881561,
+    "finished_utc": "2026-10-27T07:53:13.845958+00:00",
+    "accuracy": null,
+    "html_generated": false,
+    "equipment_access": false,
+    "reserved_access": false
+  },
+  "audit": {
+    "auditor": "independent D2 file/pixel/hash audit; no accuracy claim",
+    "created_utc": "2026-10-27T07:58:33.905280+00:00",
+    "run": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\all_002",
+    "mode": "all",
+    "variant": "anchored",
+    "planned": 400,
+    "passed": 400,
+    "failed": 0,
+    "global_errors": [],
+    "failures": [],
+    "status": "passed",
+    "input_manifest_sha256": "712859a4a830c08d556729a98cad76d039c684c290d2c4c57efa2b7ad3b45e69",
+    "d1_output_manifest_sha256": "771d577a960a59d0bbb44be330465a30b22f6a01c5d99a31bb23176e03b9be5c",
+    "source_snapshot_checked": 14,
+    "scope": "Structural integrity only; visual grooves and physical identity are not ground truth validated."
+  },
+  "experiment_history": [
+    {
+      "run": "control_001",
+      "summary": {
+        "version": "DR-D2.0.0",
+        "variant": "threshold_only",
+        "planned": 12,
+        "completed": 12,
+        "failed": 0,
+        "source_unchanged": true,
+        "exit_code": 0,
+        "by_camera": {
+          "left": 6,
+          "right": 6
+        },
+        "images_with_observations": 12,
+        "images_with_curves": 12,
+        "total_observed_points": 23113,
+        "total_curves": 573,
+        "old_d1_points": 22471,
+        "finished_utc": "2026-10-27T06:50:08.058726+00:00",
+        "accuracy": null,
+        "html_generated": false,
+        "equipment_access": false,
+        "reserved_access": false
+      },
+      "sha256": "e336fc71c9049aa095b0385fb9e6c9e04ec31f79300a3b1b501acb1782504336"
+    },
+    {
+      "run": "pilot_001",
+      "summary": {
+        "version": "DR-D2.0.0",
+        "variant": "d2",
+        "planned": 12,
+        "completed": 12,
+        "failed": 0,
+        "source_unchanged": true,
+        "exit_code": 0,
+        "by_camera": {
+          "left": 6,
+          "right": 6
+        },
+        "images_with_observations": 12,
+        "images_with_curves": 12,
+        "total_observed_points": 23150,
+        "total_curves": 1768,
+        "old_d1_points": 22471,
+        "finished_utc": "2026-10-27T06:50:13.170184+00:00",
+        "accuracy": null,
+        "html_generated": false,
+        "equipment_access": false,
+        "reserved_access": false
+      },
+      "sha256": "e7663bdef67e04155a61e645cf02da9efa5ebc94eae9c8b0796560fc3df56b5e"
+    },
+    {
+      "run": "pilot_002",
+      "summary": {
+        "version": "DR-D2.0.0",
+        "variant": "d2",
+        "planned": 12,
+        "completed": 12,
+        "failed": 0,
+        "source_unchanged": true,
+        "exit_code": 0,
+        "by_camera": {
+          "left": 6,
+          "right": 6
+        },
+        "images_with_observations": 12,
+        "images_with_curves": 12,
+        "total_observed_points": 31537,
+        "total_curves": 1732,
+        "old_d1_points": 22471,
+        "finished_utc": "2026-10-27T06:56:59.754758+00:00",
+        "accuracy": null,
+        "html_generated": false,
+        "equipment_access": false,
+        "reserved_access": false
+      },
+      "sha256": "aca96756028b68fe0ccbae61094e75eaa978f0d273e20cda9e400aad75ec961b"
+    },
+    {
+      "run": "pilot_003",
+      "summary": {
+        "version": "DR-D2.0.0",
+        "variant": "d2",
+        "planned": 12,
+        "completed": 12,
+        "failed": 0,
+        "source_unchanged": true,
+        "exit_code": 0,
+        "by_camera": {
+          "left": 6,
+          "right": 6
+        },
+        "images_with_observations": 12,
+        "images_with_curves": 12,
+        "total_observed_points": 25171,
+        "total_curves": 910,
+        "old_d1_points": 22471,
+        "finished_utc": "2026-10-27T07:03:27.379183+00:00",
+        "accuracy": null,
+        "html_generated": false,
+        "equipment_access": false,
+        "reserved_access": false
+      },
+      "sha256": "6eaf21f8b4c64f7b1d0057529367cbb59dd44956c06d27fa43ebfda968c63886"
+    },
+    {
+      "run": "pilot_004",
+      "summary": {
+        "version": "DR-D2.1.0",
+        "variant": "anchored",
+        "planned": 12,
+        "completed": 12,
+        "failed": 0,
+        "source_unchanged": true,
+        "exit_code": 0,
+        "by_camera": {
+          "left": 6,
+          "right": 6
+        },
+        "images_with_observations": 12,
+        "images_with_curves": 12,
+        "total_observed_points": 53593,
+        "total_curves": 428,
+        "old_d1_points": 22471,
+        "finished_utc": "2026-10-27T07:12:27.459333+00:00",
+        "accuracy": null,
+        "html_generated": false,
+        "equipment_access": false,
+        "reserved_access": false
+      },
+      "sha256": "74901f90e4d68bc65b22f2e273443a38694c475d5099d2233b1ac01cc0aed51b"
+    },
+    {
+      "run": "pilot_005",
+      "summary": {
+        "version": "DR-D2.1.0",
+        "variant": "anchored",
+        "planned": 12,
+        "completed": 12,
+        "failed": 0,
+        "source_unchanged": true,
+        "exit_code": 0,
+        "by_camera": {
+          "left": 6,
+          "right": 6
+        },
+        "images_with_observations": 12,
+        "images_with_curves": 12,
+        "total_observed_points": 53280,
+        "total_curves": 423,
+        "old_d1_points": 22471,
+        "finished_utc": "2026-10-27T07:20:39.714215+00:00",
+        "accuracy": null,
+        "html_generated": false,
+        "equipment_access": false,
+        "reserved_access": false
+      },
+      "sha256": "9ab1be23543286fc32ff2b7ab1f585434dcf0d3e62fe595f555473f9c19dda6f"
+    },
+    {
+      "run": "pilot_006",
+      "summary": {
+        "version": "DR-D2.1.0",
+        "variant": "anchored",
+        "planned": 12,
+        "completed": 12,
+        "failed": 0,
+        "source_unchanged": true,
+        "exit_code": 0,
+        "by_camera": {
+          "left": 6,
+          "right": 6
+        },
+        "images_with_observations": 12,
+        "images_with_curves": 12,
+        "total_observed_points": 53280,
+        "total_curves": 423,
+        "uncertain_fit_curves": 165,
+        "old_d1_points": 22471,
+        "finished_utc": "2026-10-27T07:31:24.732426+00:00",
+        "accuracy": null,
+        "html_generated": false,
+        "equipment_access": false,
+        "reserved_access": false
+      },
+      "sha256": "d8cf36732f2470c1b5803a93a8d4b440ed96fc54cb27f0f5d64d4d0f348be2e9"
+    },
+    {
+      "run": "all_001",
+      "summary": {
+        "version": "DR-D2.1.0",
+        "variant": "anchored",
+        "planned": 400,
+        "completed": 399,
+        "failed": 1,
+        "source_unchanged": true,
+        "exit_code": 1,
+        "by_camera": {
+          "left": 200,
+          "right": 200
+        },
+        "images_with_observations": 399,
+        "images_with_curves": 399,
+        "total_observed_points": 1961902,
+        "total_curves": 15450,
+        "uncertain_fit_curves": 6234,
+        "old_d1_points": 879200,
+        "finished_utc": "2026-10-27T07:43:54.582211+00:00",
+        "accuracy": null,
+        "html_generated": false,
+        "equipment_access": false,
+        "reserved_access": false
+      },
+      "sha256": "2fc0ebe2d337fdca1eebbe5f0378dcc2a24d31f9f8adb0e67a49c9af784eac3f"
+    }
+  ],
+  "limits": [
+    "No manual ground-truth accuracy rate. Same development samples, not a blind test.",
+    "Orange fits exceed p90 0.25pitch residual to detected points; that is self-consistency, not truth accuracy.",
+    "Dark compression blocks, slight parallel offsets, missing bright anchors and very weak grooves remain failure modes.",
+    "Long unsupported gaps stay blank; no contact-point or material-identity claim."
+  ],
+  "input_protocol_sha256": "69032c860bde02c9029ddf6ce304466d0b7542d7ab3b621c2d7f59000c87f5ea",
+  "output_manifest_sha256": "7296b6bfd8252a1ffe802697ea99897cc412925782644a43ce218a04134105de",
+  "freeze_sha256": "e73290224773464be75a5c3bc92d53f71a5f378bf0067e12d923823a430ceca9",
+  "output_images": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\all_002\\图像结果",
+  "independent_visual_review": {
+    "run": "pilot_006",
+    "version": "DR-D2.1.0",
+    "variant": "anchored",
+    "review": "Same fixed six images, all eleven major dark components, D1 enhanced and D1 C3 alongside pilot_005/pilot_006; no new image selection or ground-truth labels.",
+    "structural_audit": "pilot_006/independent_audit.json: 12/12 passed, zero global errors; output_manifest.json: 60 files.",
+    "same_observation_check": {
+      "cases_compared": 12,
+      "observed_lines_including_original_point_evidence_equal_to_005": true,
+      "observed_mask_png_bytes_equal_to_005": true,
+      "observed_points_and_evidence_items": 53280,
+      "differences": []
+    },
+    "curve_fit_check": {
+      "curves": 423,
+      "p90_residual_above_0_25_pitch_pilot_005": 209,
+      "p90_residual_above_0_25_pitch_pilot_006": 165,
+      "meaning": "Relative fit-to-saved-yellow-point flag, not ground-truth boundary accuracy.",
+      "display": "Residual flagged curves are orange dashed; cyan denotes the lower residual class. Orange remains for human review."
+    },
+    "fixed_six": [
+      {
+        "file": "L_run_20260923_01__f000648__left.png",
+        "parts": [
+          0,
+          1
+        ],
+        "unreliable_005_to_006": "16 to 13 of 26",
+        "finding": "Block-compressed low-SNR interior retains suspicious block-edge yellow points and several orange stepped curves; clearer edge grooves remain visible."
+      },
+      {
+        "file": "dual_20260923_101643__pair0315__left.png",
+        "parts": [
+          0,
+          1
+        ],
+        "unreliable_005_to_006": "15 to 14 of 30",
+        "finding": "Broad coverage and rope-row spacing remain coherent. Many orange arcs show that smoother appearance has not removed all offset from yellow points."
+      },
+      {
+        "file": "ruler_left_05.png",
+        "parts": [
+          0
+        ],
+        "unreliable_005_to_006": "7 to 6 of 19",
+        "finding": "Dark upper-left coverage remains, with yellow points on visible groove candidates; weak-texture orange arcs remain provisional."
+      },
+      {
+        "file": "R_run_20260923_01__f000757__right.png",
+        "parts": [
+          0,
+          1
+        ],
+        "unreliable_005_to_006": "6 to 4 of 39",
+        "finding": "Textured-side rows largely follow visible grooves; isolated low-SNR upper block segments are orange and need review."
+      },
+      {
+        "file": "dual_20260923_101643__pair0315__right.png",
+        "parts": [
+          0,
+          1
+        ],
+        "unreliable_005_to_006": "29 to 17 of 46",
+        "finding": "The white activity rope is mostly blank. Adjacent tracks generally preserve row order; orange tracks mark remaining model/yellow divergence on both sides."
+      },
+      {
+        "file": "ruler_right_05.png",
+        "parts": [
+          0,
+          1
+        ],
+        "unreliable_005_to_006": "20 to 16 of 36",
+        "finding": "Cyan lines are visibly smoother and approximately follow the dominant dark grooves; upper and lower orange lines still differ locally from yellow observations."
+      }
+    ],
+    "decision": "No new structural or major visual blocking issue for a caveated 400-image offline diagnostic run. Preserve orange uncertainty and all low-SNR failures; do not claim every curve is accurate, physical rope identity, or production readiness."
+  },
+  "repair_equivalence": {
+    "check": "DR-D2.1.1 empty-C3-model repair equivalence",
+    "status": "passed",
+    "scope": "Existing open-development outputs only; no algorithm rerun, original video decode, reserved set, or device access",
+    "all_001_completed": 399,
+    "all_002_completed": 400,
+    "successful_399_equivalence": {
+      "cases_checked": 399,
+      "four_pngs_identical_cases": 399,
+      "observed_lines_identical_cases": 399,
+      "fit_identical_cases": 399,
+      "case_except_record_version_identical_cases": 399,
+      "mismatch_count": 0,
+      "mismatches": []
+    },
+    "pilot_006_12_equivalence": {
+      "cases_checked": 12,
+      "four_pngs_identical_cases": 12,
+      "observed_lines_identical_cases": 12,
+      "fit_identical_cases": 12,
+      "case_except_record_version_identical_cases": 12,
+      "mismatch_count": 0,
+      "mismatches": []
+    },
+    "repaired_failure": [
+      {
+        "image": "images/right_camera/R_run_20260923_01__f001348__right.png",
+        "old_status": "failed",
+        "old_error": "AttributeError(\"'NoneType' object has no attribute 'get'\")",
+        "new_case_exists": true,
+        "pngs_exist": true,
+        "new_status": "completed",
+        "observed_lines_empty": true,
+        "curves_empty": true,
+        "masks_all_zero": {
+          "observed": true,
+          "smooth": true,
+          "inferred": true
+        },
+        "overlay_matches_empty_prediction_roi_render": true,
+        "roi_pixel_count": 566259,
+        "overlay_nonzero_inside_roi": true,
+        "overlay_zero_outside_roi": true
+      }
+    ],
+    "checks": {
+      "expected_case_counts": true,
+      "predictions_unchanged": true,
+      "single_empty_case_repaired": true
+    },
+    "interpretation": "Byte-identical output validates this guard repair only; visual boundary accuracy and physical identity remain unverified"
+  },
+  "additional_fixed12_visual_review": {
+    "review_type": "independent_read_only_qualitative_visual_review",
+    "created_utc": "2026-10-27T07:56:04.050784+00:00",
+    "run": "all_002",
+    "selection_rule": "each camera sorted QA19 indices1,5,8,11,15,17; fixed before full run; no further tuning",
+    "selection_count": 12,
+    "component_tile_count": 26,
+    "viewed_sheets": [
+      {
+        "file": "page_01.jpg",
+        "sha256": "6b48c4190772b1022875a755531f9a1db039d77fc0a699460c653b181f1f3372"
+      },
+      {
+        "file": "page_02.jpg",
+        "sha256": "ea077f50250b2b266f686cd202081b6c9c27f33dbb6e59c9775f2aa0dd89b893"
+      },
+      {
+        "file": "page_03.jpg",
+        "sha256": "68b0cfd07a94b13fbcdfe1442513139e5cc00e772f2c8a50673445af24ce551d"
+      },
+      {
+        "file": "page_04.jpg",
+        "sha256": "6bd5f585b3bd2336ed20caea816dadea7c6bdabf8f5c6991274cf243d1a32691"
+      },
+      {
+        "file": "page_05.jpg",
+        "sha256": "b56181e8fc3f5dbf8d081e575a6e2dede4a2f9cfabe976347ad508f3b044e70f"
+      }
+    ],
+    "index_sha256": "580ce047824caca778c9b98b99eeb4cd02e2366a9f23df2e438c292a08730919",
+    "legend": "上=固定D1增强ROI；下=all_002叠图。青=一般拟合，橙虚线=拟合与黄点偏差过大，黄十字=原图暗谷候选，紫=短缺口推断，绿=ROI外包络。",
+    "overall": "五页26个组件已看。规则、曝光较好的暗绳列常见同向平行青线；活动绳/黑缺口没有明显整体跨画。块状低信噪、外侧暗带与横向深暗带保留大片空白或橙色不可靠拟合，不能宣称完整准确分割。",
+    "quantitative_context": {
+      "observed_points_in_selected_images": 67733,
+      "curves_in_selected_images": 448,
+      "uncertain_fit_curves_in_selected_images": 201,
+      "meaning": "记录计数仅为输出状态，不是准确率/真值评分。"
+    },
+    "case_notes": [
+      {
+        "output_file": "images/left_camera/L_run_stop_run_20260922_01__f000046__left.png",
+        "tile_indices": [
+          0,
+          1,
+          2
+        ],
+        "observed_point_count": 4271,
+        "curve_count": 35,
+        "uncertain_fit_curve_count": 7,
+        "visual_note": "主沟槽清晰段的青线大体顺行；暗块边缘明显留白。tile2放大区是块状弱纹，黄点与橙色虚线沿局部块边出现，不能确认整绳边界。"
+      },
+      {
+        "output_file": "images/left_camera/dual_20260923_101517__pair0315__left.png",
+        "tile_indices": [
+          3,
+          4
+        ],
+        "observed_point_count": 5912,
+        "curve_count": 33,
+        "uncertain_fit_curve_count": 15,
+        "visual_note": "左弧面多条青线顺着可见平行暗沟；外缘/较暗层有连续橙线，局部青黄偏差仍需谨慎。"
+      },
+      {
+        "output_file": "images/left_camera/dual_20260924_111143__pair0015__left.png",
+        "tile_indices": [
+          5,
+          6
+        ],
+        "observed_point_count": 6150,
+        "curve_count": 34,
+        "uncertain_fit_curve_count": 18,
+        "visual_note": "中部规则沟槽呈密集平行青线；上、下曝光较弱带有较多橙线，不能仅按数量认定覆盖正确。"
+      },
+      {
+        "output_file": "images/left_camera/dual_20260924_111500__pair0015__left.png",
+        "tile_indices": [
+          7,
+          8
+        ],
+        "observed_point_count": 4853,
+        "curve_count": 33,
+        "uncertain_fit_curve_count": 13,
+        "visual_note": "主平行走向基本连续；中段深暗横带附近线段中止或转橙，未见可靠跨遮挡身份。"
+      },
+      {
+        "output_file": "images/left_camera/ruler_left_02.png",
+        "tile_indices": [
+          9,
+          10
+        ],
+        "observed_point_count": 3875,
+        "curve_count": 27,
+        "uncertain_fit_curve_count": 1,
+        "visual_note": "活动绳及黑底缺口处没有明显被青线直接跨接；可见卷面沟槽大多有顺行线，局部边缘仍有断续。"
+      },
+      {
+        "output_file": "images/left_camera/ruler_left_04.png",
+        "tile_indices": [
+          11,
+          12
+        ],
+        "observed_point_count": 3644,
+        "curve_count": 26,
+        "uncertain_fit_curve_count": 7,
+        "visual_note": "左侧暗面可见多条近似同向曲线；上缘和下方暗带有橙线，部分短段证据弱。"
+      },
+      {
+        "output_file": "images/right_camera/R_run_stop_run_20260922_01__f000026__right.png",
+        "tile_indices": [
+          13,
+          14
+        ],
+        "observed_point_count": 4355,
+        "curve_count": 46,
+        "uncertain_fit_curve_count": 17,
+        "visual_note": "白色活动绳附近结果被遮挡切开；清晰区青线平行，但中央块状暗带多处留白/转橙。"
+      },
+      {
+        "output_file": "images/right_camera/dual_20260923_101517__pair0315__right.png",
+        "tile_indices": [
+          15,
+          16
+        ],
+        "observed_point_count": 7058,
+        "curve_count": 44,
+        "uncertain_fit_curve_count": 26,
+        "visual_note": "中间可见纹理区青线走向总体跟随弧形绳列；上部与暗带有橙线及短缺口。"
+      },
+      {
+        "output_file": "images/right_camera/dual_20260924_111143__pair0015__right.png",
+        "tile_indices": [
+          17,
+          18
+        ],
+        "observed_point_count": 8510,
+        "curve_count": 47,
+        "uncertain_fit_curve_count": 34,
+        "visual_note": "清晰卷面中段多线有序；上缘和下缘橙线很多，视觉不能确认其精确落在每条整绳沟槽。"
+      },
+      {
+        "output_file": "images/right_camera/dual_20260924_111500__pair0015__right.png",
+        "tile_indices": [
+          19,
+          20
+        ],
+        "observed_point_count": 8516,
+        "curve_count": 47,
+        "uncertain_fit_curve_count": 33,
+        "visual_note": "中部线列顺行，弱纹带大批橙线；局部横向暗带附近连续性不应视为真实跨遮挡。"
+      },
+      {
+        "output_file": "images/right_camera/ruler_right_02.png",
+        "tile_indices": [
+          21,
+          22
+        ],
+        "observed_point_count": 5318,
+        "curve_count": 38,
+        "uncertain_fit_curve_count": 8,
+        "visual_note": "可见绳列的青线较规整，横向深暗带附近明显断续；活动绳/黑缺口之外不能据投影认定同根身份。"
+      },
+      {
+        "output_file": "images/right_camera/ruler_right_04.png",
+        "tile_indices": [
+          23,
+          24,
+          25
+        ],
+        "observed_point_count": 5271,
+        "curve_count": 38,
+        "uncertain_fit_curve_count": 22,
+        "visual_note": "规则暗沟区青线基本顺弧。tile25放大块状/高频区有多条橙色虚线和黄点，局部股纹与整绳沟槽难分；黑缺口保持空白。"
+      }
+    ],
+    "limitations": "仅固定额外12张的呈现页图目视；无人工真值、未逐像素校验、未测试物理同根身份、未触碰设备或保留集。未修改源码、输入和预测。"
+  },
+  "audit_source_sha256": "39fa5c2256187c59ca5978c18f34b35bcdb8b8cd8d1050f125d92e7c7516edf3",
+  "repair_check_source_sha256": "297e6fe1c8cf1fc7c78e2745ad6be3fb8799ac70ed478262fff92e78ebe81910",
+  "empty_observation_images": 1,
+  "equipment_access": false,
+  "reserved_access": false,
+  "html_generated": false
+}

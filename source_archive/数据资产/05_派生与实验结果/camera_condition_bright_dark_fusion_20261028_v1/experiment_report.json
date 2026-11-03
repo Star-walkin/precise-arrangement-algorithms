@@ -1,0 +1,396 @@
+{
+  "version": "RB-F1.0.0",
+  "name": "亮暗融合 F1",
+  "date": "2026-10-28",
+  "created_utc": "2026-10-27T17:41:09.551813+00:00",
+  "summary": {
+    "version": "RB-F1.0.0",
+    "planned": 400,
+    "completed": 400,
+    "failed": 0,
+    "source_unchanged": true,
+    "exit_code": 0,
+    "by_camera": {
+      "left": 200,
+      "right": 200
+    },
+    "pixels_total": {
+      "surface": 568765067,
+      "bright_owner": 205601309,
+      "dark_owner": 324362421,
+      "uncovered": 38801337,
+      "c3_boundaries": 8851617,
+      "d4_boundaries": 10133715,
+      "merged": 18985332,
+      "inferred": 809426,
+      "accepted_yellow": 17009450
+    },
+    "images_with_boundaries": 400,
+    "new_boundary_pixels_generated": 0,
+    "fitted_again": false,
+    "accuracy": null,
+    "equipment_access": false,
+    "reserved_access": false,
+    "html": false,
+    "finished_utc": "2026-10-27T17:34:57.662052+00:00"
+  },
+  "scope": "Existing open400 C3 bright and D4 dark saved results, same coordinates. Not a new detector or new boundary accuracy evaluation.",
+  "baselines": {
+    "bright": {
+      "id": "RB-C3.0.0",
+      "run": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\all_001"
+    },
+    "dark": {
+      "id": "DR-D4.0.0",
+      "run": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001",
+      "archive": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_欠曝光基准_D4_20261028",
+      "manifest_sha256": "de7c30164f0b4202f38d8f7a5e1e834c49cc0c952a1aa4490ab22daeedf44e9f",
+      "confirmation": "2026-10-28 user accepts D4 as dark-region development baseline; qualitative confirmation only."
+    }
+  },
+  "formal_rules": {
+    "version": "RB-F1.0.0",
+    "name": "亮暗融合 F1",
+    "date": "2026-10-28",
+    "input_manifest_sha256": "712859a4a830c08d556729a98cad76d039c684c290d2c4c57efa2b7ad3b45e69",
+    "input_count": 400,
+    "camera_counts": {
+      "left": 200,
+      "right": 200
+    },
+    "pilot_images": [
+      "images/left_camera/L_run_20260923_01__f000648__left.png",
+      "images/left_camera/L_run_stop_run_20260922_01__f004601__left.png",
+      "images/left_camera/dual_20260923_101643__pair0315__left.png",
+      "images/left_camera/dual_20260924_111143__pair0585__left.png",
+      "images/left_camera/ruler_left_01.png",
+      "images/left_camera/ruler_left_05.png",
+      "images/right_camera/R_run_20260923_01__f000757__right.png",
+      "images/right_camera/R_run_stop_run_20260922_01__f002627__right.png",
+      "images/right_camera/dual_20260923_101643__pair0315__right.png",
+      "images/right_camera/dual_20260924_111143__pair0585__right.png",
+      "images/right_camera/ruler_right_01.png",
+      "images/right_camera/ruler_right_05.png"
+    ],
+    "baseline_source_sha256": {
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_rope_boundaries_20261025_v3\\full_roi_observation.py": "64fdc0aca8e45019ebed32d50e3bf5a5089fee2d426a8b942a817125e2099555",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\all_002\\output_manifest.json": "7296b6bfd8252a1ffe802697ea99897cc412925782644a43ce218a04134105de",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\anchored_dark.py": "8f5ad03d5c94d4cd54e5dad67d58b6c630a6304ad2da09c8881a77a3c5667ffe",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\dark_curves.py": "60adceb0a8171c7230f350ed1e26e49620186fc375df6b25ff7326257e10e67e",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\dark_observation.py": "35b1cc7b11e0bed4ea02b2480108e933e89b7aab4caf41cf15cac87c88614648",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\data_io.py": "0acec46ca79b4c59a6aec357755e304b276aab21c903f2899874a12812c69c86",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\protocol.json": "69032c860bde02c9029ddf6ce304466d0b7542d7ab3b621c2d7f59000c87f5ea",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\run.py": "358411cd6a6614747f5964df781af2f7208d482ef073cae6b9b4b598a8cf7a19",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\data_io.py": "98ad3c98271d871cadaf026de5b7d7f6228c2a12d36e1052d5f386b7c9ef2cf6",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\groove_field.py": "887b2a52c14a727af7c582f7708439f3a5ce50297626e22519f16d3cbfe62ed6",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\ordered_paths.py": "605eb1d042f04b78926d76ab1c22ff87e910170fe82ca38357e6ccd27f92b133",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\protocol.json": "7ffe57543f6c0f87336cd707be1bebc9b44b9434303c53f29879cd2f544d25dd",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\run.py": "bea3ae1d0b34bd4cc2ac8c879bba3f7ca40e4c18421aca54346cab47ef6eb0c8",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\dark_c3.py": "03e9ab25815d6a287054be24570cf0fef24ce24fc874fe7722b5ca74fe083457",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\dark_roi.py": "023f0ca843716f1ab9cb102745afc31131957c4b68bc1b522e2766951ac59b5d",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\data_io.py": "e6a01b5fba70236471238e5e558f4a6f616709d5c33284ecb51f161996861f14",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\protocol.json": "d4b2f22a445f1c2d8cdffb881ea9db285cb86f1e59fb2e77f5f0b6abfab3abdb",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\data_io.py": "57d48299a4898e303e08b0394fa3bfb9e4546b78f7fd8b23568ef4c15c10e683",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\period_guard.py": "11766bb122904b15beaebb0aca6a6fe21504790794c73fa4c9512ba17d2962a8",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\protocol.json": "fc5cd5f109d5af36e5dc27b80d7354e650d14d9ffeb03a1e1cd173a3ca2ceb9f",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\ribbon_curves.py": "655afa84bab0a10038e2cf7646b6c8b97731faa83f58e6b8ee1b8e5ffc93a764",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\run.py": "fc13da97e49624a770723b67c72eefb01b3bb2fac3b5d1b65c972b796082a9ad",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\shadow_tracks.py": "318a81a500969be0725547789714b3e797755dda943026512f03a1ebec99f029",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\shadow_width.py": "c61a28ca9d6444360fe4067cd5cb25d358458af6c0ca34dd276290638a4731b6",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\conic_family.py": "392eb740cd7697bb4ddbc17359a193b2c9b9b761b1528573349370f7ac66eaa9",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\experiment_io.py": "59df951608cac1584bbb8b7b444ccc5799066afa6a885b4960ccbd583b4e3f85",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\protocol.json": "b71aee6dc0422075247f8eff192fe5ef019540af331d4c196ecdff3c22341af9",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\run_conic.py": "9533a097a1d04aafa50ba172c7f40fc86d19af60577b8e621a0fcb22ae586cc7",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\protocol.json": "94a7a1cb4c5cae734d20c534f66a0a9c8b40ee979ea5da3b7df9d5cfd577952d"
+    },
+    "parent_manifest_sha256": {
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\all_001\\integrity_audit.json": "b0fe024e9a0387f059394452c24dcb205d23ce9a0db0af490bfa02097e53da99",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\all_001\\output_manifest.json": "b6956299199ee3cdc504c8da0fdb6fa3b2035f7449c443a985c1e5b33a26035a",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\all_001\\output_manifest.json": "771d577a960a59d0bbb44be330465a30b22f6a01c5d99a31bb23176e03b9be5c",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_20261026_v7\\all_001\\output_manifest.json": "c665e950e24bca8219d57bf78de6b3da5b1d2ab1ab62077f6c1904f6f392b010"
+    },
+    "owners": {
+      "C3": "surface & bright_reference",
+      "D4": "surface & dark_roi & ~bright_reference"
+    },
+    "fusion": "Exact union of saved masks clipped by owner. No refit, extrapolation, bridging or cross-source identity assignment.",
+    "background": "Original full surface; D1 accepted enhancement replaces only D4 owner. Outside surface=0.",
+    "budget": "One fixed12 preview followed by source freeze and400. Display/structural bug repairs get separate runs.",
+    "versions": {
+      "bright": "RB-C3.0.0",
+      "dark": "DR-D4.0.0"
+    },
+    "accuracy": null,
+    "equipment_access": false,
+    "reserved_access": false,
+    "html": false
+  },
+  "audit": {
+    "planned": 400,
+    "passed": 400,
+    "failed": 0,
+    "global_errors": [],
+    "exit_code": 0,
+    "auditor_sha256": "eb031e565956535f17d88b458521c922ed44cd57628cb0afdc27de9908fe9234"
+  },
+  "audit_sha256": "a2fc1099003dc421c2f11116429fbd95a04e420958afd415ada5ee6d132e8b30",
+  "output_manifest_sha256": "fbe993fe7c82f108c86cadc03468ae0b20aeebd8f1e6be86c18cb882bca0f474",
+  "freeze_sha256": "410c930854701e7aefb5ed26c608fcce4c6a95628acd45f79d4811ae48121644",
+  "pilot_full_image_consistency": [
+    {
+      "output_file": "images/left_camera/dual_20260923_101643__pair0315__left.png",
+      "identical": true
+    },
+    {
+      "output_file": "images/right_camera/dual_20260923_101643__pair0315__right.png",
+      "identical": true
+    },
+    {
+      "output_file": "images/left_camera/dual_20260924_111143__pair0585__left.png",
+      "identical": true
+    },
+    {
+      "output_file": "images/right_camera/dual_20260924_111143__pair0585__right.png",
+      "identical": true
+    },
+    {
+      "output_file": "images/left_camera/L_run_20260923_01__f000648__left.png",
+      "identical": true
+    },
+    {
+      "output_file": "images/right_camera/R_run_20260923_01__f000757__right.png",
+      "identical": true
+    },
+    {
+      "output_file": "images/left_camera/L_run_stop_run_20260922_01__f004601__left.png",
+      "identical": true
+    },
+    {
+      "output_file": "images/right_camera/R_run_stop_run_20260922_01__f002627__right.png",
+      "identical": true
+    },
+    {
+      "output_file": "images/left_camera/ruler_left_01.png",
+      "identical": true
+    },
+    {
+      "output_file": "images/left_camera/ruler_left_05.png",
+      "identical": true
+    },
+    {
+      "output_file": "images/right_camera/ruler_right_01.png",
+      "identical": true
+    },
+    {
+      "output_file": "images/right_camera/ruler_right_05.png",
+      "identical": true
+    }
+  ],
+  "visual_review": {
+    "created_utc": "2026-10-27T17:30:41.875789+00:00",
+    "version": "RB-F1.0.0",
+    "run": "pilot_001",
+    "review_method": "Actual view_image inspection of all six full-surface paired previews; original-coordinate crop with no file resize. Tool display auto-resized long images; no per-pixel accuracy claim.",
+    "fixed_six_reviewed": 6,
+    "production_dimensions_unchanged": [
+      4096,
+      3000
+    ],
+    "cases": [
+      {
+        "case": "L_run_20260923_01__f000648__left.png",
+        "position_merge": "原图卷面纹理和亮暗所有层的位置一致，未见全层偏移或缩放。",
+        "full_surface_display": "继承surface内的中部亮带和两侧暗面同时可见；暗侧增强存在明显块状低信息区。",
+        "seams_and_connections": "亮暗分区接缝存在未接通线段和空白带；未见融合额外画线去穿过接缝。",
+        "inherited_limitations": "左侧及两侧极暗块区大片无边界；上方活动绳/卷面交界保持不完整片段，未补齐。",
+        "readability": "暗面青线黄点可读，中心强反光上青黄细线对比偏低，需要原尺寸查看。",
+        "major_new_fusion_defect": false,
+        "output_file": "images/left_camera/L_run_20260923_01__f000648__left.png",
+        "reviewed_preview": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\pilot_001\\记录\\qa_visual\\01_L_run_20260923_01__f000648__left_full_surface_pair.jpg",
+        "preview_sha256": "8a5cc8138dd54a3c7725a312df6db1b1d0d2e2aa1ce5f5ad0f51595c279fee51",
+        "owner_uncovered_fraction_of_saved_surface": 0.09634013843196547,
+        "read_only_structural_checks": {
+          "saved_union_exact": true,
+          "owners_disjoint": true,
+          "c3_inside_bright_owner": true,
+          "d4_inside_dark_owner": true,
+          "overlay_exterior_black": true,
+          "source_original_hash_matches_fixed_manifest": true
+        }
+      },
+      {
+        "case": "dual_20260923_101643__pair0315__left.png",
+        "position_merge": "亮带C3与两侧D4均保持原纹理位置。",
+        "full_surface_display": "本图卷面左右及中部均显示，未见ruler_left05型大块漏面。",
+        "seams_and_connections": "亮暗交界有窄缺口/端点间距变化；未强制把两侧或相邻绳接成连续曲线。",
+        "inherited_limitations": "左右靠边暗纹局部仍有缺线或稀疏段，单图融合不验证同根材料身份。",
+        "readability": "整体走向清楚；强反光中心需要放大查看，缩略图的黄点密集。",
+        "major_new_fusion_defect": false,
+        "output_file": "images/left_camera/dual_20260923_101643__pair0315__left.png",
+        "reviewed_preview": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\pilot_001\\记录\\qa_visual\\02_dual_20260923_101643__pair0315__left_full_surface_pair.jpg",
+        "preview_sha256": "b292a55e1f7787c0e440dd101b8969b89636dd4efb2cd8aa6fc1918316dd2c71",
+        "owner_uncovered_fraction_of_saved_surface": 0.0770980818550341,
+        "read_only_structural_checks": {
+          "saved_union_exact": true,
+          "owners_disjoint": true,
+          "c3_inside_bright_owner": true,
+          "d4_inside_dark_owner": true,
+          "overlay_exterior_black": true,
+          "source_original_hash_matches_fixed_manifest": true
+        }
+      },
+      {
+        "case": "ruler_left_05.png",
+        "position_merge": "保留区域中的C3和D4位置一致；没有把被掩膜排除区域移入其它位置。",
+        "full_surface_display": "重要继承漏面：活动绳上方及亮带矩形周围大面积真实卷面被surface裁黑；左侧原图上下文清楚显示该区域仍有绳纹。仅保留中央亮区矩形和下方部分卷面。",
+        "seams_and_connections": "活动绳附近为黑带/断开区域，未强接活动绳两侧。",
+        "inherited_limitations": "旧SAM/C4 surface形状导致明显不完整卷面，这不是本次融合新增，但不能将此输出描述为物理卷面完整覆盖。surface内的uncovered比例不会统计surface外这块漏面。",
+        "readability": "保留的暗面曲线和亮面边界可读；大块黑色裁面影响完整卷面展示。",
+        "major_new_fusion_defect": false,
+        "material_inherited_surface_omission": true,
+        "output_file": "images/left_camera/ruler_left_05.png",
+        "reviewed_preview": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\pilot_001\\记录\\qa_visual\\03_ruler_left_05_full_surface_pair.jpg",
+        "preview_sha256": "4b30cbdeb65d6395d43355de4aae36e16a8124e037df58d4715c422eea6a571a",
+        "owner_uncovered_fraction_of_saved_surface": 0.0823733736885404,
+        "read_only_structural_checks": {
+          "saved_union_exact": true,
+          "owners_disjoint": true,
+          "c3_inside_bright_owner": true,
+          "d4_inside_dark_owner": true,
+          "overlay_exterior_black": true,
+          "source_original_hash_matches_fixed_manifest": true
+        }
+      },
+      {
+        "case": "R_run_20260923_01__f000757__right.png",
+        "position_merge": "C3亮带和D4暗带按纹理原坐标重合，未见错位。",
+        "full_surface_display": "完整保存surface轮廓内两暗侧与亮带同时呈现；两暗侧有严重块状低信息。",
+        "seams_and_connections": "横跨画面的活动绳附近保留不连续边界；未见新增跨遮挡连线。亮暗接缝有断口。",
+        "inherited_limitations": "左暗侧与外缘大量缺线，右暗侧曲线稀疏；这是继承D4拒识/弱信息，不能由融合声明已识别。",
+        "readability": "暗面已接受曲线易辨，亮中心需原尺寸查看。",
+        "major_new_fusion_defect": false,
+        "output_file": "images/right_camera/R_run_20260923_01__f000757__right.png",
+        "reviewed_preview": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\pilot_001\\记录\\qa_visual\\04_R_run_20260923_01__f000757__right_full_surface_pair.jpg",
+        "preview_sha256": "ff3f38c90df6d0776b262793d49fde95f863e64cad7eec9bdc3ced7fb7211ab6",
+        "owner_uncovered_fraction_of_saved_surface": 0.09534983194606056,
+        "read_only_structural_checks": {
+          "saved_union_exact": true,
+          "owners_disjoint": true,
+          "c3_inside_bright_owner": true,
+          "d4_inside_dark_owner": true,
+          "overlay_exterior_black": true,
+          "source_original_hash_matches_fixed_manifest": true
+        }
+      },
+      {
+        "case": "dual_20260923_101643__pair0315__right.png",
+        "position_merge": "左右暗面、中央亮面和斜活动绳的位置与输入一致。",
+        "full_surface_display": "保存surface的整体轮廓显示完整；斜活动绳仍呈亮色，与原图增强展示一致。",
+        "seams_and_connections": "白活动绳两侧边界保持中断，未见融合把卷面曲线跨过白绳强制接上。亮暗切换接缝仍有不连通线端。",
+        "inherited_limitations": "白活动绳附近及最右低信息区域存在缺线；不能将显示亮绳当作接触点或活动绳状态检测。",
+        "readability": "暗曲线清晰、中心边界密集偏淡，可用原图大小检查。",
+        "major_new_fusion_defect": false,
+        "output_file": "images/right_camera/dual_20260923_101643__pair0315__right.png",
+        "reviewed_preview": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\pilot_001\\记录\\qa_visual\\05_dual_20260923_101643__pair0315__right_full_surface_pair.jpg",
+        "preview_sha256": "63830fa165eb35c76b887fc8a823be0dd25cf7e97d33d4b9c599e64373f42ab3",
+        "owner_uncovered_fraction_of_saved_surface": 0.07780272890069283,
+        "read_only_structural_checks": {
+          "saved_union_exact": true,
+          "owners_disjoint": true,
+          "c3_inside_bright_owner": true,
+          "d4_inside_dark_owner": true,
+          "overlay_exterior_black": true,
+          "source_original_hash_matches_fixed_manifest": true
+        }
+      },
+      {
+        "case": "ruler_right_05.png",
+        "position_merge": "原图的椭圆弧走势和各分区叠加位置一致。",
+        "full_surface_display": "左暗面、强反光亮带、右暗面均显示；顶部活动绳附近有继承掩膜裁切/碎片。",
+        "seams_and_connections": "两个亮暗交界有端点断续及局部相位差，未见额外连接段。",
+        "inherited_limitations": "右暗侧及底部少数区域仍有片段中断，保留旧D4局部误差；本次没有重新拟合修复。",
+        "readability": "全卷面走向易查看；原尺寸上更易分辨接缝断点，缩略图无法验逐像素准确率。",
+        "major_new_fusion_defect": false,
+        "output_file": "images/right_camera/ruler_right_05.png",
+        "reviewed_preview": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\pilot_001\\记录\\qa_visual\\06_ruler_right_05_full_surface_pair.jpg",
+        "preview_sha256": "ccf4c117b6d251e30c5094247e2bebbc463dd9a3879c0b1034e91e197ef50c53",
+        "owner_uncovered_fraction_of_saved_surface": 0.09821121473897244,
+        "read_only_structural_checks": {
+          "saved_union_exact": true,
+          "owners_disjoint": true,
+          "c3_inside_bright_owner": true,
+          "d4_inside_dark_owner": true,
+          "overlay_exterior_black": true,
+          "source_original_hash_matches_fixed_manifest": true
+        }
+      }
+    ],
+    "overall_findings": [
+      "六张均未见整体坐标错位；六张存储mask的融合结果均严格等于owner内C3/D4掩码并集，没有生成新边界像素。",
+      "两侧暗面和中间亮面可在同一张结果中查看，亮暗底图有可见曝光/处理接缝。",
+      "融合没有跨来源分组或接线；接缝缺口、曲线端点相位差和继承拒识仍然存在。",
+      "ruler_left05有明显继承surface漏面，不能宣称所有图像均显示完整物理卷面。",
+      "白亮/强反光区域叠加细线在全图缩略图上对比不足，应查看原4096x3000输出。"
+    ],
+    "recommendation": {
+      "proceed_full_400_frozen_union": true,
+      "reason": "The requested saved C3/D4 coordinate-preserving union is visually and structurally coherent on fixed six; no new fusion alignment or bridge defect found. Full-run structural audit remains required.",
+      "delivery_wording": "既有SAM卷面掩膜内的C3亮区+D4暗区融合；保留旧结果缺口、掩膜漏面及未识别区域。",
+      "not_claimed": [
+        "完整物理卷面无遗漏",
+        "亮暗接缝属于同根钢丝绳",
+        "全卷面每根边界均已准确识别",
+        "活动绳接触点检测"
+      ],
+      "followup_if_complete_physical_surface_is_required": "单独修正并版本化继承SAM/C4漏面，尤其ruler_left05；不得在F1融合中静默扩大ROI或伪造旧检测结果。"
+    },
+    "source_files_unchanged": true,
+    "source_sha256": {
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\fusion_io.py": "c1e24705b2873cddb521a711097b4e452241c94effc5388ed0aac52f71330b85",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\fusion.py": "087eb2c836c09176109804f811f367427e94325c7c9a3a85487802b65e6a695d",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\run_fusion.py": "941f88faa94cfc76bc2e2ef44f91c4bfb2346d6fa2a1550ffbe7ece257cb58ea",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\protocol.json": "e15ad0fbacab2d92850ff667d185f74fe29812a413ac1be0d1c8803166e6d833"
+    },
+    "new_visual_parameters_changed": false,
+    "equipment_access": false,
+    "reserved_access": false,
+    "html": false,
+    "accuracy": null
+  },
+  "by_source_group": {
+    "dual_20260923_101517": 40,
+    "dual_20260923_101643": 40,
+    "dual_20260923_113305": 40,
+    "dual_20260924_111143": 40,
+    "dual_20260924_111500": 40,
+    "L_run_20260923_01": 40,
+    "R_run_20260923_01": 40,
+    "L_run_stop_run_20260922_01": 50,
+    "R_run_stop_run_20260922_01": 50,
+    "L_static_20260922_01": 5,
+    "R_static_20260922_01": 5,
+    "ruler_test_离开38.5mm（包括活动绳共计8.5根）": 1,
+    "ruler_test_离开95mm（包括活动绳共计21根）": 1,
+    "ruler_test_靠近23mm": 1,
+    "ruler_test_靠近43mm": 1,
+    "ruler_test_靠近77mm": 1,
+    "ruler_test_离开107.5mm （包括活动绳共计24根）": 1,
+    "ruler_test_离开49mm（包括活动绳共计11根）": 1,
+    "ruler_test_靠近41mm": 1,
+    "ruler_test_靠近80mm": 1,
+    "ruler_test_靠近9.5mm": 1
+  },
+  "roi_overlap_images": 1,
+  "c3_clipped_boundary_pixels": 0,
+  "d4_clipped_boundary_pixels": 0,
+  "known_limits": [
+    "C3/D4 seam gaps and phase/endpoint disagreement remain; no newly connected same-rope identity.",
+    "Existing SAM-union surface is reused. ruler_left_05 visibly misses physical surface above incoming rope; F1 does not expand it.",
+    "Faint cyan/yellow on bright glare needs full-resolution inspection; dark enhancement is display only.",
+    "All400 integrity success does not mean every physical boundary is detected or correct."
+  ],
+  "equipment_access": false,
+  "reserved_access": false,
+  "html_generated": false,
+  "accuracy": null
+}

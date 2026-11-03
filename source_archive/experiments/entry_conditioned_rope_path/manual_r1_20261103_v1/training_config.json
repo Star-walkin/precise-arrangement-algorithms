@@ -1,0 +1,58 @@
+{
+  "base_channels": 8,
+  "high_threshold": 0.5,
+  "normalization_std_floor": 0.08,
+  "pad_multiple": 32,
+  "brightness": [
+    0.9,
+    1.1
+  ],
+  "contrast": [
+    0.9,
+    1.1
+  ],
+  "gamma": [
+    0.9,
+    1.1
+  ],
+  "noise_std": 0.004,
+  "horizontal_flip_probability": 0.5,
+  "rotation_degrees": 5.0,
+  "translation_fraction": 0.035,
+  "seed_source": "initial free entry only, never post-contact target points",
+  "model_input": "gray plus initial seed; seed-conditioned global descriptor and relative coordinates inside model",
+  "normalization": "per-ROI mean/std floor .08 after nonnegative photometry; neutral exterior zero standardized",
+  "seed": 20261103,
+  "threads": 8,
+  "batch_size": 1,
+  "learning_rate": 0.0002,
+  "weight_decay": 0.0001,
+  "train_steps": 800,
+  "train_max_seconds": 2000,
+  "checkpoint_interval": 100,
+  "smallcheck_steps": 100,
+  "smallcheck_max_seconds": 300,
+  "loss": "unchanged stage_balanced_mse, threshold0.5; no separate negative or confidence loss",
+  "optimization_scope": "all EntryUNet parameters; R1 is separate",
+  "sampling": "alternating manual/old 50:50; old uniform shuffled image cycles; manual uniform shuffled group cycles and shuffled image cycles within group",
+  "checkpoint_selection": "last actual saved formal update, independent of evaluation/gallery appearance",
+  "source_checkpoint": {
+    "path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\runs\\run_20261030_002\\branches\\A\\model\\checkpoints\\step_0750.pt",
+    "sha256": "d3dcc8b254d4e87c7aff321dfafbc58587a00b36c7f7143549531b2d2ef45c61"
+  },
+  "source_checkpoint_update": 750,
+  "center_sigma_original_px": 3.0,
+  "input_crop_original_xyxy": [
+    0,
+    1050,
+    4096,
+    3000
+  ],
+  "model_grid_hw": [
+    975,
+    2048
+  ],
+  "normalization_and_augmentation": "unchanged tensor_sample; nonnegative photometry before per-ROI standardization",
+  "manual_LCN": "display-only annotation transform; not used as network input",
+  "budget_rationale": "800 updates incl400 manual exposures with a fixed2000s formal cap; one100-step independent smallcheck then A750 reset; no evaluation-driven extension"
+}

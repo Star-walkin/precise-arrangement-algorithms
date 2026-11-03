@@ -1,0 +1,105 @@
+{
+  "version": "IR-H2.0.0",
+  "completed_utc": "2026-10-30T16:10:26.483479+00:00",
+  "artifact_date_note": "Directory named at start on2026-10-30; completion local time2026-10-31",
+  "output_folder": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\all_001\\四栏检测结果",
+  "source_open_images": 400,
+  "rendered_images": 292,
+  "original_entry_conditions": 299,
+  "additional_A7_entry_conditions": 2,
+  "total_entry_conditions": 301,
+  "unresolved_entry_images": 108,
+  "unresolved_is_not_no_rope": true,
+  "source_groups": 21,
+  "camera_roles": {
+    "right": 178,
+    "left": 114
+  },
+  "model_B": {
+    "path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\runs\\run_20261030_002\\branches\\B\\model\\checkpoints\\step_0750.pt",
+    "sha256": "ed4bfa12c5b3081a19d056265b053d516bdba5ec05dce658e1e32339b47fb882"
+  },
+  "new_forward_calls": 2,
+  "reused_float_responses": 299,
+  "numeric_inference_seconds": 1.321624517440796,
+  "batch_seconds": 216.3860182762146,
+  "batch_exit_code": 0,
+  "path_output_counts": {
+    "direct_H1_response_path": 118,
+    "free_bridge_adjacent_F3_lane": 164,
+    "free_fragment_no_resolved_connection": 10
+  },
+  "ambiguous_top_candidate_images": 104,
+  "images_with_some_candidate": 292,
+  "path_counts_are_not_identity_accuracy": true,
+  "independent_identity_reference_used": false,
+  "method": [
+    "B center-high and bilateral low-band profiles plus original gray bilateral evidence",
+    "A7 matched accepted undirected axes; bounded same-axis gaps with observed flanks, gaps remain inferred",
+    "Original independent SAM2 domain; adjacent saved F3 boundary pairs converted to local center tracks",
+    "Finite Hermite transition hypotheses and direct H1 traces; fixed phase-balanced appearance/geometry ranking; retain up to3 distinct paths"
+  ],
+  "limitations": [
+    "Local raw/heat agreement does not establish material identity or physical contact",
+    "F3 track support may stop before the true spool edge; no fixed spacing extrapolation",
+    "Rrun1274 new bidirectional A7 conditions both remain free fragments; best direction may point outward",
+    "Rrun55 retains a long weak tail; pair0075 and Lrun15 still have unverified downstream identity",
+    "Some high response areas follow illumination/tools; no independent full target reference was read"
+  ],
+  "visual_encoding": {
+    "panel_order": [
+      "original",
+      "B intensity",
+      "candidate connections",
+      "best provisional candidate"
+    ],
+    "heat_range": [
+      0,
+      1
+    ],
+    "outside_model_crop": "gray uncomputed",
+    "final_colors": {
+      "free": "green",
+      "transition": "cyan",
+      "surface_candidate": "magenta",
+      "weak_or_inferred": "orange dashed",
+      "endpoint": "white circle"
+    },
+    "entries_never_merged": true,
+    "image_size": [
+      8192,
+      1655
+    ],
+    "scale": 0.5
+  },
+  "pilot_runs": [
+    "pilot_001",
+    "pilot_002"
+  ],
+  "pilot_fix_notes": [
+    "SAM2 boundary distance separated from all outside pixels",
+    "bridge starts restricted to observed free points",
+    "direct H1 unknown support retained",
+    "free-only and direction ambiguity made explicit"
+  ],
+  "freeze_sha256": "1cb44ec6dc8509ea21395ea86413d87ea89533062ba98e2728706baedff56cef",
+  "training": false,
+  "labels_read": false,
+  "reserved_data_accessed": false,
+  "hardware_connected": false,
+  "baseline_replaced": false,
+  "next_step": "Inspect the highest-score and competing continuation at a few bends/endpoints; verify target identity before learning a ranker or declaring whole-rope success",
+  "integrity_audit": {
+    "path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\all_001\\audit_002\\report.json",
+    "sha256": "06642374a213604c5acbb0d8111ae16065ec22c56d97673c513645f05673c4a7",
+    "exit_code": 0,
+    "images": 292,
+    "conditions": 301,
+    "identity_accuracy_verified": false
+  },
+  "audit_history_note": "audit_001 retained: single-thread OpenCV EDT reconstruction differs at1e-8 from parallel cached seed; audit_002 reproduces parallel branch exactly, no artifact or tolerance changed",
+  "independent_visual_review": {
+    "path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\review_receipt.json",
+    "sha256": "c1e4f2bb90f533ac46ada3ef0d243f1d64b075ae9238cb2f80715f18d0dda764"
+  }
+}

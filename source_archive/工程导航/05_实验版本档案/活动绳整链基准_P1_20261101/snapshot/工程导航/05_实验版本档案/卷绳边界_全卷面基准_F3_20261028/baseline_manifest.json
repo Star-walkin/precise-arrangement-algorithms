@@ -1,0 +1,875 @@
+{
+  "format": 1,
+  "id": "RB-F3.0.0",
+  "name_zh": "全卷面钢丝绳边界基准 F3（原算法名：全卷面协同 F3）",
+  "created_utc": "2026-10-28T10:16:42.788892+00:00",
+  "baseline_physical_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028",
+  "project_root": "D:\\precise_arrangement",
+  "source_run": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001",
+  "fixed_open_development_images": 400,
+  "camera_roles": {
+    "left": 200,
+    "right": 200
+  },
+  "frozen_source_count": 43,
+  "inherited_baseline_count": 38,
+  "snapshot_files": [
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/000_fusion.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\000_fusion.py",
+      "sha256": "087eb2c836c09176109804f811f367427e94325c7c9a3a85487802b65e6a695d",
+      "bytes": 3436,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\fusion.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/001_fusion_io.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\001_fusion_io.py",
+      "sha256": "c1e24705b2873cddb521a711097b4e452241c94effc5388ed0aac52f71330b85",
+      "bytes": 6305,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\fusion_io.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/002_protocol.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\002_protocol.json",
+      "sha256": "e15ad0fbacab2d92850ff667d185f74fe29812a413ac1be0d1c8803166e6d833",
+      "bytes": 8377,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\protocol.json"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/003_run_fusion.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\003_run_fusion.py",
+      "sha256": "941f88faa94cfc76bc2e2ef44f91c4bfb2346d6fa2a1550ffbe7ece257cb58ea",
+      "bytes": 4067,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\run_fusion.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/004_full_roi_observation.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\004_full_roi_observation.py",
+      "sha256": "64fdc0aca8e45019ebed32d50e3bf5a5089fee2d426a8b942a817125e2099555",
+      "bytes": 14745,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_rope_boundaries_20261025_v3\\full_roi_observation.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/005_output_manifest.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\005_output_manifest.json",
+      "sha256": "7296b6bfd8252a1ffe802697ea99897cc412925782644a43ce218a04134105de",
+      "bytes": 535875,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\all_002\\output_manifest.json"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/006_anchored_dark.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\006_anchored_dark.py",
+      "sha256": "8f5ad03d5c94d4cd54e5dad67d58b6c630a6304ad2da09c8881a77a3c5667ffe",
+      "bytes": 39322,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\anchored_dark.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/007_dark_curves.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\007_dark_curves.py",
+      "sha256": "60adceb0a8171c7230f350ed1e26e49620186fc375df6b25ff7326257e10e67e",
+      "bytes": 34028,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\dark_curves.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/008_dark_observation.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\008_dark_observation.py",
+      "sha256": "35b1cc7b11e0bed4ea02b2480108e933e89b7aab4caf41cf15cac87c88614648",
+      "bytes": 19441,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\dark_observation.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/009_data_io.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\009_data_io.py",
+      "sha256": "0acec46ca79b4c59a6aec357755e304b276aab21c903f2899874a12812c69c86",
+      "bytes": 3958,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\data_io.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/010_protocol.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\010_protocol.json",
+      "sha256": "69032c860bde02c9029ddf6ce304466d0b7542d7ab3b621c2d7f59000c87f5ea",
+      "bytes": 5145,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\protocol.json"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/011_run.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\011_run.py",
+      "sha256": "358411cd6a6614747f5964df781af2f7208d482ef073cae6b9b4b598a8cf7a19",
+      "bytes": 9947,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\run.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/012_data_io.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\012_data_io.py",
+      "sha256": "98ad3c98271d871cadaf026de5b7d7f6228c2a12d36e1052d5f386b7c9ef2cf6",
+      "bytes": 3485,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\data_io.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/013_groove_field.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\013_groove_field.py",
+      "sha256": "887b2a52c14a727af7c582f7708439f3a5ce50297626e22519f16d3cbfe62ed6",
+      "bytes": 12817,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\groove_field.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/014_ordered_paths.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\014_ordered_paths.py",
+      "sha256": "605eb1d042f04b78926d76ab1c22ff87e910170fe82ca38357e6ccd27f92b133",
+      "bytes": 51143,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\ordered_paths.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/015_protocol.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\015_protocol.json",
+      "sha256": "7ffe57543f6c0f87336cd707be1bebc9b44b9434303c53f29879cd2f544d25dd",
+      "bytes": 5664,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\protocol.json"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/016_run.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\016_run.py",
+      "sha256": "bea3ae1d0b34bd4cc2ac8c879bba3f7ca40e4c18421aca54346cab47ef6eb0c8",
+      "bytes": 8173,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\run.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/017_dark_c3.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\017_dark_c3.py",
+      "sha256": "03e9ab25815d6a287054be24570cf0fef24ce24fc874fe7722b5ca74fe083457",
+      "bytes": 8953,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\dark_c3.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/018_dark_roi.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\018_dark_roi.py",
+      "sha256": "023f0ca843716f1ab9cb102745afc31131957c4b68bc1b522e2766951ac59b5d",
+      "bytes": 9952,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\dark_roi.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/019_data_io.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\019_data_io.py",
+      "sha256": "e6a01b5fba70236471238e5e558f4a6f616709d5c33284ecb51f161996861f14",
+      "bytes": 2703,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\data_io.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/020_protocol.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\020_protocol.json",
+      "sha256": "d4b2f22a445f1c2d8cdffb881ea9db285cb86f1e59fb2e77f5f0b6abfab3abdb",
+      "bytes": 1829,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\protocol.json"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/021_data_io.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\021_data_io.py",
+      "sha256": "57d48299a4898e303e08b0394fa3bfb9e4546b78f7fd8b23568ef4c15c10e683",
+      "bytes": 2794,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\data_io.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/022_period_guard.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\022_period_guard.py",
+      "sha256": "11766bb122904b15beaebb0aca6a6fe21504790794c73fa4c9512ba17d2962a8",
+      "bytes": 14682,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\period_guard.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/023_protocol.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\023_protocol.json",
+      "sha256": "fc5cd5f109d5af36e5dc27b80d7354e650d14d9ffeb03a1e1cd173a3ca2ceb9f",
+      "bytes": 5988,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\protocol.json"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/024_ribbon_curves.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\024_ribbon_curves.py",
+      "sha256": "655afa84bab0a10038e2cf7646b6c8b97731faa83f58e6b8ee1b8e5ffc93a764",
+      "bytes": 19722,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\ribbon_curves.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/025_run.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\025_run.py",
+      "sha256": "fc13da97e49624a770723b67c72eefb01b3bb2fac3b5d1b65c972b796082a9ad",
+      "bytes": 9134,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\run.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/026_shadow_tracks.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\026_shadow_tracks.py",
+      "sha256": "318a81a500969be0725547789714b3e797755dda943026512f03a1ebec99f029",
+      "bytes": 6406,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\shadow_tracks.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/027_shadow_width.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\027_shadow_width.py",
+      "sha256": "c61a28ca9d6444360fe4067cd5cb25d358458af6c0ca34dd276290638a4731b6",
+      "bytes": 13274,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\shadow_width.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/028_protocol.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\028_protocol.json",
+      "sha256": "f21651fab39a6dbd0f31cb16c370de70f43d3efb61e141954b8192b69f66ccd8",
+      "bytes": 10006,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\protocol.json"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/029_run_surface.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\029_run_surface.py",
+      "sha256": "09eddba1e2fe8bcf590d1b30b86722c4d77cacf65458761fd22121feb1ae0a7c",
+      "bytes": 8158,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\run_surface.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/030_surface_fusion.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\030_surface_fusion.py",
+      "sha256": "7174e4a3bcdfb3e68b310be4947c22019d4ced8616da556ae0650c4e4c0fc461",
+      "bytes": 21709,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\surface_fusion.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/031_surface_io.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\031_surface_io.py",
+      "sha256": "ac7aee4a8c479a4db623a9330deb892e22f0a4431bec15fb3e7039a527aafb40",
+      "bytes": 3938,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\surface_io.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/032_surface_observation.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\032_surface_observation.py",
+      "sha256": "ba458442d41535b1c61cd1a15cfc5f11d102780f41a2abf255717e1cef7067f9",
+      "bytes": 6802,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\surface_observation.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/033_conic_family.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\033_conic_family.py",
+      "sha256": "392eb740cd7697bb4ddbc17359a193b2c9b9b761b1528573349370f7ac66eaa9",
+      "bytes": 33752,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\conic_family.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/034_protocol.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\034_protocol.json",
+      "sha256": "94a7a1cb4c5cae734d20c534f66a0a9c8b40ee979ea5da3b7df9d5cfd577952d",
+      "bytes": 4005,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\protocol.json"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/035_run_conic.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\035_run_conic.py",
+      "sha256": "9533a097a1d04aafa50ba172c7f40fc86d19af60577b8e621a0fcb22ae586cc7",
+      "bytes": 16977,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\run_conic.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/036_experiment_io.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\036_experiment_io.py",
+      "sha256": "59df951608cac1584bbb8b7b444ccc5799066afa6a885b4960ccbd583b4e3f85",
+      "bytes": 5238,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\experiment_io.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/037_protocol.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\037_protocol.json",
+      "sha256": "b71aee6dc0422075247f8eff192fe5ef019540af331d4c196ecdff3c22341af9",
+      "bytes": 2886,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\protocol.json"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/038_protocol.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\038_protocol.json",
+      "sha256": "0bc61f628abe959a5427304cb2f8578df03005513a1be7d8560cfa46f6e76d31",
+      "bytes": 8817,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\protocol.json"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/039_run_seam.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\039_run_seam.py",
+      "sha256": "d12a88e52ddae6d9c476b6cdb8d3fce14cd4c87756a771077f326ccffa7b7025",
+      "bytes": 8421,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\run_seam.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/040_seam_io.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\040_seam_io.py",
+      "sha256": "ea327509d3024d944bda6e3069aad55dfaabdb2a21be6441930a2b9763618eb8",
+      "bytes": 4389,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\seam_io.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/041_seam_join.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\041_seam_join.py",
+      "sha256": "e6e91e06fef088843542e9484d27ff751be06bba2c2040edfab6b9a06b4a020f",
+      "bytes": 19021,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\seam_join.py"
+    },
+    {
+      "kind": "frozen_run_source",
+      "snapshot_relpath": "snapshot/source_snapshot/042_seam_observation.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\source_snapshot\\042_seam_observation.py",
+      "sha256": "49e9dab0750fcd70d2ae332012b83e201110c19ea0ee206239bae13b71b06c85",
+      "bytes": 10886,
+      "original_source_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\seam_observation.py"
+    },
+    {
+      "kind": "fixed_original400_manifest",
+      "snapshot_relpath": "snapshot/config/image_manifest.csv",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\manifest.csv",
+      "sha256": "712859a4a830c08d556729a98cad76d039c684c290d2c4c57efa2b7ad3b45e69",
+      "bytes": 311191
+    },
+    {
+      "kind": "upstream_baseline_manifest",
+      "snapshot_relpath": "snapshot/config/c3_baseline_manifest.json",
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_整链基准_C3_20261026\\baseline_manifest.json",
+      "sha256": "1637e95b1a030478078252bb987064189d2b8220af1ebfca5fe8a3ef73232aac",
+      "bytes": 42964
+    },
+    {
+      "kind": "upstream_baseline_manifest",
+      "snapshot_relpath": "snapshot/config/d4_baseline_manifest.json",
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_欠曝光基准_D4_20261028\\baseline_manifest.json",
+      "sha256": "de7c30164f0b4202f38d8f7a5e1e834c49cc0c952a1aa4490ab22daeedf44e9f",
+      "bytes": 32756
+    },
+    {
+      "kind": "frozen_F2_reference_evidence",
+      "snapshot_relpath": "snapshot/config/f2/output_manifest.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\all_001\\output_manifest.json",
+      "sha256": "fa22d2dd98270bf4718d461ac3454b8a5141a0202450c85bcbf17defd74e489f",
+      "bytes": 1575671
+    },
+    {
+      "kind": "frozen_F2_reference_evidence",
+      "snapshot_relpath": "snapshot/config/f2/audit.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\all_001\\audit.json",
+      "sha256": "68c5c21de723807b6a686a8f4e2f832e9e279847c67b6dedb3d5751e399147e2",
+      "bytes": 1674168
+    },
+    {
+      "kind": "frozen_F2_reference_evidence",
+      "snapshot_relpath": "snapshot/config/f2/freeze_all.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\freeze_all.json",
+      "sha256": "467640e0fce591559c608e1b4e9c0d26638fb13d63a302a1b91e506b2e3660db",
+      "bytes": 9256
+    },
+    {
+      "kind": "original_F3_evidence",
+      "snapshot_relpath": "snapshot/evidence/root/protocol.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\protocol.json",
+      "sha256": "f21651fab39a6dbd0f31cb16c370de70f43d3efb61e141954b8192b69f66ccd8",
+      "bytes": 10006
+    },
+    {
+      "kind": "original_F3_evidence",
+      "snapshot_relpath": "snapshot/evidence/root/freeze_all.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\freeze_all.json",
+      "sha256": "2339694b20b07141e3348889d4485eb392d8e279a00d33da9e28ee034e8e956e",
+      "bytes": 9961
+    },
+    {
+      "kind": "original_F3_evidence",
+      "snapshot_relpath": "snapshot/evidence/root/delivery_receipt.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\delivery_receipt.json",
+      "sha256": "6449e53d283f53558f09f468af43182a321977f5e70c7e81808417fc1b900bfc",
+      "bytes": 10137
+    },
+    {
+      "kind": "original_F3_evidence",
+      "snapshot_relpath": "snapshot/evidence/root/experiment_report.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\experiment_report.json",
+      "sha256": "3c24ded73714d1eaa91f0115111cecbd7287bda38964bb90e3080cfd0873a754",
+      "bytes": 8961
+    },
+    {
+      "kind": "original_F3_evidence",
+      "snapshot_relpath": "snapshot/evidence/root/算法说明.txt",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\算法说明.txt",
+      "sha256": "ed618d2bdf04139a688a31d0eda7a8580a85b6b6f3f30f4e88435965b9ad95cb",
+      "bytes": 4482
+    },
+    {
+      "kind": "original_F3_evidence",
+      "snapshot_relpath": "snapshot/evidence/root/结果说明.txt",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\结果说明.txt",
+      "sha256": "e08bf843b5f7c918dee6430c8205d04d36454bcf59f5de80cad8ff43d3542630",
+      "bytes": 1321
+    },
+    {
+      "kind": "original_F3_evidence",
+      "snapshot_relpath": "snapshot/evidence/root/diagnosis_before.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\diagnosis_before.json",
+      "sha256": "74ff6f827be2c0f880e3954aac594cbdde6cf33ccf43fe8f84f04ab4109e301b",
+      "bytes": 10736
+    },
+    {
+      "kind": "original_F3_evidence",
+      "snapshot_relpath": "snapshot/evidence/root/diagnosis_before_statistics.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\diagnosis_before_statistics.json",
+      "sha256": "e52e9444bbdc4fb7d980b2243b3f683eb19a51bf4a7323aa2843097c5f65237e",
+      "bytes": 59237
+    },
+    {
+      "kind": "original_F3_evidence",
+      "snapshot_relpath": "snapshot/evidence/root/extra_review_selection_left.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\extra_review_selection_left.json",
+      "sha256": "96370c983c2082c0eb8c47634d3e5f51a1fb8ced2b48d5f0036f19b171e499e7",
+      "bytes": 8187
+    },
+    {
+      "kind": "original_F3_evidence",
+      "snapshot_relpath": "snapshot/evidence/root/extra_review_selection_right.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\extra_review_selection_right.json",
+      "sha256": "7a7cb026ac0c209e6315c9b65795b2fe02d63a6dfdc530c0d1d89ae86b92fecd",
+      "bytes": 9079
+    },
+    {
+      "kind": "original_F3_evidence",
+      "snapshot_relpath": "snapshot/evidence/root/smoke_surface_observation_synthetic_001.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\smoke_surface_observation_synthetic_001.json",
+      "sha256": "35c9bd6961f085eaa3ca6cf845ae026270d643a932c79260e17fcb5ff97e904b",
+      "bytes": 1758
+    },
+    {
+      "kind": "original_F3_evidence",
+      "snapshot_relpath": "snapshot/evidence/root/surface_fusion_smoke_001.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\surface_fusion_smoke_001.json",
+      "sha256": "f9412d3939fe6569b63707710cffd75d698f9e0549e3cfac3a4f17cad9ef6193",
+      "bytes": 3620
+    },
+    {
+      "kind": "original_F3_evidence",
+      "snapshot_relpath": "snapshot/evidence/root/surface_fusion_smoke_002.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\surface_fusion_smoke_002.json",
+      "sha256": "2fd53b5f54db28819c97100cb38eacab4d1a313597d21484a1c5cadaaf845a79",
+      "bytes": 716
+    },
+    {
+      "kind": "original_F3_evidence",
+      "snapshot_relpath": "snapshot/evidence/root/surface_fusion_smoke_003.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\surface_fusion_smoke_003.json",
+      "sha256": "7b793a81cb94b598e3907287c667141d3f0755c97664d2b009db54ca9198da4c",
+      "bytes": 1378
+    },
+    {
+      "kind": "original_full400_evidence",
+      "snapshot_relpath": "snapshot/evidence/all_001/run_context.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\run_context.json",
+      "sha256": "d509f3408737abdb85f8456d6406a5f506c124eb853f63660e4ff4d7f8d5a42a",
+      "bytes": 44184
+    },
+    {
+      "kind": "original_full400_evidence",
+      "snapshot_relpath": "snapshot/evidence/all_001/summary.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\summary.json",
+      "sha256": "f17a1293ccbc38947526bc6762945e3e7c0d715ac5e6ccf38fcdd302902db9bc",
+      "bytes": 515
+    },
+    {
+      "kind": "original_full400_evidence",
+      "snapshot_relpath": "snapshot/evidence/all_001/run_log.jsonl",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\run_log.jsonl",
+      "sha256": "a3289d5400d54a6f3073b1e0126a8c0f114e85f27fb39c70e732bc55b0879c0f",
+      "bytes": 12992737
+    },
+    {
+      "kind": "original_full400_evidence",
+      "snapshot_relpath": "snapshot/evidence/all_001/audit.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\audit.json",
+      "sha256": "4310ed95ecff67c5768a51f24eff0f83564866c7caf008f7b75480b462e2737e",
+      "bytes": 1397161
+    },
+    {
+      "kind": "original_full400_evidence",
+      "snapshot_relpath": "snapshot/evidence/all_001/output_manifest.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\output_manifest.json",
+      "sha256": "0e3611465577b3d95faf25956c272d13f32ff6c099b067a92858d23e57e3adbe",
+      "bytes": 1281527
+    },
+    {
+      "kind": "original_full400_evidence",
+      "snapshot_relpath": "snapshot/evidence/all_001/audit_provenance.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\audit_provenance.json",
+      "sha256": "275cfb0100f76ed92f278d3c94f7e5dba21b42158dfae6c5b4701e98066d8099",
+      "bytes": 14778
+    },
+    {
+      "kind": "original_full400_evidence",
+      "snapshot_relpath": "snapshot/evidence/all_001/delivery_precheck.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\delivery_precheck.json",
+      "sha256": "23f89886d198d424c2d83844f87a17dae7ea820b2c55b79cbda1bd7ad175847b",
+      "bytes": 396
+    },
+    {
+      "kind": "original_full400_evidence",
+      "snapshot_relpath": "snapshot/evidence/all_001/pilot_full_equivalence.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\pilot_full_equivalence.json",
+      "sha256": "7216e74dbecf41daa790c9c9c49b2250381266dae3627efec03c1bd51e06550d",
+      "bytes": 27836
+    },
+    {
+      "kind": "postfreeze_review_evidence",
+      "snapshot_relpath": "snapshot/evidence/all_001/reviews/qa_additional_left.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\记录\\qa_additional_left.json",
+      "sha256": "f975fbbb539b9c02cc197efc1aa69ddaf774ac70d95fa07cb2f29a2cbc6961a6",
+      "bytes": 17932
+    },
+    {
+      "kind": "postfreeze_review_evidence",
+      "snapshot_relpath": "snapshot/evidence/all_001/reviews/qa_additional_right.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\记录\\qa_additional_right.json",
+      "sha256": "b80fb251816716129c4ee4e92bf2b4957bc8f0e8e25b41172ae1f174c6b1f540",
+      "bytes": 22207
+    },
+    {
+      "kind": "postfreeze_review_evidence",
+      "snapshot_relpath": "snapshot/evidence/all_001/reviews/qa_fixed6_pilot_equivalence.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\记录\\qa_fixed6_pilot_equivalence.json",
+      "sha256": "5ad4607112d8b1c66bcb7a1f731d50be1f261cd59da88a4fccaa4e3ea4924f62",
+      "bytes": 10591
+    },
+    {
+      "kind": "postfreeze_review_evidence",
+      "snapshot_relpath": "snapshot/evidence/all_001/reviews/endpoint_shape_review_all.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\记录\\endpoint_shape_review_all.json",
+      "sha256": "c390dec71da3f42e6064f78a637791191af28a0b1d3f38dd04b8e356cdaad8ec",
+      "bytes": 4556849
+    },
+    {
+      "kind": "preserved_pilot_evidence",
+      "snapshot_relpath": "snapshot/evidence/pilot_001/summary.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_001\\summary.json",
+      "sha256": "efee205ba4463e4c99a94db154ae0187facb76054bc1a2c0d8fc790168aabeb2",
+      "bytes": 503
+    },
+    {
+      "kind": "preserved_pilot_evidence",
+      "snapshot_relpath": "snapshot/evidence/pilot_001/run_context.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_001\\run_context.json",
+      "sha256": "6d2e4df509fa88c57d99d992967a34477d2515d63ac66b10da39c78b01a02b70",
+      "bytes": 17388
+    },
+    {
+      "kind": "preserved_pilot_evidence",
+      "snapshot_relpath": "snapshot/evidence/pilot_001/run_log.jsonl",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_001\\run_log.jsonl",
+      "sha256": "c5c16bd69da18ff9a4cd459db47d88c5e3ea7a72df20e6b1e9cc54a0822fdda3",
+      "bytes": 371080
+    },
+    {
+      "kind": "preserved_pilot_evidence",
+      "snapshot_relpath": "snapshot/evidence/pilot_001/audit.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_001\\audit.json",
+      "sha256": "fd25e62100916094c2c3edf2d0a79a373e61ca509e0cac6cdf521b6fa8d28d80",
+      "bytes": 57811
+    },
+    {
+      "kind": "preserved_pilot_evidence",
+      "snapshot_relpath": "snapshot/evidence/pilot_001/audit_provenance.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_001\\audit_provenance.json",
+      "sha256": "92e01551a233f69eb3d190161db1490d49241e26aa30add6e962d1b467d5e4f0",
+      "bytes": 14703
+    },
+    {
+      "kind": "preserved_pilot_evidence",
+      "snapshot_relpath": "snapshot/evidence/pilot_001/output_manifest.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_001\\output_manifest.json",
+      "sha256": "d4326a119da7c3f20996b6354f67853ec6e7d174be55601ba4ffbd3c2541e1e2",
+      "bytes": 37535
+    },
+    {
+      "kind": "preserved_pilot_evidence",
+      "snapshot_relpath": "snapshot/evidence/pilot_001/audit_corrected.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_001\\audit_corrected.json",
+      "sha256": "63d9b536d1c01a063d30ebf6c4d7523149de3b11cdbc267e292177534b6ccad9",
+      "bytes": 55388
+    },
+    {
+      "kind": "preserved_pilot_evidence",
+      "snapshot_relpath": "snapshot/evidence/pilot_001/audit_corrected_provenance.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_001\\audit_corrected_provenance.json",
+      "sha256": "bb572878e07a3514b4ba35ee1c3e711d361056635978ff4f59267dec43059da7",
+      "bytes": 14788
+    },
+    {
+      "kind": "actual_pilot_visual_review",
+      "snapshot_relpath": "snapshot/evidence/pilot_001/qa_independent_gap_review.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_001\\记录\\qa_independent_gap_review.json",
+      "sha256": "e06182df730c8dc613f2df4b84dd7ac2daeb2c94a57c1dcedf38f812be667c2b",
+      "bytes": 2334
+    },
+    {
+      "kind": "fixed_visual_preview_provenance",
+      "snapshot_relpath": "snapshot/evidence/pilot_001/preview_index.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_001\\记录\\qa_surface_visual_v2\\index.json",
+      "sha256": "220ef10b4098c97ef724fc7eceb4a5274095610c3af3220c31bc968409db9b63",
+      "bytes": 31238
+    },
+    {
+      "kind": "preserved_pilot_local_source",
+      "snapshot_relpath": "snapshot/evidence/pilot_001/source_snapshot/028_protocol.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_001\\source_snapshot\\028_protocol.json",
+      "sha256": "f21651fab39a6dbd0f31cb16c370de70f43d3efb61e141954b8192b69f66ccd8",
+      "bytes": 10006
+    },
+    {
+      "kind": "preserved_pilot_local_source",
+      "snapshot_relpath": "snapshot/evidence/pilot_001/source_snapshot/029_run_surface.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_001\\source_snapshot\\029_run_surface.py",
+      "sha256": "09eddba1e2fe8bcf590d1b30b86722c4d77cacf65458761fd22121feb1ae0a7c",
+      "bytes": 8158
+    },
+    {
+      "kind": "preserved_pilot_local_source",
+      "snapshot_relpath": "snapshot/evidence/pilot_001/source_snapshot/030_surface_fusion.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_001\\source_snapshot\\030_surface_fusion.py",
+      "sha256": "9eee5d35a8eb6d197f9d1317f2ec055989df0e288ca422db62bfb38a6c80d937",
+      "bytes": 18394
+    },
+    {
+      "kind": "preserved_pilot_local_source",
+      "snapshot_relpath": "snapshot/evidence/pilot_001/source_snapshot/031_surface_io.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_001\\source_snapshot\\031_surface_io.py",
+      "sha256": "ac7aee4a8c479a4db623a9330deb892e22f0a4431bec15fb3e7039a527aafb40",
+      "bytes": 3938
+    },
+    {
+      "kind": "preserved_pilot_local_source",
+      "snapshot_relpath": "snapshot/evidence/pilot_001/source_snapshot/032_surface_observation.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_001\\source_snapshot\\032_surface_observation.py",
+      "sha256": "ba458442d41535b1c61cd1a15cfc5f11d102780f41a2abf255717e1cef7067f9",
+      "bytes": 6802
+    },
+    {
+      "kind": "actual_historical_auditor",
+      "snapshot_relpath": "snapshot/auditors/pilot_001/audit_surface.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_001\\记录\\audit_tools\\audit_surface.py",
+      "sha256": "a75b8cef8a6b648ee66a33fb67d3cadbd95c57fea7fd7d9dbab52286738c9a51",
+      "bytes": 22697
+    },
+    {
+      "kind": "actual_historical_auditor",
+      "snapshot_relpath": "snapshot/auditors/pilot_001/audit_surface_e4e048e35009.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_001\\记录\\audit_tools\\audit_surface_e4e048e35009.py",
+      "sha256": "e4e048e350097ca7cf744220a1c21b824bd2eb20774560192f2fbf5c5d3e7b6f",
+      "bytes": 22746
+    },
+    {
+      "kind": "preserved_pilot_evidence",
+      "snapshot_relpath": "snapshot/evidence/pilot_002/summary.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_002\\summary.json",
+      "sha256": "6692382f3d5f04dfafcffb016c27b5c5e22c362cd61338e33ca3a1b442a2bbc4",
+      "bytes": 503
+    },
+    {
+      "kind": "preserved_pilot_evidence",
+      "snapshot_relpath": "snapshot/evidence/pilot_002/run_context.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_002\\run_context.json",
+      "sha256": "8bdd1eb3c4dc3613bb7dbe058c1ee1cf16bc6ee10d4212a9659305b1deda6d93",
+      "bytes": 17388
+    },
+    {
+      "kind": "preserved_pilot_evidence",
+      "snapshot_relpath": "snapshot/evidence/pilot_002/run_log.jsonl",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_002\\run_log.jsonl",
+      "sha256": "96f42b64e624a7a85d73f19644c61ca04c0a93f529d9810dd0af5e8fd433d1f6",
+      "bytes": 371074
+    },
+    {
+      "kind": "preserved_pilot_evidence",
+      "snapshot_relpath": "snapshot/evidence/pilot_002/audit.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_002\\audit.json",
+      "sha256": "92d7c072d2f9606d98440628741f7aebd6e39507c5748cc55a430c74d98c5bae",
+      "bytes": 55387
+    },
+    {
+      "kind": "preserved_pilot_evidence",
+      "snapshot_relpath": "snapshot/evidence/pilot_002/audit_provenance.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_002\\audit_provenance.json",
+      "sha256": "682474239d4532c039397ced6f1c4fa3980df100d7924e898a9fc49489a21bcf",
+      "bytes": 14778
+    },
+    {
+      "kind": "preserved_pilot_evidence",
+      "snapshot_relpath": "snapshot/evidence/pilot_002/output_manifest.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_002\\output_manifest.json",
+      "sha256": "abb5b888a2b20912c6d0d1b699722057e8d4b95da833c94045d428fbc5bbf5eb",
+      "bytes": 37535
+    },
+    {
+      "kind": "actual_pilot_visual_review",
+      "snapshot_relpath": "snapshot/evidence/pilot_002/qa_independent_gap_review.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_002\\记录\\qa_independent_gap_review.json",
+      "sha256": "ddd1b050fb25f5bc66822aa65d671c4606167ec62cc43b3a0b0cbe94fdc0e399",
+      "bytes": 10050
+    },
+    {
+      "kind": "fixed_visual_preview_provenance",
+      "snapshot_relpath": "snapshot/evidence/pilot_002/preview_index.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_002\\记录\\qa_surface_visual_v2\\index.json",
+      "sha256": "4587e855742a98bf6a769077187d8bb3996dea12ff7444d15334d4ac905f92b2",
+      "bytes": 31515
+    },
+    {
+      "kind": "preserved_pilot_local_source",
+      "snapshot_relpath": "snapshot/evidence/pilot_002/source_snapshot/028_protocol.json",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_002\\source_snapshot\\028_protocol.json",
+      "sha256": "f21651fab39a6dbd0f31cb16c370de70f43d3efb61e141954b8192b69f66ccd8",
+      "bytes": 10006
+    },
+    {
+      "kind": "preserved_pilot_local_source",
+      "snapshot_relpath": "snapshot/evidence/pilot_002/source_snapshot/029_run_surface.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_002\\source_snapshot\\029_run_surface.py",
+      "sha256": "09eddba1e2fe8bcf590d1b30b86722c4d77cacf65458761fd22121feb1ae0a7c",
+      "bytes": 8158
+    },
+    {
+      "kind": "preserved_pilot_local_source",
+      "snapshot_relpath": "snapshot/evidence/pilot_002/source_snapshot/030_surface_fusion.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_002\\source_snapshot\\030_surface_fusion.py",
+      "sha256": "7174e4a3bcdfb3e68b310be4947c22019d4ced8616da556ae0650c4e4c0fc461",
+      "bytes": 21709
+    },
+    {
+      "kind": "preserved_pilot_local_source",
+      "snapshot_relpath": "snapshot/evidence/pilot_002/source_snapshot/031_surface_io.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_002\\source_snapshot\\031_surface_io.py",
+      "sha256": "ac7aee4a8c479a4db623a9330deb892e22f0a4431bec15fb3e7039a527aafb40",
+      "bytes": 3938
+    },
+    {
+      "kind": "preserved_pilot_local_source",
+      "snapshot_relpath": "snapshot/evidence/pilot_002/source_snapshot/032_surface_observation.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_002\\source_snapshot\\032_surface_observation.py",
+      "sha256": "ba458442d41535b1c61cd1a15cfc5f11d102780f41a2abf255717e1cef7067f9",
+      "bytes": 6802
+    },
+    {
+      "kind": "actual_historical_auditor",
+      "snapshot_relpath": "snapshot/auditors/pilot_002/audit_surface_e4e048e35009.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\pilot_002\\记录\\audit_tools\\audit_surface_e4e048e35009.py",
+      "sha256": "e4e048e350097ca7cf744220a1c21b824bd2eb20774560192f2fbf5c5d3e7b6f",
+      "bytes": 22746
+    },
+    {
+      "kind": "actual_full400_auditor",
+      "snapshot_relpath": "snapshot/auditors/all_001/audit_surface_e4e048e35009.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\记录\\audit_tools\\audit_surface_e4e048e35009.py",
+      "sha256": "e4e048e350097ca7cf744220a1c21b824bd2eb20774560192f2fbf5c5d3e7b6f",
+      "bytes": 22746
+    },
+    {
+      "kind": "auditor_or_delivery_implementation",
+      "snapshot_relpath": "snapshot/auditors/audit_surface.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\audit_surface.py",
+      "sha256": "e4e048e350097ca7cf744220a1c21b824bd2eb20774560192f2fbf5c5d3e7b6f",
+      "bytes": 22746
+    },
+    {
+      "kind": "auditor_or_delivery_implementation",
+      "snapshot_relpath": "snapshot/auditors/make_surface_preview.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\make_surface_preview.py",
+      "sha256": "a5a16721d30f3bf228d975abda458dcfaa54f544a0c85f9eb56814ef5bba7564",
+      "bytes": 8863
+    },
+    {
+      "kind": "auditor_or_delivery_implementation",
+      "snapshot_relpath": "snapshot/auditors/finalize_delivery.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\finalize_delivery.py",
+      "sha256": "134f117f03faef9ae486ee00df1759d3138d0c5339cf19f69a52fa1fa68c0883",
+      "bytes": 9456
+    },
+    {
+      "kind": "endpoint_check_implementation",
+      "snapshot_relpath": "snapshot/auditors/check_endpoint_shape_all.py",
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\记录\\check_endpoint_shape_all.py",
+      "sha256": "9076d6a2783fcea0becfea7739a542b072fe9a85fbd938c2be585d623019d137",
+      "bytes": 5293
+    }
+  ],
+  "local_files": [
+    {
+      "path": "README.md",
+      "sha256": "e383e6fc786a3c687256c4aeadc065d5c9bca7ee3f1be9e7709be4dbd6a52490",
+      "bytes": 5271
+    },
+    {
+      "path": "freeze_baseline.py",
+      "sha256": "2e9dce4c7427035ac21efb666f9c686898fddf41fba68d47cca62b735811c784",
+      "bytes": 12221
+    },
+    {
+      "path": "verify_baseline.py",
+      "sha256": "34fa4a0d1dc4a2b533e40bd827d4619805bd57905cd97df9c1017ff8e6cff781",
+      "bytes": 3774
+    },
+    {
+      "path": "environment_reference.json",
+      "sha256": "32695f2450c286cf21b7ea2018b71f4826b2e8060e8513a4e30b609c7ee6133a",
+      "bytes": 774
+    },
+    {
+      "path": "user_feedback.json",
+      "sha256": "d74b653130cbf2f50f58a70733f2e391bd8e6ca7f2749eb1361f7ecde9d098ac",
+      "bytes": 504
+    }
+  ],
+  "dependency_manifest_sha256": "2f5725c1ee0168ecad8ce53e473cd7f96e3207796e5a074d8d7dd1e6d091e984",
+  "source_output_manifest_sha256": "0e3611465577b3d95faf25956c272d13f32ff6c099b067a92858d23e57e3adbe",
+  "source_full_audit_sha256": "4310ed95ecff67c5768a51f24eff0f83564866c7caf008f7b75480b462e2737e",
+  "source_image_manifest_sha256": "712859a4a830c08d556729a98cad76d039c684c290d2c4c57efa2b7ad3b45e69",
+  "user_qualitative_acceptance_date": "2026-10-28",
+  "standalone_for_arbitrary_new_images": false,
+  "saved_upstream_input_dependency_required": true,
+  "ground_truth_accuracy": null,
+  "equipment_access": false,
+  "reserved_access": false
+}

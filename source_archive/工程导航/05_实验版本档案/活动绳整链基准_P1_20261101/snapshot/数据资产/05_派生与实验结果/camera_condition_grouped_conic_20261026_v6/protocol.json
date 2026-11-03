@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-26",
+  "name": "RB-C3 grouped all-yellow-point single-conic fitting",
+  "baseline": "camera_condition_bright_rope_boundaries_20261025_v3/all_001",
+  "previous_comparison": "camera_condition_local_conic_20261025_v5/all_001",
+  "user_request": "First classify all yellow observations by individual visual boundary, then fit a single conic to every group's entire point set, replacing C2's endpoint-only gap bridges.",
+  "input_manifest_sha256": "712859a4a830c08d556729a98cad76d039c684c290d2c4c57efa2b7ad3b45e69",
+  "qa_plan_sha256": "8b3b73673ebddda9a3bf1ee6fd45ac2fd3bda958cba472be78c27dcea351d913",
+  "planned_images": 400,
+  "fixed_development_qa_images": 38,
+  "budget": "At most two integrated algorithm revisions on the same already-open fixed38 development images. Save each failure and source snapshot. Freeze one selected version before a full400 run. No reserved set access, parameter grid search, or new unseen-test claim.",
+  "algorithm_contract": "Stage1 constructs boundary groups from yellow observations and geometric ordering/interpolation. Stage2 uses ALL points assigned to each group in ONE vertical-axis conic least-squares objective (positive robust weights allowed and recorded). A group has exactly one coefficient set across visible portions and gaps. No endpoint-only subset, no local gap pieces, no import of C2 predictions/group IDs. A parabola is the chosen restricted conic; image y increases downward and curvature is nonnegative. Near-flat degeneracy must be marked.",
+  "group_accounting": "Every input point must be assigned exactly once to a group or explicitly recorded as unassigned. Every accepted group records all member references/coordinates, fit weights, residuals, source fragments and a single coefficient set. Rejected groups retain points/reasons. Grouping is geometric visual identity, not verified physical material identity.",
+  "pixel_contract": "B1 yellow mask, reference ROI, effective ROI, effective RGB and rope/unknown exclusions byte-preserved. New binary masks uint8 0/255 within original effective ROI. Group-color visualization changes display only. No extrapolation outside assigned observed x-span; exclusion pixels blank; nearby and distant prediction masks partition smooth mask.",
+  "evaluation": "Reuse C2's immutable fixed38 two-band hidden-yellow proxy protocol, thresholds and scoring functions; withhold targets before grouping and fit. Compare independently with straight interpolation and report fixed C2 saved scores. Also report original-point assignment, own-group residual, missing groups and inter-group crossings. Never rename these metrics actual overexposure accuracy.",
+  "continue_gate": "38/38 structural and pixel checks; one group one model; all assigned points enter fit with recorded positive weights; no crossings. Fixed proxy primary loss must improve at least10% relative to independent linear baseline with at most2 percentage-point hit-rate regression overall/by-camera/by-band. Inspect left/right glare and active-rope examples for visible alignment and grouping errors. Compare C2 explicitly including local regressions. If no consistent benefit after two revisions, stop tuning and preserve failures; do not silently return to endpoint fitting or label failed model improved.",
+  "artifacts": "Separate grouped-observation and whole-conic visualizations, masks, per-image group records, source/input hashes, command/environment/exit codes, fixed38 comparison and full400 when chosen version qualifies.",
+  "devices": "Offline only; no hardware connection, deployment or permission changes.",
+  "source_status": "Same fixed400 open-development inputs, not independent blind test. No 2026-09-25 or other reserved media/labels. B1 and C2 immutable.",
+  "reason_for_new_branch": "Explicit user correction on2026-10-26 changes the required algorithm from local gap completion to point classification followed by full-group single-conic fit. Prior C1 failures and C2 outcomes remain unchanged."
+}

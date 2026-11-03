@@ -1,0 +1,178 @@
+{
+  "version": "IR-A3.0.1",
+  "name": "断界寻绳 A3",
+  "date": "2026-10-28",
+  "scope": "Offline fixed400 open-development images, left/right200, original 4096x3000 unmirrored. No hardware/reserved data/training/control.",
+  "baseline_F3": {
+    "version": "RB-F3.0.0",
+    "user_acceptance": "qualitative400 review, not quantified accuracy",
+    "archive": "D:/precise_arrangement/工程导航/05_实验版本档案/卷绳边界_全卷面基准_F3_20261028",
+    "all43_sources_unchanged": true,
+    "source_checks": {
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\fusion.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\fusion_io.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\protocol.json": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\run_fusion.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_rope_boundaries_20261025_v3\\full_roi_observation.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\all_002\\output_manifest.json": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\anchored_dark.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\dark_curves.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\dark_observation.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\data_io.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\protocol.json": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\run.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\data_io.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\groove_field.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\ordered_paths.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\protocol.json": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\run.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\dark_c3.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\dark_roi.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\data_io.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\protocol.json": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\data_io.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\period_guard.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\protocol.json": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\ribbon_curves.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\run.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\shadow_tracks.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\shadow_width.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\protocol.json": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\run_surface.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\surface_fusion.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\surface_io.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\surface_observation.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\conic_family.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\protocol.json": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\run_conic.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\experiment_io.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\protocol.json": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\protocol.json": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\run_seam.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\seam_io.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\seam_join.py": true,
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\seam_observation.py": true
+    }
+  },
+  "actual_run": {
+    "input_count": 400,
+    "completed": 400,
+    "runtime_failures": 0,
+    "exit_code": 0,
+    "seconds": 591.7302737236023,
+    "statuses": {
+      "UNKNOWN": 143,
+      "AMBIGUOUS_WHOLE_APPEARANCE_CANDIDATE": 38,
+      "WHOLE_APPEARANCE_CANDIDATE": 8,
+      "PARTIAL_APPEARANCE_CANDIDATE": 141,
+      "FREE_ONLY": 1,
+      "AMBIGUOUS_PARTIAL_APPEARANCE_CANDIDATE": 57,
+      "FREE_ONLY_CURVE_LOW_SUPPORT": 1,
+      "FREE_ONLY_DIRECTION_AMBIGUOUS": 10,
+      "FREE_WIDTH_AMBIGUOUS": 1
+    },
+    "nonempty_mask_cases": 256,
+    "empty_mask_cases": 144,
+    "whole_extent_candidates": 46,
+    "partial_paths": 198,
+    "free_only_cases": 12
+  },
+  "original_interruption_evidence": {
+    "row_states": {
+      "unknown_original_evidence": 2236,
+      "raw_continuous": 16,
+      "raw_interruption_supported": 10
+    },
+    "cases_with_interruption_then_continuity_chain": 0,
+    "interpretation": "No confirmed n-1 rule match; F3 shape is geometric candidate/gating guidance. Continuous or broken image groove alone is not material identity."
+  },
+  "free_seed_failures": {
+    "no_usable_automatic_free_seed": 142,
+    "outside_original_pairs_revalidated": 256,
+    "narrow_strand_seed_without_independent_whole_width_support": 1,
+    "automatic_seed_not_revalidated": 1
+  },
+  "audits": {
+    "structure_passed": true,
+    "cases": 400,
+    "files": 2000,
+    "pilot_png_equal_count": 64,
+    "same_material_accuracy_verified": false
+  },
+  "development_history": [
+    {
+      "run": "pilot_001",
+      "count": 16,
+      "finding": "unrestricted local ribbon search followed old coils too early; some tails continued on flange/background; geometric false intersections and narrow free strand seed found",
+      "source_note": "run_start keeps hashes; free source snapshot exists; complete core snapshots start at pilot002"
+    },
+    {
+      "run": "pilot_002",
+      "count": 16,
+      "finding": "fixed original-channel selection, broad outer-edge remeasurement, outward free extension, coherent curve grouping, convex/gated beam, finite visible domain, terminal alternatives; much smoother but undercoverage/neighbor ambiguity remain"
+    },
+    {
+      "run": "pilot_003",
+      "count": 16,
+      "finding": "external edge-side association bug repair, review-mask rendering, bounded single-edge straight inference. Four reviewed selected centerlines did not change, no demonstrated coverage benefit from 18w in those four"
+    },
+    {
+      "run": "visibility_repair_001",
+      "count": 16,
+      "predeclared_addendum": "protocol_addendum_001.json",
+      "finding": "inherited S cuts visible rope (ruler_left05); convex search-only envelope restores bright straight span, not validated dark same-rope bend"
+    }
+  ],
+  "methods": [
+    "cached automatic A1/A2 free seed, revalidated from original; no old chosen connection used",
+    "outside whole-rope double-edge profiles estimate pixel width and axis; strand tensor describes orientation only",
+    "original-image wide-groove continuity rechecked around F3 references; old F3 exclusion holes do not count as occlusion",
+    "multiple width-constrained bright/dark ribbons, convex image geometry, finite F3 tangency zones, original paired edges, rotated strand orientation, terminal competing paths",
+    "single side can support a bounded fixed straight hypothesis but never paired observed support; selected candidate and review mask separated",
+    "visibility hull is only bounded search envelope, not a new SAM segmentation or measured rope mask"
+  ],
+  "limitations": [
+    "Whole extent candidates are not validated whole-rope successes; even unique score winner can be a neighboring old coil.",
+    "142 cases lack a usable saved automatic free seed, 1 seed fails revalidation, 1 width ambiguous. Empty does not prove absence of active rope.",
+    "Many partial/free-only cases stop before still-visible rope; inherited visibility and raw contrast can limit coverage.",
+    "No exact physical contact point, material identity, t0/t1/t2 or mm diameter is established.",
+    "Executable uses saved open400 F3/A1/A2 predictions; it is not yet a standalone arbitrary-new-image pipeline.",
+    "Original G0 in runner uses old S; its unequal support domain is recorded, not claimed as fair curve gain. New equal-domain independent G0 comparison is separately recorded."
+  ],
+  "outputs": {
+    "01_整根候选掩膜": "400 binary PNGs, 0 background/255 selected candidate including uncertain continuation; may be partial or empty",
+    "02_原图叠加": "400 original-size overlays; green image support, orange inferred or continuity needs review",
+    "03_实测支持掩膜": "400 binary PNGs for local measured appearance, not identity truth",
+    "04_接续待确认": "400 binary PNGs for weak/competing/unverified curved continuation; can overlap image support",
+    "records": "400 JSON with all candidates, raw evidence, status and dependency hashes"
+  },
+  "documents": "算法说明.txt,结果说明.txt,freeze_all.json,all_001/case_index.csv",
+  "truth_claim": "No accuracy claimed; qualitative inspections and structural reproducibility are separate.",
+  "independent_visual_reports": [
+    {
+      "path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v3\\pilot_001\\independent_visual_review.json",
+      "sha256": "23f7352f30ee5a25818d5fff37aff585911d67b3404b010456123142483d0958"
+    },
+    {
+      "path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v3\\pilot_002\\independent_visual_review.json",
+      "sha256": "a0cc1e11935329e6d9ecad045353aeb02b2f48a786f34a05b478b4ecfe882348"
+    },
+    {
+      "path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v3\\visibility_repair_001\\independent_visual_review.json",
+      "sha256": "8544a2baba1b9a00110770b5969a0f3deced8d5683ffc366e69deb141806f860"
+    },
+    {
+      "path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v3\\evaluation_g0_001\\visual_review.json",
+      "sha256": "6e828743e53590035b8fc2a4d14ec7844e09ecee0f11f0a91d5a88128549745e"
+    }
+  ],
+  "equal_domain_geometry_comparison": {
+    "path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v3\\evaluation_g0_001\\index.json",
+    "count": 16,
+    "applicable": 14,
+    "unknown_or_direction_ambiguous": 2,
+    "same_support_region": true,
+    "tuning_after_comparison": false,
+    "observations": "Same-domain G0 matches final geometry closely for ruler_left05/right05. rightdual315 and ruler_left01 have bend/termination differences (~70/58px endpoints), without verified dark-tail identity gain."
+  }
+}

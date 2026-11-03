@@ -1,0 +1,2511 @@
+{
+  "version": "IR-A6.0.0",
+  "name": "自模板多候选 A6",
+  "date": "2026-10-29",
+  "created_at": "2026-10-29T18:14:38.739391",
+  "parent_version": "IR-A5.0.0",
+  "status": "offline_research_candidate_partial_support_and_multiple_hypotheses_not_accepted_whole_rope_identity",
+  "task": "Use own free-rope appearance, retain bend alternatives, consult F3 only after original-image support, truncate or preserve ambiguity.",
+  "scope": {
+    "dataset": "same_open_development_400",
+    "denominator": 400,
+    "camera_counts": {
+      "left": 200,
+      "right": 200
+    },
+    "source_groups": {
+      "dual_20260923_101517": 40,
+      "dual_20260923_101643": 40,
+      "dual_20260923_113305": 40,
+      "dual_20260924_111143": 40,
+      "dual_20260924_111500": 40,
+      "L_run_20260923_01": 40,
+      "R_run_20260923_01": 40,
+      "L_run_stop_run_20260922_01": 50,
+      "R_run_stop_run_20260922_01": 50,
+      "L_static_20260922_01": 5,
+      "R_static_20260922_01": 5,
+      "ruler_test_靠近23mm": 1,
+      "ruler_test_离开38.5mm（包括活动绳共计8.5根）": 1,
+      "ruler_test_离开95mm（包括活动绳共计21根）": 1,
+      "ruler_test_靠近43mm": 1,
+      "ruler_test_靠近77mm": 1,
+      "ruler_test_离开107.5mm （包括活动绳共计24根）": 1,
+      "ruler_test_离开49mm（包括活动绳共计11根）": 1,
+      "ruler_test_靠近9.5mm": 1,
+      "ruler_test_靠近41mm": 1,
+      "ruler_test_靠近80mm": 1
+    },
+    "input_manifest_sha256": "712859a4a830c08d556729a98cad76d039c684c290d2c4c57efa2b7ad3b45e69",
+    "F3_dependency": "saved upstream predictions; not an arbitrary-new-image standalone validation",
+    "heldout_or_reserved_used": false,
+    "equipment_connected": false,
+    "permissions_changed": false,
+    "training": false,
+    "HTML": false
+  },
+  "development": {
+    "budget": "At most 3 full fixed21 development pilots; primitive diagnosed recovery/template probes preserved; then freeze and preset8 review plus same400. No per-image parameters, no trained sorter.",
+    "runs": {
+      "pilot_001": {
+        "completed": 21,
+        "planned": 21,
+        "statuses": {
+          "UNKNOWN": 1,
+          "FREE_ONLY_NO_SUPPORTED_BEND": 3,
+          "PARTIAL_TRUSTED_WITH_UNVERIFIED_TAIL": 10,
+          "MULTIPLE_PATHS_PREFIX_ONLY": 7
+        },
+        "exit_code": 0,
+        "elapsed_seconds": 50.019126653671265
+      },
+      "pilot_002": {
+        "completed": 21,
+        "planned": 21,
+        "statuses": {
+          "UNKNOWN": 1,
+          "PARTIAL_TRUSTED_WITH_UNVERIFIED_TAIL": 7,
+          "MULTIPLE_PATHS_PREFIX_ONLY": 12,
+          "FREE_ONLY_NO_SUPPORTED_BEND": 1
+        },
+        "exit_code": 0,
+        "elapsed_seconds": 57.20129680633545
+      },
+      "pilot_003": {
+        "completed": 21,
+        "planned": 21,
+        "statuses": {
+          "UNKNOWN": 1,
+          "MULTIPLE_PATHS_PREFIX_ONLY": 19,
+          "FREE_ONLY_NO_SUPPORTED_BEND": 1
+        },
+        "exit_code": 0,
+        "elapsed_seconds": 58.893070936203
+      },
+      "extra_001": {
+        "completed": 8,
+        "planned": 8,
+        "statuses": {
+          "UNKNOWN": 2,
+          "MULTIPLE_PATHS_PREFIX_ONLY": 6
+        },
+        "exit_code": 0,
+        "elapsed_seconds": 21.91350269317627
+      },
+      "all_001": {
+        "completed": 400,
+        "planned": 400,
+        "statuses": {
+          "UNKNOWN": 108,
+          "MULTIPLE_PATHS_PREFIX_ONLY": 262,
+          "FREE_ONLY_NO_SUPPORTED_BEND": 27,
+          "FREE_ONLY_TEMPLATE_OR_DIRECTION_UNKNOWN": 3
+        },
+        "exit_code": 0,
+        "elapsed_seconds": 489.15752053260803
+      }
+    },
+    "freeze_sha256": "9e4fc836682a17571c9bbbb698173eae01f299adce32c189b780960bef8706b7",
+    "visual_retuning_after_freeze": false,
+    "prior_failed_probes_and_audit_preserved": true
+  },
+  "implementation": {
+    "parameters": {
+      "appearance_template.py": {
+        "maximum_template_samples": 48,
+        "minimum_template_samples": 4,
+        "minimum_template_span_widths": 1.5,
+        "tangent_half_widths": 1.25,
+        "tangent_samples": 25,
+        "normal_half_widths": 1.3,
+        "normal_samples": 41,
+        "template_surface_overlap_maximum": 0.0,
+        "minimum_texture_std_raw": 1.0,
+        "minimum_texture_energy": 0.1,
+        "minimum_texture_coherence": 0.15,
+        "minimum_template_profile_match": 0.45,
+        "minimum_supported_score": 0.4,
+        "neighbor_distance_pitch": 1.1,
+        "minimum_raw_profile_contrast": 2.0
+      },
+      "free_seed_recovery.py": {
+        "detector_scale": 0.5,
+        "detector_blur_original_pitch_fraction": 0.15,
+        "minimum_segment_pitch": 6.0,
+        "minimum_segment_px": 110.0,
+        "maximum_segments_per_channel": 200,
+        "maximum_pair_proposals": 80,
+        "maximum_parallel_angle_deg": 2.0,
+        "minimum_width_pitch": 0.24,
+        "maximum_width_pitch": 1.8,
+        "minimum_overlap_pitch": 5.0,
+        "minimum_overlap_px": 100.0,
+        "maximum_ray_px": 1800.0,
+        "maximum_ray_image_fraction": 0.45,
+        "maximum_recovered_seeds": 6,
+        "minimum_measured_profiles": 12,
+        "minimum_good_profile_fraction": 0.48,
+        "minimum_bilateral_contrast": 10.0,
+        "minimum_support_span_px": 100.0,
+        "minimum_support_span_pitch": 5.0,
+        "minimum_oblique_texture_correlation": 0.25,
+        "minimum_longitudinal_modulation_px": 3.0,
+        "saturated_outline_fraction": 0.6
+      },
+      "axial_reacquisition.py": {
+        "sample_step_px": 4.0,
+        "maximum_probe_widths": 35.0,
+        "maximum_probe_px": 800.0,
+        "beyond_first_surface_widths": 2.0,
+        "minimum_missing_gap_widths": 6.0,
+        "minimum_reacquired_span_widths": 2.0,
+        "minimum_reacquired_samples": 4,
+        "width_transition_span_widths": 4.0,
+        "minimum_template_width_ratio": 0.6,
+        "maximum_template_width_ratio": 1.7
+      },
+      "image_beam.py": {
+        "step_px": 8.0,
+        "beam_width": 18,
+        "maximum_steps": 330,
+        "turn_increments_deg": [
+          -2.5,
+          -1.25,
+          0.0,
+          1.25,
+          2.5
+        ],
+        "maximum_axis_turn_deg": 65.0,
+        "maximum_weak_widths": 6.0,
+        "maximum_candidates": 8,
+        "minimum_candidate_span_widths": 3.0,
+        "maximum_outside_after_entry_widths": 1.5,
+        "width_min_ratio": 0.6,
+        "width_max_ratio": 1.7,
+        "width_update_interval": 4,
+        "maximum_normal_offset_widths": 16.0,
+        "end_diversity_width": 0.55,
+        "protected_axis_states": 3,
+        "turn_anchor_bin_widths": 4.0
+      },
+      "pipeline.py": {
+        "maximum_revalidated_entries": 2,
+        "maximum_recovery_probes": 6,
+        "maximum_output_candidates": 6,
+        "late_minimum_bend_deg": 3.0,
+        "late_evidence_window_widths": 3.0,
+        "late_minimum_image_fraction": 0.5,
+        "F3_maximum_score_weight": 0.08,
+        "divergence_width_ratio": 0.4,
+        "trusted_maximum_gap_widths": 1.0,
+        "minimum_branch_span_widths": 3.0,
+        "trusted_unique_advantage": 0.08
+      }
+    },
+    "source_sha256": {
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\whole_io.py": "f03a9fbbe2d721298813c745091caec952b99f2dc6d308376d9d64892f8fdcc6",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\free_rope.py": "c57f77270a1c0308570a77ff70dee67fe7caa25b2dbb55bafd2e80aae9cf60fd",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\photometric_ribbon.py": "7a2570f806e548c945271fb714a3bd7836f323c453185cb9b21876aa0557a59b",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\attached_groove.py": "484f25bc30d94caa396724f4c4469f14ef67a86285368b76ec545554a7cca24f",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\appearance_template.py": "f15128a59380f26101d6f222b66b54b0499d128ee8fb2d64841bc81a06318e90",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\free_seed_recovery.py": "fc9df09cc53e508846ff9d23bea0a6517e4e5ca29d1a8e0c416a026da1d1f864",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\axial_reacquisition.py": "b013781625d243a799d0b2cb4e5163b324631279fbb9928f4d17de4051f5ca2b",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\image_beam.py": "b91d7e0c4b1f2a007d99d54e7ce877982472caf6989ef602abcb2c74cd437d12",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\pipeline.py": "ffd2a6bd532fa5499a56b9221553fc54b53dc3211869d19b5bb83dbedc82e35f",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\run_experiment.py": "eff028c93fd4351fead66baac355abe7e68454d5eaf9a840d9f14d215beaae03",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\protocol.json": "fa770e5d7d73deddf18c50dcc6a222f65c4203721213f3814ecdab21c7e8fe87",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v2\\free_refinement.py": "65ca049228d0dec2d941a4e08bddf4f9bb52935570cf9827dc7d9adbc1272c8c"
+    },
+    "A5_F3_C3_D4_preserved": true,
+    "no_F3_candidate_generation": true,
+    "full_generated_pool_used_for_prefix": true,
+    "late_F3_does_not_move_coordinates": true,
+    "missing_gap_not_trusted": true,
+    "maximum_display_branches_per_case": 6,
+    "all_pool_paths_saved": true
+  },
+  "actual_output": {
+    "completed": 400,
+    "processing_failures": [],
+    "actual_process_exit_code": 0,
+    "statuses": {
+      "UNKNOWN": 108,
+      "MULTIPLE_PATHS_PREFIX_ONLY": 262,
+      "FREE_ONLY_NO_SUPPORTED_BEND": 27,
+      "FREE_ONLY_TEMPLATE_OR_DIRECTION_UNKNOWN": 3
+    },
+    "nonempty_trusted_masks": 285,
+    "nonempty_best_or_free_masks": 292,
+    "empty_unknown": 108,
+    "full_pool_count": 2111,
+    "displayed_candidate_count": 1547,
+    "exact_axis_reference_count": 191,
+    "recovery_entry_case_count": 54,
+    "recovery_entry_cases": [
+      "images/right_camera/dual_20260923_101517__pair0015__right.png",
+      "images/right_camera/dual_20260923_101517__pair0195__right.png",
+      "images/right_camera/dual_20260923_101517__pair0105__right.png",
+      "images/right_camera/dual_20260923_101517__pair0135__right.png",
+      "images/right_camera/dual_20260923_101517__pair0075__right.png",
+      "images/right_camera/dual_20260923_101517__pair0255__right.png",
+      "images/right_camera/dual_20260923_101517__pair0495__right.png",
+      "images/right_camera/dual_20260923_101643__pair0075__right.png",
+      "images/right_camera/dual_20260923_101643__pair0225__right.png",
+      "images/right_camera/dual_20260923_101643__pair0045__right.png",
+      "images/right_camera/dual_20260923_101643__pair0495__right.png",
+      "images/right_camera/dual_20260923_101643__pair0345__right.png",
+      "images/right_camera/dual_20260923_101643__pair0465__right.png",
+      "images/right_camera/dual_20260923_101643__pair0375__right.png",
+      "images/right_camera/dual_20260923_101643__pair0405__right.png",
+      "images/right_camera/dual_20260923_101643__pair0525__right.png",
+      "images/right_camera/dual_20260923_101643__pair0555__right.png",
+      "images/right_camera/dual_20260923_101643__pair0585__right.png",
+      "images/right_camera/dual_20260923_113305__pair0135__right.png",
+      "images/right_camera/dual_20260923_113305__pair0015__right.png",
+      "images/right_camera/dual_20260923_113305__pair0045__right.png",
+      "images/right_camera/dual_20260923_113305__pair0075__right.png",
+      "images/right_camera/dual_20260923_113305__pair0105__right.png",
+      "images/right_camera/dual_20260923_113305__pair0255__right.png",
+      "images/right_camera/dual_20260923_113305__pair0225__right.png",
+      "images/right_camera/dual_20260923_113305__pair0345__right.png",
+      "images/right_camera/dual_20260923_113305__pair0525__right.png",
+      "images/right_camera/dual_20260924_111143__pair0135__right.png",
+      "images/right_camera/dual_20260923_113305__pair0555__right.png",
+      "images/right_camera/dual_20260924_111143__pair0405__right.png",
+      "images/left_camera/L_run_20260923_01__f000142__left.png",
+      "images/left_camera/L_run_20260923_01__f000490__left.png",
+      "images/right_camera/R_run_20260923_01__f000055__right.png",
+      "images/right_camera/R_run_20260923_01__f000351__right.png",
+      "images/right_camera/R_run_20260923_01__f000535__right.png",
+      "images/right_camera/R_run_20260923_01__f000498__right.png",
+      "images/right_camera/R_run_20260923_01__f000609__right.png",
+      "images/right_camera/R_run_20260923_01__f000387__right.png",
+      "images/right_camera/R_run_20260923_01__f000720__right.png",
+      "images/right_camera/R_run_20260923_01__f000905__right.png",
+      "images/right_camera/R_run_20260923_01__f000868__right.png",
+      "images/right_camera/R_run_20260923_01__f001090__right.png",
+      "images/right_camera/R_run_20260923_01__f001237__right.png",
+      "images/right_camera/R_run_20260923_01__f001126__right.png",
+      "images/right_camera/R_run_20260923_01__f001163__right.png",
+      "images/right_camera/R_run_20260923_01__f001311__right.png",
+      "images/right_camera/R_run_20260923_01__f001459__right.png",
+      "images/right_camera/R_run_20260923_01__f001422__right.png",
+      "images/left_camera/L_run_stop_run_20260922_01__f000604__left.png",
+      "images/left_camera/L_run_stop_run_20260922_01__f001440__left.png",
+      "images/left_camera/L_run_stop_run_20260922_01__f003486__left.png",
+      "images/left_camera/L_run_stop_run_20260922_01__f004508__left.png",
+      "images/left_camera/L_run_stop_run_20260922_01__f004601__left.png",
+      "images/right_camera/R_run_stop_run_20260922_01__f002521__right.png"
+    ],
+    "multiple_independent_entry_cases": [
+      "images/right_camera/dual_20260923_101517__pair0105__right.png",
+      "images/right_camera/dual_20260923_101517__pair0135__right.png",
+      "images/right_camera/dual_20260923_101517__pair0075__right.png",
+      "images/right_camera/dual_20260923_101517__pair0255__right.png",
+      "images/right_camera/dual_20260923_113305__pair0555__right.png",
+      "images/right_camera/R_run_20260923_01__f000868__right.png",
+      "images/right_camera/R_run_20260923_01__f001422__right.png"
+    ],
+    "previous_A5_unknown_to_output_count": 36,
+    "previous_A5_output_to_unknown_count": 0,
+    "counts_are_accuracy": false
+  },
+  "independent_validation": {
+    "structure_passed": true,
+    "checked_cases": 400,
+    "prefix_reconstruction_passed": true,
+    "selected_path_cases": 262,
+    "long_unknown_gap_checks": 32,
+    "repeatability": {
+      "scope": "Byte equality of every formal PNG, including per-branch masks; no accuracy claim.",
+      "target_run": "all_001",
+      "passed": true,
+      "compared_png_count": 263,
+      "identical_png_count": 263,
+      "groups": [
+        {
+          "run": "pilot_003",
+          "png_count": 197,
+          "identical_count": 197,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "png_count": 66,
+          "identical_count": 66,
+          "errors": []
+        }
+      ],
+      "files": [
+        {
+          "run": "pilot_003",
+          "path": "01_可信前缀掩膜/right_camera/dual_20260923_101517__pair0015__right.png",
+          "source_sha256": "2611861e967e88abcdb8a4f575712f52851a8b3db1a651b829629279ac9bff6b",
+          "all_sha256": "2611861e967e88abcdb8a4f575712f52851a8b3db1a651b829629279ac9bff6b",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "02_原图叠加/right_camera/dual_20260923_101517__pair0015__right.png",
+          "source_sha256": "5cee7ff55a0fe352de5d8571db438b465103bb19ebb7551813cb9ca19c5e2d2e",
+          "all_sha256": "5cee7ff55a0fe352de5d8571db438b465103bb19ebb7551813cb9ca19c5e2d2e",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "03_待确认候选并集/right_camera/dual_20260923_101517__pair0015__right.png",
+          "source_sha256": "b6aed953c24c5cd14cae1b4e21a5783b4a9eca250af47b36ddf25f639d08cd54",
+          "all_sha256": "b6aed953c24c5cd14cae1b4e21a5783b4a9eca250af47b36ddf25f639d08cd54",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "04_最佳外观候选掩膜/right_camera/dual_20260923_101517__pair0015__right.png",
+          "source_sha256": "7fa6491d7cbf9f1037b0f15a8b21ab16571caf78d5758ab847c4f86ec10d057e",
+          "all_sha256": "7fa6491d7cbf9f1037b0f15a8b21ab16571caf78d5758ab847c4f86ec10d057e",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_101517__pair0015__right/candidate_00.png",
+          "source_sha256": "7fa6491d7cbf9f1037b0f15a8b21ab16571caf78d5758ab847c4f86ec10d057e",
+          "all_sha256": "7fa6491d7cbf9f1037b0f15a8b21ab16571caf78d5758ab847c4f86ec10d057e",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_101517__pair0015__right/candidate_01.png",
+          "source_sha256": "ac8e529b640ed72157eece9bcce47e2490558d16e45e859921b53ff9a3452177",
+          "all_sha256": "ac8e529b640ed72157eece9bcce47e2490558d16e45e859921b53ff9a3452177",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_101517__pair0015__right/candidate_02.png",
+          "source_sha256": "6ee9ec5d0fd1a9017651254bf4bc7d2dfa0833efa48d869b12f9ea74281c0e21",
+          "all_sha256": "6ee9ec5d0fd1a9017651254bf4bc7d2dfa0833efa48d869b12f9ea74281c0e21",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_101517__pair0015__right/candidate_03.png",
+          "source_sha256": "80e1879d721423aab8839357df1e61f0c815551a9ef9dedddec7bfae629eac50",
+          "all_sha256": "80e1879d721423aab8839357df1e61f0c815551a9ef9dedddec7bfae629eac50",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_101517__pair0015__right/candidate_04.png",
+          "source_sha256": "37ab111eb95dd5273a34269203b57a3ec31a526481ee2972ee0e93026c4606b0",
+          "all_sha256": "37ab111eb95dd5273a34269203b57a3ec31a526481ee2972ee0e93026c4606b0",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_101517__pair0015__right/candidate_05.png",
+          "source_sha256": "b400f6495646df6ebe9c07db9e7a2266fea40072ac7bbe5b27699646bd13e49d",
+          "all_sha256": "b400f6495646df6ebe9c07db9e7a2266fea40072ac7bbe5b27699646bd13e49d",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "01_可信前缀掩膜/right_camera/dual_20260923_101517__pair0165__right.png",
+          "source_sha256": "ff209c495a4dc4208d4b1a05fbe630e0755ec62eb2847d6d5ed7eaaca2ad7f63",
+          "all_sha256": "ff209c495a4dc4208d4b1a05fbe630e0755ec62eb2847d6d5ed7eaaca2ad7f63",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "02_原图叠加/right_camera/dual_20260923_101517__pair0165__right.png",
+          "source_sha256": "6b79f7bd12892e6be381a329604df949dadd4bed6d46c465ee64020d7d7ee5de",
+          "all_sha256": "6b79f7bd12892e6be381a329604df949dadd4bed6d46c465ee64020d7d7ee5de",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "03_待确认候选并集/right_camera/dual_20260923_101517__pair0165__right.png",
+          "source_sha256": "05e1491f349f1994a279a9d02230e1d435cd03c10378b81e919bdc03378326e3",
+          "all_sha256": "05e1491f349f1994a279a9d02230e1d435cd03c10378b81e919bdc03378326e3",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "04_最佳外观候选掩膜/right_camera/dual_20260923_101517__pair0165__right.png",
+          "source_sha256": "577eadd8ee700deff49ea8cd63c9a9ae15a0e4588c6517ca3fe98a708da6fc82",
+          "all_sha256": "577eadd8ee700deff49ea8cd63c9a9ae15a0e4588c6517ca3fe98a708da6fc82",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_101517__pair0165__right/candidate_00.png",
+          "source_sha256": "577eadd8ee700deff49ea8cd63c9a9ae15a0e4588c6517ca3fe98a708da6fc82",
+          "all_sha256": "577eadd8ee700deff49ea8cd63c9a9ae15a0e4588c6517ca3fe98a708da6fc82",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_101517__pair0165__right/candidate_01.png",
+          "source_sha256": "b26bda55c64bff3b08e5be4cb88f254a08b411a5d1aa6827d4bd0958927f5bae",
+          "all_sha256": "b26bda55c64bff3b08e5be4cb88f254a08b411a5d1aa6827d4bd0958927f5bae",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_101517__pair0165__right/candidate_02.png",
+          "source_sha256": "5c4803ef5249ec6d54de168384d8869abc0ca72d23a2c79e3a2231a2c926bb23",
+          "all_sha256": "5c4803ef5249ec6d54de168384d8869abc0ca72d23a2c79e3a2231a2c926bb23",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_101517__pair0165__right/candidate_03.png",
+          "source_sha256": "02abc30159246276d3bcf52d49f25d1f44c6b9ca4eeeac2a677555e59ce0a362",
+          "all_sha256": "02abc30159246276d3bcf52d49f25d1f44c6b9ca4eeeac2a677555e59ce0a362",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_101517__pair0165__right/candidate_04.png",
+          "source_sha256": "6e98eedb65c98aa4037f7c5a2f1e7adf6170c6601d4935a4292d6e9524365c20",
+          "all_sha256": "6e98eedb65c98aa4037f7c5a2f1e7adf6170c6601d4935a4292d6e9524365c20",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_101517__pair0165__right/candidate_05.png",
+          "source_sha256": "2586395f4478ef3e62dec64b520b3886ff5fdc1d2a096d1207db3b59ef25d3ad",
+          "all_sha256": "2586395f4478ef3e62dec64b520b3886ff5fdc1d2a096d1207db3b59ef25d3ad",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "01_可信前缀掩膜/left_camera/dual_20260923_101643__pair0315__left.png",
+          "source_sha256": "f5f1fee1ea5aa6d6c592d3b1bc45dc0f67dd6cceaf67a21060a823d1a5270924",
+          "all_sha256": "f5f1fee1ea5aa6d6c592d3b1bc45dc0f67dd6cceaf67a21060a823d1a5270924",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "02_原图叠加/left_camera/dual_20260923_101643__pair0315__left.png",
+          "source_sha256": "d47c36b9a53b644969cdb793e1f8e9bb0519052d537af62199384c0ef4edb224",
+          "all_sha256": "d47c36b9a53b644969cdb793e1f8e9bb0519052d537af62199384c0ef4edb224",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "03_待确认候选并集/left_camera/dual_20260923_101643__pair0315__left.png",
+          "source_sha256": "f5f1fee1ea5aa6d6c592d3b1bc45dc0f67dd6cceaf67a21060a823d1a5270924",
+          "all_sha256": "f5f1fee1ea5aa6d6c592d3b1bc45dc0f67dd6cceaf67a21060a823d1a5270924",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "04_最佳外观候选掩膜/left_camera/dual_20260923_101643__pair0315__left.png",
+          "source_sha256": "f5f1fee1ea5aa6d6c592d3b1bc45dc0f67dd6cceaf67a21060a823d1a5270924",
+          "all_sha256": "f5f1fee1ea5aa6d6c592d3b1bc45dc0f67dd6cceaf67a21060a823d1a5270924",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "01_可信前缀掩膜/right_camera/dual_20260923_101643__pair0315__right.png",
+          "source_sha256": "9db5263738d4476dae7b69562bf46602880dc1907574fa932362a3e59d175a24",
+          "all_sha256": "9db5263738d4476dae7b69562bf46602880dc1907574fa932362a3e59d175a24",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "02_原图叠加/right_camera/dual_20260923_101643__pair0315__right.png",
+          "source_sha256": "4f4f5a7386b92d23870066291ac70244097ad8fd6454d771306e60972c521d6b",
+          "all_sha256": "4f4f5a7386b92d23870066291ac70244097ad8fd6454d771306e60972c521d6b",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "03_待确认候选并集/right_camera/dual_20260923_101643__pair0315__right.png",
+          "source_sha256": "008defcdee83ac8cff656f9dbde35fed7b28cc589a2f14c5b58df9f886b6d074",
+          "all_sha256": "008defcdee83ac8cff656f9dbde35fed7b28cc589a2f14c5b58df9f886b6d074",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "04_最佳外观候选掩膜/right_camera/dual_20260923_101643__pair0315__right.png",
+          "source_sha256": "1b7d3ed90e9d0612577fb99ae0f15befac6f42dc1fe450f8c4050baacdf6bc1a",
+          "all_sha256": "1b7d3ed90e9d0612577fb99ae0f15befac6f42dc1fe450f8c4050baacdf6bc1a",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_101643__pair0315__right/candidate_00.png",
+          "source_sha256": "1b7d3ed90e9d0612577fb99ae0f15befac6f42dc1fe450f8c4050baacdf6bc1a",
+          "all_sha256": "1b7d3ed90e9d0612577fb99ae0f15befac6f42dc1fe450f8c4050baacdf6bc1a",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_101643__pair0315__right/candidate_01.png",
+          "source_sha256": "3d50b1e66d2fafc1b3d77645b8409d3363594e1f4e406d177b7ae331793a5dd8",
+          "all_sha256": "3d50b1e66d2fafc1b3d77645b8409d3363594e1f4e406d177b7ae331793a5dd8",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_101643__pair0315__right/candidate_02.png",
+          "source_sha256": "45e4bac9bd328e2fbf7f82326f25a686e10c3653ed8b0df403ff59539c762f94",
+          "all_sha256": "45e4bac9bd328e2fbf7f82326f25a686e10c3653ed8b0df403ff59539c762f94",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_101643__pair0315__right/candidate_03.png",
+          "source_sha256": "f7aa6dd7910b914baabd3ad497da8a203bf1e0658e192562832b634e51458577",
+          "all_sha256": "f7aa6dd7910b914baabd3ad497da8a203bf1e0658e192562832b634e51458577",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_101643__pair0315__right/candidate_04.png",
+          "source_sha256": "4b0c41764f64cc690bce23e5c3ed435610924b807a1e14dbf4672c02bb2c6e2a",
+          "all_sha256": "4b0c41764f64cc690bce23e5c3ed435610924b807a1e14dbf4672c02bb2c6e2a",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_101643__pair0315__right/candidate_05.png",
+          "source_sha256": "30e106f14eb15364ae00e82f768e0aadd232b11dd4030085db919edab4bfdcc0",
+          "all_sha256": "30e106f14eb15364ae00e82f768e0aadd232b11dd4030085db919edab4bfdcc0",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "01_可信前缀掩膜/right_camera/dual_20260923_101643__pair0375__right.png",
+          "source_sha256": "db513b25efe3a54e510468be4798a3f0360267ede926fd44b733b002352adf56",
+          "all_sha256": "db513b25efe3a54e510468be4798a3f0360267ede926fd44b733b002352adf56",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "02_原图叠加/right_camera/dual_20260923_101643__pair0375__right.png",
+          "source_sha256": "5c7af231ca68b382429a937e45077557f7a3e8b8c95aea77bb13152d14bf07c9",
+          "all_sha256": "5c7af231ca68b382429a937e45077557f7a3e8b8c95aea77bb13152d14bf07c9",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "03_待确认候选并集/right_camera/dual_20260923_101643__pair0375__right.png",
+          "source_sha256": "40caa84f7c8086ed270f6d7622c21492a97bf982c637c15129bead3c71c56701",
+          "all_sha256": "40caa84f7c8086ed270f6d7622c21492a97bf982c637c15129bead3c71c56701",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "04_最佳外观候选掩膜/right_camera/dual_20260923_101643__pair0375__right.png",
+          "source_sha256": "e56570fa17c4eb182312f76817d730147114ac3cf41e27fff0b57d962de8e8fb",
+          "all_sha256": "e56570fa17c4eb182312f76817d730147114ac3cf41e27fff0b57d962de8e8fb",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_101643__pair0375__right/candidate_00.png",
+          "source_sha256": "e56570fa17c4eb182312f76817d730147114ac3cf41e27fff0b57d962de8e8fb",
+          "all_sha256": "e56570fa17c4eb182312f76817d730147114ac3cf41e27fff0b57d962de8e8fb",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_101643__pair0375__right/candidate_01.png",
+          "source_sha256": "58719e82aff481681e1a3df049a997fc38d6ff10f9f58f876d4ab9be8b7dfb08",
+          "all_sha256": "58719e82aff481681e1a3df049a997fc38d6ff10f9f58f876d4ab9be8b7dfb08",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_101643__pair0375__right/candidate_02.png",
+          "source_sha256": "260132ef142e5512036c4dcf0fd619845a454e46eda0a5937b4f572d9baa03bf",
+          "all_sha256": "260132ef142e5512036c4dcf0fd619845a454e46eda0a5937b4f572d9baa03bf",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_101643__pair0375__right/candidate_03.png",
+          "source_sha256": "1e42faa05aa5b905a67997743e09f06228bf28e7b53b07d90c379476f30b7994",
+          "all_sha256": "1e42faa05aa5b905a67997743e09f06228bf28e7b53b07d90c379476f30b7994",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_101643__pair0375__right/candidate_04.png",
+          "source_sha256": "55603706332f233e7480bfab49b307be5e75f66edb2e5ce368bf153fcb3f90ea",
+          "all_sha256": "55603706332f233e7480bfab49b307be5e75f66edb2e5ce368bf153fcb3f90ea",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_101643__pair0375__right/candidate_05.png",
+          "source_sha256": "b31f2b9912b1d73a8d8b00cb7b2e0db49e1f0f1ace28309b4d6f85c0fca9f40e",
+          "all_sha256": "b31f2b9912b1d73a8d8b00cb7b2e0db49e1f0f1ace28309b4d6f85c0fca9f40e",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "01_可信前缀掩膜/right_camera/dual_20260923_113305__pair0015__right.png",
+          "source_sha256": "03ff2a90e3c9f0e586765037e2920895bb71528f6d6f641bb7894eb06795f1ee",
+          "all_sha256": "03ff2a90e3c9f0e586765037e2920895bb71528f6d6f641bb7894eb06795f1ee",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "02_原图叠加/right_camera/dual_20260923_113305__pair0015__right.png",
+          "source_sha256": "afdf23d8c27574481e8232910b593e464e19fbb0c6427e5e154beaa75baa0010",
+          "all_sha256": "afdf23d8c27574481e8232910b593e464e19fbb0c6427e5e154beaa75baa0010",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "03_待确认候选并集/right_camera/dual_20260923_113305__pair0015__right.png",
+          "source_sha256": "c776b97d536ef2cbf6dd2d314e728517fff593687e923c94dc0cbdd7d356e30a",
+          "all_sha256": "c776b97d536ef2cbf6dd2d314e728517fff593687e923c94dc0cbdd7d356e30a",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "04_最佳外观候选掩膜/right_camera/dual_20260923_113305__pair0015__right.png",
+          "source_sha256": "b5da19253409476c75e8dac027ffbcd6908401c5d30795a425d2894a2561d169",
+          "all_sha256": "b5da19253409476c75e8dac027ffbcd6908401c5d30795a425d2894a2561d169",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_113305__pair0015__right/candidate_00.png",
+          "source_sha256": "b5da19253409476c75e8dac027ffbcd6908401c5d30795a425d2894a2561d169",
+          "all_sha256": "b5da19253409476c75e8dac027ffbcd6908401c5d30795a425d2894a2561d169",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_113305__pair0015__right/candidate_01.png",
+          "source_sha256": "563cd8faec57eebae9175c4de4691383d4e2cefe40d12277c89cce627efd892b",
+          "all_sha256": "563cd8faec57eebae9175c4de4691383d4e2cefe40d12277c89cce627efd892b",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_113305__pair0015__right/candidate_02.png",
+          "source_sha256": "70fb127b6deb986c5f5afd922e736111e0cc518474c72aec55dd46fb90ad7149",
+          "all_sha256": "70fb127b6deb986c5f5afd922e736111e0cc518474c72aec55dd46fb90ad7149",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_113305__pair0015__right/candidate_03.png",
+          "source_sha256": "a9cb1bd021e699e9c7a70be695b596fa4db4417129cf533caf7711a43f98be82",
+          "all_sha256": "a9cb1bd021e699e9c7a70be695b596fa4db4417129cf533caf7711a43f98be82",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_113305__pair0015__right/candidate_04.png",
+          "source_sha256": "7b6429738b3b7fd24426ca3167561c6e163dab232c1462699dab176e29a8b982",
+          "all_sha256": "7b6429738b3b7fd24426ca3167561c6e163dab232c1462699dab176e29a8b982",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_113305__pair0015__right/candidate_05.png",
+          "source_sha256": "4dd841d23d3d44c7cab0d12ea853f64833bd4e3df676ef3d7df148360e7ed434",
+          "all_sha256": "4dd841d23d3d44c7cab0d12ea853f64833bd4e3df676ef3d7df148360e7ed434",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "01_可信前缀掩膜/right_camera/dual_20260923_113305__pair0195__right.png",
+          "source_sha256": "ce1c0cd3060f23794e3153127ad3b6dceb6baca059f84619429aa8e2ff36c533",
+          "all_sha256": "ce1c0cd3060f23794e3153127ad3b6dceb6baca059f84619429aa8e2ff36c533",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "02_原图叠加/right_camera/dual_20260923_113305__pair0195__right.png",
+          "source_sha256": "20bfd8c3c1e41d7bceb191a091ea5a2d01c64c5e2d689a59101ba697ea2c5733",
+          "all_sha256": "20bfd8c3c1e41d7bceb191a091ea5a2d01c64c5e2d689a59101ba697ea2c5733",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "03_待确认候选并集/right_camera/dual_20260923_113305__pair0195__right.png",
+          "source_sha256": "9d60c275a19d9ed0da70899a0d1afa557a6d5c7a8179bea8a84f3aee1728b346",
+          "all_sha256": "9d60c275a19d9ed0da70899a0d1afa557a6d5c7a8179bea8a84f3aee1728b346",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "04_最佳外观候选掩膜/right_camera/dual_20260923_113305__pair0195__right.png",
+          "source_sha256": "c29738f1a4aaa040d996a83f68463af1941a1ecfd60309ad22b8faa029821c69",
+          "all_sha256": "c29738f1a4aaa040d996a83f68463af1941a1ecfd60309ad22b8faa029821c69",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_113305__pair0195__right/candidate_00.png",
+          "source_sha256": "c29738f1a4aaa040d996a83f68463af1941a1ecfd60309ad22b8faa029821c69",
+          "all_sha256": "c29738f1a4aaa040d996a83f68463af1941a1ecfd60309ad22b8faa029821c69",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_113305__pair0195__right/candidate_01.png",
+          "source_sha256": "2e66c241d8872d76c97dca83a040badf3810ecc6b6d9375f0b3283f7165572c1",
+          "all_sha256": "2e66c241d8872d76c97dca83a040badf3810ecc6b6d9375f0b3283f7165572c1",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_113305__pair0195__right/candidate_02.png",
+          "source_sha256": "7f695fae4c6d5d9335d8696326406a649d0fa55aebf8f0f6a5fcd4d7beb10102",
+          "all_sha256": "7f695fae4c6d5d9335d8696326406a649d0fa55aebf8f0f6a5fcd4d7beb10102",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_113305__pair0195__right/candidate_03.png",
+          "source_sha256": "ca6da221e6607acd020e5a775b1fece08f9e69c87eda4fe4e0b5bac5f2cc13ce",
+          "all_sha256": "ca6da221e6607acd020e5a775b1fece08f9e69c87eda4fe4e0b5bac5f2cc13ce",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_113305__pair0195__right/candidate_04.png",
+          "source_sha256": "8dc4d7a023d0442b70854ef427ba2264b956701cf76a7817a361f853c711b962",
+          "all_sha256": "8dc4d7a023d0442b70854ef427ba2264b956701cf76a7817a361f853c711b962",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260923_113305__pair0195__right/candidate_05.png",
+          "source_sha256": "3549df2bbc2bf33a0aeb92800bbe43ff3a3d0b246e14efef053a7a77e224d737",
+          "all_sha256": "3549df2bbc2bf33a0aeb92800bbe43ff3a3d0b246e14efef053a7a77e224d737",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "01_可信前缀掩膜/right_camera/dual_20260924_111143__pair0585__right.png",
+          "source_sha256": "2eccecce3ae54eb1abdfd2cca8c7dfac128dca7827a30d777f2d43bf858dfa46",
+          "all_sha256": "2eccecce3ae54eb1abdfd2cca8c7dfac128dca7827a30d777f2d43bf858dfa46",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "02_原图叠加/right_camera/dual_20260924_111143__pair0585__right.png",
+          "source_sha256": "1ddf9bfee837cda302d8595c66a0f6bb7a1a1f3199d39d98f9e39fc7eee9d912",
+          "all_sha256": "1ddf9bfee837cda302d8595c66a0f6bb7a1a1f3199d39d98f9e39fc7eee9d912",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "03_待确认候选并集/right_camera/dual_20260924_111143__pair0585__right.png",
+          "source_sha256": "16aa91bda4335110e3d7bba1394f03a085c900aab7302259973702225574bc27",
+          "all_sha256": "16aa91bda4335110e3d7bba1394f03a085c900aab7302259973702225574bc27",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "04_最佳外观候选掩膜/right_camera/dual_20260924_111143__pair0585__right.png",
+          "source_sha256": "7c87ef98c7278a18836485e660fbfe199fdc6f63ec3f572c3ad68249e99273a7",
+          "all_sha256": "7c87ef98c7278a18836485e660fbfe199fdc6f63ec3f572c3ad68249e99273a7",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260924_111143__pair0585__right/candidate_00.png",
+          "source_sha256": "7c87ef98c7278a18836485e660fbfe199fdc6f63ec3f572c3ad68249e99273a7",
+          "all_sha256": "7c87ef98c7278a18836485e660fbfe199fdc6f63ec3f572c3ad68249e99273a7",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260924_111143__pair0585__right/candidate_01.png",
+          "source_sha256": "1024ec9c16aa1a920648ad88eca4f6b53f9f9a1a4672685a9368b2df9e010775",
+          "all_sha256": "1024ec9c16aa1a920648ad88eca4f6b53f9f9a1a4672685a9368b2df9e010775",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260924_111143__pair0585__right/candidate_02.png",
+          "source_sha256": "35db9051b52724da5ebcd0b66a6a3fcead7b25860e1b6fddf0d53ce4619c4b2f",
+          "all_sha256": "35db9051b52724da5ebcd0b66a6a3fcead7b25860e1b6fddf0d53ce4619c4b2f",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260924_111143__pair0585__right/candidate_03.png",
+          "source_sha256": "08119fff9b6957c6dd8657c9e037a7609af60021bc9f3db5d287a188845c09f7",
+          "all_sha256": "08119fff9b6957c6dd8657c9e037a7609af60021bc9f3db5d287a188845c09f7",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260924_111143__pair0585__right/candidate_04.png",
+          "source_sha256": "892457ff8becbd9a5f7a7556d9c2da1a9a169b8d75a943900bf00408bdc25ba9",
+          "all_sha256": "892457ff8becbd9a5f7a7556d9c2da1a9a169b8d75a943900bf00408bdc25ba9",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/dual_20260924_111143__pair0585__right/candidate_05.png",
+          "source_sha256": "78040ac4035be35c8697847f8aef537bbdebade52ba3c886e0818676cc1523a8",
+          "all_sha256": "78040ac4035be35c8697847f8aef537bbdebade52ba3c886e0818676cc1523a8",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "01_可信前缀掩膜/left_camera/dual_20260924_111500__pair0015__left.png",
+          "source_sha256": "56c06da05470ae3324e8462ce5571cca85c60363d07c953a8c22867e2c8a25d4",
+          "all_sha256": "56c06da05470ae3324e8462ce5571cca85c60363d07c953a8c22867e2c8a25d4",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "02_原图叠加/left_camera/dual_20260924_111500__pair0015__left.png",
+          "source_sha256": "b6479db31112381d85bb50f89f13302a012191fadc147e3fcea7c11e846b2b7c",
+          "all_sha256": "b6479db31112381d85bb50f89f13302a012191fadc147e3fcea7c11e846b2b7c",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "03_待确认候选并集/left_camera/dual_20260924_111500__pair0015__left.png",
+          "source_sha256": "c047c6f26b0faf4aa0f64ffbf85ba7a56b107da91aa108cf5ea899162dbb85a7",
+          "all_sha256": "c047c6f26b0faf4aa0f64ffbf85ba7a56b107da91aa108cf5ea899162dbb85a7",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "04_最佳外观候选掩膜/left_camera/dual_20260924_111500__pair0015__left.png",
+          "source_sha256": "c2dc270ed3e338043ce137c11c6106afa5aeb78d72f6d107df1b2711c02bd84e",
+          "all_sha256": "c2dc270ed3e338043ce137c11c6106afa5aeb78d72f6d107df1b2711c02bd84e",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/dual_20260924_111500__pair0015__left/candidate_00.png",
+          "source_sha256": "c2dc270ed3e338043ce137c11c6106afa5aeb78d72f6d107df1b2711c02bd84e",
+          "all_sha256": "c2dc270ed3e338043ce137c11c6106afa5aeb78d72f6d107df1b2711c02bd84e",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/dual_20260924_111500__pair0015__left/candidate_01.png",
+          "source_sha256": "ab6ff98e8b38d9b054e6faddd957d20a7b8ffe5d0e04f52afbd28eb2916b98df",
+          "all_sha256": "ab6ff98e8b38d9b054e6faddd957d20a7b8ffe5d0e04f52afbd28eb2916b98df",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/dual_20260924_111500__pair0015__left/candidate_02.png",
+          "source_sha256": "13305787b37154868b63928cfbebd2c6b0056165f6d2992296154e80cd665c8e",
+          "all_sha256": "13305787b37154868b63928cfbebd2c6b0056165f6d2992296154e80cd665c8e",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/dual_20260924_111500__pair0015__left/candidate_03.png",
+          "source_sha256": "4c1703cf8b49c8ff0b520899df4dd58505ecf30941f2bd21a90247927a00f732",
+          "all_sha256": "4c1703cf8b49c8ff0b520899df4dd58505ecf30941f2bd21a90247927a00f732",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/dual_20260924_111500__pair0015__left/candidate_04.png",
+          "source_sha256": "49408c8f2cf2d09cd2814298d9bb01f16792efad524f6f4751093b460fdd10fa",
+          "all_sha256": "49408c8f2cf2d09cd2814298d9bb01f16792efad524f6f4751093b460fdd10fa",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/dual_20260924_111500__pair0015__left/candidate_05.png",
+          "source_sha256": "33ba5a4b280a38250392a5e5edc53480ad66be3a4bf0d4311dac11076c8b6de6",
+          "all_sha256": "33ba5a4b280a38250392a5e5edc53480ad66be3a4bf0d4311dac11076c8b6de6",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "01_可信前缀掩膜/left_camera/L_run_20260923_01__f000015__left.png",
+          "source_sha256": "0a5d80a9d9244d85afc3f7a8a2d4794a64dd8196d8483073c59e3a8421f3dc10",
+          "all_sha256": "0a5d80a9d9244d85afc3f7a8a2d4794a64dd8196d8483073c59e3a8421f3dc10",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "02_原图叠加/left_camera/L_run_20260923_01__f000015__left.png",
+          "source_sha256": "709516f14e248f4a1d43bd168fbb29ce78e03b6bddb583ee525562567e7b9714",
+          "all_sha256": "709516f14e248f4a1d43bd168fbb29ce78e03b6bddb583ee525562567e7b9714",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "03_待确认候选并集/left_camera/L_run_20260923_01__f000015__left.png",
+          "source_sha256": "9d2966e3dd1abc88fd00cc839b3aebc09dd3a5da898abddbf63e7423510f4990",
+          "all_sha256": "9d2966e3dd1abc88fd00cc839b3aebc09dd3a5da898abddbf63e7423510f4990",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "04_最佳外观候选掩膜/left_camera/L_run_20260923_01__f000015__left.png",
+          "source_sha256": "49888a44d8f5069daebcd9b65782803c9dc354a46b9bf75ced6332a1bd448d27",
+          "all_sha256": "49888a44d8f5069daebcd9b65782803c9dc354a46b9bf75ced6332a1bd448d27",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/L_run_20260923_01__f000015__left/candidate_00.png",
+          "source_sha256": "49888a44d8f5069daebcd9b65782803c9dc354a46b9bf75ced6332a1bd448d27",
+          "all_sha256": "49888a44d8f5069daebcd9b65782803c9dc354a46b9bf75ced6332a1bd448d27",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/L_run_20260923_01__f000015__left/candidate_01.png",
+          "source_sha256": "4235ff545ff222f2605642955dd9e7e05543e81c6a9a7dd182690c4c47be8ba7",
+          "all_sha256": "4235ff545ff222f2605642955dd9e7e05543e81c6a9a7dd182690c4c47be8ba7",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/L_run_20260923_01__f000015__left/candidate_02.png",
+          "source_sha256": "16e68f8eda9fce066ce9903201ae4830a93f1e62f8abb2476af11cc11abfea5b",
+          "all_sha256": "16e68f8eda9fce066ce9903201ae4830a93f1e62f8abb2476af11cc11abfea5b",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/L_run_20260923_01__f000015__left/candidate_03.png",
+          "source_sha256": "070e1647bbb1146cf58f35f9be5d6d62783e9d66b8deb935879a34d39b6d4f50",
+          "all_sha256": "070e1647bbb1146cf58f35f9be5d6d62783e9d66b8deb935879a34d39b6d4f50",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/L_run_20260923_01__f000015__left/candidate_04.png",
+          "source_sha256": "e4d3ae4abbe98c42374a2b067b001ce7c28f4aaea0af6c17b989c47ea51c66ea",
+          "all_sha256": "e4d3ae4abbe98c42374a2b067b001ce7c28f4aaea0af6c17b989c47ea51c66ea",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "01_可信前缀掩膜/right_camera/R_run_20260923_01__f000757__right.png",
+          "source_sha256": "dfa49fae536449179d4522c9aa35b8c10ab1b3b9a69de1aaf980ce0b44d6cbce",
+          "all_sha256": "dfa49fae536449179d4522c9aa35b8c10ab1b3b9a69de1aaf980ce0b44d6cbce",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "02_原图叠加/right_camera/R_run_20260923_01__f000757__right.png",
+          "source_sha256": "e5973708178063c865a9ddc1ac96a6d35e863d7898cfe0cafd4619861b27d1ff",
+          "all_sha256": "e5973708178063c865a9ddc1ac96a6d35e863d7898cfe0cafd4619861b27d1ff",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "03_待确认候选并集/right_camera/R_run_20260923_01__f000757__right.png",
+          "source_sha256": "432cb42e73e9dd09dc6b04dfde6dc054da4fd05b35d89a1913751d4dba1fcd80",
+          "all_sha256": "432cb42e73e9dd09dc6b04dfde6dc054da4fd05b35d89a1913751d4dba1fcd80",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "04_最佳外观候选掩膜/right_camera/R_run_20260923_01__f000757__right.png",
+          "source_sha256": "09fc17de0bd1fa781b20fa963e094e34111c6f605ef72c20ebb816094ff89ba6",
+          "all_sha256": "09fc17de0bd1fa781b20fa963e094e34111c6f605ef72c20ebb816094ff89ba6",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/R_run_20260923_01__f000757__right/candidate_00.png",
+          "source_sha256": "09fc17de0bd1fa781b20fa963e094e34111c6f605ef72c20ebb816094ff89ba6",
+          "all_sha256": "09fc17de0bd1fa781b20fa963e094e34111c6f605ef72c20ebb816094ff89ba6",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/R_run_20260923_01__f000757__right/candidate_01.png",
+          "source_sha256": "3ad0d0efd88697537210192e01fa1e9e7c43887fdfde8c47a6a4acb56163b4ae",
+          "all_sha256": "3ad0d0efd88697537210192e01fa1e9e7c43887fdfde8c47a6a4acb56163b4ae",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/R_run_20260923_01__f000757__right/candidate_02.png",
+          "source_sha256": "84041a9371cc2327c81bcd40728829755d4c60251ca03dfa45df7910334b2ab6",
+          "all_sha256": "84041a9371cc2327c81bcd40728829755d4c60251ca03dfa45df7910334b2ab6",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/R_run_20260923_01__f000757__right/candidate_03.png",
+          "source_sha256": "64029901ac8cc1db2c548463007425fbde06a016d5af161bb70302f264324f6a",
+          "all_sha256": "64029901ac8cc1db2c548463007425fbde06a016d5af161bb70302f264324f6a",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/R_run_20260923_01__f000757__right/candidate_04.png",
+          "source_sha256": "1a8418ea81ca2c465ab88832ddcc7c621fbeb8f1f24aef84a51bab56698e61b2",
+          "all_sha256": "1a8418ea81ca2c465ab88832ddcc7c621fbeb8f1f24aef84a51bab56698e61b2",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/R_run_20260923_01__f000757__right/candidate_05.png",
+          "source_sha256": "0cc64c48e17af95d452d005d71dac7e439dac326a8ebeff207d7eab6a6d0b104",
+          "all_sha256": "0cc64c48e17af95d452d005d71dac7e439dac326a8ebeff207d7eab6a6d0b104",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "01_可信前缀掩膜/left_camera/L_run_stop_run_20260922_01__f000046__left.png",
+          "source_sha256": "82d9011bdb5604a9ef40da04997d23672942e834cdacb43913fcc11df81e8410",
+          "all_sha256": "82d9011bdb5604a9ef40da04997d23672942e834cdacb43913fcc11df81e8410",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "02_原图叠加/left_camera/L_run_stop_run_20260922_01__f000046__left.png",
+          "source_sha256": "bd4651c89c32732c2c1153a0ebe6d8503ca2fd4fad35dc8601f8b28d1c604c01",
+          "all_sha256": "bd4651c89c32732c2c1153a0ebe6d8503ca2fd4fad35dc8601f8b28d1c604c01",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "03_待确认候选并集/left_camera/L_run_stop_run_20260922_01__f000046__left.png",
+          "source_sha256": "fc857a041ea505f84223b7a1a3415212e4359a87f4963fa40840cec5afdd155f",
+          "all_sha256": "fc857a041ea505f84223b7a1a3415212e4359a87f4963fa40840cec5afdd155f",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "04_最佳外观候选掩膜/left_camera/L_run_stop_run_20260922_01__f000046__left.png",
+          "source_sha256": "7e5d1b0d1a2aed0a7ae76ee00126e3f41ef0979f3c0e8c1735abcae9eb9f31f5",
+          "all_sha256": "7e5d1b0d1a2aed0a7ae76ee00126e3f41ef0979f3c0e8c1735abcae9eb9f31f5",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/L_run_stop_run_20260922_01__f000046__left/candidate_00.png",
+          "source_sha256": "7e5d1b0d1a2aed0a7ae76ee00126e3f41ef0979f3c0e8c1735abcae9eb9f31f5",
+          "all_sha256": "7e5d1b0d1a2aed0a7ae76ee00126e3f41ef0979f3c0e8c1735abcae9eb9f31f5",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/L_run_stop_run_20260922_01__f000046__left/candidate_01.png",
+          "source_sha256": "bcce641a7e19eefe83a9fbc53f2a15c11f31d7e3dc790a83ec9858ed4f9e3676",
+          "all_sha256": "bcce641a7e19eefe83a9fbc53f2a15c11f31d7e3dc790a83ec9858ed4f9e3676",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/L_run_stop_run_20260922_01__f000046__left/candidate_02.png",
+          "source_sha256": "b1623eacfb64e81ee14089dcd3560965dd09dada82822e4a214004c9f77533fa",
+          "all_sha256": "b1623eacfb64e81ee14089dcd3560965dd09dada82822e4a214004c9f77533fa",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/L_run_stop_run_20260922_01__f000046__left/candidate_03.png",
+          "source_sha256": "85e4d5ddd2fdfaded35cf9df62183ddc2333fd3d16fba7258d6706eea2f1647a",
+          "all_sha256": "85e4d5ddd2fdfaded35cf9df62183ddc2333fd3d16fba7258d6706eea2f1647a",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/L_run_stop_run_20260922_01__f000046__left/candidate_04.png",
+          "source_sha256": "8a6677b82275d594c2babf161393872c9fa538031a3bf4f69b58c06e22be35f0",
+          "all_sha256": "8a6677b82275d594c2babf161393872c9fa538031a3bf4f69b58c06e22be35f0",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/L_run_stop_run_20260922_01__f000046__left/candidate_05.png",
+          "source_sha256": "20f388f93ceceeff991d095f72abdb03e93cdfba904b83ba312e7d58037e5e2b",
+          "all_sha256": "20f388f93ceceeff991d095f72abdb03e93cdfba904b83ba312e7d58037e5e2b",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "01_可信前缀掩膜/right_camera/R_run_stop_run_20260922_01__f002627__right.png",
+          "source_sha256": "828ca35042a7cfa708a93ab9f2f24ea9f4ac6426b30cf9932127f07719219dea",
+          "all_sha256": "828ca35042a7cfa708a93ab9f2f24ea9f4ac6426b30cf9932127f07719219dea",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "02_原图叠加/right_camera/R_run_stop_run_20260922_01__f002627__right.png",
+          "source_sha256": "363148b9f915099242600be45251a99e22d2ac631ab070f422bd207379cf8cd1",
+          "all_sha256": "363148b9f915099242600be45251a99e22d2ac631ab070f422bd207379cf8cd1",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "03_待确认候选并集/right_camera/R_run_stop_run_20260922_01__f002627__right.png",
+          "source_sha256": "5714057dae893288f5f951b435107fa974bc17450e328e9c6a3cc62da7e24d62",
+          "all_sha256": "5714057dae893288f5f951b435107fa974bc17450e328e9c6a3cc62da7e24d62",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "04_最佳外观候选掩膜/right_camera/R_run_stop_run_20260922_01__f002627__right.png",
+          "source_sha256": "22108decc20705cfb6c336ab057b5c4eb3fda8c024bbba269a531f9fdfc9fbfd",
+          "all_sha256": "22108decc20705cfb6c336ab057b5c4eb3fda8c024bbba269a531f9fdfc9fbfd",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/R_run_stop_run_20260922_01__f002627__right/candidate_00.png",
+          "source_sha256": "22108decc20705cfb6c336ab057b5c4eb3fda8c024bbba269a531f9fdfc9fbfd",
+          "all_sha256": "22108decc20705cfb6c336ab057b5c4eb3fda8c024bbba269a531f9fdfc9fbfd",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/R_run_stop_run_20260922_01__f002627__right/candidate_01.png",
+          "source_sha256": "f16c7b2aa9315c6bb53d8c886ac2c56ca9a57990f9f1d6048bfb07a64e5f5610",
+          "all_sha256": "f16c7b2aa9315c6bb53d8c886ac2c56ca9a57990f9f1d6048bfb07a64e5f5610",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/R_run_stop_run_20260922_01__f002627__right/candidate_02.png",
+          "source_sha256": "f775683ae244a90b0519910dc47c0e64e92cc4bca8bb69ae3c2db0c680ce307a",
+          "all_sha256": "f775683ae244a90b0519910dc47c0e64e92cc4bca8bb69ae3c2db0c680ce307a",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/R_run_stop_run_20260922_01__f002627__right/candidate_03.png",
+          "source_sha256": "78b3c4c851566311de5d4f94bfa20ededb3e0e6ffc7642d9768e4eab7de7d19d",
+          "all_sha256": "78b3c4c851566311de5d4f94bfa20ededb3e0e6ffc7642d9768e4eab7de7d19d",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/R_run_stop_run_20260922_01__f002627__right/candidate_04.png",
+          "source_sha256": "2c8568cbac1b56f18353fa637f360788da19967fcca2806c611cf1f90c9a985c",
+          "all_sha256": "2c8568cbac1b56f18353fa637f360788da19967fcca2806c611cf1f90c9a985c",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/R_run_stop_run_20260922_01__f002627__right/candidate_05.png",
+          "source_sha256": "b1698a44fff611bb76c1f6659f5a05b149c5462d26f4d6d1360d075fa1c69704",
+          "all_sha256": "b1698a44fff611bb76c1f6659f5a05b149c5462d26f4d6d1360d075fa1c69704",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "01_可信前缀掩膜/left_camera/L_static_20260922_01__f000100__left.png",
+          "source_sha256": "934d97a6493f0db95fe4067cac90ddd93f954abeb5b7023c5bf9cd1a5461a9f1",
+          "all_sha256": "934d97a6493f0db95fe4067cac90ddd93f954abeb5b7023c5bf9cd1a5461a9f1",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "02_原图叠加/left_camera/L_static_20260922_01__f000100__left.png",
+          "source_sha256": "725ab502296612ad1469ef907f16b9db4864b715a3b30ef9e7f688a251e3d0ac",
+          "all_sha256": "725ab502296612ad1469ef907f16b9db4864b715a3b30ef9e7f688a251e3d0ac",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "03_待确认候选并集/left_camera/L_static_20260922_01__f000100__left.png",
+          "source_sha256": "45a9079954c9486586dccd86508b3a6d6ef82ccfb1568bc8ce73fdaf02113ad4",
+          "all_sha256": "45a9079954c9486586dccd86508b3a6d6ef82ccfb1568bc8ce73fdaf02113ad4",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "04_最佳外观候选掩膜/left_camera/L_static_20260922_01__f000100__left.png",
+          "source_sha256": "22f210ba48f2521fb425020d05895eaac6b086680ad4218c83da130adc493e99",
+          "all_sha256": "22f210ba48f2521fb425020d05895eaac6b086680ad4218c83da130adc493e99",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/L_static_20260922_01__f000100__left/candidate_00.png",
+          "source_sha256": "22f210ba48f2521fb425020d05895eaac6b086680ad4218c83da130adc493e99",
+          "all_sha256": "22f210ba48f2521fb425020d05895eaac6b086680ad4218c83da130adc493e99",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/L_static_20260922_01__f000100__left/candidate_01.png",
+          "source_sha256": "a9f358dabe2937a34de8fd3757c2d1603d0aedfd2a103eda1895a80da54a7d84",
+          "all_sha256": "a9f358dabe2937a34de8fd3757c2d1603d0aedfd2a103eda1895a80da54a7d84",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/L_static_20260922_01__f000100__left/candidate_02.png",
+          "source_sha256": "c7ab1e8697294c74339a0d21243df55f6bfbdda205cfdd5ea13fcafe912c0fa5",
+          "all_sha256": "c7ab1e8697294c74339a0d21243df55f6bfbdda205cfdd5ea13fcafe912c0fa5",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/L_static_20260922_01__f000100__left/candidate_03.png",
+          "source_sha256": "267e47891bf342ec55d6fffc3b9cebbdb8d39fa2fb668ffbc8d75c4c26054c86",
+          "all_sha256": "267e47891bf342ec55d6fffc3b9cebbdb8d39fa2fb668ffbc8d75c4c26054c86",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/L_static_20260922_01__f000100__left/candidate_04.png",
+          "source_sha256": "13ed8c8b7d7f54addc29c133f39e368edd43487dd7fee423afe5b86e9090ae55",
+          "all_sha256": "13ed8c8b7d7f54addc29c133f39e368edd43487dd7fee423afe5b86e9090ae55",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/L_static_20260922_01__f000100__left/candidate_05.png",
+          "source_sha256": "ed96e68c0073995bffff965195da71d9116b058c3e6e1a957b75e27ee3caee8c",
+          "all_sha256": "ed96e68c0073995bffff965195da71d9116b058c3e6e1a957b75e27ee3caee8c",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "01_可信前缀掩膜/left_camera/L_static_20260922_01__f000503__left.png",
+          "source_sha256": "d38d9284b9f48e616cef2749b06c9920bd4c4024cc9be03d6e7bcef52ea733d0",
+          "all_sha256": "d38d9284b9f48e616cef2749b06c9920bd4c4024cc9be03d6e7bcef52ea733d0",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "02_原图叠加/left_camera/L_static_20260922_01__f000503__left.png",
+          "source_sha256": "0bd1c99dcad5e756acc768803c2983791b9c32aabddeb2832ccdec1ee5589549",
+          "all_sha256": "0bd1c99dcad5e756acc768803c2983791b9c32aabddeb2832ccdec1ee5589549",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "03_待确认候选并集/left_camera/L_static_20260922_01__f000503__left.png",
+          "source_sha256": "f727b28ddcc91e767405a04c81d461100a6e7dda51b1d3d5653d62ef228a716b",
+          "all_sha256": "f727b28ddcc91e767405a04c81d461100a6e7dda51b1d3d5653d62ef228a716b",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "04_最佳外观候选掩膜/left_camera/L_static_20260922_01__f000503__left.png",
+          "source_sha256": "27278516172074868f876c600fdf18cfe4eb2dd73aa41839cc83b862c2717d5d",
+          "all_sha256": "27278516172074868f876c600fdf18cfe4eb2dd73aa41839cc83b862c2717d5d",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/L_static_20260922_01__f000503__left/candidate_00.png",
+          "source_sha256": "27278516172074868f876c600fdf18cfe4eb2dd73aa41839cc83b862c2717d5d",
+          "all_sha256": "27278516172074868f876c600fdf18cfe4eb2dd73aa41839cc83b862c2717d5d",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/L_static_20260922_01__f000503__left/candidate_01.png",
+          "source_sha256": "709a47cc0ae1c12834efee8033faf74c79b054a9f038a4cbb96e75444cfb6070",
+          "all_sha256": "709a47cc0ae1c12834efee8033faf74c79b054a9f038a4cbb96e75444cfb6070",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/L_static_20260922_01__f000503__left/candidate_02.png",
+          "source_sha256": "78cd5fc5f755d8ee0a24bd870a57f7438e5b103da6a3e6e4f2a0c47ad8fd76f7",
+          "all_sha256": "78cd5fc5f755d8ee0a24bd870a57f7438e5b103da6a3e6e4f2a0c47ad8fd76f7",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/L_static_20260922_01__f000503__left/candidate_03.png",
+          "source_sha256": "d36d260623bccb1165ee4748cca40c814035099e276e709515e1e13d326cf333",
+          "all_sha256": "d36d260623bccb1165ee4748cca40c814035099e276e709515e1e13d326cf333",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/L_static_20260922_01__f000503__left/candidate_04.png",
+          "source_sha256": "a89ff9a0eb7fed9288fd8bb5e21122ccf71f2f5cff5df1999a211c511d5afc7d",
+          "all_sha256": "a89ff9a0eb7fed9288fd8bb5e21122ccf71f2f5cff5df1999a211c511d5afc7d",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/L_static_20260922_01__f000503__left/candidate_05.png",
+          "source_sha256": "20449dbec6bb37dc2f7afd6b78c22ab9c0c2bb7304cecddc490669c72f7266d9",
+          "all_sha256": "20449dbec6bb37dc2f7afd6b78c22ab9c0c2bb7304cecddc490669c72f7266d9",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "01_可信前缀掩膜/left_camera/ruler_left_01.png",
+          "source_sha256": "547c1d057fdb91b80ae91db3c9b741c4d997bce3b384269a753f3941ccb57c2a",
+          "all_sha256": "547c1d057fdb91b80ae91db3c9b741c4d997bce3b384269a753f3941ccb57c2a",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "02_原图叠加/left_camera/ruler_left_01.png",
+          "source_sha256": "3c68eacd00fab0761595962fa8cc0e75d3a3fd41a2b509ed2626938f09c85925",
+          "all_sha256": "3c68eacd00fab0761595962fa8cc0e75d3a3fd41a2b509ed2626938f09c85925",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "03_待确认候选并集/left_camera/ruler_left_01.png",
+          "source_sha256": "1c50f8bbfd292da152e53251b89198c5796f6fdb411b99899b86063468b14746",
+          "all_sha256": "1c50f8bbfd292da152e53251b89198c5796f6fdb411b99899b86063468b14746",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "04_最佳外观候选掩膜/left_camera/ruler_left_01.png",
+          "source_sha256": "32ca6b87438af45361a618c0ec508cf4eaeff17255533605149599672ac90aa8",
+          "all_sha256": "32ca6b87438af45361a618c0ec508cf4eaeff17255533605149599672ac90aa8",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/ruler_left_01/candidate_00.png",
+          "source_sha256": "32ca6b87438af45361a618c0ec508cf4eaeff17255533605149599672ac90aa8",
+          "all_sha256": "32ca6b87438af45361a618c0ec508cf4eaeff17255533605149599672ac90aa8",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/ruler_left_01/candidate_01.png",
+          "source_sha256": "cb0b6c321e6c3ad2699e057a109bcb515e2048a7ac39bb4bbb3478d1fae4ed53",
+          "all_sha256": "cb0b6c321e6c3ad2699e057a109bcb515e2048a7ac39bb4bbb3478d1fae4ed53",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/ruler_left_01/candidate_02.png",
+          "source_sha256": "3fc07c79416006ed77da2968f4757d1b90fcfc57737eaf118b8cdfe6791a86f1",
+          "all_sha256": "3fc07c79416006ed77da2968f4757d1b90fcfc57737eaf118b8cdfe6791a86f1",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/ruler_left_01/candidate_03.png",
+          "source_sha256": "ba491889cea8d987a9fabb61b206c667787ac75c3cac890af0202dbcaf3cc4f0",
+          "all_sha256": "ba491889cea8d987a9fabb61b206c667787ac75c3cac890af0202dbcaf3cc4f0",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/ruler_left_01/candidate_04.png",
+          "source_sha256": "1febc5e9fb50e5e7f8406aa54136aaca156154964decbde9390e333d1e96c2e9",
+          "all_sha256": "1febc5e9fb50e5e7f8406aa54136aaca156154964decbde9390e333d1e96c2e9",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/ruler_left_01/candidate_05.png",
+          "source_sha256": "7c9d20005195f9ec9e1775cbd3f383dda18979d7d8ff5126d8a2f09c7862c8cc",
+          "all_sha256": "7c9d20005195f9ec9e1775cbd3f383dda18979d7d8ff5126d8a2f09c7862c8cc",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "01_可信前缀掩膜/left_camera/ruler_left_03.png",
+          "source_sha256": "5fe3a057ebaea4ba09170c17b5f026dd1205bed0d89f576f282d3afffd579c05",
+          "all_sha256": "5fe3a057ebaea4ba09170c17b5f026dd1205bed0d89f576f282d3afffd579c05",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "02_原图叠加/left_camera/ruler_left_03.png",
+          "source_sha256": "1839fb6683ca5df1192c95bc5c61fb1daa13127a43b37b16fc04572a60fa3181",
+          "all_sha256": "1839fb6683ca5df1192c95bc5c61fb1daa13127a43b37b16fc04572a60fa3181",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "03_待确认候选并集/left_camera/ruler_left_03.png",
+          "source_sha256": "f5f1fee1ea5aa6d6c592d3b1bc45dc0f67dd6cceaf67a21060a823d1a5270924",
+          "all_sha256": "f5f1fee1ea5aa6d6c592d3b1bc45dc0f67dd6cceaf67a21060a823d1a5270924",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "04_最佳外观候选掩膜/left_camera/ruler_left_03.png",
+          "source_sha256": "5fe3a057ebaea4ba09170c17b5f026dd1205bed0d89f576f282d3afffd579c05",
+          "all_sha256": "5fe3a057ebaea4ba09170c17b5f026dd1205bed0d89f576f282d3afffd579c05",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "01_可信前缀掩膜/left_camera/ruler_left_04.png",
+          "source_sha256": "d899ff50983154413be42b5d520a1c25ddadc7e3538c40b275038b74caa18321",
+          "all_sha256": "d899ff50983154413be42b5d520a1c25ddadc7e3538c40b275038b74caa18321",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "02_原图叠加/left_camera/ruler_left_04.png",
+          "source_sha256": "d0ce3fdf25195a60fa54dec07dbe02de6fa4cb6b6f148601a2bf9a8b8496dddb",
+          "all_sha256": "d0ce3fdf25195a60fa54dec07dbe02de6fa4cb6b6f148601a2bf9a8b8496dddb",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "03_待确认候选并集/left_camera/ruler_left_04.png",
+          "source_sha256": "f70135e502995c4055337458017090b3b82814963c2d55c4bf25879b073b8290",
+          "all_sha256": "f70135e502995c4055337458017090b3b82814963c2d55c4bf25879b073b8290",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "04_最佳外观候选掩膜/left_camera/ruler_left_04.png",
+          "source_sha256": "f9c4cdd899b2e7b186669c189dcec6d1ec277cd2681d263e037ce4d92ae32c51",
+          "all_sha256": "f9c4cdd899b2e7b186669c189dcec6d1ec277cd2681d263e037ce4d92ae32c51",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/ruler_left_04/candidate_00.png",
+          "source_sha256": "f9c4cdd899b2e7b186669c189dcec6d1ec277cd2681d263e037ce4d92ae32c51",
+          "all_sha256": "f9c4cdd899b2e7b186669c189dcec6d1ec277cd2681d263e037ce4d92ae32c51",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/ruler_left_04/candidate_01.png",
+          "source_sha256": "f13ece52a2e8ab33765fa59f0b60b655f009471b8c4708a702550e42ea1a93ec",
+          "all_sha256": "f13ece52a2e8ab33765fa59f0b60b655f009471b8c4708a702550e42ea1a93ec",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/ruler_left_04/candidate_02.png",
+          "source_sha256": "48a194bbf2727318cab10e1a0f263a9a355a73a282a41bce6a0ff876bcf0e619",
+          "all_sha256": "48a194bbf2727318cab10e1a0f263a9a355a73a282a41bce6a0ff876bcf0e619",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/ruler_left_04/candidate_03.png",
+          "source_sha256": "6997e282789466c03b3d61d6e87b98fde61513e7f81afe10b36aea42da121a47",
+          "all_sha256": "6997e282789466c03b3d61d6e87b98fde61513e7f81afe10b36aea42da121a47",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/ruler_left_04/candidate_04.png",
+          "source_sha256": "a9ab1a50f699a0a0ab23dd9a1fa8b0946c7f56d963ac49f436111279059cb2bd",
+          "all_sha256": "a9ab1a50f699a0a0ab23dd9a1fa8b0946c7f56d963ac49f436111279059cb2bd",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/ruler_left_04/candidate_05.png",
+          "source_sha256": "7832056409ae78883a73c30fa2d8fd007345dfc4052585443103104ab6cdb543",
+          "all_sha256": "7832056409ae78883a73c30fa2d8fd007345dfc4052585443103104ab6cdb543",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "01_可信前缀掩膜/left_camera/ruler_left_05.png",
+          "source_sha256": "6e476c29ebb4d19fbc8e0e7757ae04f49ed8fa411e7de16af37531ac673d6688",
+          "all_sha256": "6e476c29ebb4d19fbc8e0e7757ae04f49ed8fa411e7de16af37531ac673d6688",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "02_原图叠加/left_camera/ruler_left_05.png",
+          "source_sha256": "18c84b21a35938b7f0fb0028f94d5a58bbf56e15b86f843bc5d550068a9e8dce",
+          "all_sha256": "18c84b21a35938b7f0fb0028f94d5a58bbf56e15b86f843bc5d550068a9e8dce",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "03_待确认候选并集/left_camera/ruler_left_05.png",
+          "source_sha256": "7a87b3bdc8b4794dd844f2fdf767573fa179e18faacf04442b1d8787cad1fcf1",
+          "all_sha256": "7a87b3bdc8b4794dd844f2fdf767573fa179e18faacf04442b1d8787cad1fcf1",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "04_最佳外观候选掩膜/left_camera/ruler_left_05.png",
+          "source_sha256": "8e08b72708096c021949f4c332f9f4550b29ff701c6474d79c3b7352fbc839cb",
+          "all_sha256": "8e08b72708096c021949f4c332f9f4550b29ff701c6474d79c3b7352fbc839cb",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/ruler_left_05/candidate_00.png",
+          "source_sha256": "8e08b72708096c021949f4c332f9f4550b29ff701c6474d79c3b7352fbc839cb",
+          "all_sha256": "8e08b72708096c021949f4c332f9f4550b29ff701c6474d79c3b7352fbc839cb",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/ruler_left_05/candidate_01.png",
+          "source_sha256": "1198a51adec93ee8c62a1c0dcfd23c9d5b93ae3548fa1306ecc758451529a1dc",
+          "all_sha256": "1198a51adec93ee8c62a1c0dcfd23c9d5b93ae3548fa1306ecc758451529a1dc",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/ruler_left_05/candidate_02.png",
+          "source_sha256": "08425380806754755f45e6436148a446cf8073da3f748ba91b6fe6cf728b4f49",
+          "all_sha256": "08425380806754755f45e6436148a446cf8073da3f748ba91b6fe6cf728b4f49",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/ruler_left_05/candidate_03.png",
+          "source_sha256": "cf697f685dca00892c7ef73bb89b74700e70df3f81b6d95e12c9f2fc9d6d40b3",
+          "all_sha256": "cf697f685dca00892c7ef73bb89b74700e70df3f81b6d95e12c9f2fc9d6d40b3",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/ruler_left_05/candidate_04.png",
+          "source_sha256": "aaee68e14a08392983caa3d45fd962116c59c38c1f33ee5abf01235a85271fd5",
+          "all_sha256": "aaee68e14a08392983caa3d45fd962116c59c38c1f33ee5abf01235a85271fd5",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/left_camera/ruler_left_05/candidate_05.png",
+          "source_sha256": "d23db30f9fd6b9cbf6a9dfdf2bbd5c7aeaf2b8e4e9874094a7ef984471c4d238",
+          "all_sha256": "d23db30f9fd6b9cbf6a9dfdf2bbd5c7aeaf2b8e4e9874094a7ef984471c4d238",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "01_可信前缀掩膜/right_camera/ruler_right_01.png",
+          "source_sha256": "37fa4de4f82dae58b23851434921f789d0644991772039f37a18b97b3a8d9235",
+          "all_sha256": "37fa4de4f82dae58b23851434921f789d0644991772039f37a18b97b3a8d9235",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "02_原图叠加/right_camera/ruler_right_01.png",
+          "source_sha256": "2e94664d63f639b82e72c9944f60d007b056c8e2537d47ee2f83013e65b9c589",
+          "all_sha256": "2e94664d63f639b82e72c9944f60d007b056c8e2537d47ee2f83013e65b9c589",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "03_待确认候选并集/right_camera/ruler_right_01.png",
+          "source_sha256": "b77863d6a63b7cca06954d072b7a4dea51de09923a6e194dfd11635317d5cc2d",
+          "all_sha256": "b77863d6a63b7cca06954d072b7a4dea51de09923a6e194dfd11635317d5cc2d",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "04_最佳外观候选掩膜/right_camera/ruler_right_01.png",
+          "source_sha256": "36a1f1e559d6b0912af7b3086cd4cf6498eae7bee957d67bcdfcc560caf4d5a6",
+          "all_sha256": "36a1f1e559d6b0912af7b3086cd4cf6498eae7bee957d67bcdfcc560caf4d5a6",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/ruler_right_01/candidate_00.png",
+          "source_sha256": "36a1f1e559d6b0912af7b3086cd4cf6498eae7bee957d67bcdfcc560caf4d5a6",
+          "all_sha256": "36a1f1e559d6b0912af7b3086cd4cf6498eae7bee957d67bcdfcc560caf4d5a6",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/ruler_right_01/candidate_01.png",
+          "source_sha256": "524b639b2c6c165044a96fee6df6f66239638faed016a460a2f9f7b11b3dcb76",
+          "all_sha256": "524b639b2c6c165044a96fee6df6f66239638faed016a460a2f9f7b11b3dcb76",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/ruler_right_01/candidate_02.png",
+          "source_sha256": "7298fcc6d28062b3e9b61d8f797ed142b37fb4172440f1d7770366615fcfd86f",
+          "all_sha256": "7298fcc6d28062b3e9b61d8f797ed142b37fb4172440f1d7770366615fcfd86f",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/ruler_right_01/candidate_03.png",
+          "source_sha256": "cb720c84abd3895134ed4aea9e177d0e112750fbf882d3bf2f091f4157fb9966",
+          "all_sha256": "cb720c84abd3895134ed4aea9e177d0e112750fbf882d3bf2f091f4157fb9966",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/ruler_right_01/candidate_04.png",
+          "source_sha256": "1a927fb35dbb03631c518bfb8a8bba85fbe1d464925f55d9436074363f879df2",
+          "all_sha256": "1a927fb35dbb03631c518bfb8a8bba85fbe1d464925f55d9436074363f879df2",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/ruler_right_01/candidate_05.png",
+          "source_sha256": "623496549e909cfb9e368f96ab60063682cacdc4ff8c1a3aa2d7df08e513b3d4",
+          "all_sha256": "623496549e909cfb9e368f96ab60063682cacdc4ff8c1a3aa2d7df08e513b3d4",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "01_可信前缀掩膜/right_camera/ruler_right_05.png",
+          "source_sha256": "b7c3dfd8546e282903312507e9621562bbe826be1ef4907ad3450197ea26fb44",
+          "all_sha256": "b7c3dfd8546e282903312507e9621562bbe826be1ef4907ad3450197ea26fb44",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "02_原图叠加/right_camera/ruler_right_05.png",
+          "source_sha256": "f4eb27d656fd5a8688e5a5e0697392e56fe2a5ced79836a0c68f5d3d3ab2894a",
+          "all_sha256": "f4eb27d656fd5a8688e5a5e0697392e56fe2a5ced79836a0c68f5d3d3ab2894a",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "03_待确认候选并集/right_camera/ruler_right_05.png",
+          "source_sha256": "2c3057c710cfe15fc0e63016abaddfb66c446747781e19f60b8587a06e1d3f08",
+          "all_sha256": "2c3057c710cfe15fc0e63016abaddfb66c446747781e19f60b8587a06e1d3f08",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "04_最佳外观候选掩膜/right_camera/ruler_right_05.png",
+          "source_sha256": "84fc41e7b52652b39a882ebea0a54fde2032d3b9e746cda73d02b9210ad833bf",
+          "all_sha256": "84fc41e7b52652b39a882ebea0a54fde2032d3b9e746cda73d02b9210ad833bf",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/ruler_right_05/candidate_00.png",
+          "source_sha256": "84fc41e7b52652b39a882ebea0a54fde2032d3b9e746cda73d02b9210ad833bf",
+          "all_sha256": "84fc41e7b52652b39a882ebea0a54fde2032d3b9e746cda73d02b9210ad833bf",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/ruler_right_05/candidate_01.png",
+          "source_sha256": "93be161ef7c7c07eba665fd36a932816428ae528a6bb0155077dbc40152518c2",
+          "all_sha256": "93be161ef7c7c07eba665fd36a932816428ae528a6bb0155077dbc40152518c2",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/ruler_right_05/candidate_02.png",
+          "source_sha256": "223c978a5159ded35b7734954ed4013b6d8133a64d7caa2f0619275f1649d07d",
+          "all_sha256": "223c978a5159ded35b7734954ed4013b6d8133a64d7caa2f0619275f1649d07d",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/ruler_right_05/candidate_03.png",
+          "source_sha256": "afb2a4504d0e2563fb632bbe9fb9ac72964aff302a54e5bb0b0173c4d05a881d",
+          "all_sha256": "afb2a4504d0e2563fb632bbe9fb9ac72964aff302a54e5bb0b0173c4d05a881d",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/ruler_right_05/candidate_04.png",
+          "source_sha256": "f464a10cf81b9036950d5c855cc509e79c1e34717630507b4e5efb427e9fab45",
+          "all_sha256": "f464a10cf81b9036950d5c855cc509e79c1e34717630507b4e5efb427e9fab45",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "05_多候选分支/right_camera/ruler_right_05/candidate_05.png",
+          "source_sha256": "e07fa900540f81325f9155aad7332acada79ff4637087efb9ba498813c3899bc",
+          "all_sha256": "e07fa900540f81325f9155aad7332acada79ff4637087efb9ba498813c3899bc",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "01_可信前缀掩膜/right_camera/dual_20260923_101517__pair0195__right.png",
+          "source_sha256": "8819d99a4e5dde9cb6ef76692187ec87c6c235728045ada1dcf60fbfa9a6dbc2",
+          "all_sha256": "8819d99a4e5dde9cb6ef76692187ec87c6c235728045ada1dcf60fbfa9a6dbc2",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "02_原图叠加/right_camera/dual_20260923_101517__pair0195__right.png",
+          "source_sha256": "a791729bdbfebe6e9d80278d2f94fe1e12447290fd4e3c90eeedec416da23d3f",
+          "all_sha256": "a791729bdbfebe6e9d80278d2f94fe1e12447290fd4e3c90eeedec416da23d3f",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "03_待确认候选并集/right_camera/dual_20260923_101517__pair0195__right.png",
+          "source_sha256": "d117b522f6d92a240be9985d6e76ea44936d9479caf8eb6e1ced040864670492",
+          "all_sha256": "d117b522f6d92a240be9985d6e76ea44936d9479caf8eb6e1ced040864670492",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "04_最佳外观候选掩膜/right_camera/dual_20260923_101517__pair0195__right.png",
+          "source_sha256": "9c0fb62f544f28be0756b356f0449b340207e08b5bd1623a63844f0a1ddf9b51",
+          "all_sha256": "9c0fb62f544f28be0756b356f0449b340207e08b5bd1623a63844f0a1ddf9b51",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/right_camera/dual_20260923_101517__pair0195__right/candidate_00.png",
+          "source_sha256": "9c0fb62f544f28be0756b356f0449b340207e08b5bd1623a63844f0a1ddf9b51",
+          "all_sha256": "9c0fb62f544f28be0756b356f0449b340207e08b5bd1623a63844f0a1ddf9b51",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/right_camera/dual_20260923_101517__pair0195__right/candidate_01.png",
+          "source_sha256": "9b635fdd784980d3c13ea4da3da1327be6d3841f39aba0f93de785e60f49f826",
+          "all_sha256": "9b635fdd784980d3c13ea4da3da1327be6d3841f39aba0f93de785e60f49f826",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/right_camera/dual_20260923_101517__pair0195__right/candidate_02.png",
+          "source_sha256": "1bca3594c68f2e46d0c61281594f4fee995ae9a7176919e4c20e95d9b92c9502",
+          "all_sha256": "1bca3594c68f2e46d0c61281594f4fee995ae9a7176919e4c20e95d9b92c9502",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/right_camera/dual_20260923_101517__pair0195__right/candidate_03.png",
+          "source_sha256": "f8fde8d371002a773a8c6fdca3d27459a5d6999f8b783ced049b6054ead5091b",
+          "all_sha256": "f8fde8d371002a773a8c6fdca3d27459a5d6999f8b783ced049b6054ead5091b",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/right_camera/dual_20260923_101517__pair0195__right/candidate_04.png",
+          "source_sha256": "2384ccc13d250d7499b91680837096aad8cfa30d07b677565d7dd7389296ac58",
+          "all_sha256": "2384ccc13d250d7499b91680837096aad8cfa30d07b677565d7dd7389296ac58",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/right_camera/dual_20260923_101517__pair0195__right/candidate_05.png",
+          "source_sha256": "95306e25f72aebe1e28e54dc3ad1c8a8e0590cf09ea10917e1ccaea47bdeaaa7",
+          "all_sha256": "95306e25f72aebe1e28e54dc3ad1c8a8e0590cf09ea10917e1ccaea47bdeaaa7",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "01_可信前缀掩膜/left_camera/dual_20260923_101517__pair0315__left.png",
+          "source_sha256": "f5f1fee1ea5aa6d6c592d3b1bc45dc0f67dd6cceaf67a21060a823d1a5270924",
+          "all_sha256": "f5f1fee1ea5aa6d6c592d3b1bc45dc0f67dd6cceaf67a21060a823d1a5270924",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "02_原图叠加/left_camera/dual_20260923_101517__pair0315__left.png",
+          "source_sha256": "aec88773158139efb97eae7bcb259fbe675c5e8d01719738a49640122ba13f81",
+          "all_sha256": "aec88773158139efb97eae7bcb259fbe675c5e8d01719738a49640122ba13f81",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "03_待确认候选并集/left_camera/dual_20260923_101517__pair0315__left.png",
+          "source_sha256": "f5f1fee1ea5aa6d6c592d3b1bc45dc0f67dd6cceaf67a21060a823d1a5270924",
+          "all_sha256": "f5f1fee1ea5aa6d6c592d3b1bc45dc0f67dd6cceaf67a21060a823d1a5270924",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "04_最佳外观候选掩膜/left_camera/dual_20260923_101517__pair0315__left.png",
+          "source_sha256": "f5f1fee1ea5aa6d6c592d3b1bc45dc0f67dd6cceaf67a21060a823d1a5270924",
+          "all_sha256": "f5f1fee1ea5aa6d6c592d3b1bc45dc0f67dd6cceaf67a21060a823d1a5270924",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "01_可信前缀掩膜/right_camera/dual_20260923_101643__pair0405__right.png",
+          "source_sha256": "2a333e5365ccdac81a1e628fbbd1a470b95b8aa8ede42d3fe37966e70090c63f",
+          "all_sha256": "2a333e5365ccdac81a1e628fbbd1a470b95b8aa8ede42d3fe37966e70090c63f",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "02_原图叠加/right_camera/dual_20260923_101643__pair0405__right.png",
+          "source_sha256": "1d3f0749b7483e7247bb4f182e9aefa536bd521697f58d2d883f17750c6d0769",
+          "all_sha256": "1d3f0749b7483e7247bb4f182e9aefa536bd521697f58d2d883f17750c6d0769",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "03_待确认候选并集/right_camera/dual_20260923_101643__pair0405__right.png",
+          "source_sha256": "9f6c0ee6565265751bfaa2636f662213a9b2ef7cf5368e7a4a2633d11fc1c845",
+          "all_sha256": "9f6c0ee6565265751bfaa2636f662213a9b2ef7cf5368e7a4a2633d11fc1c845",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "04_最佳外观候选掩膜/right_camera/dual_20260923_101643__pair0405__right.png",
+          "source_sha256": "1c15be8c4625f9a32b098a29ad747b2d5311901f8f824f19c51b5f7f30db76a9",
+          "all_sha256": "1c15be8c4625f9a32b098a29ad747b2d5311901f8f824f19c51b5f7f30db76a9",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/right_camera/dual_20260923_101643__pair0405__right/candidate_00.png",
+          "source_sha256": "1c15be8c4625f9a32b098a29ad747b2d5311901f8f824f19c51b5f7f30db76a9",
+          "all_sha256": "1c15be8c4625f9a32b098a29ad747b2d5311901f8f824f19c51b5f7f30db76a9",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/right_camera/dual_20260923_101643__pair0405__right/candidate_01.png",
+          "source_sha256": "17fe9333ca4bf1de5b00ced62ab6f20ea0c6d5391b62340581fdcf80d3c4cb55",
+          "all_sha256": "17fe9333ca4bf1de5b00ced62ab6f20ea0c6d5391b62340581fdcf80d3c4cb55",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/right_camera/dual_20260923_101643__pair0405__right/candidate_02.png",
+          "source_sha256": "d96f44db29ffd756b143c8212fb59b0ab1d9a2d2f768eafd0dec4491ad84a8f9",
+          "all_sha256": "d96f44db29ffd756b143c8212fb59b0ab1d9a2d2f768eafd0dec4491ad84a8f9",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/right_camera/dual_20260923_101643__pair0405__right/candidate_03.png",
+          "source_sha256": "a7e2c9d4ffa18678e8e02a4e523cb005bb6ecc6a425b9e0e94d97e1bec66ae08",
+          "all_sha256": "a7e2c9d4ffa18678e8e02a4e523cb005bb6ecc6a425b9e0e94d97e1bec66ae08",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/right_camera/dual_20260923_101643__pair0405__right/candidate_04.png",
+          "source_sha256": "e57378125e2fb93cea59e056209536c574338b35e10b88cabc270219cecfe0bc",
+          "all_sha256": "e57378125e2fb93cea59e056209536c574338b35e10b88cabc270219cecfe0bc",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/right_camera/dual_20260923_101643__pair0405__right/candidate_05.png",
+          "source_sha256": "291d8af9948de614307b6f08bc48dc8f01e6539b483f3083aeaaa6c82c90c2c7",
+          "all_sha256": "291d8af9948de614307b6f08bc48dc8f01e6539b483f3083aeaaa6c82c90c2c7",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "01_可信前缀掩膜/left_camera/dual_20260923_101643__pair0585__left.png",
+          "source_sha256": "f5f1fee1ea5aa6d6c592d3b1bc45dc0f67dd6cceaf67a21060a823d1a5270924",
+          "all_sha256": "f5f1fee1ea5aa6d6c592d3b1bc45dc0f67dd6cceaf67a21060a823d1a5270924",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "02_原图叠加/left_camera/dual_20260923_101643__pair0585__left.png",
+          "source_sha256": "256289a137387dff4e1273d4435609d7a515cd32eca5777df7896f143ece92ca",
+          "all_sha256": "256289a137387dff4e1273d4435609d7a515cd32eca5777df7896f143ece92ca",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "03_待确认候选并集/left_camera/dual_20260923_101643__pair0585__left.png",
+          "source_sha256": "f5f1fee1ea5aa6d6c592d3b1bc45dc0f67dd6cceaf67a21060a823d1a5270924",
+          "all_sha256": "f5f1fee1ea5aa6d6c592d3b1bc45dc0f67dd6cceaf67a21060a823d1a5270924",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "04_最佳外观候选掩膜/left_camera/dual_20260923_101643__pair0585__left.png",
+          "source_sha256": "f5f1fee1ea5aa6d6c592d3b1bc45dc0f67dd6cceaf67a21060a823d1a5270924",
+          "all_sha256": "f5f1fee1ea5aa6d6c592d3b1bc45dc0f67dd6cceaf67a21060a823d1a5270924",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "01_可信前缀掩膜/left_camera/dual_20260924_111500__pair0315__left.png",
+          "source_sha256": "7c32e69646f17b1d13d1b9b468ce54dfb707a7657192d677925ca3a437ec0113",
+          "all_sha256": "7c32e69646f17b1d13d1b9b468ce54dfb707a7657192d677925ca3a437ec0113",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "02_原图叠加/left_camera/dual_20260924_111500__pair0315__left.png",
+          "source_sha256": "1353fe6f4326a4d20905729682ceadc99b3e3cd826034a9508264bf24ccf2454",
+          "all_sha256": "1353fe6f4326a4d20905729682ceadc99b3e3cd826034a9508264bf24ccf2454",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "03_待确认候选并集/left_camera/dual_20260924_111500__pair0315__left.png",
+          "source_sha256": "4119c11bfa0f3616d9f81e18fcbb9464fe428b90454e331822d5ca07b65881f4",
+          "all_sha256": "4119c11bfa0f3616d9f81e18fcbb9464fe428b90454e331822d5ca07b65881f4",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "04_最佳外观候选掩膜/left_camera/dual_20260924_111500__pair0315__left.png",
+          "source_sha256": "ad10e808147ed226262974f7a392082381d153e0397d021009ee208ed6f6ed7f",
+          "all_sha256": "ad10e808147ed226262974f7a392082381d153e0397d021009ee208ed6f6ed7f",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/left_camera/dual_20260924_111500__pair0315__left/candidate_00.png",
+          "source_sha256": "ad10e808147ed226262974f7a392082381d153e0397d021009ee208ed6f6ed7f",
+          "all_sha256": "ad10e808147ed226262974f7a392082381d153e0397d021009ee208ed6f6ed7f",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/left_camera/dual_20260924_111500__pair0315__left/candidate_01.png",
+          "source_sha256": "990adb846d4ec7fe75eb0315ae6b7d237816f5706e6c1dd056fae671bdae1901",
+          "all_sha256": "990adb846d4ec7fe75eb0315ae6b7d237816f5706e6c1dd056fae671bdae1901",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/left_camera/dual_20260924_111500__pair0315__left/candidate_02.png",
+          "source_sha256": "9660289705632d351a6de4104db6a35b9ec801b6f6c3ff780dd8aaeb46d7e492",
+          "all_sha256": "9660289705632d351a6de4104db6a35b9ec801b6f6c3ff780dd8aaeb46d7e492",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/left_camera/dual_20260924_111500__pair0315__left/candidate_03.png",
+          "source_sha256": "1860d1e132336f88f6d3248e14a5a2706a35ce0e9b0796e28e58f752f04dc337",
+          "all_sha256": "1860d1e132336f88f6d3248e14a5a2706a35ce0e9b0796e28e58f752f04dc337",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/left_camera/dual_20260924_111500__pair0315__left/candidate_04.png",
+          "source_sha256": "b24f8a68b3469a5956dac470e07c14f63156d8779e9c483297ac98adc736f625",
+          "all_sha256": "b24f8a68b3469a5956dac470e07c14f63156d8779e9c483297ac98adc736f625",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "01_可信前缀掩膜/left_camera/L_run_20260923_01__f000996__left.png",
+          "source_sha256": "ab2c1340a88898e84061d02f7c0dea0181791fa502b877fdfe034642426e2ceb",
+          "all_sha256": "ab2c1340a88898e84061d02f7c0dea0181791fa502b877fdfe034642426e2ceb",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "02_原图叠加/left_camera/L_run_20260923_01__f000996__left.png",
+          "source_sha256": "11f6c6c662b4ab2273152cbf5b6ae84b474f46228038905958fa31b3071710e9",
+          "all_sha256": "11f6c6c662b4ab2273152cbf5b6ae84b474f46228038905958fa31b3071710e9",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "03_待确认候选并集/left_camera/L_run_20260923_01__f000996__left.png",
+          "source_sha256": "132a5b74c3c9611ab130f7538e26b84314ec675442f6eb83abaad6df797ec0e8",
+          "all_sha256": "132a5b74c3c9611ab130f7538e26b84314ec675442f6eb83abaad6df797ec0e8",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "04_最佳外观候选掩膜/left_camera/L_run_20260923_01__f000996__left.png",
+          "source_sha256": "7b3e3a534b53834bb6963df5865b241163160d70d19cc05810b5ed9414929e8a",
+          "all_sha256": "7b3e3a534b53834bb6963df5865b241163160d70d19cc05810b5ed9414929e8a",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/left_camera/L_run_20260923_01__f000996__left/candidate_00.png",
+          "source_sha256": "7b3e3a534b53834bb6963df5865b241163160d70d19cc05810b5ed9414929e8a",
+          "all_sha256": "7b3e3a534b53834bb6963df5865b241163160d70d19cc05810b5ed9414929e8a",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/left_camera/L_run_20260923_01__f000996__left/candidate_01.png",
+          "source_sha256": "2363b9c5f952b65a7c3dff43326036b7a49063a5a944e78454288d9bf0386fb0",
+          "all_sha256": "2363b9c5f952b65a7c3dff43326036b7a49063a5a944e78454288d9bf0386fb0",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/left_camera/L_run_20260923_01__f000996__left/candidate_02.png",
+          "source_sha256": "6f4a36d5aa8d23937b7cbe6bb1c3e281092c7bac0e9160195b6a205be78c210b",
+          "all_sha256": "6f4a36d5aa8d23937b7cbe6bb1c3e281092c7bac0e9160195b6a205be78c210b",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/left_camera/L_run_20260923_01__f000996__left/candidate_03.png",
+          "source_sha256": "0e17d7f8ecb7bd7eb74f47ab0b31694aab0420a9b2624fb91c4bbfa7abf7d570",
+          "all_sha256": "0e17d7f8ecb7bd7eb74f47ab0b31694aab0420a9b2624fb91c4bbfa7abf7d570",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/left_camera/L_run_20260923_01__f000996__left/candidate_04.png",
+          "source_sha256": "c28f8e5d8d19e841fd09d1ec4890f68c9761f023c65a906cdb51d5781025968b",
+          "all_sha256": "c28f8e5d8d19e841fd09d1ec4890f68c9761f023c65a906cdb51d5781025968b",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "01_可信前缀掩膜/right_camera/R_run_20260923_01__f001163__right.png",
+          "source_sha256": "36fbaec43448f9c429fbfb78dda1f81d85ed3c07e4c27533d6ee5e0fbab10197",
+          "all_sha256": "36fbaec43448f9c429fbfb78dda1f81d85ed3c07e4c27533d6ee5e0fbab10197",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "02_原图叠加/right_camera/R_run_20260923_01__f001163__right.png",
+          "source_sha256": "bc334e7a79d712374f655c1fe5f8cc37a0de2d4bfc3f08a35ac4cd47a5df1e31",
+          "all_sha256": "bc334e7a79d712374f655c1fe5f8cc37a0de2d4bfc3f08a35ac4cd47a5df1e31",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "03_待确认候选并集/right_camera/R_run_20260923_01__f001163__right.png",
+          "source_sha256": "8aaad5f30774b6a2c8b40822e001ce30f30eea92d018a5a4e41ff1dad5ae1c54",
+          "all_sha256": "8aaad5f30774b6a2c8b40822e001ce30f30eea92d018a5a4e41ff1dad5ae1c54",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "04_最佳外观候选掩膜/right_camera/R_run_20260923_01__f001163__right.png",
+          "source_sha256": "27a0923818b3cd41224f4827c4d16d8e5426061cc694b36a88da8b08e3525abe",
+          "all_sha256": "27a0923818b3cd41224f4827c4d16d8e5426061cc694b36a88da8b08e3525abe",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/right_camera/R_run_20260923_01__f001163__right/candidate_00.png",
+          "source_sha256": "27a0923818b3cd41224f4827c4d16d8e5426061cc694b36a88da8b08e3525abe",
+          "all_sha256": "27a0923818b3cd41224f4827c4d16d8e5426061cc694b36a88da8b08e3525abe",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/right_camera/R_run_20260923_01__f001163__right/candidate_01.png",
+          "source_sha256": "65ca8efb2bd518b5c211480548e3d56e02cc8d59a162eea3fa8326cab953bcf1",
+          "all_sha256": "65ca8efb2bd518b5c211480548e3d56e02cc8d59a162eea3fa8326cab953bcf1",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/right_camera/R_run_20260923_01__f001163__right/candidate_02.png",
+          "source_sha256": "0fd539cf56eaee0a0322e0f9e39111a5c2b42e472b28d3e22d994890af91b112",
+          "all_sha256": "0fd539cf56eaee0a0322e0f9e39111a5c2b42e472b28d3e22d994890af91b112",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/right_camera/R_run_20260923_01__f001163__right/candidate_03.png",
+          "source_sha256": "18cd1378f2af8924e6ee2fe3e76f25ef29afa976a71f806d2b8c36ed7ef63d61",
+          "all_sha256": "18cd1378f2af8924e6ee2fe3e76f25ef29afa976a71f806d2b8c36ed7ef63d61",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/right_camera/R_run_20260923_01__f001163__right/candidate_04.png",
+          "source_sha256": "3db102f81c125d231c49c3a274fc4bf4f2caffdddeb8908b1ebe2a85635afe2c",
+          "all_sha256": "3db102f81c125d231c49c3a274fc4bf4f2caffdddeb8908b1ebe2a85635afe2c",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/right_camera/R_run_20260923_01__f001163__right/candidate_05.png",
+          "source_sha256": "f29c822c706d14b233d7cc64f414d17c295228423023018238ab1893bf6fff78",
+          "all_sha256": "f29c822c706d14b233d7cc64f414d17c295228423023018238ab1893bf6fff78",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "01_可信前缀掩膜/right_camera/R_run_stop_run_20260922_01__f002415__right.png",
+          "source_sha256": "6a63cf71d2121edd09ccf6390aac544f36ef4abf14001ef6fe32838d2b8ebbb8",
+          "all_sha256": "6a63cf71d2121edd09ccf6390aac544f36ef4abf14001ef6fe32838d2b8ebbb8",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "02_原图叠加/right_camera/R_run_stop_run_20260922_01__f002415__right.png",
+          "source_sha256": "5161e978cf50ce62f420e0e972caca52690e2a9d55fddd6826f618f374498b24",
+          "all_sha256": "5161e978cf50ce62f420e0e972caca52690e2a9d55fddd6826f618f374498b24",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "03_待确认候选并集/right_camera/R_run_stop_run_20260922_01__f002415__right.png",
+          "source_sha256": "5ac129ca285b397acb075bae261029937c7bd66e302c6b86de238b201b242bcb",
+          "all_sha256": "5ac129ca285b397acb075bae261029937c7bd66e302c6b86de238b201b242bcb",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "04_最佳外观候选掩膜/right_camera/R_run_stop_run_20260922_01__f002415__right.png",
+          "source_sha256": "a2959cfc04f1634a543f9c43cc934b290fbb18ae84368e65a75078a8a6c09ec1",
+          "all_sha256": "a2959cfc04f1634a543f9c43cc934b290fbb18ae84368e65a75078a8a6c09ec1",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/right_camera/R_run_stop_run_20260922_01__f002415__right/candidate_00.png",
+          "source_sha256": "a2959cfc04f1634a543f9c43cc934b290fbb18ae84368e65a75078a8a6c09ec1",
+          "all_sha256": "a2959cfc04f1634a543f9c43cc934b290fbb18ae84368e65a75078a8a6c09ec1",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/right_camera/R_run_stop_run_20260922_01__f002415__right/candidate_01.png",
+          "source_sha256": "497a97a142290323c9237cc3fded736689151e81bbcf3767114fb7bc863b9ed6",
+          "all_sha256": "497a97a142290323c9237cc3fded736689151e81bbcf3767114fb7bc863b9ed6",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/right_camera/R_run_stop_run_20260922_01__f002415__right/candidate_02.png",
+          "source_sha256": "0f23a0599c166189690ccb4158b6f9069864267f6c922e8d555351570ae9ea1b",
+          "all_sha256": "0f23a0599c166189690ccb4158b6f9069864267f6c922e8d555351570ae9ea1b",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/right_camera/R_run_stop_run_20260922_01__f002415__right/candidate_03.png",
+          "source_sha256": "af97b68f3d8495939c1c4d5e9c14bea7e192f13afc821c95524c765bfa4111ef",
+          "all_sha256": "af97b68f3d8495939c1c4d5e9c14bea7e192f13afc821c95524c765bfa4111ef",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/right_camera/R_run_stop_run_20260922_01__f002415__right/candidate_04.png",
+          "source_sha256": "789b2d6897fcc1f3abedd9492acb532581e59b6240213af2f3829f280ae42daa",
+          "all_sha256": "789b2d6897fcc1f3abedd9492acb532581e59b6240213af2f3829f280ae42daa",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "05_多候选分支/right_camera/R_run_stop_run_20260922_01__f002415__right/candidate_05.png",
+          "source_sha256": "92affcb9411a386f105115cc0eb5666d82acfa96cf0d4917f665129b2607dfc3",
+          "all_sha256": "92affcb9411a386f105115cc0eb5666d82acfa96cf0d4917f665129b2607dfc3",
+          "bytes_equal": true,
+          "errors": []
+        }
+      ],
+      "audit_source_sha256": "acc697730a2a29daee87537fbb1caefecf7e9504cc781f50976d82b34b288892"
+    },
+    "runtime_source_count": 12,
+    "baseline_hash_checks": 62,
+    "input_dependency_hash_checks": 3600,
+    "formal_prediction_files": 3547,
+    "whole_pool_candidates_checked": 2111,
+    "late_F3_pointwise_scope": "displayed1547 branches,62505 eligible points; compressed undisplayed candidates do not support independent full late-F3 recomputation",
+    "audit_initial_exit1": "footer mkdir conflicted with concurrent audit snapshot; all prior files and failure receipt preserved",
+    "audit_final_exit_code": 0,
+    "audit_repair_changed_predictions": false
+  },
+  "visual_findings": {
+    "observed_improvement": [
+      "A5-empty right dual101643 pair0375 and preset pair0405 recovered the visible external rope",
+      "late/straight alternatives retained in several right-camera cases",
+      "unknown long gaps and competing tails separated from primary trusted mask",
+      "f15 pilot003 local-prefix repair restored44 search points versus6 in pilot002"
+    ],
+    "known_failures": [
+      "f15 still lacks a candidate following the full visible straight rope through the bright transition; selected long candidate still turns early",
+      "similar old-coil appearance can score above the active-rope continuation",
+      "short supported axis reference can outrank a longer hypothesis because tail windows cover different image areas",
+      "trusted output can stop too early even where a human sees the rope",
+      "new nonempty outputs are not automatically correct detections",
+      "frozen supplementary review: right dual101517 pair0075 recovered_01 follows a hand-held metal tool; two entry interpretations produce empty primary trusted mask but the wrong branch remains saved"
+    ],
+    "identity_ground_truth_available": false,
+    "whole_rope_accuracy_goal_achieved": false,
+    "overall_accuracy_improvement_demonstrated": false,
+    "image_ranking_net_gain_over_independent_geometry_pipeline_demonstrated": false,
+    "rejection_counted_as_correct": false,
+    "same_material_or_physical_contact_confirmed": false,
+    "t0_t1_t2_verified": false,
+    "next_focus": "Candidate coverage at the bright-to-dark bend and comparable local evidence; no claim that more paths or shorter masks solve identity."
+  },
+  "output_folders": {
+    "01_可信前缀掩膜": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\all_001\\01_可信前缀掩膜",
+    "02_原图叠加": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\all_001\\02_原图叠加",
+    "03_待确认候选并集": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\all_001\\03_待确认候选并集",
+    "04_最佳外观候选掩膜": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\all_001\\04_最佳外观候选掩膜",
+    "05_多候选分支": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\all_001\\05_多候选分支",
+    "记录": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\all_001\\记录"
+  },
+  "evidence_sha256": {
+    "protocol.json": "fa770e5d7d73deddf18c50dcc6a222f65c4203721213f3814ecdab21c7e8fe87",
+    "freeze_all.json": "9e4fc836682a17571c9bbbb698173eae01f299adce32c189b780960bef8706b7",
+    "A6算法说明.txt": "c3152131d55ef31681dc4f125f4607bdcaac44c3d4c6bd30c2a4586a0f50a4a9",
+    "all_001/run_start.json": "a24d3e395e70d0463e3bddb22313908acbb7f5f404e05d2698e469df3149d8f7",
+    "all_001/summary.json": "1cbe3b6af7b5bdf52d2424dd4a4f1af5ab48919c2be736071f6d643696fef8ed",
+    "all_001/output_manifest.json": "0635f30a098584bb6ac9497f97a3f076629a7abb280341f91fa69a21f7d73a40",
+    "all_001/independent_structure_auditrepaired_001.json": "7ff58db9209d996b0f85d2549eb0419319653810ba98e864e63d4ff7e2cffbba",
+    "all_001/independent_output_manifestrepaired_001.json": "d9a7f50decbc5ab21d1f1238bf785c6278a8f6211c5cbdc624c65a060fd6e613",
+    "all_001/independent_prefix_logic_audit.json": "08413d8198199d5a72d24870ac4c8862d57b7fcfac47c98c22905abcaf12f24d",
+    "all_001/independent_repeatability_audit.json": "f59c97f2c383d99251c8680083cbcb420a3f136082694a617a31549f6290f006",
+    "all_001/audit_failed_command_receipt_001.json": "1dfd9155ad4b9da72049372c97e832eb27f84c4486712f33e02eb2a2ab293a2d",
+    "all_001/audit_command_receiptrepaired_001.json": "84ce5558f9f8e2b12a4253c6fb9c14e9e76adcf7595feb9ab7c5a011256df3b9",
+    "all_001/audit_repair_reconciliation.json": "4bfc4e7bb7f04a78ce5ae3662ac467e93b5d461ff77bfdfdaa421d0afcc169e7",
+    "all_001/A5_output_transition_counts.json": "2873aad77206f2bdec5d7b209bfdd3079243f19747d03ede1aebfc601abae76e",
+    "pilot_002/independent_visual_review.json": "0cc23090967e77c8bebacd74e02229a3f8a3504c0343321094deaec2a0e21d50",
+    "pilot_002/independent_template_beam_visual_review.json": "8403c687b7ab4fe57c217b7ef1e1afa64d1694dc3f63c768e634e8e4e4546d40",
+    "pilot_003/independent_fixed_two_visual_review.json": "fab56999619c1c2c5f6350f20528ca30aebcc8de813e32c3213086be06a23fa5",
+    "extra_001/independent_visual_review.json": "f0a42d601ed8d44b304526afd7920e4d06f4c374b4e25c6689dce8a412baf734",
+    "all_001/recovered_entry_visual_review.json": "ca6b237d18cd73574163dd87d7e466efa2a3c9cd5dccf0ab5d34a4bca2b2b0e7",
+    "root_visual_review.json": "43a90c7ac1c71bc927e3ee60439f9ed3ab2dc472967275ac547575b0144ac976"
+  }
+}

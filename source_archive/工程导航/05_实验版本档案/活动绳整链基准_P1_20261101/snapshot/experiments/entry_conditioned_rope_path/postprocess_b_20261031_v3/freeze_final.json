@@ -1,0 +1,94 @@
+{
+  "version": "IR-H3.0.0",
+  "utc": "2026-10-30T19:04:16.892758+00:00",
+  "sources": {
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\run_h3.py": "924d1dcd08244f335ab38021ef0cfac25a577fa631dc3e3c9df2074b1b59f43c",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\common.py": "3c18b57a25b976fa85cf4d457885b6a7d6015f41a5992c7f6a8f776f56b78a5d",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\connect_paths.py": "befaa9f6af494bf9619346764070c927134a26f3de09492a37f7313e18d777e2",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\straight_free.py": "181a387ae0d63ab3c6ac174b4ff016d74034f5ff2633d8f65d141144364c01a3"
+  },
+  "reused_sources": {
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\surface_tracks.py": "879de46675662ff759cb0609c3d881668135ae55d9180f8a82fd305bd7b8d58d",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\free_candidates.py": "75e8d840e26ae011a2efa567687d01cc571d7fa3519e0bba3ab0284f6c661c05",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\connect_paths.py": "a29653bfe8d214e634732269fc3af040b98b86039e6973d7d5169a6880f47b99",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\priors.py": "f406b8edcd6082a8d9946b9721c0653c18df3064c26b5373e5120d8ebd3a51fa"
+  },
+  "protocol_sha256": "d5af78925096b06e7c3c8f261b31a4f56d49d491f1fa1140dd0d5fa24f87205c",
+  "parameters": {
+    "connection": {
+      "version": "IR-H3.0.0",
+      "sample_step_half_px": 4.0,
+      "backward_anchor_widths": [
+        0.0,
+        2.0,
+        4.0,
+        8.0,
+        12.0,
+        16.0
+      ],
+      "maximum_anchor_back_half_px": 240.0,
+      "maximum_bridge_half_px": 240.0,
+      "maximum_bridge_widths": 16.0,
+      "landing_advances_half_px": [
+        12.0,
+        35.0,
+        70.0,
+        120.0,
+        190.0
+      ],
+      "maximum_proposals_per_start": 30,
+      "minimum_tail_half_px": 50.0,
+      "minimum_tail_widths": 4.0,
+      "direction_lookahead_half_px": 120.0,
+      "direction_chord_half_px": 24.0,
+      "direction_amplitude_scale_radians": 0.65,
+      "direction_total_variation_scale_radians": 1.5,
+      "join_jump_scale_radians": 0.35,
+      "image_weight": 0.5,
+      "direction_weight": 0.4,
+      "lookahead_coverage_weight": 0.1,
+      "unsupported_bridge_penalty": 0.12,
+      "abandon_straight_penalty": 0.25,
+      "width_log_change_penalty": 0.06,
+      "weak_lane_penalty": 0.05,
+      "minimum_bridge_image_quality": 0.1,
+      "minimum_lane_image_quality": 0.1,
+      "maximum_abandoned_supported_straight_fraction": 0.1,
+      "maximum_turn_degrees": 100.0,
+      "maximum_curvature_per_width": 1.2,
+      "retained_distinct_candidates": 3,
+      "ambiguity_margin": 0.045,
+      "surface_tail_exact_source_points": true,
+      "off_track_H1_eligible": false
+    },
+    "straightening": {
+      "coordinate_scale": 0.5,
+      "crop_origin_original_xy": [
+        0.0,
+        1050.0
+      ],
+      "minimum_a7_raw_points": 6,
+      "minimum_a7_raw_span_original_px": 80.0,
+      "fallback_minimum_points": 8,
+      "fallback_minimum_span_original_px": 80.0,
+      "fallback_robust_iterations": 4,
+      "fallback_maximum_angle_change_deg": 3.0,
+      "fallback_residual_width_fraction": 0.25,
+      "fallback_residual_floor_half_px": 1.0,
+      "fallback_mad_multiplier": 2.5,
+      "continuation_count": 3,
+      "continuation_back_widths": [
+        0.0,
+        1.5,
+        3.0
+      ],
+      "original_ignore_and_gaps_can_never_be_promoted": true,
+      "true_zero_gray_is_valid": true,
+      "do_not_extend_free_endpoint": true
+    }
+  },
+  "pilot": "pilot_002",
+  "budget": "one full292-image/301-condition replay, no training or new network inference",
+  "failure_preserved": "pilot_001: A7 endpoint truncation caused premature lane joining; fixed by retaining H2 free extent with A7 axis and support recheck",
+  "identity_verified": false
+}

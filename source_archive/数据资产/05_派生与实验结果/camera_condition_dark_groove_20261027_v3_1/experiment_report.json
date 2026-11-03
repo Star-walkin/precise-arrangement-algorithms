@@ -1,0 +1,581 @@
+{
+  "version": "DR-D3.0.1",
+  "name": "暗沟约束 D3",
+  "date": "2026-10-27",
+  "created_utc": "2026-10-27T10:27:32.999350+00:00",
+  "status": "400 review outputs completed; not user acceptance",
+  "selected_pilot": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3\\pilot_003",
+  "final_run": "all_001",
+  "summary": {
+    "version": "DR-D3.0.1",
+    "variant": "image",
+    "planned": 400,
+    "completed": 400,
+    "failed": 0,
+    "source_unchanged": true,
+    "exit_code": 0,
+    "by_camera": {
+      "left": 200,
+      "right": 200
+    },
+    "total_observed_points": 1961902,
+    "total_curves": 31414,
+    "images_with_curves": 399,
+    "finished_utc": "2026-10-27T10:01:27.600179+00:00",
+    "accuracy": null,
+    "html_generated": false,
+    "equipment_access": false,
+    "reserved_access": false
+  },
+  "structural_patch": "Parent D3.0.0 full audit398/400 passed; two local-neighbor close-pair failures preserved. D3.0.1 repairs overlapping pair enumeration with unchanged fitting/image parameters.",
+  "patch_pixel_comparison": {
+    "parent": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3",
+    "patch_version": "DR-D3.0.1",
+    "planned": 400,
+    "unchanged_image_count": 189,
+    "changed_image_count": 211,
+    "changed_fixed_additional_images": [
+      "images/left_camera/dual_20260923_101517__pair0315__left.png",
+      "images/right_camera/dual_20260923_101517__pair0315__right.png",
+      "images/left_camera/dual_20260924_111500__pair0015__left.png",
+      "images/right_camera/dual_20260924_111500__pair0015__right.png",
+      "images/left_camera/L_run_stop_run_20260922_01__f000046__left.png",
+      "images/right_camera/R_run_stop_run_20260922_01__f000026__right.png",
+      "images/left_camera/ruler_left_04.png"
+    ],
+    "meaning": "Byte comparison is reproduction evidence, not visual accuracy."
+  },
+  "fixed_additional_visual_review": {
+    "review": "DR-D3.0.1 all_001 additional visual review",
+    "date": "2026-10-27",
+    "scope": "Only fixed additional12; no new sampling, no ground truth, no equipment or reserved data",
+    "comparison_source": "记录/qa_additional/index.json",
+    "parent_byte_comparison": "compare_parent.json: 5 selected outputs byte-identical to D3.0.0; inherited old QA explicitly",
+    "prior_visual_review": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3\\all_001\\qa_visual_additional.json",
+    "changed_selected_images": 7,
+    "changed_new_panels_actually_viewed": 12,
+    "changed_new_panels_not_viewed": [
+      "R_run_stop_run_20260922_01__f000026__right__part1.jpg",
+      "ruler_left_04__part0.jpg",
+      "ruler_left_04__part1.jpg"
+    ],
+    "unchanged_selected_images_inherited": 5,
+    "overall": "已查看的新面板未见显著新跨绳折线或锯齿，但局部微小变化和未查看组件不能由此排除；旧版已记录的覆盖退化仍作为限制。D3.0.1仅是结构间距修复，不据此宣称分割准确率或物理绳身份。",
+    "qa_repair_panels": "本子任务未独立打开qa_repair两面板；对应两例数值修复见repair_check.json与root审计。",
+    "cases": [
+      {
+        "output_file": "images/left_camera/L_run_stop_run_20260922_01__f000046__left.png",
+        "mode": "changed_output_new_visual_review",
+        "new_panels_viewed": [
+          "L_run_stop_run_20260922_01__f000046__left__part0.jpg",
+          "L_run_stop_run_20260922_01__f000046__left__part1.jpg",
+          "L_run_stop_run_20260922_01__f000046__left__part2.jpg"
+        ],
+        "new_panels_not_viewed": [],
+        "panels_in_index": [
+          {
+            "file": "L_run_stop_run_20260922_01__f000046__left__part0.jpg",
+            "bbox_xyxy": [
+              1996,
+              2174,
+              2668,
+              2997
+            ],
+            "sha256": "8de540f4c4d3477af9684ee57c579651cc2e03257d6ea09b859bce484693a190"
+          },
+          {
+            "file": "L_run_stop_run_20260922_01__f000046__left__part1.jpg",
+            "bbox_xyxy": [
+              418,
+              2298,
+              1180,
+              3000
+            ],
+            "sha256": "b7f6d593d3ccdb35652bc76d42a4fc44765759197c73e406378dba0b98bbe6be"
+          },
+          {
+            "file": "L_run_stop_run_20260922_01__f000046__left__part2.jpg",
+            "bbox_xyxy": [
+              664,
+              2131,
+              1180,
+              2347
+            ],
+            "sha256": "b7242d10ee85ebdcc701a0b1d10b01602ac0dcd3b8aceaa7dbf0d44af508c12e"
+          }
+        ],
+        "revision_observation": "已看3组件；低光块留白、清楚纹理上的长青线与旧D3视觉相近，未见明显新折线。",
+        "prior_D3_0_0_qualitative_verdict_for_context": "improvement",
+        "D3_0_1_revision_verdict": "no_obvious_new_large_visual_error_in_viewed_panels"
+      },
+      {
+        "output_file": "images/left_camera/dual_20260923_101517__pair0315__left.png",
+        "mode": "changed_output_new_visual_review",
+        "new_panels_viewed": [
+          "dual_20260923_101517__pair0315__left__part0.jpg",
+          "dual_20260923_101517__pair0315__left__part1.jpg"
+        ],
+        "new_panels_not_viewed": [],
+        "panels_in_index": [
+          {
+            "file": "dual_20260923_101517__pair0315__left__part0.jpg",
+            "bbox_xyxy": [
+              592,
+              2284,
+              1240,
+              3000
+            ],
+            "sha256": "82903d0baa92bfe00c98628d66f823e966ccd8ba2776f516f9ac9905a805393c"
+          },
+          {
+            "file": "dual_20260923_101517__pair0315__left__part1.jpg",
+            "bbox_xyxy": [
+              1912,
+              2313,
+              2444,
+              3000
+            ],
+            "sha256": "36d4285a2f0fcf847f037c2cab04390affbc41f71403c2499c3b2c9ce6fe9bd1"
+          }
+        ],
+        "revision_observation": "已看2组件；中央长青线仍平顺，上下缘黄/橙较多，旧D3覆盖限制仍在；未见明显新错接。",
+        "prior_D3_0_0_qualitative_verdict_for_context": "mixed",
+        "D3_0_1_revision_verdict": "no_obvious_new_large_visual_error_in_viewed_panels"
+      },
+      {
+        "output_file": "images/left_camera/dual_20260924_111143__pair0015__left.png",
+        "mode": "inherited_byte_identical_output",
+        "new_panels_viewed": [],
+        "new_panels_not_viewed": [],
+        "panels_in_index": [
+          {
+            "file": "dual_20260924_111143__pair0015__left__part0.jpg",
+            "bbox_xyxy": [
+              504,
+              2239,
+              1212,
+              3000
+            ],
+            "sha256": "aaffd0e8d8ee1c244187b7374b711d62a7ad6c2aa76adf4031b2c2cbf723d05d"
+          },
+          {
+            "file": "dual_20260924_111143__pair0015__left__part1.jpg",
+            "bbox_xyxy": [
+              1936,
+              2279,
+              2517,
+              3000
+            ],
+            "sha256": "cc31a9a346a402a4f4eab508d10a370da96f8fae6b7bc5131fdd0a193a4d1dad"
+          }
+        ],
+        "revision_observation": "沿用D3.0.0已完成的独立三栏目视结论；compare_parent.json报告该图预测PNG逐字节相同。",
+        "prior_D3_0_0_qualitative_verdict_for_context": "mixed",
+        "D3_0_1_revision_verdict": "inherited_byte_identical"
+      },
+      {
+        "output_file": "images/left_camera/dual_20260924_111500__pair0015__left.png",
+        "mode": "changed_output_new_visual_review",
+        "new_panels_viewed": [
+          "dual_20260924_111500__pair0015__left__part0.jpg",
+          "dual_20260924_111500__pair0015__left__part1.jpg"
+        ],
+        "new_panels_not_viewed": [],
+        "panels_in_index": [
+          {
+            "file": "dual_20260924_111500__pair0015__left__part0.jpg",
+            "bbox_xyxy": [
+              480,
+              2278,
+              1192,
+              3000
+            ],
+            "sha256": "7b5eaaf11bb68663828dfcc77197481926c92078ee64eef99e1b98f8e0344e20"
+          },
+          {
+            "file": "dual_20260924_111500__pair0015__left__part1.jpg",
+            "bbox_xyxy": [
+              1932,
+              2272,
+              2536,
+              3000
+            ],
+            "sha256": "797b89839bb020bbc4790ce86c6746f2a4d369a85fac35a48dba8ee55cc43194"
+          }
+        ],
+        "revision_observation": "已看2组件；中部青线平顺，外缘保留黄/橙和短紫段，视觉上未见明显新增大偏移。",
+        "prior_D3_0_0_qualitative_verdict_for_context": "mixed",
+        "D3_0_1_revision_verdict": "no_obvious_new_large_visual_error_in_viewed_panels"
+      },
+      {
+        "output_file": "images/left_camera/ruler_left_02.png",
+        "mode": "inherited_byte_identical_output",
+        "new_panels_viewed": [],
+        "new_panels_not_viewed": [],
+        "panels_in_index": [
+          {
+            "file": "ruler_left_02__part0.jpg",
+            "bbox_xyxy": [
+              409,
+              2427,
+              1256,
+              3000
+            ],
+            "sha256": "abd1c2d855f2cddf4de0e43a0dd257bf073f3b565618ff1297eb1abb08bea63c"
+          },
+          {
+            "file": "ruler_left_02__part1.jpg",
+            "bbox_xyxy": [
+              1860,
+              2438,
+              2340,
+              2998
+            ],
+            "sha256": "9e9e71894da3e95517a25cac58adf2bcd4832f8493f06727d2782777e9c637c8"
+          }
+        ],
+        "revision_observation": "沿用D3.0.0已完成的独立三栏目视结论；compare_parent.json报告该图预测PNG逐字节相同。",
+        "prior_D3_0_0_qualitative_verdict_for_context": "regression",
+        "D3_0_1_revision_verdict": "inherited_byte_identical"
+      },
+      {
+        "output_file": "images/left_camera/ruler_left_04.png",
+        "mode": "changed_output_new_visual_review",
+        "new_panels_viewed": [],
+        "new_panels_not_viewed": [
+          "ruler_left_04__part0.jpg",
+          "ruler_left_04__part1.jpg"
+        ],
+        "panels_in_index": [
+          {
+            "file": "ruler_left_04__part0.jpg",
+            "bbox_xyxy": [
+              701,
+              2459,
+              1208,
+              2998
+            ],
+            "sha256": "87b1659c192a4c56cbb6247b7d11b4e5915c7e3b183120a080acfa4449664753"
+          },
+          {
+            "file": "ruler_left_04__part1.jpg",
+            "bbox_xyxy": [
+              1860,
+              2457,
+              2318,
+              2998
+            ],
+            "sha256": "4b7bd909fa7c8f95df9bbda6fbcf6d0ab5aee699ed537bf57ee686e0dbfa3f5d"
+          }
+        ],
+        "revision_observation": "本轮两个新面板均未独立打开；旧D3.0.0视觉结论仅作历史参照，D3.0.1改动影响未知。",
+        "prior_D3_0_0_qualitative_verdict_for_context": "improvement",
+        "D3_0_1_revision_verdict": "unknown"
+      },
+      {
+        "output_file": "images/right_camera/R_run_stop_run_20260922_01__f000026__right.png",
+        "mode": "changed_output_new_visual_review",
+        "new_panels_viewed": [
+          "R_run_stop_run_20260922_01__f000026__right__part0.jpg"
+        ],
+        "new_panels_not_viewed": [
+          "R_run_stop_run_20260922_01__f000026__right__part1.jpg"
+        ],
+        "panels_in_index": [
+          {
+            "file": "R_run_stop_run_20260922_01__f000026__right__part0.jpg",
+            "bbox_xyxy": [
+              2312,
+              2086,
+              2891,
+              3000
+            ],
+            "sha256": "b58f992642c424146b44254b502b855ba318dddee43dd10b9a626a99ccfe403a"
+          },
+          {
+            "file": "R_run_stop_run_20260922_01__f000026__right__part1.jpg",
+            "bbox_xyxy": [
+              1147,
+              2099,
+              1668,
+              3000
+            ],
+            "sha256": "fe6a3702b2369dbe013c3a16602235221eabf98476e7bf3d1f57933ea109ecb6"
+          }
+        ],
+        "revision_observation": "只看part0；低照块未出现新的长距离硬接，part1尚未复核。",
+        "prior_D3_0_0_qualitative_verdict_for_context": "improvement",
+        "D3_0_1_revision_verdict": "no_obvious_new_large_visual_error_in_viewed_panels"
+      },
+      {
+        "output_file": "images/right_camera/dual_20260923_101517__pair0315__right.png",
+        "mode": "changed_output_new_visual_review",
+        "new_panels_viewed": [
+          "dual_20260923_101517__pair0315__right__part0.jpg",
+          "dual_20260923_101517__pair0315__right__part1.jpg"
+        ],
+        "new_panels_not_viewed": [],
+        "panels_in_index": [
+          {
+            "file": "dual_20260923_101517__pair0315__right__part0.jpg",
+            "bbox_xyxy": [
+              2376,
+              2089,
+              2973,
+              3000
+            ],
+            "sha256": "d8f68264f927df0e780cdd7b18fb12b6ca06a6bf83fba5d2b0b6096640938729"
+          },
+          {
+            "file": "dual_20260923_101517__pair0315__right__part1.jpg",
+            "bbox_xyxy": [
+              1181,
+              2114,
+              1716,
+              3000
+            ],
+            "sha256": "559cf4af33da54d9bc640605d442b3d5d8ff84c550e640ba63530dfc0713db6e"
+          }
+        ],
+        "revision_observation": "已看2组件；中央青线与暗沟大致同向，次组件普通青线覆盖不足仍在；未见肉眼明显新增交叉。",
+        "prior_D3_0_0_qualitative_verdict_for_context": "regression",
+        "D3_0_1_revision_verdict": "no_obvious_new_large_visual_error_in_viewed_panels"
+      },
+      {
+        "output_file": "images/right_camera/dual_20260924_111143__pair0015__right.png",
+        "mode": "inherited_byte_identical_output",
+        "new_panels_viewed": [],
+        "new_panels_not_viewed": [],
+        "panels_in_index": [
+          {
+            "file": "dual_20260924_111143__pair0015__right__part0.jpg",
+            "bbox_xyxy": [
+              2412,
+              2028,
+              3066,
+              3000
+            ],
+            "sha256": "b809ee62bba8696ff32afc9ad8f249505d6b5894d4d3fd4814213234f31a3a5c"
+          },
+          {
+            "file": "dual_20260924_111143__pair0015__right__part1.jpg",
+            "bbox_xyxy": [
+              1115,
+              2053,
+              1700,
+              3000
+            ],
+            "sha256": "a9f0d4d91991a750e8d1751678a19bc4f920707021a997640f24832367ce0d7c"
+          }
+        ],
+        "revision_observation": "沿用D3.0.0已完成的独立三栏目视结论；compare_parent.json报告该图预测PNG逐字节相同。",
+        "prior_D3_0_0_qualitative_verdict_for_context": "mixed",
+        "D3_0_1_revision_verdict": "inherited_byte_identical"
+      },
+      {
+        "output_file": "images/right_camera/dual_20260924_111500__pair0015__right.png",
+        "mode": "changed_output_new_visual_review",
+        "new_panels_viewed": [
+          "dual_20260924_111500__pair0015__right__part0.jpg",
+          "dual_20260924_111500__pair0015__right__part1.jpg"
+        ],
+        "new_panels_not_viewed": [],
+        "panels_in_index": [
+          {
+            "file": "dual_20260924_111500__pair0015__right__part0.jpg",
+            "bbox_xyxy": [
+              2408,
+              2010,
+              3074,
+              3000
+            ],
+            "sha256": "f2514bc6680980934d705d5b616fd89c52ad05ba96b666cc16b9d3b1f2e5fbaf"
+          },
+          {
+            "file": "dual_20260924_111500__pair0015__right__part1.jpg",
+            "bbox_xyxy": [
+              1110,
+              2034,
+              1712,
+              3000
+            ],
+            "sha256": "6fb19050894538c53aba4b31fd0556bb01fea0969987d5b35a9d36d7a5c191db"
+          }
+        ],
+        "revision_observation": "已看2组件；中部长线仍连续，外缘普通青线覆盖不足仍在；未见明显新锯齿。",
+        "prior_D3_0_0_qualitative_verdict_for_context": "mixed",
+        "D3_0_1_revision_verdict": "no_obvious_new_large_visual_error_in_viewed_panels"
+      },
+      {
+        "output_file": "images/right_camera/ruler_right_02.png",
+        "mode": "inherited_byte_identical_output",
+        "new_panels_viewed": [],
+        "new_panels_not_viewed": [],
+        "panels_in_index": [
+          {
+            "file": "ruler_right_02__part0.jpg",
+            "bbox_xyxy": [
+              2320,
+              2259,
+              2823,
+              2998
+            ],
+            "sha256": "e8222a2467b1b3b9afdc09c6c57824f6bf7adf479b8a0d6b74c316f5f3ca33e9"
+          },
+          {
+            "file": "ruler_right_02__part1.jpg",
+            "bbox_xyxy": [
+              1294,
+              2278,
+              1728,
+              2998
+            ],
+            "sha256": "3aaa0ce496e8bcbfa12f66b8e7a63d9dab18a224b6550f2617a804c8420e9c0e"
+          }
+        ],
+        "revision_observation": "沿用D3.0.0已完成的独立三栏目视结论；compare_parent.json报告该图预测PNG逐字节相同。",
+        "prior_D3_0_0_qualitative_verdict_for_context": "mixed",
+        "D3_0_1_revision_verdict": "inherited_byte_identical"
+      },
+      {
+        "output_file": "images/right_camera/ruler_right_04.png",
+        "mode": "inherited_byte_identical_output",
+        "new_panels_viewed": [],
+        "new_panels_not_viewed": [],
+        "panels_in_index": [
+          {
+            "file": "ruler_right_04__part0.jpg",
+            "bbox_xyxy": [
+              2376,
+              2366,
+              2903,
+              3000
+            ],
+            "sha256": "17207fd37a81c66932b5eb80e331cdcc5a081bdc822483352e7e272713f7e164"
+          },
+          {
+            "file": "ruler_right_04__part1.jpg",
+            "bbox_xyxy": [
+              1311,
+              2261,
+              1768,
+              2998
+            ],
+            "sha256": "950999bdbfdd0d88f9f7a12f993922a72f0641037db29c8267d222cdc36053ba"
+          },
+          {
+            "file": "ruler_right_04__part2.jpg",
+            "bbox_xyxy": [
+              2388,
+              2240,
+              2699,
+              2405
+            ],
+            "sha256": "bb8e5b771cdbce3f6ad31a247fb3f4fcdd4dcfa3f8efdeaf9c0275ce7de0488e"
+          }
+        ],
+        "revision_observation": "沿用D3.0.0已完成的独立三栏目视结论；compare_parent.json报告该图预测PNG逐字节相同。",
+        "prior_D3_0_0_qualitative_verdict_for_context": "regression",
+        "D3_0_1_revision_verdict": "inherited_byte_identical"
+      }
+    ]
+  },
+  "independent_structure_audit": {
+    "passed": 400,
+    "failed": 0,
+    "global_errors": []
+  },
+  "preservation": {
+    "D2_yellow_points": 1961902,
+    "old_observed_lines_and_masks_exact": true,
+    "D1_ROI_enhancement_and_C3_D2_sources_unchanged": true
+  },
+  "classification": {
+    "assigned": 1882287,
+    "unassigned": 79615,
+    "changed_old_C3_group_id": 52329,
+    "interpretation": "visual assignment only, no identity ground truth"
+  },
+  "curve_quality_counts": {
+    "candidate": 18669,
+    "ambiguous_fit_to_yellow": 10523,
+    "ambiguous_reverse_bend": 2181,
+    "ambiguous_global_order_shift": 41
+  },
+  "shape_guard_path_counts": {
+    "no_meaningful_reverse_bend": 24440,
+    "ambiguous_reverse_bend_refit_hurts_yellow": 2850,
+    "accepted_constrained_refit": 1604,
+    "ambiguous_reverse_bend_constraint_failed": 94
+  },
+  "image_soft_observation_count": 178691,
+  "no_curve_cases": [
+    {
+      "output_file": "images/right_camera/R_run_20260923_01__f001348__right.png",
+      "reason": "no_c3_anchor"
+    }
+  ],
+  "yellow_consistency_not_accuracy": {
+    "full_point_denominator": 1961902,
+    "within_quarter_pitch_count": 1710107,
+    "mean_capped_pitch_distance": 0.12206950556787072,
+    "note": "Existing yellow points are algorithm outputs, not truth labels. Missing predictions remain in denominator."
+  },
+  "root_cause": "Old narrow search and strong smoothing can flatten visibly curved grooves even when yellow points are reasonable. Fixed6 review did not confirm widespread point-group mixing.",
+  "algorithm": [
+    "Preserve original observations; multiscale raw bilateral-groove evidence with longer tangent integration",
+    "Shared quartic family plus per-boundary cubic deviation; robust all-point fitting and two-round unique reassignment",
+    "Small image soft corrections integrated over2.5pitch windows, not per-pixel greedy tracking",
+    "Selective reverse-bend refit with observation-fit budget; ambiguity when constraints conflict",
+    "Visible-ROI row ordering and spacing; short-gap inference only"
+  ],
+  "visual_conclusion": "Fixed developmental examples show smoother, more appropriately bent visible dark-groove curves than D2; pilot001 fine-strand zigzags rejected. Final post-freeze review recorded separately; weak block textures and local offsets remain.",
+  "ablation_conclusion": "Image soft evidence mainly makes small corrections. Shape improvement is principally due to the whole-curve model and constraints. Standalone image-guidance accuracy gain is not established.",
+  "synthetic_limit": "Deliberately swapped local labels still leave4of5 curves; not a universal wrong-group recovery algorithm.",
+  "ground_truth_accuracy": null,
+  "physical_identity_or_contact_verified": false,
+  "equipment_access": false,
+  "reserved_access": false,
+  "html_generated": false,
+  "image_directory": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\all_001\\图像结果",
+  "source_sha256": {
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_rope_boundaries_20261025_v3\\full_roi_observation.py": "64fdc0aca8e45019ebed32d50e3bf5a5089fee2d426a8b942a817125e2099555",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\all_002\\output_manifest.json": "7296b6bfd8252a1ffe802697ea99897cc412925782644a43ce218a04134105de",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\anchored_dark.py": "8f5ad03d5c94d4cd54e5dad67d58b6c630a6304ad2da09c8881a77a3c5667ffe",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\dark_curves.py": "60adceb0a8171c7230f350ed1e26e49620186fc375df6b25ff7326257e10e67e",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\dark_observation.py": "35b1cc7b11e0bed4ea02b2480108e933e89b7aab4caf41cf15cac87c88614648",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\data_io.py": "0acec46ca79b4c59a6aec357755e304b276aab21c903f2899874a12812c69c86",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\protocol.json": "69032c860bde02c9029ddf6ce304466d0b7542d7ab3b621c2d7f59000c87f5ea",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\run.py": "358411cd6a6614747f5964df781af2f7208d482ef073cae6b9b4b598a8cf7a19",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\data_io.py": "98ad3c98271d871cadaf026de5b7d7f6228c2a12d36e1052d5f386b7c9ef2cf6",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\groove_field.py": "887b2a52c14a727af7c582f7708439f3a5ce50297626e22519f16d3cbfe62ed6",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\ordered_paths.py": "605eb1d042f04b78926d76ab1c22ff87e910170fe82ca38357e6ccd27f92b133",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\protocol.json": "7ffe57543f6c0f87336cd707be1bebc9b44b9434303c53f29879cd2f544d25dd",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\run.py": "bea3ae1d0b34bd4cc2ac8c879bba3f7ca40e4c18421aca54346cab47ef6eb0c8",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\dark_c3.py": "03e9ab25815d6a287054be24570cf0fef24ce24fc874fe7722b5ca74fe083457",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\dark_roi.py": "023f0ca843716f1ab9cb102745afc31131957c4b68bc1b522e2766951ac59b5d",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\data_io.py": "e6a01b5fba70236471238e5e558f4a6f616709d5c33284ecb51f161996861f14",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\protocol.json": "d4b2f22a445f1c2d8cdffb881ea9db285cb86f1e59fb2e77f5f0b6abfab3abdb",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\conic_family.py": "392eb740cd7697bb4ddbc17359a193b2c9b9b761b1528573349370f7ac66eaa9",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\experiment_io.py": "59df951608cac1584bbb8b7b444ccc5799066afa6a885b4960ccbd583b4e3f85",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\protocol.json": "b71aee6dc0422075247f8eff192fe5ef019540af331d4c196ecdff3c22341af9"
+  },
+  "evidence_sha256": {
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\freeze_all.json": "0d396a22fa314856130c33804f31c3265efb98f426bb8009f88bbc90419a2557",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\all_001\\summary.json": "13777be5f2ec4e1a95dbf26d3621edc6ce76f2fbfbb203c2ab0ad0ddf89fbd11",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\all_001\\run_context.json": "e2e1ba90098f1647ecf2215a654495415bbb556f96b795ae0a0c4f7dd4812d71",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\all_001\\run_log.jsonl": "6d658f9e35630ceebd2cd6a671630d4220e84420d393a8d5798fdaf812b4953c",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\all_001\\output_manifest.json": "6a69205fcad90d750917ae66de24bc01c73bf6d47a027bcc44b77009fabd83d0",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\all_001\\independent_audit.json": "47749e851393ec720c36ffb252b3ce3fe5330306f9ea4eddef85f4a486f1276d",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3\\pilot_003\\qa_visual_final.json": "51899dd6212273dbee9fd742e666024480e2f850344cab160c902865cc4c5e38",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3\\control_geometry_001\\independent_audit.json": "1898c9058cd76f382cb57dff3f2ac9ee4fbfe0fe4c46860ca9e866e39a58e49f",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\all_001\\记录\\qa_additional\\index.json": "56154f70f29b7e3a26d26bf7929808f53cfba02a9916031c8ab9136637875130",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\all_001\\qa_visual_additional.json": "fb3b03b6680c865551fbc67c261408a64404c348f8a60b1c58911b1e4366d244",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3\\ablation_comparison.json": "e5b5316118559c2d708e54c81780a93276c9caa7f80826cd6646e8ec479afac7",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3\\synthetic_check_003.json": "f7d7579ab933308bed2d56a95fd3d1b464729cbf907bb7371ba446f7b77c6c6d",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\算法说明.txt": "399a5eb05e4b153e61566e60d6853ac1f7946c444431f71c040227449a7cf465",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\repair_check.json": "f2ba44fd575a401b9114a4a5c25823099fd21325821697d5974fe4f04fb93d86",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\parent_prediction_compare.json": "3b486546454f86becdec6412bb4e0fd496c4aa5ac3d4c823e36925cf4503cc4f",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3\\all_001\\independent_audit.json": "a8b59b6b083fabb781055f714c25d007be9112ce85e0cebc812db19fdad457f2"
+  }
+}

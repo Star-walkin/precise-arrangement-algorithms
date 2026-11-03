@@ -1,0 +1,93 @@
+{
+  "input_manifest_sha256": "712859a4a830c08d556729a98cad76d039c684c290d2c4c57efa2b7ad3b45e69",
+  "parent_manifest_sha256": {
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\output_manifest.json": "0e3611465577b3d95faf25956c272d13f32ff6c099b067a92858d23e57e3adbe",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\all_001\\integrity_audit.json": "b0fe024e9a0387f059394452c24dcb205d23ce9a0db0af490bfa02097e53da99",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_20261026_v7\\all_001\\output_manifest.json": "c665e950e24bca8219d57bf78de6b3da5b1d2ab1ab62077f6c1904f6f392b010",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\all_001\\output_manifest.json": "1a92fbb79e2da950d71449b7a92418f92938b48e28c6a55030d6dc8e670fc7aa",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v2\\all_001\\output_manifest.json": "0da8b630bc1c17b256d359d99230151457b6cb2dbde497761d20d9eab0abbed2"
+  },
+  "F3_sources_freeze_sha256": "2339694b20b07141e3348889d4485eb392d8e279a00d33da9e28ee034e8e956e",
+  "version": "IR-A6.0.0",
+  "name": "自模板多候选 A6",
+  "date": "2026-10-29",
+  "denominator": 400,
+  "camera_counts": {
+    "left": 200,
+    "right": 200
+  },
+  "pilot_inputs": [
+    "images/right_camera/dual_20260923_101517__pair0015__right.png",
+    "images/left_camera/dual_20260923_101643__pair0315__left.png",
+    "images/right_camera/dual_20260923_101643__pair0315__right.png",
+    "images/right_camera/dual_20260923_113305__pair0015__right.png",
+    "images/right_camera/dual_20260924_111143__pair0585__right.png",
+    "images/left_camera/dual_20260924_111500__pair0015__left.png",
+    "images/left_camera/L_run_20260923_01__f000015__left.png",
+    "images/right_camera/R_run_20260923_01__f000757__right.png",
+    "images/left_camera/L_run_stop_run_20260922_01__f000046__left.png",
+    "images/right_camera/R_run_stop_run_20260922_01__f002627__right.png",
+    "images/left_camera/L_static_20260922_01__f000100__left.png",
+    "images/left_camera/ruler_left_01.png",
+    "images/left_camera/ruler_left_04.png",
+    "images/left_camera/ruler_left_05.png",
+    "images/right_camera/ruler_right_01.png",
+    "images/right_camera/ruler_right_05.png",
+    "images/left_camera/ruler_left_03.png",
+    "images/left_camera/L_static_20260922_01__f000503__left.png",
+    "images/right_camera/dual_20260923_113305__pair0195__right.png",
+    "images/right_camera/dual_20260923_101517__pair0165__right.png",
+    "images/right_camera/dual_20260923_101643__pair0375__right.png"
+  ],
+  "extra_review_inputs": [
+    "images/left_camera/dual_20260923_101517__pair0315__left.png",
+    "images/left_camera/dual_20260923_101643__pair0585__left.png",
+    "images/left_camera/L_run_20260923_01__f000996__left.png",
+    "images/left_camera/dual_20260924_111500__pair0315__left.png",
+    "images/right_camera/dual_20260923_101643__pair0405__right.png",
+    "images/right_camera/R_run_20260923_01__f001163__right.png",
+    "images/right_camera/dual_20260923_101517__pair0195__right.png",
+    "images/right_camera/R_run_stop_run_20260922_01__f002415__right.png"
+  ],
+  "source_parent_sha256": {
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\whole_io.py": "7714f414425a031fe1491f46e0223f5a5330da42823c325f8f31ccb9b12eaeed",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\free_rope.py": "c57f77270a1c0308570a77ff70dee67fe7caa25b2dbb55bafd2e80aae9cf60fd",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\whole_path.py": "01c3bff3fef572c34a2db4a9239ad2c1beff2ceab0e304fcdc98320d5aba6416",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\boundary_occlusion.py": "9d3376ebe99ce6221f0e26ed76eb5e2191aee18be6d9287158201e9ff20f02a8",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\run_whole.py": "2c3beaed6183eb1fe2803b7edf2ee5b227a724858df3bfe9fc179b7f2bcb56d0",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\freeze_all_002.json": "96fbf6d9c065ec1fced265338b387889276abde7594ad9ab98828ad2aff93df4",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\protocol.json": "4d0e9dbe6575f2f31d102e664634b7d0194f94f4d70f38ca8fae1298d41c550d",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\protocol_addendum_002.json": "7b57635abe549d40ea2ee4fa935cf39ea10a0551337a053cb64fb5f7559d3bc3",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_photometric_20261029_v5\\whole_io.py": "1bb1cd4ba9e602eddf13e438dc9a53bcbd0835d06b4c114882b0d66fa35569c6",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_photometric_20261029_v5\\free_rope.py": "c57f77270a1c0308570a77ff70dee67fe7caa25b2dbb55bafd2e80aae9cf60fd",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_photometric_20261029_v5\\photometric_ribbon.py": "7a2570f806e548c945271fb714a3bd7836f323c453185cb9b21876aa0557a59b",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_photometric_20261029_v5\\attached_groove.py": "484f25bc30d94caa396724f4c4469f14ef67a86285368b76ec545554a7cca24f",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_photometric_20261029_v5\\lane_candidates.py": "6196ed40e356843d29671d578be17f77f486206565e383cfe37ad52fd92d4fac",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_photometric_20261029_v5\\photometric_trace.py": "0308f2eb00080b68bdae63db78e087e8a122e22fa3f994692ef78a1d7358fb6b",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_photometric_20261029_v5\\run_experiment.py": "534e31b9a6d4f8d6e0dd42b6b480b90b597a5529358004fae3406f41b7177426",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_photometric_20261029_v5\\protocol.json": "26a868e7f2966030ea93819f860d4b675f1e2072ef37b77eab42f51317ae479c",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v2\\free_refinement.py": "65ca049228d0dec2d941a4e08bddf4f9bb52935570cf9827dc7d9adbc1272c8c",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_photometric_20261029_v5\\freeze_all.json": "6509868975c883a4a4a6dd3e09b54851f1b69713e8e741825286609f65dd4f14"
+  },
+  "A5_output_root": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_photometric_20261029_v5\\all_001",
+  "A5_output_manifest_sha256": "38a9d162c663420e7cc8792dd50d7a5870eb20654af93cd24191c4ab6323ef89",
+  "budget": "At most 3 full fixed21 development pilots; primitive diagnosed recovery/template probes preserved; then freeze and preset8 review plus same400. No per-image parameters, no trained sorter.",
+  "fixed_evaluation": "A5 compared at same21 incl visible-entry failure375; report entry recovery, visible foreground coverage, wrong lane/background, and trustworthy-prefix versus uncertainty. No labeled accuracy/precision invented.",
+  "extra_selection": "Deterministic SHA256 of A6preset:output_file; two old UNKNOWN and two nonempty per camera, excluding21; open development, not blind test.",
+  "architecture": [
+    "remeasure saved automatic free entry, recover outside-surface entries from original when unavailable",
+    "learn measured external self appearance, preserve missing/clipped descriptors",
+    "image-first curved beam pool, no F3 pixels read during generation",
+    "late F3 check only after sustained image and bend evidence; original edges/width/body crossing also checked",
+    "common supported prefix as primary mask; multiple distinct tails separate and uncertainty colored"
+  ],
+  "constraints": {
+    "originals_unchanged": true,
+    "F3_C3_D4_A5_unchanged": true,
+    "equipment": false,
+    "reserved": false,
+    "training": false,
+    "HTML": false,
+    "same_material_identity_verified": false
+  }
+}

@@ -1,0 +1,8 @@
+smallcheck 1 0.017404336482286453 1.95
+smallcheck 10 0.012711193412542343 19.96
+smallcheck 20 0.009997342713177204 38.4
+smallcheck 30 0.01125654112547636 57.7
+smallcheck 40 0.008436378091573715 76.13
+smallcheck 50 0.009884783066809177 94.76
+smallcheck 60 0.0076958839781582355 113.09
+smallcheck_done {"status": "passed", "exit_code": 0, "steps": 60, "training_seconds": 113.1041816000361, "gate": {"loss_decreased": true, "high_center_not_cleared": true, "transition_and_attached_supervised": true, "negative_groups_present": true, "finite": true}, "stop_reason": "step_budget", "scope": "optimization chain only, no identity validation; formal arms reload B750"}

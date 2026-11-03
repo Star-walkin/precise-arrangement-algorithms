@@ -1,0 +1,226 @@
+{
+  "version": "IR-A4.0.1",
+  "name": "断界寻绳 A4",
+  "date": "2026-10-29",
+  "started_local_date": "2026-10-28",
+  "baseline": "F3 / RB-F3.0.0 user-confirmed qualitative400 baseline, previously archived; C3/D4/F3 unchanged",
+  "input_scope": "same explicit open400 development images, 200 left + 200 right; original4096x3000, no heldout/truth input",
+  "actual_run": {
+    "completed": 400,
+    "failed": 0,
+    "exit_code": 0,
+    "workers": 8,
+    "elapsed_seconds": 422.7702639102936,
+    "statuses": {
+      "UNKNOWN": 143,
+      "AMBIGUOUS_WHOLE_APPEARANCE_CANDIDATE": 35,
+      "PARTIAL_APPEARANCE_CANDIDATE": 134,
+      "WHOLE_APPEARANCE_CANDIDATE": 10,
+      "FREE_ONLY": 3,
+      "AMBIGUOUS_PARTIAL_APPEARANCE_CANDIDATE": 63,
+      "FREE_ONLY_DIRECTION_AMBIGUOUS": 10,
+      "FREE_ONLY_CURVE_LOW_SUPPORT": 1,
+      "FREE_WIDTH_AMBIGUOUS": 1
+    },
+    "nonempty": 256,
+    "empty": 144,
+    "whole_extent_appearance_candidates": 45,
+    "partial_candidates": 197,
+    "free_only": 14
+  },
+  "changes": [
+    "Significant-component search domain removes isolated SAM fragments from entry/exit state; original S unchanged.",
+    "Original-image boundary probes start at first stable search-surface entry, not only the end of straight extension.",
+    "Separate crossing/near-tangent/multiple probes; explicit raw domain availability; unknown image evidence earns no connection bonus.",
+    "All curved continuations remain review-marked even with local raw support; no same-material identity claim."
+  ],
+  "observed_pilot_effects": [
+    "ruler_right05 saved continuation36.61px to654.52px,12984new mask pixels; native original review supports restored visible span, dark identity remains ambiguous.",
+    "Second stage probes162 to463, raw evidence1continuous to7continuous+6interrupted; no independent interruption-then-continuity chain.",
+    "Second stage changes one of16 selected paths by17.99px at endpoint; no verified identity gain, two leading paths separated by only0.0017 score."
+  ],
+  "full_raw_evidence": {
+    "counts": {
+      "raw_probes": 7125,
+      "independent_visual_rows": 3845,
+      "raw_transition_chains": 0,
+      "restored_before_old_endpoint_filter": 2816,
+      "selected_raw_transition_chains": 0
+    },
+    "states": {
+      "unknown_original_evidence": 6943,
+      "raw_interruption_supported": 133,
+      "raw_continuous": 49
+    },
+    "unknown_reasons": {
+      "left_far:insufficient_samples": 2992,
+      "left_far:insufficient_wide_groove_support": 899,
+      "right_far:insufficient_samples": 2387,
+      "near_tangent_not_a_two_sided_crossing": 2019,
+      "center:intermediate_support_not_broken_or_continuous": 1590,
+      "center:insufficient_samples": 129,
+      "right_far:insufficient_wide_groove_support": 1221,
+      "right_far:outside_search_domain": 258,
+      "right_far:raw_contrast_or_saturation_unavailable": 341,
+      "center:outside_search_domain": 257,
+      "left_far:outside_search_domain": 435,
+      "center:raw_contrast_or_saturation_unavailable": 378,
+      "left_far:raw_contrast_or_saturation_unavailable": 422
+    }
+  },
+  "changed_whole_masks_vs_A3": 18,
+  "changes_vs_A3": [
+    {
+      "output_file": "images\\left_camera\\L_run_20260923_01__f001028__left.png",
+      "old_status": "PARTIAL_APPEARANCE_CANDIDATE",
+      "new_status": "PARTIAL_APPEARANCE_CANDIDATE",
+      "old_length": 36.05723520353297,
+      "new_length": 527.5245456538947
+    },
+    {
+      "output_file": "images\\left_camera\\ruler_left_03.png",
+      "old_status": "PARTIAL_APPEARANCE_CANDIDATE",
+      "new_status": "FREE_ONLY",
+      "old_length": 14.382378133085371,
+      "new_length": null
+    },
+    {
+      "output_file": "images\\right_camera\\dual_20260923_101517__pair0375__right.png",
+      "old_status": "AMBIGUOUS_WHOLE_APPEARANCE_CANDIDATE",
+      "new_status": "AMBIGUOUS_PARTIAL_APPEARANCE_CANDIDATE",
+      "old_length": 990.384377760883,
+      "new_length": 969.892396073628
+    },
+    {
+      "output_file": "images\\right_camera\\dual_20260923_113305__pair0015__right.png",
+      "old_status": "AMBIGUOUS_WHOLE_APPEARANCE_CANDIDATE",
+      "new_status": "AMBIGUOUS_WHOLE_APPEARANCE_CANDIDATE",
+      "old_length": 1138.2747530911604,
+      "new_length": 1150.897046851987
+    },
+    {
+      "output_file": "images\\right_camera\\dual_20260924_111143__pair0255__right.png",
+      "old_status": "AMBIGUOUS_WHOLE_APPEARANCE_CANDIDATE",
+      "new_status": "AMBIGUOUS_WHOLE_APPEARANCE_CANDIDATE",
+      "old_length": 828.2508366516951,
+      "new_length": 765.7460313235981
+    },
+    {
+      "output_file": "images\\left_camera\\L_run_20260923_01__f001091__left.png",
+      "old_status": "PARTIAL_APPEARANCE_CANDIDATE",
+      "new_status": "AMBIGUOUS_PARTIAL_APPEARANCE_CANDIDATE",
+      "old_length": 21.64690215846594,
+      "new_length": 447.3954777022694
+    },
+    {
+      "output_file": "images\\right_camera\\R_run_stop_run_20260922_01__f002149__right.png",
+      "old_status": "AMBIGUOUS_PARTIAL_APPEARANCE_CANDIDATE",
+      "new_status": "AMBIGUOUS_PARTIAL_APPEARANCE_CANDIDATE",
+      "old_length": 878.2011395301911,
+      "new_length": 841.1017601572761
+    },
+    {
+      "output_file": "images\\right_camera\\dual_20260923_101517__pair0165__right.png",
+      "old_status": "AMBIGUOUS_WHOLE_APPEARANCE_CANDIDATE",
+      "new_status": "AMBIGUOUS_PARTIAL_APPEARANCE_CANDIDATE",
+      "old_length": 1159.4458100530373,
+      "new_length": 1073.144103359738
+    },
+    {
+      "output_file": "images\\left_camera\\L_run_20260923_01__f001155__left.png",
+      "old_status": "PARTIAL_APPEARANCE_CANDIDATE",
+      "new_status": "FREE_ONLY",
+      "old_length": 202.37890474530042,
+      "new_length": null
+    },
+    {
+      "output_file": "images\\right_camera\\dual_20260923_113305__pair0195__right.png",
+      "old_status": "AMBIGUOUS_PARTIAL_APPEARANCE_CANDIDATE",
+      "new_status": "AMBIGUOUS_PARTIAL_APPEARANCE_CANDIDATE",
+      "old_length": 1054.355052473464,
+      "new_length": 1052.6759638839671
+    },
+    {
+      "output_file": "images\\left_camera\\L_run_20260923_01__f000933__left.png",
+      "old_status": "PARTIAL_APPEARANCE_CANDIDATE",
+      "new_status": "PARTIAL_APPEARANCE_CANDIDATE",
+      "old_length": 14.422363229966212,
+      "new_length": 721.1440419176773
+    },
+    {
+      "output_file": "images\\right_camera\\R_static_20260922_01__f000861__right.png",
+      "old_status": "AMBIGUOUS_PARTIAL_APPEARANCE_CANDIDATE",
+      "new_status": "AMBIGUOUS_PARTIAL_APPEARANCE_CANDIDATE",
+      "old_length": 770.8501897393477,
+      "new_length": 706.2386161392731
+    },
+    {
+      "output_file": "images\\left_camera\\dual_20260924_111500__pair0345__left.png",
+      "old_status": "AMBIGUOUS_WHOLE_APPEARANCE_CANDIDATE",
+      "new_status": "AMBIGUOUS_WHOLE_APPEARANCE_CANDIDATE",
+      "old_length": 985.5427611534994,
+      "new_length": 978.1517107049694
+    },
+    {
+      "output_file": "images\\left_camera\\L_run_stop_run_20260922_01__f002835__left.png",
+      "old_status": "AMBIGUOUS_PARTIAL_APPEARANCE_CANDIDATE",
+      "new_status": "AMBIGUOUS_PARTIAL_APPEARANCE_CANDIDATE",
+      "old_length": 832.1229258364291,
+      "new_length": 808.7249643199425
+    },
+    {
+      "output_file": "images\\right_camera\\R_run_stop_run_20260922_01__f000663__right.png",
+      "old_status": "AMBIGUOUS_PARTIAL_APPEARANCE_CANDIDATE",
+      "new_status": "AMBIGUOUS_PARTIAL_APPEARANCE_CANDIDATE",
+      "old_length": 374.0398073762878,
+      "new_length": 360.7956247627001
+    },
+    {
+      "output_file": "images\\left_camera\\L_static_20260922_01__f000503__left.png",
+      "old_status": "AMBIGUOUS_PARTIAL_APPEARANCE_CANDIDATE",
+      "new_status": "AMBIGUOUS_PARTIAL_APPEARANCE_CANDIDATE",
+      "old_length": 917.2989943149607,
+      "new_length": 883.5445845798338
+    },
+    {
+      "output_file": "images\\right_camera\\ruler_right_04.png",
+      "old_status": "AMBIGUOUS_WHOLE_APPEARANCE_CANDIDATE",
+      "new_status": "AMBIGUOUS_WHOLE_APPEARANCE_CANDIDATE",
+      "old_length": 1003.0109280608024,
+      "new_length": 1026.9316493442175
+    },
+    {
+      "output_file": "images\\right_camera\\ruler_right_05.png",
+      "old_status": "PARTIAL_APPEARANCE_CANDIDATE",
+      "new_status": "AMBIGUOUS_WHOLE_APPEARANCE_CANDIDATE",
+      "old_length": 36.61386462637194,
+      "new_length": 654.5200108814513
+    }
+  ],
+  "validation": {
+    "structure400_passed": true,
+    "pilot_full_png_equal": 64,
+    "including_posthoc_repair_png_equal": 80,
+    "all_saved_candidates_without_surface_entry": 0,
+    "entry_audit_sha256": "875c39692eda4c58d501048c145f223bcde0f1d4fdeed39d3c24d560ad2591ed",
+    "accuracy": null,
+    "same_material_identity_verified": false,
+    "audit_sha256": "4a45e027d34cef9704b2cd3419acfe0473386d8751f22aa8c064ed27e9d67c11",
+    "output_manifest_sha256": "6b01d233c983513683f045aaa251e1e8e2c4aa0a75b0e5071ec71b36b301f32c"
+  },
+  "limitations": [
+    "Not a solved whole-rope detector. Some paths end before visible rope ends; dark same-rope vs neighbor remains unresolved.",
+    "Cached A1/A2 automatic free seeds remain dependencies; empty output does not prove no rope.",
+    "No confirmed n-1 identity rule, physical contact, millimeter diameter or t0/t1/t2.",
+    "This version depends on saved F3/A1/A2 predictions and is not an arbitrary-new-image standalone pipeline."
+  ],
+  "original_data_root": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2",
+  "source_freeze": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\freeze_all_002.json",
+  "logs": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\all_002\\分片记录",
+  "predictions": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\all_002",
+  "equipment_connected": false,
+  "reserved_data_used": false,
+  "HTML_created": false,
+  "preserved_failed_full_run": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\all_001\\qa_postrun\\independent_visual_review.json",
+  "implementation_repair": "After all001 revealed a never-enter background tail, reject saved curved candidates that never enter significant search domain; preserve measured free/straight masks. Fixed16 pilot003 plus4 posthoc regression cases before second freeze/all002."
+}

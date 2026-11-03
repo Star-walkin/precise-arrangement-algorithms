@@ -1,0 +1,2468 @@
+{
+  "name": "活动绳整链基准 P1",
+  "version": "IR-P1.0.0",
+  "created_utc": "2026-10-31T19:14:22.277986+00:00",
+  "requested_baseline": "existing originalB750 + H6, before H7 heatmap trials",
+  "model_B": {
+    "path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\runs\\run_20261030_002\\branches\\B\\model\\checkpoints\\step_0750.pt",
+    "sha256": "ed4bfa12c5b3081a19d056265b053d516bdba5ec05dce658e1e32339b47fb882"
+  },
+  "components": [
+    "SAM2/C4卷面范围",
+    "C3/D4/F1/F2/F3卷面边界",
+    "A6自动入口与A7自由直轴",
+    "冻结B750入口条件U-Net",
+    "H6单轨/不跨轨接续"
+  ],
+  "input_output": "原图与其已生成上游观测 -> 自动短入口/方案B -> 原图热图自由段 -> F3中心轨迹候选 -> H6活动绳候选路径",
+  "source_images": 400,
+  "eligible_images": 292,
+  "unresolved_entries": 108,
+  "source_snapshot_count": 338,
+  "files": [
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\runs\\run_20261030_002\\branches\\B\\model\\checkpoints\\step_0750.pt",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\runs\\run_20261030_002\\branches\\B\\model\\checkpoints\\step_0750.pt",
+      "sha256": "ed4bfa12c5b3081a19d056265b053d516bdba5ec05dce658e1e32339b47fb882",
+      "bytes": 562941,
+      "kind": "model_B750"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\audit_h1.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\audit_h1.py",
+      "sha256": "61710f829c7b3095788d8a81d19d16fc9721d374bedd2ced5dcc3dd9b00e5bcb",
+      "bytes": 24428,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\audit_repeatability_h1.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\audit_repeatability_h1.py",
+      "sha256": "e73a0cfd46e4af6218fc8836cd4cf3be55dd5c23b9886d58ba6cc28dd1f0548b",
+      "bytes": 5869,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\f3_tail.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\f3_tail.py",
+      "sha256": "e5bfa862b0def17ed29ed1c8cbaeb23846df28ea472715b92d316ddc5a682865",
+      "bytes": 13256,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\finalize_report.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\finalize_report.py",
+      "sha256": "dbc56ee25db8acbdb9f4cb20bba573e2a1b5cd99adb09a1d6e6a3101a3e03dfd",
+      "bytes": 29718,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\finalize_report_source.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\finalize_report_source.py",
+      "sha256": "dbc56ee25db8acbdb9f4cb20bba573e2a1b5cd99adb09a1d6e6a3101a3e03dfd",
+      "bytes": 29718,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\freeze_delivery.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\freeze_delivery.py",
+      "sha256": "beaceb2b3aefb998a75a97e075033970beb8d7c3bc7c66b2c99a16caf4799895",
+      "bytes": 1368,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\h1_detector.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\h1_detector.py",
+      "sha256": "0df36f6e69b65b011f101db1c85f10c4eb01c17f4da307026fe61274ac114fc4",
+      "bytes": 18611,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\make_visual_diagnosis.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\make_visual_diagnosis.py",
+      "sha256": "560bb05b52d8c74c6f2d7c20e8876f2e2b5421f1690f1c6ada722a4c3d7a058a",
+      "bytes": 2057,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\prepare_inference.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\prepare_inference.py",
+      "sha256": "85571bfa0d2020067b43c771269cd93035f11b466178627add313cafabc3bad2",
+      "bytes": 14207,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\priors.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\priors.py",
+      "sha256": "f406b8edcd6082a8d9946b9721c0653c18df3064c26b5373e5120d8ebd3a51fa",
+      "bytes": 13002,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\review_stage_crops.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\review_stage_crops.py",
+      "sha256": "746db77bb4628d832c21bb017afbe9372095a57e667ff9166e63bdbc43ccc37b",
+      "bytes": 792,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\run_h1.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\run_h1.py",
+      "sha256": "5e33a4aa6685dad359fb00b42462436ed4e04c8d7e70583080df3044679443eb",
+      "bytes": 11743,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\straight_support.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\straight_support.py",
+      "sha256": "97a877895373948d2ad0da08b0409c60cfa10d8c3efe873be031111b49af28e9",
+      "bytes": 9316,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\update_indices.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\update_indices.py",
+      "sha256": "58310073e59e36d65a93d92502d064c621fed741363a789b0658b315eaac70ea",
+      "bytes": 3840,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\verify_numeric_responses.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\verify_numeric_responses.py",
+      "sha256": "29436a9049fb92d881bc17c56d52115678af07a38e7d3fda3ba17fe621f071c9",
+      "bytes": 6070,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\freeze_final.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\freeze_final.json",
+      "sha256": "e26711f5a23ed4d3154a0ecab2ff1688e334bd44a8d5bd775378f796043165c6",
+      "bytes": 1530,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\experiment_report.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\experiment_report.json",
+      "sha256": "61a4d490762b0a0c982bee80f49f96e675d985b4306d22c52af3d82a4e05d6e1",
+      "bytes": 209292,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\all_001\\summary.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\all_001\\summary.json",
+      "sha256": "d237b3aa710804af2f1429c2c9bdb8a42c810e49980d10092eaec19a340ea01d",
+      "bytes": 93228,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\audit_h2.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\audit_h2.py",
+      "sha256": "5d81a73777a0e550289fb799b21ce8a5ea774496ae088e9d65e844c3d8f08956",
+      "bytes": 20231,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\audit_h2_sources.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\audit_h2_sources.py",
+      "sha256": "395a344eddc168e9704f94ae742c6fc93a604825fb7ab87ff0c587ae4edbe666",
+      "bytes": 9788,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\check_free_candidates.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\check_free_candidates.py",
+      "sha256": "79a1489c97b951ac33902a160520a88ea82558f81fe3c071c01407a126c88692",
+      "bytes": 4545,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\connect_paths.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\connect_paths.py",
+      "sha256": "a29653bfe8d214e634732269fc3af040b98b86039e6973d7d5169a6880f47b99",
+      "bytes": 14323,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\finalize_h2.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\finalize_h2.py",
+      "sha256": "c8ea6cd46c9db73cdc26c4bdde33c90f6e3bc25e12c8f2c7d787242db2d3d5c5",
+      "bytes": 8550,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\free_candidates.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\free_candidates.py",
+      "sha256": "75e8d840e26ae011a2efa567687d01cc571d7fa3519e0bba3ab0284f6c661c05",
+      "bytes": 21996,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\prepare_h2.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\prepare_h2.py",
+      "sha256": "a94d687fd602e0752437b8d046a7841430e99afa7b4451b4092af5e00f10d336",
+      "bytes": 5098,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\run_h2.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\run_h2.py",
+      "sha256": "67ee95211638535df18d06b4731c1a45feb09326e33979568e9e537459acaa5e",
+      "bytes": 9864,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\surface_tracks.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\surface_tracks.py",
+      "sha256": "879de46675662ff759cb0609c3d881668135ae55d9180f8a82fd305bd7b8d58d",
+      "bytes": 15959,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\surface_tracks_check.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\surface_tracks_check.py",
+      "sha256": "533c16282cfe3ea722a536db8d3ecd2c71be1f640d6e923f8acd5bb5e92541e8",
+      "bytes": 4344,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\inputs.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\inputs.json",
+      "sha256": "75cad6bb415a8971eddcf50286950e3c98f26c9678037b9c35682aa1701a08e9",
+      "bytes": 741434,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\freeze_final.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\freeze_final.json",
+      "sha256": "1cb44ec6dc8509ea21395ea86413d87ea89533062ba98e2728706baedff56cef",
+      "bytes": 4645,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\experiment_report.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\experiment_report.json",
+      "sha256": "01aa14529acfc36bf06a0d12b94bf2bb77b7290839ef539cf9148623095f3fc5",
+      "bytes": 4549,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\README.txt",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\README.txt",
+      "sha256": "5ef3c6a278cb1aa196fab1e055337120a8460eb5349683de3562febedc5813d4",
+      "bytes": 3746,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\review_receipt.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\review_receipt.json",
+      "sha256": "c1e4f2bb90f533ac46ada3ef0d243f1d64b075ae9238cb2f80715f18d0dda764",
+      "bytes": 15212,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\all_001\\summary.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\all_001\\summary.json",
+      "sha256": "0682a1500c27c5c3eea718bfee15fd49d36f6847d327ff35d7308346e2f7addf",
+      "bytes": 228934,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\audit_h3_geometry.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\audit_h3_geometry.py",
+      "sha256": "64cbd378335fd2cd2d48e3c3db0c76ff8f38eeefa64daa1dbf349e82049f3fa3",
+      "bytes": 11728,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\check_straight_free.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\check_straight_free.py",
+      "sha256": "e9f251f6cd659000db53d100ed1e1323adb1bf8250c2634f0d805971a531e048",
+      "bytes": 7991,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\common.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\common.py",
+      "sha256": "3c18b57a25b976fa85cf4d457885b6a7d6015f41a5992c7f6a8f776f56b78a5d",
+      "bytes": 1654,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\compare_h2_h3.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\compare_h2_h3.py",
+      "sha256": "457fb4af0e52b6e358b86a1c9c21692ddb4a6514084db6fef8eb7ef2759cf1d8",
+      "bytes": 15826,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\connect_paths.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\connect_paths.py",
+      "sha256": "befaa9f6af494bf9619346764070c927134a26f3de09492a37f7313e18d777e2",
+      "bytes": 11629,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\finalize_h3.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\finalize_h3.py",
+      "sha256": "7085f20aa35ab9d248e7651000f3ebeb74426475ae0011c65f15c4948e6f7d0e",
+      "bytes": 7431,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\run_h3.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\run_h3.py",
+      "sha256": "924d1dcd08244f335ab38021ef0cfac25a577fa631dc3e3c9df2074b1b59f43c",
+      "bytes": 10865,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\straight_free.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\straight_free.py",
+      "sha256": "181a387ae0d63ab3c6ac174b4ff016d74034f5ff2633d8f65d141144364c01a3",
+      "bytes": 14991,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\inputs.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\inputs.json",
+      "sha256": "d5af78925096b06e7c3c8f261b31a4f56d49d491f1fa1140dd0d5fa24f87205c",
+      "bytes": 741993,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\freeze_final.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\freeze_final.json",
+      "sha256": "653380b0651c713f9a6f85e8f0ae8f80f538ca84d56780af9b1f8ffebe247f52",
+      "bytes": 4291,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\experiment_report.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\experiment_report.json",
+      "sha256": "4386acc00e27f94532b2e60cdf9704271d0687dbc3ba540d76c72a87ad2bd4d2",
+      "bytes": 12257,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\README.txt",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\README.txt",
+      "sha256": "61e1132d27661b498c14931fb9883e7d0bd3ed934ea53d6d44b381d32d269f93",
+      "bytes": 3353,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\review_receipt.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\review_receipt.json",
+      "sha256": "528708fa677ae8d43df89cf113453db4f377eeaa6051045006d293a8873a9399",
+      "bytes": 4899,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\all_001\\summary.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\all_001\\summary.json",
+      "sha256": "b1ed309f510cf49f617d47df059efc3da31e5b6defd7a7ee279bd92b3417cc3c",
+      "bytes": 232244,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\all_001\\independent_geometry_audit.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v3\\all_001\\independent_geometry_audit.json",
+      "sha256": "098eeef54fa81c229aef5f12f46511e476fa666c30f99a5a3fa009f842c31b00",
+      "bytes": 638563,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\audit_h4.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\audit_h4.py",
+      "sha256": "4e5a669f31208c690ca1c84e18e50f0465acb6b64f2f31fccabf9357697a3ae5",
+      "bytes": 10927,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\check_heat_free.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\check_heat_free.py",
+      "sha256": "96915b85b0f7b173cf9dcfb84af720ea721b21f45092d7d5b2933453d2dee31c",
+      "bytes": 8290,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\common.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\common.py",
+      "sha256": "c03e1fab933c9f91d8127c7c69a12684e3be5f2c54fdba4ab310b26b091cd8e1",
+      "bytes": 2111,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\compare_h3_h4.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\compare_h3_h4.py",
+      "sha256": "f35cf70abe2bdf012eed44a7d7c91a43a2a20412cafe608f5525460cfc29da5a",
+      "bytes": 13134,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\connect_paths.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\connect_paths.py",
+      "sha256": "cf98f32ba270c03c2ae48db8661104667c7dd1050180f91fbed3cfb0e05b66ba",
+      "bytes": 14677,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\finalize_h4.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\finalize_h4.py",
+      "sha256": "330bbb2319950557eac0be5e691bd8eee62c0413385147fa7fc2148615ee86cf",
+      "bytes": 7866,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\heat_free.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\heat_free.py",
+      "sha256": "fe865cddf1b48cd6553e5e712c65bfeef08c8690c7859746e00ba7e2a8c64120",
+      "bytes": 18601,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\register_h4.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\register_h4.py",
+      "sha256": "eb287993b58aadd75ca51d829b60b5815b3a02604a268480884c934115ea17fe",
+      "bytes": 2835,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\run_h4.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\run_h4.py",
+      "sha256": "3000b332fba976a12c578236a82b54415696600189cb35da64ca9a43a4a3678b",
+      "bytes": 11167,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\inputs.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\inputs.json",
+      "sha256": "ad20af5d5802893699207c8e447427982690f146748296ca40c70f9b69870f2e",
+      "bytes": 742558,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\freeze_final.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\freeze_final.json",
+      "sha256": "b0494d26b6d9731d8a5023d009d7f7a3ce56605dfe88e14056aecdfd73ddd6e7",
+      "bytes": 6568,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\experiment_report.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\experiment_report.json",
+      "sha256": "897b7b499441f62e445d4b8e1f0c48739d6f470ec2216975bcf6c7644878b9e0",
+      "bytes": 511034,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\README.txt",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\README.txt",
+      "sha256": "0288a71e80ab4867f37e276bde1b0fa52f39a5a47fc1164381a1b6a3adc62ffb",
+      "bytes": 3028,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\review_receipt.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\review_receipt.json",
+      "sha256": "aa7d9347e658d4a6bc2aa060a9f2418bfcb9bb393d740330eceefef6f5f50795",
+      "bytes": 5520,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\all_001\\summary.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\all_001\\summary.json",
+      "sha256": "2e9dfa09e6948a01658d11bc3573f12f279d104230ec59f764e2d99937046d36",
+      "bytes": 229179,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\all_001\\independent_geometry_audit.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v4\\all_001\\independent_geometry_audit.json",
+      "sha256": "4b9a5f1b86498928374ff55ded3dbad4dfbc05e95e665fb025129ecff4e5dfd3",
+      "bytes": 418340,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\audit_h5.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\audit_h5.py",
+      "sha256": "12b886e19d70deca3d79231bf70ccd986dc40dca209e3f0025cbc9f64369a9c8",
+      "bytes": 23181,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\check_direction.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\check_direction.py",
+      "sha256": "05bf165a14ccef2e3c1f4775e0a21a864f1d60d76239a8f2d035f4a5f7fc4388",
+      "bytes": 1995,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\check_heat_free.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\check_heat_free.py",
+      "sha256": "18b4df6c22c1eed2872ad80f1c904321d618e1d15b69290fd357374a7f260344",
+      "bytes": 15930,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\check_score.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\check_score.py",
+      "sha256": "72091bd511e02f647b31c3cfe944f356a39bc9840291fcc53c65eecc61449237",
+      "bytes": 2062,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\common.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\common.py",
+      "sha256": "0069962d0ebb55c50f2e55bff16a532afb52478eb30e0c851ba9268d2a7181f6",
+      "bytes": 2643,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\compare_h4_h5.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\compare_h4_h5.py",
+      "sha256": "e3e1ef3a380a1830ee09f3d219b8df00b0e17fdf49b8899695c96bd5e6c3bd3b",
+      "bytes": 15671,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\compare_h4_h5_revision_002.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\compare_h4_h5_revision_002.py",
+      "sha256": "e2c9aa639558153d2f585e64380431312b1f2dd8f14e446725b49ea758519460",
+      "bytes": 11831,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\connect_paths.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\connect_paths.py",
+      "sha256": "38eaae3cdbfb39ff84a42fbf87b6d7c17f2a3e92dd9b3c4455cfa6ba81690f1e",
+      "bytes": 18674,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\finalize_h5.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\finalize_h5.py",
+      "sha256": "d4eeff1c8038f47c55e2c25086a49bc54db815655383c97cc0ffc191febd674f",
+      "bytes": 8053,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\freeze_h5.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\freeze_h5.py",
+      "sha256": "d5d1b2013fcbfb4b6684adfb9dd4f677116f59264a887ccc5bc7bd3648bc90aa",
+      "bytes": 2127,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\heat_free.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\heat_free.py",
+      "sha256": "3956c9fe7e7e636c419dca71e0b9682452d92b3e6327be856cd318adc31f379e",
+      "bytes": 35436,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\register_h5.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\register_h5.py",
+      "sha256": "22f8d4581b103a362ff9364cb87ba2ea4dd3eb5be207dbdb852322da4c126d88",
+      "bytes": 2630,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\run_h5.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\run_h5.py",
+      "sha256": "3fc991986f08c42cb48350f41b73602cbeb5728a60c16705a38079656b7bf9af",
+      "bytes": 15075,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\inputs.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\inputs.json",
+      "sha256": "77277382daed90013b9a1931e4e3391b0a249fae2beb9a8688f19aff7d3b8e69",
+      "bytes": 744037,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\freeze_final.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\freeze_final.json",
+      "sha256": "3086e03b3f87e49efe61c7841b6fd36bfc9966ec3d5068610752e49ecb471d9e",
+      "bytes": 8746,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\experiment_report.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\experiment_report.json",
+      "sha256": "f772279312e6a23d7054e039de85773f7e641dc442b98b812afd6cb445a14ffe",
+      "bytes": 944234,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\environment.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\environment.json",
+      "sha256": "60bcfdafbb5ca7fa9919c097ab096320adb0a287886cd8b940bbc1c8d5e47934",
+      "bytes": 473,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\README.txt",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\README.txt",
+      "sha256": "3f62b63da97e837db2e6eba2aaacb846a9715c48f022ca90a6171df29e1c7f39",
+      "bytes": 2649,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\review_receipt.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\review_receipt.json",
+      "sha256": "d3f31ec4e35de2e1aeab32ed206a5db0f0baac60ab809d6cd2722a7b1a0bf023",
+      "bytes": 7317,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\all_001\\summary.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\all_001\\summary.json",
+      "sha256": "9b8ffcf3a0ab74b3e037dc68923f3b2ffef7dbaf809a725d83c43d0ad2cfdfc7",
+      "bytes": 230461,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\all_001\\independent_geometry_audit.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v5\\all_001\\independent_geometry_audit.json",
+      "sha256": "aa8fafbaaa2819ee58d947ed277de3007a552ffdc01c5649c6e61dd857559f75",
+      "bytes": 761276,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\audit_h6.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\audit_h6.py",
+      "sha256": "e947495ccca76ada7f865469a06ff965bd0f9f0ec69bf897918b8e882e63f533",
+      "bytes": 20858,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\check_suffix_regression.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\check_suffix_regression.py",
+      "sha256": "526097ccec11b42e6b66fec742c0edaa1d1064097d60993c7fbe1294f6e050ba",
+      "bytes": 505,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\check_surface_tracks.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\check_surface_tracks.py",
+      "sha256": "42f4e3617eac049cfed279bec61331aebb3d28406e3741691c3ad710c2bac333",
+      "bytes": 7017,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\check_topology.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\check_topology.py",
+      "sha256": "615a2d621fa48872435cc5db05c55e8f5a7da41b279dc8ea6cf258d22d7af503",
+      "bytes": 2837,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\common.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\common.py",
+      "sha256": "18edc8571dae3bdfe874bbf386903706be35a314a2b85ff715c549535af373f7",
+      "bytes": 2623,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\compare_h5_h6.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\compare_h5_h6.py",
+      "sha256": "a86b46638e346516fc23e52d495271cd8a5438822224232d8f7497adfb4ad5c7",
+      "bytes": 14728,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\connect_paths.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\connect_paths.py",
+      "sha256": "517b35584e9b96e6e36344c9a5e09f9d8bcb8f5af4a110ac1ad4f42f4fcf0f2c",
+      "bytes": 20108,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\finalize_h6.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\finalize_h6.py",
+      "sha256": "2c68b24081901e65ee7cc3e5653d796c45a512b03999852eaf8bd9f0921b8ff6",
+      "bytes": 9366,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\freeze_h6.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\freeze_h6.py",
+      "sha256": "a841b1612573024086fbb16514bca1fc33d7102784556915097ff0d15a3ee549",
+      "bytes": 1638,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\heat_free.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\heat_free.py",
+      "sha256": "3956c9fe7e7e636c419dca71e0b9682452d92b3e6327be856cd318adc31f379e",
+      "bytes": 35436,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\register_h6.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\register_h6.py",
+      "sha256": "38c76a830825856c3c79b4b80e9d88299e7cdc1a46fa9fe5ba17adf965c337d5",
+      "bytes": 2167,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\run_h6.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\run_h6.py",
+      "sha256": "a95943823fabdada58b3e1124eb44523b66a1132d11b616caf8a078d2653d76a",
+      "bytes": 15743,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\source_continuity_statistics.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\source_continuity_statistics.py",
+      "sha256": "3645d14a9e7490113d6e615805ccd7e9aa94d4a50d796f7ad2fb72173fa9da9a",
+      "bytes": 14228,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\surface_tracks.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\surface_tracks.py",
+      "sha256": "73b8a55c17770fadaf3f5b1b88bf6f9e94087b4dca555390a26a7d58981f6e1d",
+      "bytes": 18024,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\topology.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\topology.py",
+      "sha256": "d559038920902e903bd72797b14b2ec95ae2c7a26609cac4d44ee19af61b3dac",
+      "bytes": 10543,
+      "kind": "historical_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\inputs.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\inputs.json",
+      "sha256": "c227041a7aa4e0cc15e9a041a0d592d522687aaeaf03b78459e3a338248efa1e",
+      "bytes": 744334,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\freeze_final.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\freeze_final.json",
+      "sha256": "7a5ed0ac9cd93dbc4a2b8bf9e1218ee2c4c3bad5c10365ed71a60dc254da1031",
+      "bytes": 10152,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\experiment_report.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\experiment_report.json",
+      "sha256": "6782d44507b78b449f5aa4ae01d0dde73beea4715f30243992e672910f2fc315",
+      "bytes": 318684,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\environment.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\environment.json",
+      "sha256": "2919a5fb38f9769bc384f003a7616b790a49d6923144d668856ed2790582bd98",
+      "bytes": 451,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\README.txt",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\README.txt",
+      "sha256": "b43bea525af786a3593e60f38663867f8f25502a1aa4ba8ad4d91feab77486f5",
+      "bytes": 2877,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\review_receipt.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\review_receipt.json",
+      "sha256": "9532493ab8bac82e5b6c96a4f91212991a223255878a85d813e01d0a0ea07ac9",
+      "bytes": 9700,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\all_001\\summary.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\all_001\\summary.json",
+      "sha256": "dff254c311926364e5857dcd71de91a0adf76988c2cad200b19bc82d77dbdb25",
+      "bytes": 230419,
+      "kind": "H6_gallery_manifest"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\all_001\\independent_geometry_audit.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\all_001\\independent_geometry_audit.json",
+      "sha256": "ad436abe3f51d5aa2fe1d69a2d03608be9358a8bbd4aef1afe9ea99e3c9de160",
+      "bytes": 121706,
+      "kind": "historical_protocol_or_evidence"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\model.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\model.py",
+      "sha256": "5fd163ac4f69d90bc8ce192934d42b293bf91a9b4dc58597781e00dff097fe1a",
+      "bytes": 7285,
+      "kind": "network_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\train.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\train.py",
+      "sha256": "f75caf11e64fc84880d597c567ab328f6954f6402c0697531d2979daed76dba4",
+      "bytes": 18146,
+      "kind": "network_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\infer.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\infer.py",
+      "sha256": "a71138218ca7531d5f2536e22589b38b1d051d497bec8345f3c44c99c0c8a485",
+      "bytes": 7689,
+      "kind": "network_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\connect.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\connect.py",
+      "sha256": "61fd7c63f835475c698c26ba472d12296e48786a0b44aea5bb7b24b1c8c94ea2",
+      "bytes": 17049,
+      "kind": "network_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\scene.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\scene.py",
+      "sha256": "dc89b1168f3f84ba597f230f05be341e4c61763ae353dec252678da67cf4e36c",
+      "bytes": 6215,
+      "kind": "network_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\evaluate.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\evaluate.py",
+      "sha256": "f693589a9fc0eae33c3421fbcff8f38b74dc7cd306a9126d6a779c055ba79f72",
+      "bytes": 22279,
+      "kind": "network_pipeline_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\runs\\run_20261030_002\\frozen_upstream.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\runs\\run_20261030_002\\frozen_upstream.json",
+      "sha256": "74cebcf4df6fa28d194edf7ef3561b1338d61bb62c9c2892023f33cde76b3bf6",
+      "bytes": 1376,
+      "kind": "B_training_provenance"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\runs\\run_20261030_002\\PROTOCOL.md",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\runs\\run_20261030_002\\PROTOCOL.md",
+      "sha256": "b64609cddf1a6631f49cdd56397b82b8c2d40f49f90f36ac8654549df9814c37",
+      "bytes": 3165,
+      "kind": "B_training_provenance"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\runs\\run_20261030_002\\REPORT.md",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\runs\\run_20261030_002\\REPORT.md",
+      "sha256": "56524921722f3e947efdecf7083271a695d13654f812b0a614be0358a9f712a4",
+      "bytes": 13405,
+      "kind": "B_training_provenance"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\runs\\run_20261030_002\\branches\\B\\model\\config.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\runs\\run_20261030_002\\branches\\B\\model\\config.json",
+      "sha256": "99d9463fc230c59bb894241536ab6cb9187cf08f3ada6ee3ff438908f944cb99",
+      "bytes": 1552,
+      "kind": "B_training_provenance"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\runs\\run_20261030_002\\data\\index.json",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\runs\\run_20261030_002\\data\\index.json",
+      "sha256": "ec3cb14833d5b333f63d6ac9ada2d828d5f5f6cef97eee67dcddbdd3d510a2ff",
+      "bytes": 47685,
+      "kind": "B_training_provenance"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\paired_train.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\paired_train.py",
+      "sha256": "114eff4e6ee5e74074d4dcac3e953c76b0fafc1d38e440f8f55ea3bd1358d930",
+      "bytes": 25221,
+      "kind": "B_inference_or_entry_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\prepare_auto_seeds.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\prepare_auto_seeds.py",
+      "sha256": "b16e37ce0596e8174319821b8321ab4e2c31e2185ee631bb8a4051a94e0df527",
+      "bytes": 1739,
+      "kind": "B_inference_or_entry_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_missing_entries.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\postprocess_missing_entries.py",
+      "sha256": "4467716c4300160e4d57035ec90daf9b953f33eade5d2762d91e384174567154",
+      "bytes": 8658,
+      "kind": "B_inference_or_entry_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\batch_ab_preview.py",
+      "snapshot": "snapshot\\experiments\\entry_conditioned_rope_path\\batch_ab_preview.py",
+      "sha256": "ec12dd7628c449c48ba93f760985cfe6401c54add282fff5516cd30a14a82b9a",
+      "bytes": 7912,
+      "kind": "B_inference_or_entry_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\a7_io.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\a7_io.py",
+      "sha256": "d8b79f7653a227cbd13207c58b580788b43cf53a959e537c9587b8783ff492f3",
+      "bytes": 7288,
+      "kind": "A7_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\free_rope.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\free_rope.py",
+      "sha256": "c57f77270a1c0308570a77ff70dee67fe7caa25b2dbb55bafd2e80aae9cf60fd",
+      "bytes": 36561,
+      "kind": "A7_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\free_seed_recovery.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\free_seed_recovery.py",
+      "sha256": "fc9df09cc53e508846ff9d23bea0a6517e4e5ca29d1a8e0c416a026da1d1f864",
+      "bytes": 17271,
+      "kind": "A7_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\strand_signature.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\strand_signature.py",
+      "sha256": "198b5a78ad4351b88909a5950f353119ffeed54510bb6bea91972a62018fbf26",
+      "bytes": 9999,
+      "kind": "A7_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\straight_detector.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\straight_detector.py",
+      "sha256": "adc86d71c117966e7d78df2b95f5400526f1c4a2e71422496a5969c38e73b61c",
+      "bytes": 19800,
+      "kind": "A7_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\run_experiment.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\run_experiment.py",
+      "sha256": "1c8f412f4b4ab61d3386e8394bdd8fb3c5628d19ad218a4bf7bd33b21650c381",
+      "bytes": 12437,
+      "kind": "A7_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\protocol.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\protocol.json",
+      "sha256": "507e1d26517d07e837913d03e47fcd309fc78c82cb323954d3d65df1fda7e7ae",
+      "bytes": 5121,
+      "kind": "A7_protocol"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v2\\free_refinement.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v2\\free_refinement.py",
+      "sha256": "65ca049228d0dec2d941a4e08bddf4f9bb52935570cf9827dc7d9adbc1272c8c",
+      "bytes": 23048,
+      "kind": "A7_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\freeze_all.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\freeze_all.json",
+      "sha256": "15b5889d6144da7d32df060c2f7771626d41e7d6df73ddccb1340614482e5cc3",
+      "bytes": 2271,
+      "kind": "A7_protocol"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\experiment_report.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\experiment_report.json",
+      "sha256": "0af04d26fdef19434180af312d71738ead9c3ffeb42d2b897dd4799132eb5319",
+      "bytes": 36738,
+      "kind": "A7_protocol"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\000_fusion.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\000_fusion.py",
+      "sha256": "087eb2c836c09176109804f811f367427e94325c7c9a3a85487802b65e6a695d",
+      "bytes": 3436,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\fusion.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\fusion.py",
+      "sha256": "087eb2c836c09176109804f811f367427e94325c7c9a3a85487802b65e6a695d",
+      "bytes": 3436,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\001_fusion_io.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\001_fusion_io.py",
+      "sha256": "c1e24705b2873cddb521a711097b4e452241c94effc5388ed0aac52f71330b85",
+      "bytes": 6305,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\fusion_io.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\fusion_io.py",
+      "sha256": "c1e24705b2873cddb521a711097b4e452241c94effc5388ed0aac52f71330b85",
+      "bytes": 6305,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\002_protocol.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\002_protocol.json",
+      "sha256": "e15ad0fbacab2d92850ff667d185f74fe29812a413ac1be0d1c8803166e6d833",
+      "bytes": 8377,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\protocol.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\protocol.json",
+      "sha256": "e15ad0fbacab2d92850ff667d185f74fe29812a413ac1be0d1c8803166e6d833",
+      "bytes": 8377,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\003_run_fusion.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\003_run_fusion.py",
+      "sha256": "941f88faa94cfc76bc2e2ef44f91c4bfb2346d6fa2a1550ffbe7ece257cb58ea",
+      "bytes": 4067,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\run_fusion.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\run_fusion.py",
+      "sha256": "941f88faa94cfc76bc2e2ef44f91c4bfb2346d6fa2a1550ffbe7ece257cb58ea",
+      "bytes": 4067,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\004_full_roi_observation.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\004_full_roi_observation.py",
+      "sha256": "64fdc0aca8e45019ebed32d50e3bf5a5089fee2d426a8b942a817125e2099555",
+      "bytes": 14745,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_rope_boundaries_20261025_v3\\full_roi_observation.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_bright_rope_boundaries_20261025_v3\\full_roi_observation.py",
+      "sha256": "64fdc0aca8e45019ebed32d50e3bf5a5089fee2d426a8b942a817125e2099555",
+      "bytes": 14745,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\005_output_manifest.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\005_output_manifest.json",
+      "sha256": "7296b6bfd8252a1ffe802697ea99897cc412925782644a43ce218a04134105de",
+      "bytes": 535875,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\all_002\\output_manifest.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\all_002\\output_manifest.json",
+      "sha256": "7296b6bfd8252a1ffe802697ea99897cc412925782644a43ce218a04134105de",
+      "bytes": 535875,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\006_anchored_dark.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\006_anchored_dark.py",
+      "sha256": "8f5ad03d5c94d4cd54e5dad67d58b6c630a6304ad2da09c8881a77a3c5667ffe",
+      "bytes": 39322,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\anchored_dark.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\anchored_dark.py",
+      "sha256": "8f5ad03d5c94d4cd54e5dad67d58b6c630a6304ad2da09c8881a77a3c5667ffe",
+      "bytes": 39322,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\007_dark_curves.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\007_dark_curves.py",
+      "sha256": "60adceb0a8171c7230f350ed1e26e49620186fc375df6b25ff7326257e10e67e",
+      "bytes": 34028,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\dark_curves.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\dark_curves.py",
+      "sha256": "60adceb0a8171c7230f350ed1e26e49620186fc375df6b25ff7326257e10e67e",
+      "bytes": 34028,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\008_dark_observation.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\008_dark_observation.py",
+      "sha256": "35b1cc7b11e0bed4ea02b2480108e933e89b7aab4caf41cf15cac87c88614648",
+      "bytes": 19441,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\dark_observation.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\dark_observation.py",
+      "sha256": "35b1cc7b11e0bed4ea02b2480108e933e89b7aab4caf41cf15cac87c88614648",
+      "bytes": 19441,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\009_data_io.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\009_data_io.py",
+      "sha256": "0acec46ca79b4c59a6aec357755e304b276aab21c903f2899874a12812c69c86",
+      "bytes": 3958,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\data_io.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\data_io.py",
+      "sha256": "0acec46ca79b4c59a6aec357755e304b276aab21c903f2899874a12812c69c86",
+      "bytes": 3958,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\010_protocol.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\010_protocol.json",
+      "sha256": "69032c860bde02c9029ddf6ce304466d0b7542d7ab3b621c2d7f59000c87f5ea",
+      "bytes": 5145,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\protocol.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\protocol.json",
+      "sha256": "69032c860bde02c9029ddf6ce304466d0b7542d7ab3b621c2d7f59000c87f5ea",
+      "bytes": 5145,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\011_run.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\011_run.py",
+      "sha256": "358411cd6a6614747f5964df781af2f7208d482ef073cae6b9b4b598a8cf7a19",
+      "bytes": 9947,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\run.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\run.py",
+      "sha256": "358411cd6a6614747f5964df781af2f7208d482ef073cae6b9b4b598a8cf7a19",
+      "bytes": 9947,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\012_data_io.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\012_data_io.py",
+      "sha256": "98ad3c98271d871cadaf026de5b7d7f6228c2a12d36e1052d5f386b7c9ef2cf6",
+      "bytes": 3485,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\data_io.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\data_io.py",
+      "sha256": "98ad3c98271d871cadaf026de5b7d7f6228c2a12d36e1052d5f386b7c9ef2cf6",
+      "bytes": 3485,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\013_groove_field.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\013_groove_field.py",
+      "sha256": "887b2a52c14a727af7c582f7708439f3a5ce50297626e22519f16d3cbfe62ed6",
+      "bytes": 12817,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\groove_field.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\groove_field.py",
+      "sha256": "887b2a52c14a727af7c582f7708439f3a5ce50297626e22519f16d3cbfe62ed6",
+      "bytes": 12817,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\014_ordered_paths.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\014_ordered_paths.py",
+      "sha256": "605eb1d042f04b78926d76ab1c22ff87e910170fe82ca38357e6ccd27f92b133",
+      "bytes": 51143,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\ordered_paths.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\ordered_paths.py",
+      "sha256": "605eb1d042f04b78926d76ab1c22ff87e910170fe82ca38357e6ccd27f92b133",
+      "bytes": 51143,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\015_protocol.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\015_protocol.json",
+      "sha256": "7ffe57543f6c0f87336cd707be1bebc9b44b9434303c53f29879cd2f544d25dd",
+      "bytes": 5664,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\protocol.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\protocol.json",
+      "sha256": "7ffe57543f6c0f87336cd707be1bebc9b44b9434303c53f29879cd2f544d25dd",
+      "bytes": 5664,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\016_run.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\016_run.py",
+      "sha256": "bea3ae1d0b34bd4cc2ac8c879bba3f7ca40e4c18421aca54346cab47ef6eb0c8",
+      "bytes": 8173,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\run.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\run.py",
+      "sha256": "bea3ae1d0b34bd4cc2ac8c879bba3f7ca40e4c18421aca54346cab47ef6eb0c8",
+      "bytes": 8173,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\017_dark_c3.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\017_dark_c3.py",
+      "sha256": "03e9ab25815d6a287054be24570cf0fef24ce24fc874fe7722b5ca74fe083457",
+      "bytes": 8953,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\dark_c3.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\dark_c3.py",
+      "sha256": "03e9ab25815d6a287054be24570cf0fef24ce24fc874fe7722b5ca74fe083457",
+      "bytes": 8953,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\018_dark_roi.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\018_dark_roi.py",
+      "sha256": "023f0ca843716f1ab9cb102745afc31131957c4b68bc1b522e2766951ac59b5d",
+      "bytes": 9952,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\dark_roi.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\dark_roi.py",
+      "sha256": "023f0ca843716f1ab9cb102745afc31131957c4b68bc1b522e2766951ac59b5d",
+      "bytes": 9952,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\019_data_io.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\019_data_io.py",
+      "sha256": "e6a01b5fba70236471238e5e558f4a6f616709d5c33284ecb51f161996861f14",
+      "bytes": 2703,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\data_io.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\data_io.py",
+      "sha256": "e6a01b5fba70236471238e5e558f4a6f616709d5c33284ecb51f161996861f14",
+      "bytes": 2703,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\020_protocol.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\020_protocol.json",
+      "sha256": "d4b2f22a445f1c2d8cdffb881ea9db285cb86f1e59fb2e77f5f0b6abfab3abdb",
+      "bytes": 1829,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\protocol.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\protocol.json",
+      "sha256": "d4b2f22a445f1c2d8cdffb881ea9db285cb86f1e59fb2e77f5f0b6abfab3abdb",
+      "bytes": 1829,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\021_data_io.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\021_data_io.py",
+      "sha256": "57d48299a4898e303e08b0394fa3bfb9e4546b78f7fd8b23568ef4c15c10e683",
+      "bytes": 2794,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\data_io.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\data_io.py",
+      "sha256": "57d48299a4898e303e08b0394fa3bfb9e4546b78f7fd8b23568ef4c15c10e683",
+      "bytes": 2794,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\022_period_guard.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\022_period_guard.py",
+      "sha256": "11766bb122904b15beaebb0aca6a6fe21504790794c73fa4c9512ba17d2962a8",
+      "bytes": 14682,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\period_guard.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\period_guard.py",
+      "sha256": "11766bb122904b15beaebb0aca6a6fe21504790794c73fa4c9512ba17d2962a8",
+      "bytes": 14682,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\023_protocol.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\023_protocol.json",
+      "sha256": "fc5cd5f109d5af36e5dc27b80d7354e650d14d9ffeb03a1e1cd173a3ca2ceb9f",
+      "bytes": 5988,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\protocol.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\protocol.json",
+      "sha256": "fc5cd5f109d5af36e5dc27b80d7354e650d14d9ffeb03a1e1cd173a3ca2ceb9f",
+      "bytes": 5988,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\024_ribbon_curves.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\024_ribbon_curves.py",
+      "sha256": "655afa84bab0a10038e2cf7646b6c8b97731faa83f58e6b8ee1b8e5ffc93a764",
+      "bytes": 19722,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\ribbon_curves.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\ribbon_curves.py",
+      "sha256": "655afa84bab0a10038e2cf7646b6c8b97731faa83f58e6b8ee1b8e5ffc93a764",
+      "bytes": 19722,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\025_run.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\025_run.py",
+      "sha256": "fc13da97e49624a770723b67c72eefb01b3bb2fac3b5d1b65c972b796082a9ad",
+      "bytes": 9134,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\run.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\run.py",
+      "sha256": "fc13da97e49624a770723b67c72eefb01b3bb2fac3b5d1b65c972b796082a9ad",
+      "bytes": 9134,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\026_shadow_tracks.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\026_shadow_tracks.py",
+      "sha256": "318a81a500969be0725547789714b3e797755dda943026512f03a1ebec99f029",
+      "bytes": 6406,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\shadow_tracks.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\shadow_tracks.py",
+      "sha256": "318a81a500969be0725547789714b3e797755dda943026512f03a1ebec99f029",
+      "bytes": 6406,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\027_shadow_width.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\027_shadow_width.py",
+      "sha256": "c61a28ca9d6444360fe4067cd5cb25d358458af6c0ca34dd276290638a4731b6",
+      "bytes": 13274,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\shadow_width.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\shadow_width.py",
+      "sha256": "c61a28ca9d6444360fe4067cd5cb25d358458af6c0ca34dd276290638a4731b6",
+      "bytes": 13274,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\028_protocol.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\028_protocol.json",
+      "sha256": "f21651fab39a6dbd0f31cb16c370de70f43d3efb61e141954b8192b69f66ccd8",
+      "bytes": 10006,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\protocol.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\protocol.json",
+      "sha256": "f21651fab39a6dbd0f31cb16c370de70f43d3efb61e141954b8192b69f66ccd8",
+      "bytes": 10006,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\029_run_surface.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\029_run_surface.py",
+      "sha256": "09eddba1e2fe8bcf590d1b30b86722c4d77cacf65458761fd22121feb1ae0a7c",
+      "bytes": 8158,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\run_surface.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\run_surface.py",
+      "sha256": "09eddba1e2fe8bcf590d1b30b86722c4d77cacf65458761fd22121feb1ae0a7c",
+      "bytes": 8158,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\030_surface_fusion.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\030_surface_fusion.py",
+      "sha256": "7174e4a3bcdfb3e68b310be4947c22019d4ced8616da556ae0650c4e4c0fc461",
+      "bytes": 21709,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\surface_fusion.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\surface_fusion.py",
+      "sha256": "7174e4a3bcdfb3e68b310be4947c22019d4ced8616da556ae0650c4e4c0fc461",
+      "bytes": 21709,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\031_surface_io.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\031_surface_io.py",
+      "sha256": "ac7aee4a8c479a4db623a9330deb892e22f0a4431bec15fb3e7039a527aafb40",
+      "bytes": 3938,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\surface_io.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\surface_io.py",
+      "sha256": "ac7aee4a8c479a4db623a9330deb892e22f0a4431bec15fb3e7039a527aafb40",
+      "bytes": 3938,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\032_surface_observation.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\032_surface_observation.py",
+      "sha256": "ba458442d41535b1c61cd1a15cfc5f11d102780f41a2abf255717e1cef7067f9",
+      "bytes": 6802,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\surface_observation.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\surface_observation.py",
+      "sha256": "ba458442d41535b1c61cd1a15cfc5f11d102780f41a2abf255717e1cef7067f9",
+      "bytes": 6802,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\033_conic_family.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\033_conic_family.py",
+      "sha256": "392eb740cd7697bb4ddbc17359a193b2c9b9b761b1528573349370f7ac66eaa9",
+      "bytes": 33752,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\conic_family.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\conic_family.py",
+      "sha256": "392eb740cd7697bb4ddbc17359a193b2c9b9b761b1528573349370f7ac66eaa9",
+      "bytes": 33752,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\034_protocol.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\034_protocol.json",
+      "sha256": "94a7a1cb4c5cae734d20c534f66a0a9c8b40ee979ea5da3b7df9d5cfd577952d",
+      "bytes": 4005,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\protocol.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\protocol.json",
+      "sha256": "94a7a1cb4c5cae734d20c534f66a0a9c8b40ee979ea5da3b7df9d5cfd577952d",
+      "bytes": 4005,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\035_run_conic.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\035_run_conic.py",
+      "sha256": "9533a097a1d04aafa50ba172c7f40fc86d19af60577b8e621a0fcb22ae586cc7",
+      "bytes": 16977,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\run_conic.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\run_conic.py",
+      "sha256": "9533a097a1d04aafa50ba172c7f40fc86d19af60577b8e621a0fcb22ae586cc7",
+      "bytes": 16977,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\036_experiment_io.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\036_experiment_io.py",
+      "sha256": "59df951608cac1584bbb8b7b444ccc5799066afa6a885b4960ccbd583b4e3f85",
+      "bytes": 5238,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\experiment_io.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\experiment_io.py",
+      "sha256": "59df951608cac1584bbb8b7b444ccc5799066afa6a885b4960ccbd583b4e3f85",
+      "bytes": 5238,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\037_protocol.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\037_protocol.json",
+      "sha256": "b71aee6dc0422075247f8eff192fe5ef019540af331d4c196ecdff3c22341af9",
+      "bytes": 2886,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\protocol.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\protocol.json",
+      "sha256": "b71aee6dc0422075247f8eff192fe5ef019540af331d4c196ecdff3c22341af9",
+      "bytes": 2886,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\038_protocol.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\038_protocol.json",
+      "sha256": "0bc61f628abe959a5427304cb2f8578df03005513a1be7d8560cfa46f6e76d31",
+      "bytes": 8817,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\protocol.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\protocol.json",
+      "sha256": "0bc61f628abe959a5427304cb2f8578df03005513a1be7d8560cfa46f6e76d31",
+      "bytes": 8817,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\039_run_seam.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\039_run_seam.py",
+      "sha256": "d12a88e52ddae6d9c476b6cdb8d3fce14cd4c87756a771077f326ccffa7b7025",
+      "bytes": 8421,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\run_seam.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\run_seam.py",
+      "sha256": "d12a88e52ddae6d9c476b6cdb8d3fce14cd4c87756a771077f326ccffa7b7025",
+      "bytes": 8421,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\040_seam_io.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\040_seam_io.py",
+      "sha256": "ea327509d3024d944bda6e3069aad55dfaabdb2a21be6441930a2b9763618eb8",
+      "bytes": 4389,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\seam_io.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\seam_io.py",
+      "sha256": "ea327509d3024d944bda6e3069aad55dfaabdb2a21be6441930a2b9763618eb8",
+      "bytes": 4389,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\041_seam_join.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\041_seam_join.py",
+      "sha256": "e6e91e06fef088843542e9484d27ff751be06bba2c2040edfab6b9a06b4a020f",
+      "bytes": 19021,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\seam_join.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\seam_join.py",
+      "sha256": "e6e91e06fef088843542e9484d27ff751be06bba2c2040edfab6b9a06b4a020f",
+      "bytes": 19021,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\042_seam_observation.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\source_snapshot\\042_seam_observation.py",
+      "sha256": "49e9dab0750fcd70d2ae332012b83e201110c19ea0ee206239bae13b71b06c85",
+      "bytes": 10886,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\seam_observation.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\seam_observation.py",
+      "sha256": "49e9dab0750fcd70d2ae332012b83e201110c19ea0ee206239bae13b71b06c85",
+      "bytes": 10886,
+      "kind": "F3_original_layout_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\config\\image_manifest.csv",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\config\\image_manifest.csv",
+      "sha256": "712859a4a830c08d556729a98cad76d039c684c290d2c4c57efa2b7ad3b45e69",
+      "bytes": 311191,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\config\\c3_baseline_manifest.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\config\\c3_baseline_manifest.json",
+      "sha256": "1637e95b1a030478078252bb987064189d2b8220af1ebfca5fe8a3ef73232aac",
+      "bytes": 42964,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\config\\d4_baseline_manifest.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\config\\d4_baseline_manifest.json",
+      "sha256": "de7c30164f0b4202f38d8f7a5e1e834c49cc0c952a1aa4490ab22daeedf44e9f",
+      "bytes": 32756,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\config\\f2\\output_manifest.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\config\\f2\\output_manifest.json",
+      "sha256": "fa22d2dd98270bf4718d461ac3454b8a5141a0202450c85bcbf17defd74e489f",
+      "bytes": 1575671,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\config\\f2\\audit.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\config\\f2\\audit.json",
+      "sha256": "68c5c21de723807b6a686a8f4e2f832e9e279847c67b6dedb3d5751e399147e2",
+      "bytes": 1674168,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\config\\f2\\freeze_all.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\config\\f2\\freeze_all.json",
+      "sha256": "467640e0fce591559c608e1b4e9c0d26638fb13d63a302a1b91e506b2e3660db",
+      "bytes": 9256,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\root\\protocol.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\root\\protocol.json",
+      "sha256": "f21651fab39a6dbd0f31cb16c370de70f43d3efb61e141954b8192b69f66ccd8",
+      "bytes": 10006,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\root\\freeze_all.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\root\\freeze_all.json",
+      "sha256": "2339694b20b07141e3348889d4485eb392d8e279a00d33da9e28ee034e8e956e",
+      "bytes": 9961,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\root\\delivery_receipt.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\root\\delivery_receipt.json",
+      "sha256": "6449e53d283f53558f09f468af43182a321977f5e70c7e81808417fc1b900bfc",
+      "bytes": 10137,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\root\\experiment_report.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\root\\experiment_report.json",
+      "sha256": "3c24ded73714d1eaa91f0115111cecbd7287bda38964bb90e3080cfd0873a754",
+      "bytes": 8961,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\root\\算法说明.txt",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\root\\算法说明.txt",
+      "sha256": "ed618d2bdf04139a688a31d0eda7a8580a85b6b6f3f30f4e88435965b9ad95cb",
+      "bytes": 4482,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\root\\结果说明.txt",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\root\\结果说明.txt",
+      "sha256": "e08bf843b5f7c918dee6430c8205d04d36454bcf59f5de80cad8ff43d3542630",
+      "bytes": 1321,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\root\\diagnosis_before.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\root\\diagnosis_before.json",
+      "sha256": "74ff6f827be2c0f880e3954aac594cbdde6cf33ccf43fe8f84f04ab4109e301b",
+      "bytes": 10736,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\root\\diagnosis_before_statistics.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\root\\diagnosis_before_statistics.json",
+      "sha256": "e52e9444bbdc4fb7d980b2243b3f683eb19a51bf4a7323aa2843097c5f65237e",
+      "bytes": 59237,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\root\\extra_review_selection_left.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\root\\extra_review_selection_left.json",
+      "sha256": "96370c983c2082c0eb8c47634d3e5f51a1fb8ced2b48d5f0036f19b171e499e7",
+      "bytes": 8187,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\root\\extra_review_selection_right.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\root\\extra_review_selection_right.json",
+      "sha256": "7a7cb026ac0c209e6315c9b65795b2fe02d63a6dfdc530c0d1d89ae86b92fecd",
+      "bytes": 9079,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\root\\smoke_surface_observation_synthetic_001.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\root\\smoke_surface_observation_synthetic_001.json",
+      "sha256": "35c9bd6961f085eaa3ca6cf845ae026270d643a932c79260e17fcb5ff97e904b",
+      "bytes": 1758,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\root\\surface_fusion_smoke_001.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\root\\surface_fusion_smoke_001.json",
+      "sha256": "f9412d3939fe6569b63707710cffd75d698f9e0549e3cfac3a4f17cad9ef6193",
+      "bytes": 3620,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\root\\surface_fusion_smoke_002.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\root\\surface_fusion_smoke_002.json",
+      "sha256": "2fd53b5f54db28819c97100cb38eacab4d1a313597d21484a1c5cadaaf845a79",
+      "bytes": 716,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\root\\surface_fusion_smoke_003.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\root\\surface_fusion_smoke_003.json",
+      "sha256": "7b793a81cb94b598e3907287c667141d3f0755c97664d2b009db54ca9198da4c",
+      "bytes": 1378,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\all_001\\run_context.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\all_001\\run_context.json",
+      "sha256": "d509f3408737abdb85f8456d6406a5f506c124eb853f63660e4ff4d7f8d5a42a",
+      "bytes": 44184,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\all_001\\summary.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\all_001\\summary.json",
+      "sha256": "f17a1293ccbc38947526bc6762945e3e7c0d715ac5e6ccf38fcdd302902db9bc",
+      "bytes": 515,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\all_001\\run_log.jsonl",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\all_001\\run_log.jsonl",
+      "sha256": "a3289d5400d54a6f3073b1e0126a8c0f114e85f27fb39c70e732bc55b0879c0f",
+      "bytes": 12992737,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\all_001\\audit.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\all_001\\audit.json",
+      "sha256": "4310ed95ecff67c5768a51f24eff0f83564866c7caf008f7b75480b462e2737e",
+      "bytes": 1397161,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\all_001\\output_manifest.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\all_001\\output_manifest.json",
+      "sha256": "0e3611465577b3d95faf25956c272d13f32ff6c099b067a92858d23e57e3adbe",
+      "bytes": 1281527,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\all_001\\audit_provenance.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\all_001\\audit_provenance.json",
+      "sha256": "275cfb0100f76ed92f278d3c94f7e5dba21b42158dfae6c5b4701e98066d8099",
+      "bytes": 14778,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\all_001\\delivery_precheck.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\all_001\\delivery_precheck.json",
+      "sha256": "23f89886d198d424c2d83844f87a17dae7ea820b2c55b79cbda1bd7ad175847b",
+      "bytes": 396,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\all_001\\pilot_full_equivalence.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\all_001\\pilot_full_equivalence.json",
+      "sha256": "7216e74dbecf41daa790c9c9c49b2250381266dae3627efec03c1bd51e06550d",
+      "bytes": 27836,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\all_001\\reviews\\qa_additional_left.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\all_001\\reviews\\qa_additional_left.json",
+      "sha256": "f975fbbb539b9c02cc197efc1aa69ddaf774ac70d95fa07cb2f29a2cbc6961a6",
+      "bytes": 17932,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\all_001\\reviews\\qa_additional_right.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\all_001\\reviews\\qa_additional_right.json",
+      "sha256": "b80fb251816716129c4ee4e92bf2b4957bc8f0e8e25b41172ae1f174c6b1f540",
+      "bytes": 22207,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\all_001\\reviews\\qa_fixed6_pilot_equivalence.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\all_001\\reviews\\qa_fixed6_pilot_equivalence.json",
+      "sha256": "5ad4607112d8b1c66bcb7a1f731d50be1f261cd59da88a4fccaa4e3ea4924f62",
+      "bytes": 10591,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\all_001\\reviews\\endpoint_shape_review_all.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\all_001\\reviews\\endpoint_shape_review_all.json",
+      "sha256": "c390dec71da3f42e6064f78a637791191af28a0b1d3f38dd04b8e356cdaad8ec",
+      "bytes": 4556849,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\summary.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\summary.json",
+      "sha256": "efee205ba4463e4c99a94db154ae0187facb76054bc1a2c0d8fc790168aabeb2",
+      "bytes": 503,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\run_context.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\run_context.json",
+      "sha256": "6d2e4df509fa88c57d99d992967a34477d2515d63ac66b10da39c78b01a02b70",
+      "bytes": 17388,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\run_log.jsonl",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\run_log.jsonl",
+      "sha256": "c5c16bd69da18ff9a4cd459db47d88c5e3ea7a72df20e6b1e9cc54a0822fdda3",
+      "bytes": 371080,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\audit.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\audit.json",
+      "sha256": "fd25e62100916094c2c3edf2d0a79a373e61ca509e0cac6cdf521b6fa8d28d80",
+      "bytes": 57811,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\audit_provenance.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\audit_provenance.json",
+      "sha256": "92e01551a233f69eb3d190161db1490d49241e26aa30add6e962d1b467d5e4f0",
+      "bytes": 14703,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\output_manifest.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\output_manifest.json",
+      "sha256": "d4326a119da7c3f20996b6354f67853ec6e7d174be55601ba4ffbd3c2541e1e2",
+      "bytes": 37535,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\audit_corrected.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\audit_corrected.json",
+      "sha256": "63d9b536d1c01a063d30ebf6c4d7523149de3b11cdbc267e292177534b6ccad9",
+      "bytes": 55388,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\audit_corrected_provenance.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\audit_corrected_provenance.json",
+      "sha256": "bb572878e07a3514b4ba35ee1c3e711d361056635978ff4f59267dec43059da7",
+      "bytes": 14788,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\qa_independent_gap_review.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\qa_independent_gap_review.json",
+      "sha256": "e06182df730c8dc613f2df4b84dd7ac2daeb2c94a57c1dcedf38f812be667c2b",
+      "bytes": 2334,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\preview_index.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\preview_index.json",
+      "sha256": "220ef10b4098c97ef724fc7eceb4a5274095610c3af3220c31bc968409db9b63",
+      "bytes": 31238,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\source_snapshot\\028_protocol.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\source_snapshot\\028_protocol.json",
+      "sha256": "f21651fab39a6dbd0f31cb16c370de70f43d3efb61e141954b8192b69f66ccd8",
+      "bytes": 10006,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\source_snapshot\\029_run_surface.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\source_snapshot\\029_run_surface.py",
+      "sha256": "09eddba1e2fe8bcf590d1b30b86722c4d77cacf65458761fd22121feb1ae0a7c",
+      "bytes": 8158,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\source_snapshot\\030_surface_fusion.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\source_snapshot\\030_surface_fusion.py",
+      "sha256": "9eee5d35a8eb6d197f9d1317f2ec055989df0e288ca422db62bfb38a6c80d937",
+      "bytes": 18394,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\source_snapshot\\031_surface_io.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\source_snapshot\\031_surface_io.py",
+      "sha256": "ac7aee4a8c479a4db623a9330deb892e22f0a4431bec15fb3e7039a527aafb40",
+      "bytes": 3938,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\source_snapshot\\032_surface_observation.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_001\\source_snapshot\\032_surface_observation.py",
+      "sha256": "ba458442d41535b1c61cd1a15cfc5f11d102780f41a2abf255717e1cef7067f9",
+      "bytes": 6802,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\auditors\\pilot_001\\audit_surface.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\auditors\\pilot_001\\audit_surface.py",
+      "sha256": "a75b8cef8a6b648ee66a33fb67d3cadbd95c57fea7fd7d9dbab52286738c9a51",
+      "bytes": 22697,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\auditors\\pilot_001\\audit_surface_e4e048e35009.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\auditors\\pilot_001\\audit_surface_e4e048e35009.py",
+      "sha256": "e4e048e350097ca7cf744220a1c21b824bd2eb20774560192f2fbf5c5d3e7b6f",
+      "bytes": 22746,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_002\\summary.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_002\\summary.json",
+      "sha256": "6692382f3d5f04dfafcffb016c27b5c5e22c362cd61338e33ca3a1b442a2bbc4",
+      "bytes": 503,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_002\\run_context.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_002\\run_context.json",
+      "sha256": "8bdd1eb3c4dc3613bb7dbe058c1ee1cf16bc6ee10d4212a9659305b1deda6d93",
+      "bytes": 17388,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_002\\run_log.jsonl",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_002\\run_log.jsonl",
+      "sha256": "96f42b64e624a7a85d73f19644c61ca04c0a93f529d9810dd0af5e8fd433d1f6",
+      "bytes": 371074,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_002\\audit.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_002\\audit.json",
+      "sha256": "92d7c072d2f9606d98440628741f7aebd6e39507c5748cc55a430c74d98c5bae",
+      "bytes": 55387,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_002\\audit_provenance.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_002\\audit_provenance.json",
+      "sha256": "682474239d4532c039397ced6f1c4fa3980df100d7924e898a9fc49489a21bcf",
+      "bytes": 14778,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_002\\output_manifest.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_002\\output_manifest.json",
+      "sha256": "abb5b888a2b20912c6d0d1b699722057e8d4b95da833c94045d428fbc5bbf5eb",
+      "bytes": 37535,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_002\\qa_independent_gap_review.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_002\\qa_independent_gap_review.json",
+      "sha256": "ddd1b050fb25f5bc66822aa65d671c4606167ec62cc43b3a0b0cbe94fdc0e399",
+      "bytes": 10050,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_002\\preview_index.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_002\\preview_index.json",
+      "sha256": "4587e855742a98bf6a769077187d8bb3996dea12ff7444d15334d4ac905f92b2",
+      "bytes": 31515,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_002\\source_snapshot\\028_protocol.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_002\\source_snapshot\\028_protocol.json",
+      "sha256": "f21651fab39a6dbd0f31cb16c370de70f43d3efb61e141954b8192b69f66ccd8",
+      "bytes": 10006,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_002\\source_snapshot\\029_run_surface.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_002\\source_snapshot\\029_run_surface.py",
+      "sha256": "09eddba1e2fe8bcf590d1b30b86722c4d77cacf65458761fd22121feb1ae0a7c",
+      "bytes": 8158,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_002\\source_snapshot\\030_surface_fusion.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_002\\source_snapshot\\030_surface_fusion.py",
+      "sha256": "7174e4a3bcdfb3e68b310be4947c22019d4ced8616da556ae0650c4e4c0fc461",
+      "bytes": 21709,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_002\\source_snapshot\\031_surface_io.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_002\\source_snapshot\\031_surface_io.py",
+      "sha256": "ac7aee4a8c479a4db623a9330deb892e22f0a4431bec15fb3e7039a527aafb40",
+      "bytes": 3938,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_002\\source_snapshot\\032_surface_observation.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\evidence\\pilot_002\\source_snapshot\\032_surface_observation.py",
+      "sha256": "ba458442d41535b1c61cd1a15cfc5f11d102780f41a2abf255717e1cef7067f9",
+      "bytes": 6802,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\auditors\\pilot_002\\audit_surface_e4e048e35009.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\auditors\\pilot_002\\audit_surface_e4e048e35009.py",
+      "sha256": "e4e048e350097ca7cf744220a1c21b824bd2eb20774560192f2fbf5c5d3e7b6f",
+      "bytes": 22746,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\auditors\\all_001\\audit_surface_e4e048e35009.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\auditors\\all_001\\audit_surface_e4e048e35009.py",
+      "sha256": "e4e048e350097ca7cf744220a1c21b824bd2eb20774560192f2fbf5c5d3e7b6f",
+      "bytes": 22746,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\auditors\\audit_surface.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\auditors\\audit_surface.py",
+      "sha256": "e4e048e350097ca7cf744220a1c21b824bd2eb20774560192f2fbf5c5d3e7b6f",
+      "bytes": 22746,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\auditors\\make_surface_preview.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\auditors\\make_surface_preview.py",
+      "sha256": "a5a16721d30f3bf228d975abda458dcfaa54f544a0c85f9eb56814ef5bba7564",
+      "bytes": 8863,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\auditors\\finalize_delivery.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\auditors\\finalize_delivery.py",
+      "sha256": "134f117f03faef9ae486ee00df1759d3138d0c5339cf19f69a52fa1fa68c0883",
+      "bytes": 9456,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\auditors\\check_endpoint_shape_all.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\snapshot\\auditors\\check_endpoint_shape_all.py",
+      "sha256": "9076d6a2783fcea0becfea7739a542b072fe9a85fbd938c2be585d623019d137",
+      "bytes": 5293,
+      "kind": "F3_frozen_archive"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\baseline_manifest.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\baseline_manifest.json",
+      "sha256": "f7fd23dc2374911bff6cf53d84c870cd08e7f98fc24d038632371d28e9054b9f",
+      "bytes": 55209,
+      "kind": "F3_archive_index"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\dependency_manifest.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\dependency_manifest.json",
+      "sha256": "2f5725c1ee0168ecad8ce53e473cd7f96e3207796e5a074d8d7dd1e6d091e984",
+      "bytes": 5219533,
+      "kind": "F3_archive_index"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\verification_receipt.json",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\verification_receipt.json",
+      "sha256": "f4980dc49e17827f7bc3f4d436919fe3159afc75c8fa8bf16d0e02c63d53e48e",
+      "bytes": 366,
+      "kind": "F3_archive_index"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\README.md",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\README.md",
+      "sha256": "e383e6fc786a3c687256c4aeadc065d5c9bca7ee3f1be9e7709be4dbd6a52490",
+      "bytes": 5271,
+      "kind": "F3_archive_index"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\verify_baseline.py",
+      "snapshot": "snapshot\\工程导航\\05_实验版本档案\\卷绳边界_全卷面基准_F3_20261028\\verify_baseline.py",
+      "sha256": "34fa4a0d1dc4a2b533e40bd827d4619805bd57905cd97df9c1017ff8e6cff781",
+      "bytes": 3774,
+      "kind": "F3_archive_index"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\appearance_template.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\appearance_template.py",
+      "sha256": "f15128a59380f26101d6f222b66b54b0499d128ee8fb2d64841bc81a06318e90",
+      "bytes": 22216,
+      "kind": "automatic_entry_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\attached_groove.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\attached_groove.py",
+      "sha256": "484f25bc30d94caa396724f4c4469f14ef67a86285368b76ec545554a7cca24f",
+      "bytes": 7560,
+      "kind": "automatic_entry_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\audit_a6_outputs.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\audit_a6_outputs.py",
+      "sha256": "d7844dff7e03aadc2509ec70466e781d807ee4b1c210a2e08db6a102fbca9010",
+      "bytes": 27388,
+      "kind": "automatic_entry_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\audit_a6_prefix_logic.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\audit_a6_prefix_logic.py",
+      "sha256": "ef85d9a6737a2d4d23d07a537b2e2cb59d1bf6d99e2871fbaae855638ab57098",
+      "bytes": 8248,
+      "kind": "automatic_entry_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\audit_a6_repeatability.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\audit_a6_repeatability.py",
+      "sha256": "acc697730a2a29daee87537fbb1caefecf7e9504cc781f50976d82b34b288892",
+      "bytes": 3285,
+      "kind": "automatic_entry_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\audit_pilot002_four_cases.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\audit_pilot002_four_cases.py",
+      "sha256": "e5dc972bcdd059567476fc873ac18aa08c54dbc4ab79c720ff24cdc629238ba8",
+      "bytes": 11839,
+      "kind": "automatic_entry_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\audit_pilot003_two_cases.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\audit_pilot003_two_cases.py",
+      "sha256": "8ac2c7367ab972ef5022efe861643ef4f647b450916701d9539f77739e96aa35",
+      "bytes": 6959,
+      "kind": "automatic_entry_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\axial_reacquisition.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\axial_reacquisition.py",
+      "sha256": "b013781625d243a799d0b2cb4e5163b324631279fbb9928f4d17de4051f5ca2b",
+      "bytes": 8267,
+      "kind": "automatic_entry_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\check_appearance_template.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\check_appearance_template.py",
+      "sha256": "5be257a0f4314a662500a3ec6b59bf261b32c5910c7114c96e458b57a7f0e90b",
+      "bytes": 7994,
+      "kind": "automatic_entry_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\check_axial_reacquisition.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\check_axial_reacquisition.py",
+      "sha256": "158cd0f263131bf67a1a45fd570a62c1ff8c7a904fde519054226c476cc23475",
+      "bytes": 4228,
+      "kind": "automatic_entry_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\check_outline_template_transition.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\check_outline_template_transition.py",
+      "sha256": "b0b30a55760c4fb3e8b95a26c0bfd06f9821b34c20b4c23678fc6cee19673f41",
+      "bytes": 4441,
+      "kind": "automatic_entry_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\diagnose_axis_reference.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\diagnose_axis_reference.py",
+      "sha256": "92648188f4e785be9e85bda24d251cf9a9198624920670bb7c7d0c3cf6fbf751",
+      "bytes": 2247,
+      "kind": "automatic_entry_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\diagnose_seed_recovery.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\diagnose_seed_recovery.py",
+      "sha256": "28c7986fe0cfe31c82592328f0e435f0a7df6a59c4dfafca04904ca3c15a2382",
+      "bytes": 3351,
+      "kind": "automatic_entry_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\diagnose_seed_texture.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\diagnose_seed_texture.py",
+      "sha256": "33ae22ac847bb20ce3246bb29a92e48c734fd6551f701924003bb5e38017950b",
+      "bytes": 2110,
+      "kind": "automatic_entry_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\finalize_experiment_report.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\finalize_experiment_report.py",
+      "sha256": "0fab01b6d08105c6657f05b446e8756c50dc722694e2246b69906f9caf8abd8e",
+      "bytes": 8619,
+      "kind": "automatic_entry_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\free_rope.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\free_rope.py",
+      "sha256": "c57f77270a1c0308570a77ff70dee67fe7caa25b2dbb55bafd2e80aae9cf60fd",
+      "bytes": 36561,
+      "kind": "automatic_entry_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\free_seed_recovery.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\free_seed_recovery.py",
+      "sha256": "fc9df09cc53e508846ff9d23bea0a6517e4e5ca29d1a8e0c416a026da1d1f864",
+      "bytes": 17271,
+      "kind": "automatic_entry_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\image_beam.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\image_beam.py",
+      "sha256": "b91d7e0c4b1f2a007d99d54e7ce877982472caf6989ef602abcb2c74cd437d12",
+      "bytes": 15199,
+      "kind": "automatic_entry_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\photometric_ribbon.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\photometric_ribbon.py",
+      "sha256": "7a2570f806e548c945271fb714a3bd7836f323c453185cb9b21876aa0557a59b",
+      "bytes": 17383,
+      "kind": "automatic_entry_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\pipeline.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\pipeline.py",
+      "sha256": "ffd2a6bd532fa5499a56b9221553fc54b53dc3211869d19b5bb83dbedc82e35f",
+      "bytes": 15525,
+      "kind": "automatic_entry_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\run_experiment.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\run_experiment.py",
+      "sha256": "eff028c93fd4351fead66baac355abe7e68454d5eaf9a840d9f14d215beaae03",
+      "bytes": 10204,
+      "kind": "automatic_entry_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\seed_recovery_selfcheck.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\seed_recovery_selfcheck.py",
+      "sha256": "79eba3c9112ed69b599e5404233d56c81a8585d9e647848b8a50e863d88f5ea0",
+      "bytes": 3290,
+      "kind": "automatic_entry_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\whole_io.py",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\whole_io.py",
+      "sha256": "f03a9fbbe2d721298813c745091caec952b99f2dc6d308376d9d64892f8fdcc6",
+      "bytes": 4017,
+      "kind": "automatic_entry_source"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\appearance_outline_transition_failure_001.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\appearance_outline_transition_failure_001.json",
+      "sha256": "569640204af2cff9ae165009a2fe22b774571f28b02a36aefb7d2311ed0e38f9",
+      "bytes": 2159,
+      "kind": "automatic_entry_protocol"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\appearance_outline_transition_synthetic_001.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\appearance_outline_transition_synthetic_001.json",
+      "sha256": "64271f2a922b89df8db980d08490b19fe42411167dde5c52a32355ff9f5dd8f3",
+      "bytes": 18878,
+      "kind": "automatic_entry_protocol"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\appearance_template_initial_serialization_failure.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\appearance_template_initial_serialization_failure.json",
+      "sha256": "1ffde83d0c2b688f49fc6b5c352c064b335a40afb9686650ea15fabc53d3014d",
+      "bytes": 301,
+      "kind": "automatic_entry_protocol"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\appearance_template_synthetic_001.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\appearance_template_synthetic_001.json",
+      "sha256": "abbda5ab4ce4c82c2942a9bdce28ae5aaabebcefc8956869f8ff987bc1d141b1",
+      "bytes": 32312,
+      "kind": "automatic_entry_protocol"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\appearance_template_synthetic_002.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\appearance_template_synthetic_002.json",
+      "sha256": "8cce6aa0c6ab4267335e47aab46c185307d6fa435b26178e3ca59fe890edc5df",
+      "bytes": 32716,
+      "kind": "automatic_entry_protocol"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\axial_fixed21_reacquisition_probe_001.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\axial_fixed21_reacquisition_probe_001.json",
+      "sha256": "45830f37227efc9f61391e499883a93c777f82f11c1fbd9d42b20f48d51cf8cb",
+      "bytes": 44369,
+      "kind": "automatic_entry_protocol"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\axial_initial_serialization_failure.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\axial_initial_serialization_failure.json",
+      "sha256": "171b93894af8da7d544b41003f962aa8a3b936d9f419cb4a5867563431ac031e",
+      "bytes": 212,
+      "kind": "automatic_entry_protocol"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\axial_one_width_validation_insufficient_001.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\axial_one_width_validation_insufficient_001.json",
+      "sha256": "0d4d22c104c76e290cfe7eabdd2c69a7041a4cb281e848e6a31fda4cbd7c98f2",
+      "bytes": 2456,
+      "kind": "automatic_entry_protocol"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\axial_reacquisition_synthetic_001.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\axial_reacquisition_synthetic_001.json",
+      "sha256": "1b5f9113828a774a36d50d1caeab12e57c6a690dd933912be389da8ea414d1d7",
+      "bytes": 22653,
+      "kind": "automatic_entry_protocol"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\axis_reference_probe_001.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\axis_reference_probe_001.json",
+      "sha256": "90845d5ae3f25e9e1e9cf38930f955d808cc3fecc0381d61391d73781c3d32ab",
+      "bytes": 264838,
+      "kind": "automatic_entry_protocol"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\delivery_file_hashes.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\delivery_file_hashes.json",
+      "sha256": "41c3bd0e21a42cbc15162913dda03c53374474c331269a5e082769778f6f23d4",
+      "bytes": 11301,
+      "kind": "automatic_entry_protocol"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\documentation_change_receipt.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\documentation_change_receipt.json",
+      "sha256": "8291480639044f7e3ed7767f48101ac87047d8852af583e566cc7b86b4d41422",
+      "bytes": 1091,
+      "kind": "automatic_entry_protocol"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\experiment_report.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\experiment_report.json",
+      "sha256": "6ed9970b940fe288a75f7d3fafd2caa7863943605f9065a5c52499d9786353bf",
+      "bytes": 126500,
+      "kind": "automatic_entry_protocol"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\freeze_all.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\freeze_all.json",
+      "sha256": "9e4fc836682a17571c9bbbb698173eae01f299adce32c189b780960bef8706b7",
+      "bytes": 3398,
+      "kind": "automatic_entry_protocol"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\protocol.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\protocol.json",
+      "sha256": "fa770e5d7d73deddf18c50dcc6a222f65c4203721213f3814ecdab21c7e8fe87",
+      "bytes": 8757,
+      "kind": "automatic_entry_protocol"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\root_visual_review.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\root_visual_review.json",
+      "sha256": "43a90c7ac1c71bc927e3ee60439f9ed3ab2dc472967275ac547575b0144ac976",
+      "bytes": 1641,
+      "kind": "automatic_entry_protocol"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\seed_recovery_selfcheck_001.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\seed_recovery_selfcheck_001.json",
+      "sha256": "fcf80ada65cc234f4c46385fc96fd7abfd258aad2402cc30d8abb0b1da0c90e4",
+      "bytes": 1616,
+      "kind": "automatic_entry_protocol"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\seed_recovery_selfcheck_002.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\seed_recovery_selfcheck_002.json",
+      "sha256": "140ed211bc9d70b1faf2fc2cb992ac14adc40c95023f416f4f3a635e2ab6f2a4",
+      "bytes": 1717,
+      "kind": "automatic_entry_protocol"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\seed_recovery_selfcheck_error_001.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\seed_recovery_selfcheck_error_001.json",
+      "sha256": "b8e56c0e986cbad084236a02afe4067673b0d4d28221e675ea3fc263b19de6a8",
+      "bytes": 342,
+      "kind": "automatic_entry_protocol"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\seed_texture_diagnosis_001.json",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\seed_texture_diagnosis_001.json",
+      "sha256": "e714482485a957b1c64acb01ed86dcb8ac0c35e20fde03fe3e86932afb6470d2",
+      "bytes": 8895,
+      "kind": "automatic_entry_protocol"
+    },
+    {
+      "origin_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\manifest.csv",
+      "snapshot": "snapshot\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\manifest.csv",
+      "sha256": "712859a4a830c08d556729a98cad76d039c684c290d2c4c57efa2b7ad3b45e69",
+      "bytes": 311191,
+      "kind": "open400_source_manifest"
+    }
+  ],
+  "exact_core_source_hashes": {
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\run_h6.py": "a95943823fabdada58b3e1124eb44523b66a1132d11b616caf8a078d2653d76a",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\common.py": "18edc8571dae3bdfe874bbf386903706be35a314a2b85ff715c549535af373f7",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\connect_paths.py": "517b35584e9b96e6e36344c9a5e09f9d8bcb8f5af4a110ac1ad4f42f4fcf0f2c",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\heat_free.py": "3956c9fe7e7e636c419dca71e0b9682452d92b3e6327be856cd318adc31f379e",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\surface_tracks.py": "73b8a55c17770fadaf3f5b1b88bf6f9e94087b4dca555390a26a7d58981f6e1d",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\topology.py": "d559038920902e903bd72797b14b2ec95ae2c7a26609cac4d44ee19af61b3dac",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\surface_tracks.py": "879de46675662ff759cb0609c3d881668135ae55d9180f8a82fd305bd7b8d58d",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\free_candidates.py": "75e8d840e26ae011a2efa567687d01cc571d7fa3519e0bba3ab0284f6c661c05",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\connect_paths.py": "a29653bfe8d214e634732269fc3af040b98b86039e6973d7d5169a6880f47b99",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\priors.py": "f406b8edcd6082a8d9946b9721c0653c18df3064c26b5373e5120d8ebd3a51fa",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\model.py": "5fd163ac4f69d90bc8ce192934d42b293bf91a9b4dc58597781e00dff097fe1a",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\train.py": "f75caf11e64fc84880d597c567ab328f6954f6402c0697531d2979daed76dba4",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\infer.py": "a71138218ca7531d5f2536e22589b38b1d051d497bec8345f3c44c99c0c8a485",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\connect.py": "61fd7c63f835475c698c26ba472d12296e48786a0b44aea5bb7b24b1c8c94ea2",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\scene.py": "dc89b1168f3f84ba597f230f05be341e4c61763ae353dec252678da67cf4e36c",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\evaluate.py": "f693589a9fc0eae33c3421fbcff8f38b74dc7cd306a9126d6a779c055ba79f72",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\a7_io.py": "d8b79f7653a227cbd13207c58b580788b43cf53a959e537c9587b8783ff492f3",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\free_rope.py": "c57f77270a1c0308570a77ff70dee67fe7caa25b2dbb55bafd2e80aae9cf60fd",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\free_seed_recovery.py": "fc9df09cc53e508846ff9d23bea0a6517e4e5ca29d1a8e0c416a026da1d1f864",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\strand_signature.py": "198b5a78ad4351b88909a5950f353119ffeed54510bb6bea91972a62018fbf26",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\straight_detector.py": "adc86d71c117966e7d78df2b95f5400526f1c4a2e71422496a5969c38e73b61c",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\run_experiment.py": "1c8f412f4b4ab61d3386e8394bdd8fb3c5628d19ad218a4bf7bd33b21650c381",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\protocol.json": "507e1d26517d07e837913d03e47fcd309fc78c82cb323954d3d65df1fda7e7ae",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v2\\free_refinement.py": "65ca049228d0dec2d941a4e08bddf4f9bb52935570cf9827dc7d9adbc1272c8c",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\fusion.py": "087eb2c836c09176109804f811f367427e94325c7c9a3a85487802b65e6a695d",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\fusion_io.py": "c1e24705b2873cddb521a711097b4e452241c94effc5388ed0aac52f71330b85",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\protocol.json": "e15ad0fbacab2d92850ff667d185f74fe29812a413ac1be0d1c8803166e6d833",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_dark_fusion_20261028_v1\\run_fusion.py": "941f88faa94cfc76bc2e2ef44f91c4bfb2346d6fa2a1550ffbe7ece257cb58ea",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_rope_boundaries_20261025_v3\\full_roi_observation.py": "64fdc0aca8e45019ebed32d50e3bf5a5089fee2d426a8b942a817125e2099555",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\all_002\\output_manifest.json": "7296b6bfd8252a1ffe802697ea99897cc412925782644a43ce218a04134105de",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\anchored_dark.py": "8f5ad03d5c94d4cd54e5dad67d58b6c630a6304ad2da09c8881a77a3c5667ffe",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\dark_curves.py": "60adceb0a8171c7230f350ed1e26e49620186fc375df6b25ff7326257e10e67e",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\dark_observation.py": "35b1cc7b11e0bed4ea02b2480108e933e89b7aab4caf41cf15cac87c88614648",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\data_io.py": "0acec46ca79b4c59a6aec357755e304b276aab21c903f2899874a12812c69c86",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\protocol.json": "69032c860bde02c9029ddf6ce304466d0b7542d7ab3b621c2d7f59000c87f5ea",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_boundaries_20261027_v2\\run.py": "358411cd6a6614747f5964df781af2f7208d482ef073cae6b9b4b598a8cf7a19",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\data_io.py": "98ad3c98271d871cadaf026de5b7d7f6228c2a12d36e1052d5f386b7c9ef2cf6",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\groove_field.py": "887b2a52c14a727af7c582f7708439f3a5ce50297626e22519f16d3cbfe62ed6",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\ordered_paths.py": "605eb1d042f04b78926d76ab1c22ff87e910170fe82ca38357e6ccd27f92b133",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\protocol.json": "7ffe57543f6c0f87336cd707be1bebc9b44b9434303c53f29879cd2f544d25dd",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_groove_20261027_v3_1\\run.py": "bea3ae1d0b34bd4cc2ac8c879bba3f7ca40e4c18421aca54346cab47ef6eb0c8",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\dark_c3.py": "03e9ab25815d6a287054be24570cf0fef24ce24fc874fe7722b5ca74fe083457",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\dark_roi.py": "023f0ca843716f1ab9cb102745afc31131957c4b68bc1b522e2766951ac59b5d",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\data_io.py": "e6a01b5fba70236471238e5e558f4a6f616709d5c33284ecb51f161996861f14",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\protocol.json": "d4b2f22a445f1c2d8cdffb881ea9db285cb86f1e59fb2e77f5f0b6abfab3abdb",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\data_io.py": "57d48299a4898e303e08b0394fa3bfb9e4546b78f7fd8b23568ef4c15c10e683",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\period_guard.py": "11766bb122904b15beaebb0aca6a6fe21504790794c73fa4c9512ba17d2962a8",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\protocol.json": "fc5cd5f109d5af36e5dc27b80d7354e650d14d9ffeb03a1e1cd173a3ca2ceb9f",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\ribbon_curves.py": "655afa84bab0a10038e2cf7646b6c8b97731faa83f58e6b8ee1b8e5ffc93a764",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\run.py": "fc13da97e49624a770723b67c72eefb01b3bb2fac3b5d1b65c972b796082a9ad",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\shadow_tracks.py": "318a81a500969be0725547789714b3e797755dda943026512f03a1ebec99f029",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\shadow_width.py": "c61a28ca9d6444360fe4067cd5cb25d358458af6c0ca34dd276290638a4731b6",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\protocol.json": "f21651fab39a6dbd0f31cb16c370de70f43d3efb61e141954b8192b69f66ccd8",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\run_surface.py": "09eddba1e2fe8bcf590d1b30b86722c4d77cacf65458761fd22121feb1ae0a7c",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\surface_fusion.py": "7174e4a3bcdfb3e68b310be4947c22019d4ced8616da556ae0650c4e4c0fc461",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\surface_io.py": "ac7aee4a8c479a4db623a9330deb892e22f0a4431bec15fb3e7039a527aafb40",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\surface_observation.py": "ba458442d41535b1c61cd1a15cfc5f11d102780f41a2abf255717e1cef7067f9",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\conic_family.py": "392eb740cd7697bb4ddbc17359a193b2c9b9b761b1528573349370f7ac66eaa9",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\protocol.json": "94a7a1cb4c5cae734d20c534f66a0a9c8b40ee979ea5da3b7df9d5cfd577952d",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\run_conic.py": "9533a097a1d04aafa50ba172c7f40fc86d19af60577b8e621a0fcb22ae586cc7",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\experiment_io.py": "59df951608cac1584bbb8b7b444ccc5799066afa6a885b4960ccbd583b4e3f85",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\protocol.json": "b71aee6dc0422075247f8eff192fe5ef019540af331d4c196ecdff3c22341af9",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\protocol.json": "0bc61f628abe959a5427304cb2f8578df03005513a1be7d8560cfa46f6e76d31",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\run_seam.py": "d12a88e52ddae6d9c476b6cdb8d3fce14cd4c87756a771077f326ccffa7b7025",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\seam_io.py": "ea327509d3024d944bda6e3069aad55dfaabdb2a21be6441930a2b9763618eb8",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\seam_join.py": "e6e91e06fef088843542e9484d27ff751be06bba2c2040edfab6b9a06b4a020f",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\seam_observation.py": "49e9dab0750fcd70d2ae332012b83e201110c19ea0ee206239bae13b71b06c85"
+  },
+  "external_response_manifest_sha256": "4545621f4dbcebc7f65b8c35434ab1fa07d590db21ca9f7c76bdf0a4ddf5642a",
+  "standalone_arbitrary_new_frame_verified": false,
+  "saved_upstream_scene_predictions_required": true,
+  "evidence_scope": "Historic open400 replay baseline; no new accuracy or physical identity validation from naming/freezing.",
+  "video_adaptation_separate": "IR-V1.0.0 uses current video images and causal history; it is not silently part of P1.",
+  "labels_read": false,
+  "reserved_access": false,
+  "devices": false,
+  "old_sources_or_models_changed": false
+}

@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-26",
+  "purpose": "Release frozen experimental outputs, not accept rope identity or contact performance",
+  "root_visual_checks": [
+    {"run": "pilot_001_illumination", "files": ["R_run_stop_run_20260922_01__f000451__right", "L_run_20260923_01__f000648__left"], "finding": "Dark surface is lighter but colored compression/noise blocks become conspicuous; no proof of true dark continuation"},
+    {"run": "pilot_002_illumination", "files": ["R_run_20260923_01__f000757__right", "R_run_stop_run_20260922_01__f000079__right"], "finding": "Selected bends show unsupported purple spans and appear to enter adjacent wound texture; not accepted as correct same-rope paths"},
+    {"run": "pilot_003_illumination", "files": ["R_run_stop_run_20260922_01__f000451__right", "R_run_stop_run_20260922_01__f000079__right"], "finding": "Straight alternative remains; no claim that removing a bend corrects the whole projected path"}
+  ],
+  "independent_messages_received_before_freeze": [
+    "Reviewer completed fixed25 comparison and identified f000451 parallel offset; detailed JSON is being written independently.",
+    "Reviewer found amplified purple/green noise under illumination-field compensation; global gamma was milder.",
+    "Independent math check found former slope gate removed valid proposals. Finite C1 transition and curvature guard are internally consistent, not physical identity evidence.",
+    "Pilot003 global gamma independent structure audit passed49/49."
+  ],
+  "chosen_variant": "global_gamma",
+  "gamma": 0.7,
+  "decision": "Freeze current core; finish all400 as requested; no further scoring tweaks, no baseline promotion. Keep all failures and independent review records.",
+  "ground_truth_accuracy": null,
+  "contact_acceptance": false
+}

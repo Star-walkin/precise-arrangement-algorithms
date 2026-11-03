@@ -1,0 +1,24 @@
+{
+  "version": "IR-A4.0.0",
+  "sources_sha256": {
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\whole_io.py": "678223283c7363d6907b225eeeff9e7ea518746731ce95124fd348775982f0bd",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\free_rope.py": "c57f77270a1c0308570a77ff70dee67fe7caa25b2dbb55bafd2e80aae9cf60fd",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\boundary_occlusion.py": "9d3376ebe99ce6221f0e26ed76eb5e2191aee18be6d9287158201e9ff20f02a8",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\whole_path.py": "0d027640de136dddefd73b5310370985406b605f253d10ed988cc25e961625c5",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\run_whole.py": "9b49aa523b4ba5e98d2bc20bad8ef36f2c9f7fae7d8197df9648e2f5533c2063",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\protocol.json": "4d0e9dbe6575f2f31d102e664634b7d0194f94f4d70f38ca8fae1298d41c550d",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\protocol_addendum_001.json": "e7a9584c431b9f1423d84bb9dcd620f065a7440a8370087c7b0bf6dd09c72469",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v2\\free_refinement.py": "65ca049228d0dec2d941a4e08bddf4f9bb52935570cf9827dc7d9adbc1272c8c",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\run_batch.py": "3489eec04d794576c93fe77f8e86970c234bdb0da95b911f2e4f68e6240b3d2c"
+  },
+  "accepted_pilot": "pilot_002",
+  "planned_input_count": 400,
+  "workers": 8,
+  "decision": "Structural search-domain repair retained. Raw crossing sampling coverage and unknown-score semantics repaired; no verified same-material gain claimed. No tuning on all400.",
+  "pilot_evidence": {
+    "pilot_001/independent_visual_review.json": "8c5d1fed9b73696181c38acdd65f0185065f6204503deb9c1986bd5234459acb",
+    "pilot_002/independent_visual_review.json": "c3c0055919231a6e5893eaeb49154af443efe50e28f9b07ddcbd745549aa0638",
+    "pilot_002/structure_audit.json": "31862876d61d858372d07eba4e2bb97e694c0e51cb9a87086981f930f764d058",
+    "pilot_002/boundary_evidence_comparison.json": "e25191860ea5dc1e0c47cdc31ef9dcb8133299d0868b3bdba654f37f4c3c073d"
+  }
+}

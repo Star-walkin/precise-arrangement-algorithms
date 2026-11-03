@@ -1,0 +1,27 @@
+{
+  "version": "IR-A4.0.1",
+  "sources_sha256": {
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\whole_io.py": "7714f414425a031fe1491f46e0223f5a5330da42823c325f8f31ccb9b12eaeed",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\free_rope.py": "c57f77270a1c0308570a77ff70dee67fe7caa25b2dbb55bafd2e80aae9cf60fd",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\boundary_occlusion.py": "9d3376ebe99ce6221f0e26ed76eb5e2191aee18be6d9287158201e9ff20f02a8",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\whole_path.py": "01c3bff3fef572c34a2db4a9239ad2c1beff2ceab0e304fcdc98320d5aba6416",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\run_whole.py": "2c3beaed6183eb1fe2803b7edf2ee5b227a724858df3bfe9fc179b7f2bcb56d0",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\protocol.json": "4d0e9dbe6575f2f31d102e664634b7d0194f94f4d70f38ca8fae1298d41c550d",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\protocol_addendum_001.json": "e7a9584c431b9f1423d84bb9dcd620f065a7440a8370087c7b0bf6dd09c72469",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\protocol_addendum_002.json": "7b57635abe549d40ea2ee4fa935cf39ea10a0551337a053cb64fb5f7559d3bc3",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v2\\free_refinement.py": "65ca049228d0dec2d941a4e08bddf4f9bb52935570cf9827dc7d9adbc1272c8c",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v4\\run_batch.py": "4881d367d63df6d6e52402488412328a73420de5821364068879b88442eaa7a5"
+  },
+  "accepted_pilot": "pilot_003",
+  "planned_input_count": 400,
+  "workers": 8,
+  "preserved_failure_run": "all_001",
+  "correction_protocol_sha256": "7b57635abe549d40ea2ee4fa935cf39ea10a0551337a053cb64fb5f7559d3bc3",
+  "decision": "Reject never-enter saved continuation; retained independently remeasured free/straight mask. No raw threshold changes. Background-tail regression removed, known coverage loss documented.",
+  "regression_evidence": {
+    "pilot_003/structure_audit.json": "85218abcc6ca0a6fbc8efffd8e0bdd7377d3d7212ea135383782135f0025cf1e",
+    "repair_checks_001/independent_visual_review.json": "5821134e35b1bd5c98a79a3f9314c0d19277d630b1fd8cf8cac4a7825ee7b73a",
+    "candidate_entry_selfcheck_001.json": "bc0aba2f7b90a5457b0f1dbafc8d04604a88684fc5a981daa21d02b74f727a93",
+    "all_001/qa_postrun/independent_visual_review.json": "97421d801a1f865c19726b433bf5ca9017d722ede7c8aff63d96c822c0dc4ae7"
+  }
+}

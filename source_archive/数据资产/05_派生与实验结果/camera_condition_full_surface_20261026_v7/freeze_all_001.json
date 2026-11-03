@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-10-26T07:25:24.401535+00:00",
+  "version": "RB-C4.0.0",
+  "selected_pilot": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_20261026_v7\\pilot_002",
+  "selected_evaluation": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_20261026_v7\\evaluation_002",
+  "source_sha256": {
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_20261026_v7\\run_full_surface.py": "c293938ba00af6638063d7122ad46611cf4b98fc0a2e0d05e566728488b40483",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_20261026_v7\\full_surface_core.py": "e339e75d6251f4b4ca2ea72d30d4b266a8ded1d18c8710a020604f7288c1e165",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_20261026_v7\\protocol.json": "ddb705a7dfdda8d252b89adbb32ebe324c78534b76cb02b90c28ed1d548beb54",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_20261026_v7\\protocol_revision_002.json": "c03144d39600d804cd03cb711d7b53b66e095b9722b3a1e8150eedb83bc4a254",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_20261026_v7\\evaluation_protocol.json": "d3eff6c925d68b078e1eb704deb760dba6dda09b0089bdd8de00daa9e712c500",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_rope_boundaries_20261025_v3\\free_rope_v3.py": "0fd34f4394dd6d36ee15819d0217a5e99b6b021fd69a93cb246a5bfea2682840",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_rope_boundaries_20261023_v2\\free_rope_occlusion.py": "d2c88de70265fe7f2b4d9a94c7c00324d6833556b6abeee5df26f3dc983855dc",
+    "D:\\precise_arrangement\\vision_geometry_lab\\rope_detector.py": "6d90427900284332f032efd06abd2951d23b8b08df32e6a47a3fc4dd8bcdebf0",
+    "D:\\precise_arrangement\\vision_prototype\\semantic_locator.py": "dddeac587362f6002456100a447e701b74a73afe8f748b277ca77fa9873ab83e",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\conic_family.py": "392eb740cd7697bb4ddbc17359a193b2c9b9b761b1528573349370f7ac66eaa9"
+  },
+  "evidence_sha256": {
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_20261026_v7\\pilot_002\\summary.json": "20796365456b7927773b34bb634429471f14d65520ddf6c48b095e87a3d41735",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_20261026_v7\\pilot_002\\independent_audit.json": "4db5b8684ec699476b52876672afbed8683083b7ecb59918b102a4c3cb2a1f1b",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_20261026_v7\\pilot_002\\run_context.json": "88ddb4594c745ca3c7c1e65d9486fa043cdd2d3dae5d2fb62553606185e9212e",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_20261026_v7\\evaluation_002\\summary.json": "86efe3e3c9985c62ae42bb5fa392df057c259281c18a19958188e4ad962a3a43",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_20261026_v7\\evaluation_002\\run_context.json": "fd3db6cfa252ec797680fb295fe6b2568652cb0da1918bd589a91ee7a64507e9",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_20261026_v7\\protocol.json": "ddb705a7dfdda8d252b89adbb32ebe324c78534b76cb02b90c28ed1d548beb54",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_20261026_v7\\protocol_revision_002.json": "c03144d39600d804cd03cb711d7b53b66e095b9722b3a1e8150eedb83bc4a254",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_20261026_v7\\revision_notes.json": "ff5c5fa3ba21f618049f1f84080a8f1a1faac6ffd2aca836da8a76c08d7bef1e",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_20261026_v7\\evaluation_protocol.json": "d3eff6c925d68b078e1eb704deb760dba6dda09b0089bdd8de00daa9e712c500"
+  },
+  "bright_hit_new": 0.9877363436772946,
+  "bright_hit_c3": 0.9888668610938166,
+  "edge_hit_new": 0.8430628272251309,
+  "edge_prediction_equal_simple": true,
+  "decision": "Run full400 with frozen second revision. Pixel/structure and bright nonregression passed; dark/tangency accuracy not established. Keep SAM semantic failure ruler_left_05 and all first-round outputs.",
+  "first_run_not_overwritten": true,
+  "remaining_tuning_rounds": 0
+}

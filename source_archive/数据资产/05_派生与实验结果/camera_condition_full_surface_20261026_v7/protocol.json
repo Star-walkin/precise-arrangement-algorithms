@@ -1,0 +1,43 @@
+{
+  "version": "RB-C4.0.0",
+  "name": "全卷面C4",
+  "date": "2026-10-26",
+  "baseline": "RB-C3.0.0 accepted by user; whole chain frozen separately",
+  "input_manifest_sha256": "712859a4a830c08d556729a98cad76d039c684c290d2c4c57efa2b7ad3b45e69",
+  "qa_plan_sha256": "8b3b73673ebddda9a3bf1ee6fd45ac2fd3bda958cba472be78c27dcea351d913",
+  "sam_output_manifest_sha256": "252fb0fcc60db09ba0113cabc70ed2118f131853eeddba9c7688db322a351634",
+  "scope": {
+    "input_count": 400,
+    "left": 200,
+    "right": 200,
+    "qa_count": 38,
+    "reserved_inputs": false,
+    "hardware": false,
+    "online_deployment": false
+  },
+  "roi": "SAM2 prior body_branches_002 masks and black RGB copied byte for byte, automatic suggestions not labels",
+  "occlusion": "Re-run v3 historical+semantic proposal on full SAM ROI. Preserve previous B1 masks inside bright ROI, new evidence/unknown outside. Zero is not proof of no rope.",
+  "algorithm": "C3 visual groups anchor bright observations; raw-image dark valleys need unique association and multi-column support; each accepted group one weighted constrained conic; inference separately rasterized.",
+  "budget": {
+    "max_parameter_revisions": 2,
+    "development_selection": "fixed qa_plan 38 open development images",
+    "no_new_training": true
+  },
+  "hard_checks": [
+    "400 input inclusion and hashes",
+    "SAM ROI/black RGB byteexact",
+    "0/255 masks",
+    "models within SAM effective ROI",
+    "one coefficient set per accepted group",
+    "strictly positive weights for every accepted member",
+    "no silent failure or overwrite"
+  ],
+  "comparison": "See evaluation_protocol.json frozen before first experiment; C3 visible consistency and same-input pure extension compared, including endpoint holdout.",
+  "delivery": "400 full-surface RGB ROI, 400 boundary overlays, masks, group/fit records, all failures and independent audit; failed empirical gate must be reported, not erased.",
+  "unknowns": [
+    "SAM2 full surface semantics pending review",
+    "No labeled tangency point, cannot prove coverage of physical contact",
+    "Dark inferred curves and grouping do not establish physical material identity",
+    "Dataset known spool exterior scale remains approximately700mm only"
+  ]
+}

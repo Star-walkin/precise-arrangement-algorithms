@@ -1,0 +1,17 @@
+{
+  "common_step": 600,
+  "paths": {
+    "D0": {
+      "path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\data_expansion_d1_20261102_v1\\branches\\D0\\checkpoints\\step_0600.pt",
+      "sha256": "227b3c8677016eefdfc6af80239ed9c9062dfaf7c42ad63b87e3208181fdcbe3"
+    },
+    "D1": {
+      "path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\data_expansion_d1_20261102_v1\\branches\\D1\\checkpoints\\step_0600.pt",
+      "sha256": "b5a487957c69d6faf9fc9d87acca248aae1cf0c0bf1db2cfb0dddbe1d890af4f"
+    }
+  },
+  "selection_rule": "largest common saved update; no evaluation targets or gallery heat inspected for selection",
+  "shared_old_update_inputs_verified": 300,
+  "D0_steps": 600,
+  "D1_steps": 600
+}

@@ -1,0 +1,18 @@
+{
+  "version": "DR-C3.1.0",
+  "frozen_utc": "2026-10-26T15:24:18.547824+00:00",
+  "source_sha256": {
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_rope_boundaries_20261025_v3\\full_roi_observation.py": "64fdc0aca8e45019ebed32d50e3bf5a5089fee2d426a8b942a817125e2099555",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\dark_c3.py": "03e9ab25815d6a287054be24570cf0fef24ce24fc874fe7722b5ca74fe083457",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\dark_roi.py": "023f0ca843716f1ab9cb102745afc31131957c4b68bc1b522e2766951ac59b5d",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\data_io.py": "e6a01b5fba70236471238e5e558f4a6f616709d5c33284ecb51f161996861f14",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\protocol.json": "d4b2f22a445f1c2d8cdffb881ea9db285cb86f1e59fb2e77f5f0b6abfab3abdb",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\run.py": "2dc353ead6b774d25ae56bdab81d4e33f61a8a5f6dd7feb128893bc1b0c4820f",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\conic_family.py": "392eb740cd7697bb4ddbc17359a193b2c9b9b761b1528573349370f7ac66eaa9",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\experiment_io.py": "59df951608cac1584bbb8b7b444ccc5799066afa6a885b4960ccbd583b4e3f85",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\protocol.json": "b71aee6dc0422075247f8eff192fe5ef019540af331d4c196ecdff3c22341af9"
+  },
+  "pilot": "pilot_001",
+  "pilot_summary_sha256": "e387f0e8919837a9b9254b83a6c690ae075d6d4f0177e4257562945207903147",
+  "purpose": "Three image stages on same400; no contact or incoming-rope task."
+}

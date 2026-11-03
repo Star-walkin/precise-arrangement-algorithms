@@ -1,0 +1,35 @@
+{
+  "version": "IR-A1.0.0",
+  "selected_pilot": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\pilot_003",
+  "selected_review": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\root_visual_round003.json",
+  "decision": "选择第三轮用于400张离线查看：修复可见自由绳漏检并保留原有局部测量，几何候选更平滑；接触位置仍缺乏可靠单点证据，未通过接触检测验收。",
+  "created_utc": "2026-10-26T10:43:03.698248+00:00",
+  "source_sha256": {
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\experiment_io.py": "59df951608cac1584bbb8b7b444ccc5799066afa6a885b4960ccbd583b4e3f85",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\run_experiment.py": "1f48465bf22b066c8f5598e746de636ddada2c5591803cb2a7e0735bf5bec5ab",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\render_results.py": "f5775f52a7bba312f784f81abfb11aa08b56252f2d5b985ffb19b63d6cb533c9",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\free_segment.py": "35d737e6edb8d5a6f08fb0baf2fcc4f781b43d0b9596a29ce5d865db5406338b",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\connection_core.py": "d7ea9c8a83bc16ce2a4bac52abf18631b05bff4ffbeaf49e41ebcda4370af12f",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\protocol.json": "b71aee6dc0422075247f8eff192fe5ef019540af331d4c196ecdff3c22341af9",
+    "D:\\precise_arrangement\\vision_geometry_lab\\rope_detector.py": "6d90427900284332f032efd06abd2951d23b8b08df32e6a47a3fc4dd8bcdebf0",
+    "D:\\precise_arrangement\\vision_prototype\\semantic_locator.py": "dddeac587362f6002456100a447e701b74a73afe8f748b277ca77fa9873ab83e"
+  },
+  "model_sha256": {
+    "D:\\precise_arrangement\\vision_training\\task_left_v1\\models\\left_camera_thick_v1\\left_camera_thick_v1.onnx": "7762658bd71840c8c4a620dc143f8e9bf2b4cc71a15790b526c732ad531d266a",
+    "D:\\precise_arrangement\\vision_training\\task_left_v1\\models\\left_camera_thick_v1\\onnx_metadata.json": "8c1059dd8c87ebe754dfba116ee13f92876c820af55d15f354a65bf06e1f50da",
+    "D:\\precise_arrangement\\vision_training\\task_v1\\models\\right_camera_poc_v1\\right_camera_poc_v1.onnx": "3f19d7dc2642c23864954c4f70b9de52a23843539af905c235a227f1eb57aef2",
+    "D:\\precise_arrangement\\vision_training\\task_v1\\models\\right_camera_poc_v1\\onnx_metadata.json": "4ff194f76fa246cbad22013e47f2f2cdf1d57a54a3c81229d218b2881d7a58a4"
+  },
+  "evidence_sha256": {
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\pilot_003\\summary.json": "03390cc452ba25197d6c3b2541b30860b91287cde526ed2c084814651b905ad4",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\pilot_003\\independent_audit.json": "bd463c32906894624bbb6eefa5b4faf07abde8b839a0d21175536ca932b12ee6",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\pilot_003\\run_context.json": "8a692b8c1a9a048fc1240ea635ae8e3dcbe3bc3b782d873112c6d28d98c596c9",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\root_visual_round003.json": "249accf4420908f05c6876f57e61227ba85c98de8f82406896f2509b8f32033b",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\protocol.json": "b71aee6dc0422075247f8eff192fe5ef019540af331d4c196ecdff3c22341af9",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\evaluation_scope.json": "992771f75f7fc3f0e2c8e8c0c8d4a0f851f6dd71fc35ffb25203dd45f301d826"
+  },
+  "accepted_scope": "Offline 400-image review release, not contact/presence/physical accuracy acceptance",
+  "core_tuning_after_freeze": false,
+  "equipment_access": false,
+  "reserved_inputs": false
+}

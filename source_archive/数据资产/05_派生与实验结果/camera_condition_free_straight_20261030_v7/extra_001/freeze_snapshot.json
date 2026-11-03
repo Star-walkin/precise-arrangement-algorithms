@@ -1,0 +1,25 @@
+{
+  "version": "IR-A7.0.0",
+  "name": "直绳双边 A7",
+  "date": "2026-10-30",
+  "created_at": "2026-10-30T17:08:32.710705",
+  "sources_sha256": {
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\a7_io.py": "d8b79f7653a227cbd13207c58b580788b43cf53a959e537c9587b8783ff492f3",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\free_rope.py": "c57f77270a1c0308570a77ff70dee67fe7caa25b2dbb55bafd2e80aae9cf60fd",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\free_seed_recovery.py": "fc9df09cc53e508846ff9d23bea0a6517e4e5ca29d1a8e0c416a026da1d1f864",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\strand_signature.py": "198b5a78ad4351b88909a5950f353119ffeed54510bb6bea91972a62018fbf26",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\straight_detector.py": "adc86d71c117966e7d78df2b95f5400526f1c4a2e71422496a5969c38e73b61c",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\run_experiment.py": "1c8f412f4b4ab61d3386e8394bdd8fb3c5628d19ad218a4bf7bd33b21650c381",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\protocol.json": "507e1d26517d07e837913d03e47fcd309fc78c82cb323954d3d65df1fda7e7ae",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v2\\free_refinement.py": "65ca049228d0dec2d941a4e08bddf4f9bb52935570cf9827dc7d9adbc1272c8c"
+  },
+  "accepted_pilot": "pilot_003",
+  "pilot_summary_sha256": "9060a9a358abb71d209412b973bf9031b3ba616a200652a9805edd272e2ac104",
+  "budget": "Three fixed16 pilots completed; no further visual tuning; preset8 then all400.",
+  "scope": "Observed straight rope segments only, no bend/contact/full rope claim",
+  "known_limits": [
+    "some visible straight overlap remains missed",
+    "other side of long guide occluder can remain missing",
+    "no labeled presence/extent accuracy"
+  ]
+}

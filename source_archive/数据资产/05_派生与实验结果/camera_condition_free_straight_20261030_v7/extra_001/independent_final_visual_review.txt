@@ -1,0 +1,69 @@
+IR-A7.0.0 冻结后独立视觉复核
+实际查看：10 张（pilot003 两张 + extra001 八张），7 张原图/叠加裁图 + 3 张 UNKNOWN 原图整图。
+指定 10 张已实际查看。7 个检出样本的可见主干总体贴合；Rrun55 遮挡两侧恢复但局部端点伸入遮挡。亮暗交界漏段及暗端边界不确定仍在，不能宣称完整覆盖。3 个 UNKNOWN 未见明显清晰自由段，但仅保留待人工确认。
+
+不是人工像素真值评分，不能给准确率、召回率、全自动同根身份或物理接触结论。
+7 个检出样本的 QA 裁图可能未显示预测外的全部漏段；只对实际可见区域作观察。
+3 个 UNKNOWN 不算正确无绳，也不算正确拒识。
+已看到漏段、短块和个别遮挡端偏长；保留这些失败，不以片段数虚增独立工况。
+未查看 S1 人工标签、保留集或设备；未修改 C3/D4/F3/A6 或本次冻结算法。
+
+pilot_003 / L_run_20260923_01__f000142__left / DETECTED
+主体中心线和宽度基本贴合可见直绳；比 pilot001 已延入卷面暗区。末段仍有多个短缺口，靠亮卷面处覆盖零碎；未见明显跳到平行旧圈。
+未观察到明显过长；截图以外的终点未评价。
+实际查看文件：D:\precise_arrangement\数据资产\05_派生与实验结果\camera_condition_free_straight_20261030_v7\pilot_003\qa_crops\left_camera\L_run_20260923_01__f000142__left.jpg
+主结果：D:\precise_arrangement\数据资产\05_派生与实验结果\camera_condition_free_straight_20261030_v7\pilot_003\图像结果\01_已检出\left_camera\L_run_20260923_01__f000142__left.png
+
+pilot_003 / R_run_20260923_01__f000055__right / DETECTED
+导杆两侧均输出同轴直段，主体基本贴合。导杆中央保持空白；左段仍有小缺口，右段相对 pilot001 恢复。
+右侧重现段的左端绿色延入少量黑色遮挡，存在局部端点偏长；没有将整个导杆涂成绳。
+实际查看文件：D:\precise_arrangement\数据资产\05_派生与实验结果\camera_condition_free_straight_20261030_v7\pilot_003\qa_crops\right_camera\R_run_20260923_01__f000055__right.jpg
+主结果：D:\precise_arrangement\数据资产\05_派生与实验结果\camera_condition_free_straight_20261030_v7\pilot_003\图像结果\01_已检出\right_camera\R_run_20260923_01__f000055__right.png
+
+extra_001 / L_static_20260922_01__f000301__left / DETECTED
+外侧清晰绳和卷面重叠直段均有较长覆盖，主体走向贴合；亮带上留较大缺口，后段又恢复同轴片段。
+暗尾精确宽度及终止位置图像证据较弱，不能据此宣布整段正确或接触点正确。
+实际查看文件：D:\precise_arrangement\数据资产\05_派生与实验结果\camera_condition_free_straight_20261030_v7\extra_001\qa_crops\left_camera\L_static_20260922_01__f000301__left.jpg
+主结果：D:\precise_arrangement\数据资产\05_派生与实验结果\camera_condition_free_straight_20261030_v7\extra_001\图像结果\01_已检出\left_camera\L_static_20260922_01__f000301__left.png
+
+extra_001 / L_run_20260923_01__f001155__left / DETECTED
+黄背景上的长直段与可见明暗绳体基本贴合，方向稳定；左端清晰自由段仍被分成短块，有可见漏段。
+未见明显远离绳体的长延伸；最右暗端的物理接触位置不评价。
+实际查看文件：D:\precise_arrangement\数据资产\05_派生与实验结果\camera_condition_free_straight_20261030_v7\extra_001\qa_crops\left_camera\L_run_20260923_01__f001155__left.jpg
+主结果：D:\precise_arrangement\数据资产\05_派生与实验结果\camera_condition_free_straight_20261030_v7\extra_001\图像结果\01_已检出\left_camera\L_run_20260923_01__f001155__left.png
+
+extra_001 / dual_20260924_111500__pair0555__left / DETECTED
+清晰自由段贴合，跨过亮卷面后同轴暗绳段被恢复；进入亮带处仍有空缺。
+暗段绿色带宽可能包含部分相伴阴影，精确边界未定量验收；未见明显整段切换到旧圈，暗端身份和终点仍需保留不确定。
+实际查看文件：D:\precise_arrangement\数据资产\05_派生与实验结果\camera_condition_free_straight_20261030_v7\extra_001\qa_crops\left_camera\dual_20260924_111500__pair0555__left.jpg
+主结果：D:\precise_arrangement\数据资产\05_派生与实验结果\camera_condition_free_straight_20261030_v7\extra_001\图像结果\01_已检出\left_camera\dual_20260924_111500__pair0555__left.png
+
+extra_001 / L_run_20260923_01__f000237__left / DETECTED
+可见长直段上绿色主体基本贴合；亮暗过渡和末段存在多个短缺口，局部短块有轻微边缘偏移。
+未观察到明显跨出绳体的长延伸；截断并非三维接触点。
+实际查看文件：D:\precise_arrangement\数据资产\05_派生与实验结果\camera_condition_free_straight_20261030_v7\extra_001\qa_crops\left_camera\L_run_20260923_01__f000237__left.jpg
+主结果：D:\precise_arrangement\数据资产\05_派生与实验结果\camera_condition_free_straight_20261030_v7\extra_001\图像结果\01_已检出\left_camera\L_run_20260923_01__f000237__left.png
+
+extra_001 / ruler_right_02 / DETECTED
+黑背景、黄背景以及卷面重叠位置的直段均被部分覆盖，主轴基本贴合；左侧暗卷面段和中部仍有几个缺口。
+未见明显错误长延伸；卷面暗段的精确宽度和终点未作真值验收。
+实际查看文件：D:\precise_arrangement\数据资产\05_派生与实验结果\camera_condition_free_straight_20261030_v7\extra_001\qa_crops\right_camera\ruler_right_02.jpg
+主结果：D:\precise_arrangement\数据资产\05_派生与实验结果\camera_condition_free_straight_20261030_v7\extra_001\图像结果\01_已检出\right_camera\ruler_right_02.png
+
+extra_001 / dual_20260924_111500__pair0105__right / UNKNOWN
+实际看过整幅原图：当前可见卷面、法兰、按钮和框架，未发现与其他检出样本同样清楚的横跨卷面斜自由段。UNKNOWN 保留，不计正确无绳。
+没有绘制绳掩膜，不存在已绘制的工具误检；不能据此认定场景确实无绳。
+实际查看文件：D:\precise_arrangement\数据资产\05_派生与实验结果\camera_condition_images_20261009_v2\images\right_camera\dual_20260924_111500__pair0105__right.png
+主结果：D:\precise_arrangement\数据资产\05_派生与实验结果\camera_condition_free_straight_20261030_v7\extra_001\图像结果\03_未检出\right_camera\dual_20260924_111500__pair0105__right.png
+
+extra_001 / dual_20260924_111500__pair0195__right / UNKNOWN
+实际看过整幅原图：有人手/手臂接近按钮，卷面可见；未发现清晰横跨卷面的斜自由段。UNKNOWN 保留，不计正确无绳。
+没有绘制绳掩膜，不存在已绘制的手臂或工具误检；不能据此认定场景确实无绳。
+实际查看文件：D:\precise_arrangement\数据资产\05_派生与实验结果\camera_condition_images_20261009_v2\images\right_camera\dual_20260924_111500__pair0195__right.png
+主结果：D:\precise_arrangement\数据资产\05_派生与实验结果\camera_condition_free_straight_20261030_v7\extra_001\图像结果\03_未检出\right_camera\dual_20260924_111500__pair0195__right.png
+
+extra_001 / dual_20260924_111500__pair0015__right / UNKNOWN
+实际看过整幅原图：卷面和法兰较清楚、上部背景较暗，未发现清晰横跨卷面的斜自由段。UNKNOWN 保留，不计正确无绳。
+没有绘制绳掩膜，不存在已绘制的工具误检；不能据此认定场景确实无绳。
+实际查看文件：D:\precise_arrangement\数据资产\05_派生与实验结果\camera_condition_images_20261009_v2\images\right_camera\dual_20260924_111500__pair0015__right.png
+主结果：D:\precise_arrangement\数据资产\05_派生与实验结果\camera_condition_free_straight_20261030_v7\extra_001\图像结果\03_未检出\right_camera\dual_20260924_111500__pair0015__right.png

@@ -1,0 +1,64 @@
+{
+  "version": "DR-D2.1.1",
+  "name": "暗纹锚定 D2",
+  "date": "2026-10-27",
+  "input_count": 400,
+  "d1_output_manifest_sha256": "771d577a960a59d0bbb44be330465a30b22f6a01c5d99a31bb23176e03b9be5c",
+  "pilot_images": [
+    "images/left_camera/L_run_20260923_01__f000648__left.png",
+    "images/left_camera/L_run_stop_run_20260922_01__f004601__left.png",
+    "images/left_camera/dual_20260923_101643__pair0315__left.png",
+    "images/left_camera/dual_20260924_111143__pair0585__left.png",
+    "images/left_camera/ruler_left_01.png",
+    "images/left_camera/ruler_left_05.png",
+    "images/right_camera/R_run_20260923_01__f000757__right.png",
+    "images/right_camera/R_run_stop_run_20260922_01__f002627__right.png",
+    "images/right_camera/dual_20260923_101643__pair0315__right.png",
+    "images/right_camera/dual_20260924_111143__pair0585__right.png",
+    "images/right_camera/ruler_right_01.png",
+    "images/right_camera/ruler_right_05.png"
+  ],
+  "upstream_source_sha256": {
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_rope_boundaries_20261025_v3\\full_roi_observation.py": "64fdc0aca8e45019ebed32d50e3bf5a5089fee2d426a8b942a817125e2099555",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\conic_family.py": "392eb740cd7697bb4ddbc17359a193b2c9b9b761b1528573349370f7ac66eaa9",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\dark_roi.py": "023f0ca843716f1ab9cb102745afc31131957c4b68bc1b522e2766951ac59b5d",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_dark_roi_20261026_v1\\dark_c3.py": "03e9ab25815d6a287054be24570cf0fef24ce24fc874fe7722b5ca74fe083457"
+  },
+  "scope": "Keep D1 ROI/enhanced pixels; improve only dark boundary observations/grouping/fitting. No contact/identity task.",
+  "budget": "Initial 4 runs exhausted: threshold_only control plus3 independent tensor/spline pilots. That branch stopped for visible strand confusion. Before new predictions, allow at most2 fixed12 C3-bright-anchor pilots, then freeze best acceptable anchored branch or report remaining failure. One additional bounded fit-only repair authorised by documented same-point diagnostic; no further tuning.",
+  "comparison": "Same12 every round; compare original D1, simple relaxed B1/C3, D2. Fixed6 independent visual diagnostics; all failures retained.",
+  "gates": [
+    "Actual original/enhanced groove support, no claims based on count alone.",
+    "Do not accept widespread compressed-block or wire-strand hallucinations.",
+    "Side curvature improvement must follow visible samples; no long unsupported extrapolation.",
+    "Keep every400 input including empty/rejected outputs; metadata and masks outside ROI0."
+  ],
+  "ground_truth_accuracy": null,
+  "html": false,
+  "equipment_access": false,
+  "reserved_access": false,
+  "initial_protocol_sha256": "4b6e19a31cff4b446827c5b35175f375cdfac94fd6c2d0534d359e04864eac4f",
+  "amendment": {
+    "date": "2026-10-27",
+    "cause": "Independent fixed6 review failed pilots001/002/003: neighboring curves follow conflicting wire-strand directions despite no mathematical crossing. Do not deploy independent orientation branch.",
+    "new_branch": "Use already frozen accepted bright C3 original observed-point groups to anchor row order/shared orientation, seek dark original-image valleys and fit shared smooth deformation. No new labels or input changes.",
+    "input_and_comparison_unchanged": true,
+    "no_old_output_overwrite": true
+  },
+  "fitting_repair_addendum": {
+    "date": "2026-10-27",
+    "trigger": "Pilot005 has 209/423 saved curve fits beyond original p90 0.25pitch consistency gate. Read-only same-observation counterfactual found hard amplitude clipping creates avoidable error.",
+    "budget": "One final fixed12 fit-only repair pilot006; observation extraction and all inputs unchanged. No additional detector tuning. Preserve all earlier failures.",
+    "change": "Remove individual amplitude clip while retaining spatial kernel/slope smoothing; project jointly to original fixed row order and minimum .5pitch spacing. Mark residual-inconsistent fits explicitly in preview.",
+    "gate": "Same raw observations must be identical to005; report residual against full original point denominator, do not discard bad points to improve fit numbers. Remaining unreliable fits remain visible as orange dashed review candidates, not accepted accuracy."
+  },
+  "freeze_manifest": "freeze_all_null_guard.json",
+  "final_run": "all_002",
+  "runtime_fix": {
+    "kind": "null model rejection guard only, no algorithm parameter change",
+    "failed_run_preserved": "all_001",
+    "failed_image": "images/right_camera/R_run_20260923_01__f001348__right.png",
+    "reason": "Frozen C3 fit.model=None; no trusted bright anchor. Preserve original ROI and output no inferred boundary.",
+    "validation": "Targeted failed-input rejection check plus full400 rerun; compare399 successful predictions to all_001."
+  }
+}

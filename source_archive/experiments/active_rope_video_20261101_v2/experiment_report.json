@@ -1,0 +1,142 @@
+{
+  "version": "IR-V2.0.0",
+  "status": "completed_offline",
+  "videos": 16,
+  "source_frames": 18017,
+  "fresh_gray_detections": 18017,
+  "output_frames": 18017,
+  "new_B_forwards_core_frames": 16249,
+  "actual_B_forwards_including_warmup": 16943,
+  "actual_gray_detection_calls_including_warmup": 18848,
+  "states": {
+    "UNKNOWN": 3992,
+    "ACCEPTED": 10833,
+    "STALE": 3067,
+    "REACQUIRED": 125
+  },
+  "wall_seconds": 10489.105186200002,
+  "delivery_folder": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v2\\四子图视频",
+  "files": [
+    {
+      "path": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v2\\四子图视频\\dual_20260923_101517__left__逐帧四子图.mp4",
+      "sha256": "dc9049e4b45f44f3677debbaef245003736f2203e029e4c01596d24af81c5140",
+      "frames": 600,
+      "fps": 10.0
+    },
+    {
+      "path": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v2\\四子图视频\\dual_20260923_101643__left__逐帧四子图.mp4",
+      "sha256": "be2babd1f659f2e374a7827594e77bd2186e7fc28f28d5b99eaa29df7bc09670",
+      "frames": 601,
+      "fps": 10.0
+    },
+    {
+      "path": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v2\\四子图视频\\dual_20260923_101517__right__逐帧四子图.mp4",
+      "sha256": "774147e79ca3f68c9e87288bb77ebc367b32db399889871eb648dc3e4f4dd046",
+      "frames": 601,
+      "fps": 10.0
+    },
+    {
+      "path": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v2\\四子图视频\\dual_20260923_101643__right__逐帧四子图.mp4",
+      "sha256": "2b12f25e0593822280f1118c1047e3b746fb095d612c9f204aaf6124431099ed",
+      "frames": 601,
+      "fps": 10.0
+    },
+    {
+      "path": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v2\\四子图视频\\dual_20260923_113305__left__逐帧四子图.mp4",
+      "sha256": "dcff6ebaea3006a93c8d72b13aae527402e5be32c3cee3cb34a359994c1756b5",
+      "frames": 601,
+      "fps": 10.0
+    },
+    {
+      "path": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v2\\四子图视频\\dual_20260923_113305__right__逐帧四子图.mp4",
+      "sha256": "543ffd641bfe0efb6ed59400abd8767880898a4e98c43387d9a7a85288d9c3e2",
+      "frames": 600,
+      "fps": 10.0
+    },
+    {
+      "path": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v2\\四子图视频\\dual_20260924_111143__left__逐帧四子图.mp4",
+      "sha256": "1b3eb5768d4e6d83e1f08c293abc7045bdfe8df634797627c864d9c9706a03db",
+      "frames": 601,
+      "fps": 10.0
+    },
+    {
+      "path": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v2\\四子图视频\\dual_20260924_111143__right__逐帧四子图.mp4",
+      "sha256": "db7719d14a03f435fe685756baf3976885e9abc1ff40e4abbbcbe76438f3ea7d",
+      "frames": 601,
+      "fps": 10.0
+    },
+    {
+      "path": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v2\\四子图视频\\dual_20260924_111500__left__逐帧四子图.mp4",
+      "sha256": "35c91636dda0657c77e74002f07ac08026fc2ce6a856bdaf29226274019cee52",
+      "frames": 601,
+      "fps": 10.0
+    },
+    {
+      "path": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v2\\四子图视频\\dual_20260924_111500__right__逐帧四子图.mp4",
+      "sha256": "02652b71259de42c86af797359ed8ba232a8228994a24314037e0e7ad08fd3c9",
+      "frames": 601,
+      "fps": 10.0
+    },
+    {
+      "path": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v2\\四子图视频\\L_run_20260923_01__left__逐帧四子图.mp4",
+      "sha256": "9d1c53033118f669b7c957d304466c78165e815c07f42dc42584dcd41aff2657",
+      "frames": 1266,
+      "fps": 30.595968
+    },
+    {
+      "path": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v2\\四子图视频\\R_run_20260923_01__right__逐帧四子图.mp4",
+      "sha256": "74a0c9682a947aa51c80022bf3198bff72003125ba0c0927a36729ffbe431eda",
+      "frames": 1478,
+      "fps": 30.562448
+    },
+    {
+      "path": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v2\\四子图视频\\L_static_20260922_01__left__逐帧四子图.mp4",
+      "sha256": "5f2e231a553467eaa8ae1dee8fae2a5b70d84ebd8b85bd70728471b6898f0bc5",
+      "frames": 1006,
+      "fps": 10.009951
+    },
+    {
+      "path": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v2\\四子图视频\\R_static_20260922_01__right__逐帧四子图.mp4",
+      "sha256": "f719f59b614134bafc05a72f917d4b40ba5c2419dd1aca84ce51dd98b47d21bf",
+      "frames": 957,
+      "fps": 30.45346
+    },
+    {
+      "path": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v2\\四子图视频\\R_run_stop_run_20260922_01__right__逐帧四子图.mp4",
+      "sha256": "695a4cb8278eae0d86df7127e0a0e091809a6b0cd4d653a4729e25b2a9aaaad1",
+      "frames": 2654,
+      "fps": 30.58379
+    },
+    {
+      "path": "D:\\precise_arrangement\\experiments\\active_rope_video_20261101_v2\\四子图视频\\L_run_stop_run_20260922_01__left__逐帧四子图.mp4",
+      "sha256": "0779658ce6ac02e9fbad75376c15c40cb26dadf522c0954c096fd76b1e6fcfb1",
+      "frames": 4648,
+      "fps": 30.578544
+    }
+  ],
+  "gray_coordinate_changes": 18001,
+  "gray_detection_rule": "fresh original-gray observations every source frame; current adjacent-boundary midpoints used by H6",
+  "old_gray_coordinate_fallback": false,
+  "held_heatmaps": false,
+  "held_gray_centers": false,
+  "original_full_F3_fusion_rerun_per_frame": false,
+  "static_roi_calibration_used": true,
+  "B750_weights_changed": false,
+  "training": false,
+  "devices": false,
+  "reserved_sources": false,
+  "compute_realtime_verified": false,
+  "target_identity_accuracy_evaluated": false,
+  "protocol_sha256": "cdbad613cf3219c55d60625b6a6231ba771c2a122056289f9fc389bc0592cf0c",
+  "audit_sha256": "9da7dd25c24fe93e7bd1500a6a9e4ea0698db558d1a34d270a6e79bd22a67c1e",
+  "audit_checks": 277888,
+  "source_library": "D:/precise_arrangement/数据资产/01_原始采集/现场视频/训练采集",
+  "actual_fixed_position_visual_review": {
+    "videos": 16,
+    "positions": 48,
+    "path": "visual_review/review.json",
+    "sha256": "9b1ef8e7427a413a297b6df10b033012c8ef03ab592bfa197ce5da2db346ed2e",
+    "scope": "fixed3s/midpoint/end, corresponding four-panel rope-and-coil regions",
+    "identity_accuracy_established": false
+  }
+}

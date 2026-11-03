@@ -1,0 +1,105 @@
+{
+  "parameters": {
+    "step": 24.0,
+    "max_steps": 150,
+    "beam": 8,
+    "angles": [
+      -36,
+      -24,
+      -16,
+      -8,
+      -3,
+      0,
+      3,
+      8,
+      16,
+      24,
+      36
+    ],
+    "max_proposals": 30,
+    "profile_positions": 33,
+    "profile_tangent_offsets_px": [
+      -6,
+      0,
+      6
+    ],
+    "profile_std_floor": 0.015,
+    "width_candidates_px": [
+      12,
+      16,
+      20,
+      24,
+      32,
+      40,
+      48,
+      64
+    ],
+    "support_bilateral_min": 0.18,
+    "max_weak_original_px": 72.0,
+    "max_bridge_original_px": 48.0,
+    "relation_weight": 0.3,
+    "response_weight": 0.45,
+    "bilateral_weight": 0.25,
+    "template_weight": 0.2,
+    "continuity_weight": 0.1,
+    "maximum_turn_degrees": 42.0,
+    "forward_cos_min": -0.1,
+    "merge_xy": 8.0,
+    "merge_angle_degrees": 12.0,
+    "supported_heat_min": 0.22,
+    "supported_raw_min": 0.14,
+    "image_only_bilateral_min": 0.35,
+    "image_only_template_min": 0.35,
+    "final_candidates": 3,
+    "selected_margin": 0.015,
+    "selected_min_new_supported_original_px": 100.0
+  },
+  "source_hashes": {
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\relation_r1_20261101\\common.py": "1802f723773f23eb66be38347c6c9bbd029920056c16d961b39fe3aec39938b8",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\relation_r1_20261101\\spatial.py": "820b09e81deb3704c6983747e78de7a3fbb6dc122019c05178a1a93e686648f0",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\relation_r1_20261101\\search_r1.py": "0c90dc707aa10ea710f0f4a377e04f3e3cc721030ffbd4b0133ca600ff9f9857",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\connect.py": "61fd7c63f835475c698c26ba472d12296e48786a0b44aea5bb7b24b1c8c94ea2"
+  },
+  "source_relation_model": {
+    "path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\relation_r1_20261101\\model\\final_portable.npz",
+    "sha256": "826035268996ce14df0cd77a37525d5aadb8aadb0d87c5074f4b2bc4b1ad5859"
+  },
+  "U1_model": {
+    "path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\model\\checkpoints\\step_0800.pt",
+    "sha256": "a35494f57df6596f0369011a5a1b322c1d84288370a74da888528bdd2565216e"
+  },
+  "dataset_index_sha256": "fc7ad47b2dee55d49ee094d5ca9db3c140651f670481ee31e9c9958be26e60bd",
+  "dimensions": 197,
+  "feature_blocks": {
+    "dec1_spatial": 48,
+    "heat": 6,
+    "normalized_profiles": 99,
+    "raw_statistics": 15,
+    "geometry": 21,
+    "F3": 8
+  },
+  "relation_training": {
+    "seed": 20261103,
+    "layers": [
+      197,
+      64,
+      32,
+      1
+    ],
+    "formal_steps": 600,
+    "formal_seconds": 120,
+    "smallcheck_steps": 100,
+    "smallcheck_seconds": 60,
+    "optimizer": "AdamW lr0.002 weight_decay0.0001",
+    "pair_loss": "softplus(0.25-score_correct+score_wrong)",
+    "correct_proposal_distance_max_px": 4,
+    "red_neighbor_distance_max_px": 6,
+    "target_exclusion_distance_min_px": 8,
+    "min_pairs": 24,
+    "all_manual_training_sources": true,
+    "old10_relation_pairs_included": false,
+    "F3_dropout": false,
+    "unknown_is_never_negative": true,
+    "selection": "last completed fixed budget update, never evaluation/gallery selected"
+  }
+}

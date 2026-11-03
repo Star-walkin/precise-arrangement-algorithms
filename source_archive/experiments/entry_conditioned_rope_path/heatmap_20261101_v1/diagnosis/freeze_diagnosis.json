@@ -1,0 +1,62 @@
+{
+  "scope": "Frozen two-user-case raw/LCN/oldB diagnostic only. No labels or H6 path truth, no training changes.",
+  "python": "D:\\precise_arrangement\\vision_prototype\\.venv\\Scripts\\python.exe",
+  "command": ".\\vision_prototype\\.venv\\Scripts\\python.exe -B experiments/entry_conditioned_rope_path/heatmap_20261101_v1/diagnosis/diagnose_inputs.py",
+  "successful_exit_code": 0,
+  "earlier_failed_attempt": {
+    "exit_code": 1,
+    "reason": "matplotlib absent in existing environments; plotting switched to existing Pillow without installing packages."
+  },
+  "files": {
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\heatmap_20261101_v1\\diagnosis\\diagnose_inputs.py": {
+      "sha256": "b54c85ca875ac2ae43ce2bc71ab3d919a22d4f09d3510abc0b2bcca174836ad5",
+      "bytes": 10228
+    },
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\heatmap_20261101_v1\\diagnosis\\dual_20260923_101517__pair0015__right__fields.npz": {
+      "sha256": "4a2c4184faeb95e8c16f0006c1a5178b017f734ce7659e6030ad89715cbdee50",
+      "bytes": 29869228
+    },
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\heatmap_20261101_v1\\diagnosis\\dual_20260923_101517__pair0015__right__local_same_crop.png": {
+      "sha256": "dba5e496b4bb5466041326c1db5492c27b3c3b113dbd379aa33b4207b8b34136",
+      "bytes": 2938472
+    },
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\heatmap_20261101_v1\\diagnosis\\dual_20260923_101517__pair0015__right__normal_profiles.png": {
+      "sha256": "90adcfcd370b10718d3d6ad002cddda7530b67d8ddf1fee9e508ffde5fcde567",
+      "bytes": 71038
+    },
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\heatmap_20261101_v1\\diagnosis\\dual_20260923_101517__pair0015__right__raw_LCN_B.png": {
+      "sha256": "aab300e54dc78d6ddd8942a3b515c7214c370c61f48958e37ef2b7a02cb3d61b",
+      "bytes": 1338187
+    },
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\heatmap_20261101_v1\\diagnosis\\input_diagnosis.json": {
+      "sha256": "aa5c62e2330658ab21aa1aeda1650ad713c9b3ecb86d87ae761d78f8d1b42f2a",
+      "bytes": 276469
+    },
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\heatmap_20261101_v1\\diagnosis\\lcn_independent_cv2_check.json": {
+      "sha256": "ac08ffb22ea89b3e900befefaa4b959140f233604bb5928135dfe146ce6d2ed3",
+      "bytes": 497
+    },
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\heatmap_20261101_v1\\diagnosis\\L_run_20260923_01__f000585__left__fields.npz": {
+      "sha256": "8fcf578656e28bbb6986b915715bf7e0fe6e447f61d355d75f7c344c099442a0",
+      "bytes": 28094794
+    },
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\heatmap_20261101_v1\\diagnosis\\L_run_20260923_01__f000585__left__local_same_crop.png": {
+      "sha256": "9b22acb76ddcf720b9dd77d7ebdcb4b41792e5a5146f5e1529da39ec453edcc2",
+      "bytes": 1975359
+    },
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\heatmap_20261101_v1\\diagnosis\\L_run_20260923_01__f000585__left__normal_profiles.png": {
+      "sha256": "0790495fe16d5f9e80dda5b8babe4174e32e1dd00d08f5ff2c27b8e45724a974",
+      "bytes": 70429
+    },
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\heatmap_20261101_v1\\diagnosis\\L_run_20260923_01__f000585__left__raw_LCN_B.png": {
+      "sha256": "e9d44639ac4e4ea91728d947ab2568a22e002146c330585a835dfb01d21c9184",
+      "bytes": 957173
+    }
+  },
+  "known_limits": [
+    "Seed-direction profile centers are reproducible diagnostic sampling coordinates, never target labels.",
+    "LCN adds local contrast and also emphasizes weak background/quantization patterns.",
+    "OldB multiple ridges on a visible single free rope indicate model/target selectivity issues; LCN alone is not guaranteed to resolve identity.",
+    "Observed source and entrance coordinate shifts are evidence of coverage differences, not isolated causal proof."
+  ]
+}

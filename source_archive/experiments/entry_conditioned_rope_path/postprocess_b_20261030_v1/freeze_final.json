@@ -1,0 +1,20 @@
+{
+  "version": "IR-H1.0.0",
+  "utc": "2026-10-30T10:24:13.663182+00:00",
+  "sources": {
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\h1_detector.py": "0df36f6e69b65b011f101db1c85f10c4eb01c17f4da307026fe61274ac114fc4",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\straight_support.py": "97a877895373948d2ad0da08b0409c60cfa10d8c3efe873be031111b49af28e9",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\f3_tail.py": "e5bfa862b0def17ed29ed1c8cbaeb23846df28ea472715b92d316ddc5a682865",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\priors.py": "f406b8edcd6082a8d9946b9721c0653c18df3064c26b5373e5120d8ebd3a51fa",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v1\\run_h1.py": "5e33a4aa6685dad359fb00b42462436ed4e04c8d7e70583080df3044679443eb"
+  },
+  "pilot": "pilot_003_repaired_003",
+  "pilot_audit_sha256": "29147d85985e739ba614f14e9065fd73ac1d0fac622f4e6f7f97a7b3e65f60d4",
+  "protocol_sha256": "ab88a0c0f76bea7980166e0c37d1d2e3eff69a3772f39d4c43a81fea06a6cf68",
+  "numeric_audit_sha256": "43c20019ed1da71283aff16d79c147882d48a88ac2f1f3296f4ac141558eee23",
+  "command": [
+    "experiments/entry_conditioned_rope_path/postprocess_b_20261030_v1/freeze_delivery.py"
+  ],
+  "extra_rule": "first8 non-pilot SHA256(H1extra:+id)",
+  "remaining_tuning": false
+}

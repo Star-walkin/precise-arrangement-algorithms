@@ -1,0 +1,43 @@
+{
+  "seed": 20261029,
+  "base_channels": 8,
+  "threads": 8,
+  "batch_size": 1,
+  "train_steps": 800,
+  "train_max_seconds": 1200,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "high_threshold": 0.5,
+  "normalization_std_floor": 0.08,
+  "pad_multiple": 32,
+  "brightness": [
+    0.9,
+    1.1
+  ],
+  "contrast": [
+    0.9,
+    1.1
+  ],
+  "gamma": [
+    0.9,
+    1.1
+  ],
+  "noise_std": 0.004,
+  "horizontal_flip_probability": 0.5,
+  "rotation_degrees": 5.0,
+  "translation_fraction": 0.035,
+  "seed_source": "initial free entry only, never post-contact target points",
+  "model_input": "gray plus initial seed; seed-conditioned global descriptor and relative coordinates inside model",
+  "normalization": "per-ROI mean/std floor .08 after nonnegative photometry; neutral exterior zero standardized",
+  "loss": "old stage-balanced center MSE + .5 mean neighbor p^2 + .1 mean background p^2",
+  "sampling": "uniform original training image; all full search ROIs include seed",
+  "budget_policy": "independent smallcheck discarded; A then B, at most800 steps/1200s each; largest common saved step",
+  "smallcheck_steps": 60,
+  "smallcheck_max_seconds": 120,
+  "checkpoint_interval": 50,
+  "lambda_neighbor": 0.5,
+  "lambda_background": 0.1,
+  "optimizer_policy": "identical fresh AdamW in A/B; source checkpoint has no optimizer",
+  "paired_augmentation": "old gray/seed/target use identical RNG and geometry; new masks never alter RNG/fallback",
+  "continuation_source": "run_20261029_001/model/final.pt"
+}

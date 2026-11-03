@@ -1,0 +1,126 @@
+{
+  "version": "RB-F2.0.0",
+  "name": "重叠接续 F2",
+  "date": "2026-10-28",
+  "run": "all_001",
+  "scope": "Same frozen open400 images, left200/right200. New C3 and D4 observations in common seam overlap; image-supported local visual boundary correspondence.",
+  "summary": {
+    "version": "RB-F2.0.0",
+    "planned": 400,
+    "completed": 400,
+    "failed": 0,
+    "source_unchanged": true,
+    "exit_code": 0,
+    "by_camera": {
+      "left": 200,
+      "right": 200
+    },
+    "accepted_joins": 21758,
+    "images_with_joins": 398,
+    "added_pixels": 2542600,
+    "new_observations": {
+      "C3": 538399,
+      "D4": 1173893
+    },
+    "accuracy": null,
+    "equipment_access": false,
+    "reserved_access": false,
+    "html": false,
+    "finished_utc": "2026-10-28T05:04:19.635575+00:00"
+  },
+  "independent_structural_audit": {
+    "passed": 400,
+    "failed": 0,
+    "global_errors": []
+  },
+  "accepted_join_sources": {
+    "C3+D4": 19047,
+    "D4": 2711
+  },
+  "rejection_reason_counts_multilabel": {
+    "tangent_or_curvature_reversal": 36903,
+    "bridge_crosses_strong_body": 44806,
+    "weak_broad_groove_support": 47178,
+    "long_image_support_gap": 51771,
+    "bridge_outside_transition": 262,
+    "new_group_residual": 3491,
+    "bridge_unknown_occlusion": 39625,
+    "insufficient_new_yellow_points": 6,
+    "new_points_do_not_cover_join": 41,
+    "accepted_pair_order_or_spacing_conflict": 2,
+    "endpoint_already_used": 2,
+    "new_observation_shared_between_joins": 2,
+    "not_mutual_best_pair": 3,
+    "ambiguous_neighbor_pairing": 2
+  },
+  "images_without_new_joins": [
+    "images/right_camera/R_run_20260923_01__f001348__right.png",
+    "images/left_camera/ruler_left_05.png"
+  ],
+  "pilot_full_exact_equivalence_count": 132,
+  "evidence_sha256": {
+    "freeze_all.json": "467640e0fce591559c608e1b4e9c0d26638fb13d63a302a1b91e506b2e3660db",
+    "protocol.json": "0bc61f628abe959a5427304cb2f8578df03005513a1be7d8560cfa46f6e76d31",
+    "diagnosis_before.json": "ecc89ddc5609b7065e1dd8d7f638fbe492bcc3dec982c2be387426a589715119",
+    "pilot_storage_fix_equivalence.json": "b03f204d0bc3440d6ce538df105096b8e16eb9758393f2f408ee385414dbbc4c",
+    "pilot_visual_review_root.json": "bf33171de8501faec499bc80f3d88d89bb2c984b8e57c4edec1f05f5ae3fbd1b",
+    "pilot_002\\audit.json": "8c26aa8c6843bd4ceca30e8efcaadc816dfd5a93330fe5d38a3632ec7cbdffb6",
+    "pilot_002\\记录\\endpoint_topology_review_001.json": "06c882e09dfcb0895fcd531ee06f97f5381e660182c4a0882c33e1570a5f86bd",
+    "pilot_002\\记录\\seam_shape_review_001.json": "2e2f5bf52b318aca77ae7dff224dd4cf02358d2da82466d1ce7c88b5486ab05e",
+    "pilot_002\\记录\\observation_support_review.json": "13f82abae3dfb78da8c7ab91533a04801cf50b5489c60e181797efa0b3c9cb1b",
+    "pilot_002\\记录\\qa_independent_diagnosis.json": "6b21612b7ad43c185332d3c557eb7f65b8439f7feaff0147ca6d9b4aa76584a3",
+    "all_001\\summary.json": "7672d21e69fc765b83629271d9fd52972a983f6c94f45f15b3ed048c3d2054e2",
+    "all_001\\audit.json": "68c5c21de723807b6a686a8f4e2f832e9e279847c67b6dedb3d5751e399147e2",
+    "all_001\\output_manifest.json": "fa22d2dd98270bf4718d461ac3454b8a5141a0202450c85bcbf17defd74e489f",
+    "all_001\\audit_provenance.json": "4c5c4bc0721ee1927a33bd22470da7e19ba7fca384c3fbe0dfee939d5f844726",
+    "all_001\\pilot_full_equivalence.json": "e4106b0490f445658363f8807d76e348481298cc5101f4bee65ac1f7fc0e5f85",
+    "all_001\\记录\\qa_additional_left.json": "35a61403437612b27d004fc1b03a50d137548f27aa0b9b5ada667c29537fb9fa",
+    "all_001\\记录\\qa_additional_right.json": "0bec94ce8f3cd07b3d1bcd7ae1a6063b65097c55282422663014987989a64968",
+    "all_001\\记录\\endpoint_topology_review_001.json": "19760ba956da34ffe266881c3b27206f4a81419f21db9f4196548dda45affc9d",
+    "all_001\\记录\\endpoint_topology_exceptions_001.json": "7188c3e0b41707facb8f1640f90e1765c88b6472f19c8b41e5ff9a9b31c1d8fe"
+  },
+  "endpoint_topology_review": {
+    "bridge_count": 21758,
+    "endpoint_count": 43516,
+    "adjacent_retained_source_pixels": 43451,
+    "exceptions": {
+      "old_fragment_natural_termination": 64,
+      "preexisting_source_gap_13px": 1
+    },
+    "new_outer_disconnections_found": 0,
+    "meaning": "Source-raster continuity only, not true boundary correspondence accuracy."
+  },
+  "development_history": [
+    {
+      "run": "pilot_001",
+      "algorithm": "final algorithm",
+      "storage_defect": "Full-size detector masks accidentally expanded into case JSON. Original output retained; visual masks unchanged."
+    },
+    {
+      "run": "pilot_002",
+      "change": "Only detector-mask PNG references and F1case input hash verification. All132 display/formal mask hashes identical to pilot001."
+    },
+    {
+      "run": "all_001",
+      "change": "Frozen unchanged code/parameters, full400, no all400 tuning."
+    }
+  ],
+  "method": [
+    "Continuous local mean/std normalization over saved surface, same6pitch-overlap and exclusion for both detectors.",
+    "Frozen B1/C3 with original weak-valley recheck and frozen D4 redetection; original codes unchanged.",
+    "Combine new point candidates within curve corridors; endpoint tangent, image groove/body support, unique ordered pairing and competing candidates.",
+    "Endpoint position/tangent-preserving Hermite plus small zero-end-derivative correction. No global refit outsideT."
+  ],
+  "limits": [
+    "Some joins have onlyD4 new-point support; running both does not mean both agree on every join.",
+    "Local humps can arise jointly from old endpoint/tangent mismatch and point-driven correction. Image support and smoothness are not truth.",
+    "Partial rejection remains in shadow, occlusion and missing original surface areas. No guarantee of all boundaries connected.",
+    "No per-rope truth accuracy or physical same-rope identity/contact/event validation."
+  ],
+  "accuracy": null,
+  "baseline_replacement": false,
+  "equipment_access": false,
+  "reserved_access": false,
+  "html": false,
+  "finished_utc": "2026-10-28T05:17:02.092164+00:00"
+}

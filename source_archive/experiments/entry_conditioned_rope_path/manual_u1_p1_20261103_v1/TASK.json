@@ -1,0 +1,2075 @@
+{
+  "version": "IR-U1-P1-POST.0.0",
+  "created_utc": "2026-11-03T08:30:32.030319+00:00",
+  "request": "latest manually trained U1 raw heat + frozen P1/H6 postprocess;292 four native panels",
+  "U1_model": {
+    "path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\model\\checkpoints\\step_0800.pt",
+    "sha256": "a35494f57df6596f0369011a5a1b322c1d84288370a74da888528bdd2565216e"
+  },
+  "U1_step": 800,
+  "P1_reference": "IR-P1.0.0 originalB750+H6; original preserved, B model replaced only for this independent input run",
+  "H6_inputs_sha256": "c227041a7aa4e0cc15e9a041a0d592d522687aaeaf03b78459e3a338248efa1e",
+  "U1_protocol_sha256": "3302b58d168de7e96e60e04bca4a1c3f279dafbfa517259df8fda6a7acad45b5",
+  "U1_inference_receipt_sha256": "758da0a893e2c7a168bd7c548da7bb687b952f3b587ebf72725ce4161e82644b",
+  "native_response_shape_hw": [
+    975,
+    2048
+  ],
+  "native_image_shape_hw": [
+    3000,
+    4096
+  ],
+  "entry_selection": "original P1/H6 score/direction ranking among all given conditions; second panel uses exactly selected condition; no truth or R1 ranking",
+  "raw_heat_unmodified": true,
+  "no_new_training": true,
+  "no_new_UNet_forward": true,
+  "no_R1": true,
+  "no_label_or_reserved_or_device_access": true,
+  "bulk_root": "C:/precise_arrangement_results/manual_u1_p1_20261103_v1",
+  "rows": [
+    {
+      "id": "dual_20260923_101517__pair0015__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101517__pair0015__right.png",
+      "image_sha256": "f34f5e2293aa96e3ba38ab179a6d2bd9c1d6501058018d6be0f9eb5f08a398d5",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101517__pair0045__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101517__pair0045__right.png",
+      "image_sha256": "27f0e9b7e55b2dbcdbefac96fb84192c0c9e3fa207108c839a54670314008e60",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101517__pair0075__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101517__pair0075__right.png",
+      "image_sha256": "6faa8a80191a42fbc1316e8e4883d8c1e11291b0b58a6b0137f96fa7d1c32e86",
+      "entry_count": 2,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101517__pair0105__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101517__pair0105__right.png",
+      "image_sha256": "ce9da343585396b4c733b213c5339a2ba2b2eff22dab9ee8aea7b6dbafda1cf6",
+      "entry_count": 2,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101517__pair0135__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101517__pair0135__right.png",
+      "image_sha256": "5f3bf449248fe3f05a09fa8308a7e0b453f88c7bc96522a32dbb7ab4e0ee99f7",
+      "entry_count": 2,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101517__pair0165__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101517__pair0165__right.png",
+      "image_sha256": "fd4d6d04297d2d94686554b5d726627699dfde5c44e78e7be2ffe11f2fac8359",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101517__pair0195__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101517__pair0195__right.png",
+      "image_sha256": "37d61a1001a700c7dfe3263ba323654d76a3f567fb6713c492877359fbe6ace0",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101517__pair0225__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101517__pair0225__right.png",
+      "image_sha256": "1e8d33b25873b20d7a88e8459d4586cee3c0ef098403753c33dec6eae5abb0b8",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101517__pair0255__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101517__pair0255__right.png",
+      "image_sha256": "5200d6544551f9f24f09f706419776bb0062aebb1944bee5c68553668c647a74",
+      "entry_count": 2,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101517__pair0285__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101517__pair0285__right.png",
+      "image_sha256": "6ece405542ab9b198b21bba9c9e5e0d1fce57ab83739889eea3bc00e9a56e888",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101517__pair0315__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101517__pair0315__right.png",
+      "image_sha256": "c1bc262596ba72b566eaf5545974a5bd8f82fa9ab6217752e64ad444fc14f348",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101517__pair0345__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101517__pair0345__right.png",
+      "image_sha256": "1fc61c10c4ae1595c4eb4081a17bdcaae2b7b735f0359c2f067f6a862062568e",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101517__pair0375__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101517__pair0375__right.png",
+      "image_sha256": "2e13857d269a1db306f06ba61244b9ab8d74795bce992dda43dba31a2e13b9c4",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101517__pair0405__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101517__pair0405__right.png",
+      "image_sha256": "5787258a8ce94b2f69e8a75377518308ffe4b0e9cc079003463884f2e9e0b6c4",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101517__pair0435__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101517__pair0435__right.png",
+      "image_sha256": "0d11dd3f8f470f37ae07877f3df4a5c77950d718797301330e0c6fbd36da2d49",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101517__pair0465__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101517__pair0465__right.png",
+      "image_sha256": "56d3c6b81113f10f7d1698133f69efb9828a7034d2b03ccbe81cb4d399e7a485",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101517__pair0495__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101517__pair0495__right.png",
+      "image_sha256": "b36d14323d3d797da0f9306559485d7eac6394e374c82237ca8eb40b9d1663c3",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101517__pair0525__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101517__pair0525__right.png",
+      "image_sha256": "c4a4017c4e34f9bc3f6147cbf758eb721b3ea9b36c5ff566bb13fe97204525d6",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101517__pair0555__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101517__pair0555__right.png",
+      "image_sha256": "becbbc6b718f64d12ebcf00a6be19d31a08885d4b4572b148f60650c84f2d543",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101517__pair0585__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101517__pair0585__right.png",
+      "image_sha256": "996c5fa3019e88df502120c760f5844d8d2496fc59a65b774f5d7ac5fafb2c49",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101643__pair0015__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101643__pair0015__right.png",
+      "image_sha256": "2b7e5135d0505bc927fec7d0f822341966aa28d4f5b6fb9620c04566de38a7f8",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101643__pair0045__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101643__pair0045__right.png",
+      "image_sha256": "34afaff98da43ef304c8e1174417a835d462d6ca9bfc8b744d03e9a4266f0b36",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101643__pair0075__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101643__pair0075__right.png",
+      "image_sha256": "bed5e9547334c1703e1a4e4eb022ce4a9daf14a8ff307b7dc3a7cc87e977600d",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101643__pair0105__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101643__pair0105__right.png",
+      "image_sha256": "715306e5f37a3b5099eafb313315bf1ea53c588f9ec3bce1930e193bc49d24b1",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101643__pair0135__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101643__pair0135__right.png",
+      "image_sha256": "96517a19d057c3f304177e5f6b8d62937296bdaa247514da9090b4cbe59f31e0",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101643__pair0165__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101643__pair0165__right.png",
+      "image_sha256": "3868214717c8d6e561c76c64682be6abb11c0c44bfe80de5c1d524bfbe94aa63",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101643__pair0195__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101643__pair0195__right.png",
+      "image_sha256": "20ac15a7a74d476451e83ea3e2fd6f3f5b24ad17e6983a769b52892f67faa571",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101643__pair0225__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101643__pair0225__right.png",
+      "image_sha256": "92b9fe1c354831ab0a8df8149698a9f543a15e735c375a541a20fd62412924df",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101643__pair0255__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101643__pair0255__right.png",
+      "image_sha256": "fe747b48aa32da9cc478a9462169445688c2c09b47b5bfe98e59a5ef6f311012",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101643__pair0285__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101643__pair0285__right.png",
+      "image_sha256": "e5981d2319ba4dc999b991241bc002581e34ceebb5fb8945858286ae6efba0ef",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101643__pair0315__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101643__pair0315__right.png",
+      "image_sha256": "7fb99adad903769ed6a685c40a82f3f21bccece9bde34ce38540078566862c7b",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101643__pair0345__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101643__pair0345__right.png",
+      "image_sha256": "02b3d67559406e91349edf2789069d9ffaa05fedc6eb31fe030d360686c0b43a",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101643__pair0375__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101643__pair0375__right.png",
+      "image_sha256": "44f04e23686ee475e13b6a0a8a97d6b70478b9d543d7195668eb3d5dd2dc9224",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101643__pair0405__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101643__pair0405__right.png",
+      "image_sha256": "b154b8530e194006fd552eb6eff7be14d9e2226afa06c7d0dccfe586b60f1302",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101643__pair0435__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101643__pair0435__right.png",
+      "image_sha256": "3de22316a5e1c0d0842dc6f55bc97bda6e18d05b1e51c2a968b883c5e9d88a5b",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101643__pair0465__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101643__pair0465__right.png",
+      "image_sha256": "480243e35b8ea79d5ba4a036111ce967cd662397d0fa626e6299f76fde026e0e",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101643__pair0495__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101643__pair0495__right.png",
+      "image_sha256": "ffb5c92e31bce25ba388ae06e73254d789ce54fa0cc5aa5474cbbdd823829cb9",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101643__pair0525__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101643__pair0525__right.png",
+      "image_sha256": "c8c747a79c3c8b3afca993f7a6696330b70882c891ab45029425b9e07f891dcf",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101643__pair0555__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101643__pair0555__right.png",
+      "image_sha256": "5402d3636ae15d9ac00e9175b319f95f252e2d2eff69879545bd8039f0ee823c",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_101643__pair0585__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101643__pair0585__right.png",
+      "image_sha256": "d37064d667f6375bcb16ff48f5712abed8f4c77c8e2a6355c7941199b3079d24",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_113305__pair0015__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_113305__pair0015__right.png",
+      "image_sha256": "901c7d919eb991b4baf16b6bd614fb24b5a78979771804268234a5eca4002e1f",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_113305__pair0045__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_113305__pair0045__right.png",
+      "image_sha256": "1c895929a5cad894aa0e2e68d5fa931628812183d21f1f00fee17e6412f110df",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_113305__pair0075__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_113305__pair0075__right.png",
+      "image_sha256": "95ef29abb0bc523cb0f09f1f99d45497c69aff7032f265750fb42d26f331b5e5",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_113305__pair0105__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_113305__pair0105__right.png",
+      "image_sha256": "f10f498f060528a34148e3f770bdb28e41f924ee38952953cd25238928eda478",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_113305__pair0135__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_113305__pair0135__right.png",
+      "image_sha256": "b1e9e6a4eab6ac072016151da6e3ad87eaa18980876eec936e25c51be5a4b1f7",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_113305__pair0165__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_113305__pair0165__right.png",
+      "image_sha256": "bfd5827d5c8f582d81f713ed0678773914794946421bbdcc264b25b8b5d84a57",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_113305__pair0195__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_113305__pair0195__right.png",
+      "image_sha256": "747c9e968266a8bb27b0f41f2beead80eab4c1283586c5e389fbbc6150e21236",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_113305__pair0225__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_113305__pair0225__right.png",
+      "image_sha256": "c504f07fb529a5b5bea396188bd1d4ae716da680fd7235f63bdda8ff0109fd55",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_113305__pair0255__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_113305__pair0255__right.png",
+      "image_sha256": "f50b166a89db3fa7111a8bb242753728c60e1ca8039cc589338e751a4d6e0d29",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_113305__pair0285__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_113305__pair0285__right.png",
+      "image_sha256": "fa053d91cabfb981dee7f4e1d5be9b8ccdc3e3cad224def6c34bf7a5fb026fa1",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_113305__pair0315__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_113305__pair0315__right.png",
+      "image_sha256": "2d34f5cb04ec59b0a4ee544490b5b87064f414a1f43df674466640dea2af2d7d",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_113305__pair0345__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_113305__pair0345__right.png",
+      "image_sha256": "3d7d0edf0e435419b83933f7c7cddf7a96cef420097f4934e687ca1a89b98b26",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_113305__pair0375__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_113305__pair0375__right.png",
+      "image_sha256": "7028310429e86f6e9a63eb3ac4f3779a278f765ab8be086c9264390bad2dff05",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_113305__pair0405__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_113305__pair0405__right.png",
+      "image_sha256": "89dc66af78b341d57db5eee5da36972142b943504796aafe2e7b547087d80031",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_113305__pair0435__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_113305__pair0435__right.png",
+      "image_sha256": "aa59b0386ea3daa1af8f62d1cbac6bf8989b82830d7c281f2898ae198aad2b0b",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_113305__pair0465__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_113305__pair0465__right.png",
+      "image_sha256": "836fdc2e5fa88022dd1b80b413be8b9b9394d0cca96edac8f5f79f509dbfa1c9",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_113305__pair0495__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_113305__pair0495__right.png",
+      "image_sha256": "3e65bff399be93d7970b078cb42d6a1d778c6bc08f3f8af8e23ffb4bf6875035",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_113305__pair0525__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_113305__pair0525__right.png",
+      "image_sha256": "937291dd2a8c6043eb4a778ddd326ccfcffd9f4c8e5a8b2e33ca1d88db7ee6c9",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_113305__pair0555__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_113305__pair0555__right.png",
+      "image_sha256": "65b0e585452237010de8450513220e3cbe673e5fb81ba08e609a83b435b9c74e",
+      "entry_count": 2,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260923_113305__pair0585__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_113305__pair0585__right.png",
+      "image_sha256": "64fc332eda794f36b2a2a8494a47ca0a67ce104b3dc0e7e303878da2430a7080",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111143__pair0015__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260924_111143__pair0015__right.png",
+      "image_sha256": "826b1ce60cc80b344ecc2b6531dffcc8f5c441a4d22747af667120ecc304f1e6",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111143__pair0045__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260924_111143__pair0045__right.png",
+      "image_sha256": "199e7da539c1a147ab1395de0ef1b9a828d1fca657cee18d4ccb1cad5a8352a0",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111143__pair0075__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260924_111143__pair0075__right.png",
+      "image_sha256": "8474e3ae81f103405f7bac7e1e59af5b856d90a41c6f588097be01be8a91f6cc",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111143__pair0105__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260924_111143__pair0105__right.png",
+      "image_sha256": "ea8fd7ac37a50d3c3594e21959e82e655319a9701a7d2aa7bd7adf45e8b83a8b",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111143__pair0135__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260924_111143__pair0135__right.png",
+      "image_sha256": "dc163a9e019192adbb7d7e3affcc985b1bd363734b50fc8d08a412927aac4f34",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111143__pair0165__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260924_111143__pair0165__right.png",
+      "image_sha256": "d7eb156fab32eb063c3807d6ee9386149722ad580ad57430baa96344b8137d13",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111143__pair0225__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260924_111143__pair0225__right.png",
+      "image_sha256": "7938b3bd521e97b000f5a40e8491e9ebf88721cfb0766725b25d9df2cba4c52a",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111143__pair0255__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260924_111143__pair0255__right.png",
+      "image_sha256": "8f15743ca57a2c739b2015d12997cbfe14518af6f0c1f7e77f66ef78fb487058",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111143__pair0285__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260924_111143__pair0285__right.png",
+      "image_sha256": "92c78a34b5ca341a46a7f4f12b21d29bdbcdcb9bb73fca5b10ef98796820171e",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111143__pair0315__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260924_111143__pair0315__right.png",
+      "image_sha256": "17c3616e41737cd6eb5e3628fc77e6aa6c39af278d387c12807d9a3040228b58",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111143__pair0345__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260924_111143__pair0345__right.png",
+      "image_sha256": "9ac250f0551b2a5ee7da992c51fdd2acaa1710eb4cd256c951c4268ac9ee2952",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111143__pair0375__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260924_111143__pair0375__right.png",
+      "image_sha256": "e0e177b6b8ed4db36966f6048b659ea49924061c3355e4efd3a5a0aa94ea5bb4",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111143__pair0405__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260924_111143__pair0405__right.png",
+      "image_sha256": "9bcd6240166a93173fb060d04e81eef46f0d5b3ce49ed3a9ad37b80e1cb74f0d",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111143__pair0435__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260924_111143__pair0435__right.png",
+      "image_sha256": "be62a0087ae13cd13987962059a3d9456d4d547e84f7d69bb40e33c89bd65bd5",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111143__pair0465__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260924_111143__pair0465__right.png",
+      "image_sha256": "96c995154cada055ea494408d3e5c0a8385cda6440aa5bb208c9fb58ab77c9ca",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111143__pair0495__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260924_111143__pair0495__right.png",
+      "image_sha256": "2ca553f6a97cb174775933193b04dba01144b35afcf6dcb2cb56d0f934e9d042",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111143__pair0525__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260924_111143__pair0525__right.png",
+      "image_sha256": "da4277d587c6bcafc487693cdfaccd9732075739fb810026a31b108c7a4ce588",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111143__pair0555__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260924_111143__pair0555__right.png",
+      "image_sha256": "4433a0dfcc7aeddd61d07823f22e662f9882359e6b2206a472e47edb70a9973f",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111143__pair0585__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260924_111143__pair0585__right.png",
+      "image_sha256": "7532831abdcea1ced055f7d108372aa29a89193cde90194faf452dbc2cde62a9",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111500__pair0015__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\dual_20260924_111500__pair0015__left.png",
+      "image_sha256": "d70b3e6991e1e2fad1fa6839bc0bf50a72ec71a58ab5fd743e70ed276649dd92",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111500__pair0045__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\dual_20260924_111500__pair0045__left.png",
+      "image_sha256": "a9c4089518d380a0a6b8c22c0242736e96f7fff0364f3f257bf3223fc5bfa348",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111500__pair0075__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\dual_20260924_111500__pair0075__left.png",
+      "image_sha256": "fa9602ef91aada4725e6fe136aeb2244ec81e8e9a573667d9dbfadcd06f276cb",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111500__pair0105__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\dual_20260924_111500__pair0105__left.png",
+      "image_sha256": "f048fbde404107938377e0eee62ddaa2309fd4540652d148843b866afe01c1c6",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111500__pair0135__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\dual_20260924_111500__pair0135__left.png",
+      "image_sha256": "27d4acce00f885ecb6a4d9dc6af90729f9aab1f5ff3b8e5ceb2f09765e814a3f",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111500__pair0165__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\dual_20260924_111500__pair0165__left.png",
+      "image_sha256": "a4b6812b481038b9351d00b391e4b0a1eb367a565c5206d93a8ddd1fafdadfca",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111500__pair0195__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\dual_20260924_111500__pair0195__left.png",
+      "image_sha256": "bd0a192cedef15b38468f5a98c4162844a07e48fa9a166d1e8d21cb308aa46c3",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111500__pair0225__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\dual_20260924_111500__pair0225__left.png",
+      "image_sha256": "8a3d3e899737e8ec4fc6bd64b42844c19443589fff30e7125d0d4f99a619aa21",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111500__pair0255__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\dual_20260924_111500__pair0255__left.png",
+      "image_sha256": "601058f1dd1bb84bb852271f77e54962f4e67366a3057256197af359621f5b93",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111500__pair0285__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\dual_20260924_111500__pair0285__left.png",
+      "image_sha256": "aaa23d5b42595ba722f5f38d66b09290f8b839c5728b295509eafc2fbfe6d8d0",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111500__pair0315__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\dual_20260924_111500__pair0315__left.png",
+      "image_sha256": "3eda04f77e54e7d0b21db9e46eec40147e737e59c39965e9fdfaf4687e08ec84",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111500__pair0345__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\dual_20260924_111500__pair0345__left.png",
+      "image_sha256": "c8aab7954fe432a5c2cfa9922e0c0b7213140b1fb222179a59f2cbd3587a5b73",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111500__pair0375__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\dual_20260924_111500__pair0375__left.png",
+      "image_sha256": "93ff4d6749a3d7b7c338b81bc76a27e1b59cee84047461d80eaa3cb4e99e027e",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111500__pair0405__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\dual_20260924_111500__pair0405__left.png",
+      "image_sha256": "62651fca44df0438b5ef66aad6d1ffc9631ef65da0d5949f82494c929afd2976",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111500__pair0435__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\dual_20260924_111500__pair0435__left.png",
+      "image_sha256": "726a2f4969f7463aa717ce98de6bc48e0f8ff18e7348b358e0bf4173f66ec79f",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111500__pair0465__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\dual_20260924_111500__pair0465__left.png",
+      "image_sha256": "64c2e9ef8b45340f4e701cd35862bb976afc9063702c0717458664bda092539f",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111500__pair0495__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\dual_20260924_111500__pair0495__left.png",
+      "image_sha256": "c50e3b2673284e2a23924e67ca9aad6e10a7eebc0b7b7f67a42097cd0b3f832d",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111500__pair0525__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\dual_20260924_111500__pair0525__left.png",
+      "image_sha256": "8c5b868d48900743f25e40bed883f0d7b90fecff6a658a8c58f0ffaf75f3c551",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111500__pair0555__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\dual_20260924_111500__pair0555__left.png",
+      "image_sha256": "e7bc5ee35207963934bd8a510c2c8023477cfbf4965f32e3d3071adaa0975636",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "dual_20260924_111500__pair0585__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\dual_20260924_111500__pair0585__left.png",
+      "image_sha256": "d3645087618275241e37c7092614f3dde5c69b25e4cfd530b0b69e44dd23702e",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000015__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000015__left.png",
+      "image_sha256": "194ba3bd3476b6bbef08e660f23fb2d27309472bad1aa6fbcbb49a434a300f44",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000079__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000079__left.png",
+      "image_sha256": "2810c384be78fa17d03315db95645a0a41e2bebcc043330a505df57af484aac9",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000110__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000110__left.png",
+      "image_sha256": "dfac930bc28940eb676fe4da6939b0173aae09ed5a3ce14321f9980a62183a2d",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000142__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000142__left.png",
+      "image_sha256": "6c9fc7d0dc7c7c864d89931120840c753fe87c1ca9ae7fabd1506037d61edd82",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000174__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000174__left.png",
+      "image_sha256": "6bc9e43533f9a33ce49d5d05b424df6433b595f2c2ba28ccbe52b7b52fd3b834",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000205__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000205__left.png",
+      "image_sha256": "c6663a08305ad50117d582da1bb80f0e00a2338c0c52552ed514b38ad909b02d",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000237__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000237__left.png",
+      "image_sha256": "6b796c5efcbebc414716332869ff8791cb84119eb2bc0bdcc1b71958b4afb19d",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000300__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000300__left.png",
+      "image_sha256": "9c4b78195541b86446dceaa8da63955c3d5d213699c2fbdf49580a524fdc2f46",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000332__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000332__left.png",
+      "image_sha256": "5066bf775a162006a2ce9279a5035304204dca6b608908b393b7eabf4708950a",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000363__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000363__left.png",
+      "image_sha256": "f5057cf69ab03f911253fae96720400ac5b6496485bae2ddfb4bafeaaf24e61b",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000395__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000395__left.png",
+      "image_sha256": "240bc63860a0b7c225de1b229319d9582668f686e87679131752d38dd32dda61",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000427__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000427__left.png",
+      "image_sha256": "ec24640f6d5ccde338cec619f1b41ab7b7e4d31037454c771ff89b84d4a962d9",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000458__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000458__left.png",
+      "image_sha256": "f7adf7d2a637f3d286c386e9b86d4a7905e975d209dede2088e1785ef678d717",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000490__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000490__left.png",
+      "image_sha256": "7aea0ffe85c29c56355d983cb800c5f0b395fa745fadaa04852c1f37172f0c6a",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000522__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000522__left.png",
+      "image_sha256": "40502e3110ef32afca37bee9ae0d4623f0a3ce205d553d7f911a025e565cda33",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000553__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000553__left.png",
+      "image_sha256": "20760dabbe1bb932ba0fea6d856268468989486456ca9cb3fac65062f4e74ae2",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000585__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000585__left.png",
+      "image_sha256": "8d9e542c964f55836ce2652f0d30445690d3d0c2901098140f8b09438f252220",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000617__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000617__left.png",
+      "image_sha256": "46e1ea6b6ea1d170a94891edc1250bac17bd73243f9c9d7887ffc33db3a9204e",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000648__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000648__left.png",
+      "image_sha256": "9c0c83a18ee28921e19386e81a53354886f3afb561cad6c947c2c8aea1449407",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000680__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000680__left.png",
+      "image_sha256": "76cc322668d10d0620cbb66c00c0efb0eab6db2d0d3bb41959f94076442cf5f7",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000712__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000712__left.png",
+      "image_sha256": "9ae5d7cb1de7553f9898435c7976c74ad5a6f7eb45e110527ba0bdc59e21ee1c",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000743__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000743__left.png",
+      "image_sha256": "650671a285bd0f2274496079e5825fa271ca9218e86a2fb30d06139dcac86799",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000775__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000775__left.png",
+      "image_sha256": "85320db89f80d822108e8b0c9c64c8d03961a26529c23effe1e74cdd58111110",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000807__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000807__left.png",
+      "image_sha256": "f2c1a68cdb7abc42f8539c09507888ef39a2250437391f3da0788b9ce3e872e0",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000838__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000838__left.png",
+      "image_sha256": "18ea1b656b987d86eaad2901d5fbf8b4fedbc619db50d3c4d2f001792fe2c289",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000870__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000870__left.png",
+      "image_sha256": "8534b20742c15131ee66c08588604c48f99dbe51453a939ecb968f5ffe2e82fb",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000902__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000902__left.png",
+      "image_sha256": "73bdbd5d37452db793ae7496dfcb16985812461f08433b6c792bd82cddffbb1f",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000933__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000933__left.png",
+      "image_sha256": "c22e02e34b76bcfe0f67d96c336351a4b9aa75ca131605299b19004d82ca39f7",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000965__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000965__left.png",
+      "image_sha256": "b59443712f2a16e328119b4d6e312b667214ba9e38684c860a6a90e313e51ebc",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f000996__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000996__left.png",
+      "image_sha256": "7ceb30fb8d8b133ce4111e977af241d565046e6a4885c11615427309ca33564a",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f001028__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f001028__left.png",
+      "image_sha256": "71f0db237b5c7248c29b92e0740a0ace2e92f2e29a4119d97b799ae5231729b4",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f001060__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f001060__left.png",
+      "image_sha256": "cde7069a36b07b77e84540c313e66ed34f9db783607a60f950342088ecefcf6c",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f001091__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f001091__left.png",
+      "image_sha256": "46d4f20763855575f5b5e8d55f9623433dfad4da375dd43bc3c353c29c443fb1",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f001123__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f001123__left.png",
+      "image_sha256": "dda6b3c0de8b734b1351ec8aff9394488f6f9d52168614d976938a97e0554a5a",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f001155__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f001155__left.png",
+      "image_sha256": "fa5d0ddd0a4bc1440aa8c2ddd8f76920c3cb85dd2cde8d52edf7bab0ec329f3a",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f001186__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f001186__left.png",
+      "image_sha256": "a97112bb59b86d29a55aedd49e1c487b94ddaebc85fff367aa2eed67d1c96493",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f001218__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f001218__left.png",
+      "image_sha256": "41151729af4b8d4abc632dab895058f6df3da2f456216c41a8cb02a3c57451f6",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_20260923_01__f001250__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f001250__left.png",
+      "image_sha256": "026ac7aa6bfb90fab8cc52df116cdede067dc4f827a6c397627c78065f355d30",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f000018__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f000018__right.png",
+      "image_sha256": "2c6d9be74bdc3d68411095396eb97370d5adbf57114cadb1e732aba2c04ad544",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f000055__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f000055__right.png",
+      "image_sha256": "3b181ed99b970eb36095fd7ff17e58786bea6b7c4b7394c7f0c70345c62b7d6c",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f000092__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f000092__right.png",
+      "image_sha256": "7daf544acc032bfdb7a8d08ce142332b2aec26d330ff33a799c73f0a5d370922",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f000129__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f000129__right.png",
+      "image_sha256": "edf76cb5ca1cd8efa354dc254f633307492e8cd990a18ab5df01c133b57781bd",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f000166__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f000166__right.png",
+      "image_sha256": "2f9e6a06155e776113ad1642b452840fb1f591a62277afa8a70d731e368c72b8",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f000203__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f000203__right.png",
+      "image_sha256": "2c042dafc5cbf14e39603368c46f5ae87dffd35440861a8887fe20ff99e9be06",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f000240__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f000240__right.png",
+      "image_sha256": "135d8c70940efdf7933aeea7c77cd0899346cb670692697dcbb081adcadc1629",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f000277__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f000277__right.png",
+      "image_sha256": "b894585398ea7736548357cf84a70823bc8a8b57cfbb667dbc68d67fb1e06a75",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f000314__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f000314__right.png",
+      "image_sha256": "8c059e71afba9d7433cbaca814a9c277ac8ade5d2ebd2aeebc9b24c322b918b9",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f000351__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f000351__right.png",
+      "image_sha256": "6023f5a722b56cebfef4190618187c17bdef6fafc56e5b02cd8afc74ae608130",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f000387__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f000387__right.png",
+      "image_sha256": "357d29078a6bed468ff133c6eb7d3cd05541e507fe9684dc344b8a9c647d9dec",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f000424__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f000424__right.png",
+      "image_sha256": "68a7578d18cd228b4d55cbc3ee696ce321bec27d7afd456af55edba25033ad05",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f000461__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f000461__right.png",
+      "image_sha256": "ee5223f89a2f63a746b1783a3ad1a0bce3f1bbcc22ff503081494cadf5a2424a",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f000498__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f000498__right.png",
+      "image_sha256": "e9d6297185ac063f12bb7724756d2cd055b73c8eb81e4fa269ce8a0ab931c778",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f000535__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f000535__right.png",
+      "image_sha256": "1237c3cae7fb0c939c59359ff87303d375ccbe89d759d482b34631711cd98f94",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f000572__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f000572__right.png",
+      "image_sha256": "3cd41a91b74fc0f1399828d5a0ef587479b789ee03491e01ee14a73f5bf6cfe6",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f000609__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f000609__right.png",
+      "image_sha256": "ba6379e50e20925bc6c8aefbe330a2056ab0447d1a68d9309547abe95549c8e6",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f000646__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f000646__right.png",
+      "image_sha256": "b641992442558c6f04aad1b55b910f9e8d881cdd4fcecb19cb700f5038dd6576",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f000683__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f000683__right.png",
+      "image_sha256": "4df8d5c5796690fbd06d5bf384329908998b14fd1e00ab4404260e365531efd0",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f000720__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f000720__right.png",
+      "image_sha256": "493bdcbef24f281eb4172d9bd6d308e7bba5e42f78cc63d1e7be6e1024019fc7",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f000757__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f000757__right.png",
+      "image_sha256": "cfaa1721729fdfaad72c37093b159ef368e4ee444ba22e586fd2575caf3a6263",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f000794__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f000794__right.png",
+      "image_sha256": "e10a4307135d66862ba089c2f1be7f407fdd22aa358bbb0988f146d879fd88d2",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f000831__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f000831__right.png",
+      "image_sha256": "82046c35a1908aa11f2e8e25db605d572d66772f501e7b91c66d19c4207e9bf2",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f000868__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f000868__right.png",
+      "image_sha256": "690a15bfb2bb51e8cab871ca2377af800a38a24cea92e2b773d56f7cc3f403d5",
+      "entry_count": 2,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f000905__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f000905__right.png",
+      "image_sha256": "8ca8fd4280d28f6e23dc7fd9f43e8b57e6efc6f9582377d76e65b8af4132a299",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f000942__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f000942__right.png",
+      "image_sha256": "47ad22a8d9d1400a8e9f986be492f5d81ab7d858e49ba95d9e7931eb1f5104b6",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f000979__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f000979__right.png",
+      "image_sha256": "a277b47a0a00c77da9457bd9d09ba07a4bb26b48061663241ae197d26dd666a1",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f001016__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f001016__right.png",
+      "image_sha256": "b1a2e460c63588e05c4f193a03b12288807e277b5031fb583bfe82c6415c8e37",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f001053__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f001053__right.png",
+      "image_sha256": "ee6c5d870431559a7ab3ec74409ac487ddf73e979ce36eb8005a75b29f14304c",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f001090__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f001090__right.png",
+      "image_sha256": "cd58c6160aebd322842e1de77746dea2e316250e4c9df2e53caa78f48a4a1843",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f001126__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f001126__right.png",
+      "image_sha256": "86190f6e89b541651b89c419dd7897e11a791d72322d1e8329d3cf080105a9a5",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f001163__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f001163__right.png",
+      "image_sha256": "99f3b132ec736c118b922553c674ef2ab37538cbd25891b642c865c6ae6b17f0",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f001200__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f001200__right.png",
+      "image_sha256": "6ce2fd695ffba0e13af9288df8e421df5d68540839bb036e27c90998d64aefad",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f001237__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f001237__right.png",
+      "image_sha256": "d8dd1c2fa931f67224535739b45fa00847ac964e72c3e0a3c2ce4d934d0cd795",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f001274__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f001274__right.png",
+      "image_sha256": "16180f2821c711b2664dfee0941cfd94e8dcde2ecb9f69b73defa206140d5767",
+      "entry_count": 3,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f001311__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f001311__right.png",
+      "image_sha256": "f40868c979a456832ad3fc3170e14dfc28287c81bdb99de99c31f919f060632b",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f001348__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f001348__right.png",
+      "image_sha256": "1f072aa5a902e7d02b3ba3ddb9a8e0af646d9d058e968f1f6c4f63ad26b8f453",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f001422__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f001422__right.png",
+      "image_sha256": "180e36461179c1fcc3476b504791dd86d038d6117ff7927ba71ba11aa1b75529",
+      "entry_count": 2,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_20260923_01__f001459__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_20260923_01__f001459__right.png",
+      "image_sha256": "c33e174795ed4af754354d0e4694c37e1a92b671b98be44db873a7ce1c0f9d9a",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f000046__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f000046__left.png",
+      "image_sha256": "e9f9935f302c451e410af34b8431db774bf0b85c7faac1fcaf6f097fc3a3e78a",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f000139__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f000139__left.png",
+      "image_sha256": "afc6ff72e5555bd4a3ada93c2cb7523f396316f9aa3ef759c1e739c86aa112b3",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f000232__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f000232__left.png",
+      "image_sha256": "2ed1f0c4214384dfa605c7eb4d26f19f53064735b2b2c47b0f4e373324e02ad7",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f000325__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f000325__left.png",
+      "image_sha256": "753e56051a896a27bc7f7d287ef12450f370b5c837340b81354078c332685027",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f000418__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f000418__left.png",
+      "image_sha256": "9e735807caecb5e4c90a8c3b9c29225b2c047eabcdce22fd962dd4716a3c1ecd",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f000511__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f000511__left.png",
+      "image_sha256": "fd6ba379b2ad7ddd378cf641822bcbc93bcc18db5c5f1d4c5398bfa0b1cf3259",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f000604__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f000604__left.png",
+      "image_sha256": "922d907c8a228dde8b013c7f0ccb7a96ed1c27fab78bcceb3aa971ca125d7301",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f000697__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f000697__left.png",
+      "image_sha256": "84d7e73a26b170e45756a0ad27f0e50db4b7e6fff490e56d4902f5c857bef932",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f000790__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f000790__left.png",
+      "image_sha256": "8842950323b8afdca7fff17e9761c8d0c9398de74fc43ce5f953e3726748bb95",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f000883__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f000883__left.png",
+      "image_sha256": "7c6bcd5827b2e7de7a4c813bc2baca2014b640e3e2a143829a4de32727b819e3",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f001069__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f001069__left.png",
+      "image_sha256": "a19387a79bd28058464ad2b7d47e0ba2c59dfc15651c85660f3a5454b98b9d4e",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f001162__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f001162__left.png",
+      "image_sha256": "c8f7f13cb81b6adf8c4b857da40697a0232e8c48df7a611bd15baa9e017ea0bb",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f001347__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f001347__left.png",
+      "image_sha256": "041a48070c7912cdd7d5f94195f354885e7e04a780fd18b4e99544d3adbe5c28",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f001440__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f001440__left.png",
+      "image_sha256": "b20774aed62146c02531ba58e38445cf41d5b24fef18363366349dbcf6387820",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f001533__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f001533__left.png",
+      "image_sha256": "322f088f6e81ed1b6521addf64c0d45c01f0a85cd2cf83df9e25f041a76a6e3a",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f001626__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f001626__left.png",
+      "image_sha256": "3a7f14c3531ead0e60f446537e4dac2318818376549ec7abd4e146a42bd7e5b0",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f001719__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f001719__left.png",
+      "image_sha256": "3f8b9f752281523b9123a699f059c1085386a42258f479ec93fd1fd0e91f32d5",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f001812__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f001812__left.png",
+      "image_sha256": "f0d5bd86bd2df51bfb8dd87871808b485ac98c5b5183b38da64e52b0e333e034",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f001905__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f001905__left.png",
+      "image_sha256": "c31a232bbf9220027826a7bf9210671fad743d9189ae4e82730c00ebe56d6b87",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f001998__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f001998__left.png",
+      "image_sha256": "090e11ad9479a4eb3541d1bc9f39d04b8894ac121ecb58b53bef122a0211dd2c",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f002091__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f002091__left.png",
+      "image_sha256": "f1aa744f4d35986607661592a8ab48404346594259a52f1903d54df821c80f02",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f002184__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f002184__left.png",
+      "image_sha256": "b5ffb61cbe242d16c8484c40410c1bdf40a244c97d940b65ce4fb71751846673",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f002277__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f002277__left.png",
+      "image_sha256": "8d5a064c6b1045c06b9d439b9887173d96d14b87eb51347615dc4e3b4ef4f640",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f002370__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f002370__left.png",
+      "image_sha256": "9d9a6702a79c2c4b430940650124c5339fd2568e2852a1c5c42ca6d7298556d5",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f002463__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f002463__left.png",
+      "image_sha256": "93477aebc486d431c134133505d0daa3a279640c1d075110a0b2ffe578176c0d",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f002649__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f002649__left.png",
+      "image_sha256": "ce0a434240c0927d01420f9fb8b4fde4c6853b623e635be8c2cfd5dc271d5a00",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f002742__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f002742__left.png",
+      "image_sha256": "58706f1185d5299c5fbf3a10924824b35419efbbf6d7416435c6fc2d110a04f3",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f002835__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f002835__left.png",
+      "image_sha256": "0cecdf97882e8cdb7cd75ec047e5a1792d504eb022f2673399ba20e6fa6a2ebf",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f002928__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f002928__left.png",
+      "image_sha256": "949f4160eba84399c0c1bb321e8603a7aca817d2e753c40a3b40be75ba090aa3",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f003021__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f003021__left.png",
+      "image_sha256": "49e5211e78b7bd83322b219e963af91e3ce3d388a969e5f48b0678039eef38b7",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f003114__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f003114__left.png",
+      "image_sha256": "d4e84b61397d3df8434558cadfb0518b680eac192245657f25b2cfca3de4ee55",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f003300__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f003300__left.png",
+      "image_sha256": "303cbc4a93b98383c1450c8d25486d81212fb599dd668232ec5de35f797be34a",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f003393__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f003393__left.png",
+      "image_sha256": "00922c674fff6dae4cb2fc4f2ef0f9f55125e01f661e23678a16fd36bbd44d06",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f003486__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f003486__left.png",
+      "image_sha256": "3107eb86d74c080fb6ea0c6cec4baa87044cb96f70892af8fd0d4dd7bd0b88ad",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f003578__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f003578__left.png",
+      "image_sha256": "057984135c4be56abaa5c813ef0125c41de7deed51c508415e1c648b95de33cb",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f003671__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f003671__left.png",
+      "image_sha256": "1c0e3b7645addbb18be02d768c000b302824230cada31cc906ed483baf0b98eb",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f003764__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f003764__left.png",
+      "image_sha256": "165d5abb5ca402a8a686d8d93a8f7dad2c70c06545332845d0b466506d0aa572",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f003857__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f003857__left.png",
+      "image_sha256": "4a63bff11071283284b38b0ec5144e12f283b71d2d957f982d95b9b29dca0d9b",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f003950__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f003950__left.png",
+      "image_sha256": "a48d04d02bd93c1a328c38bf611b54d39f79a80b669fb26c6e55747ad6e84627",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f004043__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f004043__left.png",
+      "image_sha256": "3caaceaf4fd448cabb6d34f2eca56bef0e9e7081114d80abc3413749641a7676",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f004136__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f004136__left.png",
+      "image_sha256": "d7f68a632da1831534820d7224ae45efa218d2e7364d8606c13cf98832e5a115",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f004229__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f004229__left.png",
+      "image_sha256": "4ea6078d145660df4f98975bb7547a5acc51b0a421ec0723955785a2109507fe",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f004322__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f004322__left.png",
+      "image_sha256": "f18a426fabc8d9d85e6d4b0f3d71f5580139ba60efd46fe108f7bb1e30ac6e23",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f004415__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f004415__left.png",
+      "image_sha256": "51f84a473f2f1c317072265b25cad93b656544c7fa4b4c515f74b208bc51a7b1",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f004508__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f004508__left.png",
+      "image_sha256": "189eec38adf79a1937aea1ce764adfefb3d0889471c66cb02c36d82a75f19509",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_run_stop_run_20260922_01__f004601__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_stop_run_20260922_01__f004601__left.png",
+      "image_sha256": "3012be6c87c9a40db1067f4e0e741df303865dea627b1b65cc7646c93dd66216",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f000026__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f000026__right.png",
+      "image_sha256": "9abe08521bf1a573147aaf3f31e412853319cca7b9b561bd7f463fb53574aa0f",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f000079__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f000079__right.png",
+      "image_sha256": "83be82fc09e2b0b6e13f258e5090983a9b1a1bedc0f851424d433b5989686e7d",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f000132__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f000132__right.png",
+      "image_sha256": "076918464e52e3ff90ed01d21ee7cf538240429525703fbdc7f484b2e5c360de",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f000185__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f000185__right.png",
+      "image_sha256": "ea02b4cb18eabc6b1f7adc15bfc2cfa091f91471528f98883053cc4d65406678",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f000238__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f000238__right.png",
+      "image_sha256": "f90d30dfc22b0eb12971a5010a2ffbee841ea545f2d1f84ab681448d331b921d",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f000291__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f000291__right.png",
+      "image_sha256": "2d54b1b5e87622428841d2bf9668bb94c02c3294b1a93fec86a4bea0ded4590e",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f000345__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f000345__right.png",
+      "image_sha256": "95e10ecea9bb73f625c61999a0b1dea1d113dcf6b2e5ab4ab75c57c862c83edd",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f000398__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f000398__right.png",
+      "image_sha256": "bad671debd04aab0a3d4ecf13f0f3efdee95ed7aa22b949480ccb92e2dfe0e88",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f000451__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f000451__right.png",
+      "image_sha256": "9768374da48abf18665fbcf4e97876560befa481efa92f809d007683e657ccd2",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f000504__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f000504__right.png",
+      "image_sha256": "fb45b12127abbf1f577b3d2a941261d4ab5c3a206559d7cb41dbb93d256be160",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f000557__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f000557__right.png",
+      "image_sha256": "f369abf6169ffc21311b2e9aea4899b90bcd128a64b6f60e97a3bf75c407395e",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f000610__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f000610__right.png",
+      "image_sha256": "5ac0369874f69219aa81795e2edb3d36aaa5eb637420db8890bd83da64eeac3d",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f000663__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f000663__right.png",
+      "image_sha256": "9fd290d6b8c625b565caa27e93fae4cc5ce50d8b9919e8cc33943a7dc41fbc48",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f000716__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f000716__right.png",
+      "image_sha256": "0a4f8b8570751ff986fd73fb0a310b19debbf21773e058743fa77c8209e8cb91",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f000769__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f000769__right.png",
+      "image_sha256": "4557e29e4e5881a5d6becc05163b3f4a7e4c5fd7636d957a691a5afe0874ae1f",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f000822__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f000822__right.png",
+      "image_sha256": "59e6316c2072b6e8c4bf92ce47597302dd8be421d7407419dc906b60be53042b",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f000875__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f000875__right.png",
+      "image_sha256": "838099ab3b7bdaac003def38c32fd0b5d86e2d81832f81d53acf71d7d83791b3",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f000928__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f000928__right.png",
+      "image_sha256": "07e7d8016816d7ddf6a584d7e2d45fa78e0260e050fb1a8e25cb398ec9717aaa",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f000981__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f000981__right.png",
+      "image_sha256": "4d544eb00e37fd2ba1d5210d72f415452f24338427fbc6e22ae44708b6c3672f",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f001035__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f001035__right.png",
+      "image_sha256": "404b7c8a9850c10f6451e82eb370962df205e977e2bda7ba434e60aa6e3a6ff8",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f001088__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f001088__right.png",
+      "image_sha256": "84eeb5ede2ff1ef174fd423374a4231ec65a6a6cbe08680246084f6e37be6fc7",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f001141__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f001141__right.png",
+      "image_sha256": "a5226be96b55f59f3ca9ecb1d3ed3f4dc5ea106c67cf393a1fe3a3aeccb85cda",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f001194__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f001194__right.png",
+      "image_sha256": "799cf6207d41739313f2bdb5fdc5e14809b8c2af29d2aadb1d23b3e57689aa52",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f001247__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f001247__right.png",
+      "image_sha256": "df0f66a8ce82827a18e9b9f0df55cc9c54af0aa2830ecc834de5d52d26156ef2",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f001300__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f001300__right.png",
+      "image_sha256": "0df9565dffeeb18838fbda00b225dd14c044c4a6bab7808fc46e71f4b674a0e0",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f001353__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f001353__right.png",
+      "image_sha256": "caea59c8e8bbb0f4ca4510d247a999c6e1bbd5099a09eb0a46d7f3e3f68b7c78",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f001406__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f001406__right.png",
+      "image_sha256": "66476a12f0d5309fbef9221abb8d4124dd4ab7a7db74856b4263ca30ec30559f",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f001459__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f001459__right.png",
+      "image_sha256": "adde36e96c3cd3ee79feb97f64e5aa9c47622b889426b196bd34bb76b7b56089",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f001512__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f001512__right.png",
+      "image_sha256": "97b36c9f86ea84a2e14fd14bd2ccbf652eddeb747a0e4e17739dfb63c5bce778",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f001565__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f001565__right.png",
+      "image_sha256": "072de8df43db547678c8809eadecc6ee2796a9ac8330698a9e2e22458bad3ff9",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f001618__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f001618__right.png",
+      "image_sha256": "13dd0c48dfc2d4e1691911b39f117efe3d02560784ed4fc622f8279769e17126",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f001672__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f001672__right.png",
+      "image_sha256": "2df6b5183cfaaab3274bb608b5ecd8f29ce88b0354920468268071201b23271e",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f001725__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f001725__right.png",
+      "image_sha256": "457df9b87df4c7e31c10f469aacf50e58d3183fd44e7e78a758c843353ad9db6",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f001778__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f001778__right.png",
+      "image_sha256": "26f67b90482ab3bf129e0cc4a7943f35cccb390e1388a60bf7de60ea4379c46e",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f001831__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f001831__right.png",
+      "image_sha256": "32542dc14f26b098a0bb326f6aeb4bd6d39f31827939ac240bd868bef70f6d51",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f001884__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f001884__right.png",
+      "image_sha256": "73cc0e8f4192120b467a84d01b3d926bd60670ba3998b1465dc34eca9cb00382",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f001937__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f001937__right.png",
+      "image_sha256": "4146dfe99d835eea91fe997ddf0e9fcdadd5f2f5449faf2f2656501f663c58b6",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f001990__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f001990__right.png",
+      "image_sha256": "477b848f723fa7976beb8c7481a58ebef6d688ecd1282bea9c595c245e4a4d2e",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f002043__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f002043__right.png",
+      "image_sha256": "38747deac436f066cf2e31231087dff84ea7c0c8963a95cfe7a294145c301d5d",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f002096__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f002096__right.png",
+      "image_sha256": "db2b8edd19c7c87d7e280ed1629bcfb96864d2159333442ce4b52eb36df86761",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f002149__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f002149__right.png",
+      "image_sha256": "8e5507dcb9562d3ea9a1a119ec5a0f98488cc15feac4cf474be64c1196cda849",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f002202__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f002202__right.png",
+      "image_sha256": "18cf47a1bc7d9baa2b752be42d2c27c5b882ed6fe2ce9bd005af61ee9353c993",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f002255__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f002255__right.png",
+      "image_sha256": "95a9f8b08efe452486ebc2a974bac0f4e0b11483660c23544e78026ac0f27f61",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f002308__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f002308__right.png",
+      "image_sha256": "b65e8e4bc1d27dc028b77976c4229ad36d6cfd9fb0ed3f6323adae96a9412d96",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f002362__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f002362__right.png",
+      "image_sha256": "52f069eb1de90b8ec103c03917156b3643f2d7badd3815f60cdf7565a2cf1260",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f002415__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f002415__right.png",
+      "image_sha256": "3a1e498f4d0b8a522a8e03b8e13c27c0720bdf764882ad9736f836b648a9f5f2",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f002468__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f002468__right.png",
+      "image_sha256": "f1a587a2fdd7ebba2c13508e7e6362bf2e3a6a6ad90fb5c0fb1f658ebb018fd6",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f002521__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f002521__right.png",
+      "image_sha256": "8726301f2f8590feff96931e4614b0e8150a53f46abc552dec0e6f03cfe6b106",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f002574__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f002574__right.png",
+      "image_sha256": "eee8a17b5a9fd10db6886934af2d41a3b2d21e11cb8d5c3ebf0be4bb2c8343e8",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_run_stop_run_20260922_01__f002627__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_run_stop_run_20260922_01__f002627__right.png",
+      "image_sha256": "b0f789a5d6c124dbae1f9d7ca4a540c78469165259d59049b162f1dc7abc49ee",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_static_20260922_01__f000100__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_static_20260922_01__f000100__left.png",
+      "image_sha256": "90d2b0840960e5a277a7fe2cd847ecb374090db7154be5aaed1b3eadabf73ad4",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_static_20260922_01__f000301__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_static_20260922_01__f000301__left.png",
+      "image_sha256": "5b0e45e718deac3695dd9aa660ac7242b25eeaa74a14f471519568c75f0d6d00",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_static_20260922_01__f000503__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_static_20260922_01__f000503__left.png",
+      "image_sha256": "5a64db8ca99ba9ce2a4b6bbea33a56691302aef77a055081f0b53e3b0ce68b61",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_static_20260922_01__f000704__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_static_20260922_01__f000704__left.png",
+      "image_sha256": "b447b65b8452d9aa4c57d2c7bdd882b45f3e74331e09ea3531b0c320118c3550",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "L_static_20260922_01__f000905__left",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_static_20260922_01__f000905__left.png",
+      "image_sha256": "0adc1fbe82fb29214c9bd3d0b5f77bf0d33a7fe5cf03a6321403438f02454f3a",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_static_20260922_01__f000095__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_static_20260922_01__f000095__right.png",
+      "image_sha256": "0dc97609a69892bb32025f09b0948318f5832a02bdb1cc85df531a27ca42deb9",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_static_20260922_01__f000287__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_static_20260922_01__f000287__right.png",
+      "image_sha256": "280a7ba068e517cff83182bd520a201ea9c3e554b5a35a1e5d4e7326acb1580f",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_static_20260922_01__f000478__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_static_20260922_01__f000478__right.png",
+      "image_sha256": "630551d4af4cf35ae4f9f87d4f4d4ec13765e873ca661f6792a1391a4e60c26a",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_static_20260922_01__f000669__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_static_20260922_01__f000669__right.png",
+      "image_sha256": "e98fd0ff9aac99b8e026cc8dac4bd3cc7fdc7666a387e000e3dfbaa33ad60677",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "R_static_20260922_01__f000861__right",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_static_20260922_01__f000861__right.png",
+      "image_sha256": "04dc16b66d53d615cb7c011aa7750254cfa2ffe67bcd54f081a3f2ff7984856e",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "ruler_left_01",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\ruler_left_01.png",
+      "image_sha256": "0278b8b81a22e2d45361b25096ab07c03a92f5cac1f73e39a3cc026739ddd0a8",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "ruler_left_02",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\ruler_left_02.png",
+      "image_sha256": "beb741242690e7b81df483e1f1a8645d6a5fe2621fb32441596b0e8f29118221",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "ruler_left_03",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\ruler_left_03.png",
+      "image_sha256": "b00787b4bcf836c0a0afffc5208448d3673c7b9027b82db8574d36aea92e5045",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "ruler_left_04",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\ruler_left_04.png",
+      "image_sha256": "c4edae6c093f599de77d1000e4fb15d969ab2dc8378cbb476a0242a60d0002c5",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "ruler_left_05",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\ruler_left_05.png",
+      "image_sha256": "3fd0611547e4cbec021f4b24e3582260c1a8ffb4d755f18ea8f59da3ff4b6168",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "ruler_right_01",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\ruler_right_01.png",
+      "image_sha256": "4e1b568f0a7f3ef0165ede7adb7337840ce62c32a1f610515f2e826c4652b332",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "ruler_right_02",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\ruler_right_02.png",
+      "image_sha256": "be7eb88b700f9fac63a68feffbab65da49e123a26836c741004e8bca2b3e9ca3",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "ruler_right_03",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\ruler_right_03.png",
+      "image_sha256": "2fce2dadd3535b0c553e3a161702e6592edde44f7b2aa863249139021ae445bc",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "ruler_right_04",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\ruler_right_04.png",
+      "image_sha256": "0c011582c1dcd48e84b6371d3a97c1a2b884655cedc383de4a466b2e219cb2e2",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    },
+    {
+      "id": "ruler_right_05",
+      "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\ruler_right_05.png",
+      "image_sha256": "687813163d2cab625f8b3283d22ec8b2e703b397c7522111ca792a78a48299c1",
+      "entry_count": 1,
+      "entry_coordinates_exact_match": true
+    }
+  ]
+}

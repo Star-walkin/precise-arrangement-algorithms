@@ -1,0 +1,120 @@
+{
+  "version": "IR-A3.0.1",
+  "name": "断界寻绳 A3",
+  "frozen_after": "visibility_repair_001",
+  "sources_sha256": {
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v3\\whole_io.py": "07b68ddca6a599123ef6448da032fd08a6c03286f7f2a85fc8de7a1f5440fc17",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v3\\free_rope.py": "c57f77270a1c0308570a77ff70dee67fe7caa25b2dbb55bafd2e80aae9cf60fd",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v3\\boundary_occlusion.py": "293ba596c82bb83a463143531beff8c9616c410d46f46b6160a1bd32adc3f707",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v3\\whole_path.py": "8deb89d18c743ae63a204d8efb8b64ade8a977086fdee9416baf53c8b01832a6",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v3\\run_whole.py": "160f4a432b0752fce9ffa30d3c379cb7a3ea22f9445e57888edc7a061e62e8ce",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v3\\run_batch.py": "3489eec04d794576c93fe77f8e86970c234bdb0da95b911f2e4f68e6240b3d2c",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v3\\structure_audit.py": "990c87fd665d9b82c739ab8e397495923b39c1cd10ca912bbabac6fceedbbd15",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v3\\protocol.json": "50bf0f317b07b0e031ad70d4e511029616d43bf868746748b290bb1fc3a0cee2",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v3\\protocol_addendum_001.json": "4665b43dd33f1a6d1f118de027ab6781af9537a7a1f7edb146c8e6ccb693c1e5",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v2\\free_refinement.py": "65ca049228d0dec2d941a4e08bddf4f9bb52935570cf9827dc7d9adbc1272c8c"
+  },
+  "input_manifest_sha256": "712859a4a830c08d556729a98cad76d039c684c290d2c4c57efa2b7ad3b45e69",
+  "parameters": {
+    "free_rope": {
+      "outside_minimum_profiles": 14,
+      "outside_minimum_span_px": 100.0,
+      "outside_sample_step_px": 3.0,
+      "outside_maximum_samples": 280,
+      "maximum_seed_angle_change_deg": 2.5,
+      "maximum_seed_normal_shift_width": 0.38,
+      "extension_step_width": 0.22,
+      "extension_maximum_px": 1800.0,
+      "extension_maximum_image_fraction": 0.45,
+      "maximum_unsupported_run_width": 0.85,
+      "extension_center_shift_width": 0.25,
+      "extension_width_minimum_ratio": 0.65,
+      "extension_width_maximum_ratio": 1.45,
+      "extension_minimum_contrast": 5.0,
+      "extension_noise_contrast_factor": 1.7,
+      "extension_minimum_gradient": 0.7,
+      "texture_minimum_coherence": 0.2,
+      "texture_mismatch_deg": 34.0,
+      "texture_background_advantage_deg": 12.0,
+      "maximum_profile_gap_width_for_mask": 0.6,
+      "wide_profile_radius_pitch": 1.8,
+      "wide_profile_tangent_span_pitch": 2.2,
+      "wide_profile_quantile": 0.7,
+      "wide_minimum_consistent_profiles": 14,
+      "narrow_seed_pitch_ratio": 0.45,
+      "yellow_background_fraction": 0.55,
+      "maximum_inferred_run_width": 3.0,
+      "single_edge_window_width": 0.16
+    },
+    "boundary_occlusion": {
+      "maximum_candidates": 12,
+      "maximum_rows": 64,
+      "maximum_extrapolation_pitch": 6.0,
+      "local_fit_span_pitch": 4.0,
+      "normal_profile_half_pitch": 0.6,
+      "valley_search_pitch": 0.18,
+      "minimum_groove_width_pitch": 0.12,
+      "maximum_groove_width_pitch": 0.65,
+      "minimum_raw_range": 3.0,
+      "minimum_raw_weak_contrast": 1.0,
+      "minimum_raw_strong_contrast": 2.0,
+      "minimum_normalized_contrast": 0.12,
+      "minimum_orientation_ratio": 0.5,
+      "maximum_saturation_fraction": 0.65,
+      "minimum_region_samples": 3,
+      "supported_fraction": 0.55,
+      "interrupted_fraction": 0.25,
+      "minimum_available_fraction": 0.65,
+      "normalization_sigma_pitch": 2.0
+    },
+    "whole_path": {
+      "step_x": 7.0,
+      "beam": 72,
+      "turn_radians": 0.014,
+      "maximum_tangent": 3.2,
+      "maximum_weak_run_width": 4.0,
+      "minimum_supported_fraction": 0.35,
+      "maximum_search_widths": 110.0,
+      "width_scales": [
+        0.8,
+        1.0,
+        1.2
+      ],
+      "curve_weight": 0.12,
+      "texture_weight": 0.07,
+      "minimum_support_score": 0.27,
+      "straight_single_edge_budget_width": 18.0
+    }
+  },
+  "pilot_count": 16,
+  "pilot_runs": [
+    "pilot_001",
+    "pilot_002",
+    "pilot_003",
+    "visibility_repair_001"
+  ],
+  "extra_run_reason": "explicit pre-run protocol_addendum_001 structural visibility repair after three budgeted algorithm rounds",
+  "full_input_count": 400,
+  "selected_run_reason": "eliminates obvious U/background false tails and premature flattening; fixes inherited ROI truncation while keeping partial/ambiguous outputs. Dark-tail identity still unverified.",
+  "evaluation_limit": "No true whole-rope masks/identity labels; no accuracy or whole400 success claim. Save candidates then independent file and visual checks.",
+  "commands": {
+    "all": [
+      "D:\\precise_arrangement\\vision_prototype\\.venv\\Scripts\\python.exe",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v3\\run_batch.py",
+      "--run",
+      "all_001",
+      "--workers",
+      "4"
+    ],
+    "audit": [
+      "D:\\precise_arrangement\\vision_prototype\\.venv\\Scripts\\python.exe",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v3\\structure_audit.py",
+      "--mode",
+      "all",
+      "--run",
+      "all_001",
+      "--workers",
+      "4"
+    ]
+  }
+}

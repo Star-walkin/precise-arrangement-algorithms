@@ -1,0 +1,32 @@
+{
+  "frozen_utc": "2026-10-25T11:39:52.996540+00:00",
+  "selected_pilot": "integration_pilot_002",
+  "full_run": "all_001",
+  "source_sha256": {
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_rope_boundaries_20261025_v3\\run_v3.py": "663928fc6e85ad73bef3315a9aec4ebc9b1fa9813659dcb262abe6d206189f72",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_rope_boundaries_20261025_v3\\full_roi_observation.py": "64fdc0aca8e45019ebed32d50e3bf5a5089fee2d426a8b942a817125e2099555",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_rope_boundaries_20261025_v3\\free_rope_v3.py": "0fd34f4394dd6d36ee15819d0217a5e99b6b021fd69a93cb246a5bfea2682840",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_rope_boundaries_20261025_v3\\curve_family_v3.py": "c7e503719cc5860b1c949ffa9ebc74c3eec6df503db0a8f08a5d4b26e8fae2fc",
+    "D:\\precise_arrangement\\vision_geometry_lab\\rope_detector.py": "6d90427900284332f032efd06abd2951d23b8b08df32e6a47a3fc4dd8bcdebf0",
+    "D:\\precise_arrangement\\vision_prototype\\semantic_locator.py": "dddeac587362f6002456100a447e701b74a73afe8f748b277ca77fa9873ab83e",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_rope_boundaries_20261023_v2\\free_rope_occlusion.py": "d2c88de70265fe7f2b4d9a94c7c00324d6833556b6abeee5df26f3dc983855dc"
+  },
+  "model_sha256": {
+    "D:\\precise_arrangement\\vision_training\\task_left_v1\\models\\left_camera_thick_v1\\left_camera_thick_v1.onnx": "7762658bd71840c8c4a620dc143f8e9bf2b4cc71a15790b526c732ad531d266a",
+    "D:\\precise_arrangement\\vision_training\\task_v1\\models\\right_camera_poc_v1\\right_camera_poc_v1.onnx": "3f19d7dc2642c23864954c4f70b9de52a23843539af905c235a227f1eb57aef2"
+  },
+  "model_metadata_sha256": {
+    "D:\\precise_arrangement\\vision_training\\task_left_v1\\models\\left_camera_thick_v1\\onnx_metadata.json": "8c1059dd8c87ebe754dfba116ee13f92876c820af55d15f354a65bf06e1f50da",
+    "D:\\precise_arrangement\\vision_training\\task_v1\\models\\right_camera_poc_v1\\onnx_metadata.json": "4ff194f76fa246cbad22013e47f2f2cdf1d57a54a3c81229d218b2881d7a58a4"
+  },
+  "protocol_sha256": "46bda9183b419e1a19bbf1287545b27ae0ab672990cf11b99be7995d331b4e9f",
+  "gate": "38/38 pixel integrity passed. Independent visual review shows added visible grooves and no new obvious long free-rope false track. Known omissions retained.",
+  "limits": [
+    "No measured per-rope accuracy",
+    "Incomplete free-rope extent",
+    "No real occlusion completion demonstrated in fixed38",
+    "Shared quadratic family, not full ellipse",
+    "400 open development images, not independent blind test"
+  ],
+  "workers": 2
+}

@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "coordinate_xy_half_to_original": true,
+  "x2_align_corners_false": true,
+  "native_panel_boxes": [
+    [
+      0,
+      180,
+      4096,
+      3180
+    ],
+    [
+      4128,
+      180,
+      8224,
+      3180
+    ],
+    [
+      8256,
+      180,
+      12352,
+      3180
+    ],
+    [
+      12384,
+      180,
+      16480,
+      3180
+    ]
+  ],
+  "board_size": [
+    16620,
+    3400
+  ],
+  "LUT": "OpenCV official TURBO RGB, rint to256 bins",
+  "no_user_images_or_labels_read": true,
+  "source_sha256": "8fe2731446d054fbf9a0078399db0608544f02a09175b189dd90f1c6da3e89ea"
+}

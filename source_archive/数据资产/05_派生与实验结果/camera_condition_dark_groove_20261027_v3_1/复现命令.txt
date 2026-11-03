@@ -1,0 +1,16 @@
+版本：暗沟约束 D3 / DR-D3.0.1
+工作目录：D:\precise_arrangement
+环境：既有 vision_prototype\.venv；无需安装或升级依赖。
+
+重新运行同一400图（输出文件夹必须尚不存在）：
+& "D:\precise_arrangement\vision_prototype\.venv\Scripts\python.exe" -B "D:\precise_arrangement\数据资产\05_派生与实验结果\camera_condition_dark_groove_20261027_v3_1\run.py" --mode all --variant image --output "D:\precise_arrangement\数据资产\05_派生与实验结果\camera_condition_dark_groove_20261027_v3_1\replay_001" --workers 6
+
+独立检查重新运行的产物：
+& "D:\precise_arrangement\vision_prototype\.venv\Scripts\python.exe" -B "D:\precise_arrangement\数据资产\05_派生与实验结果\camera_condition_dark_groove_20261027_v3_1\audit.py" --run "D:\precise_arrangement\数据资产\05_派生与实验结果\camera_condition_dark_groove_20261027_v3_1\replay_001" --output "D:\precise_arrangement\数据资产\05_派生与实验结果\camera_condition_dark_groove_20261027_v3_1\replay_001\independent_audit.json"
+
+程序会校验输入清单、旧ROI/黄点、C3/D2源码及本版冻结源码。
+任何冻结不一致都应另开实验，不通过删除校验绕过；不要覆盖all_001或旧v3目录。
+groove_field.py负责图像沟槽软证据；ordered_paths.py负责整段曲线、重归类、反弯及间距。
+all_001\source_snapshot保存实际运行的源码；run_context.json记录环境、命令与输入。
+图像结果\left_camera和right_camera各200张；记录\cases含原黄点、归属/未归属及拟合信息。
+这套流程仅离线访问已授权开放400图，不初始化任何设备。

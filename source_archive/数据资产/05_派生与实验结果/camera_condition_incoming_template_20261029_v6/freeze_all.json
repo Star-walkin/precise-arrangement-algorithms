@@ -1,0 +1,36 @@
+{
+  "version": "IR-A6.0.0",
+  "name": "自模板多候选 A6",
+  "created_at": "2026-10-29T16:44:38.557675",
+  "sources_sha256": {
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\whole_io.py": "f03a9fbbe2d721298813c745091caec952b99f2dc6d308376d9d64892f8fdcc6",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\free_rope.py": "c57f77270a1c0308570a77ff70dee67fe7caa25b2dbb55bafd2e80aae9cf60fd",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\photometric_ribbon.py": "7a2570f806e548c945271fb714a3bd7836f323c453185cb9b21876aa0557a59b",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\attached_groove.py": "484f25bc30d94caa396724f4c4469f14ef67a86285368b76ec545554a7cca24f",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\appearance_template.py": "f15128a59380f26101d6f222b66b54b0499d128ee8fb2d64841bc81a06318e90",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\free_seed_recovery.py": "fc9df09cc53e508846ff9d23bea0a6517e4e5ca29d1a8e0c416a026da1d1f864",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\axial_reacquisition.py": "b013781625d243a799d0b2cb4e5163b324631279fbb9928f4d17de4051f5ca2b",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\image_beam.py": "b91d7e0c4b1f2a007d99d54e7ce877982472caf6989ef602abcb2c74cd437d12",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\pipeline.py": "ffd2a6bd532fa5499a56b9221553fc54b53dc3211869d19b5bb83dbedc82e35f",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\run_experiment.py": "eff028c93fd4351fead66baac355abe7e68454d5eaf9a840d9f14d215beaae03",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\protocol.json": "fa770e5d7d73deddf18c50dcc6a222f65c4203721213f3814ecdab21c7e8fe87",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v2\\free_refinement.py": "65ca049228d0dec2d941a4e08bddf4f9bb52935570cf9827dc7d9adbc1272c8c"
+  },
+  "accepted_pilot": "pilot_003",
+  "pilot_summary_sha256": "b1c5738e9331a088ad7f348ef34ac2a9450c088c35e9b07dc886f3cb651dc9cb",
+  "protocol_sha256": "fa770e5d7d73deddf18c50dcc6a222f65c4203721213f3814ecdab21c7e8fe87",
+  "future_runs": [
+    "extra_001",
+    "all_001"
+  ],
+  "preset_review_count": 8,
+  "full_denominator": 400,
+  "parameter_changes_after_freeze": false,
+  "whole_rope_identity_accuracy_verified": false,
+  "known_limitations": [
+    "early turns onto old coils remain among candidates",
+    "visible straight continuation missing after bright transition in f15",
+    "trusted prefix is conservative and not calibrated identity probability"
+  ],
+  "budget_note": "three fixed21 pilots completed; no further visual threshold tuning in this version"
+}

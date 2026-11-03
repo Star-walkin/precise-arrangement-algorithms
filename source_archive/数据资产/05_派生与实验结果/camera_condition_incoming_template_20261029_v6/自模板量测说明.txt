@@ -1,0 +1,71 @@
+自由绳自模板量测（A6 appearance_template.py）
+
+这部分只负责测量，不负责生成路线、选择 F3 轨道或判断同根身份。
+与 A5 的通用条带检测相比，新增加的内容是：真正从本张原图已经测到的自由绳段，学习它自己的横向外观分布和股纹分布，再拿候选原图与这个参考比较。
+
+输入接口
+
+build_template(data, free)
+data 必须有 original（原始 uint8 BGR）、surface（卷面掩膜）、pitch（像素绳距）。
+free['free_segment'] 必须含 status='observed'、observed_points_xy、boundary_left_xy、boundary_right_xy、direction_xy。
+三个逐点坐标列表必须等长；宽度直接由实测左右边界计算。
+旧路径的预测端点、卷面内推断点和旧选中弯段都不能用来补模板。
+
+build_fields(image, width, pitch)
+这是本目录中只读 A5 photometric_ribbon.build_fields 的别名，应每张图建立一次供搜索重复使用。
+
+evaluate_template(fields, xy, tangents, widths, template, compare_neighbors=True)
+xy 为 N×2；tangents 为 N×2 或一个方向；widths 为标量或 N 个像素宽度。
+支持批量，内部不会反复重建全图灰度场。
+compare_neighbors=False 可只量中心带；默认同时量中心两侧约 1.1 个绳距的对照带。
+
+怎样建立模板
+
+最多等距选择 48 个实际自由段测量点。在每一点沿绳方向取 25 个截面、横过绳方向取 41 个位置，读取原图。整个测量窗包括绳体与背景带，都必须避开卷面掩膜；仅仅中心在卷面外并不够。窗口越界、没有真实整带双边或样本跨度不足会拒绝模板。
+
+模板保存原始中心/左右灰度、双边强度、光学宽度、完整横向剖面和阴影宽度的中位数与离散度。用左右背景估计缓慢照明坡度，再按实测中间与背景的灰度差归一化横向剖面。亮绳和暗绳都转成相同的规范方向；不能靠挑选最有利的亮峰或暗谷决定极性。
+
+绳体内部先去掉沿绳恒定的横向明暗轮廓，再测股纹相对绳轴的方向、方向一致性及分频段能量。频谱只比较能量分布，不要求候选图案与某一条小螺纹精确同相位。弱纹理不提供方向证据。模板没有清楚纹理时，可以仅使用有效剖面，不把缺少纹理当成“纹理相同”。
+
+返回模板为可直接保存的 JSON 字典：ready 表示可用的自剖面模板；outline_only 表示自由绳过曝，只能保留真实外轮廓参考；unknown 表示不能建立参考。source_points_xy 和 source_point_indices 记录具体取样来源，accepted_surface_overlap_fraction 应全部为 0。
+
+怎样比较候选
+
+每个候选按自己的中心、切向和宽度回到原图采样。原图外边、饱和轮廓和低信号判断复用 A5；新增剖面相似度比较的是本图自由绳模板，而不是一个固定亮条模型。另比较股纹方向及频段能量，并记录宽度变化。
+
+score 是局部兼容性分数，不是概率。valid 表示模板和原图存在可比较证据；supported 还要求原图整带外包络、宽度和剖面匹配通过。调用方不能只凭高 score 忽略 supported 后一路外推。
+
+过曝区域保留 A5 独立外轮廓通道，但截断的灰度不能获得正常均值比较资格。
+
+另有一个跨曝光轮廓模板通道：如果自由段全部过曝，模板仍可以保存从原图量到的两条真实外沿相对中心的位置与离散度。绳体进入卷面后变成正常暗带或亮带时，使用候选原图中的双外边和宽度，与这份轮廓几何比较；候选仍须通过 A5 原有整带、宽度和沿向一致性门。几何比较容差为两格横向采样分辨率加自由段边缘位置的三倍中位绝对偏差，不降低原灰度阈值。
+
+此时 outline_template_valid / outline_template_match 表示轮廓可以比较及其匹配程度，outline_transition_supported 表示跨曝光轮廓通道支持。profile_valid 和 texture_valid 仍为 false，因为自由段截断的内灰度和股纹并没有恢复。常规邻带自剖面差分也继续不可用；不能把轮廓相似改写成材料身份相同。全白无外边、单边台阶和细股不会因此通过。
+
+主要返回数组
+
+score / valid / supported：综合分、可比较、整带支持。
+profile_match / profile_valid / profile_error：与自由剖面比较。
+texture_match / texture_valid / texture_angle_error_rad / texture_spectral_match：股纹比较。
+width_match / width_valid / measured_width_px：宽度证据。
+raw_pair / raw_left_edge / raw_right_edge：原灰度外边强度。
+delta_gray / body_gray_raw / side_gray_raw / raw_profile：原图测量。
+normalized_profile / polarity：规范化剖面及原始亮暗方向。
+texture_coherence / texture_energy_raw / texture_spectrum：纹理原始描述。
+neighbor_advantage / neighbor_comparison_valid：中心与较强邻带的同条件差分。
+saturated_outline_supported：仅轮廓可用的过曝情况。
+outline_template_valid / outline_template_match / outline_geometry_error：过曝自由段模板与非过曝候选的轮廓比较。
+outline_transition_supported：跨曝光轮廓通道支持，区别于候选本身也过曝的 saturated_outline_supported。
+outer_edge_positions_widths：原图两外沿相对中心的归一化位置。
+unknown_bits / unknown_legend：不可比较或未支持的原因。
+
+数组未知值以 0 和明确的 valid 标志共同表示，不写 JSON NaN；不能把未知 0 误读成真实测量 0。邻带差分只在三条带都存在正常剖面比较资格时有效，不把不可见邻带当零分竞争者。邻带差分没有偷偷加入 score，由路径搜索明确决定如何使用。
+
+限制与验证
+
+邻圈可能具有相同宽度、轮廓和股纹，模板兼容不能证明同根。构造检查中特意保留了重复同纹邻带：中心没有凭空获得优势，identity_verified 始终为 false。F3 不参与本模块评分；后续可用于检查路径是否穿越明显连续边界，不能先选好一条 F3 轨道再只验证它。
+
+check_appearance_template.py 是纯构造机制检查，不读取现场图或标签。检查曝光缩放、亮暗翻转、纹理相位、方向反转、旋转、错误股纹方向、窄股、过曝轮廓、全白、低信号、卷面污染和批量一致性。首轮模板 NumPy 布尔值不能直接写入严格 JSON 的失败及修正前源码单独保存；修复只转换输出类型，没有调整评分阈值。
+
+check_outline_template_transition.py 另外验证“自由段过曝、后续暗带不再过曝”的情况。修复前 raw_supported 为真而模板支持全为假的构造失败保留在 appearance_outline_transition_failure_001.json；前版源码保留在 template_mechanism_002_before。新增轮廓几何通道后，正常暗带和亮带可得到局部轮廓支持，未知的自灰度/股纹仍未知；全白、全暗、单边、细股对照不获支持。常规自模板构造回归保存在 appearance_template_synthetic_002.json。
+
+本模块只增加离线外观证据，不宣布整根覆盖、材料身份、接触点或工业事件已验收。

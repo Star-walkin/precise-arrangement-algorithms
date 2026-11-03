@@ -1,0 +1,58 @@
+{
+  "version": "IR-A4.0.0",
+  "created": "2026-10-28",
+  "input_manifest_sha256": "712859a4a830c08d556729a98cad76d039c684c290d2c4c57efa2b7ad3b45e69",
+  "parent_manifest_sha256": {
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\output_manifest.json": "0e3611465577b3d95faf25956c272d13f32ff6c099b067a92858d23e57e3adbe",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\all_001\\integrity_audit.json": "b0fe024e9a0387f059394452c24dcb205d23ce9a0db0af490bfa02097e53da99",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_20261026_v7\\all_001\\output_manifest.json": "c665e950e24bca8219d57bf78de6b3da5b1d2ab1ab62077f6c1904f6f392b010",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\all_001\\output_manifest.json": "1a92fbb79e2da950d71449b7a92418f92938b48e28c6a55030d6dc8e670fc7aa",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v2\\all_001\\output_manifest.json": "0da8b630bc1c17b256d359d99230151457b6cb2dbde497761d20d9eab0abbed2"
+  },
+  "pilot_inputs": [
+    "images/right_camera/dual_20260923_101517__pair0015__right.png",
+    "images/left_camera/dual_20260923_101643__pair0315__left.png",
+    "images/right_camera/dual_20260923_101643__pair0315__right.png",
+    "images/right_camera/dual_20260923_113305__pair0015__right.png",
+    "images/right_camera/dual_20260924_111143__pair0585__right.png",
+    "images/left_camera/dual_20260924_111500__pair0015__left.png",
+    "images/left_camera/L_run_20260923_01__f000015__left.png",
+    "images/right_camera/R_run_20260923_01__f000757__right.png",
+    "images/left_camera/L_run_stop_run_20260922_01__f000046__left.png",
+    "images/right_camera/R_run_stop_run_20260922_01__f002627__right.png",
+    "images/left_camera/L_static_20260922_01__f000100__left.png",
+    "images/left_camera/ruler_left_01.png",
+    "images/left_camera/ruler_left_04.png",
+    "images/left_camera/ruler_left_05.png",
+    "images/right_camera/ruler_right_01.png",
+    "images/right_camera/ruler_right_05.png"
+  ],
+  "pilot_selection": "16 deterministic camera/source/width strata including seed-unknown case, selected before A3 predictions; open development, not blind truth",
+  "budget": "Two fixed16 pilots: search-domain repair alone, then boundary sampling geometry repair. At most one further implementation-bug repair, no threshold sweep. Freeze accepted change and process same400.",
+  "evaluation": "Compare original/A3/A4 for all fixed16. Report restored visible support and wrong-tail/neighbor risks, no identity accuracy without ground truth. Structural tests are separate.",
+  "denominator": 400,
+  "output": "binary candidate whole mask, observed support mask, overlay; inferenced or ambiguous route explicit, not verified physical identity",
+  "controls": "fixed input list, no per-image parameters, preserve C3 D4 F3 and A1/A2, offline only; do not infer occlusion from F3 exclusion holes",
+  "name": "断界寻绳 A4",
+  "predecessor": "IR-A3.0.1",
+  "non_goals": [
+    "No training, device, reserved-data access or invented invisible tail.",
+    "Old cached automatic free seeds retained; missing seed remains unknown, not absence.",
+    "No new truth labels or per-image parameter edits."
+  ],
+  "planned_changes": [
+    "Use significant-component search envelope without OR-ing isolated SAM fragments back in; do not mutate original S.",
+    "Check original boundary crossings from first stable surface entry, separate multiple probes of same row and tangencies, enforce search-domain availability. Existing raw contrast gates unchanged."
+  ],
+  "predecessor_source_sha256": {
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v3\\whole_io.py": "07b68ddca6a599123ef6448da032fd08a6c03286f7f2a85fc8de7a1f5440fc17",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v3\\free_rope.py": "c57f77270a1c0308570a77ff70dee67fe7caa25b2dbb55bafd2e80aae9cf60fd",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v3\\boundary_occlusion.py": "293ba596c82bb83a463143531beff8c9616c410d46f46b6160a1bd32adc3f707",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v3\\whole_path.py": "8deb89d18c743ae63a204d8efb8b64ade8a977086fdee9416baf53c8b01832a6",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v3\\run_whole.py": "160f4a432b0752fce9ffa30d3c379cb7a3ea22f9445e57888edc7a061e62e8ce",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v3\\protocol.json": "50bf0f317b07b0e031ad70d4e511029616d43bf868746748b290bb1fc3a0cee2",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v3\\protocol_addendum_001.json": "4665b43dd33f1a6d1f118de027ab6781af9537a7a1f7edb146c8e6ccb693c1e5",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_whole_incoming_20261028_v3\\freeze_all.json": "8bf833a0f2913138146fd0cb3dddf993f165a89764be90952a0ed17912597bb8"
+  },
+  "predecessor_output_manifest_sha256": "0f8fa6445bc262921c58da67d6b7cbcca7bce7652ca6bd8533c3cb1f0aedeb33"
+}

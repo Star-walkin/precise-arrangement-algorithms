@@ -1,0 +1,32 @@
+{
+  "version": "IR-A2.0.0",
+  "created_utc": "2026-10-26T12:45:05.259454+00:00",
+  "variant": "global_gamma",
+  "gamma": 0.7,
+  "source_sha256": {
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_bright_rope_boundaries_20261025_v3\\full_roi_observation.py": "64fdc0aca8e45019ebed32d50e3bf5a5089fee2d426a8b942a817125e2099555",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\conic_family.py": "392eb740cd7697bb4ddbc17359a193b2c9b9b761b1528573349370f7ac66eaa9",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\experiment_io.py": "59df951608cac1584bbb8b7b444ccc5799066afa6a885b4960ccbd583b4e3f85",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\protocol.json": "b71aee6dc0422075247f8eff192fe5ef019540af331d4c196ecdff3c22341af9",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v2\\experiment_io.py": "c6b4524922b47103c38e7b1fb7b2b7ff5dda2adc89a8e09b75d05a75d85b1e71",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v2\\free_refinement.py": "65ca049228d0dec2d941a4e08bddf4f9bb52935570cf9827dc7d9adbc1272c8c",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v2\\illumination_c3.py": "104800bbacd75ccbeda929ae3796b0d409041a0e81ff25bedf53b9775c9fa0d7",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v2\\paired_connection.py": "ef7545d98f1fb7c225bc103ac3418aed68d8d84b99e35b8a4682c1541f144017",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v2\\protocol.json": "91947b949c20f59be255feca39f5dfc6d497a4d40d03b0d56c27cbea0af76b0c",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v2\\render_results.py": "e3aae91f6f4f75147887f1288726774950e294e93f0b531b7ea78538cc477552",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v2\\run_experiment.py": "a761a69e2ad851e739c7cd627baa6746867b0ee2df85aeab698dded05e8f374b"
+  },
+  "pilot_run": "pilot_003_global_gamma",
+  "pilot_summary_sha256": "6f1b1563ca67b6ddbaf8af3fd4a6cc3c7c3da8b537759c2463b869f4d4b78c12",
+  "pilot_audit_sha256": "6b22aaef8383bba62b45eac1fff73680c357086476c42b9cf39bfbb920bb371d",
+  "visual_release_decision": "freeze_visual_notes.json",
+  "visual_review_sha256": "db76412290455c64d08df0090211ce3a1752c6afb9300418becadf64caf852b0",
+  "evaluation_scope_sha256": "3dfbe35df9b2883406008501239b41198d52efaae6562ac044e7c160d60df6c8",
+  "decision": "Export fixed400 with milder global gamma; stop score tuning after three core versions.",
+  "reason": "Illumination-field gain amplified color block noise; global gamma preserves a milder display. Increased C3 counts do not establish accuracy.",
+  "known_failure": "Parallel offset and wrong neighboring-coil joins persist. No same-rope or contact acceptance. Candidate paths are diagnostic.",
+  "release_type": "offline_experimental_results_not_accepted_baseline",
+  "replace_C3_or_A1": false,
+  "equipment_access": false,
+  "reserved_inputs": false
+}

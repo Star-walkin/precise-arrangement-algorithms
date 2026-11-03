@@ -1,0 +1,787 @@
+{
+  "created_utc": "2026-10-25T18:08:37.209697+00:00",
+  "name": "整组圆锥 C3",
+  "version": "RB-C3.0.0",
+  "selected_pilot": "pilot_002",
+  "selected_evaluation": "evaluation_002",
+  "full_run": "all_001",
+  "source_sha256": {
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\run_conic.py": "9533a097a1d04aafa50ba172c7f40fc86d19af60577b8e621a0fcb22ae586cc7",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\conic_family.py": "392eb740cd7697bb4ddbc17359a193b2c9b9b761b1528573349370f7ac66eaa9",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\protocol.json": "94a7a1cb4c5cae734d20c534f66a0a9c8b40ee979ea5da3b7df9d5cfd577952d"
+  },
+  "evidence_sha256": {
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\pilot_002\\integrity_audit.json": "20eea0bb8b53fd39f60365ac379768acaef19b37c9b831fd02be5fe9d003343b",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\pilot_002\\summary.json": "656d12e6224828ac3497bcb4add93c9ef9038a15eb74140cbcd8bf2ba89cbe5e",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\evaluation_002\\summary.json": "a2d4de1577d0be83dad29cfa41e822b91144227d141f7e2834387f65b96f95e7",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\evaluation_002\\run_context.json": "c86f2042b9e20854e63541967ab509a887ad2e51150b1de7c2e380879f2ed66c",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\evaluation_002\\comparison_to_c2_c3_001_and_linear.json": "a2cd6c3ef6cca37dfb2847f8ab93d26f239096896593914e7dcc47018c547ab3",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\independent_qa_pilot_001.json": "61948a8eee1e553992a4acbfd8eb0ceda8e5f95c77afa364ef90118b1fee3600",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\evaluation_protocol.json": "744ef01da8a8ecff100f17ea89781253f9464d7aaaa2e1622b4fb99eb5ff225c",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\revision_note.json": "80c3e98292e8ea3e3d5042b269441442414cd5b83aeba0898e5bdcc85d6224a3"
+  },
+  "pilot_visuals_identical": [
+    {
+      "relative": "overlays/left_camera/dual_20260923_101517__pair0315__left.jpg",
+      "sha256": "7664ce189a5c3dbae2e82e8be0b89b19e7903c89528042c377bd0f4b8a1db0c8",
+      "identical": true
+    },
+    {
+      "relative": "overlays/left_camera/dual_20260923_101643__pair0315__left.jpg",
+      "sha256": "ec9f26895eb7d9eeecd064a6954b449a907ede60f653d21c907e78b7796fb54e",
+      "identical": true
+    },
+    {
+      "relative": "overlays/left_camera/dual_20260923_113305__pair0315__left.jpg",
+      "sha256": "f598b07f42467c16b3fec8582cc7f4139f5f61e7161a7a50b7589d4069d59574",
+      "identical": true
+    },
+    {
+      "relative": "overlays/left_camera/dual_20260924_111143__pair0015__left.jpg",
+      "sha256": "09d1d95757a60df29b8a9375d2d95ae5c2ab85d42e88da5cb58f999487ecc55a",
+      "identical": true
+    },
+    {
+      "relative": "overlays/left_camera/dual_20260924_111143__pair0315__left.jpg",
+      "sha256": "398ea69b1fb5b8e6267d84979fed6f002143d2f374db2d976878f0d805758d09",
+      "identical": true
+    },
+    {
+      "relative": "overlays/left_camera/dual_20260924_111143__pair0585__left.jpg",
+      "sha256": "4c96e0013063286ff7f2d8bf1ba8296301f6124b1dc61828c073cd00a426c195",
+      "identical": true
+    },
+    {
+      "relative": "overlays/left_camera/dual_20260924_111500__pair0015__left.jpg",
+      "sha256": "ed7868c326fdebfc15f071937b8b36561552908072e71ab0b9ad43f407debd31",
+      "identical": true
+    },
+    {
+      "relative": "overlays/left_camera/dual_20260924_111500__pair0315__left.jpg",
+      "sha256": "05112800828c97e635aef6507b546aef746ab6097c1e6ac56391c6f7194181cd",
+      "identical": true
+    },
+    {
+      "relative": "overlays/left_camera/dual_20260924_111500__pair0585__left.jpg",
+      "sha256": "5641b100a06e7ba796ab0865421a970d132347ef69d6be7a9db8142980845fb5",
+      "identical": true
+    },
+    {
+      "relative": "overlays/left_camera/L_run_20260923_01__f000648__left.jpg",
+      "sha256": "f45767ad7e1ecdf0c67f6f9651c032a6639fc93d231fffbe59400c30ca72e599",
+      "identical": true
+    },
+    {
+      "relative": "overlays/left_camera/L_run_stop_run_20260922_01__f000046__left.jpg",
+      "sha256": "644b4d7039a72820427792b16afcf8b9eeb0d958386c669992484f5a7de59d21",
+      "identical": true
+    },
+    {
+      "relative": "overlays/left_camera/L_run_stop_run_20260922_01__f002370__left.jpg",
+      "sha256": "d225709aa3a1d70b01e1c72203149a15af9c34bd1861d606bb93d6d0c0e499d7",
+      "identical": true
+    },
+    {
+      "relative": "overlays/left_camera/L_run_stop_run_20260922_01__f004601__left.jpg",
+      "sha256": "3f7b80cef7e321c5fce2358890d45714c63a1137c3f7790dff91ed319e61bc70",
+      "identical": true
+    },
+    {
+      "relative": "overlays/left_camera/L_static_20260922_01__f000503__left.jpg",
+      "sha256": "af97439a85bf49164ddcd0bcf167c4f43010125eef1a748c0f49266de0b457ff",
+      "identical": true
+    },
+    {
+      "relative": "overlays/left_camera/ruler_left_01.jpg",
+      "sha256": "e05d0dacffb00454a83e7c3a84192e62c368dfe4325318b64ae09f5f1ff9b147",
+      "identical": true
+    },
+    {
+      "relative": "overlays/left_camera/ruler_left_02.jpg",
+      "sha256": "96e41de19a6b86ad91506dcf137164fcd30a8faedfc1047d12fab05e70789c1d",
+      "identical": true
+    },
+    {
+      "relative": "overlays/left_camera/ruler_left_03.jpg",
+      "sha256": "2950c3d8af8d301d6c41bc510870a4179a60493b4af9a8ce028c8a3402bc613c",
+      "identical": true
+    },
+    {
+      "relative": "overlays/left_camera/ruler_left_04.jpg",
+      "sha256": "f08a4cf73d38d4bf02e5051bed90cf40a182c7c19224dc9525c3888af2d2205a",
+      "identical": true
+    },
+    {
+      "relative": "overlays/left_camera/ruler_left_05.jpg",
+      "sha256": "139560743dcd0c2bda0abc11caf6a18ddeba63740bf12e3d898ca2f1927f0d24",
+      "identical": true
+    },
+    {
+      "relative": "overlays/right_camera/dual_20260923_101517__pair0315__right.jpg",
+      "sha256": "3f17ad14b24d7deb7146d0de2d92488acd2054805be2873211a5ee1a003ed97e",
+      "identical": true
+    },
+    {
+      "relative": "overlays/right_camera/dual_20260923_101643__pair0315__right.jpg",
+      "sha256": "cda96b9ffda950b643b9b430a301a05f9192a6b9989c7c3ca9afd038cf9721b6",
+      "identical": true
+    },
+    {
+      "relative": "overlays/right_camera/dual_20260923_113305__pair0315__right.jpg",
+      "sha256": "7f88340892f35710b02eea66f4c6eacda59d965ab9b83b87107f725ca570924b",
+      "identical": true
+    },
+    {
+      "relative": "overlays/right_camera/dual_20260924_111143__pair0015__right.jpg",
+      "sha256": "0aaacce2bee24e988252db5a8aa5ac4002b4ab75a6b8d9ba1aec7de876c4b8f6",
+      "identical": true
+    },
+    {
+      "relative": "overlays/right_camera/dual_20260924_111143__pair0315__right.jpg",
+      "sha256": "e77b0cf71e38e63760c08dd3da457af6dd6defa592e235803c343fb8a8b9407a",
+      "identical": true
+    },
+    {
+      "relative": "overlays/right_camera/dual_20260924_111143__pair0585__right.jpg",
+      "sha256": "48b6702abefe9dccf22edb5e6e555daf73bd73e02c48631195b1e04bcca7e645",
+      "identical": true
+    },
+    {
+      "relative": "overlays/right_camera/dual_20260924_111500__pair0015__right.jpg",
+      "sha256": "42d2628ba95096991e28e9f20d4d658e4f4e4f0c0f9cac73ece7f622dafd0c0c",
+      "identical": true
+    },
+    {
+      "relative": "overlays/right_camera/dual_20260924_111500__pair0315__right.jpg",
+      "sha256": "c9fcea06709b307fe15f6ea66230ec889614ba8cb4dc8b13716a16b2a59d3257",
+      "identical": true
+    },
+    {
+      "relative": "overlays/right_camera/dual_20260924_111500__pair0585__right.jpg",
+      "sha256": "2687a8a0c4520a259c14ff2a9a3f3317ac13141ff9afa3b46cc7508dba003d99",
+      "identical": true
+    },
+    {
+      "relative": "overlays/right_camera/R_run_20260923_01__f000757__right.jpg",
+      "sha256": "8a1906fcd53f04ab86cf63706cd416e4125b8f0c45198943ed55743e20e98482",
+      "identical": true
+    },
+    {
+      "relative": "overlays/right_camera/R_run_stop_run_20260922_01__f000026__right.jpg",
+      "sha256": "bd37b92d64f511649d70a11d8a1c8b3c8b18fed19f73b5cc50d77dc3a80218ea",
+      "identical": true
+    },
+    {
+      "relative": "overlays/right_camera/R_run_stop_run_20260922_01__f001353__right.jpg",
+      "sha256": "3d5b639e31f17a5c24a92910fa0fc4e3b36ca3343112704aef24a442c0dac447",
+      "identical": true
+    },
+    {
+      "relative": "overlays/right_camera/R_run_stop_run_20260922_01__f002627__right.jpg",
+      "sha256": "6d51287611cdff182013a820755e7db1097f8f878f9e1e07e4abc8142a41630f",
+      "identical": true
+    },
+    {
+      "relative": "overlays/right_camera/R_static_20260922_01__f000478__right.jpg",
+      "sha256": "25988c66b09aedf726f0a9d401547deae460fabc45cc02ab19fad374d64a3678",
+      "identical": true
+    },
+    {
+      "relative": "overlays/right_camera/ruler_right_01.jpg",
+      "sha256": "f494453f8b827ada1eef595ddd877dc82ddab2e722c3c152a6396f915e17a99a",
+      "identical": true
+    },
+    {
+      "relative": "overlays/right_camera/ruler_right_02.jpg",
+      "sha256": "04e39db7e734fb0b1cb594b5f4e5eed14c5712eec651231cd7212063b1d2176e",
+      "identical": true
+    },
+    {
+      "relative": "overlays/right_camera/ruler_right_03.jpg",
+      "sha256": "8fd41771df992fe3afde5e2e4b15512324b8ae633e8b9c69ab8f64dbfa05340d",
+      "identical": true
+    },
+    {
+      "relative": "overlays/right_camera/ruler_right_04.jpg",
+      "sha256": "0b005b903104079b8b98679b6b46b65f78509e891a2a46218c333d33ae9c4a5f",
+      "identical": true
+    },
+    {
+      "relative": "overlays/right_camera/ruler_right_05.jpg",
+      "sha256": "c7419d0892849a53420dedb02e88048d0cd996b8cd625e44bb1231a01f4c9210",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/left_camera/dual_20260923_101517__pair0315__left.jpg",
+      "sha256": "da37de6a77929768f2647281635baf92776a426ac16f6a6cdd5fbc7299a6b77b",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/left_camera/dual_20260923_101643__pair0315__left.jpg",
+      "sha256": "61d984c25154a1d59aa1777b60f633f3b86c161c911051b2da9449e6da43e7f6",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/left_camera/dual_20260923_113305__pair0315__left.jpg",
+      "sha256": "5c5aa0df02c9b5d31225ee73199f74b6be61d6539d4afc22438f7b6667a716ed",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/left_camera/dual_20260924_111143__pair0015__left.jpg",
+      "sha256": "de1ae6f55ed02b3c2a3d10d0fd81ef1a96971ceba8f83fd986f66113f844f2f9",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/left_camera/dual_20260924_111143__pair0315__left.jpg",
+      "sha256": "5646df2e463c549646e25665a457bc0aa8d46e428a4952cc83484e1216f2a9d9",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/left_camera/dual_20260924_111143__pair0585__left.jpg",
+      "sha256": "bc12f561046957632f528d6a7b2e8f355cdeb19194f06942aa0e75f013b6b403",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/left_camera/dual_20260924_111500__pair0015__left.jpg",
+      "sha256": "df5f499127ac04ac3a4f69cec2d73244db6097f5b640cb38310953a02d306213",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/left_camera/dual_20260924_111500__pair0315__left.jpg",
+      "sha256": "e220afaced4d1bbcb4c3bcf86c87b2c99cfe878fa16eab42f3a8b352a321f2b2",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/left_camera/dual_20260924_111500__pair0585__left.jpg",
+      "sha256": "44a0b710ad15e27c8233b4ed9a70f38339d88ac5b01e0ec50b0ea6ebde838493",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/left_camera/L_run_20260923_01__f000648__left.jpg",
+      "sha256": "87911702b60905d9403b017af6a90adbb005b10f3216f6f95d24d6ca1a70db29",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/left_camera/L_run_stop_run_20260922_01__f000046__left.jpg",
+      "sha256": "e4ecae14fe8ffc32b1a4ed75925ee01f7432106ec73723f2efd1da0a597fcaa1",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/left_camera/L_run_stop_run_20260922_01__f002370__left.jpg",
+      "sha256": "834ff39b8716436ea7e34a4aed6290cc0d4f5352ec14958c186264834418d4fa",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/left_camera/L_run_stop_run_20260922_01__f004601__left.jpg",
+      "sha256": "b757ea5a6832909c1771adc593dd5e23b7444deaf2e24616f790797c5e050dbc",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/left_camera/L_static_20260922_01__f000503__left.jpg",
+      "sha256": "1a6370b7cade9e9a5877a42766eb60bca3815455e2d9b9afbf836d55598423a6",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/left_camera/ruler_left_01.jpg",
+      "sha256": "6f4e138725fc0ea21bbef7cf0739c669004b9806989baf7c575750c481733bd6",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/left_camera/ruler_left_02.jpg",
+      "sha256": "4de60e8f31029a0cd7a37ebc005de701f6a0a41e70a03720667a4de937db0e6e",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/left_camera/ruler_left_03.jpg",
+      "sha256": "df0945b5523227a5ae3f94ecea9ecc6a16e663e940eba3f0bfcfc5165922a2f7",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/left_camera/ruler_left_04.jpg",
+      "sha256": "6521eda32a43b4bb83e63d82202466a555ba64770ccce4586608ce87dc8a91d8",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/left_camera/ruler_left_05.jpg",
+      "sha256": "6c702f9b706b3e785114b918830be66ee53debf4dbe422b576717052e8845b3c",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/right_camera/dual_20260923_101517__pair0315__right.jpg",
+      "sha256": "c88cb2fffeab9c7592ce93890218936e794d8c8b1300ab3ed6858686327e8cb9",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/right_camera/dual_20260923_101643__pair0315__right.jpg",
+      "sha256": "d0963a53afb4fb4e66f137dd591f24b363f1a5ee977dd78389a0170c20c7b145",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/right_camera/dual_20260923_113305__pair0315__right.jpg",
+      "sha256": "c77da358e987e2526ba6d63893eec247434ea51fe4a21547aded83e7514ea090",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/right_camera/dual_20260924_111143__pair0015__right.jpg",
+      "sha256": "7815b61820eb240bcd350a9153033007769ec74534b0cef158808f1650258c62",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/right_camera/dual_20260924_111143__pair0315__right.jpg",
+      "sha256": "118944d55ab5b4637301892543218399ca1738344b4d2209725758eb095b31e3",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/right_camera/dual_20260924_111143__pair0585__right.jpg",
+      "sha256": "b2dc922a4e8c8dd3b7997e867ec8dd423156aaa543a1c8ed51fdc18e3fb8e729",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/right_camera/dual_20260924_111500__pair0015__right.jpg",
+      "sha256": "f0ef9a2b2f5287b88bf75e30076d65423d0cc406088b2be71a868ccb7a70a61a",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/right_camera/dual_20260924_111500__pair0315__right.jpg",
+      "sha256": "2abcd63ede839fd05755d661eddc673a9f006bab35a566acdc36b78c51c4b491",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/right_camera/dual_20260924_111500__pair0585__right.jpg",
+      "sha256": "6f5c34f98b6f878e54b4f19037fd7a60ca241170c5ef220ef550ff256172a4e1",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/right_camera/R_run_20260923_01__f000757__right.jpg",
+      "sha256": "eb2a23c879fdcf92ade07dac78e5e84e09f1d8b4c2e2942ca4c01ef03808c1de",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/right_camera/R_run_stop_run_20260922_01__f000026__right.jpg",
+      "sha256": "962ce5794bae0bfbcc55585c20abe11c1609bf5cffac78ca94d36da4db055ff1",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/right_camera/R_run_stop_run_20260922_01__f001353__right.jpg",
+      "sha256": "2ebc00815ab0bbc628c68b6664b1abc6202e7ce36b97f22cd9df9cab88990f73",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/right_camera/R_run_stop_run_20260922_01__f002627__right.jpg",
+      "sha256": "292daa863f541e24d7a7815bb7250456d38c69879093b1f7a7741beafbdaef8a",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/right_camera/R_static_20260922_01__f000478__right.jpg",
+      "sha256": "8e6b0c098b019876aa4c578986912ae41f4b7792a60d5ab7aaf9e168955da9e9",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/right_camera/ruler_right_01.jpg",
+      "sha256": "0f5de34cb467f1b77844269e12564a68541316835d19d1be294785f95744f2c3",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/right_camera/ruler_right_02.jpg",
+      "sha256": "c0d4c230d932e923bf5d4cf0cb7635149b8cfe6323d13358e7fd97879661dc44",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/right_camera/ruler_right_03.jpg",
+      "sha256": "1a61a3449891c457cb8a94f92f114377261ba2085aac62d80fe444da8f4a8df5",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/right_camera/ruler_right_04.jpg",
+      "sha256": "8b9612b34716ec98c66285998cace2d008a31c3611adce119e8a580a9662d589",
+      "identical": true
+    },
+    {
+      "relative": "smooth_overlays/right_camera/ruler_right_05.jpg",
+      "sha256": "4c3721e753ed87de5d5cc303e8b47814a18a011055013a68af1bb4b351548bb4",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/left_camera/dual_20260923_101517__pair0315__left.jpg",
+      "sha256": "2008a3c8c8d45c21b69e1fa3cfa144181cb91a90e6c7ffa4a50990bf7efc9077",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/left_camera/dual_20260923_101643__pair0315__left.jpg",
+      "sha256": "6ccbd671a99c1f1103682e4d4ac8ac254bdbcce271407b4b124c421cf6b54042",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/left_camera/dual_20260923_113305__pair0315__left.jpg",
+      "sha256": "abf0d24de786627f1539bacdd50beb9f94a77ac7f9dd9e9c086a9b157521fe7d",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/left_camera/dual_20260924_111143__pair0015__left.jpg",
+      "sha256": "4fb373ecd67af75f51a27fac25cefb7931dfee9ba306df95da9e4e63cdc6648c",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/left_camera/dual_20260924_111143__pair0315__left.jpg",
+      "sha256": "3322a322a857c5d0e3324393f0be7cde27c1ea7c1fbe9e9916197c3574997b0c",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/left_camera/dual_20260924_111143__pair0585__left.jpg",
+      "sha256": "fa1b5fb999ee70b41eb57a64495a66381421abbc68976a57cb5c38307b464f70",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/left_camera/dual_20260924_111500__pair0015__left.jpg",
+      "sha256": "eda1c769b65dc7e6cf6f5bb8a6a54f4f5d1f8974f6f7e9b6852622fa477e9cd2",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/left_camera/dual_20260924_111500__pair0315__left.jpg",
+      "sha256": "08d7d2295369a61fe565d3521a048253243cadc8fae5395eaaa83c74083e7cc3",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/left_camera/dual_20260924_111500__pair0585__left.jpg",
+      "sha256": "db031830b760b8c7f9f5725d99d83180466548d6743238dd43deeb4452c747d5",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/left_camera/L_run_20260923_01__f000648__left.jpg",
+      "sha256": "d009c62e4df46e257c0c08de666f95c35ac837b4526f0674f9a8cf65626deafe",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/left_camera/L_run_stop_run_20260922_01__f000046__left.jpg",
+      "sha256": "83bc140a30809e0d42f8da5d25d4116d159b5897e5a552649cb771b53b32d871",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/left_camera/L_run_stop_run_20260922_01__f002370__left.jpg",
+      "sha256": "7b9918d4a8c8b355a7ab8362ab2477417ffa83a5b4e1f24568279bc328395c6b",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/left_camera/L_run_stop_run_20260922_01__f004601__left.jpg",
+      "sha256": "01ae71c49a1df161a5ddb5a1f06862ed713d02cec45ff0cd72f2e4f69950108a",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/left_camera/L_static_20260922_01__f000503__left.jpg",
+      "sha256": "5ddc93a2e0872f57234280324c20ff3e64d27f2a40456c8e2d222d51e18f3f2a",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/left_camera/ruler_left_01.jpg",
+      "sha256": "811734afe3a49440842adf78d66f3d8f7c1ad319c51668158ef772430b3bfc61",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/left_camera/ruler_left_02.jpg",
+      "sha256": "ca30aa2216cc98defcbbb8c5b09bd61cc8a1dca9c0ad8341148fb257690a6b10",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/left_camera/ruler_left_03.jpg",
+      "sha256": "f3e5713b69fc65cbd9aca0d845678658cbbd378ff26668bc3965946669b61c83",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/left_camera/ruler_left_04.jpg",
+      "sha256": "c5bc25ba13ae1b2a05908c6a12bb71ebd5694a3937ecdb856610d52ae9b69f83",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/left_camera/ruler_left_05.jpg",
+      "sha256": "21f61c5b14f37df61cfff00c4beb64c07bbb75ed88a176f9b0c3290c20270335",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/right_camera/dual_20260923_101517__pair0315__right.jpg",
+      "sha256": "cb0d224bb30ad96083e71f5f1c0a9bb54b42e82f60cd9dc3487af407d8c84779",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/right_camera/dual_20260923_101643__pair0315__right.jpg",
+      "sha256": "6a51a059dcf6e0a1432a9d3483dcedd76c5325dc4b775355379352a78a0ff1b7",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/right_camera/dual_20260923_113305__pair0315__right.jpg",
+      "sha256": "7ce09ca739d294e64c29bb37c9f4af4888136bdef3caeffa89617b1849bbf928",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/right_camera/dual_20260924_111143__pair0015__right.jpg",
+      "sha256": "e10f78edf8da3e3fe1de7f5ad80477ce3490423c535d85f1c0a049b29b54a82e",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/right_camera/dual_20260924_111143__pair0315__right.jpg",
+      "sha256": "9b9355881d9fd364d52ad110775b83e9953ec08f9aefa442b60f122b2df872b9",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/right_camera/dual_20260924_111143__pair0585__right.jpg",
+      "sha256": "98e664882f4455e67061be13e73cf0548845fdf660b7067198a5a3d8e89fd6a5",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/right_camera/dual_20260924_111500__pair0015__right.jpg",
+      "sha256": "f3ad0dc6bb45fc42a0abc84fffe09cfd6e541c36348917d38d8c2286d656aa44",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/right_camera/dual_20260924_111500__pair0315__right.jpg",
+      "sha256": "11f2cf0fa68310eb900b997f048e25ee98237866a2f20cd03339a9e0b4b943e5",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/right_camera/dual_20260924_111500__pair0585__right.jpg",
+      "sha256": "82867ef707110c7498913e410a02bfeec786ea20d35960e8f5ac71eea8924c1a",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/right_camera/R_run_20260923_01__f000757__right.jpg",
+      "sha256": "0b6b95e18dc978f682743b806c99c0e855f667740b52dcd8b1495567267e9565",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/right_camera/R_run_stop_run_20260922_01__f000026__right.jpg",
+      "sha256": "5090b1bfd61ff38d039af152530e275a7d81ecbb471825938265040f43498e93",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/right_camera/R_run_stop_run_20260922_01__f001353__right.jpg",
+      "sha256": "0068b69fddbcecbb0c0560bf00aeb5c6bdd79179b498647e716ad9edaa3236c2",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/right_camera/R_run_stop_run_20260922_01__f002627__right.jpg",
+      "sha256": "e8d48f244c4ff37188b37b57d54ee4d07fa22d828446bd3f35e363bbf3335441",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/right_camera/R_static_20260922_01__f000478__right.jpg",
+      "sha256": "646526116a8a6a46171992803b06b8a44057c9a584020b8e20226a92d7b783ae",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/right_camera/ruler_right_01.jpg",
+      "sha256": "659f8053ab73032185222696c0b9899f60781bfb576e179380f6f4e0bead89f2",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/right_camera/ruler_right_02.jpg",
+      "sha256": "07fe497de0142052c07ef0a14551591d4f3c825923519102bcb4b2509d996f98",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/right_camera/ruler_right_03.jpg",
+      "sha256": "c351208abb9bf179b492eaacf6a4bd4fda562bf7b641949e6abdd5aef8c84d16",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/right_camera/ruler_right_04.jpg",
+      "sha256": "a731f2878d072ab6d1268221dfe36d7bdf220f17351ed58e194af5e5f8ae8cbe",
+      "identical": true
+    },
+    {
+      "relative": "group_overlays/right_camera/ruler_right_05.jpg",
+      "sha256": "9400309d17147df9418ac9a5722bffee5fdc99c2882f9258aff8b54ccad3790b",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/left_camera/dual_20260923_101517__pair0315__left.jpg",
+      "sha256": "f6a8d04e895984c7d8e2e7754eab9af9f9eacce731c2a81f5aacbb2b5231abf8",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/left_camera/dual_20260923_101643__pair0315__left.jpg",
+      "sha256": "08e109f3b0116cf8d70158cf5d49ec6c39748250e1facfc53d9262daa8adf928",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/left_camera/dual_20260923_113305__pair0315__left.jpg",
+      "sha256": "8504d56fd92fe5dae2fcbe894492a16c00aae48a9af40bc5b184cb977858761d",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/left_camera/dual_20260924_111143__pair0015__left.jpg",
+      "sha256": "7c9baa1b6eaa0a4b5e6fed619fb364666795be256a1d20d489166963dff22a31",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/left_camera/dual_20260924_111143__pair0315__left.jpg",
+      "sha256": "962c954baacd3cc181128e24eda9c8f9a052161b9a8b5a0951799ff0bdb0f599",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/left_camera/dual_20260924_111143__pair0585__left.jpg",
+      "sha256": "adf166a15655c953fda73801f673de849f5e19245bc5a3329acc388b1bd61db5",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/left_camera/dual_20260924_111500__pair0015__left.jpg",
+      "sha256": "3d33db245b1d5ff588bdb83d21fcce5667fd922f35086291792c77c7c072c11f",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/left_camera/dual_20260924_111500__pair0315__left.jpg",
+      "sha256": "32ea7f41dc3493870927cbb4b47d2092a3af871c3dc81f04d3eb3a3aa70f1001",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/left_camera/dual_20260924_111500__pair0585__left.jpg",
+      "sha256": "e9ced75f301357b1dc80127b0af210604d15c96953cfff8faee453fed10e1b5a",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/left_camera/L_run_20260923_01__f000648__left.jpg",
+      "sha256": "27d22638a6c80c11431658199d9481d6f965b8cff24ec7765773b88a3bada08a",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/left_camera/L_run_stop_run_20260922_01__f000046__left.jpg",
+      "sha256": "690f1d8aac4cbbfa0e9fe339d6cef46b705c07104a7573f83da72b2c079a2afe",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/left_camera/L_run_stop_run_20260922_01__f002370__left.jpg",
+      "sha256": "ca134a14567c9e89f984ba26a8523fdfc02cf66a33a1218a02773bd19ad79062",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/left_camera/L_run_stop_run_20260922_01__f004601__left.jpg",
+      "sha256": "5dd60669f4a29137c9e87a089473d80baab8d76b4f568b79530b5cdf661bafb6",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/left_camera/L_static_20260922_01__f000503__left.jpg",
+      "sha256": "0251b40f18de29bccfae25ce4851059547e1366f2eb36560950cd29713a86a55",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/left_camera/ruler_left_01.jpg",
+      "sha256": "6e48161263724376482d1cf1a6e58b5b90e496e3c380053bbf5c234491fd7cbf",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/left_camera/ruler_left_02.jpg",
+      "sha256": "18c1c1631829e3e282ffd44788256820dacd114f45f4b278334d7a7c68623755",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/left_camera/ruler_left_03.jpg",
+      "sha256": "6c0464ec153b401f64cc75e8c701f56a99f73578680d3c5174c42edb5e5c1f10",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/left_camera/ruler_left_04.jpg",
+      "sha256": "fcfdda7225c2d90c227d3edcdcb970bf1dd6a48274a160cbd8f3d868e56576db",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/left_camera/ruler_left_05.jpg",
+      "sha256": "c9177f6786333bb6d7ae7ed9ea160487b9d94ccbf96d3e7e861a4aa39a6e1e89",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/right_camera/dual_20260923_101517__pair0315__right.jpg",
+      "sha256": "987c22a2ec21e309a3b455befcd21af716e88332003197475cb1afca0402dc1f",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/right_camera/dual_20260923_101643__pair0315__right.jpg",
+      "sha256": "fb94f10114607d7108a4489ba7d60f409ff8b1fa6120ee9cfc19883e121db71c",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/right_camera/dual_20260923_113305__pair0315__right.jpg",
+      "sha256": "cfeeaf70fa895fbf30d70b8c6f9bb3ec7db1c5ada900007f3b29af4c2ac12786",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/right_camera/dual_20260924_111143__pair0015__right.jpg",
+      "sha256": "8e84312011d0193f312d4cf972f87df2f403acccbebeade4faac915d23887ff7",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/right_camera/dual_20260924_111143__pair0315__right.jpg",
+      "sha256": "3dfa2bf4ca300079eca77e60ff25d15c201a6f8f9cfe9471c22b8ba24472451f",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/right_camera/dual_20260924_111143__pair0585__right.jpg",
+      "sha256": "5813fcaac3a5ce34309cd4685dec52e25ad8e90eff265adfb76707e79f73fa2a",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/right_camera/dual_20260924_111500__pair0015__right.jpg",
+      "sha256": "d7f2b44c45413e4c7237b0adb7b918db7fbc8b6d762a7848eb4110af1b24a7c3",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/right_camera/dual_20260924_111500__pair0315__right.jpg",
+      "sha256": "5e92b856eb4b6ba0b9ccf819e770917eb1c4807761b7b4c8201a3ef38a91a3c9",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/right_camera/dual_20260924_111500__pair0585__right.jpg",
+      "sha256": "49c70f20b041528ad1e997511f2fe9669e9080d332c997a454d0b6b013bcaeae",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/right_camera/R_run_20260923_01__f000757__right.jpg",
+      "sha256": "99872c9f019c054de6b0c0108b54f34ab4a9ee5d51a8b36d17dd9bc86e69faff",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/right_camera/R_run_stop_run_20260922_01__f000026__right.jpg",
+      "sha256": "749efc60bd2707a92adba037bb91f1942f65daadfc834d3e1a23a1f1a5d86208",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/right_camera/R_run_stop_run_20260922_01__f001353__right.jpg",
+      "sha256": "bdd3f78e528a8b63d7daa5eea84f3b8e73f97f421329c138b6183f07c7546895",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/right_camera/R_run_stop_run_20260922_01__f002627__right.jpg",
+      "sha256": "a70678cc278a001dc56a7f50c717883b396c413529cf7f4931d824045d3cd4c7",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/right_camera/R_static_20260922_01__f000478__right.jpg",
+      "sha256": "184b35536d441d399c34e4c2f5dd57710b6c2270629e3addd684438a50438c49",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/right_camera/ruler_right_01.jpg",
+      "sha256": "d076bf20b1b5b2b4661ea4c2d389acb21df93cf73ea80e772362f73ccd5d917f",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/right_camera/ruler_right_02.jpg",
+      "sha256": "eb4e5735df7cb982e5f70c5f9d86677cd24bc3b3c2e1f6f25caa6852bc37afc3",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/right_camera/ruler_right_03.jpg",
+      "sha256": "813486db1e80af3acaa5255d207529798e44dbbe388f6ffcf775fcc6d45b22bb",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/right_camera/ruler_right_04.jpg",
+      "sha256": "99b519a98c0915b0bf989b770bbeb45c55851f9c318ee33e461f20f3ad484243",
+      "identical": true
+    },
+    {
+      "relative": "qa_compare/right_camera/ruler_right_05.jpg",
+      "sha256": "8966efc27cf4e9ad009046b7e5ac7d56e190cc3b114f5328c4f02e5f73d59ae8",
+      "identical": true
+    }
+  ],
+  "decision": "User-requested grouped all-point single-conic implementation; fixed linear gate passes; not superior to C2.",
+  "limits": "C3 proxy hit95.10% vs C2 97.29%; capped loss0.10068 vs0.04413. Known visible rejected groups retained. Same38 open development images, not overexposure truth. No devices or reserved data."
+}

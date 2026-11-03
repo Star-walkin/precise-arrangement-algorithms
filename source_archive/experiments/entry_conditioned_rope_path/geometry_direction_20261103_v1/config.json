@@ -1,0 +1,88 @@
+{
+  "field_scale": 0.25,
+  "rope_width_hint_px": 28.0,
+  "field_border_widths": 0.8,
+  "background_erosion_widths": 0.4,
+  "background_min_coherence": 0.34,
+  "background_min_energy": 0.002,
+  "background_min_confidence": 0.28,
+  "background_min_resultant": 0.72,
+  "background_max_side_disagreement_deg": 27.0,
+  "background_offsets_widths": [
+    1.6,
+    2.5,
+    3.5
+  ],
+  "direction_soft_cap": 0.08,
+  "direction_parallel_neutral_deg": 12.0,
+  "step_px": 12.0,
+  "max_steps": 305,
+  "beam_width": 8,
+  "angle_offsets_deg": [
+    -14.0,
+    -7.0,
+    0.0,
+    7.0,
+    14.0
+  ],
+  "width_candidates_px": [
+    10.0,
+    14.0,
+    18.0,
+    23.0,
+    29.0,
+    36.0,
+    45.0
+  ],
+  "width_factors": [
+    0.86,
+    1.0,
+    1.16
+  ],
+  "profile_positions": 33,
+  "profile_tangent_offsets_widths": [
+    -0.25,
+    0.0,
+    0.25
+  ],
+  "profile_std_floor": 0.025,
+  "seed_min_bilateral": 0.07,
+  "support_bilateral_min": 0.16,
+  "support_template_min": 0.43,
+  "max_consecutive_unsupported_px": 72.0,
+  "max_total_unsupported_px": 240.0,
+  "max_log_width_step": 0.2,
+  "initial_forward_projection_min": -0.12,
+  "merge_endpoint_px": 7.0,
+  "merge_angle_deg": 12.0,
+  "final_candidate_count": 3,
+  "distinct_median_distance_px": 18.0,
+  "selection_score_margin": 0.035,
+  "minimum_supported_after_entry_px": 48.0,
+  "edge_arrival_distance_px": 12.0,
+  "method_id": "IR-GEOM-G1.0.0",
+  "bbox_xyxy": [
+    0,
+    1050,
+    4096,
+    3000
+  ],
+  "background_domain": {
+    "minimum_local_variance": 0.00018,
+    "maximum_chroma": 0.22,
+    "minimum_gray": 0.025
+  },
+  "display": {
+    "response_range": [
+      0.0,
+      1.0
+    ],
+    "neutral_rgb": [
+      70,
+      70,
+      70
+    ],
+    "colormap": "TURBO",
+    "no_per_image_normalization": true
+  }
+}

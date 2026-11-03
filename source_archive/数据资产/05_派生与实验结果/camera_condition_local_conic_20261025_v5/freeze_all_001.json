@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-10-25T15:04:12.234719+00:00",
+  "version": "RB-C2.0.0",
+  "name": "局部圆锥 C2",
+  "selected_pilot": "pilot_001",
+  "selected_evaluation": "evaluation_001",
+  "full_run": "all_001",
+  "source_sha256": {
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_local_conic_20261025_v5\\run_conic.py": "222f9a42f38d23966a9fa4dbb8723d46fcb19160f8722c2c25a1a61e3888d1c5",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_local_conic_20261025_v5\\conic_family.py": "109302ce91c202a87fd2ca3b986cc7931600ed068c3c465db42369fb3714a173",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_local_conic_20261025_v5\\base_conic.py": "58b6af6d63816fc84ba7f0065bd6076019afdbd1b42281c0769601c0c3bea05e",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_local_conic_20261025_v5\\protocol.json": "5d7195a85dc2f0c00d0c222551f73023f20fa0f31342c3f2ae069066acbb6147"
+  },
+  "evidence_sha256": {
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_local_conic_20261025_v5\\evaluation_001\\summary.json": "bf8a80fe00950d94d5cee92340209b24adc316a03a5c6e1b9eec14c271100813",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_local_conic_20261025_v5\\evaluation_001\\run_context.json": "dab348e43cf88d95cd3a12851f0de0949fb1a3cce0029cb2379596f1666dead5",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_local_conic_20261025_v5\\pilot_001\\integrity_audit.json": "c40cbb99a8a552cd780e2d7f5e5ba2f338e70ab35e00631f8e86a8e63931a2c0",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_local_conic_20261025_v5\\independent_qa_pilot_001.json": "dc09c0554716ac48508b07dbcebf2617f81702d9a4d81d7803ac7ff7924a40c1",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_local_conic_20261025_v5\\pilot_001\\visible_and_join_diagnostic.json": "2db41622d22f32dc07ac6297db0ad19d2b7f7cb070770dd231d3b277aea3ba94",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_local_conic_20261025_v5\\evaluation_protocol.json": "744ef01da8a8ecff100f17ea89781253f9464d7aaaa2e1622b4fb99eb5ff225c",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_local_conic_20261025_v5\\prior_C1_branch_closure.json": "f43ef1c5b3cbbc962f8d101d70730738cf01c1a0b41291cafa2e2741274b4876"
+  },
+  "input_scope": "Same fixed400 open development images; left200,right200; not blind test",
+  "decision": "Fixed evaluation gate passed plus 38/38 pixel audit and four difficult image visual review; preserve failures and unknowns",
+  "limits": "Modeled local pieces, not ground truth. Discrete joins are not guaranteed derivative-continuous; pilot713 joins median dy2px,p95 5px,max9px,20 above quarter-pitch. Exclusions blank. No devices or reserved data."
+}

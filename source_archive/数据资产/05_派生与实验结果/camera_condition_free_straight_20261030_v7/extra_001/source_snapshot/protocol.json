@@ -1,0 +1,65 @@
+{
+  "version": "IR-A7.0.0",
+  "name": "直绳双边 A7",
+  "date": "2026-10-30",
+  "input_manifest_sha256": "712859a4a830c08d556729a98cad76d039c684c290d2c4c57efa2b7ad3b45e69",
+  "parent_manifest_sha256": {
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\all_001\\output_manifest.json": "0e3611465577b3d95faf25956c272d13f32ff6c099b067a92858d23e57e3adbe",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_grouped_conic_20261026_v6\\all_001\\integrity_audit.json": "b0fe024e9a0387f059394452c24dcb205d23ce9a0db0af490bfa02097e53da99",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_20261026_v7\\all_001\\output_manifest.json": "c665e950e24bca8219d57bf78de6b3da5b1d2ab1ab62077f6c1904f6f392b010",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v1\\all_001\\output_manifest.json": "1a92fbb79e2da950d71449b7a92418f92938b48e28c6a55030d6dc8e670fc7aa",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v2\\all_001\\output_manifest.json": "0da8b630bc1c17b256d359d99230151457b6cb2dbde497761d20d9eab0abbed2"
+  },
+  "source_parent_sha256": {
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\free_rope.py": "c57f77270a1c0308570a77ff70dee67fe7caa25b2dbb55bafd2e80aae9cf60fd",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\free_seed_recovery.py": "fc9df09cc53e508846ff9d23bea0a6517e4e5ca29d1a8e0c416a026da1d1f864",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v2\\free_refinement.py": "65ca049228d0dec2d941a4e08bddf4f9bb52935570cf9827dc7d9adbc1272c8c",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\freeze_all.json": "9e4fc836682a17571c9bbbb698173eae01f299adce32c189b780960bef8706b7",
+    "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_template_20261029_v6\\all_001\\output_manifest.json": "0635f30a098584bb6ac9497f97a3f076629a7abb280341f91fa69a21f7d73a40"
+  },
+  "pilot_inputs": [
+    "images/left_camera/L_run_20260923_01__f000015__left.png",
+    "images/left_camera/L_run_20260923_01__f000142__left.png",
+    "images/left_camera/ruler_left_01.png",
+    "images/left_camera/ruler_left_05.png",
+    "images/left_camera/L_static_20260922_01__f000100__left.png",
+    "images/left_camera/L_run_stop_run_20260922_01__f000046__left.png",
+    "images/left_camera/dual_20260924_111500__pair0015__left.png",
+    "images/left_camera/dual_20260923_101643__pair0315__left.png",
+    "images/right_camera/dual_20260923_101517__pair0075__right.png",
+    "images/right_camera/dual_20260923_101643__pair0375__right.png",
+    "images/right_camera/dual_20260923_101643__pair0405__right.png",
+    "images/right_camera/dual_20260923_113305__pair0015__right.png",
+    "images/right_camera/R_run_20260923_01__f000055__right.png",
+    "images/right_camera/R_run_20260923_01__f001163__right.png",
+    "images/right_camera/ruler_right_05.png",
+    "images/right_camera/R_run_stop_run_20260922_01__f002521__right.png"
+  ],
+  "extra_review_inputs": [
+    "images/left_camera/L_static_20260922_01__f000301__left.png",
+    "images/left_camera/L_run_20260923_01__f001155__left.png",
+    "images/left_camera/dual_20260924_111500__pair0555__left.png",
+    "images/left_camera/L_run_20260923_01__f000237__left.png",
+    "images/right_camera/dual_20260924_111500__pair0105__right.png",
+    "images/right_camera/dual_20260924_111500__pair0195__right.png",
+    "images/right_camera/ruler_right_02.png",
+    "images/right_camera/dual_20260924_111500__pair0015__right.png"
+  ],
+  "denominator": 400,
+  "camera_counts": {
+    "left": 200,
+    "right": 200
+  },
+  "budget": "At most3 fixed16 full development pilots, then freeze preset8 and all400; preserve diagnosed primitive probes. No per-image parameters or labels.",
+  "scope": "Visible straight, unwound rope body including supported overlap with drum; no bend reconstruction or physical contact claim.",
+  "baseline": "A6 saved external free segment; no direction/template availability gate for deciding a straight segment exists.",
+  "evaluation": "Fixed same16 original/overlay visual review for outside alignment, missed straight extent, tool/background false positives and occlusion gaps. No truth-derived accuracy. Retain all400 results and UNKNOWN denominator.",
+  "deliverable": "Original left and overlay right, full original resolution in PNG; positive detections grouped, uncertain/unrecognized kept separately; original-size0/255 masks. NoHTML.",
+  "constraints": {
+    "originals_and_frozen_versions_unchanged": true,
+    "S1_labels_read_or_used": false,
+    "reserved_used": false,
+    "equipment": false,
+    "training": false
+  }
+}

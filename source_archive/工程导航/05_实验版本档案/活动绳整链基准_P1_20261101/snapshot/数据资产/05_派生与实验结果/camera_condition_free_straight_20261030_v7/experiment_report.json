@@ -1,0 +1,801 @@
+{
+  "version": "IR-A7.0.0",
+  "name": "直绳双边 A7",
+  "date": "2026-10-30",
+  "created_utc": "2026-10-30T09:22:43.076400+00:00",
+  "status": "offline_straight_segment_research_candidate_user_visual_acceptance_pending",
+  "requested_scope": "Unwound visible straight rope only; one original-left overlay-right image per input. No bent-tail reconstruction.",
+  "data": {
+    "dataset": "same_open_development400",
+    "input_manifest_sha256": "712859a4a830c08d556729a98cad76d039c684c290d2c4c57efa2b7ad3b45e69",
+    "camera_counts": {
+      "left": 200,
+      "right": 200
+    },
+    "source_group_counts": {
+      "L_run_20260923_01": 40,
+      "L_run_stop_run_20260922_01": 50,
+      "L_static_20260922_01": 5,
+      "dual_20260923_101517": 40,
+      "dual_20260923_101643": 40,
+      "dual_20260923_113305": 40,
+      "dual_20260924_111143": 40,
+      "dual_20260924_111500": 40,
+      "ruler_test_离开38.5mm（包括活动绳共计8.5根）": 1,
+      "ruler_test_离开95mm（包括活动绳共计21根）": 1,
+      "ruler_test_靠近23mm": 1,
+      "ruler_test_靠近43mm": 1,
+      "ruler_test_靠近77mm": 1,
+      "R_run_20260923_01": 40,
+      "R_run_stop_run_20260922_01": 50,
+      "R_static_20260922_01": 5,
+      "ruler_test_离开107.5mm （包括活动绳共计24根）": 1,
+      "ruler_test_离开49mm（包括活动绳共计11根）": 1,
+      "ruler_test_靠近41mm": 1,
+      "ruler_test_靠近80mm": 1,
+      "ruler_test_靠近9.5mm": 1
+    },
+    "reserved_decoded": false,
+    "S1_labels_read": false,
+    "training": false,
+    "new_blind_test_claim": false,
+    "manual_geometry_input": false,
+    "input_dependencies": [
+      "original PNG",
+      "C4 surface mask",
+      "A1 AUTO free seed",
+      "A2 AUTO free seed",
+      "C3 saved pixel pitch only"
+    ],
+    "F3_pixels_or_curves_used": false
+  },
+  "changes": {
+    "new_implementation": [
+      "straight_detector.py",
+      "strand_signature.py",
+      "a7_io.py",
+      "run_experiment.py"
+    ],
+    "legacy_byte_copies": [
+      "free_rope.py",
+      "free_seed_recovery.py"
+    ],
+    "external_legacy_dependency": "camera_condition_incoming_rope_20261026_v2/free_refinement.py",
+    "legacy_versions_unchanged": true,
+    "principles": [
+      "undirected axis does not require winding direction",
+      "raw paired outer edges and robust straight axis",
+      "local repetitive strand signature distinct from generic diagonal scratches",
+      "surface is not a hard straight-segment cutoff",
+      "joint remeasurement of compatible collinear fragments",
+      "bounded visible pieces; no filling long occlusion; local original texture required for reacquisition"
+    ],
+    "parameters": {
+      "straight_detector.py": {
+        "step_px": 4.0,
+        "profile_half_length_widths": 1.6,
+        "profile_normal_radius_widths": 1.5,
+        "minimum_contrast": 3.5,
+        "minimum_edge_gradient": 0.8,
+        "maximum_center_shift_widths": 0.32,
+        "width_min_ratio": 0.65,
+        "width_max_ratio": 1.45,
+        "minimum_anchor_profiles": 14,
+        "minimum_anchor_span_px": 100.0,
+        "maximum_fit_angle_change_deg": 2.5,
+        "minimum_visible_run_widths": 2.5,
+        "maximum_measured_gap_widths": 0.65,
+        "maximum_extension_without_support_widths": 10.0,
+        "minimum_unique_score_margin": 0.13,
+        "maximum_candidates": 8,
+        "minimum_axis_span_widths": 8.0,
+        "minimum_signature_repeat": 0.22,
+        "minimum_nonperiodic_span_widths": 30.0,
+        "near_border_widths": 3.0,
+        "minimum_saturated_fraction": 0.6,
+        "fragment_join_angle_deg": 0.8,
+        "fragment_join_offset_widths": 0.9,
+        "fragment_join_period_ratio": 1.65,
+        "local_repeat_minimum_correlation": 0.4,
+        "local_period_ratio_min": 0.7,
+        "local_period_ratio_max": 1.4,
+        "local_texture_angle_tolerance_deg": 18.0,
+        "reacquisition_minimum_repeat_fraction": 0.6
+      },
+      "strand_signature.py": {
+        "axis_step_px": 1.0,
+        "normal_step_px": 0.5,
+        "interior_half_width": 0.3,
+        "maximum_axis_samples": 4096,
+        "maximum_windows": 12,
+        "window_widths": 12.0,
+        "window_min_px": 128.0,
+        "window_max_px": 420.0,
+        "period_min_widths": 0.35,
+        "period_max_widths": 3.5,
+        "minimum_cycles_per_window": 3.0,
+        "minimum_highpass_std": 1.5,
+        "minimum_peak_correlation": 0.28,
+        "minimum_peak_prominence": 0.08,
+        "minimum_local_gradient_coherence": 0.18,
+        "minimum_oblique_angle_deg": 10.0,
+        "maximum_oblique_angle_deg": 80.0,
+        "relative_period_tolerance": 0.22,
+        "minimum_periodic_window_fraction": 0.5,
+        "minimum_consistent_windows": 2,
+        "fundamental_peak_near_max_correlation": 0.08
+      },
+      "free_rope.py": {
+        "outside_minimum_profiles": 14,
+        "outside_minimum_span_px": 100.0,
+        "outside_sample_step_px": 3.0,
+        "outside_maximum_samples": 280,
+        "maximum_seed_angle_change_deg": 2.5,
+        "maximum_seed_normal_shift_width": 0.38,
+        "extension_step_width": 0.22,
+        "extension_maximum_px": 1800.0,
+        "extension_maximum_image_fraction": 0.45,
+        "maximum_unsupported_run_width": 0.85,
+        "extension_center_shift_width": 0.25,
+        "extension_width_minimum_ratio": 0.65,
+        "extension_width_maximum_ratio": 1.45,
+        "extension_minimum_contrast": 5.0,
+        "extension_noise_contrast_factor": 1.7,
+        "extension_minimum_gradient": 0.7,
+        "texture_minimum_coherence": 0.2,
+        "texture_mismatch_deg": 34.0,
+        "texture_background_advantage_deg": 12.0,
+        "maximum_profile_gap_width_for_mask": 0.6,
+        "wide_profile_radius_pitch": 1.8,
+        "wide_profile_tangent_span_pitch": 2.2,
+        "wide_profile_quantile": 0.7,
+        "wide_minimum_consistent_profiles": 14,
+        "narrow_seed_pitch_ratio": 0.45,
+        "yellow_background_fraction": 0.55,
+        "maximum_inferred_run_width": 3.0,
+        "single_edge_window_width": 0.16
+      },
+      "free_seed_recovery.py": {
+        "detector_scale": 0.5,
+        "detector_blur_original_pitch_fraction": 0.15,
+        "minimum_segment_pitch": 6.0,
+        "minimum_segment_px": 110.0,
+        "maximum_segments_per_channel": 200,
+        "maximum_pair_proposals": 80,
+        "maximum_parallel_angle_deg": 2.0,
+        "minimum_width_pitch": 0.24,
+        "maximum_width_pitch": 1.8,
+        "minimum_overlap_pitch": 5.0,
+        "minimum_overlap_px": 100.0,
+        "maximum_ray_px": 1800.0,
+        "maximum_ray_image_fraction": 0.45,
+        "maximum_recovered_seeds": 6,
+        "minimum_measured_profiles": 12,
+        "minimum_good_profile_fraction": 0.48,
+        "minimum_bilateral_contrast": 10.0,
+        "minimum_support_span_px": 100.0,
+        "minimum_support_span_pitch": 5.0,
+        "minimum_oblique_texture_correlation": 0.25,
+        "minimum_longitudinal_modulation_px": 3.0,
+        "saturated_outline_fraction": 0.6
+      }
+    },
+    "source_sha256": {
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\a7_io.py": "d8b79f7653a227cbd13207c58b580788b43cf53a959e537c9587b8783ff492f3",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\free_rope.py": "c57f77270a1c0308570a77ff70dee67fe7caa25b2dbb55bafd2e80aae9cf60fd",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\free_seed_recovery.py": "fc9df09cc53e508846ff9d23bea0a6517e4e5ca29d1a8e0c416a026da1d1f864",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\strand_signature.py": "198b5a78ad4351b88909a5950f353119ffeed54510bb6bea91972a62018fbf26",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\straight_detector.py": "adc86d71c117966e7d78df2b95f5400526f1c4a2e71422496a5969c38e73b61c",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\run_experiment.py": "1c8f412f4b4ab61d3386e8394bdd8fb3c5628d19ad218a4bf7bd33b21650c381",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\protocol.json": "507e1d26517d07e837913d03e47fcd309fc78c82cb323954d3d65df1fda7e7ae",
+      "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v2\\free_refinement.py": "65ca049228d0dec2d941a4e08bddf4f9bb52935570cf9827dc7d9adbc1272c8c"
+    }
+  },
+  "experiments": {
+    "fixed_pilot_denominator": 16,
+    "extra_denominator": 8,
+    "full_denominator": 400,
+    "planned_budget": "At most3 fixed16 full development pilots, then freeze preset8 and all400; preserve diagnosed primitive probes. No per-image parameters or labels.",
+    "runs": {
+      "pilot_001": {
+        "planned": 16,
+        "completed": 16,
+        "statuses": {
+          "DETECTED": 13,
+          "UNKNOWN": 1,
+          "AMBIGUOUS": 2
+        },
+        "exit_code": 0,
+        "elapsed_seconds": 13.940937280654907
+      },
+      "pilot_002": {
+        "planned": 16,
+        "completed": 16,
+        "statuses": {
+          "DETECTED": 15,
+          "UNKNOWN": 1
+        },
+        "exit_code": 0,
+        "elapsed_seconds": 16.059943199157715
+      },
+      "pilot_003": {
+        "planned": 16,
+        "completed": 16,
+        "statuses": {
+          "DETECTED": 15,
+          "UNKNOWN": 1
+        },
+        "exit_code": 0,
+        "elapsed_seconds": 15.751813173294067
+      },
+      "extra_001": {
+        "planned": 8,
+        "completed": 8,
+        "statuses": {
+          "DETECTED": 5,
+          "UNKNOWN": 3
+        },
+        "exit_code": 0,
+        "elapsed_seconds": 9.115087032318115
+      },
+      "all_001": {
+        "planned": 400,
+        "completed": 400,
+        "statuses": {
+          "DETECTED": 257,
+          "UNKNOWN": 107,
+          "AMBIGUOUS": 36
+        },
+        "exit_code": 0,
+        "elapsed_seconds": 279.3707845211029
+      }
+    },
+    "freeze_sha256": "15b5889d6144da7d32df060c2f7771626d41e7d6df73ddccb1340614482e5cc3",
+    "retuned_after_freeze": false,
+    "earlier_results_and_mechanism_probes_preserved": true,
+    "pilot2_to3_saved_mask_changes": 5
+  },
+  "actual_output": {
+    "completed": 400,
+    "processing_exceptions": 0,
+    "actual_process_exit_code": 0,
+    "status_counts": {
+      "DETECTED": 257,
+      "UNKNOWN": 107,
+      "AMBIGUOUS": 36
+    },
+    "status_by_camera": {
+      "left": {
+        "DETECTED": 104,
+        "UNKNOWN": 85,
+        "AMBIGUOUS": 11
+      },
+      "right": {
+        "DETECTED": 153,
+        "AMBIGUOUS": 25,
+        "UNKNOWN": 22
+      }
+    },
+    "detection_count_is_ground_truth_success": false,
+    "UNKNOWN_means_absence": false,
+    "pair_shape": [
+      3000,
+      8192,
+      3
+    ],
+    "source_shape": [
+      3000,
+      4096,
+      3
+    ],
+    "left_half_original_pixels_preserved": true,
+    "mask_values": [
+      0,
+      255
+    ],
+    "formal_file_count": 1200,
+    "HTML": false
+  },
+  "independent_validation": {
+    "actual_exit_code": 0,
+    "structure_checked_cases": 400,
+    "runtime_dependencies_checked": 8,
+    "input_file_hashes_checked": 2000,
+    "candidate_axes_checked": 366,
+    "mixed_background_points_checked": 8044,
+    "reacquired_pieces_checked": 115,
+    "pilot_extra_all_equal_pngs": 48,
+    "audit_summary": {
+      "run": "all_001",
+      "passed": true,
+      "checked_count": 400,
+      "passed_count": 400,
+      "global_errors": [],
+      "camera_counts": {
+        "left": 200,
+        "right": 200
+      },
+      "statuses": {
+        "UNKNOWN": 107,
+        "DETECTED": 257,
+        "AMBIGUOUS": 36
+      },
+      "source_boundary_check": {
+        "forbidden_prediction_keys": [],
+        "scope": "Frozen source literal-key check plus five exact input dependencies; not a general static taint proof."
+      },
+      "candidate_count": 366,
+      "nonempty_mask_count": 257,
+      "scope": "Fixed files, hashes, straight geometry and rendering contract only; not physical rope identity or accuracy.",
+      "audit_source_sha256": "9e5425b780d8797e97c66693c7478c6543d7e132583ad33223951af3eef81a7b",
+      "seconds": 91.93126964569092
+    },
+    "repeatability": {
+      "scope": "Byte equality of every formal PNG, including original-size binary masks; no accuracy claim.",
+      "target_run": "all_001",
+      "passed": true,
+      "compared_png_count": 48,
+      "identical_png_count": 48,
+      "groups": [
+        {
+          "run": "pilot_003",
+          "png_count": 32,
+          "identical_count": 32,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "png_count": 16,
+          "identical_count": 16,
+          "errors": []
+        }
+      ],
+      "files": [
+        {
+          "run": "pilot_003",
+          "path": "masks/right_camera/dual_20260923_101517__pair0075__right.png",
+          "source_sha256": "628005a445dd36198627919e7bbdb7143f5b8b4582fbebc4616c604a496f1a94",
+          "all_sha256": "628005a445dd36198627919e7bbdb7143f5b8b4582fbebc4616c604a496f1a94",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "图像结果/01_已检出/right_camera/dual_20260923_101517__pair0075__right.png",
+          "source_sha256": "f30b64e886b363054bb40d462cbdfaa10c45e0919019a449535a1c4918de9a15",
+          "all_sha256": "f30b64e886b363054bb40d462cbdfaa10c45e0919019a449535a1c4918de9a15",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "masks/left_camera/dual_20260923_101643__pair0315__left.png",
+          "source_sha256": "f5f1fee1ea5aa6d6c592d3b1bc45dc0f67dd6cceaf67a21060a823d1a5270924",
+          "all_sha256": "f5f1fee1ea5aa6d6c592d3b1bc45dc0f67dd6cceaf67a21060a823d1a5270924",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "图像结果/03_未检出/left_camera/dual_20260923_101643__pair0315__left.png",
+          "source_sha256": "bcf1414ef65e1c5e66b39f2c5b0ccd6a5e92e95ae6c33a88d226233657bb10b7",
+          "all_sha256": "bcf1414ef65e1c5e66b39f2c5b0ccd6a5e92e95ae6c33a88d226233657bb10b7",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "masks/right_camera/dual_20260923_101643__pair0375__right.png",
+          "source_sha256": "dfd12be1c0d3a14c82e31eebfcf7a2eba5a4a1169cc316a7125e8f6dc4ed216a",
+          "all_sha256": "dfd12be1c0d3a14c82e31eebfcf7a2eba5a4a1169cc316a7125e8f6dc4ed216a",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "图像结果/01_已检出/right_camera/dual_20260923_101643__pair0375__right.png",
+          "source_sha256": "f654ee75e9241b3f9fdf964468944971cad0ca0af866ded2714dbaf41b9c4155",
+          "all_sha256": "f654ee75e9241b3f9fdf964468944971cad0ca0af866ded2714dbaf41b9c4155",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "masks/right_camera/dual_20260923_101643__pair0405__right.png",
+          "source_sha256": "f88ce8501e95fb235bc432f575dda94694b662872ca8432406c088586e62c9c2",
+          "all_sha256": "f88ce8501e95fb235bc432f575dda94694b662872ca8432406c088586e62c9c2",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "图像结果/01_已检出/right_camera/dual_20260923_101643__pair0405__right.png",
+          "source_sha256": "d03633b8e0c15961a0c38ef1664c732311c21cab9e2ea4abdd16e8225698cdfb",
+          "all_sha256": "d03633b8e0c15961a0c38ef1664c732311c21cab9e2ea4abdd16e8225698cdfb",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "masks/right_camera/dual_20260923_113305__pair0015__right.png",
+          "source_sha256": "e8400492dacb47ccde38f641122c84348bf34323f33d7415e60b7986cf35bb0b",
+          "all_sha256": "e8400492dacb47ccde38f641122c84348bf34323f33d7415e60b7986cf35bb0b",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "图像结果/01_已检出/right_camera/dual_20260923_113305__pair0015__right.png",
+          "source_sha256": "68caa272dd841a1fd23cfe5d846c133f2b5d2adebb3603e5bb0947489941c723",
+          "all_sha256": "68caa272dd841a1fd23cfe5d846c133f2b5d2adebb3603e5bb0947489941c723",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "masks/left_camera/dual_20260924_111500__pair0015__left.png",
+          "source_sha256": "a085a781b2c0868ff2e1162375735a001311794f4efe9f4aa0c55de261b8f75b",
+          "all_sha256": "a085a781b2c0868ff2e1162375735a001311794f4efe9f4aa0c55de261b8f75b",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "图像结果/01_已检出/left_camera/dual_20260924_111500__pair0015__left.png",
+          "source_sha256": "a3bdfa4a86bd5b9132ec0322e1679552f174be7c41b08cd5ab89d5d82fba5adf",
+          "all_sha256": "a3bdfa4a86bd5b9132ec0322e1679552f174be7c41b08cd5ab89d5d82fba5adf",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "masks/left_camera/L_run_20260923_01__f000015__left.png",
+          "source_sha256": "cdd8d93966f4f3d95c7c4d4abaa0a35d693319c2b86798bd207c50d4d03466d1",
+          "all_sha256": "cdd8d93966f4f3d95c7c4d4abaa0a35d693319c2b86798bd207c50d4d03466d1",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "图像结果/01_已检出/left_camera/L_run_20260923_01__f000015__left.png",
+          "source_sha256": "a2c607dfb9a6092856880167a0979762dcc20e3b335ae5abadcc3896994b83dd",
+          "all_sha256": "a2c607dfb9a6092856880167a0979762dcc20e3b335ae5abadcc3896994b83dd",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "masks/left_camera/L_run_20260923_01__f000142__left.png",
+          "source_sha256": "8e8fc53f64be75e30f8d7e1d4a186e71e3678ebb6dbc0a6c51e3e19c219014af",
+          "all_sha256": "8e8fc53f64be75e30f8d7e1d4a186e71e3678ebb6dbc0a6c51e3e19c219014af",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "图像结果/01_已检出/left_camera/L_run_20260923_01__f000142__left.png",
+          "source_sha256": "76d66ce0ae1bff1a59c87e4d95e23b2fad6c0732fac29fe8247dd618c08bd105",
+          "all_sha256": "76d66ce0ae1bff1a59c87e4d95e23b2fad6c0732fac29fe8247dd618c08bd105",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "masks/right_camera/R_run_20260923_01__f000055__right.png",
+          "source_sha256": "c872e345070e0998de0619344f82cba46afc28a74994b5153ec400b07f564f2a",
+          "all_sha256": "c872e345070e0998de0619344f82cba46afc28a74994b5153ec400b07f564f2a",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "图像结果/01_已检出/right_camera/R_run_20260923_01__f000055__right.png",
+          "source_sha256": "552b2fe7d983ecad4972d1f72f5ec39d0c66ba39d25f98fcf45c27efc04939a0",
+          "all_sha256": "552b2fe7d983ecad4972d1f72f5ec39d0c66ba39d25f98fcf45c27efc04939a0",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "masks/right_camera/R_run_20260923_01__f001163__right.png",
+          "source_sha256": "6da3eb7ad401960d9743cca9e0a59a1d6f6b1b9b73fd321c494c0c6f6652053a",
+          "all_sha256": "6da3eb7ad401960d9743cca9e0a59a1d6f6b1b9b73fd321c494c0c6f6652053a",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "图像结果/01_已检出/right_camera/R_run_20260923_01__f001163__right.png",
+          "source_sha256": "2824c14e913474ac7979aeffd89fd8b6b800df672392fb8e69566737348c8636",
+          "all_sha256": "2824c14e913474ac7979aeffd89fd8b6b800df672392fb8e69566737348c8636",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "masks/left_camera/L_run_stop_run_20260922_01__f000046__left.png",
+          "source_sha256": "2b683a660f0cbbf4adb0502b6a0cf910dedf36b9a84509815253e39679878bf0",
+          "all_sha256": "2b683a660f0cbbf4adb0502b6a0cf910dedf36b9a84509815253e39679878bf0",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "图像结果/01_已检出/left_camera/L_run_stop_run_20260922_01__f000046__left.png",
+          "source_sha256": "5d9bf189c7e92dd40c8eb8c72f87ddfec9d7e3dc1966cd721ecd5ffbfd6c2824",
+          "all_sha256": "5d9bf189c7e92dd40c8eb8c72f87ddfec9d7e3dc1966cd721ecd5ffbfd6c2824",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "masks/right_camera/R_run_stop_run_20260922_01__f002521__right.png",
+          "source_sha256": "06872554776e23a52b30a028d59738f9200e41b3ac6a9ac8dfd84b330dc3b57a",
+          "all_sha256": "06872554776e23a52b30a028d59738f9200e41b3ac6a9ac8dfd84b330dc3b57a",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "图像结果/01_已检出/right_camera/R_run_stop_run_20260922_01__f002521__right.png",
+          "source_sha256": "d016f4bd2b78684d56ae175ff766470bf364e337160b85cbea89e7413a5aeb47",
+          "all_sha256": "d016f4bd2b78684d56ae175ff766470bf364e337160b85cbea89e7413a5aeb47",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "masks/left_camera/L_static_20260922_01__f000100__left.png",
+          "source_sha256": "bd40ca98bb6391940e5ead259746ad3b53aadd407a456a8e07bf456dbef10737",
+          "all_sha256": "bd40ca98bb6391940e5ead259746ad3b53aadd407a456a8e07bf456dbef10737",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "图像结果/01_已检出/left_camera/L_static_20260922_01__f000100__left.png",
+          "source_sha256": "0703ebd1ecbfb30d6aa322aad600620b41f923b11380900945fb6da0cc50f7ce",
+          "all_sha256": "0703ebd1ecbfb30d6aa322aad600620b41f923b11380900945fb6da0cc50f7ce",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "masks/left_camera/ruler_left_01.png",
+          "source_sha256": "09aecafeee638acf2765b01e40f351abab1b01407880aba78251b3c7f9306fae",
+          "all_sha256": "09aecafeee638acf2765b01e40f351abab1b01407880aba78251b3c7f9306fae",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "图像结果/01_已检出/left_camera/ruler_left_01.png",
+          "source_sha256": "2ccc474351f1ca1d4382987dc9b2232e995da2c65b68c316ffbd42d181391285",
+          "all_sha256": "2ccc474351f1ca1d4382987dc9b2232e995da2c65b68c316ffbd42d181391285",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "masks/left_camera/ruler_left_05.png",
+          "source_sha256": "23ca08fd166a46957bb85d79ec92dbb609edb4a6b759c977bc7714f3a47a2c6d",
+          "all_sha256": "23ca08fd166a46957bb85d79ec92dbb609edb4a6b759c977bc7714f3a47a2c6d",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "图像结果/01_已检出/left_camera/ruler_left_05.png",
+          "source_sha256": "72d0b87c6a734aa05e6f2f9776f71c878a72dba7a4b4f4113be61868b85d445a",
+          "all_sha256": "72d0b87c6a734aa05e6f2f9776f71c878a72dba7a4b4f4113be61868b85d445a",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "masks/right_camera/ruler_right_05.png",
+          "source_sha256": "fe9396baeb7694f19492e9592363c7117394b8f08607b6592a8c3758fb5ff8ee",
+          "all_sha256": "fe9396baeb7694f19492e9592363c7117394b8f08607b6592a8c3758fb5ff8ee",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "pilot_003",
+          "path": "图像结果/01_已检出/right_camera/ruler_right_05.png",
+          "source_sha256": "c7699c060ff94ddd653ebc661fd8a4fc712a54814246cf3fcb8c1122987e5f06",
+          "all_sha256": "c7699c060ff94ddd653ebc661fd8a4fc712a54814246cf3fcb8c1122987e5f06",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "masks/right_camera/dual_20260924_111500__pair0015__right.png",
+          "source_sha256": "f5f1fee1ea5aa6d6c592d3b1bc45dc0f67dd6cceaf67a21060a823d1a5270924",
+          "all_sha256": "f5f1fee1ea5aa6d6c592d3b1bc45dc0f67dd6cceaf67a21060a823d1a5270924",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "图像结果/03_未检出/right_camera/dual_20260924_111500__pair0015__right.png",
+          "source_sha256": "317d55f69dd48e52b760774e35b627beb41ed134b664e0d9f9e9ac4ce6de5f6f",
+          "all_sha256": "317d55f69dd48e52b760774e35b627beb41ed134b664e0d9f9e9ac4ce6de5f6f",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "masks/right_camera/dual_20260924_111500__pair0105__right.png",
+          "source_sha256": "f5f1fee1ea5aa6d6c592d3b1bc45dc0f67dd6cceaf67a21060a823d1a5270924",
+          "all_sha256": "f5f1fee1ea5aa6d6c592d3b1bc45dc0f67dd6cceaf67a21060a823d1a5270924",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "图像结果/03_未检出/right_camera/dual_20260924_111500__pair0105__right.png",
+          "source_sha256": "c0d7a16d46cd76e331018790779c6dc64bffcd58cdbe85c31cda6ff05864408f",
+          "all_sha256": "c0d7a16d46cd76e331018790779c6dc64bffcd58cdbe85c31cda6ff05864408f",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "masks/right_camera/dual_20260924_111500__pair0195__right.png",
+          "source_sha256": "f5f1fee1ea5aa6d6c592d3b1bc45dc0f67dd6cceaf67a21060a823d1a5270924",
+          "all_sha256": "f5f1fee1ea5aa6d6c592d3b1bc45dc0f67dd6cceaf67a21060a823d1a5270924",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "图像结果/03_未检出/right_camera/dual_20260924_111500__pair0195__right.png",
+          "source_sha256": "56995e92301829e0ac0c002351d5226ba938f4a742b9c196ca0fb6dc4f55efcc",
+          "all_sha256": "56995e92301829e0ac0c002351d5226ba938f4a742b9c196ca0fb6dc4f55efcc",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "masks/left_camera/dual_20260924_111500__pair0555__left.png",
+          "source_sha256": "9453f5ecab8432010528ae0305c64a238bc0dee43e0aa13a57581c792886444f",
+          "all_sha256": "9453f5ecab8432010528ae0305c64a238bc0dee43e0aa13a57581c792886444f",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "图像结果/01_已检出/left_camera/dual_20260924_111500__pair0555__left.png",
+          "source_sha256": "06533baf7bdf3badfe47933e4d0d97925efefb7a62970224b565e08315bd8f5a",
+          "all_sha256": "06533baf7bdf3badfe47933e4d0d97925efefb7a62970224b565e08315bd8f5a",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "masks/left_camera/L_run_20260923_01__f000237__left.png",
+          "source_sha256": "8b3a379d7ba130baa239a08cab624bbacc45bca29d6660c62f256d294b93dfb2",
+          "all_sha256": "8b3a379d7ba130baa239a08cab624bbacc45bca29d6660c62f256d294b93dfb2",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "图像结果/01_已检出/left_camera/L_run_20260923_01__f000237__left.png",
+          "source_sha256": "0b219fc225d728f368cea2284e7db7304967fd1e4ae293355c609901be4602a2",
+          "all_sha256": "0b219fc225d728f368cea2284e7db7304967fd1e4ae293355c609901be4602a2",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "masks/left_camera/L_run_20260923_01__f001155__left.png",
+          "source_sha256": "488566dc40fbc0d9396f03c36b8e9069482188d8523bb3a8c8e946d152bc821c",
+          "all_sha256": "488566dc40fbc0d9396f03c36b8e9069482188d8523bb3a8c8e946d152bc821c",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "图像结果/01_已检出/left_camera/L_run_20260923_01__f001155__left.png",
+          "source_sha256": "6f494cc895d8ba7236a4888f40348353b1b37d2d757ac36be63bae3731efb57f",
+          "all_sha256": "6f494cc895d8ba7236a4888f40348353b1b37d2d757ac36be63bae3731efb57f",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "masks/left_camera/L_static_20260922_01__f000301__left.png",
+          "source_sha256": "862b1537204da21b5de4b99aa3fb1eb87c928f5275f29aaab68a44489a6ef963",
+          "all_sha256": "862b1537204da21b5de4b99aa3fb1eb87c928f5275f29aaab68a44489a6ef963",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "图像结果/01_已检出/left_camera/L_static_20260922_01__f000301__left.png",
+          "source_sha256": "1a3f6ab4cfa3379d285010cba74ce8630c8da1fd25ccdd3157c6e37f33de2b80",
+          "all_sha256": "1a3f6ab4cfa3379d285010cba74ce8630c8da1fd25ccdd3157c6e37f33de2b80",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "masks/right_camera/ruler_right_02.png",
+          "source_sha256": "f1b9ad9651eaa11e6ef8595df7519791b55588f761a05c3033c93c98ca4e6742",
+          "all_sha256": "f1b9ad9651eaa11e6ef8595df7519791b55588f761a05c3033c93c98ca4e6742",
+          "bytes_equal": true,
+          "errors": []
+        },
+        {
+          "run": "extra_001",
+          "path": "图像结果/01_已检出/right_camera/ruler_right_02.png",
+          "source_sha256": "5b309f2539ad791354796f43713ad241a732b6e6cf08e777009e27f9ba47828c",
+          "all_sha256": "5b309f2539ad791354796f43713ad241a732b6e6cf08e777009e27f9ba47828c",
+          "bytes_equal": true,
+          "errors": []
+        }
+      ],
+      "audit_source_sha256": "ee8d6706105c57ade73919e20bfb6caa22e6ad0f0d5242c7fcc31f2bd5b461cf"
+    },
+    "does_not_establish_visual_accuracy": true
+  },
+  "qualitative_observations": {
+    "fixed_known_improvements": [
+      "handheld tool in right dual101517 pair0075 rejected while true external rope accepted",
+      "right ruler05 and Rstop2521 duplicate collinear candidates combined and visually aligned",
+      "some strand-induced fragmentation reduced by tangent aggregation",
+      "frozen Rrun55 review shows visible segments on both sides of guide, without filling central long occlusion"
+    ],
+    "remaining_failures": [
+      "left f15 still stops before much of visible bright-overlap straight rope",
+      "right375 and0075 still miss long visible portion on the other side of guide",
+      "some bright/dark transitions and drum overlap have missing pieces",
+      "Rrun55 reappearance endpoint slightly extends into occluder",
+      "dark tail precise width and extent remain uncertain",
+      "36 ambiguous and107 unknown are retained; neither is counted correct"
+    ],
+    "presence_or_full_extent_truth_labels_available": false,
+    "all400_visually_reviewed": false,
+    "complete_visible_straight_segment_coverage_verified": false,
+    "accuracy_percentage_reported": null,
+    "overall_accuracy_gain_over_A6_demonstrated": false,
+    "physical_contact_confirmed": false,
+    "whole_same_rope_bend_verified": false,
+    "t0_t1_t2_verified": false
+  },
+  "delivery_folders": {
+    "01_已检出": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\all_001\\图像结果\\01_已检出",
+    "02_待确认": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\all_001\\图像结果\\02_待确认",
+    "03_未检出": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\all_001\\图像结果\\03_未检出"
+  },
+  "raw_and_log_locations": {
+    "raw_images": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images",
+    "protocol": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\protocol.json",
+    "logs": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\all_001\\run.log",
+    "records": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\all_001\\记录",
+    "masks": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\all_001\\masks"
+  },
+  "equipment_connected": false,
+  "permission_changes": false,
+  "evidence_sha256": {
+    "protocol.json": "507e1d26517d07e837913d03e47fcd309fc78c82cb323954d3d65df1fda7e7ae",
+    "freeze_all.json": "15b5889d6144da7d32df060c2f7771626d41e7d6df73ddccb1340614482e5cc3",
+    "A7算法与结果说明.txt": "a3977123af132a2a14b88be14a23359456f61d4f3f4b85b4db59700c8b9629ad",
+    "股纹重复性模块说明.txt": "e4fa1bff1cc6230194e037597d994e7effe8bd2e78c55fc6b4f9034f0e73d11a",
+    "strand_diagnosis_003/report.json": "fa3a7e52dfa2e01abafc585f478f426fc0ab3891370c2689068a62a43b8f4350",
+    "pilot_001/independent_visual_review.json": "4dc2899488115fa60772f3fe537aee2f43ae3f281aaf757fba57c61442000ce9",
+    "pilot_002/independent_four_case_visual_review.json": "0796ebb439c7bb5f2f6717eec2eec890ab925dbb0dd56e5a6bb4ce9f8ecb5040",
+    "pilot_003/pilot002_mask_change_receipt.json": "e76cf77d27271a8c633d74a78181c4ed0399215e4d153c4c3e5fbcee804ca519",
+    "extra_001/independent_final_visual_review.json": "20544f9dcee6bbb7720326d232b9a3ce0cab10a5048246ace4dc29dc998a0452",
+    "all_001/run_start.json": "add4e0a5996515ef128024eedfb0a727a0146f96bedeafddd369948767f99c3a",
+    "all_001/summary.json": "4d451dbb10946277e1679416e215840c3bf2d2234ae36d47ca2df18b3abc2114",
+    "all_001/output_manifest.json": "7bc7273a02d7f4720c947b4ba0b85d85edfa828a461046d34dbc2bc2a185fc4d",
+    "all_001/independent_structure_audit.json": "db6d4f636155de43042122c9a5b49f2ee2fa6040e3264e433ca9e03a526242f2",
+    "all_001/independent_output_manifest.json": "1d5279fdc32989f7771f646729136e5d28934483b1092c6a19512782db87699d",
+    "all_001/independent_repeatability_audit.json": "d81f4bc177d00aefc8dc74fac999ec2d0e96414c47d03496a4218c3e147f9792",
+    "all_001/shell_exit_receipt.json": "384fd9885f13a8c10fe8ff9bcdcd79f7f0aa73b980f605a6d637714abf56e482",
+    "all_001/audit_command_receipt.json": "41b8351a18df94665750342bbee9994e458fff31d6d95277cc2000e8dbd1ec25",
+    "all_001/repeatability_audit_command_receipt.json": "2d970ef58ebcff827457954ea4d3ed72d0bbc12ac7ae16e5356000714070a622"
+  }
+}
