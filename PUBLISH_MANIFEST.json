@@ -1,8 +1,8 @@
 {
   "schema": "algorithm_source_publish_manifest_v1",
-  "notes": "Source-only research archive; no datasets, labels, weights, media, predictions, devices, or reparse points. The in-progress U1+P1 appendix is not part of the 60 completed version count.",
-  "source_file_count": 1431,
-  "source_byte_count": 18902148,
+  "notes": "Source-only research archive; no datasets, labels, weights, media, predictions, devices, or reparse points. IR-U1-P1-POST.0.0 is included as a completed version; authoritative completed version count is in VERSION_CATALOG.md.",
+  "source_file_count": 1449,
+  "source_byte_count": 19268731,
   "files": [
     {
       "path": "source_archive/experiments/active_rope_video_20261101_v1/README.txt",
@@ -1049,6 +1049,12 @@
       "group": "IR-U1-P1-POST in-progress appendix"
     },
     {
+      "path": "source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/REPORT.txt",
+      "bytes": 5350,
+      "sha256": "fac58f834676d68755d57c8aa48e4b0021466e79adacc62779d0638c81c2850a",
+      "group": "IR-U1-P1-POST completed version"
+    },
+    {
       "path": "source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/TASK.json",
       "bytes": 123558,
       "sha256": "b3c332b56165a315bdfbe1c916a4392a221f8dc2f83ad974c162825460ed0f63",
@@ -1061,16 +1067,94 @@
       "group": "IR-U1-P1-POST in-progress appendix"
     },
     {
+      "path": "source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/audit_execution_receipt.json",
+      "bytes": 439,
+      "sha256": "df1f42e59ad8cb8e0707942f4960eccabe88176dcd4488c73539e69d3eda3091",
+      "group": "IR-U1-P1-POST completed version"
+    },
+    {
+      "path": "source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/audit_index_binding.py",
+      "bytes": 2888,
+      "sha256": "1b3e95b128bac9c82aefc84c6f7e54211f5b805d5fc6ecedfb1f575ca383d055",
+      "group": "IR-U1-P1-POST completed version"
+    },
+    {
+      "path": "source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/audit_index_binding_receipt.json",
+      "bytes": 660,
+      "sha256": "445d2698e0dde038d1ad0d833f9efa9c7d60633ab849cb27b05a58d693eeafc4",
+      "group": "IR-U1-P1-POST completed version"
+    },
+    {
+      "path": "source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/audit_pilot_001.json",
+      "bytes": 8128,
+      "sha256": "3c499529d28708ae9918560e05095b04e8a032829c04a7edc7b0dac255d86f8f",
+      "group": "IR-U1-P1-POST completed version"
+    },
+    {
+      "path": "source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/audit_pilot_002.json",
+      "bytes": 4078,
+      "sha256": "36da027521d15fdb542d01d9c166014d0e8d5132254ae656240daa139f7fd55f",
+      "group": "IR-U1-P1-POST completed version"
+    },
+    {
+      "path": "source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/audit_u1_p1.py",
+      "bytes": 16161,
+      "sha256": "b780823bf110936361f1e1b6503bc349eb7469ba4a17e090623ae1f43581dc25",
+      "group": "IR-U1-P1-POST completed version"
+    },
+    {
+      "path": "source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/audit_u1_p1_pre_binding_002.py",
+      "bytes": 15998,
+      "sha256": "a178fdea25fd1da6b2e7e287507ce139788b0d410a93d4f0ff297c589d575128",
+      "group": "IR-U1-P1-POST completed version"
+    },
+    {
+      "path": "source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/audit_u1_p1_pre_folder_003.py",
+      "bytes": 16065,
+      "sha256": "a2d170611421090b91d86dbcacdbc91f2f658cd732fbfb7b688e9532b14aa01a",
+      "group": "IR-U1-P1-POST completed version"
+    },
+    {
+      "path": "source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/audit_u1_p1_pre_schema_001.py",
+      "bytes": 15467,
+      "sha256": "5c432cf96652c8fd8b011beef4f2c349f30e2cc72b152cf488f079a75d773702",
+      "group": "IR-U1-P1-POST completed version"
+    },
+    {
+      "path": "source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/audit_u1_p1_receipt.json",
+      "bytes": 229585,
+      "sha256": "1f606fecb94b605cd3f652e8a36a67fab0163d71f642800cb8a3a3f07b584784",
+      "group": "IR-U1-P1-POST completed version"
+    },
+    {
       "path": "source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/compute_execution_receipts.json",
       "bytes": 1454,
       "sha256": "82e9c38384a6c364d59f79a2f338fd4cfa01fc7717cbcaf9c7af9808a17fabc5",
       "group": "IR-U1-P1-POST in-progress appendix"
     },
     {
+      "path": "source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/experiment_report.json",
+      "bytes": 1323,
+      "sha256": "9f1fe5c4030c926a2673ce0162dc91726d61c13d95105a36c9106bdfd8e5e7d3",
+      "group": "IR-U1-P1-POST completed version"
+    },
+    {
+      "path": "source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/finalize_delivery.py",
+      "bytes": 7966,
+      "sha256": "096840e4573b268ceaac826d536a640bb4bcf2ac6dab058fb22eb54f9833ed27",
+      "group": "IR-U1-P1-POST completed version"
+    },
+    {
       "path": "source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/p1_source_integrity_independent.json",
       "bytes": 11172,
       "sha256": "24a249bdb20722fe02c3c8f3cd069f5e9f60b074b5b55d9d71f1870d0bbb4483",
       "group": "IR-U1-P1-POST in-progress appendix"
+    },
+    {
+      "path": "source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/render_execution_receipt.json",
+      "bytes": 651,
+      "sha256": "f732177298c14a4aca72fc7ef328399b37b5a8be1a0749bd72cdbc9f4aadbc48",
+      "group": "IR-U1-P1-POST completed version"
     },
     {
       "path": "source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/render_four.py",
@@ -1081,14 +1165,38 @@
     {
       "path": "source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/render_numerical_checks.json",
       "bytes": 625,
-      "sha256": "6490084183ce0330eef6cf790c5fb0a9e80be7687b0dbc3c47d96c75a1b00e5e",
+      "sha256": "d5cf169b1ec95c588406130e9dc2b88b1728c4d0eaf6044b00979aae48a8e907",
       "group": "IR-U1-P1-POST in-progress appendix"
+    },
+    {
+      "path": "source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/render_pilot_receipt.json",
+      "bytes": 34217,
+      "sha256": "6fd23daa447d2a5f1c0ba35396df0ab7c2a3ceacb43372a8e7aae414e193f048",
+      "group": "IR-U1-P1-POST completed version"
+    },
+    {
+      "path": "source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/render_visual_review.json",
+      "bytes": 4887,
+      "sha256": "9f40e5eb8a231b018bd12356ad3f167173e65d31757228be6b4af163ed1a807e",
+      "group": "IR-U1-P1-POST completed version"
+    },
+    {
+      "path": "source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/run_independent_audit.ps1",
+      "bytes": 1548,
+      "sha256": "aa4d5aa02868da289111b628241544146dc1caf9bd80c60eb4c49cfc30e9ee11",
+      "group": "IR-U1-P1-POST completed version"
     },
     {
       "path": "source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/run_p1_u1.py",
       "bytes": 11819,
       "sha256": "5b7567c77e1c05646e632a8455c9dfb0c2b02dbede3d8d3ad6bc93bcbb45dc82",
       "group": "IR-U1-P1-POST in-progress appendix"
+    },
+    {
+      "path": "source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/run_render.ps1",
+      "bytes": 1172,
+      "sha256": "5c545979fd6ef2421414faeab0f9dd7512ee32f30fba760be50df20dc3f8e712",
+      "group": "IR-U1-P1-POST completed version"
     },
     {
       "path": "source_archive/experiments/entry_conditioned_rope_path/model.py",

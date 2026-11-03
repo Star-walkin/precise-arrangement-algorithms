@@ -1,11 +1,11 @@
 {
-  "schema_version": "precise_arrangement_version_catalog_20261103_v1",
+  "schema_version": "precise_arrangement_version_catalog_20261103_v2",
   "as_of_date_beijing": "2026-11-03",
   "count_rule": "Explicitly numbered offline research method with a traceable existing record; duplicate runs and control arms do not create versions.",
-  "version_count": 60,
+  "version_count": 61,
   "series_counts": {
     "DR": 4,
-    "IR": 21,
+    "IR": 22,
     "RB": 7,
     "V": 28
   },
@@ -19,19 +19,9 @@
     "RB-C1 failed branch without an official RB identifier",
     "S1 annotation preparation task",
     "A/B/C/D, G0/R0 and other comparison arms or training checkpoints",
-    "all_001 and similar run identifiers",
-    "IR-U1-P1-POST.0.0 has completed the 292-image computation but rendering and independent delivery audit were not complete when this catalog was frozen"
+    "all_001 and similar run identifiers"
   ],
-  "pending_numbered_work": [
-    {
-      "version_id": "IR-U1-P1-POST.0.0",
-      "name_zh": "人工监督U1热图与P1/H6冻结后处理",
-      "status": "in_progress_not_counted_in_60_completed_versions",
-      "source_directory": "source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1",
-      "evidence_path": "source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/README.txt",
-      "completion_boundary": "292-image computation exit 0; four-panel rendering and independent delivery audit not yet verified at catalog freeze"
-    }
-  ],
+  "pending_numbered_work": [],
   "archive_scope": "Selected source scripts and small reports/configs only. No raw images/videos, labels, model weights, numerical outputs, vendor, environments, heldout, or device control.",
   "entries": [
     {
@@ -813,6 +803,20 @@
       "original_evidence_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\REPORT.txt",
       "code_relationship": "version-linked scripts; dependencies may also be shared",
       "note": ""
+    },
+    {
+      "version_id": "IR-U1-P1-POST.0.0",
+      "name_zh": "人工监督U1热图＋P1/H6冻结后处理",
+      "series": "IR",
+      "status": "research",
+      "source_directory": "source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1",
+      "code_glob_within_source_directory": "*.py",
+      "evidence_path": "source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/REPORT.txt",
+      "original_source_directory": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1",
+      "original_evidence_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\REPORT.txt",
+      "code_relationship": "new U1 saved responses with frozen P1/H6 postprocessing; shared upstream dependencies",
+      "note": "292 four-panel PNGs and 301 conditions completed, independent delivery audit passed; original P1 remains unchanged."
     }
-  ]
+  ],
+  "catalog_revision_note": "Promoted IR-U1-P1-POST.0.0 after final REPORT and 292-image independent audit; 61 completed versions."
 }

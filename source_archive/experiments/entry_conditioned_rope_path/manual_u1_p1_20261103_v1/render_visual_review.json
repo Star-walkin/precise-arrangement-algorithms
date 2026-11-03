@@ -1,0 +1,98 @@
+{
+  "date_local": "2026-11-03",
+  "actual_view_completed": true,
+  "actual_contexts": 4,
+  "actual_native_crops": 4,
+  "selection": [
+    {
+      "id": "L_run_20260923_01__f000585__left",
+      "selected_entry": 0,
+      "context": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\render_qa\\pilot_1_context.png",
+      "native": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\render_qa\\pilot_1_native.png",
+      "original_crop": [
+        1500,
+        2050,
+        2300,
+        2700
+      ]
+    },
+    {
+      "id": "R_static_20260922_01__f000095__right",
+      "selected_entry": 0,
+      "context": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\render_qa\\pilot_2_context.png",
+      "native": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\render_qa\\pilot_2_native.png",
+      "original_crop": [
+        1600,
+        1900,
+        2400,
+        2550
+      ]
+    },
+    {
+      "id": "dual_20260923_101517__pair0075__right",
+      "selected_entry": 1,
+      "context": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\render_qa\\pilot_3_context.png",
+      "native": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\render_qa\\pilot_3_native.png",
+      "original_crop": [
+        1600,
+        1900,
+        2400,
+        2550
+      ]
+    },
+    {
+      "id": "ruler_left_01",
+      "selected_entry": 0,
+      "context": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\render_qa\\pilot_4_context.png",
+      "native": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\render_qa\\pilot_4_native.png",
+      "original_crop": [
+        1500,
+        2050,
+        2300,
+        2700
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\render_qa\\pilot_1_context.png",
+      "sha256": "b6195607014cdb5b46e7661c1ac0974685c2a5134f2c328e760a7d30ac113f07"
+    },
+    {
+      "path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\render_qa\\pilot_1_native.png",
+      "sha256": "b72c86a5e7bbe2bfd73e47eadd7e5a5cdc08515e1e65e6f55ac22e826b537bb3"
+    },
+    {
+      "path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\render_qa\\pilot_2_context.png",
+      "sha256": "0610fa42187b26051c7e64274e0807f88445e01d718536874bea83f0af5e3b2c"
+    },
+    {
+      "path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\render_qa\\pilot_2_native.png",
+      "sha256": "8fe15f0de0a9050e50bae4b5feddeeb2062f181d80d816fd518e534e23381955"
+    },
+    {
+      "path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\render_qa\\pilot_3_context.png",
+      "sha256": "689e2822e6d620c7a4c37ac096ae8c8ae4846c6b46b6ec4cfd7f51701aa4e4e4"
+    },
+    {
+      "path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\render_qa\\pilot_3_native.png",
+      "sha256": "68d26d7ff328eacf60e073e1113ca1a0953a194843a5c41e1628f13b58d8ec95"
+    },
+    {
+      "path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\render_qa\\pilot_4_context.png",
+      "sha256": "f07596d1d409c5640c438f72ca102d734d726bdfc51997682eeb1becba601568"
+    },
+    {
+      "path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\render_qa\\pilot_4_native.png",
+      "sha256": "78954735de763e58f7b7ff0c796aebbdfbd838f3798ed3075aa808a99fa40391"
+    }
+  ],
+  "findings": "实际查看4张完整四栏上下文预览和4组原生800×650局部：左L_run585、右R_static095、多入口dual101517pair0075、独立ruler_left01。左右源图方向、四栏对应及灰轨位置可见，原生输出没有缩小原图。第二栏与被原P1排序选中的入口一致，其中pair0075为E2，未沿用上一轮E1或合并条件。新热图斜带与原图活动绳方向相符，但卷面/机架仍有响应，不能据强色认定身份。第三栏灰实/虚线与彩色候选独立可见。第四栏末端部分仍是黄热支持或橙色弱证据段，L_run585贴面远端身份未独立确认；未将完整路径/无跨轨约束解释为真实末端成功。",
+  "render_or_parameters_changed_after_visual_review": false,
+  "independent_identity_truth": false,
+  "preview_only_resize": true,
+  "main_outputs_original_pixel_viewports": [
+    4096,
+    3000
+  ]
+}

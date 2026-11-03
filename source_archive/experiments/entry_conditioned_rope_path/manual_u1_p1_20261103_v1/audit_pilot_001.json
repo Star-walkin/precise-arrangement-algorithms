@@ -1,0 +1,45 @@
+{
+  "exit_code": 1,
+  "command": [
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\audit_u1_p1.py",
+    "--run",
+    "pilot_001",
+    "--records-only",
+    "--out",
+    "audit_pilot_001.json",
+    "--workers",
+    "2"
+  ],
+  "seconds": 1.1772278000134975,
+  "checked_images": 0,
+  "planned": 4,
+  "records_only": true,
+  "source_sha256": "5c432cf96652c8fd8b011beef4f2c349f30e2cc72b152cf488f079a75d773702",
+  "source_integrity_sha256": "24a249bdb20722fe02c3c8f3cd069f5e9f60b074b5b55d9d71f1870d0bbb4483",
+  "counts": {},
+  "max_new_U1_evidence_difference": 0,
+  "no_adapter_or_renderer_import": true,
+  "new_U1_profile_and_track_values_reconstructed": true,
+  "no_old_B_response_or_path_loaded": true,
+  "source_no_source_extrapolation_and_non_crossing_arithmetic_checked": true,
+  "complete_identity_accuracy": null,
+  "errors": [
+    {
+      "id": "L_run_20260923_01__f000585__left",
+      "traceback": "concurrent.futures.process._RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\concurrent\\futures\\process.py\", line 254, in _process_worker\n    r = call_item.fn(*call_item.args, **call_item.kwargs)\n  File \"D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\audit_u1_p1.py\", line 146, in audit_one\n    for tr in tracks.values():float_differences.append(compare_fields(tr,track_evidence(raw,a,tr)))\n                                                                         ~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\audit_u1_p1.py\", line 57, in track_evidence\n    n=np.c_[-d[:,1],d[:,0]];width=np.asarray(track['pair_spacing_half_px'],float)\n                                             ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nKeyError: 'pair_spacing_half_px'\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\audit_u1_p1.py\", line 189, in main\n    try:rows.append(f.result())\n                    ~~~~~~~~^^\n  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\concurrent\\futures\\_base.py\", line 447, in result\n    return self.__get_result()\n           ~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\concurrent\\futures\\_base.py\", line 396, in __get_result\n    raise self._exception\nKeyError: 'pair_spacing_half_px'\n"
+    },
+    {
+      "id": "dual_20260923_101517__pair0075__right",
+      "traceback": "concurrent.futures.process._RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\concurrent\\futures\\process.py\", line 254, in _process_worker\n    r = call_item.fn(*call_item.args, **call_item.kwargs)\n  File \"D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\audit_u1_p1.py\", line 146, in audit_one\n    for tr in tracks.values():float_differences.append(compare_fields(tr,track_evidence(raw,a,tr)))\n                                                                         ~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\audit_u1_p1.py\", line 57, in track_evidence\n    n=np.c_[-d[:,1],d[:,0]];width=np.asarray(track['pair_spacing_half_px'],float)\n                                             ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nKeyError: 'pair_spacing_half_px'\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\audit_u1_p1.py\", line 189, in main\n    try:rows.append(f.result())\n                    ~~~~~~~~^^\n  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\concurrent\\futures\\_base.py\", line 447, in result\n    return self.__get_result()\n           ~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\concurrent\\futures\\_base.py\", line 396, in __get_result\n    raise self._exception\nKeyError: 'pair_spacing_half_px'\n"
+    },
+    {
+      "id": "R_static_20260922_01__f000095__right",
+      "traceback": "concurrent.futures.process._RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\concurrent\\futures\\process.py\", line 254, in _process_worker\n    r = call_item.fn(*call_item.args, **call_item.kwargs)\n  File \"D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\audit_u1_p1.py\", line 146, in audit_one\n    for tr in tracks.values():float_differences.append(compare_fields(tr,track_evidence(raw,a,tr)))\n                                                                         ~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\audit_u1_p1.py\", line 57, in track_evidence\n    n=np.c_[-d[:,1],d[:,0]];width=np.asarray(track['pair_spacing_half_px'],float)\n                                             ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nKeyError: 'pair_spacing_half_px'\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\audit_u1_p1.py\", line 189, in main\n    try:rows.append(f.result())\n                    ~~~~~~~~^^\n  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\concurrent\\futures\\_base.py\", line 447, in result\n    return self.__get_result()\n           ~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\concurrent\\futures\\_base.py\", line 396, in __get_result\n    raise self._exception\nKeyError: 'pair_spacing_half_px'\n"
+    },
+    {
+      "id": "ruler_left_01",
+      "traceback": "concurrent.futures.process._RemoteTraceback: \n\"\"\"\nTraceback (most recent call last):\n  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\concurrent\\futures\\process.py\", line 254, in _process_worker\n    r = call_item.fn(*call_item.args, **call_item.kwargs)\n  File \"D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\audit_u1_p1.py\", line 146, in audit_one\n    for tr in tracks.values():float_differences.append(compare_fields(tr,track_evidence(raw,a,tr)))\n                                                                         ~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\audit_u1_p1.py\", line 57, in track_evidence\n    n=np.c_[-d[:,1],d[:,0]];width=np.asarray(track['pair_spacing_half_px'],float)\n                                             ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nKeyError: 'pair_spacing_half_px'\n\"\"\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\audit_u1_p1.py\", line 189, in main\n    try:rows.append(f.result())\n                    ~~~~~~~~^^\n  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\concurrent\\futures\\_base.py\", line 447, in result\n    return self.__get_result()\n           ~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\concurrent\\futures\\_base.py\", line 396, in __get_result\n    raise self._exception\nKeyError: 'pair_spacing_half_px'\n"
+    }
+  ],
+  "rows": []
+}

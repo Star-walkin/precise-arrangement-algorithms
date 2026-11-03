@@ -1,6 +1,6 @@
 # 自动精密排线视觉算法版本目录
 
-截至 2026-11-03，按独立编号且有可追溯记录的离线研究方法计，共 **60 版**：V 系列 28、RB 7、DR 4、IR 21。
+截至 2026-11-03，按独立编号且有可追溯记录的离线研究方法计，共 **61 版**：V 系列 28、RB 7、DR 4、IR 22。
 
 当前离线基准为 RB-F3、RB-C3、DR-D4 和 IR-P1；版本数不代表整根身份、t0/t1/t2 或上线验收。
 本仓库保存筛选后的源码与小型报告/协议。早期 V1–V4 主要共用 `vision_geometry_lab` 源码，并无逐版独立冻结代码快照；V15、V21 仅有脚本形态的主证据。目录中的路径保留原工程层级供追溯，原始数据、标签、权重、设备控制和保留集不在本仓库。
@@ -67,11 +67,12 @@
 | `IR-DATA-D1.0.0` | 自动弱监督数据扩充D1 | IR | 研究记录 | [源码](source_archive/experiments/entry_conditioned_rope_path/data_expansion_d1_20261102_v1) | [记录](source_archive/experiments/entry_conditioned_rope_path/data_expansion_d1_20261102_v1/REPORT.txt) |
 | `IR-GEOM-G1.0.0` | 原图几何追踪与相对卷面方向G1 | IR | 研究记录 | [源码](source_archive/experiments/entry_conditioned_rope_path/geometry_direction_20261103_v1) | [记录](source_archive/experiments/entry_conditioned_rope_path/geometry_direction_20261103_v1/REPORT.md) |
 | `IR-M1-R1.0.0` | 人工中心监督U-Net与匹配R1 | IR | 研究记录 | [源码](source_archive/experiments/entry_conditioned_rope_path/manual_r1_20261103_v1) | [记录](source_archive/experiments/entry_conditioned_rope_path/manual_r1_20261103_v1/REPORT.txt) |
+| `IR-U1-P1-POST.0.0` | 人工监督U1热图＋P1/H6冻结后处理 | IR | 研究记录 | [源码](source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1) | [记录](source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/REPORT.txt) |
 
 ## 口径
 
 - 比较臂、训练步数、运行号不另计版本。C1 失败分支和 S1 标注准备未计入。
-- `IR-M1-R1.0.0` 是本次新增的第 60 个完成版本；旧工程盘点文档的 59 尚未包含它。
-- [IR-U1-P1-POST.0.0：人工监督U1热图与P1/H6冻结后处理](source_archive/experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/README.txt)为**进行中**：292图计算退出0，但四栏渲染及独立交付审计在本目录冻结时尚未完成，不计入已完成的60版。
+- `IR-M1-R1.0.0` 是第 60 个完成版本，`IR-U1-P1-POST.0.0` 在四栏292图和独立审计完成后成为第 61 个。旧59版盘点是历史快照。
+- 完成版本状态按各自实验报告和交付审计记录；算法输出数量不等于同根身份准确率。
 - V 系列与 IR-V1/V2 是两套不同编号；源码与报告路径说明可追溯性，不保证离线版本可在新机器直接独立运行。
 - 不含原始媒体、标签、模型权重、推理结果、虚拟环境或设备控制文件；需要在原工程受控环境中复现。

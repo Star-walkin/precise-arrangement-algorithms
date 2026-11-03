@@ -1,0 +1,860 @@
+{
+  "exit_code": 0,
+  "command": [
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\render_four.py",
+    "--run",
+    "pilot_001",
+    "--workers",
+    "4"
+  ],
+  "rows": [
+    {
+      "id": "L_run_20260923_01__f000585__left",
+      "source": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000585__left.png",
+      "source_sha256": "8d9e542c964f55836ce2652f0d30445690d3d0c2901098140f8b09438f252220",
+      "source_group": "L_run_20260923_01",
+      "source_use": "training_manual",
+      "source_use_label": "人工训练图",
+      "output": "C:\\precise_arrangement_results\\manual_u1_p1_20261103_v1\\pilot_001\\四栏检测结果\\L_run_20260923_01__f000585__left.png",
+      "sha256": "b6ca366ad2e002f00345ae0f290446b8e794349b5a59e8a8d81cb69c4d1e4f56",
+      "bytes": 12984719,
+      "size": [
+        16620,
+        3400
+      ],
+      "image_viewports_xyxy": [
+        [
+          0,
+          180,
+          4096,
+          3180
+        ],
+        [
+          4128,
+          180,
+          8224,
+          3180
+        ],
+        [
+          8256,
+          180,
+          12352,
+          3180
+        ],
+        [
+          12384,
+          180,
+          16480,
+          3180
+        ]
+      ],
+      "neutral_rgb": [
+        45,
+        45,
+        45
+      ],
+      "record_gzip": "C:\\precise_arrangement_results\\manual_u1_p1_20261103_v1\\pilot_001\\记录\\L_run_20260923_01__f000585__left.json.gz",
+      "record_path": "C:\\precise_arrangement_results\\manual_u1_p1_20261103_v1\\pilot_001\\记录\\L_run_20260923_01__f000585__left.json.gz",
+      "record_sha256": "ee13abbf90290b9190e9ac6680228f740a66f3bdd0f48175a4d6f1c64e417d0d",
+      "selected_entry": 0,
+      "selected_candidate": 0,
+      "displayed_candidates": [
+        {
+          "entry": 0,
+          "candidate": 0,
+          "score": 31.42365609635862,
+          "task_direction_allowed": true
+        },
+        {
+          "entry": 0,
+          "candidate": 1,
+          "score": 31.39081254465797,
+          "task_direction_allowed": true
+        }
+      ],
+      "entry_count": 1,
+      "conditions": [
+        {
+          "entry_index": 0,
+          "seed_xy": [
+            [
+              316.96320331480166,
+              2215.4055530761307
+            ],
+            [
+              433.98520671361246,
+              2241.9734043352883
+            ]
+          ],
+          "response_file": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\inference\\gallery\\U1\\L_run_20260923_01__f000585__left\\entry_00.npz",
+          "response_sha256": "c45b888ca481a7cb53a4e5ae93daf37480c16d908a5b9502acce695a3d192ccf",
+          "model_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\model\\checkpoints\\step_0800.pt",
+          "model_sha256": "a35494f57df6596f0369011a5a1b322c1d84288370a74da888528bdd2565216e",
+          "model_step": 800,
+          "source_image_sha256": "8d9e542c964f55836ce2652f0d30445690d3d0c2901098140f8b09438f252220",
+          "metadata": {
+            "id": "L_run_20260923_01__f000585__left",
+            "mode": "GALLERY_AUTO",
+            "split": "display_gallery",
+            "source_group": "L_run_20260923_01",
+            "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\L_run_20260923_01__f000585__left.png",
+            "image_sha256": "8d9e542c964f55836ce2652f0d30445690d3d0c2901098140f8b09438f252220",
+            "seed_xy": [
+              [
+                316.96320331480166,
+                2215.4055530761307
+              ],
+              [
+                433.98520671361246,
+                2241.9734043352883
+              ]
+            ],
+            "entry_index": 0,
+            "response_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\inference\\gallery\\U1\\L_run_20260923_01__f000585__left\\entry_00.npz",
+            "response_sha256": "c45b888ca481a7cb53a4e5ae93daf37480c16d908a5b9502acce695a3d192ccf",
+            "status": "predicted",
+            "model_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\model\\checkpoints\\step_0800.pt",
+            "model_sha256": "a35494f57df6596f0369011a5a1b322c1d84288370a74da888528bdd2565216e",
+            "model_step": 800,
+            "branch": "U1",
+            "normalization": {
+              "unpadded_shape": [
+                975,
+                2048
+              ],
+              "mean": 0.1267186999320984,
+              "std": 0.19037340581417084,
+              "geometry_fallback": false,
+              "seed_pixels_gt01": 618
+            },
+            "shape_hw": [
+              975,
+              2048
+            ],
+            "bbox_original_xyxy": [
+              0,
+              1050,
+              4096,
+              3000
+            ],
+            "outside_search_domain": "unknown, not predicted",
+            "response_semantics": "original sigmoid center strength0..1, not calibrated target identity probability",
+            "feature_shape": [
+              8,
+              248,
+              512
+            ],
+            "feature_source": "new trained U1 dec1 avg_pool4 in SAME new forward; no old A feature cache",
+            "feature_mapping": "model_pixel=(original_xy-[0,1050])/2; pooled_pixel=(model_pixel+0.5)/4-0.5",
+            "new_model_forward": true,
+            "target_labels_read": false,
+            "seconds": 0.880280000041239
+          }
+        }
+      ],
+      "selected_response_file": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\inference\\gallery\\U1\\L_run_20260923_01__f000585__left\\entry_00.npz",
+      "selected_response_sha256": "c45b888ca481a7cb53a4e5ae93daf37480c16d908a5b9502acce695a3d192ccf",
+      "response_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\inference\\gallery\\U1\\L_run_20260923_01__f000585__left\\entry_00.npz",
+      "response_sha256": "c45b888ca481a7cb53a4e5ae93daf37480c16d908a5b9502acce695a3d192ccf",
+      "U1_model": {
+        "path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\model\\checkpoints\\step_0800.pt",
+        "sha256": "a35494f57df6596f0369011a5a1b322c1d84288370a74da888528bdd2565216e"
+      },
+      "U1_step": 800,
+      "heat_native_shape_hw": [
+        975,
+        2048
+      ],
+      "heat_crop_original_xyxy": [
+        0,
+        1050,
+        4096,
+        3000
+      ],
+      "fixed_heat_scale": [
+        0,
+        1
+      ],
+      "lut_rgb_sha256": "c4ae9ddb8a7f13561562fe15fd276fb55ab04e194786c39edfb2ef2cc0929b2b",
+      "left_pixels_identical": true,
+      "raw_heat_body_unmodified": true,
+      "candidate_raster_matches_record": true,
+      "final_raster_matches_record": true,
+      "selected_kind": "straight_free_to_F3_center_track",
+      "ambiguity": true,
+      "complete_identity_verified": false,
+      "no_B_response_or_path_used": true,
+      "no_R1_used": true,
+      "no_labels_read": true,
+      "seconds": 2.465713700046763
+    },
+    {
+      "id": "R_static_20260922_01__f000095__right",
+      "source": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_static_20260922_01__f000095__right.png",
+      "source_sha256": "0dc97609a69892bb32025f09b0948318f5832a02bdb1cc85df531a27ca42deb9",
+      "source_group": "R_static_20260922_01",
+      "source_use": "other_open_untrained_source_display",
+      "source_use_label": "其他开放未训练来源展示",
+      "output": "C:\\precise_arrangement_results\\manual_u1_p1_20261103_v1\\pilot_001\\四栏检测结果\\R_static_20260922_01__f000095__right.png",
+      "sha256": "6245f7b87aeaa6fe633b0a5e9cd1a3caf554c3b3972fc0fc58e4a9e1cdc3d34e",
+      "bytes": 16808977,
+      "size": [
+        16620,
+        3400
+      ],
+      "image_viewports_xyxy": [
+        [
+          0,
+          180,
+          4096,
+          3180
+        ],
+        [
+          4128,
+          180,
+          8224,
+          3180
+        ],
+        [
+          8256,
+          180,
+          12352,
+          3180
+        ],
+        [
+          12384,
+          180,
+          16480,
+          3180
+        ]
+      ],
+      "neutral_rgb": [
+        45,
+        45,
+        45
+      ],
+      "record_gzip": "C:\\precise_arrangement_results\\manual_u1_p1_20261103_v1\\pilot_001\\记录\\R_static_20260922_01__f000095__right.json.gz",
+      "record_path": "C:\\precise_arrangement_results\\manual_u1_p1_20261103_v1\\pilot_001\\记录\\R_static_20260922_01__f000095__right.json.gz",
+      "record_sha256": "e4a0cd55a4858768a8d923b4ef736ae4a0b4555f5f17a0fb0faad58fc4092b4b",
+      "selected_entry": 0,
+      "selected_candidate": 0,
+      "displayed_candidates": [
+        {
+          "entry": 0,
+          "candidate": 0,
+          "score": 31.50743700326444,
+          "task_direction_allowed": true
+        },
+        {
+          "entry": 0,
+          "candidate": 1,
+          "score": 31.39611387196454,
+          "task_direction_allowed": true
+        }
+      ],
+      "entry_count": 1,
+      "conditions": [
+        {
+          "entry_index": 0,
+          "seed_xy": [
+            [
+              3191.557931444285,
+              2148.586499629766
+            ],
+            [
+              3074.048440643902,
+              2172.907675009149
+            ]
+          ],
+          "response_file": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\inference\\gallery\\U1\\R_static_20260922_01__f000095__right\\entry_00.npz",
+          "response_sha256": "2e2ceccb66ea7a9affa2a0831383d8590fb0005bb3b90ab5caa34b02d7cff9c9",
+          "model_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\model\\checkpoints\\step_0800.pt",
+          "model_sha256": "a35494f57df6596f0369011a5a1b322c1d84288370a74da888528bdd2565216e",
+          "model_step": 800,
+          "source_image_sha256": "0dc97609a69892bb32025f09b0948318f5832a02bdb1cc85df531a27ca42deb9",
+          "metadata": {
+            "id": "R_static_20260922_01__f000095__right",
+            "mode": "GALLERY_AUTO",
+            "split": "display_gallery",
+            "source_group": "R_static_20260922_01",
+            "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\R_static_20260922_01__f000095__right.png",
+            "image_sha256": "0dc97609a69892bb32025f09b0948318f5832a02bdb1cc85df531a27ca42deb9",
+            "seed_xy": [
+              [
+                3191.557931444285,
+                2148.586499629766
+              ],
+              [
+                3074.048440643902,
+                2172.907675009149
+              ]
+            ],
+            "entry_index": 0,
+            "response_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\inference\\gallery\\U1\\R_static_20260922_01__f000095__right\\entry_00.npz",
+            "response_sha256": "2e2ceccb66ea7a9affa2a0831383d8590fb0005bb3b90ab5caa34b02d7cff9c9",
+            "status": "predicted",
+            "model_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\model\\checkpoints\\step_0800.pt",
+            "model_sha256": "a35494f57df6596f0369011a5a1b322c1d84288370a74da888528bdd2565216e",
+            "model_step": 800,
+            "branch": "U1",
+            "normalization": {
+              "unpadded_shape": [
+                975,
+                2048
+              ],
+              "mean": 0.14590804278850555,
+              "std": 0.22676657140254974,
+              "geometry_fallback": false,
+              "seed_pixels_gt01": 616
+            },
+            "shape_hw": [
+              975,
+              2048
+            ],
+            "bbox_original_xyxy": [
+              0,
+              1050,
+              4096,
+              3000
+            ],
+            "outside_search_domain": "unknown, not predicted",
+            "response_semantics": "original sigmoid center strength0..1, not calibrated target identity probability",
+            "feature_shape": [
+              8,
+              248,
+              512
+            ],
+            "feature_source": "new trained U1 dec1 avg_pool4 in SAME new forward; no old A feature cache",
+            "feature_mapping": "model_pixel=(original_xy-[0,1050])/2; pooled_pixel=(model_pixel+0.5)/4-0.5",
+            "new_model_forward": true,
+            "target_labels_read": false,
+            "seconds": 0.822856199927628
+          }
+        }
+      ],
+      "selected_response_file": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\inference\\gallery\\U1\\R_static_20260922_01__f000095__right\\entry_00.npz",
+      "selected_response_sha256": "2e2ceccb66ea7a9affa2a0831383d8590fb0005bb3b90ab5caa34b02d7cff9c9",
+      "response_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\inference\\gallery\\U1\\R_static_20260922_01__f000095__right\\entry_00.npz",
+      "response_sha256": "2e2ceccb66ea7a9affa2a0831383d8590fb0005bb3b90ab5caa34b02d7cff9c9",
+      "U1_model": {
+        "path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\model\\checkpoints\\step_0800.pt",
+        "sha256": "a35494f57df6596f0369011a5a1b322c1d84288370a74da888528bdd2565216e"
+      },
+      "U1_step": 800,
+      "heat_native_shape_hw": [
+        975,
+        2048
+      ],
+      "heat_crop_original_xyxy": [
+        0,
+        1050,
+        4096,
+        3000
+      ],
+      "fixed_heat_scale": [
+        0,
+        1
+      ],
+      "lut_rgb_sha256": "c4ae9ddb8a7f13561562fe15fd276fb55ab04e194786c39edfb2ef2cc0929b2b",
+      "left_pixels_identical": true,
+      "raw_heat_body_unmodified": true,
+      "candidate_raster_matches_record": true,
+      "final_raster_matches_record": true,
+      "selected_kind": "straight_free_to_F3_center_track",
+      "ambiguity": false,
+      "complete_identity_verified": false,
+      "no_B_response_or_path_used": true,
+      "no_R1_used": true,
+      "no_labels_read": true,
+      "seconds": 2.6930974000133574
+    },
+    {
+      "id": "dual_20260923_101517__pair0075__right",
+      "source": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101517__pair0075__right.png",
+      "source_sha256": "6faa8a80191a42fbc1316e8e4883d8c1e11291b0b58a6b0137f96fa7d1c32e86",
+      "source_group": "dual_20260923_101517",
+      "source_use": "same_training_source_unused_frame_display",
+      "source_use_label": "同训练来源未用帧展示",
+      "output": "C:\\precise_arrangement_results\\manual_u1_p1_20261103_v1\\pilot_001\\四栏检测结果\\dual_20260923_101517__pair0075__right.png",
+      "sha256": "3bf49e7ae1f93facb2c1fc3a1dca6e0a38f347568775965b9a49bd8eb274a248",
+      "bytes": 22418052,
+      "size": [
+        16620,
+        3400
+      ],
+      "image_viewports_xyxy": [
+        [
+          0,
+          180,
+          4096,
+          3180
+        ],
+        [
+          4128,
+          180,
+          8224,
+          3180
+        ],
+        [
+          8256,
+          180,
+          12352,
+          3180
+        ],
+        [
+          12384,
+          180,
+          16480,
+          3180
+        ]
+      ],
+      "neutral_rgb": [
+        45,
+        45,
+        45
+      ],
+      "record_gzip": "C:\\precise_arrangement_results\\manual_u1_p1_20261103_v1\\pilot_001\\记录\\dual_20260923_101517__pair0075__right.json.gz",
+      "record_path": "C:\\precise_arrangement_results\\manual_u1_p1_20261103_v1\\pilot_001\\记录\\dual_20260923_101517__pair0075__right.json.gz",
+      "record_sha256": "8769d4eab74093eb77b8392ae09f8ebf1e362deb2b90ce88572943953995a79c",
+      "selected_entry": 1,
+      "selected_candidate": 0,
+      "displayed_candidates": [
+        {
+          "entry": 1,
+          "candidate": 0,
+          "score": 40.563262542458126,
+          "task_direction_allowed": true
+        },
+        {
+          "entry": 1,
+          "candidate": 1,
+          "score": 40.43426665617336,
+          "task_direction_allowed": true
+        },
+        {
+          "entry": 1,
+          "candidate": 2,
+          "score": 40.42486887882642,
+          "task_direction_allowed": true
+        }
+      ],
+      "entry_count": 2,
+      "conditions": [
+        {
+          "entry_index": 0,
+          "seed_xy": [
+            [
+              571.9304314022369,
+              2555.356098156537
+            ],
+            [
+              688.0792283997188,
+              2525.1988941077902
+            ]
+          ],
+          "response_file": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\inference\\gallery\\U1\\dual_20260923_101517__pair0075__right\\entry_00.npz",
+          "response_sha256": "a592f861961111df30f286d32902007417dc0d61ff6e5e2ff1e3ec3dde30778f",
+          "model_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\model\\checkpoints\\step_0800.pt",
+          "model_sha256": "a35494f57df6596f0369011a5a1b322c1d84288370a74da888528bdd2565216e",
+          "model_step": 800,
+          "source_image_sha256": "6faa8a80191a42fbc1316e8e4883d8c1e11291b0b58a6b0137f96fa7d1c32e86",
+          "metadata": {
+            "id": "dual_20260923_101517__pair0075__right",
+            "mode": "GALLERY_AUTO",
+            "split": "display_gallery",
+            "source_group": "dual_20260923_101517",
+            "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101517__pair0075__right.png",
+            "image_sha256": "6faa8a80191a42fbc1316e8e4883d8c1e11291b0b58a6b0137f96fa7d1c32e86",
+            "seed_xy": [
+              [
+                571.9304314022369,
+                2555.356098156537
+              ],
+              [
+                688.0792283997188,
+                2525.1988941077902
+              ]
+            ],
+            "entry_index": 0,
+            "response_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\inference\\gallery\\U1\\dual_20260923_101517__pair0075__right\\entry_00.npz",
+            "response_sha256": "a592f861961111df30f286d32902007417dc0d61ff6e5e2ff1e3ec3dde30778f",
+            "status": "predicted",
+            "model_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\model\\checkpoints\\step_0800.pt",
+            "model_sha256": "a35494f57df6596f0369011a5a1b322c1d84288370a74da888528bdd2565216e",
+            "model_step": 800,
+            "branch": "U1",
+            "normalization": {
+              "unpadded_shape": [
+                975,
+                2048
+              ],
+              "mean": 0.1658664494752884,
+              "std": 0.2572709023952484,
+              "geometry_fallback": false,
+              "seed_pixels_gt01": 613
+            },
+            "shape_hw": [
+              975,
+              2048
+            ],
+            "bbox_original_xyxy": [
+              0,
+              1050,
+              4096,
+              3000
+            ],
+            "outside_search_domain": "unknown, not predicted",
+            "response_semantics": "original sigmoid center strength0..1, not calibrated target identity probability",
+            "feature_shape": [
+              8,
+              248,
+              512
+            ],
+            "feature_source": "new trained U1 dec1 avg_pool4 in SAME new forward; no old A feature cache",
+            "feature_mapping": "model_pixel=(original_xy-[0,1050])/2; pooled_pixel=(model_pixel+0.5)/4-0.5",
+            "new_model_forward": true,
+            "target_labels_read": false,
+            "seconds": 0.9902540000621229
+          }
+        },
+        {
+          "entry_index": 1,
+          "seed_xy": [
+            [
+              4082.5513481440294,
+              2005.1805156734442
+            ],
+            [
+              3965.2704642789117,
+              2030.5811904640245
+            ]
+          ],
+          "response_file": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\inference\\gallery\\U1\\dual_20260923_101517__pair0075__right\\entry_01.npz",
+          "response_sha256": "37525010e63a12b36881a03ce85b594256799646993522b443d9d77170a0a263",
+          "model_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\model\\checkpoints\\step_0800.pt",
+          "model_sha256": "a35494f57df6596f0369011a5a1b322c1d84288370a74da888528bdd2565216e",
+          "model_step": 800,
+          "source_image_sha256": "6faa8a80191a42fbc1316e8e4883d8c1e11291b0b58a6b0137f96fa7d1c32e86",
+          "metadata": {
+            "id": "dual_20260923_101517__pair0075__right",
+            "mode": "GALLERY_AUTO",
+            "split": "display_gallery",
+            "source_group": "dual_20260923_101517",
+            "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\right_camera\\dual_20260923_101517__pair0075__right.png",
+            "image_sha256": "6faa8a80191a42fbc1316e8e4883d8c1e11291b0b58a6b0137f96fa7d1c32e86",
+            "seed_xy": [
+              [
+                4082.5513481440294,
+                2005.1805156734442
+              ],
+              [
+                3965.2704642789117,
+                2030.5811904640245
+              ]
+            ],
+            "entry_index": 1,
+            "response_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\inference\\gallery\\U1\\dual_20260923_101517__pair0075__right\\entry_01.npz",
+            "response_sha256": "37525010e63a12b36881a03ce85b594256799646993522b443d9d77170a0a263",
+            "status": "predicted",
+            "model_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\model\\checkpoints\\step_0800.pt",
+            "model_sha256": "a35494f57df6596f0369011a5a1b322c1d84288370a74da888528bdd2565216e",
+            "model_step": 800,
+            "branch": "U1",
+            "normalization": {
+              "unpadded_shape": [
+                975,
+                2048
+              ],
+              "mean": 0.1658664494752884,
+              "std": 0.2572709023952484,
+              "geometry_fallback": false,
+              "seed_pixels_gt01": 607
+            },
+            "shape_hw": [
+              975,
+              2048
+            ],
+            "bbox_original_xyxy": [
+              0,
+              1050,
+              4096,
+              3000
+            ],
+            "outside_search_domain": "unknown, not predicted",
+            "response_semantics": "original sigmoid center strength0..1, not calibrated target identity probability",
+            "feature_shape": [
+              8,
+              248,
+              512
+            ],
+            "feature_source": "new trained U1 dec1 avg_pool4 in SAME new forward; no old A feature cache",
+            "feature_mapping": "model_pixel=(original_xy-[0,1050])/2; pooled_pixel=(model_pixel+0.5)/4-0.5",
+            "new_model_forward": true,
+            "target_labels_read": false,
+            "seconds": 1.0025096000172198
+          }
+        }
+      ],
+      "selected_response_file": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\inference\\gallery\\U1\\dual_20260923_101517__pair0075__right\\entry_01.npz",
+      "selected_response_sha256": "37525010e63a12b36881a03ce85b594256799646993522b443d9d77170a0a263",
+      "response_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\inference\\gallery\\U1\\dual_20260923_101517__pair0075__right\\entry_01.npz",
+      "response_sha256": "37525010e63a12b36881a03ce85b594256799646993522b443d9d77170a0a263",
+      "U1_model": {
+        "path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\model\\checkpoints\\step_0800.pt",
+        "sha256": "a35494f57df6596f0369011a5a1b322c1d84288370a74da888528bdd2565216e"
+      },
+      "U1_step": 800,
+      "heat_native_shape_hw": [
+        975,
+        2048
+      ],
+      "heat_crop_original_xyxy": [
+        0,
+        1050,
+        4096,
+        3000
+      ],
+      "fixed_heat_scale": [
+        0,
+        1
+      ],
+      "lut_rgb_sha256": "c4ae9ddb8a7f13561562fe15fd276fb55ab04e194786c39edfb2ef2cc0929b2b",
+      "left_pixels_identical": true,
+      "raw_heat_body_unmodified": true,
+      "candidate_raster_matches_record": true,
+      "final_raster_matches_record": true,
+      "selected_kind": "straight_free_to_F3_center_track",
+      "ambiguity": false,
+      "complete_identity_verified": false,
+      "no_B_response_or_path_used": true,
+      "no_R1_used": true,
+      "no_labels_read": true,
+      "seconds": 2.952513199998066
+    },
+    {
+      "id": "ruler_left_01",
+      "source": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\ruler_left_01.png",
+      "source_sha256": "0278b8b81a22e2d45361b25096ab07c03a92f5cac1f73e39a3cc026739ddd0a8",
+      "source_group": "ruler_test_离开38.5mm（包括活动绳共计8.5根）",
+      "source_use": "other_open_untrained_source_display",
+      "source_use_label": "其他开放未训练来源展示",
+      "output": "C:\\precise_arrangement_results\\manual_u1_p1_20261103_v1\\pilot_001\\四栏检测结果\\ruler_left_01.png",
+      "sha256": "6c0c731b783733fefc743f25dfbcc51a56b24fd97f1e08b24ead698dba94b771",
+      "bytes": 43099590,
+      "size": [
+        16620,
+        3400
+      ],
+      "image_viewports_xyxy": [
+        [
+          0,
+          180,
+          4096,
+          3180
+        ],
+        [
+          4128,
+          180,
+          8224,
+          3180
+        ],
+        [
+          8256,
+          180,
+          12352,
+          3180
+        ],
+        [
+          12384,
+          180,
+          16480,
+          3180
+        ]
+      ],
+      "neutral_rgb": [
+        45,
+        45,
+        45
+      ],
+      "record_gzip": "C:\\precise_arrangement_results\\manual_u1_p1_20261103_v1\\pilot_001\\记录\\ruler_left_01.json.gz",
+      "record_path": "C:\\precise_arrangement_results\\manual_u1_p1_20261103_v1\\pilot_001\\记录\\ruler_left_01.json.gz",
+      "record_sha256": "a9314af0b6b45753836984673958e389db90af35614f1f9665582bebad242448",
+      "selected_entry": 0,
+      "selected_candidate": 0,
+      "displayed_candidates": [
+        {
+          "entry": 0,
+          "candidate": 0,
+          "score": 45.4680641729875,
+          "task_direction_allowed": true
+        }
+      ],
+      "entry_count": 1,
+      "conditions": [
+        {
+          "entry_index": 0,
+          "seed_xy": [
+            [
+              14.218725947538413,
+              2145.124332331262
+            ],
+            [
+              131.31562290446456,
+              2171.3601232104984
+            ]
+          ],
+          "response_file": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\inference\\gallery\\U1\\ruler_left_01\\entry_00.npz",
+          "response_sha256": "eee43ebc98633f6f842c52045d858125a77b438c7b6c69acd337e19aeb18ad16",
+          "model_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\model\\checkpoints\\step_0800.pt",
+          "model_sha256": "a35494f57df6596f0369011a5a1b322c1d84288370a74da888528bdd2565216e",
+          "model_step": 800,
+          "source_image_sha256": "0278b8b81a22e2d45361b25096ab07c03a92f5cac1f73e39a3cc026739ddd0a8",
+          "metadata": {
+            "id": "ruler_left_01",
+            "mode": "GALLERY_AUTO",
+            "split": "display_gallery",
+            "source_group": "ruler_test_离开38.5mm（包括活动绳共计8.5根）",
+            "image_path": "D:\\precise_arrangement\\数据资产\\05_派生与实验结果\\camera_condition_images_20261009_v2\\images\\left_camera\\ruler_left_01.png",
+            "image_sha256": "0278b8b81a22e2d45361b25096ab07c03a92f5cac1f73e39a3cc026739ddd0a8",
+            "seed_xy": [
+              [
+                14.218725947538413,
+                2145.124332331262
+              ],
+              [
+                131.31562290446456,
+                2171.3601232104984
+              ]
+            ],
+            "entry_index": 0,
+            "response_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\inference\\gallery\\U1\\ruler_left_01\\entry_00.npz",
+            "response_sha256": "eee43ebc98633f6f842c52045d858125a77b438c7b6c69acd337e19aeb18ad16",
+            "status": "predicted",
+            "model_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\model\\checkpoints\\step_0800.pt",
+            "model_sha256": "a35494f57df6596f0369011a5a1b322c1d84288370a74da888528bdd2565216e",
+            "model_step": 800,
+            "branch": "U1",
+            "normalization": {
+              "unpadded_shape": [
+                975,
+                2048
+              ],
+              "mean": 0.12581773102283478,
+              "std": 0.1888711303472519,
+              "geometry_fallback": false,
+              "seed_pixels_gt01": 618
+            },
+            "shape_hw": [
+              975,
+              2048
+            ],
+            "bbox_original_xyxy": [
+              0,
+              1050,
+              4096,
+              3000
+            ],
+            "outside_search_domain": "unknown, not predicted",
+            "response_semantics": "original sigmoid center strength0..1, not calibrated target identity probability",
+            "feature_shape": [
+              8,
+              248,
+              512
+            ],
+            "feature_source": "new trained U1 dec1 avg_pool4 in SAME new forward; no old A feature cache",
+            "feature_mapping": "model_pixel=(original_xy-[0,1050])/2; pooled_pixel=(model_pixel+0.5)/4-0.5",
+            "new_model_forward": true,
+            "target_labels_read": false,
+            "seconds": 0.8874265999766067
+          }
+        }
+      ],
+      "selected_response_file": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\inference\\gallery\\U1\\ruler_left_01\\entry_00.npz",
+      "selected_response_sha256": "eee43ebc98633f6f842c52045d858125a77b438c7b6c69acd337e19aeb18ad16",
+      "response_path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\inference\\gallery\\U1\\ruler_left_01\\entry_00.npz",
+      "response_sha256": "eee43ebc98633f6f842c52045d858125a77b438c7b6c69acd337e19aeb18ad16",
+      "U1_model": {
+        "path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\model\\checkpoints\\step_0800.pt",
+        "sha256": "a35494f57df6596f0369011a5a1b322c1d84288370a74da888528bdd2565216e"
+      },
+      "U1_step": 800,
+      "heat_native_shape_hw": [
+        975,
+        2048
+      ],
+      "heat_crop_original_xyxy": [
+        0,
+        1050,
+        4096,
+        3000
+      ],
+      "fixed_heat_scale": [
+        0,
+        1
+      ],
+      "lut_rgb_sha256": "c4ae9ddb8a7f13561562fe15fd276fb55ab04e194786c39edfb2ef2cc0929b2b",
+      "left_pixels_identical": true,
+      "raw_heat_body_unmodified": true,
+      "candidate_raster_matches_record": true,
+      "final_raster_matches_record": true,
+      "selected_kind": "free_fragment_no_resolved_connection",
+      "ambiguity": false,
+      "complete_identity_verified": false,
+      "no_B_response_or_path_used": true,
+      "no_R1_used": true,
+      "no_labels_read": true,
+      "seconds": 3.7462917000520974
+    }
+  ],
+  "errors": [],
+  "planned": 4,
+  "seconds": 3.9368333000456914,
+  "output_directory": "C:\\precise_arrangement_results\\manual_u1_p1_20261103_v1\\pilot_001\\四栏检测结果",
+  "source_sha256": "b7676acbbc369464731b4cb820dba9362d510deb253c7a9934abbbb0260bcd3c",
+  "task_sha256": "b3c332b56165a315bdfbe1c916a4392a221f8dc2f83ad974c162825460ed0f63",
+  "calculation_summary_sha256": "8b03143c26e8c59b0ae59f1212d5f3be7698eba85a657ac03a66e37cb48c0c5f",
+  "four_native_viewports": true,
+  "viewport_size": [
+    4096,
+    3000
+  ],
+  "image_viewports_xyxy": [
+    [
+      0,
+      180,
+      4096,
+      3180
+    ],
+    [
+      4128,
+      180,
+      8224,
+      3180
+    ],
+    [
+      8256,
+      180,
+      12352,
+      3180
+    ],
+    [
+      12384,
+      180,
+      16480,
+      3180
+    ]
+  ],
+  "board_size": [
+    16620,
+    3400
+  ],
+  "entry_conditions": 5,
+  "source_use_counts": {
+    "training_manual": 1,
+    "other_open_untrained_source_display": 2,
+    "same_training_source_unused_frame_display": 1
+  },
+  "raw_U1_heat_unmodified": true,
+  "original_P1_baseline_unchanged": true,
+  "full_identity_accuracy": null
+}

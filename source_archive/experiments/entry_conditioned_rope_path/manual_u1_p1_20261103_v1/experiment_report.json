@@ -1,0 +1,35 @@
+{
+  "version": "IR-U1-P1-POST.0.0",
+  "date_local": "2026-11-03",
+  "source_count": 292,
+  "entry_conditions": 301,
+  "U1_model": {
+    "path": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_r1_20261103_v1\\model\\checkpoints\\step_0800.pt",
+    "sha256": "a35494f57df6596f0369011a5a1b322c1d84288370a74da888528bdd2565216e"
+  },
+  "step": 800,
+  "postprocess": "frozen P1/H6",
+  "output_directory": "C:\\precise_arrangement_results\\manual_u1_p1_20261103_v1\\all_001\\四栏检测结果",
+  "kinds": {
+    "straight_free_to_F3_center_track": 125,
+    "free_fragment_no_resolved_connection": 167
+  },
+  "non_E1_sources": [
+    "dual_20260923_101517__pair0075__right",
+    "dual_20260923_101517__pair0135__right",
+    "dual_20260923_101517__pair0255__right",
+    "dual_20260923_113305__pair0555__right",
+    "R_run_20260923_01__f000868__right",
+    "R_run_20260923_01__f001274__right",
+    "R_run_20260923_01__f001422__right"
+  ],
+  "computation_seconds": 511.3828361000633,
+  "render_seconds": 201.93197379994672,
+  "audit_exit_code": 0,
+  "no_new_training": true,
+  "no_new_model_forward": true,
+  "no_R1": true,
+  "old_P1_replaced": false,
+  "full_identity_accuracy": null,
+  "report_sha256": "fac58f834676d68755d57c8aa48e4b0021466e79adacc62779d0638c81c2850a"
+}

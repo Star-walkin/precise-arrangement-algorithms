@@ -1,0 +1,111 @@
+{
+  "exit_code": 0,
+  "command": [
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\audit_u1_p1.py",
+    "--run",
+    "pilot_001",
+    "--records-only",
+    "--out",
+    "audit_pilot_002.json",
+    "--workers",
+    "2"
+  ],
+  "seconds": 1.2460683999815956,
+  "checked_images": 4,
+  "planned": 4,
+  "records_only": true,
+  "source_sha256": "4d5296fbbff3c99c203eda6dbf1172d854d3dcb7d9ae712a08ec5e8a2d5d847a",
+  "source_integrity_sha256": "24a249bdb20722fe02c3c8f3cd069f5e9f60b074b5b55d9d71f1870d0bbb4483",
+  "counts": {
+    "trimmed_conditions": 1,
+    "licensed_free_projection_events": 1,
+    "attached_candidates": 4,
+    "surface_exact_source_points": 105,
+    "candidates": 8,
+    "entry_conditions": 5,
+    "task_direction_excluded": 0
+  },
+  "max_new_U1_evidence_difference": 0.0,
+  "no_adapter_or_renderer_import": true,
+  "new_U1_profile_and_track_values_reconstructed": true,
+  "no_old_B_response_or_path_loaded": true,
+  "source_no_source_extrapolation_and_non_crossing_arithmetic_checked": true,
+  "complete_identity_accuracy": null,
+  "errors": [],
+  "rows": [
+    {
+      "id": "L_run_20260923_01__f000585__left",
+      "entries": 1,
+      "selected_entry": 0,
+      "selected_candidate": 0,
+      "record_path": "C:\\precise_arrangement_results\\manual_u1_p1_20261103_v1\\pilot_001\\记录\\L_run_20260923_01__f000585__left.json.gz",
+      "record_sha256": "ee13abbf90290b9190e9ac6680228f740a66f3bdd0f48175a4d6f1c64e417d0d",
+      "counts": {
+        "trimmed_conditions": 0,
+        "licensed_free_projection_events": 0,
+        "attached_candidates": 1,
+        "surface_exact_source_points": 28,
+        "candidates": 2,
+        "entry_conditions": 1,
+        "task_direction_excluded": 0
+      },
+      "max_new_U1_evidence_difference": 0.0,
+      "complete_identity_accuracy": null
+    },
+    {
+      "id": "dual_20260923_101517__pair0075__right",
+      "entries": 2,
+      "selected_entry": 1,
+      "selected_candidate": 0,
+      "record_path": "C:\\precise_arrangement_results\\manual_u1_p1_20261103_v1\\pilot_001\\记录\\dual_20260923_101517__pair0075__right.json.gz",
+      "record_sha256": "8769d4eab74093eb77b8392ae09f8ebf1e362deb2b90ce88572943953995a79c",
+      "counts": {
+        "trimmed_conditions": 0,
+        "licensed_free_projection_events": 1,
+        "entry_conditions": 2,
+        "attached_candidates": 2,
+        "surface_exact_source_points": 57,
+        "candidates": 3,
+        "task_direction_excluded": 0
+      },
+      "max_new_U1_evidence_difference": 0.0,
+      "complete_identity_accuracy": null
+    },
+    {
+      "id": "R_static_20260922_01__f000095__right",
+      "entries": 1,
+      "selected_entry": 0,
+      "selected_candidate": 0,
+      "record_path": "C:\\precise_arrangement_results\\manual_u1_p1_20261103_v1\\pilot_001\\记录\\R_static_20260922_01__f000095__right.json.gz",
+      "record_sha256": "e4a0cd55a4858768a8d923b4ef736ae4a0b4555f5f17a0fb0faad58fc4092b4b",
+      "counts": {
+        "trimmed_conditions": 1,
+        "licensed_free_projection_events": 0,
+        "attached_candidates": 1,
+        "surface_exact_source_points": 20,
+        "candidates": 2,
+        "entry_conditions": 1,
+        "task_direction_excluded": 0
+      },
+      "max_new_U1_evidence_difference": 0.0,
+      "complete_identity_accuracy": null
+    },
+    {
+      "id": "ruler_left_01",
+      "entries": 1,
+      "selected_entry": 0,
+      "selected_candidate": 0,
+      "record_path": "C:\\precise_arrangement_results\\manual_u1_p1_20261103_v1\\pilot_001\\记录\\ruler_left_01.json.gz",
+      "record_sha256": "a9314af0b6b45753836984673958e389db90af35614f1f9665582bebad242448",
+      "counts": {
+        "trimmed_conditions": 0,
+        "licensed_free_projection_events": 0,
+        "candidates": 1,
+        "entry_conditions": 1,
+        "task_direction_excluded": 0
+      },
+      "max_new_U1_evidence_difference": 0.0,
+      "complete_identity_accuracy": null
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "exit_code": 0,
+  "checked_images": 292,
+  "checked_conditions": 301,
+  "source_use_counts": {
+    "same_training_source_unused_frame_display": 208,
+    "training_manual": 24,
+    "other_open_untrained_source_display": 40,
+    "historical_open_evaluation_source_display": 20
+  },
+  "render_receipt_sha256": "5388bf5e4f02bc6e46203e2164bfa7546108acc23cecfb69f2c8accc155b45ad",
+  "source_sha256": "1b3e95b128bac9c82aefc84c6f7e54211f5b805d5fc6ecedfb1f575ca383d055",
+  "all_render_metadata_matches_exact_saved_H6_result_and_selected_U1_condition": true,
+  "no_training_prediction_or_image_generation": true,
+  "complete_identity_accuracy": null
+}

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "vision_prototype/.venv/Scripts/python.exe",
+    "-B",
+    "experiments/entry_conditioned_rope_path/manual_u1_p1_20261103_v1/audit_u1_p1.py",
+    "--workers",
+    "4"
+  ],
+  "started_utc": "2026-11-03T12:57:49.6382540Z",
+  "seconds": 115.0450062,
+  "actual_exit_code": 0,
+  "log": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\audit_u1_p1_repair_003.log"
+}

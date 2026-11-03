@@ -1,0 +1,16 @@
+{
+  "command": [
+    "D:\\precise_arrangement\\vision_prototype\\.venv\\Scripts\\python.exe",
+    "-B",
+    "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\render_four.py",
+    "--run",
+    "all_001",
+    "--workers",
+    "4"
+  ],
+  "started_utc": "2026-11-03T11:55:32.4265344Z",
+  "elapsed_seconds": 202.0761651,
+  "exit_code": 0,
+  "log": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\render_all.log",
+  "render_receipt": "D:\\precise_arrangement\\experiments\\entry_conditioned_rope_path\\manual_u1_p1_20261103_v1\\render_receipt.json"
+}
