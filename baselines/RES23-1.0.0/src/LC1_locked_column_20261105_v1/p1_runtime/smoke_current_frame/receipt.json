@@ -1,0 +1,129 @@
+{
+  "adapter_sha256": "f10b73ef48a21fd84aa72dbfe58d3eb292c3f12b4e27d7f5d834e13d026914e9",
+  "model_sha256": "ed4bfa12c5b3081a19d056265b053d516bdba5ec05dce658e1e32339b47fb882",
+  "rows": [
+    {
+      "case": "right113305",
+      "status": "CURRENT_PATH_DIAGNOSTIC",
+      "seconds": 34.03484670002945,
+      "model_forward_count": 1,
+      "seed_xy": [
+        [
+          3721.3974656825303,
+          1934.1356938504634
+        ],
+        [
+          3603.3831419173152,
+          1955.8755049406968
+        ]
+      ],
+      "path_point_count": 204,
+      "line_points": 129,
+      "whole_path_candidate_supported": false,
+      "reasons": [
+        "H6_did_not_select_an_image_eligible_legal_curve_connection",
+        "transition_current_joint_support_insufficient",
+        "surface_current_joint_support_insufficient",
+        "free_current_observed_fraction_insufficient",
+        "curve_current_joint_length_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "H6_track_count": 225,
+      "support": {
+        "free": {
+          "point_count": 204,
+          "joint_fraction": 0.6323529411764706,
+          "observed_fraction": 0.6323529411764706,
+          "observed_length_original_px": 762.0000000000005,
+          "joint_length_original_px": 762.0000000000005,
+          "maximum_unsupported_run_original_px": 330.0
+        },
+        "transition": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "surface": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "genuine_H6_attached_candidate": false,
+        "maximum_unsupported_run_original_px": 330.0,
+        "maximum_allowed_unsupported_run_original_px": 80.0,
+        "branch_score_margin": 16.058396676373114,
+        "cross_entry_score_margin": null,
+        "ambiguous": false,
+        "direction_selection_allowed": true
+      },
+      "record": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\p1_runtime\\smoke_current_frame\\right113305__f0.json",
+      "record_sha256": "5a3c6cb7237241b7f73a9742a578061625ae29360122555fb0ab0d21fac348d2"
+    },
+    {
+      "case": "left111500",
+      "status": "CURRENT_PATH_DIAGNOSTIC",
+      "seconds": 21.947780499933288,
+      "model_forward_count": 1,
+      "seed_xy": [
+        [
+          130.58832548188693,
+          2121.792476196696
+        ],
+        [
+          248.50831370471724,
+          2144.0382932760385
+        ]
+      ],
+      "path_point_count": 400,
+      "line_points": 216,
+      "whole_path_candidate_supported": false,
+      "reasons": [
+        "free_current_observed_fraction_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "H6_track_count": 146,
+      "support": {
+        "free": {
+          "point_count": 364,
+          "joint_fraction": 0.5934065934065934,
+          "observed_fraction": 0.5934065934065934,
+          "observed_length_original_px": 1272.0000000000002,
+          "joint_length_original_px": 1272.0000000000002,
+          "maximum_unsupported_run_original_px": 426.0000000000002
+        },
+        "transition": {
+          "point_count": 4,
+          "joint_fraction": 1.0,
+          "observed_fraction": 1.0,
+          "observed_length_original_px": 28.87277233959732,
+          "joint_length_original_px": 28.87277233959732,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "surface": {
+          "point_count": 32,
+          "joint_fraction": 0.59375,
+          "observed_fraction": 0.59375,
+          "observed_length_original_px": 117.75288239907631,
+          "joint_length_original_px": 117.75288239907631,
+          "maximum_unsupported_run_original_px": 62.69863095745739
+        },
+        "genuine_H6_attached_candidate": true,
+        "maximum_unsupported_run_original_px": 434.92683059988036,
+        "maximum_allowed_unsupported_run_original_px": 92.4,
+        "branch_score_margin": 0.07782071672342283,
+        "cross_entry_score_margin": null,
+        "ambiguous": false,
+        "direction_selection_allowed": true
+      },
+      "record": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\p1_runtime\\smoke_current_frame\\left111500__f0.json",
+      "record_sha256": "08d24bace6dd20d5dede6ae5cad0d7afbf4659d033f27d2bf1056a5df9aa6471"
+    }
+  ],
+  "passed_runtime_smoke": true
+}

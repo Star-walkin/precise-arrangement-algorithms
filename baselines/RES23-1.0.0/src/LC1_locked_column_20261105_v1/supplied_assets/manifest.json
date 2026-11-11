@@ -1,0 +1,81 @@
+{
+  "source": "E:\\study\\program\\济宁\\临时文件",
+  "copied_without_modifying_originals": true,
+  "files": [
+    {
+      "relative_path": "straight_gradient_20261105_v2/straight_core.py",
+      "sha256": "4e3c842a684c43af1476461100e15c7bd6399d33a5650c14f676a923460a1e09",
+      "size_bytes": 14532
+    },
+    {
+      "relative_path": "straight_gradient_20261105_v2/guidance.py",
+      "sha256": "8992b0851280d94c3c49021737097338b6bc7fbab786da6992123ea14cf85ef7",
+      "size_bytes": 11629
+    },
+    {
+      "relative_path": "straight_gradient_20261104_v1/summarize_results.py",
+      "sha256": "c3c7af44299d3b85ee8b582b81ec4cf49fea058d89b0b35335bdedfe445e4574",
+      "size_bytes": 4183
+    },
+    {
+      "relative_path": "straight_gradient_20261104_v1/run_gradient.py",
+      "sha256": "3d442409184302e06f30640d4afb5bcc001b35ebfe0598d3c3f1f41032c25e91",
+      "size_bytes": 16419
+    },
+    {
+      "relative_path": "straight_gradient_20261104_v1/revision_pilot003.md",
+      "sha256": "08ce1de7adb7f72170c520c87d02ce72d47390b7f84950c36c0fb8f797238108",
+      "size_bytes": 2195
+    },
+    {
+      "relative_path": "straight_gradient_20261104_v1/REPORT.md",
+      "sha256": "05cfef726e6a87c3f3e07f6964a1db264aae3eb8a0b8b6192f2602b486d84a89",
+      "size_bytes": 7152
+    },
+    {
+      "relative_path": "straight_gradient_20261104_v1/PROTOCOL.md",
+      "sha256": "292757246feaeabdc0900c612b23d78bde67fa309eba0ca3beea88095bf7a7d9",
+      "size_bytes": 3045
+    },
+    {
+      "relative_path": "straight_gradient_20261104_v1/METHOD.md",
+      "sha256": "35c3ceb5ace337aa9286ebc5af21b901f60f5c033ff8ff9ac3de6af0a148053e",
+      "size_bytes": 2398
+    },
+    {
+      "relative_path": "straight_gradient_20261104_v1/inputs.json",
+      "sha256": "69f37567c378717d76a4fb660fb83891ca7af3e1d250c9e43c7065d2b8093850",
+      "size_bytes": 429893
+    },
+    {
+      "relative_path": "straight_gradient_20261104_v1/gradient_core.py",
+      "sha256": "2f2dc6d08a53a068bcefcd1f80423e84b91fee53140316f30d32414ffccbd700",
+      "size_bytes": 27385
+    },
+    {
+      "relative_path": "straight_gradient_20261104_v1/freeze_receipt.json",
+      "sha256": "c6ecbee81bc03ff3d10abb8fb5c9729b71a396d3476bb2b3e00ff470c8d840a4",
+      "size_bytes": 873
+    },
+    {
+      "relative_path": "straight_gradient_20261104_v1/config_draft.json",
+      "sha256": "5012158ff079297ef8f1f7c592accee56bc44a95e175330bc07ebbd54e6732c3",
+      "size_bytes": 665
+    },
+    {
+      "relative_path": "straight_gradient_20261104_v1/config.json",
+      "sha256": "5012158ff079297ef8f1f7c592accee56bc44a95e175330bc07ebbd54e6732c3",
+      "size_bytes": 665
+    },
+    {
+      "relative_path": "straight_gradient_20261104_v1/audit_outputs.py",
+      "sha256": "3d615cb76f032c0c646e679f7f931b93bce85605b2ce061bd2eac3bedaa1fa0a",
+      "size_bytes": 19446
+    },
+    {
+      "relative_path": "step_0750.pt",
+      "sha256": "ed4bfa12c5b3081a19d056265b053d516bdba5ec05dce658e1e32339b47fb882",
+      "size_bytes": 562941
+    }
+  ]
+}

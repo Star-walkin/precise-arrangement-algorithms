@@ -1,0 +1,227 @@
+{
+  "adapter_sha256": "2e23dde7fc311a04bc86d7d6613de79ba0d7aae938e477a79785431a1be3ad35",
+  "source_hashes": {
+    "core_sha256": "4e3c842a684c43af1476461100e15c7bd6399d33a5650c14f676a923460a1e09",
+    "guidance_sha256": "8992b0851280d94c3c49021737097338b6bc7fbab786da6992123ea14cf85ef7"
+  },
+  "original_S2_sources_modified": false,
+  "original_S1_sources_modified": false,
+  "model_or_thresholds_changed": false,
+  "guidance_auto_proposals_executed": false,
+  "decoded_frames": 2,
+  "frame_indices": [
+    0,
+    0
+  ],
+  "results": [
+    {
+      "case": "left111500__f0",
+      "s2_valid": true,
+      "s2_status": "PARTIAL",
+      "s2_supported_samples": 456,
+      "s2_axis_extent_px": 1824.0,
+      "s2_supported_length_px": 1824.0,
+      "s2_unknown_intervals_px": [],
+      "s1_valid": true,
+      "s1_supported_samples": 299,
+      "P1_unknown_gap_comparison": [
+        {
+          "p1_start_index": 0,
+          "p1_stop_index": 21,
+          "start_xy": [
+            131.65890542883028,
+            2116.1175767634722
+          ],
+          "end_xy": [
+            255.3193637629346,
+            2140.2855523634116
+          ],
+          "p1_unknown_path_length_px": 126.00000000000003,
+          "p1_unknown_chord_x_span_px": 123.6604583341043,
+          "p1_unknown_chord_length_px": 126.00000000000006,
+          "evaluated_samples": 33,
+          "s2_current_profile_covered_samples": 2,
+          "s2_current_profile_covered_fraction": 0.06060606060606061,
+          "maximum_remaining_unknown_chord_px": 122.06250000000006,
+          "coverage_requires_lateral_distance_px": 11.55,
+          "same_rope_identity_confirmed": false,
+          "whole_path_authorized": false
+        },
+        {
+          "p1_start_index": 202,
+          "p1_stop_index": 224,
+          "start_xy": [
+            1321.1547427378337,
+            2348.590484915269
+          ],
+          "end_xy": [
+            1450.703794325943,
+            2373.9093164961578
+          ],
+          "p1_unknown_path_length_px": 132.00000000000003,
+          "p1_unknown_chord_x_span_px": 129.54905158810925,
+          "p1_unknown_chord_length_px": 132.00000000000003,
+          "evaluated_samples": 35,
+          "s2_current_profile_covered_samples": 35,
+          "s2_current_profile_covered_fraction": 1.0,
+          "maximum_remaining_unknown_chord_px": 0.0,
+          "coverage_requires_lateral_distance_px": 11.55,
+          "same_rope_identity_confirmed": false,
+          "whole_path_authorized": false
+        },
+        {
+          "p1_start_index": 230,
+          "p1_stop_index": 243,
+          "start_xy": [
+            1486.0353538499726,
+            2380.8144523818546
+          ],
+          "end_xy": [
+            1562.587066152037,
+            2395.775580134198
+          ],
+          "p1_unknown_path_length_px": 78.0,
+          "p1_unknown_chord_x_span_px": 76.55171230206452,
+          "p1_unknown_chord_length_px": 78.00000000000001,
+          "evaluated_samples": 21,
+          "s2_current_profile_covered_samples": 21,
+          "s2_current_profile_covered_fraction": 1.0,
+          "maximum_remaining_unknown_chord_px": 0.0,
+          "coverage_requires_lateral_distance_px": 11.55,
+          "same_rope_identity_confirmed": false,
+          "whole_path_authorized": false
+        },
+        {
+          "p1_start_index": 259,
+          "p1_stop_index": 283,
+          "start_xy": [
+            1656.8045582161167,
+            2414.1892758293898
+          ],
+          "end_xy": [
+            1798.1307963122358,
+            2441.8098193721776
+          ],
+          "p1_unknown_path_length_px": 143.99999999999997,
+          "p1_unknown_chord_x_span_px": 141.32623809611914,
+          "p1_unknown_chord_length_px": 143.99999999999997,
+          "evaluated_samples": 37,
+          "s2_current_profile_covered_samples": 37,
+          "s2_current_profile_covered_fraction": 1.0,
+          "maximum_remaining_unknown_chord_px": 0.0,
+          "coverage_requires_lateral_distance_px": 11.55,
+          "same_rope_identity_confirmed": false,
+          "whole_path_authorized": false
+        },
+        {
+          "p1_start_index": 292,
+          "p1_stop_index": 364,
+          "start_xy": [
+            1851.1281355982806,
+            2452.167523200723
+          ],
+          "end_xy": [
+            2277.986007947299,
+            2535.556046769496
+          ],
+          "p1_unknown_path_length_px": 434.9268305998798,
+          "p1_unknown_chord_x_span_px": 426.85787234901863,
+          "p1_unknown_chord_length_px": 434.92676285704806,
+          "evaluated_samples": 110,
+          "s2_current_profile_covered_samples": 46,
+          "s2_current_profile_covered_fraction": 0.41818181818181815,
+          "maximum_remaining_unknown_chord_px": 239.40922726076042,
+          "coverage_requires_lateral_distance_px": 11.55,
+          "same_rope_identity_confirmed": false,
+          "whole_path_authorized": false
+        },
+        {
+          "p1_start_index": 386,
+          "p1_stop_index": 399,
+          "start_xy": [
+            2420.0,
+            2591.47265625
+          ],
+          "end_xy": [
+            2472.0,
+            2626.431884765625
+          ],
+          "p1_unknown_path_length_px": 62.6986309574574,
+          "p1_unknown_chord_x_span_px": 52.0,
+          "p1_unknown_chord_length_px": 62.658979072497566,
+          "evaluated_samples": 17,
+          "s2_current_profile_covered_samples": 0,
+          "s2_current_profile_covered_fraction": 0.0,
+          "maximum_remaining_unknown_chord_px": 62.658979072497566,
+          "coverage_requires_lateral_distance_px": 11.55,
+          "same_rope_identity_confirmed": false,
+          "whole_path_authorized": false
+        }
+      ]
+    },
+    {
+      "case": "right113305__f0",
+      "s2_valid": true,
+      "s2_status": "PARTIAL",
+      "s2_supported_samples": 486,
+      "s2_axis_extent_px": 2224.0,
+      "s2_supported_length_px": 1944.0,
+      "s2_unknown_intervals_px": [
+        [
+          384.0,
+          660.0
+        ]
+      ],
+      "s1_valid": true,
+      "s1_supported_samples": 92,
+      "P1_unknown_gap_comparison": [
+        {
+          "p1_start_index": 0,
+          "p1_stop_index": 21,
+          "start_xy": [
+            3721.9202402023407,
+            1936.973569542255
+          ],
+          "end_xy": [
+            3597.906779435178,
+            1959.2594742479519
+          ],
+          "p1_unknown_path_length_px": 125.99999999999983,
+          "p1_unknown_chord_x_span_px": 124.01346076716254,
+          "p1_unknown_chord_length_px": 125.99999999999984,
+          "evaluated_samples": 33,
+          "s2_current_profile_covered_samples": 2,
+          "s2_current_profile_covered_fraction": 0.06060606060606061,
+          "maximum_remaining_unknown_chord_px": 122.06249999999984,
+          "coverage_requires_lateral_distance_px": 9.61875,
+          "same_rope_identity_confirmed": false,
+          "whole_path_authorized": false
+        },
+        {
+          "p1_start_index": 78,
+          "p1_stop_index": 133,
+          "start_xy": [
+            3261.298814495736,
+            2019.7497870205575
+          ],
+          "end_xy": [
+            2936.5016553436435,
+            2078.117632678335
+          ],
+          "p1_unknown_path_length_px": 329.99999999999983,
+          "p1_unknown_chord_x_span_px": 324.7971591520927,
+          "p1_unknown_chord_length_px": 330.0,
+          "evaluated_samples": 84,
+          "s2_current_profile_covered_samples": 14,
+          "s2_current_profile_covered_fraction": 0.16666666666666666,
+          "maximum_remaining_unknown_chord_px": 278.31325301204816,
+          "coverage_requires_lateral_distance_px": 9.61875,
+          "same_rope_identity_confirmed": false,
+          "whole_path_authorized": false
+        }
+      ]
+    }
+  ],
+  "whole_path_authorized": false,
+  "scope": "conditional current-image comparison, not accuracy"
+}

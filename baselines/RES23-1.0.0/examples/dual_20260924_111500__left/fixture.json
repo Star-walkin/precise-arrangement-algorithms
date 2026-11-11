@@ -1,0 +1,10 @@
+{
+  "id": "dual_20260924_111500__left",
+  "fps": 10.0,
+  "frames": 601,
+  "source_sha256": "ead815ac73239dec6fcbd141ffb2873fb2ac575dfb79347a036ee877b65255f8",
+  "features_sha256": "f53363468b93b1b34f31c81201cd10787971aa9a2e6e8f6e884d9e331226df76",
+  "measurement_input": "R22 frozen current-image measurements; not human labels",
+  "expected_output": "R23 CPL1/MFT2 regression reference",
+  "physical_truth": false
+}

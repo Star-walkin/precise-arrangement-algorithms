@@ -1,0 +1,22 @@
+[
+  {
+    "start_s": 24.6,
+    "entry_confirmed_s": 24.9,
+    "start_frame": 246,
+    "current_evidence_frames": 38,
+    "unknown_frames": [
+      269,
+      278,
+      282,
+      284
+    ],
+    "end_s": 29.0,
+    "departure_s": 29.0,
+    "physical_contact_confirmed": false,
+    "semantics": "optical_near_edge_event",
+    "departure_evidence_start_s": 28.8,
+    "termination": "current_distance_sustained_rise",
+    "minimum_center_pitch": -0.20642227340331865,
+    "departure_center_pitch": 0.550094515957652
+  }
+]

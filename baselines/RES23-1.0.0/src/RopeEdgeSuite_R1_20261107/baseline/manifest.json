@@ -1,0 +1,998 @@
+{
+  "version": "RES-1.0",
+  "files": [
+    {
+      "path": "source\\LC1_boundary_BG1_20261106_v1\\audit_results.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG1_20261106_v1\\audit_results.py",
+      "bytes": 5123,
+      "sha256": "ad502f5dd49167860e1a17b4475ef8ae93cdf4501862a41cade35ecb277d9627"
+    },
+    {
+      "path": "source\\LC1_boundary_BG1_20261106_v1\\check_grid_scale.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG1_20261106_v1\\check_grid_scale.py",
+      "bytes": 1321,
+      "sha256": "7b757bf72a4df893d61daa7685de2b85d2ee40fbe4aa25d9af04f737d4b8c101"
+    },
+    {
+      "path": "source\\LC1_boundary_BG1_20261106_v1\\diagnose_fragmentation.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG1_20261106_v1\\diagnose_fragmentation.py",
+      "bytes": 3006,
+      "sha256": "3dace007635b2c901926ee8892bc0011054f9e62d503a7fdba72fb301a030d2c"
+    },
+    {
+      "path": "source\\LC1_boundary_BG1_20261106_v1\\finalize_full.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG1_20261106_v1\\finalize_full.py",
+      "bytes": 2301,
+      "sha256": "b7123198492127a38393f66ea483c8b2ea3d066ff3fd544bece31bac0eef0d5b"
+    },
+    {
+      "path": "source\\LC1_boundary_BG1_20261106_v1\\gated_rope.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG1_20261106_v1\\gated_rope.py",
+      "bytes": 5208,
+      "sha256": "47da47f129823c5f3407ef8264ab09ea3cad19862f4da13f6491a88e6e3e6ad6"
+    },
+    {
+      "path": "source\\LC1_boundary_BG1_20261106_v1\\inspect_regions.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG1_20261106_v1\\inspect_regions.py",
+      "bytes": 1665,
+      "sha256": "0aeba0bf0687226add4618e42be8902bddd0eba21765f56398b7dd28c3d1c4d6"
+    },
+    {
+      "path": "source\\LC1_boundary_BG1_20261106_v1\\localize_video.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG1_20261106_v1\\localize_video.py",
+      "bytes": 2412,
+      "sha256": "d91edd2a377c047f6a05d4e33b772233b79772d7221fcfec5aee39c855b27065"
+    },
+    {
+      "path": "source\\LC1_boundary_BG1_20261106_v1\\make_boundary_crops.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG1_20261106_v1\\make_boundary_crops.py",
+      "bytes": 1900,
+      "sha256": "fbadcdd13ceed7837af939d0c8dc16f63b48d3cc12bee70e692878baab07fd4e"
+    },
+    {
+      "path": "source\\LC1_boundary_BG1_20261106_v1\\make_report.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG1_20261106_v1\\make_report.py",
+      "bytes": 11311,
+      "sha256": "b54743971327cab0143d301862b062f856aa21eeca824d5e636280ccf6a6c019"
+    },
+    {
+      "path": "source\\LC1_boundary_BG1_20261106_v1\\region_gate.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG1_20261106_v1\\region_gate.py",
+      "bytes": 13756,
+      "sha256": "402041c0e1771e150f08064c7c9af4254b2c5e704a05110c7ce7e85f1f827923"
+    },
+    {
+      "path": "source\\LC1_boundary_BG1_20261106_v1\\render_results.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG1_20261106_v1\\render_results.py",
+      "bytes": 9385,
+      "sha256": "a1316ef06b5dfb879db51fb8a63382074b496ab90da70ef861668a40f38c8971"
+    },
+    {
+      "path": "source\\LC1_boundary_BG1_20261106_v1\\run_full.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG1_20261106_v1\\run_full.py",
+      "bytes": 4693,
+      "sha256": "38c37d82df00424efacaca9512afb83640dbfc9a393969c9ce2793ad6ded08a9"
+    },
+    {
+      "path": "source\\LC1_boundary_BG1_20261106_v1\\run_full_fixed.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG1_20261106_v1\\run_full_fixed.py",
+      "bytes": 4845,
+      "sha256": "9836c2d9a8640a4818868d81483c41f5559d5de4e002daebe70f1e02b0ecc44f"
+    },
+    {
+      "path": "source\\LC1_boundary_BG1_20261106_v1\\test_region_gate.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG1_20261106_v1\\test_region_gate.py",
+      "bytes": 2471,
+      "sha256": "403ffaa15d5ba255685e7aa8d3a911f139528d5d09aa524da4c6869ada58f0e8"
+    },
+    {
+      "path": "source\\LC1_boundary_BG1_20261106_v1\\vendor\\camera_condition_dark_width_20261027_v4\\period_guard.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG1_20261106_v1\\vendor\\camera_condition_dark_width_20261027_v4\\period_guard.py",
+      "bytes": 14682,
+      "sha256": "11766bb122904b15beaebb0aca6a6fe21504790794c73fa4c9512ba17d2962a8"
+    },
+    {
+      "path": "source\\LC1_boundary_BG1_20261106_v1\\vendor\\camera_condition_dark_width_20261027_v4\\ribbon_curves.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG1_20261106_v1\\vendor\\camera_condition_dark_width_20261027_v4\\ribbon_curves.py",
+      "bytes": 19722,
+      "sha256": "655afa84bab0a10038e2cf7646b6c8b97731faa83f58e6b8ee1b8e5ffc93a764"
+    },
+    {
+      "path": "source\\LC1_boundary_BG1_20261106_v1\\vendor\\camera_condition_dark_width_20261027_v4\\shadow_tracks.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG1_20261106_v1\\vendor\\camera_condition_dark_width_20261027_v4\\shadow_tracks.py",
+      "bytes": 6406,
+      "sha256": "318a81a500969be0725547789714b3e797755dda943026512f03a1ebec99f029"
+    },
+    {
+      "path": "source\\LC1_boundary_BG1_20261106_v1\\vendor\\camera_condition_dark_width_20261027_v4\\shadow_width.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG1_20261106_v1\\vendor\\camera_condition_dark_width_20261027_v4\\shadow_width.py",
+      "bytes": 13274,
+      "sha256": "c61a28ca9d6444360fe4067cd5cb25d358458af6c0ca34dd276290638a4731b6"
+    },
+    {
+      "path": "source\\LC1_boundary_BG1_20261106_v1\\vendor\\camera_condition_seam_joint_20261028_v2\\seam_observation.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG1_20261106_v1\\vendor\\camera_condition_seam_joint_20261028_v2\\seam_observation.py",
+      "bytes": 10886,
+      "sha256": "49e9dab0750fcd70d2ae332012b83e201110c19ea0ee206239bae13b71b06c85"
+    },
+    {
+      "path": "source\\LC1_boundary_BG1_20261106_v1\\vendor\\supplied_01\\protocol.json",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG1_20261106_v1\\vendor\\supplied_01\\protocol.json",
+      "bytes": 10006,
+      "sha256": "f21651fab39a6dbd0f31cb16c370de70f43d3efb61e141954b8192b69f66ccd8"
+    },
+    {
+      "path": "source\\LC1_boundary_BG1_20261106_v1\\vendor\\supplied_01\\surface_fusion.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG1_20261106_v1\\vendor\\supplied_01\\surface_fusion.py",
+      "bytes": 21709,
+      "sha256": "7174e4a3bcdfb3e68b310be4947c22019d4ced8616da556ae0650c4e4c0fc461"
+    },
+    {
+      "path": "source\\LC1_boundary_BG1_20261106_v1\\vendor\\supplied_01\\surface_observation.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG1_20261106_v1\\vendor\\supplied_01\\surface_observation.py",
+      "bytes": 6802,
+      "sha256": "ba458442d41535b1c61cd1a15cfc5f11d102780f41a2abf255717e1cef7067f9"
+    },
+    {
+      "path": "source\\LC1_boundary_BG1_20261106_v1\\vendor\\supplied_01\\算法说明.txt",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG1_20261106_v1\\vendor\\supplied_01\\算法说明.txt",
+      "bytes": 4482,
+      "sha256": "ed618d2bdf04139a688a31d0eda7a8580a85b6b6f3f30f4e88435965b9ad95cb"
+    },
+    {
+      "path": "source\\LC1_boundary_BG3_point_global_20261107_v2\\audit_parallel.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG3_point_global_20261107_v2\\audit_parallel.py",
+      "bytes": 4572,
+      "sha256": "e14436510f9963472a388557d703b870eb2af073c94505d854dfa4046a279134"
+    },
+    {
+      "path": "source\\LC1_boundary_BG3_point_global_20261107_v2\\audit_results.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG3_point_global_20261107_v2\\audit_results.py",
+      "bytes": 10057,
+      "sha256": "ddd8d218e004991a83d0bc1988bc951e8add6711b7bd871bc8e0a54e1a39562d"
+    },
+    {
+      "path": "source\\LC1_boundary_BG3_point_global_20261107_v2\\finalize_delivery.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG3_point_global_20261107_v2\\finalize_delivery.py",
+      "bytes": 9125,
+      "sha256": "cce0b6b82bda18e59d9fc83eac0294bf48d240e92304a088134da6c1c5485713"
+    },
+    {
+      "path": "source\\LC1_boundary_BG3_point_global_20261107_v2\\global_points.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG3_point_global_20261107_v2\\global_points.py",
+      "bytes": 18122,
+      "sha256": "22290a9ebede7f10c2557bd55af993516f4c5af575ed25e099b5b5e8ebb3ff53"
+    },
+    {
+      "path": "source\\LC1_boundary_BG3_point_global_20261107_v2\\inputs.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG3_point_global_20261107_v2\\inputs.py",
+      "bytes": 5500,
+      "sha256": "95da70fdafba78960c229e69eb88b10adef7ebafc5fcc221d328f54b5fa33634"
+    },
+    {
+      "path": "source\\LC1_boundary_BG3_point_global_20261107_v2\\pipeline.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG3_point_global_20261107_v2\\pipeline.py",
+      "bytes": 3705,
+      "sha256": "dac0b7047be64b1ea46200fd9420bf85a413908717ebdbc20e92d269c21a92e3"
+    },
+    {
+      "path": "source\\LC1_boundary_BG3_point_global_20261107_v2\\preview_points.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG3_point_global_20261107_v2\\preview_points.py",
+      "bytes": 2426,
+      "sha256": "06f44f2c1a43261e64154921704315bc61a519140895782d2ac54d4538202e2b"
+    },
+    {
+      "path": "source\\LC1_boundary_BG3_point_global_20261107_v2\\recover_and_resume.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG3_point_global_20261107_v2\\recover_and_resume.py",
+      "bytes": 4839,
+      "sha256": "24e4c71e308a33bfb0fe2d2160c1d7ca7793596ccce0c3264afaf6ad66062fe3"
+    },
+    {
+      "path": "source\\LC1_boundary_BG3_point_global_20261107_v2\\render_bg3.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG3_point_global_20261107_v2\\render_bg3.py",
+      "bytes": 7763,
+      "sha256": "720e043eb63e187be1b9c73163f1dcd04529e5bcd4d651c320c488628d90e9d4"
+    },
+    {
+      "path": "source\\LC1_boundary_BG3_point_global_20261107_v2\\render_stream.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG3_point_global_20261107_v2\\render_stream.py",
+      "bytes": 2531,
+      "sha256": "f0cf46f81c72a9146faa2d503946cfe87c96ddb7f62c36f6952af1cb52965dad"
+    },
+    {
+      "path": "source\\LC1_boundary_BG3_point_global_20261107_v2\\run_bg3.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG3_point_global_20261107_v2\\run_bg3.py",
+      "bytes": 3325,
+      "sha256": "d9cd2580e3df408b43e9dbec3d7b65ccb68adcf420202cdfc210cb82abed44e9"
+    },
+    {
+      "path": "source\\LC1_boundary_BG3_point_global_20261107_v2\\run_checked.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG3_point_global_20261107_v2\\run_checked.py",
+      "bytes": 1478,
+      "sha256": "76c74e93bef07285de84c8ebdd334d65696c7e934f7d5c843db8ca7f932ffc4d"
+    },
+    {
+      "path": "source\\LC1_boundary_BG3_point_global_20261107_v2\\test_cache_recovery.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG3_point_global_20261107_v2\\test_cache_recovery.py",
+      "bytes": 2473,
+      "sha256": "1d8abc718f84cbe2ea4cdfd7379bfe7d75cf53a8cead062f76281d837ac7d17f"
+    },
+    {
+      "path": "source\\LC1_boundary_BG3_point_global_20261107_v2\\test_global_points.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG3_point_global_20261107_v2\\test_global_points.py",
+      "bytes": 3714,
+      "sha256": "763d8dae4393370b8009c4873a961b4204ee740ab019d2658e86e500435340a7"
+    },
+    {
+      "path": "source\\LC1_boundary_BG4_local_temporal_20261107_v1\\audit_bg4.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG4_local_temporal_20261107_v1\\audit_bg4.py",
+      "bytes": 10145,
+      "sha256": "696efc3f071d687e739e0db61dcbd55bbd3d47dd2d764d352dede98b3fe0cb9a"
+    },
+    {
+      "path": "source\\LC1_boundary_BG4_local_temporal_20261107_v1\\audit_reviewed.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG4_local_temporal_20261107_v1\\audit_reviewed.py",
+      "bytes": 10466,
+      "sha256": "048c13287e8d13e10ccdd65660370bfa9bc6ea4f6ba1b1687fe1d4e0853d9dee"
+    },
+    {
+      "path": "source\\LC1_boundary_BG4_local_temporal_20261107_v1\\audit_vectorized.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG4_local_temporal_20261107_v1\\audit_vectorized.py",
+      "bytes": 10773,
+      "sha256": "3da695b9bd708d91380b009c6c4559b35837e720fd1584d652debcef56dabab7"
+    },
+    {
+      "path": "source\\LC1_boundary_BG4_local_temporal_20261107_v1\\bg4_common.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG4_local_temporal_20261107_v1\\bg4_common.py",
+      "bytes": 1380,
+      "sha256": "36bfe9f00de208f89759d26a162a137dee4bb9339794fb78ca90aa5d20462907"
+    },
+    {
+      "path": "source\\LC1_boundary_BG4_local_temporal_20261107_v1\\camera_motion.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG4_local_temporal_20261107_v1\\camera_motion.py",
+      "bytes": 1833,
+      "sha256": "10bf450dcc8102bcc306bf5ffd4e9a4e39a5cac8a1cb438c2893411e0f3e8af3"
+    },
+    {
+      "path": "source\\LC1_boundary_BG4_local_temporal_20261107_v1\\camera_reference.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG4_local_temporal_20261107_v1\\camera_reference.py",
+      "bytes": 2135,
+      "sha256": "ae1e275b821c5499521ee9d4edf49c0721d58f6951d7c61ac7b7e920420a920e"
+    },
+    {
+      "path": "source\\LC1_boundary_BG4_local_temporal_20261107_v1\\export_reviewed.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG4_local_temporal_20261107_v1\\export_reviewed.py",
+      "bytes": 2443,
+      "sha256": "39ed48b1981164d7d1e8e40ffd9cf696e2d669cfe158643205ea21d52d2ed97c"
+    },
+    {
+      "path": "source\\LC1_boundary_BG4_local_temporal_20261107_v1\\export_video.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG4_local_temporal_20261107_v1\\export_video.py",
+      "bytes": 2399,
+      "sha256": "52ed98de13f1757b1fa91fe4e75da7b116e0829c538b4b2914f6638d67cbee45"
+    },
+    {
+      "path": "source\\LC1_boundary_BG4_local_temporal_20261107_v1\\finalize_bg4.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG4_local_temporal_20261107_v1\\finalize_bg4.py",
+      "bytes": 6840,
+      "sha256": "21a42af6fc2ce3b29a3711a69502e78dadf59be69c37a63b667a565c1167736a"
+    },
+    {
+      "path": "source\\LC1_boundary_BG4_local_temporal_20261107_v1\\finalize_reviewed.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG4_local_temporal_20261107_v1\\finalize_reviewed.py",
+      "bytes": 7092,
+      "sha256": "86aaa4da0ddd1eeeb4476f43c64c8a8ccb12d12dd14378af585cc51870504e2a"
+    },
+    {
+      "path": "source\\LC1_boundary_BG4_local_temporal_20261107_v1\\local_observation.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG4_local_temporal_20261107_v1\\local_observation.py",
+      "bytes": 10712,
+      "sha256": "499b1b1c6c4ab99fecd1f56199f77949afe0eb3675c7a99f76370f35898a345e"
+    },
+    {
+      "path": "source\\LC1_boundary_BG4_local_temporal_20261107_v1\\render_bg4.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG4_local_temporal_20261107_v1\\render_bg4.py",
+      "bytes": 7918,
+      "sha256": "c4dbde2d2b9cf28b2c886bb9a848c75a30151d03f545d5b647aaefb72ab5d180"
+    },
+    {
+      "path": "source\\LC1_boundary_BG4_local_temporal_20261107_v1\\replay_reference.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG4_local_temporal_20261107_v1\\replay_reference.py",
+      "bytes": 2858,
+      "sha256": "4e6f9607d66bec35d9b0ebd6f185c8a1e927d7470c4e086e8eea7e6f2d780dfa"
+    },
+    {
+      "path": "source\\LC1_boundary_BG4_local_temporal_20261107_v1\\replay_robust.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG4_local_temporal_20261107_v1\\replay_robust.py",
+      "bytes": 2429,
+      "sha256": "cdd66552dcce5c1b726e7692b6bb8ec6832fd5768215f0035fdaa47263de51a9"
+    },
+    {
+      "path": "source\\LC1_boundary_BG4_local_temporal_20261107_v1\\run_bg4.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG4_local_temporal_20261107_v1\\run_bg4.py",
+      "bytes": 2914,
+      "sha256": "a9130414cf30e6492a3989a9955a13be56fd55d29f7ee4e51bb8b39f8884b6b4"
+    },
+    {
+      "path": "source\\LC1_boundary_BG4_local_temporal_20261107_v1\\run_robust.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG4_local_temporal_20261107_v1\\run_robust.py",
+      "bytes": 244,
+      "sha256": "b71bd75efb93c0c68e1d293a287205c42543a956183f52a3249575073ecac8e9"
+    },
+    {
+      "path": "source\\LC1_boundary_BG4_local_temporal_20261107_v1\\temporal_count.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG4_local_temporal_20261107_v1\\temporal_count.py",
+      "bytes": 9886,
+      "sha256": "09c98c52d62ce185ad36d22b682b250e2b19b9b3f7a925f22bc5d2295a6e425a"
+    },
+    {
+      "path": "source\\LC1_boundary_BG4_local_temporal_20261107_v1\\temporal_robust.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG4_local_temporal_20261107_v1\\temporal_robust.py",
+      "bytes": 10428,
+      "sha256": "665594078822a2ed56ae45518451cf40658d9e2d11f974401418900825eaa778"
+    },
+    {
+      "path": "source\\LC1_boundary_BG4_local_temporal_20261107_v1\\test_bg4.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG4_local_temporal_20261107_v1\\test_bg4.py",
+      "bytes": 4425,
+      "sha256": "5c27bf5bd34211e79b1260283ca96b8b5f827ab396ca222ab9e569e3fc5f7707"
+    },
+    {
+      "path": "source\\LC1_boundary_BG4_local_temporal_20261107_v1\\test_reference.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG4_local_temporal_20261107_v1\\test_reference.py",
+      "bytes": 1514,
+      "sha256": "3457076d3a4a2527513ef3e5f08d952bb9b269faf9ba7fd389a0d19c49fa45ff"
+    },
+    {
+      "path": "source\\LC1_boundary_BG4_local_temporal_20261107_v1\\test_robust.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG4_local_temporal_20261107_v1\\test_robust.py",
+      "bytes": 1397,
+      "sha256": "edbbd2b35d653c9a4f50d062a2d7db55a24c39daea5aad2d9aa4b335dfa53020"
+    },
+    {
+      "path": "source\\LC1_ECW_20261107_v1\\analyze_experiment.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_ECW_20261107_v1\\analyze_experiment.py",
+      "bytes": 6064,
+      "sha256": "48e34c8fd2b7839271d10fb4814b0bfb9f18c83087486353caa9792261478671"
+    },
+    {
+      "path": "source\\LC1_ECW_20261107_v1\\ecw_v2.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_ECW_20261107_v1\\ecw_v2.py",
+      "bytes": 8543,
+      "sha256": "6a9b49febec68a83e97995685d793fbd23f11eba2be3a3aa3d94a9c541d52acd"
+    },
+    {
+      "path": "source\\LC1_ECW_20261107_v1\\ecw_v3.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_ECW_20261107_v1\\ecw_v3.py",
+      "bytes": 5387,
+      "sha256": "3c13dbf207ed43fdbd68d9248266c2bcaee33dfaeefd77c83042ef00abf5d97e"
+    },
+    {
+      "path": "source\\LC1_ECW_20261107_v1\\finalize.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_ECW_20261107_v1\\finalize.py",
+      "bytes": 10420,
+      "sha256": "cf651c9f0ebb97ae8a13ca91917719d8c6f87a7bff8c1d5b0fb4ac1f0328031d"
+    },
+    {
+      "path": "source\\LC1_ECW_20261107_v1\\local_measurement.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_ECW_20261107_v1\\local_measurement.py",
+      "bytes": 7587,
+      "sha256": "8f97225c3becb88a32dfdd365086054ba7e12f828e2bbe1cea36bea489b5b279"
+    },
+    {
+      "path": "source\\LC1_ECW_20261107_v1\\probe_p1.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_ECW_20261107_v1\\probe_p1.py",
+      "bytes": 1942,
+      "sha256": "0580cd80e8c95f99e07677f2e4f4a14bb95adcaa66e0aa82bc6995b8c4f89b6c"
+    },
+    {
+      "path": "source\\LC1_ECW_20261107_v1\\render_delivery.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_ECW_20261107_v1\\render_delivery.py",
+      "bytes": 6892,
+      "sha256": "82510b605ba431f28f5e2bfedfbfc00a9c705d5ccbb627861eda7855f54c7927"
+    },
+    {
+      "path": "source\\LC1_ECW_20261107_v1\\run_measurements.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_ECW_20261107_v1\\run_measurements.py",
+      "bytes": 1020,
+      "sha256": "02816594bf61406c54a709f8b4d0e6f8618ffde487bcc20af324c57740fd702e"
+    },
+    {
+      "path": "source\\LC1_ECW_20261107_v1\\run_v3.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_ECW_20261107_v1\\run_v3.py",
+      "bytes": 1027,
+      "sha256": "7821e84f32b6fd201d311f1dcc7c80c3e0b8589f2fd2fcd72e746713cc91ceb5"
+    },
+    {
+      "path": "source\\LC1_ECW_20261107_v1\\test_measurements.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_ECW_20261107_v1\\test_measurements.py",
+      "bytes": 2000,
+      "sha256": "d58b801d8ce10272bd31935fa5cba182c429eaac3886f490668ef9d7c4537095"
+    },
+    {
+      "path": "source\\LC1_ECW_20261107_v1\\test_windows.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_ECW_20261107_v1\\test_windows.py",
+      "bytes": 2902,
+      "sha256": "a3c36ec93d54cbdcf0a69787f222d5a584251b8cd561b48e7f10ee1393dff6a1"
+    },
+    {
+      "path": "source\\LC1_ECW_20261107_v1\\window_detector.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_ECW_20261107_v1\\window_detector.py",
+      "bytes": 4802,
+      "sha256": "da7d5064c513bf8fe898bb5af130027c6903ee8418db85545c7fa194838e49f2"
+    },
+    {
+      "path": "source\\LC1_fixed_d2238p7_full_20261106_v1\\audit_F3_parallel_equivalence.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_fixed_d2238p7_full_20261106_v1\\audit_F3_parallel_equivalence.py",
+      "bytes": 4586,
+      "sha256": "b6a3e0f8036adca9f3f258113bf4f466867b5c98b2d7c2569c57327c2fc257d3"
+    },
+    {
+      "path": "source\\LC1_fixed_d2238p7_full_20261106_v1\\audit_full_fixed_d_anchored.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_fixed_d2238p7_full_20261106_v1\\audit_full_fixed_d_anchored.py",
+      "bytes": 14534,
+      "sha256": "ce6b36bb8eacfefc9800edf2a9c5bb3b79dc6a085abea040aa08c1e878dc81b5"
+    },
+    {
+      "path": "source\\LC1_fixed_d2238p7_full_20261106_v1\\diagnose_count_jitter.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_fixed_d2238p7_full_20261106_v1\\diagnose_count_jitter.py",
+      "bytes": 3092,
+      "sha256": "6267adf734e255708a8a55113ddee49fe66eb59487cf9af52ff50b6236948ab0"
+    },
+    {
+      "path": "source\\LC1_fixed_d2238p7_full_20261106_v1\\five_pitch_gate.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_fixed_d2238p7_full_20261106_v1\\five_pitch_gate.py",
+      "bytes": 8450,
+      "sha256": "e60e40136635a051ae4ef30c00af16850f1f1eeaea3cb1d29c5d930da68f0f1a"
+    },
+    {
+      "path": "source\\LC1_fixed_d2238p7_full_20261106_v1\\live_s1_tracker.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_fixed_d2238p7_full_20261106_v1\\live_s1_tracker.py",
+      "bytes": 16034,
+      "sha256": "4a404bd403378b9f0bfcfc2524bf34244386639435ca490fb5bd1c6b95d5f0f5"
+    },
+    {
+      "path": "source\\LC1_fixed_d2238p7_full_20261106_v1\\live_s1_tracker_anchored.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_fixed_d2238p7_full_20261106_v1\\live_s1_tracker_anchored.py",
+      "bytes": 5551,
+      "sha256": "e21f38d46aa949e3005107f9906901ac154ba39aaabe5929e867a803df84853f"
+    },
+    {
+      "path": "source\\LC1_fixed_d2238p7_full_20261106_v1\\make_trial_report.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_fixed_d2238p7_full_20261106_v1\\make_trial_report.py",
+      "bytes": 4022,
+      "sha256": "892c7065e6e6897beef4ff04498543215eee13589a10d7908c3fb2cd3f7271cf"
+    },
+    {
+      "path": "source\\LC1_fixed_d2238p7_full_20261106_v1\\probe_anchored_s1_tracker.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_fixed_d2238p7_full_20261106_v1\\probe_anchored_s1_tracker.py",
+      "bytes": 3956,
+      "sha256": "6c6771c73ba4e44838d401aec0532e8ee3c820a446ac268a2168d5f33d7f8fc9"
+    },
+    {
+      "path": "source\\LC1_fixed_d2238p7_full_20261106_v1\\probe_live_s1_tracker.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_fixed_d2238p7_full_20261106_v1\\probe_live_s1_tracker.py",
+      "bytes": 3317,
+      "sha256": "7428d8cd22867189b3970c5b06a1a1eb6125621ce1acaa0247f79c8af0504efb"
+    },
+    {
+      "path": "source\\LC1_fixed_d2238p7_full_20261106_v1\\probe_seed_sensitivity.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_fixed_d2238p7_full_20261106_v1\\probe_seed_sensitivity.py",
+      "bytes": 2935,
+      "sha256": "adf5015a2a83fd03e9dfafe7461690b81b4a2f5da7eb5ab9758520c278bac531"
+    },
+    {
+      "path": "source\\LC1_fixed_d2238p7_full_20261106_v1\\render_full_fixed_d.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_fixed_d2238p7_full_20261106_v1\\render_full_fixed_d.py",
+      "bytes": 8724,
+      "sha256": "293e82d6f44109a1577f0c804ea8a7cb6e4acdfbf1ede6c1ccbe039528cabcff"
+    },
+    {
+      "path": "source\\LC1_fixed_d2238p7_full_20261106_v1\\run_full_fixed_d.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_fixed_d2238p7_full_20261106_v1\\run_full_fixed_d.py",
+      "bytes": 12426,
+      "sha256": "8e3592faa455c0abebd56d7f9493f9b43e65911a7d5a2522d7694702c26e7679"
+    },
+    {
+      "path": "source\\LC1_fixed_d2238p7_full_20261106_v1\\run_full_fixed_d_anchored.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_fixed_d2238p7_full_20261106_v1\\run_full_fixed_d_anchored.py",
+      "bytes": 12917,
+      "sha256": "ffd0f24b5f23671b09ddcad4737e03ef767faf3e44faca205a8dd56431802f0f"
+    },
+    {
+      "path": "source\\LC1_fixed_d2238p7_full_20261106_v1\\test_five_pitch_gate.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_fixed_d2238p7_full_20261106_v1\\test_five_pitch_gate.py",
+      "bytes": 7551,
+      "sha256": "90fc41d98ca70ce712408b8b4cd84f5a6d7fbce26aebcbf86749133bcac98fee"
+    },
+    {
+      "path": "source\\LC1_fixed_d2238p7_full_20261106_v1\\test_live_s1_tracker.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_fixed_d2238p7_full_20261106_v1\\test_live_s1_tracker.py",
+      "bytes": 6211,
+      "sha256": "2309e83c4eb9c81622926954aa7fb5d9b9425f52c0a819719dc56da5544208a0"
+    },
+    {
+      "path": "source\\LC1_fixed_d2238p7_full_20261106_v1\\test_live_s1_tracker_anchored.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_fixed_d2238p7_full_20261106_v1\\test_live_s1_tracker_anchored.py",
+      "bytes": 5538,
+      "sha256": "185197f253a7cbfb7a3daf4e119f09f146a6bc49544a1b05d6d81aa22c8bf1b4"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\finalize_asset_results.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\finalize_asset_results.py",
+      "bytes": 7936,
+      "sha256": "d972194cd8745ca1fc02717b79690aa9062b8696d04d3acae01ed9a1a04e1c9b"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\lc1_frontend.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\lc1_frontend.py",
+      "bytes": 14644,
+      "sha256": "c9074ed42c5622a02085ead65302ecbb37bb55a0b24d06cf15d38d5c89e94bfd"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\lc1_geometry.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\lc1_geometry.py",
+      "bytes": 28604,
+      "sha256": "5fb6b1af03be62202c3c359b0c6ff93fbe5bf46c12ce86297790b78f108bce41"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\lc1_p1_adapter.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\lc1_p1_adapter.py",
+      "bytes": 29664,
+      "sha256": "5768fb4809c43023166386f7d6e519fff91be15529ac17c3811da30da6716300"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\lc1_pipeline.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\lc1_pipeline.py",
+      "bytes": 6398,
+      "sha256": "97670566d74670c393d23657bbac022a8da4fd41b8f2ada25e0fd3a12148d929"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\lc1_real_path_probe.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\lc1_real_path_probe.py",
+      "bytes": 10249,
+      "sha256": "adc7e90a782638db7c957d6de715a080f650f455950f98f55862dcd9abcf86f1"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\lc1_s1_adapter.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\lc1_s1_adapter.py",
+      "bytes": 6700,
+      "sha256": "61249d96cdc987b7f39b0a8c6f348e93470bddfaab9a4c565cabe6896a5bc65d"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\lc1_s2_adapter.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\lc1_s2_adapter.py",
+      "bytes": 17441,
+      "sha256": "a6aba8e286ba2b659df2aaf3fa6b4272ea2bea2a27be49356234af931d5e3e5d"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\lc1_surface.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\lc1_surface.py",
+      "bytes": 19639,
+      "sha256": "5db1749c537a3cd87e64ea9832f5e34142308b8d59bb49d09be1a5a8089ff159"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\lc1_surface_fast.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\lc1_surface_fast.py",
+      "bytes": 10839,
+      "sha256": "e5683390a6068f832854984372890dfc67e392f0d7ca139c5cd06195f9587be2"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\lc1_turn_audit.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\lc1_turn_audit.py",
+      "bytes": 11843,
+      "sha256": "ae3f20b77dd49d680c897612da27b97a2fd14e4ef0ead3a3982e4adcf91fa1c8"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\lc1_video.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\lc1_video.py",
+      "bytes": 37745,
+      "sha256": "f9a9881f2039b9176f46df99feb140fa6f1dee504a28443158a7fe92ae00afdd"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\make_slow_review.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\make_slow_review.py",
+      "bytes": 2873,
+      "sha256": "a5b06af8fe7e8b4341edee0c1cd3e1bbd6f31ceb65da0c1372218dfa5aaa903d"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\experiments\\entry_conditioned_rope_path\\model.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\experiments\\entry_conditioned_rope_path\\model.py",
+      "bytes": 7285,
+      "sha256": "5fd163ac4f69d90bc8ce192934d42b293bf91a9b4dc58597781e00dff097fe1a"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\connect_paths.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\connect_paths.py",
+      "bytes": 14323,
+      "sha256": "a29653bfe8d214e634732269fc3af040b98b86039e6973d7d5169a6880f47b99"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\free_candidates.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\free_candidates.py",
+      "bytes": 21996,
+      "sha256": "75e8d840e26ae011a2efa567687d01cc571d7fa3519e0bba3ab0284f6c661c05"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\surface_tracks.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261030_v2\\surface_tracks.py",
+      "bytes": 15959,
+      "sha256": "879de46675662ff759cb0609c3d881668135ae55d9180f8a82fd305bd7b8d58d"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\common.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\common.py",
+      "bytes": 2623,
+      "sha256": "18edc8571dae3bdfe874bbf386903706be35a314a2b85ff715c549535af373f7"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\connect_paths.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\connect_paths.py",
+      "bytes": 20108,
+      "sha256": "517b35584e9b96e6e36344c9a5e09f9d8bcb8f5af4a110ac1ad4f42f4fcf0f2c"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\heat_free.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\heat_free.py",
+      "bytes": 35436,
+      "sha256": "3956c9fe7e7e636c419dca71e0b9682452d92b3e6327be856cd318adc31f379e"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\run_h6.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\run_h6.py",
+      "bytes": 15743,
+      "sha256": "a95943823fabdada58b3e1124eb44523b66a1132d11b616caf8a078d2653d76a"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\surface_tracks.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\surface_tracks.py",
+      "bytes": 18024,
+      "sha256": "73b8a55c17770fadaf3f5b1b88bf6f9e94087b4dca555390a26a7d58981f6e1d"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\topology.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\experiments\\entry_conditioned_rope_path\\postprocess_b_20261031_v6\\topology.py",
+      "bytes": 10543,
+      "sha256": "d559038920902e903bd72797b14b2ec95ae2c7a26609cac4d44ee19af61b3dac"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\free_rope.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\free_rope.py",
+      "bytes": 36561,
+      "sha256": "c57f77270a1c0308570a77ff70dee67fe7caa25b2dbb55bafd2e80aae9cf60fd"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\free_seed_recovery.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\free_seed_recovery.py",
+      "bytes": 17271,
+      "sha256": "fc9df09cc53e508846ff9d23bea0a6517e4e5ca29d1a8e0c416a026da1d1f864"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\straight_detector.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\straight_detector.py",
+      "bytes": 19800,
+      "sha256": "adc86d71c117966e7d78df2b95f5400526f1c4a2e71422496a5969c38e73b61c"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\strand_signature.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_free_straight_20261030_v7\\strand_signature.py",
+      "bytes": 9999,
+      "sha256": "198b5a78ad4351b88909a5950f353119ffeed54510bb6bea91972a62018fbf26"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v2\\free_refinement.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\p1_runtime\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_incoming_rope_20261026_v2\\free_refinement.py",
+      "bytes": 23048,
+      "sha256": "65ca049228d0dec2d941a4e08bddf4f9bb52935570cf9827dc7d9adbc1272c8c"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\probe_frontend.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\probe_frontend.py",
+      "bytes": 3821,
+      "sha256": "a0974c122d2c1ba9a941de3b537dcacc6c0b68222d248d5362f0d2da7b00670e"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\render_actual_probe.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\render_actual_probe.py",
+      "bytes": 11929,
+      "sha256": "5417474a8ad5a091f00e176673e3a17a8404556fc9d0c2fd78b57fc6977e5af2"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\summarize_lc1.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\summarize_lc1.py",
+      "bytes": 8982,
+      "sha256": "68710056190758103657834f710a4bad4e5b82574db5a84669e905195db9a872"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\supplied_assets\\step_0750.pt",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\supplied_assets\\step_0750.pt",
+      "bytes": 562941,
+      "sha256": "ed4bfa12c5b3081a19d056265b053d516bdba5ec05dce658e1e32339b47fb882"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\supplied_assets\\straight_gradient_20261104_v1\\audit_outputs.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\supplied_assets\\straight_gradient_20261104_v1\\audit_outputs.py",
+      "bytes": 19446,
+      "sha256": "3d615cb76f032c0c646e679f7f931b93bce85605b2ce061bd2eac3bedaa1fa0a"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\supplied_assets\\straight_gradient_20261104_v1\\config.json",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\supplied_assets\\straight_gradient_20261104_v1\\config.json",
+      "bytes": 665,
+      "sha256": "5012158ff079297ef8f1f7c592accee56bc44a95e175330bc07ebbd54e6732c3"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\supplied_assets\\straight_gradient_20261104_v1\\config_draft.json",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\supplied_assets\\straight_gradient_20261104_v1\\config_draft.json",
+      "bytes": 665,
+      "sha256": "5012158ff079297ef8f1f7c592accee56bc44a95e175330bc07ebbd54e6732c3"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\supplied_assets\\straight_gradient_20261104_v1\\freeze_receipt.json",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\supplied_assets\\straight_gradient_20261104_v1\\freeze_receipt.json",
+      "bytes": 873,
+      "sha256": "c6ecbee81bc03ff3d10abb8fb5c9729b71a396d3476bb2b3e00ff470c8d840a4"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\supplied_assets\\straight_gradient_20261104_v1\\gradient_core.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\supplied_assets\\straight_gradient_20261104_v1\\gradient_core.py",
+      "bytes": 27385,
+      "sha256": "2f2dc6d08a53a068bcefcd1f80423e84b91fee53140316f30d32414ffccbd700"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\supplied_assets\\straight_gradient_20261104_v1\\inputs.json",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\supplied_assets\\straight_gradient_20261104_v1\\inputs.json",
+      "bytes": 429893,
+      "sha256": "69f37567c378717d76a4fb660fb83891ca7af3e1d250c9e43c7065d2b8093850"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\supplied_assets\\straight_gradient_20261104_v1\\METHOD.md",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\supplied_assets\\straight_gradient_20261104_v1\\METHOD.md",
+      "bytes": 2398,
+      "sha256": "35c3ceb5ace337aa9286ebc5af21b901f60f5c033ff8ff9ac3de6af0a148053e"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\supplied_assets\\straight_gradient_20261104_v1\\PROTOCOL.md",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\supplied_assets\\straight_gradient_20261104_v1\\PROTOCOL.md",
+      "bytes": 3045,
+      "sha256": "292757246feaeabdc0900c612b23d78bde67fa309eba0ca3beea88095bf7a7d9"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\supplied_assets\\straight_gradient_20261104_v1\\REPORT.md",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\supplied_assets\\straight_gradient_20261104_v1\\REPORT.md",
+      "bytes": 7152,
+      "sha256": "05cfef726e6a87c3f3e07f6964a1db264aae3eb8a0b8b6192f2602b486d84a89"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\supplied_assets\\straight_gradient_20261104_v1\\revision_pilot003.md",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\supplied_assets\\straight_gradient_20261104_v1\\revision_pilot003.md",
+      "bytes": 2195,
+      "sha256": "08ce1de7adb7f72170c520c87d02ce72d47390b7f84950c36c0fb8f797238108"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\supplied_assets\\straight_gradient_20261104_v1\\run_gradient.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\supplied_assets\\straight_gradient_20261104_v1\\run_gradient.py",
+      "bytes": 16419,
+      "sha256": "3d442409184302e06f30640d4afb5bcc001b35ebfe0598d3c3f1f41032c25e91"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\supplied_assets\\straight_gradient_20261104_v1\\summarize_results.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\supplied_assets\\straight_gradient_20261104_v1\\summarize_results.py",
+      "bytes": 4183,
+      "sha256": "c3c7af44299d3b85ee8b582b81ec4cf49fea058d89b0b35335bdedfe445e4574"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\supplied_assets\\straight_gradient_20261105_v2\\guidance.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\supplied_assets\\straight_gradient_20261105_v2\\guidance.py",
+      "bytes": 11629,
+      "sha256": "8992b0851280d94c3c49021737097338b6bc7fbab786da6992123ea14cf85ef7"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\supplied_assets\\straight_gradient_20261105_v2\\straight_core.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\supplied_assets\\straight_gradient_20261105_v2\\straight_core.py",
+      "bytes": 14532,
+      "sha256": "4e3c842a684c43af1476461100e15c7bd6399d33a5650c14f676a923460a1e09"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\surface_contract_checks.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\surface_contract_checks.py",
+      "bytes": 3623,
+      "sha256": "dd8759f3820a6b45995de4712e2cbba26ab8bf81d71359b3641abc6eaefdfc01"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\surface_smoke.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\surface_smoke.py",
+      "bytes": 7058,
+      "sha256": "994d1903d583d0fe1ca175a7e6bf757da28fd7ae6a3846724f2808face756674"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\test_lc1_geometry.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\test_lc1_geometry.py",
+      "bytes": 15028,
+      "sha256": "50c7aecb44a83e11761f82f928975fbda4cdcca39052714c546e9b565dfff064"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\test_lc1_pipeline.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\test_lc1_pipeline.py",
+      "bytes": 5007,
+      "sha256": "9614cb27e28862bdb9d20f6f5440712f88f90006d71e86096190c9e05131f0dc"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\test_lc1_real_path_probe.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\test_lc1_real_path_probe.py",
+      "bytes": 7174,
+      "sha256": "a59226c522d07b0736266c5709b2b0dc58f490853319bd541203fcc39e501ce9"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\test_lc1_s2.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\test_lc1_s2.py",
+      "bytes": 4561,
+      "sha256": "3bf3070cbdc83d88e62d047f53ac4a8bb0d2e0467420b27d5c07ff41342cd2e7"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\test_lc1_turn_audit.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\test_lc1_turn_audit.py",
+      "bytes": 4098,
+      "sha256": "20c14110cf87fd699421297e9de8845712e9d63145241872895bbae6a512370e"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\test_lc1_video.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\test_lc1_video.py",
+      "bytes": 13843,
+      "sha256": "c58ee6c6285d72e6a70911c4ff3422a5d91db22abc8a65281965d470ef890bb4"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\vendor_archive\\f3_core_adapter.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\vendor_archive\\f3_core_adapter.py",
+      "bytes": 2366,
+      "sha256": "86a4115ead2bf083342a9b05ce0a9711d39848c4d3a576387117e33edee69a12"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\vendor_archive\\f3_core_smoke_receipt.json",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\vendor_archive\\f3_core_smoke_receipt.json",
+      "bytes": 1015,
+      "sha256": "4886aa629797aefe30a792b04ab59487deaaf983c215c88b13513e642cd4f0a0"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\vendor_archive\\F3_RESTORE_NOTES.md",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\vendor_archive\\F3_RESTORE_NOTES.md",
+      "bytes": 5449,
+      "sha256": "200913fceeebfba4e53b6110d14cc836857f6767484de179301e77470ccf1204"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\vendor_archive\\f3_restore_receipt.json",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\vendor_archive\\f3_restore_receipt.json",
+      "bytes": 4559,
+      "sha256": "779f8c0ac93549a9a4b5b973f48089f2319734bd203780e33851be8b0c11cc4a"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\vendor_archive\\f3_source_manifest.json",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\vendor_archive\\f3_source_manifest.json",
+      "bytes": 6722,
+      "sha256": "edde08dcfc97f35541789b4ace42636fd85d22df57a62d325f2a0d8c64d2871a"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\vendor_archive\\source_archive\\experiments\\active_rope_video_20261101_v2\\fresh_surface.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\vendor_archive\\source_archive\\experiments\\active_rope_video_20261101_v2\\fresh_surface.py",
+      "bytes": 9892,
+      "sha256": "0bb663eb96ed903ed3c7ad77d7ec7eeed1c24eb92b2c2199645235063792d113"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\vendor_archive\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\period_guard.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\vendor_archive\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\period_guard.py",
+      "bytes": 14682,
+      "sha256": "11766bb122904b15beaebb0aca6a6fe21504790794c73fa4c9512ba17d2962a8"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\vendor_archive\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\ribbon_curves.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\vendor_archive\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\ribbon_curves.py",
+      "bytes": 19722,
+      "sha256": "655afa84bab0a10038e2cf7646b6c8b97731faa83f58e6b8ee1b8e5ffc93a764"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\vendor_archive\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\shadow_tracks.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\vendor_archive\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\shadow_tracks.py",
+      "bytes": 6406,
+      "sha256": "318a81a500969be0725547789714b3e797755dda943026512f03a1ebec99f029"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\vendor_archive\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\shadow_width.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\vendor_archive\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_dark_width_20261027_v4\\shadow_width.py",
+      "bytes": 13274,
+      "sha256": "c61a28ca9d6444360fe4067cd5cb25d358458af6c0ca34dd276290638a4731b6"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\vendor_archive\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\experiment_report.json",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\vendor_archive\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\experiment_report.json",
+      "bytes": 8961,
+      "sha256": "3c24ded73714d1eaa91f0115111cecbd7287bda38964bb90e3080cfd0873a754"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\vendor_archive\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\protocol.json",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\vendor_archive\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\protocol.json",
+      "bytes": 10006,
+      "sha256": "f21651fab39a6dbd0f31cb16c370de70f43d3efb61e141954b8192b69f66ccd8"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\vendor_archive\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\run_surface.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\vendor_archive\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\run_surface.py",
+      "bytes": 8158,
+      "sha256": "09eddba1e2fe8bcf590d1b30b86722c4d77cacf65458761fd22121feb1ae0a7c"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\vendor_archive\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\surface_fusion.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\vendor_archive\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\surface_fusion.py",
+      "bytes": 21709,
+      "sha256": "7174e4a3bcdfb3e68b310be4947c22019d4ced8616da556ae0650c4e4c0fc461"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\vendor_archive\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\surface_io.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\vendor_archive\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\surface_io.py",
+      "bytes": 3938,
+      "sha256": "ac7aee4a8c479a4db623a9330deb892e22f0a4431bec15fb3e7039a527aafb40"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\vendor_archive\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\surface_observation.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\vendor_archive\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_full_surface_joint_20261028_v3\\surface_observation.py",
+      "bytes": 6802,
+      "sha256": "ba458442d41535b1c61cd1a15cfc5f11d102780f41a2abf255717e1cef7067f9"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\vendor_archive\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\seam_observation.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\vendor_archive\\source_archive\\数据资产\\05_派生与实验结果\\camera_condition_seam_joint_20261028_v2\\seam_observation.py",
+      "bytes": 10886,
+      "sha256": "49e9dab0750fcd70d2ae332012b83e201110c19ea0ee206239bae13b71b06c85"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\vendor_archive\\verify_f3_restore.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\vendor_archive\\verify_f3_restore.py",
+      "bytes": 5337,
+      "sha256": "7bd01817283c6d36a7660d52b5ad8f303bf396a94fce3c8741d6b36d807049b2"
+    },
+    {
+      "path": "source\\LC1_locked_column_20261105_v1\\verify_delivery.py",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\verify_delivery.py",
+      "bytes": 2004,
+      "sha256": "5206bec67a3a4f4496887576d27eb3cb218d492fbae07f0512efb7814ea13688"
+    },
+    {
+      "path": "calibration\\left_search_mask.png",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\camera_condition_sam2_20261009_v1\\all_001\\body_branches_002\\masks\\left_camera\\dual_20260924_111500__pair0015__left.png",
+      "bytes": 18089,
+      "sha256": "d1ad29c3d016e2863442bcb87338067f10ec0f0706e6876c781644ae7abfcb27"
+    },
+    {
+      "path": "calibration\\left_pitch_source.json",
+      "source": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\camera_condition_bright_rope_boundaries_20261023_v2\\all_002\\boundaries\\records\\left_camera\\dual_20260924_111500__pair0015__left.json",
+      "bytes": 47828,
+      "sha256": "9c1e70656ac1e1d0e96f7cb10d83710b72c00e2944879d9f45687c85969f22c9"
+    },
+    {
+      "path": "definition.json",
+      "source": "new_baseline_definition",
+      "bytes": 1973,
+      "sha256": "831b5567c4b9692606260b877409d95e4b2de88b9f8651bfeffb382e0bb0bf0b"
+    },
+    {
+      "path": "environment.json",
+      "source": "runtime_metadata",
+      "bytes": 341,
+      "sha256": "9575ba1b97dc0959cb57e9881d8cc366432be1bbb8aeeb38e47e3fa7e8cf3e6e"
+    }
+  ],
+  "reference_outputs": [
+    {
+      "path": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG4_local_temporal_20261107_v1\\full_003\\compact_validation.json",
+      "sha256": "3197a30c38dc492fe009193e430e76efd74c0bb8013d561d5637f6b53338d1a2"
+    },
+    {
+      "path": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_ECW_20261107_v1\\delivery\\manifest.json",
+      "sha256": "6d6421861186ba68f8d7eea09cd8ad66008938712d34dbd7f66961db0f33f93a"
+    },
+    {
+      "path": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_ECW_20261107_v1\\delivery\\experiment_results.json",
+      "sha256": "91640ca39754356f9e7df498327fc5e15ae7e829369862f4b85ab63bfbdce267"
+    }
+  ],
+  "source_count": 163
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "path": "evidence/figures/111500_20.0s.jpg",
+    "original_experiment_path": "RopeEdgeSuite_R23_20261111/delivery/dual_20260924_111500__left/review/000200.jpg",
+    "sha256": "4a6edfcfc914f63974b4218a2eaaf785777ef98896a5c0c5ec200e51d760d1a1",
+    "unaltered_copy": true
+  },
+  {
+    "path": "evidence/figures/111500_24.9s.jpg",
+    "original_experiment_path": "RopeEdgeSuite_R23_20261111/delivery/dual_20260924_111500__left/review/000249.jpg",
+    "sha256": "5e794ea086bd94f2d814aba5eec391f155c15da5152bdc6662d5ff67c4dec56d",
+    "unaltered_copy": true
+  },
+  {
+    "path": "evidence/figures/111500_30.4s.jpg",
+    "original_experiment_path": "RopeEdgeSuite_R23_20261111/delivery/dual_20260924_111500__left/review/000304.jpg",
+    "sha256": "8a265574e907fac6e497eb706abbd584d1094ef9490204ea704b2054160a123e",
+    "unaltered_copy": true
+  },
+  {
+    "path": "evidence/figures/111500_31.1s.jpg",
+    "original_experiment_path": "RopeEdgeSuite_R23_20261111/delivery/dual_20260924_111500__left/review/000311.jpg",
+    "sha256": "38bdca8b1cc4e21c0146dcb2c26b53afe98c2150ed7f2cd1a9e5dfcc66b81fdb",
+    "unaltered_copy": true
+  },
+  {
+    "path": "evidence/figures/all_0.jpg",
+    "original_experiment_path": "RopeEdgeSuite_R23_20261111/review/all_0.jpg",
+    "sha256": "d42d0d0a37b1ddc0e6b161566f91837538b8df8674c85796c0c5b527e7c0ed17",
+    "unaltered_copy": true
+  },
+  {
+    "path": "evidence/figures/all_1.jpg",
+    "original_experiment_path": "RopeEdgeSuite_R23_20261111/review/all_1.jpg",
+    "sha256": "8b549c71323cc09965bf41e5546419ec73f2b08e5a90924a7456ad4c76c9ce35",
+    "unaltered_copy": true
+  },
+  {
+    "path": "evidence/figures/all_2.jpg",
+    "original_experiment_path": "RopeEdgeSuite_R23_20261111/review/all_2.jpg",
+    "sha256": "8a2d3772c752bb1680e2ae1e9401e34c95f79fd2ae69b539ac9908eb25a07186",
+    "unaltered_copy": true
+  },
+  {
+    "path": "evidence/figures/all_3.jpg",
+    "original_experiment_path": "RopeEdgeSuite_R23_20261111/review/all_3.jpg",
+    "sha256": "58e26a6502b4ff54a41ae8527c6644a32157f83d4bff860366842743151b0020",
+    "unaltered_copy": true
+  },
+  {
+    "path": "evidence/figures/count_period.png",
+    "original_experiment_path": "RopeEdgeSuite_R23_20261111/count_period.png",
+    "sha256": "a468b33faa3edff648af326b18804178663d564f7b0eb594fd472bd8652fdd4b",
+    "unaltered_copy": true
+  },
+  {
+    "path": "evidence/figures/second_cycle.png",
+    "original_experiment_path": "RopeEdgeSuite_R23_20261111/second_cycle.png",
+    "sha256": "28664ed3f90aa546772f887ca067e3b183964a1c4754e34b74b1ca8add54b9e7",
+    "unaltered_copy": true
+  }
+]

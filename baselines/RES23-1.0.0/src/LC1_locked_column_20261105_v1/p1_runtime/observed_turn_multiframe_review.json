@@ -1,0 +1,1439 @@
+{
+  "source_records": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\p1_runtime\\multiframe_probe\\frames.jsonl",
+  "source_records_sha256": "4a52035564b525727d43f57f9af62d9d87e1d4dab729e32a6382deecce816d46",
+  "estimator_sha256": "adc7e90a782638db7c957d6de715a080f650f455950f98f55862dcd9abcf86f1",
+  "coordinate_system": "original_unmirrored_image_xy",
+  "new_video_or_weight_inference_performed": false,
+  "whole_observed_flags_preserved": true,
+  "all_outputs_conditional_optical_geometry_not_physical_contact": true,
+  "records": [
+    {
+      "case": "left111500",
+      "frame": 30,
+      "t": 3.0,
+      "source_pixel_sha256": "30a27f28a1629662bb884e766daf2c560768d01b3b3afb0a4304819030471e08",
+      "selected_kind": "straight_free_to_F3_center_track",
+      "connection_eligible": false,
+      "original_whole_observed": false,
+      "original_reasons": [
+        "transition_current_joint_support_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate",
+        "H6_branch_or_A7_direction_ambiguous"
+      ],
+      "H6_gate_checks": {
+        "free": {
+          "point_count": 312,
+          "joint_fraction": 0.7371794871794872,
+          "observed_fraction": 0.7371794871794872,
+          "observed_length_original_px": 1367.9999999999995,
+          "joint_length_original_px": 1367.9999999999995,
+          "maximum_unsupported_run_original_px": 186.0000000000001
+        },
+        "transition": {
+          "point_count": 17,
+          "joint_fraction": 0.4117647058823529,
+          "observed_fraction": 0.4117647058823529,
+          "observed_length_original_px": 39.110373188246626,
+          "joint_length_original_px": 39.110373188246626,
+          "maximum_unsupported_run_original_px": 60.69250510758559
+        },
+        "surface": {
+          "point_count": 49,
+          "joint_fraction": 0.9795918367346939,
+          "observed_fraction": 0.9795918367346939,
+          "observed_length_original_px": 297.5608393766237,
+          "joint_length_original_px": 297.5608393766237,
+          "maximum_unsupported_run_original_px": 12.450014493231802
+        },
+        "genuine_H6_attached_candidate": true,
+        "maximum_unsupported_run_original_px": 225.05134788451574,
+        "maximum_allowed_unsupported_run_original_px": 92.39999999999999,
+        "branch_score_margin": 0.016033939686032284,
+        "cross_entry_score_margin": null,
+        "ambiguous": true,
+        "direction_selection_allowed": true
+      },
+      "S1_valid": true,
+      "baseline_trim_audit": {
+        "full_H6_geometry": {
+          "point_count": 378,
+          "surface_count": 49,
+          "surface_fraction": 0.12962962962962962,
+          "straight_trimmed_rmse": 1.513429990033237,
+          "surface_untrimmed_line_residual_rmse": 20.977881072080287
+        },
+        "supported_only": {
+          "point_count": 285,
+          "surface_count": 48,
+          "surface_fraction": 0.16842105263157894,
+          "straight_trimmed_rmse": 2.086012421733949,
+          "surface_untrimmed_line_residual_rmse": 21.068709786972512
+        }
+      },
+      "original_estimate_turn": {
+        "valid": false,
+        "x": 1834.4424591303796,
+        "y": 2489.45078261974,
+        "quality": 0.0,
+        "rmse": 0.3970925106098469,
+        "uncertainty_px": 30.13452632401686,
+        "reason": "turn_localization_uncertain",
+        "slope": -0.1861491254459734,
+        "intercept": 2830.930642067821,
+        "quadratic": 0.0012745999574013819,
+        "inlier_ratio": 0.9206349206349206,
+        "score_reduction": 0.9816812810128268,
+        "curved_deviation_px": 47.97084399675841,
+        "free_span_px": 2062.5894693768737,
+        "curve_span_px": 194.0,
+        "free_side": "right",
+        "point_count": 378,
+        "free_abc": [
+          0.18300542114924245,
+          0.983111904022115,
+          -2783.121613677844
+        ],
+        "coordinate_system": "canonical_right_entering_xy",
+        "diagnostic_candidate_fit_only": true,
+        "admissible_for_d_lock": false,
+        "S1_optical_endpoint_used_as_d": false
+      },
+      "new_supported_turn": {
+        "valid": false,
+        "x": null,
+        "y": null,
+        "quality": 0.0,
+        "rmse": null,
+        "uncertainty_px": null,
+        "reason": "no_unique_legal_H6_curve_connection",
+        "method": "experimental_S1_anchored_current_supported_surface_C1_profile",
+        "whole_observed_flag_promoted": false,
+        "physical_contact_confirmed": false,
+        "uncertainty_is_conditional": true
+      },
+      "non_admissible_ambiguous_model_audit": {
+        "valid": false,
+        "x": 1343.9119873046875,
+        "y": 2327.899973514618,
+        "quality": 0.0,
+        "rmse": 19.0118754536906,
+        "uncertainty_px": 259.9062790237108,
+        "reason": "straight_or_unresolved_supported_surface_curvature",
+        "method": "experimental_S1_anchored_current_supported_surface_C1_profile",
+        "whole_observed_flag_promoted": false,
+        "physical_contact_confirmed": false,
+        "uncertainty_is_conditional": true,
+        "surface_point_count": 48,
+        "free_point_count": 262,
+        "surface_spatial_bins": 25,
+        "free_spatial_bins": 44,
+        "curve_span_px": 284.0,
+        "free_span_px": 1024.4452209472656,
+        "omitted_H6_transition_points": 17,
+        "omitted_unsupported_path_points": 93,
+        "fit_uses_Hermite_or_unsupported_points": false,
+        "free_abc": [
+          -0.19099167281330828,
+          0.9815916569103337,
+          -2028.371193554556
+        ],
+        "free_side": "left",
+        "apparent_turn_search_interval_x": [
+          1343.9119873046875,
+          2176.0
+        ],
+        "interpolation_is_not_observation": true,
+        "slope": 0.19457344759273454,
+        "intercept": 2066.4103848835416,
+        "quadratic": -1.0874398015979292e-05,
+        "conditional_profile_interval_x": [
+          1343.9119873046875,
+          1563.086685287369
+        ],
+        "conditional_anchor_perturbation_interval_x": [
+          1343.9119873046875,
+          1603.8182663283983
+        ],
+        "profile_closed": false,
+        "anchor_perturbed_profiles_closed": false,
+        "effective_curve_samples_assumed": 6.095957283676369,
+        "correlation_block_pitch": 2.0,
+        "curve_noise_floor_px": 2.0,
+        "free_noise_floor_px": 1.0,
+        "anchor_prediction_sigma_at_d_px": 0.5841796122492477,
+        "curve_fit_noise_assumed_px": 2.0,
+        "score_reduction": 0.11934906372362708,
+        "curved_deviation_px": 13.497216910030527,
+        "uncertainty_components_px": {
+          "curve_profile_halfwidth": 219.17469798268144,
+          "with_anchor_perturbations": 259.9062790237108
+        },
+        "uncertainty_limit_px": 11.64706324142434,
+        "uncertainty_caveat": "Noise/correlation floors are explicit unvalidated optical assumptions. H6 surface coordinates may inherit correlated fitted F3 center-track error; no calibrated coverage is claimed.",
+        "admissible": false,
+        "caveat": "Geometry audit bypasses connection eligibility only to diagnose fitting; never valid for lock."
+      }
+    },
+    {
+      "case": "right113305",
+      "frame": 300,
+      "t": 30.0,
+      "source_pixel_sha256": "106252a23868a7d167fdc4a8ad3c619a4af240e04641122aa82f5ff67311acef",
+      "selected_kind": "free_fragment_no_resolved_connection",
+      "connection_eligible": false,
+      "original_whole_observed": false,
+      "original_reasons": [
+        "H6_did_not_select_an_image_eligible_legal_curve_connection",
+        "free_current_joint_support_insufficient",
+        "transition_current_joint_support_insufficient",
+        "surface_current_joint_support_insufficient",
+        "curve_current_joint_length_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "H6_gate_checks": {
+        "free": {
+          "point_count": 310,
+          "joint_fraction": 0.38064516129032255,
+          "observed_fraction": 0.6741935483870968,
+          "observed_length_original_px": 1217.9999999999993,
+          "joint_length_original_px": 666.0000000000002,
+          "maximum_unsupported_run_original_px": 330.00000000000034
+        },
+        "transition": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "surface": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "genuine_H6_attached_candidate": false,
+        "maximum_unsupported_run_original_px": 330.00000000000034,
+        "maximum_allowed_unsupported_run_original_px": 86.697,
+        "branch_score_margin": 26.089441457207244,
+        "cross_entry_score_margin": null,
+        "ambiguous": false,
+        "direction_selection_allowed": true
+      },
+      "S1_valid": true,
+      "baseline_trim_audit": {
+        "full_H6_geometry": {
+          "point_count": 310,
+          "surface_count": 0,
+          "surface_fraction": 0.0,
+          "straight_trimmed_rmse": 9.777342852091043e-13,
+          "surface_untrimmed_line_residual_rmse": null
+        },
+        "supported_only": {
+          "point_count": 209,
+          "surface_count": 0,
+          "surface_fraction": 0.0,
+          "straight_trimmed_rmse": 9.706327412671445e-13,
+          "surface_untrimmed_line_residual_rmse": null
+        }
+      },
+      "original_estimate_turn": {
+        "valid": false,
+        "x": null,
+        "y": null,
+        "quality": 0.0,
+        "rmse": null,
+        "uncertainty_px": null,
+        "reason": "straight_path",
+        "straight_rmse": 1.2401583069861193e-13,
+        "coordinate_system": "canonical_right_entering_xy",
+        "diagnostic_candidate_fit_only": true,
+        "admissible_for_d_lock": false,
+        "S1_optical_endpoint_used_as_d": false
+      },
+      "new_supported_turn": {
+        "valid": false,
+        "x": null,
+        "y": null,
+        "quality": 0.0,
+        "rmse": null,
+        "uncertainty_px": null,
+        "reason": "no_unique_legal_H6_curve_connection",
+        "method": "experimental_S1_anchored_current_supported_surface_C1_profile",
+        "whole_observed_flag_promoted": false,
+        "physical_contact_confirmed": false,
+        "uncertainty_is_conditional": true
+      },
+      "non_admissible_ambiguous_model_audit": null
+    },
+    {
+      "case": "left111500",
+      "frame": 0,
+      "t": 0.0,
+      "source_pixel_sha256": "bff857f873821a0e7607ba325a0acd677117c90b4dfd6a371a1570e1a6dbee65",
+      "selected_kind": "straight_free_to_F3_center_track",
+      "connection_eligible": true,
+      "original_whole_observed": false,
+      "original_reasons": [
+        "free_current_observed_fraction_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "H6_gate_checks": {
+        "free": {
+          "point_count": 364,
+          "joint_fraction": 0.5934065934065934,
+          "observed_fraction": 0.5934065934065934,
+          "observed_length_original_px": 1272.0000000000002,
+          "joint_length_original_px": 1272.0000000000002,
+          "maximum_unsupported_run_original_px": 426.0000000000002
+        },
+        "transition": {
+          "point_count": 4,
+          "joint_fraction": 1.0,
+          "observed_fraction": 1.0,
+          "observed_length_original_px": 28.87581490815261,
+          "joint_length_original_px": 28.87581490815261,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "surface": {
+          "point_count": 34,
+          "joint_fraction": 0.5588235294117647,
+          "observed_fraction": 0.5588235294117647,
+          "observed_length_original_px": 117.76708394219727,
+          "joint_length_original_px": 117.76708394219727,
+          "maximum_unsupported_run_original_px": 65.23725363938891
+        },
+        "genuine_H6_attached_candidate": true,
+        "maximum_unsupported_run_original_px": 434.92728741534796,
+        "maximum_allowed_unsupported_run_original_px": 92.4,
+        "branch_score_margin": 0.07120900796097374,
+        "cross_entry_score_margin": null,
+        "ambiguous": false,
+        "direction_selection_allowed": true
+      },
+      "S1_valid": true,
+      "baseline_trim_audit": {
+        "full_H6_geometry": {
+          "point_count": 402,
+          "surface_count": 34,
+          "surface_fraction": 0.0845771144278607,
+          "straight_trimmed_rmse": 0.09243260955519203,
+          "surface_untrimmed_line_residual_rmse": 30.8263895379387
+        },
+        "supported_only": {
+          "point_count": 239,
+          "surface_count": 19,
+          "surface_fraction": 0.0794979079497908,
+          "straight_trimmed_rmse": 0.13319555213721704,
+          "surface_untrimmed_line_residual_rmse": 15.92561472671608
+        }
+      },
+      "original_estimate_turn": {
+        "valid": false,
+        "x": null,
+        "y": null,
+        "quality": 0.0,
+        "rmse": null,
+        "uncertainty_px": null,
+        "reason": "straight_path",
+        "straight_rmse": 0.09243260955560706,
+        "coordinate_system": "canonical_right_entering_xy",
+        "diagnostic_candidate_fit_only": true,
+        "admissible_for_d_lock": false,
+        "S1_optical_endpoint_used_as_d": false
+      },
+      "new_supported_turn": {
+        "valid": false,
+        "x": 2265.412589089912,
+        "y": 2534.564080938847,
+        "quality": 0.0,
+        "rmse": 0.806007113968571,
+        "uncertainty_px": 110.64510091145848,
+        "reason": "turn_profile_open_or_boundary_limited",
+        "method": "experimental_S1_anchored_current_supported_surface_C1_profile",
+        "whole_observed_flag_promoted": false,
+        "physical_contact_confirmed": false,
+        "uncertainty_is_conditional": true,
+        "surface_point_count": 19,
+        "free_point_count": 299,
+        "surface_spatial_bins": 10,
+        "free_spatial_bins": 52,
+        "curve_span_px": 108.0,
+        "free_span_px": 1229.6826934814453,
+        "omitted_H6_transition_points": 4,
+        "omitted_unsupported_path_points": 163,
+        "fit_uses_Hermite_or_unsupported_points": false,
+        "free_abc": [
+          -0.19010929511404373,
+          0.9817629326427239,
+          -2057.665074619068
+        ],
+        "free_side": "left",
+        "apparent_turn_search_interval_x": [
+          1482.1617431640625,
+          2312.0
+        ],
+        "interpolation_is_not_observation": true,
+        "slope": 0.19364073422725867,
+        "intercept": 2095.887923859801,
+        "quadratic": 0.0011744499864690247,
+        "conditional_profile_interval_x": [
+          2178.0611936334976,
+          2310.0588578787465
+        ],
+        "conditional_anchor_perturbation_interval_x": [
+          2154.7674881784537,
+          2312.0
+        ],
+        "profile_closed": true,
+        "anchor_perturbed_profiles_closed": false,
+        "effective_curve_samples_assumed": 2.3181809388628447,
+        "correlation_block_pitch": 2.0,
+        "curve_noise_floor_px": 2.0,
+        "free_noise_floor_px": 1.0,
+        "anchor_prediction_sigma_at_d_px": 0.8559174588798605,
+        "curve_fit_noise_assumed_px": 2.0,
+        "score_reduction": 0.9932407005830735,
+        "curved_deviation_px": 25.929763631117485,
+        "uncertainty_components_px": {
+          "curve_profile_halfwidth": 87.3513954564146,
+          "with_anchor_perturbations": 110.64510091145848
+        },
+        "uncertainty_limit_px": 11.64706324142434,
+        "uncertainty_caveat": "Noise/correlation floors are explicit unvalidated optical assumptions. H6 surface coordinates may inherit correlated fitted F3 center-track error; no calibrated coverage is claimed."
+      },
+      "non_admissible_ambiguous_model_audit": null
+    },
+    {
+      "case": "left111500",
+      "frame": 15,
+      "t": 1.5,
+      "source_pixel_sha256": "7d76923d74b1692fcbf2038a3b02ce0e9c851157275979c2fd92ecafad0f3444",
+      "selected_kind": "straight_free_to_F3_center_track",
+      "connection_eligible": true,
+      "original_whole_observed": false,
+      "original_reasons": [
+        "transition_current_joint_support_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "H6_gate_checks": {
+        "free": {
+          "point_count": 345,
+          "joint_fraction": 0.6695652173913044,
+          "observed_fraction": 0.7565217391304347,
+          "observed_length_original_px": 1541.9999999999998,
+          "joint_length_original_px": 1344.0,
+          "maximum_unsupported_run_original_px": 143.9999999999999
+        },
+        "transition": {
+          "point_count": 15,
+          "joint_fraction": 0.4666666666666667,
+          "observed_fraction": 0.4666666666666667,
+          "observed_length_original_px": 35.4395405327279,
+          "joint_length_original_px": 35.4395405327279,
+          "maximum_unsupported_run_original_px": 49.97080687757987
+        },
+        "surface": {
+          "point_count": 45,
+          "joint_fraction": 0.5777777777777777,
+          "observed_fraction": 0.5777777777777777,
+          "observed_length_original_px": 144.82150061032803,
+          "joint_length_original_px": 144.82150061032803,
+          "maximum_unsupported_run_original_px": 46.067485541604874
+        },
+        "genuine_H6_attached_candidate": true,
+        "maximum_unsupported_run_original_px": 143.9999999999999,
+        "maximum_allowed_unsupported_run_original_px": 98.89999999999999,
+        "branch_score_margin": 0.056910798672667795,
+        "cross_entry_score_margin": null,
+        "ambiguous": false,
+        "direction_selection_allowed": true
+      },
+      "S1_valid": true,
+      "baseline_trim_audit": {
+        "full_H6_geometry": {
+          "point_count": 405,
+          "surface_count": 45,
+          "surface_fraction": 0.1111111111111111,
+          "straight_trimmed_rmse": 0.4021548557137525,
+          "surface_untrimmed_line_residual_rmse": 26.83920591897728
+        },
+        "supported_only": {
+          "point_count": 294,
+          "surface_count": 26,
+          "surface_fraction": 0.08843537414965986,
+          "straight_trimmed_rmse": 0.138469115204261,
+          "surface_untrimmed_line_residual_rmse": 22.754051144454642
+        }
+      },
+      "original_estimate_turn": {
+        "valid": false,
+        "x": null,
+        "y": null,
+        "quality": 0.0,
+        "rmse": null,
+        "uncertainty_px": null,
+        "reason": "straight_path",
+        "straight_rmse": 0.40215485571376347,
+        "coordinate_system": "canonical_right_entering_xy",
+        "diagnostic_candidate_fit_only": true,
+        "admissible_for_d_lock": false,
+        "S1_optical_endpoint_used_as_d": false
+      },
+      "new_supported_turn": {
+        "valid": false,
+        "x": 2150.3841127633286,
+        "y": 2487.3577030835063,
+        "quality": 0.0,
+        "rmse": 1.2056322873320056,
+        "uncertainty_px": 79.49362504367991,
+        "reason": "turn_localization_uncertain",
+        "method": "experimental_S1_anchored_current_supported_surface_C1_profile",
+        "whole_observed_flag_promoted": false,
+        "physical_contact_confirmed": false,
+        "uncertainty_is_conditional": true,
+        "surface_point_count": 26,
+        "free_point_count": 420,
+        "surface_spatial_bins": 14,
+        "free_spatial_bins": 75,
+        "curve_span_px": 210.0,
+        "free_span_px": 1733.281021118164,
+        "omitted_H6_transition_points": 15,
+        "omitted_unsupported_path_points": 111,
+        "fit_uses_Hermite_or_unsupported_points": false,
+        "free_abc": [
+          -0.1841245113007881,
+          0.9829029272203059,
+          -2048.8927435332284
+        ],
+        "free_side": "left",
+        "apparent_turn_search_interval_x": [
+          1922.5670166015625,
+          2226.0
+        ],
+        "interpolation_is_not_observation": true,
+        "slope": 0.18732725908294992,
+        "intercept": 2084.532141264031,
+        "quadratic": 0.0006151901063773678,
+        "conditional_profile_interval_x": [
+          2094.1569145617013,
+          2191.100359736921
+        ],
+        "conditional_anchor_perturbation_interval_x": [
+          2070.8904877196487,
+          2207.5807454167084
+        ],
+        "profile_closed": true,
+        "anchor_perturbed_profiles_closed": true,
+        "effective_curve_samples_assumed": 4.507574047788864,
+        "correlation_block_pitch": 2.0,
+        "curve_noise_floor_px": 2.0,
+        "free_noise_floor_px": 1.0,
+        "anchor_prediction_sigma_at_d_px": 0.8714499307871305,
+        "curve_fit_noise_assumed_px": 2.0,
+        "score_reduction": 0.9911101202696533,
+        "curved_deviation_px": 48.09866577857212,
+        "uncertainty_components_px": {
+          "curve_profile_halfwidth": 56.22719820162729,
+          "with_anchor_perturbations": 79.49362504367991
+        },
+        "uncertainty_limit_px": 11.64706324142434,
+        "uncertainty_caveat": "Noise/correlation floors are explicit unvalidated optical assumptions. H6 surface coordinates may inherit correlated fitted F3 center-track error; no calibrated coverage is claimed."
+      },
+      "non_admissible_ambiguous_model_audit": null
+    },
+    {
+      "case": "left111500",
+      "frame": 45,
+      "t": 4.5,
+      "source_pixel_sha256": "e51aa012c3e2aa6594adfd16c877847ac78824d347852a5522d6e38397358f9e",
+      "selected_kind": "straight_free_to_F3_center_track",
+      "connection_eligible": true,
+      "original_whole_observed": false,
+      "original_reasons": [
+        "transition_current_joint_support_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "H6_gate_checks": {
+        "free": {
+          "point_count": 323,
+          "joint_fraction": 0.739938080495356,
+          "observed_fraction": 0.7894736842105263,
+          "observed_length_original_px": 1506.0000000000005,
+          "joint_length_original_px": 1398.0000000000005,
+          "maximum_unsupported_run_original_px": 138.00000000000009
+        },
+        "transition": {
+          "point_count": 25,
+          "joint_fraction": 0.36,
+          "observed_fraction": 0.36,
+          "observed_length_original_px": 39.22398514249724,
+          "joint_length_original_px": 39.22398514249724,
+          "maximum_unsupported_run_original_px": 112.00098773827031
+        },
+        "surface": {
+          "point_count": 41,
+          "joint_fraction": 0.8780487804878049,
+          "observed_fraction": 0.8780487804878049,
+          "observed_length_original_px": 227.47012913905144,
+          "joint_length_original_px": 227.47012913905144,
+          "maximum_unsupported_run_original_px": 30.74349827403929
+        },
+        "genuine_H6_attached_candidate": true,
+        "maximum_unsupported_run_original_px": 138.00000000000009,
+        "maximum_allowed_unsupported_run_original_px": 100.0,
+        "branch_score_margin": 0.07562786114100106,
+        "cross_entry_score_margin": null,
+        "ambiguous": false,
+        "direction_selection_allowed": true
+      },
+      "S1_valid": true,
+      "baseline_trim_audit": {
+        "full_H6_geometry": {
+          "point_count": 389,
+          "surface_count": 41,
+          "surface_fraction": 0.10539845758354756,
+          "straight_trimmed_rmse": 0.2064101130887626,
+          "surface_untrimmed_line_residual_rmse": 22.461163569010612
+        },
+        "supported_only": {
+          "point_count": 300,
+          "surface_count": 36,
+          "surface_fraction": 0.12,
+          "straight_trimmed_rmse": 0.3257550954157453,
+          "surface_untrimmed_line_residual_rmse": 23.66242267782274
+        }
+      },
+      "original_estimate_turn": {
+        "valid": false,
+        "x": null,
+        "y": null,
+        "quality": 0.0,
+        "rmse": null,
+        "uncertainty_px": null,
+        "reason": "straight_path",
+        "straight_rmse": 0.20641011308926063,
+        "coordinate_system": "canonical_right_entering_xy",
+        "diagnostic_candidate_fit_only": true,
+        "admissible_for_d_lock": false,
+        "S1_optical_endpoint_used_as_d": false
+      },
+      "new_supported_turn": {
+        "valid": false,
+        "x": 2226.0,
+        "y": 2486.2699122466083,
+        "quality": 0.0,
+        "rmse": 2.752363152197913,
+        "uncertainty_px": 27.139555832435235,
+        "reason": "turn_profile_open_or_boundary_limited",
+        "method": "experimental_S1_anchored_current_supported_surface_C1_profile",
+        "whole_observed_flag_promoted": false,
+        "physical_contact_confirmed": false,
+        "uncertainty_is_conditional": true,
+        "surface_point_count": 36,
+        "free_point_count": 357,
+        "surface_spatial_bins": 18,
+        "free_spatial_bins": 64,
+        "curve_span_px": 208.0,
+        "free_span_px": 1506.641845703125,
+        "omitted_H6_transition_points": 25,
+        "omitted_unsupported_path_points": 89,
+        "fit_uses_Hermite_or_unsupported_points": false,
+        "free_abc": [
+          -0.1909909357676113,
+          0.9815918003195688,
+          -2015.356336223822
+        ],
+        "free_side": "left",
+        "apparent_turn_search_interval_x": [
+          1720.0411376953125,
+          2226.0
+        ],
+        "interpolation_is_not_observation": true,
+        "slope": 0.1945726682979951,
+        "intercept": 2053.1511526152713,
+        "quadratic": 0.0009421361635154291,
+        "conditional_profile_interval_x": [
+          2203.706793423357,
+          2226.0
+        ],
+        "conditional_anchor_perturbation_interval_x": [
+          2198.8604441675648,
+          2226.0
+        ],
+        "profile_closed": false,
+        "anchor_perturbed_profiles_closed": false,
+        "effective_curve_samples_assumed": 4.464644771143256,
+        "correlation_block_pitch": 2.0,
+        "curve_noise_floor_px": 2.0,
+        "free_noise_floor_px": 1.0,
+        "anchor_prediction_sigma_at_d_px": 0.6315382399702887,
+        "curve_fit_noise_assumed_px": 2.0,
+        "score_reduction": 0.9330851947656186,
+        "curved_deviation_px": 39.2079385808581,
+        "uncertainty_components_px": {
+          "curve_profile_halfwidth": 22.293206576643115,
+          "with_anchor_perturbations": 27.139555832435235
+        },
+        "uncertainty_limit_px": 11.64706324142434,
+        "uncertainty_caveat": "Noise/correlation floors are explicit unvalidated optical assumptions. H6 surface coordinates may inherit correlated fitted F3 center-track error; no calibrated coverage is claimed."
+      },
+      "non_admissible_ambiguous_model_audit": null
+    },
+    {
+      "case": "left111500",
+      "frame": 60,
+      "t": 6.0,
+      "source_pixel_sha256": "7337b0c0c12e8eea3959a9f2e103417d3c7361543fe6c710ba22965f9e3ce56f",
+      "selected_kind": "straight_free_to_F3_center_track",
+      "connection_eligible": true,
+      "original_whole_observed": false,
+      "original_reasons": [
+        "transition_current_joint_support_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "H6_gate_checks": {
+        "free": {
+          "point_count": 253,
+          "joint_fraction": 0.7509881422924901,
+          "observed_fraction": 0.8102766798418972,
+          "observed_length_original_px": 1212.0,
+          "joint_length_original_px": 1116.0,
+          "maximum_unsupported_run_original_px": 126.00000000000004
+        },
+        "transition": {
+          "point_count": 29,
+          "joint_fraction": 0.3448275862068966,
+          "observed_fraction": 0.3448275862068966,
+          "observed_length_original_px": 53.417020977133504,
+          "joint_length_original_px": 53.417020977133504,
+          "maximum_unsupported_run_original_px": 178.68321325022703
+        },
+        "surface": {
+          "point_count": 29,
+          "joint_fraction": 0.5172413793103449,
+          "observed_fraction": 0.5172413793103449,
+          "observed_length_original_px": 75.22146594174022,
+          "joint_length_original_px": 75.22146594174022,
+          "maximum_unsupported_run_original_px": 52.91164154775956
+        },
+        "genuine_H6_attached_candidate": true,
+        "maximum_unsupported_run_original_px": 178.68321325022703,
+        "maximum_allowed_unsupported_run_original_px": 99.9,
+        "branch_score_margin": 0.1302959733357909,
+        "cross_entry_score_margin": null,
+        "ambiguous": false,
+        "direction_selection_allowed": true
+      },
+      "S1_valid": true,
+      "baseline_trim_audit": {
+        "full_H6_geometry": {
+          "point_count": 311,
+          "surface_count": 29,
+          "surface_fraction": 0.0932475884244373,
+          "straight_trimmed_rmse": 0.13986388762589672,
+          "surface_untrimmed_line_residual_rmse": 1.275831618825357
+        },
+        "supported_only": {
+          "point_count": 230,
+          "surface_count": 15,
+          "surface_fraction": 0.06521739130434782,
+          "straight_trimmed_rmse": 0.045716260756966706,
+          "surface_untrimmed_line_residual_rmse": 0.977908301553968
+        }
+      },
+      "original_estimate_turn": {
+        "valid": false,
+        "x": null,
+        "y": null,
+        "quality": 0.0,
+        "rmse": null,
+        "uncertainty_px": null,
+        "reason": "straight_path",
+        "straight_rmse": 0.13986388762553412,
+        "coordinate_system": "canonical_right_entering_xy",
+        "diagnostic_candidate_fit_only": true,
+        "admissible_for_d_lock": false,
+        "S1_optical_endpoint_used_as_d": false
+      },
+      "new_supported_turn": {
+        "valid": false,
+        "x": 1799.8614501953125,
+        "y": 2385.7068007420767,
+        "quality": 0.0,
+        "rmse": 0.23427733350952373,
+        "uncertainty_px": 146.1385498046875,
+        "reason": "straight_or_unresolved_supported_surface_curvature",
+        "method": "experimental_S1_anchored_current_supported_surface_C1_profile",
+        "whole_observed_flag_promoted": false,
+        "physical_contact_confirmed": false,
+        "uncertainty_is_conditional": true,
+        "surface_point_count": 15,
+        "free_point_count": 357,
+        "surface_spatial_bins": 8,
+        "free_spatial_bins": 62,
+        "curve_span_px": 126.0,
+        "free_span_px": 1457.0978393554688,
+        "omitted_H6_transition_points": 29,
+        "omitted_unsupported_path_points": 81,
+        "fit_uses_Hermite_or_unsupported_points": false,
+        "free_abc": [
+          -0.19042937473771565,
+          0.9817008980524581,
+          -1999.3040182031418
+        ],
+        "free_side": "left",
+        "apparent_turn_search_interval_x": [
+          1799.8614501953125,
+          1946.0
+        ],
+        "interpolation_is_not_observation": true,
+        "slope": 0.19397901653701033,
+        "intercept": 2036.5714467303128,
+        "quadratic": -3.1479245618599456e-05,
+        "conditional_profile_interval_x": [
+          1799.8614501953125,
+          1946.0
+        ],
+        "conditional_anchor_perturbation_interval_x": [
+          1799.8614501953125,
+          1946.0
+        ],
+        "profile_closed": false,
+        "anchor_perturbed_profiles_closed": false,
+        "effective_curve_samples_assumed": 2.7045444286733185,
+        "correlation_block_pitch": 2.0,
+        "curve_noise_floor_px": 2.0,
+        "free_noise_floor_px": 1.0,
+        "anchor_prediction_sigma_at_d_px": 0.6632538881102569,
+        "curve_fit_noise_assumed_px": 2.0,
+        "score_reduction": 0.9689680936769723,
+        "curved_deviation_px": 2.2971927892723922,
+        "uncertainty_components_px": {
+          "curve_profile_halfwidth": 146.1385498046875,
+          "with_anchor_perturbations": 146.1385498046875
+        },
+        "uncertainty_limit_px": 11.64706324142434,
+        "uncertainty_caveat": "Noise/correlation floors are explicit unvalidated optical assumptions. H6 surface coordinates may inherit correlated fitted F3 center-track error; no calibrated coverage is claimed."
+      },
+      "non_admissible_ambiguous_model_audit": null
+    },
+    {
+      "case": "left111500",
+      "frame": 75,
+      "t": 7.5,
+      "source_pixel_sha256": "96113925f0eeba648301c432a65a4a5415e1446cf1b3f501f38e7720673f629f",
+      "selected_kind": "free_fragment_no_resolved_connection",
+      "connection_eligible": false,
+      "original_whole_observed": false,
+      "original_reasons": [
+        "H6_did_not_select_an_image_eligible_legal_curve_connection",
+        "transition_current_joint_support_insufficient",
+        "surface_current_joint_support_insufficient",
+        "curve_current_joint_length_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "H6_gate_checks": {
+        "free": {
+          "point_count": 176,
+          "joint_fraction": 0.6931818181818182,
+          "observed_fraction": 0.8238636363636364,
+          "observed_length_original_px": 840.0000000000001,
+          "joint_length_original_px": 684.0000000000002,
+          "maximum_unsupported_run_original_px": 126.00000000000003
+        },
+        "transition": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "surface": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "genuine_H6_attached_candidate": false,
+        "maximum_unsupported_run_original_px": 126.00000000000003,
+        "maximum_allowed_unsupported_run_original_px": 100.7,
+        "branch_score_margin": null,
+        "cross_entry_score_margin": null,
+        "ambiguous": false,
+        "direction_selection_allowed": true
+      },
+      "S1_valid": true,
+      "baseline_trim_audit": {
+        "full_H6_geometry": {
+          "point_count": 176,
+          "surface_count": 0,
+          "surface_fraction": 0.0,
+          "straight_trimmed_rmse": 1.9815373449573376e-13,
+          "surface_untrimmed_line_residual_rmse": null
+        },
+        "supported_only": {
+          "point_count": 145,
+          "surface_count": 0,
+          "surface_fraction": 0.0,
+          "straight_trimmed_rmse": 7.609378613179393e-13,
+          "surface_untrimmed_line_residual_rmse": null
+        }
+      },
+      "original_estimate_turn": {
+        "valid": false,
+        "x": null,
+        "y": null,
+        "quality": 0.0,
+        "rmse": null,
+        "uncertainty_px": null,
+        "reason": "straight_path",
+        "straight_rmse": 4.416057997692911e-13,
+        "coordinate_system": "canonical_right_entering_xy",
+        "diagnostic_candidate_fit_only": true,
+        "admissible_for_d_lock": false,
+        "S1_optical_endpoint_used_as_d": false
+      },
+      "new_supported_turn": {
+        "valid": false,
+        "x": null,
+        "y": null,
+        "quality": 0.0,
+        "rmse": null,
+        "uncertainty_px": null,
+        "reason": "no_unique_legal_H6_curve_connection",
+        "method": "experimental_S1_anchored_current_supported_surface_C1_profile",
+        "whole_observed_flag_promoted": false,
+        "physical_contact_confirmed": false,
+        "uncertainty_is_conditional": true
+      },
+      "non_admissible_ambiguous_model_audit": null
+    },
+    {
+      "case": "right113305",
+      "frame": 240,
+      "t": 24.0,
+      "source_pixel_sha256": "095fcb1c7b5ab73fd99b3a1928bd33bfeb9ab9d4b6e63805c5487f3e29db8f3c",
+      "selected_kind": "straight_free_to_F3_center_track",
+      "connection_eligible": true,
+      "original_whole_observed": false,
+      "original_reasons": [
+        "free_current_joint_support_insufficient",
+        "free_current_observed_fraction_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "H6_gate_checks": {
+        "free": {
+          "point_count": 318,
+          "joint_fraction": 0.24842767295597484,
+          "observed_fraction": 0.5283018867924528,
+          "observed_length_original_px": 977.9999999999995,
+          "joint_length_original_px": 455.9999999999995,
+          "maximum_unsupported_run_original_px": 443.9999999999999
+        },
+        "transition": {
+          "point_count": 18,
+          "joint_fraction": 0.8333333333333334,
+          "observed_fraction": 0.8333333333333334,
+          "observed_length_original_px": 116.93073329792158,
+          "joint_length_original_px": 116.93073329792158,
+          "maximum_unsupported_run_original_px": 23.50751188560355
+        },
+        "surface": {
+          "point_count": 38,
+          "joint_fraction": 0.9473684210526315,
+          "observed_fraction": 0.9473684210526315,
+          "observed_length_original_px": 213.87139024723308,
+          "joint_length_original_px": 213.87139024723308,
+          "maximum_unsupported_run_original_px": 12.410228819269879
+        },
+        "genuine_H6_attached_candidate": true,
+        "maximum_unsupported_run_original_px": 474.6751590293043,
+        "maximum_allowed_unsupported_run_original_px": 80.0,
+        "branch_score_margin": 0.09146718775311058,
+        "cross_entry_score_margin": null,
+        "ambiguous": false,
+        "direction_selection_allowed": true
+      },
+      "S1_valid": true,
+      "baseline_trim_audit": {
+        "full_H6_geometry": {
+          "point_count": 374,
+          "surface_count": 38,
+          "surface_fraction": 0.10160427807486631,
+          "straight_trimmed_rmse": 0.15137894467658636,
+          "surface_untrimmed_line_residual_rmse": 1.6410506625893408
+        },
+        "supported_only": {
+          "point_count": 219,
+          "surface_count": 36,
+          "surface_fraction": 0.1643835616438356,
+          "straight_trimmed_rmse": 0.3814960606738531,
+          "surface_untrimmed_line_residual_rmse": 0.9301677423497834
+        }
+      },
+      "original_estimate_turn": {
+        "valid": false,
+        "x": null,
+        "y": null,
+        "quality": 0.0,
+        "rmse": null,
+        "uncertainty_px": null,
+        "reason": "straight_path",
+        "straight_rmse": 0.1513789446767697,
+        "coordinate_system": "canonical_right_entering_xy",
+        "diagnostic_candidate_fit_only": true,
+        "admissible_for_d_lock": false,
+        "S1_optical_endpoint_used_as_d": false
+      },
+      "new_supported_turn": {
+        "valid": false,
+        "x": 3211.0498046875,
+        "y": 1863.9751956155023,
+        "quality": 0.0,
+        "rmse": 0.5916423576766319,
+        "uncertainty_px": 1381.2313966444672,
+        "reason": "turn_profile_open_or_boundary_limited",
+        "method": "experimental_S1_anchored_current_supported_surface_C1_profile",
+        "whole_observed_flag_promoted": false,
+        "physical_contact_confirmed": false,
+        "uncertainty_is_conditional": true,
+        "surface_point_count": 36,
+        "free_point_count": 95,
+        "surface_spatial_bins": 18,
+        "free_spatial_bins": 16,
+        "curve_span_px": 210.0,
+        "free_span_px": 369.715576171875,
+        "omitted_H6_transition_points": 18,
+        "omitted_unsupported_path_points": 155,
+        "fit_uses_Hermite_or_unsupported_points": false,
+        "free_abc": [
+          0.19710211170892544,
+          0.98038296474382,
+          -2460.314225792907
+        ],
+        "free_side": "right",
+        "apparent_turn_search_interval_x": [
+          1688.0,
+          3211.0498046875
+        ],
+        "interpolation_is_not_observation": true,
+        "slope": -0.2010460389429853,
+        "intercept": 2509.544039696571,
+        "quadratic": -6.273500847139593e-06,
+        "conditional_profile_interval_x": [
+          2216.3235060194675,
+          3211.0498046875
+        ],
+        "conditional_anchor_perturbation_interval_x": [
+          1829.8184080430328,
+          3211.0498046875
+        ],
+        "profile_closed": false,
+        "anchor_perturbed_profiles_closed": false,
+        "effective_curve_samples_assumed": 4.379548697917257,
+        "correlation_block_pitch": 2.0,
+        "curve_noise_floor_px": 2.0,
+        "free_noise_floor_px": 1.0,
+        "anchor_prediction_sigma_at_d_px": 0.7100601183713728,
+        "curve_fit_noise_assumed_px": 2.0,
+        "score_reduction": 0.9975224503967308,
+        "curved_deviation_px": 18.71197742511368,
+        "uncertainty_components_px": {
+          "curve_profile_halfwidth": 994.7262986680325,
+          "with_anchor_perturbations": 1381.2313966444672
+        },
+        "uncertainty_limit_px": 11.987536529726672,
+        "uncertainty_caveat": "Noise/correlation floors are explicit unvalidated optical assumptions. H6 surface coordinates may inherit correlated fitted F3 center-track error; no calibrated coverage is claimed."
+      },
+      "non_admissible_ambiguous_model_audit": null
+    },
+    {
+      "case": "right113305",
+      "frame": 270,
+      "t": 27.0,
+      "source_pixel_sha256": "5133c715a8027d1be848b66568c3d442be76a41c66eaf68d97da1b0a88615b2f",
+      "selected_kind": "free_fragment_no_resolved_connection",
+      "connection_eligible": false,
+      "original_whole_observed": false,
+      "original_reasons": [
+        "H6_did_not_select_an_image_eligible_legal_curve_connection",
+        "free_current_joint_support_insufficient",
+        "transition_current_joint_support_insufficient",
+        "surface_current_joint_support_insufficient",
+        "curve_current_joint_length_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "H6_gate_checks": {
+        "free": {
+          "point_count": 65,
+          "joint_fraction": 0.1076923076923077,
+          "observed_fraction": 0.8461538461538461,
+          "observed_length_original_px": 648.0000000000001,
+          "joint_length_original_px": 48.00000000000066,
+          "maximum_unsupported_run_original_px": 119.99999999999977
+        },
+        "transition": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "surface": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "genuine_H6_attached_candidate": false,
+        "maximum_unsupported_run_original_px": 119.99999999999977,
+        "maximum_allowed_unsupported_run_original_px": 80.0,
+        "branch_score_margin": null,
+        "cross_entry_score_margin": null,
+        "ambiguous": false,
+        "direction_selection_allowed": true
+      },
+      "S1_valid": true,
+      "baseline_trim_audit": {
+        "full_H6_geometry": {
+          "point_count": 65,
+          "surface_count": 0,
+          "surface_fraction": 0.0,
+          "straight_trimmed_rmse": 4.625213730065368e-13,
+          "surface_untrimmed_line_residual_rmse": null
+        },
+        "supported_only": {
+          "point_count": 55,
+          "surface_count": 0,
+          "surface_fraction": 0.0,
+          "straight_trimmed_rmse": 2.6785305152495836e-13,
+          "surface_untrimmed_line_residual_rmse": null
+        }
+      },
+      "original_estimate_turn": {
+        "valid": false,
+        "x": null,
+        "y": null,
+        "quality": 0.0,
+        "rmse": null,
+        "uncertainty_px": null,
+        "reason": "straight_path",
+        "straight_rmse": 8.444446310798042e-14,
+        "coordinate_system": "canonical_right_entering_xy",
+        "diagnostic_candidate_fit_only": true,
+        "admissible_for_d_lock": false,
+        "S1_optical_endpoint_used_as_d": false
+      },
+      "new_supported_turn": {
+        "valid": false,
+        "x": null,
+        "y": null,
+        "quality": 0.0,
+        "rmse": null,
+        "uncertainty_px": null,
+        "reason": "no_unique_legal_H6_curve_connection",
+        "method": "experimental_S1_anchored_current_supported_surface_C1_profile",
+        "whole_observed_flag_promoted": false,
+        "physical_contact_confirmed": false,
+        "uncertainty_is_conditional": true
+      },
+      "non_admissible_ambiguous_model_audit": null
+    },
+    {
+      "case": "right113305",
+      "frame": 330,
+      "t": 33.0,
+      "source_pixel_sha256": "f556553cdc21d66e8393938c6cfb539930a9845288470d8b2d525c1420e5257b",
+      "selected_kind": "free_fragment_no_resolved_connection",
+      "connection_eligible": false,
+      "original_whole_observed": false,
+      "original_reasons": [
+        "H6_did_not_select_an_image_eligible_legal_curve_connection",
+        "free_current_joint_support_insufficient",
+        "transition_current_joint_support_insufficient",
+        "surface_current_joint_support_insufficient",
+        "curve_current_joint_length_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "H6_gate_checks": {
+        "free": {
+          "point_count": 152,
+          "joint_fraction": 0.40789473684210525,
+          "observed_fraction": 0.6513157894736842,
+          "observed_length_original_px": 1115.9999999999993,
+          "joint_length_original_px": 684.0000000000001,
+          "maximum_unsupported_run_original_px": 383.9999999999997
+        },
+        "transition": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "surface": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "genuine_H6_attached_candidate": false,
+        "maximum_unsupported_run_original_px": 383.9999999999997,
+        "maximum_allowed_unsupported_run_original_px": 84.60562500000002,
+        "branch_score_margin": 24.046505902149494,
+        "cross_entry_score_margin": null,
+        "ambiguous": false,
+        "direction_selection_allowed": true
+      },
+      "S1_valid": true,
+      "baseline_trim_audit": {
+        "full_H6_geometry": {
+          "point_count": 152,
+          "surface_count": 0,
+          "surface_fraction": 0.0,
+          "straight_trimmed_rmse": 4.2626990897115553e-13,
+          "surface_untrimmed_line_residual_rmse": null
+        },
+        "supported_only": {
+          "point_count": 99,
+          "surface_count": 0,
+          "surface_fraction": 0.0,
+          "straight_trimmed_rmse": 2.8720325059207294e-13,
+          "surface_untrimmed_line_residual_rmse": null
+        }
+      },
+      "original_estimate_turn": {
+        "valid": false,
+        "x": null,
+        "y": null,
+        "quality": 0.0,
+        "rmse": null,
+        "uncertainty_px": null,
+        "reason": "straight_path",
+        "straight_rmse": 7.551206683218327e-14,
+        "coordinate_system": "canonical_right_entering_xy",
+        "diagnostic_candidate_fit_only": true,
+        "admissible_for_d_lock": false,
+        "S1_optical_endpoint_used_as_d": false
+      },
+      "new_supported_turn": {
+        "valid": false,
+        "x": null,
+        "y": null,
+        "quality": 0.0,
+        "rmse": null,
+        "uncertainty_px": null,
+        "reason": "no_unique_legal_H6_curve_connection",
+        "method": "experimental_S1_anchored_current_supported_surface_C1_profile",
+        "whole_observed_flag_promoted": false,
+        "physical_contact_confirmed": false,
+        "uncertainty_is_conditional": true
+      },
+      "non_admissible_ambiguous_model_audit": null
+    },
+    {
+      "case": "right113305",
+      "frame": 360,
+      "t": 36.0,
+      "source_pixel_sha256": "c64c0d57e5675c0a8cf650e2a2b8bdeb5d30f52114348fa1c35ab55be9d17a24",
+      "selected_kind": "free_fragment_no_resolved_connection",
+      "connection_eligible": false,
+      "original_whole_observed": false,
+      "original_reasons": [
+        "H6_did_not_select_an_image_eligible_legal_curve_connection",
+        "free_current_joint_support_insufficient",
+        "transition_current_joint_support_insufficient",
+        "surface_current_joint_support_insufficient",
+        "free_current_observed_fraction_insufficient",
+        "curve_current_joint_length_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "H6_gate_checks": {
+        "free": {
+          "point_count": 120,
+          "joint_fraction": 0.025,
+          "observed_fraction": 0.625,
+          "observed_length_original_px": 390.0000000000003,
+          "joint_length_original_px": 12.000000000000139,
+          "maximum_unsupported_run_original_px": 119.99999999999996
+        },
+        "transition": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "surface": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "genuine_H6_attached_candidate": false,
+        "maximum_unsupported_run_original_px": 119.99999999999996,
+        "maximum_allowed_unsupported_run_original_px": 82.65684375000004,
+        "branch_score_margin": null,
+        "cross_entry_score_margin": null,
+        "ambiguous": false,
+        "direction_selection_allowed": true
+      },
+      "S1_valid": true,
+      "baseline_trim_audit": {
+        "full_H6_geometry": {
+          "point_count": 120,
+          "surface_count": 0,
+          "surface_fraction": 0.0,
+          "straight_trimmed_rmse": 3.956418106141484e-13,
+          "surface_untrimmed_line_residual_rmse": null
+        },
+        "supported_only": {
+          "point_count": 75,
+          "surface_count": 0,
+          "surface_fraction": 0.0,
+          "straight_trimmed_rmse": 4.2401453210634794e-13,
+          "surface_untrimmed_line_residual_rmse": null
+        }
+      },
+      "original_estimate_turn": {
+        "valid": false,
+        "x": null,
+        "y": null,
+        "quality": 0.0,
+        "rmse": null,
+        "uncertainty_px": null,
+        "reason": "straight_path",
+        "straight_rmse": 6.079067344073521e-13,
+        "coordinate_system": "canonical_right_entering_xy",
+        "diagnostic_candidate_fit_only": true,
+        "admissible_for_d_lock": false,
+        "S1_optical_endpoint_used_as_d": false
+      },
+      "new_supported_turn": {
+        "valid": false,
+        "x": null,
+        "y": null,
+        "quality": 0.0,
+        "rmse": null,
+        "uncertainty_px": null,
+        "reason": "no_unique_legal_H6_curve_connection",
+        "method": "experimental_S1_anchored_current_supported_surface_C1_profile",
+        "whole_observed_flag_promoted": false,
+        "physical_contact_confirmed": false,
+        "uncertainty_is_conditional": true
+      },
+      "non_admissible_ambiguous_model_audit": null
+    },
+    {
+      "case": "right113305",
+      "frame": 390,
+      "t": 39.0,
+      "source_pixel_sha256": "15c3d1f177dd0748bc617fdf8b3fbdc54151977a81d1c2fb4113cf1443ec0d34",
+      "selected_kind": "free_fragment_no_resolved_connection",
+      "connection_eligible": false,
+      "original_whole_observed": false,
+      "original_reasons": [
+        "H6_did_not_select_an_image_eligible_legal_curve_connection",
+        "free_current_joint_support_insufficient",
+        "transition_current_joint_support_insufficient",
+        "surface_current_joint_support_insufficient",
+        "curve_current_joint_length_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "H6_gate_checks": {
+        "free": {
+          "point_count": 64,
+          "joint_fraction": 0.015625,
+          "observed_fraction": 0.8125,
+          "observed_length_original_px": 588.0000000000002,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 119.99999999999979
+        },
+        "transition": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "surface": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "genuine_H6_attached_candidate": false,
+        "maximum_unsupported_run_original_px": 119.99999999999979,
+        "maximum_allowed_unsupported_run_original_px": 80.0,
+        "branch_score_margin": null,
+        "cross_entry_score_margin": null,
+        "ambiguous": false,
+        "direction_selection_allowed": true
+      },
+      "S1_valid": true,
+      "baseline_trim_audit": {
+        "full_H6_geometry": {
+          "point_count": 64,
+          "surface_count": 0,
+          "surface_fraction": 0.0,
+          "straight_trimmed_rmse": 9.451938115586124e-13,
+          "surface_untrimmed_line_residual_rmse": null
+        },
+        "supported_only": {
+          "point_count": 52,
+          "surface_count": 0,
+          "surface_fraction": 0.0,
+          "straight_trimmed_rmse": 4.460133924282862e-13,
+          "surface_untrimmed_line_residual_rmse": null
+        }
+      },
+      "original_estimate_turn": {
+        "valid": false,
+        "x": null,
+        "y": null,
+        "quality": 0.0,
+        "rmse": null,
+        "uncertainty_px": null,
+        "reason": "straight_path",
+        "straight_rmse": 7.290403441626177e-13,
+        "coordinate_system": "canonical_right_entering_xy",
+        "diagnostic_candidate_fit_only": true,
+        "admissible_for_d_lock": false,
+        "S1_optical_endpoint_used_as_d": false
+      },
+      "new_supported_turn": {
+        "valid": false,
+        "x": null,
+        "y": null,
+        "quality": 0.0,
+        "rmse": null,
+        "uncertainty_px": null,
+        "reason": "no_unique_legal_H6_curve_connection",
+        "method": "experimental_S1_anchored_current_supported_surface_C1_profile",
+        "whole_observed_flag_promoted": false,
+        "physical_contact_confirmed": false,
+        "uncertainty_is_conditional": true
+      },
+      "non_admissible_ambiguous_model_audit": null
+    }
+  ]
+}

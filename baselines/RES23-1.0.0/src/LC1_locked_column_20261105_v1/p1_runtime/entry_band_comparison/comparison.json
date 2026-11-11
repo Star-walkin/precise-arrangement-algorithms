@@ -1,0 +1,473 @@
+{
+  "adapter_sha256": "c4d439cd38c3c6b693ef048353a8b779f9e27c104f4f068287f34cc14f86a6ef",
+  "surface_mode_default": "full",
+  "explicit_mode_compared": "entry_band",
+  "halfwidth_pitch": 8.0,
+  "halo_pitch": 2.0,
+  "cases": [
+    {
+      "case": "right113305",
+      "frame_index": 0,
+      "source_video": "E:\\study\\program\\济宁\\双相机同步\\dual_20260923_113305\\right_DA9626975.avi",
+      "current_image_pixel_sha256": "0294949121fe597beefd443348b3a49161e5ffaf9e3f727f242a76075420c23c",
+      "full_record_sha256": "5a3c6cb7237241b7f73a9742a578061625ae29360122555fb0ab0d21fac348d2",
+      "band_record_sha256": "f73442a886a411566d7f66311a075438ac5ec5db64d369f98cc510141495ac5a",
+      "full_D4_seconds": 25.074153299909085,
+      "band_D4_seconds": 15.895290900021791,
+      "band_total_seconds": 20.758813000051305,
+      "full_kind": "free_fragment_no_resolved_connection",
+      "band_kind": "free_fragment_no_resolved_connection",
+      "full_H6_track_count": 225,
+      "band_H6_track_count": 96,
+      "full_whole": false,
+      "band_whole": false,
+      "band_reasons": [
+        "H6_did_not_select_an_image_eligible_legal_curve_connection",
+        "transition_current_joint_support_insufficient",
+        "surface_current_joint_support_insufficient",
+        "free_current_observed_fraction_insufficient",
+        "curve_current_joint_length_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "band_mask": {
+        "mode": "entry_band",
+        "original_shape": [
+          3000,
+          4096
+        ],
+        "resized": false,
+        "full_static_mask_pixels": 2223009,
+        "downstream_H6_terminal_domain_restricted": false,
+        "observation_mask_pixels": 911973,
+        "fraction_of_static_surface": 0.41024260360619325,
+        "current_entry_axes_used": 1,
+        "halfwidth_pitch": 8.0,
+        "halo_pitch": 2.0,
+        "halfwidth_original_px": 191.80058447562675,
+        "halo_original_px": 47.95014611890669,
+        "entry_source": "current_frame_A7_automatic_axes_only",
+        "candidate_scope": "finite_current_entry_band_plus_halo_not_whole_surface"
+      },
+      "full_support": {
+        "free": {
+          "point_count": 204,
+          "joint_fraction": 0.6323529411764706,
+          "observed_fraction": 0.6323529411764706,
+          "observed_length_original_px": 762.0000000000005,
+          "joint_length_original_px": 762.0000000000005,
+          "maximum_unsupported_run_original_px": 330.0
+        },
+        "transition": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "surface": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "genuine_H6_attached_candidate": false,
+        "maximum_unsupported_run_original_px": 330.0,
+        "maximum_allowed_unsupported_run_original_px": 80.0,
+        "branch_score_margin": 16.058396676373114,
+        "cross_entry_score_margin": null,
+        "ambiguous": false,
+        "direction_selection_allowed": true
+      },
+      "band_support": {
+        "free": {
+          "point_count": 204,
+          "joint_fraction": 0.6323529411764706,
+          "observed_fraction": 0.6323529411764706,
+          "observed_length_original_px": 762.0000000000005,
+          "joint_length_original_px": 762.0000000000005,
+          "maximum_unsupported_run_original_px": 330.0
+        },
+        "transition": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "surface": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "genuine_H6_attached_candidate": false,
+        "maximum_unsupported_run_original_px": 330.0,
+        "maximum_allowed_unsupported_run_original_px": 80.0,
+        "branch_score_margin": 16.075198678011727,
+        "cross_entry_score_margin": null,
+        "ambiguous": false,
+        "direction_selection_allowed": true
+      },
+      "geometry_comparison": {
+        "free": {
+          "full_point_count": 204,
+          "band_point_count": 204,
+          "common_x_extent_original_px": [
+            2523.1234527864344,
+            3721.9202402023407
+          ],
+          "median_y_difference_px": 0.0,
+          "maximum_y_difference_px": 0.0
+        },
+        "transition": {
+          "full_point_count": 0,
+          "band_point_count": 0
+        },
+        "surface": {
+          "full_point_count": 0,
+          "band_point_count": 0
+        }
+      },
+      "full_free_gaps": [
+        {
+          "start_path_index": 0,
+          "end_path_index": 21,
+          "start_original_xy": [
+            3721.9202402023407,
+            1936.973569542255
+          ],
+          "end_original_xy": [
+            3597.906779435178,
+            1959.2594742479519
+          ],
+          "length_original_px": 125.99999999999983,
+          "stage": "free",
+          "point_status_counts": {
+            "entry_condition": 21,
+            "image_supported": 1
+          },
+          "nearest_actual_S1_segment_median_distance_px": 61.03727755743836,
+          "nearest_actual_S1_segment_max_distance_px": 124.02304809210689,
+          "S1_actual_coverage_fraction_within_8px": 0.09090909090909091,
+          "S1_actual_coverage_fraction_within_12px": 0.13636363636363635
+        },
+        {
+          "start_path_index": 78,
+          "end_path_index": 133,
+          "start_original_xy": [
+            3261.298814495736,
+            2019.7497870205575
+          ],
+          "end_original_xy": [
+            2936.5016553436435,
+            2078.117632678335
+          ],
+          "length_original_px": 329.99999999999983,
+          "stage": "free",
+          "point_status_counts": {
+            "ambiguous_gap": 54,
+            "image_supported": 2
+          },
+          "nearest_actual_S1_segment_median_distance_px": 145.10304042188938,
+          "nearest_actual_S1_segment_max_distance_px": 310.03117202593114,
+          "S1_actual_coverage_fraction_within_8px": 0.08928571428571429,
+          "S1_actual_coverage_fraction_within_12px": 0.10714285714285714
+        }
+      ],
+      "S1_valid": true,
+      "S1_status": "PARTIAL",
+      "S1_endpoint_original_xy": [
+        3240.47607421875,
+        2017.135009765625
+      ],
+      "S1_supported_sample_count": 92,
+      "S1_current_seed": [
+        [
+          3721.3974656825303,
+          1934.1356938504634
+        ],
+        [
+          3603.3831419173152,
+          1955.8755049406968
+        ]
+      ],
+      "S1_record_sha256": "f089937ce5d7f1aa0177c41234122356c591db5738b41a6e587074c40e76e70a"
+    },
+    {
+      "case": "left111500",
+      "frame_index": 0,
+      "source_video": "E:\\study\\program\\济宁\\双相机同步\\dual_20260924_111500\\left_DA9627065.avi",
+      "current_image_pixel_sha256": "bff857f873821a0e7607ba325a0acd677117c90b4dfd6a371a1570e1a6dbee65",
+      "full_record_sha256": "08d24bace6dd20d5dede6ae5cad0d7afbf4659d033f27d2bf1056a5df9aa6471",
+      "band_record_sha256": "48f5216b4673b84693a92da99730e04731287120c264ed476627b9adbe332aac",
+      "full_D4_seconds": 16.455350500065833,
+      "band_D4_seconds": 11.6460267000366,
+      "band_total_seconds": 16.604492699960247,
+      "full_kind": "straight_free_to_F3_center_track",
+      "band_kind": "straight_free_to_F3_center_track",
+      "full_H6_track_count": 146,
+      "band_H6_track_count": 80,
+      "full_whole": false,
+      "band_whole": false,
+      "band_reasons": [
+        "free_current_observed_fraction_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "band_mask": {
+        "mode": "entry_band",
+        "original_shape": [
+          3000,
+          4096
+        ],
+        "resized": false,
+        "full_static_mask_pixels": 1380772,
+        "downstream_H6_terminal_domain_restricted": false,
+        "observation_mask_pixels": 640012,
+        "fraction_of_static_surface": 0.46351751049412937,
+        "current_entry_axes_used": 1,
+        "halfwidth_pitch": 8.0,
+        "halo_pitch": 2.0,
+        "halfwidth_original_px": 186.35301186278943,
+        "halo_original_px": 46.58825296569736,
+        "entry_source": "current_frame_A7_automatic_axes_only",
+        "candidate_scope": "finite_current_entry_band_plus_halo_not_whole_surface"
+      },
+      "full_support": {
+        "free": {
+          "point_count": 364,
+          "joint_fraction": 0.5934065934065934,
+          "observed_fraction": 0.5934065934065934,
+          "observed_length_original_px": 1272.0000000000002,
+          "joint_length_original_px": 1272.0000000000002,
+          "maximum_unsupported_run_original_px": 426.0000000000002
+        },
+        "transition": {
+          "point_count": 4,
+          "joint_fraction": 1.0,
+          "observed_fraction": 1.0,
+          "observed_length_original_px": 28.87277233959732,
+          "joint_length_original_px": 28.87277233959732,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "surface": {
+          "point_count": 32,
+          "joint_fraction": 0.59375,
+          "observed_fraction": 0.59375,
+          "observed_length_original_px": 117.75288239907631,
+          "joint_length_original_px": 117.75288239907631,
+          "maximum_unsupported_run_original_px": 62.69863095745739
+        },
+        "genuine_H6_attached_candidate": true,
+        "maximum_unsupported_run_original_px": 434.92683059988036,
+        "maximum_allowed_unsupported_run_original_px": 92.4,
+        "branch_score_margin": 0.07782071672342283,
+        "cross_entry_score_margin": null,
+        "ambiguous": false,
+        "direction_selection_allowed": true
+      },
+      "band_support": {
+        "free": {
+          "point_count": 364,
+          "joint_fraction": 0.5934065934065934,
+          "observed_fraction": 0.5934065934065934,
+          "observed_length_original_px": 1272.0000000000002,
+          "joint_length_original_px": 1272.0000000000002,
+          "maximum_unsupported_run_original_px": 426.0000000000002
+        },
+        "transition": {
+          "point_count": 4,
+          "joint_fraction": 1.0,
+          "observed_fraction": 1.0,
+          "observed_length_original_px": 28.87581490815261,
+          "joint_length_original_px": 28.87581490815261,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "surface": {
+          "point_count": 34,
+          "joint_fraction": 0.5588235294117647,
+          "observed_fraction": 0.5588235294117647,
+          "observed_length_original_px": 117.76708394219727,
+          "joint_length_original_px": 117.76708394219727,
+          "maximum_unsupported_run_original_px": 65.23725363938891
+        },
+        "genuine_H6_attached_candidate": true,
+        "maximum_unsupported_run_original_px": 434.92728741534796,
+        "maximum_allowed_unsupported_run_original_px": 92.4,
+        "branch_score_margin": 0.07120900796097374,
+        "cross_entry_score_margin": null,
+        "ambiguous": false,
+        "direction_selection_allowed": true
+      },
+      "geometry_comparison": {
+        "free": {
+          "full_point_count": 364,
+          "band_point_count": 364,
+          "common_x_extent_original_px": [
+            131.65890542883028,
+            2269.218256632633
+          ],
+          "median_y_difference_px": 0.0,
+          "maximum_y_difference_px": 0.0
+        },
+        "transition": {
+          "full_point_count": 4,
+          "band_point_count": 4,
+          "common_x_extent_original_px": [
+            2277.986007947299,
+            2306.0
+          ],
+          "median_y_difference_px": 0.020075872592087762,
+          "maximum_y_difference_px": 0.025326283057893306
+        },
+        "surface": {
+          "full_point_count": 32,
+          "band_point_count": 34,
+          "common_x_extent_original_px": [
+            2312.0,
+            2472.0
+          ],
+          "median_y_difference_px": 0.05439694403003159,
+          "maximum_y_difference_px": 0.1952775351364835
+        }
+      },
+      "full_free_gaps": [
+        {
+          "start_path_index": 0,
+          "end_path_index": 21,
+          "start_original_xy": [
+            131.65890542883028,
+            2116.1175767634722
+          ],
+          "end_original_xy": [
+            255.3193637629346,
+            2140.2855523634116
+          ],
+          "length_original_px": 126.00000000000003,
+          "stage": "free",
+          "point_status_counts": {
+            "entry_condition": 21,
+            "image_supported": 1
+          },
+          "nearest_actual_S1_segment_median_distance_px": 61.22372446726966,
+          "nearest_actual_S1_segment_max_distance_px": 124.12900718104407,
+          "S1_actual_coverage_fraction_within_8px": 0.09090909090909091,
+          "S1_actual_coverage_fraction_within_12px": 0.13636363636363635
+        },
+        {
+          "start_path_index": 202,
+          "end_path_index": 224,
+          "start_original_xy": [
+            1321.1547427378337,
+            2348.590484915269
+          ],
+          "end_original_xy": [
+            1450.703794325943,
+            2373.9093164961578
+          ],
+          "length_original_px": 132.00000000000003,
+          "stage": "free",
+          "point_status_counts": {
+            "ambiguous_gap": 1,
+            "heatmap_supported": 20,
+            "image_supported": 2
+          },
+          "nearest_actual_S1_segment_median_distance_px": 7.352038320996487,
+          "nearest_actual_S1_segment_max_distance_px": 18.46978569426465,
+          "S1_actual_coverage_fraction_within_8px": 0.6521739130434783,
+          "S1_actual_coverage_fraction_within_12px": 0.782608695652174
+        },
+        {
+          "start_path_index": 230,
+          "end_path_index": 243,
+          "start_original_xy": [
+            1486.0353538499726,
+            2380.8144523818546
+          ],
+          "end_original_xy": [
+            1562.587066152037,
+            2395.775580134198
+          ],
+          "length_original_px": 78.0,
+          "stage": "free",
+          "point_status_counts": {
+            "heatmap_supported": 12,
+            "image_supported": 2
+          },
+          "nearest_actual_S1_segment_median_distance_px": 42.95751873497073,
+          "nearest_actual_S1_segment_max_distance_px": 81.95750230966433,
+          "S1_actual_coverage_fraction_within_8px": 0.07142857142857142,
+          "S1_actual_coverage_fraction_within_12px": 0.14285714285714285
+        },
+        {
+          "start_path_index": 259,
+          "end_path_index": 283,
+          "start_original_xy": [
+            1656.8045582161167,
+            2414.1892758293898
+          ],
+          "end_original_xy": [
+            1798.1307963122358,
+            2441.8098193721776
+          ],
+          "length_original_px": 143.99999999999997,
+          "stage": "free",
+          "point_status_counts": {
+            "heatmap_supported": 23,
+            "image_supported": 2
+          },
+          "nearest_actual_S1_segment_median_distance_px": 249.9574902736967,
+          "nearest_actual_S1_segment_max_distance_px": 321.9574889606073,
+          "S1_actual_coverage_fraction_within_8px": 0.0,
+          "S1_actual_coverage_fraction_within_12px": 0.0
+        },
+        {
+          "start_path_index": 292,
+          "end_path_index": 363,
+          "start_original_xy": [
+            1851.1281355982806,
+            2452.167523200723
+          ],
+          "end_original_xy": [
+            2269.218256632633,
+            2533.8782978481368
+          ],
+          "length_original_px": 425.99999999999966,
+          "stage": "free",
+          "point_status_counts": {
+            "ambiguous_gap": 48,
+            "heatmap_supported": 23,
+            "image_supported": 1
+          },
+          "nearest_actual_S1_segment_median_distance_px": 588.957486894077,
+          "nearest_actual_S1_segment_max_distance_px": 801.957486232145,
+          "S1_actual_coverage_fraction_within_8px": 0.0,
+          "S1_actual_coverage_fraction_within_12px": 0.0
+        }
+      ],
+      "S1_valid": true,
+      "S1_status": "PARTIAL",
+      "S1_endpoint_original_xy": [
+        1482.1617431640625,
+        2380.002197265625
+      ],
+      "S1_supported_sample_count": 299,
+      "S1_current_seed": [
+        [
+          130.58832548188693,
+          2121.792476196696
+        ],
+        [
+          248.50831370471724,
+          2144.0382932760385
+        ]
+      ],
+      "S1_record_sha256": "eb5873ffbf0c31fa1c765f80ea39f8a128f9735eca7500ea50ee7cb16d2dd4c1"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "scope": "R19 SG5/BG11/CG2 raw-video front-end smoke only; F3/d/count not run",
+  "packaged_modules": {
+    "live_s1_tracker_anchored": "src/RopeEdgeSuite_R1_20261107/baseline/source/LC1_fixed_d2238p7_full_20261106_v1/live_s1_tracker_anchored.py",
+    "lc1_s1_adapter": "src/RopeEdgeSuite_R1_20261107/baseline/source/LC1_locked_column_20261105_v1/lc1_s1_adapter.py",
+    "live_s1_tracker": "src/RopeEdgeSuite_R1_20261107/baseline/source/LC1_fixed_d2238p7_full_20261106_v1/live_s1_tracker.py",
+    "tracker_sg2": "src/RopeEdgeSuite_R12_20261109/tracker_sg2.py",
+    "tracker_sg3": "src/RopeEdgeSuite_R15_20261109/tracker_sg3.py",
+    "tracker_sg5": "src/RopeEdgeSuite_R19_20261110/tracker_sg5.py",
+    "boundary_bg9": "src/RopeEdgeSuite_R19_20261110/boundary_bg9.py",
+    "boundary_bg10": "src/RopeEdgeSuite_R19_20261110/boundary_bg10.py",
+    "boundary_bg11": "src/RopeEdgeSuite_R19_20261110/boundary_bg11.py",
+    "camera_cg2": "src/RopeEdgeSuite_R19_20261110/camera_cg2.py",
+    "region_bg5_refined": "src/RopeEdgeSuite_R11_20261108/region_bg5_refined.py",
+    "engine": "src/RopeEdgeSuite_R19_20261110/engine.py",
+    "lc1_p1_adapter": "src/RopeEdgeSuite_R1_20261107/baseline/source/LC1_locked_column_20261105_v1/lc1_p1_adapter.py",
+    "_lc1_p1_entry_unet": "src/RopeEdgeSuite_R1_20261107/baseline/source/LC1_locked_column_20261105_v1/p1_runtime/source_archive/experiments/entry_conditioned_rope_path/model.py",
+    "_lc1_p1_A7": "src/RopeEdgeSuite_R1_20261107/baseline/source/LC1_locked_column_20261105_v1/p1_runtime/source_archive/数据资产/05_派生与实验结果/camera_condition_free_straight_20261030_v7/straight_detector.py",
+    "_lc1_p1_H6": "src/RopeEdgeSuite_R1_20261107/baseline/source/LC1_locked_column_20261105_v1/p1_runtime/source_archive/experiments/entry_conditioned_rope_path/postprocess_b_20261031_v6/run_h6.py",
+    "common": "src/RopeEdgeSuite_R19_20261110/common.py",
+    "_lc1_p1_current_f3": "src/RopeEdgeSuite_R1_20261107/baseline/source/LC1_locked_column_20261105_v1/vendor_archive/f3_core_adapter.py",
+    "_lc1_frozen_f3_surface_observation": "src/RopeEdgeSuite_R1_20261107/baseline/source/LC1_locked_column_20261105_v1/vendor_archive/source_archive/数据资产/05_派生与实验结果/camera_condition_full_surface_joint_20261028_v3/surface_observation.py",
+    "f3_surface_frozen_normalization": "src/RopeEdgeSuite_R1_20261107/baseline/source/LC1_locked_column_20261105_v1/vendor_archive/source_archive/数据资产/05_派生与实验结果/camera_condition_seam_joint_20261028_v2/seam_observation.py",
+    "f3_surface_frozen_shadow": "src/RopeEdgeSuite_R1_20261107/baseline/source/LC1_locked_column_20261105_v1/vendor_archive/source_archive/数据资产/05_派生与实验结果/camera_condition_dark_width_20261027_v4/shadow_width.py",
+    "f3_surface_frozen_period": "src/RopeEdgeSuite_R1_20261107/baseline/source/LC1_locked_column_20261105_v1/vendor_archive/source_archive/数据资产/05_派生与实验结果/camera_condition_dark_width_20261027_v4/period_guard.py",
+    "f3_surface_frozen_tracks": "src/RopeEdgeSuite_R1_20261107/baseline/source/LC1_locked_column_20261105_v1/vendor_archive/source_archive/数据资产/05_派生与实验结果/camera_condition_dark_width_20261027_v4/shadow_tracks.py",
+    "f3_surface_frozen_curves": "src/RopeEdgeSuite_R1_20261107/baseline/source/LC1_locked_column_20261105_v1/vendor_archive/source_archive/数据资产/05_派生与实验结果/camera_condition_dark_width_20261027_v4/ribbon_curves.py"
+  },
+  "frames": [
+    {
+      "frame": 0,
+      "tracking": false,
+      "boundary": false,
+      "algorithm_errors": []
+    },
+    {
+      "frame": 1,
+      "tracking": true,
+      "boundary": false,
+      "algorithm_errors": []
+    },
+    {
+      "frame": 2,
+      "tracking": true,
+      "boundary": true,
+      "algorithm_errors": []
+    }
+  ]
+}

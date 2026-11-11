@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "algorithm_name": "RopeEdgeSuite R23",
+  "chinese_name": "钢丝绳排绳边界、计数与换层时序融合算法",
+  "baseline_id": "RES23-1.0.0",
+  "status": "current_effective_research_baseline",
+  "freeze_date": "2026-11-11",
+  "path": "baselines/RES23-1.0.0",
+  "recommended_entry": "baselines/RES23-1.0.0/tools/baseline.py",
+  "tag": "res23-baseline-v1.0.0",
+  "verified_scope": {"videos": 11, "frames": 4819, "behavior_tests": 45},
+  "motor_method": "CPL1 + MFT2",
+  "physical_contact_certified": false,
+  "motor_actuation_enabled": false,
+  "historical_catalog": "VERSION_CATALOG.md",
+  "historical_sources": "source_archive/",
+  "policy": "Keep frozen baseline immutable; publish subsequent experiments separately and promote explicitly after regression review."
+}

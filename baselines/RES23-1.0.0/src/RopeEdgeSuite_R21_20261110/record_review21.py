@@ -1,0 +1,35 @@
+"""Record the actual human-readable image inspections performed in this task."""
+from common21 import *
+entries=[
+    dict(id='dual_20260924_111143__right',frames=[30,60,90,120],kind='original_crop_and_F3_crossings',
+        finding='当前动态列与可见入卷区域相符。实测绳沟 3/2/1/0 条与几何距离 4.58/2.82/1.71/0.99 分开标注；不将缺失绳沟冒充实测。'),
+    dict(id='dual_20260924_111500__left',frames=[240,245,247,249,255,260,270,280,290],kind='original_crop_and_F3_crossings',
+        finding='24.6–25.0 秒首列投影重叠候选与人工 24.7 秒相近。局部边界部分靠模型补足，不能独立确认实体跨层。'),
+    dict(id='dual_20260924_111500__right',frames=[240,247,255,290],kind='opposite_camera_context_only',
+        finding='另一相机看不到该侧入卷活动绳，未提供首根跨层的独立确认。此辅助查看未加入 11 视频统计。'),
+    dict(id='dual_20260923_113029__right',frames=[298],kind='rendered_overlay',
+        finding='卷面可见、入卷活动绳不在视野，保持距离未知；没有因新动态分支输出假计数。'),
+    dict(id='dual_20260925_161234__right',frames=[6],kind='rendered_overlay',
+        finding='9 帧短片保留源视频截断提示。0.6 秒为动态列条件估计，7 条观测绳沟，距离大于 5 圈；未误标已锁定 d。'),
+    dict(id='dual_20260923_113745__left',frames=[367],kind='rendered_overlay',
+        finding='活动绳接近边缘，工具在其下方遮挡卷面。边界补足仍显示蓝虚线，模型范围保留，未把近边事件当实体接触。'),
+    dict(id='dual_20260923_113029__left',frames=[447],kind='rendered_overlay',
+        finding='活动绳离边明显较远，当前 F3 相位链与 23 条观测绳沟一致；保持远离边缘状态。'),
+    dict(id='dual_20260923_101517__right',frames=[578],kind='rendered_overlay',
+        finding='原图已经接近最外侧绳列；连续近边事件起点 57.3 秒与原 R20 的 57.5 秒段相近。保留几何误差范围，未确认实体接触。'),
+    dict(id='dual_20260923_101643__right',frames=[300],kind='rendered_overlay',
+        finding='活动绳明显离边，F3 间距和曲线与卷面相符；保持大于 5 圈，不产生新近边事件。'),
+    dict(id='dual_20260925_232941__right',frames=[8],kind='rendered_overlay',
+        finding='短片动态列显示约 2.3 圈、2 条实际绳沟，保留未锁定 d 和截断提示；未产生跨层或贴边确认。'),
+    dict(id='dual_20260925_212641__right',frames=[3],kind='rendered_overlay',
+        finding='仅 4 帧，当前局部诊断可见但未满足动态计数预热，主计数仍未知。'),
+    dict(id='dual_20260924_111143__right',frames=[60],kind='rendered_overlay',
+        finding='白虚线动态列、原图还原及两条实际观测绳沟正确显示。当前原始值 2.82，原有 3 秒平滑器输出 3.63，处于模型范围内；记录平滑延迟，未将平滑数字称为直接实测根数。'),
+    dict(id='dual_20260923_113305__right',frames=[586],kind='rendered_overlay',
+        finding='活动绳近边，原单帧近边提示保留；连续事件仍在等待多帧确认，未提前声明实体接触。'),
+    dict(id='dual_20260924_111143__right',frames=[140],kind='rendered_overlay',
+        finding='剩余未知帧的实例：当前局部近边诊断仍在，但动态主计数因短段支撑不连续未通过。画面保留单帧近边证据，未将缺测归为已经离开。'),
+    dict(id='dual_20260924_111500__left',frames=[249,290,310],kind='final_events_B_rendered_overlay',
+        finding='最终事件文字已核对：24.9 秒近边（起点 24.6），29.0 秒持续回升、正在离开，31.0 秒继续离开。计数和 F3 曲线保持不变。首列重叠仅为候选，未误标实体换层。')]
+if __name__=='__main__':
+    dump(ROOT/'visual_review.json',dict(scope='selected critical frames and negative controls; not exhaustive framewise physical truth',entries=entries,physical_layer_truth_established=False))

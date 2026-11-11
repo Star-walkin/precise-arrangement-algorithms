@@ -1,0 +1,318 @@
+{
+  "date": "2026-11-11",
+  "passed": true,
+  "frozen_source_files": 614,
+  "frozen_source_matches_original": true,
+  "behavioral_tests": 45,
+  "example_replay_frames": 601,
+  "example_all_outputs_equal": true,
+  "frontend_raw_frames": 3,
+  "frontend_packaged_modules": 24,
+  "original_full_video_audit_frames": 4819,
+  "original_full_video_audit_videos": 11,
+  "full_raw_video_recomputed_during_packaging": false,
+  "documentation_links": 75,
+  "historical_archive_unchanged": true,
+  "links": [
+    {
+      "document": "README.md",
+      "target": "baselines/RES23-1.0.0/README.md"
+    },
+    {
+      "document": "README.md",
+      "target": "baselines/RES23-1.0.0/docs/ALGORITHM.md"
+    },
+    {
+      "document": "README.md",
+      "target": "baselines/RES23-1.0.0/docs/USAGE.md"
+    },
+    {
+      "document": "README.md",
+      "target": "baselines/RES23-1.0.0/docs/VALIDATION.md"
+    },
+    {
+      "document": "README.md",
+      "target": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md"
+    },
+    {
+      "document": "README.md",
+      "target": "CURRENT_BASELINE.json"
+    },
+    {
+      "document": "README.md",
+      "target": "history/README.md"
+    },
+    {
+      "document": "README.md",
+      "target": "baselines/RES23-1.0.0/evidence/figures/count_period.png"
+    },
+    {
+      "document": "README.md",
+      "target": "baselines/RES23-1.0.0/evidence/figures/111500_24.9s.jpg"
+    },
+    {
+      "document": "README.md",
+      "target": "baselines/RES23-1.0.0/evidence/figures/111500_31.1s.jpg"
+    },
+    {
+      "document": "README.md",
+      "target": "baselines/RES23-1.0.0/evidence/figures/second_cycle.png"
+    },
+    {
+      "document": "README.md",
+      "target": "baselines/RES23-1.0.0/docs/VALIDATION.md"
+    },
+    {
+      "document": "README.md",
+      "target": "baselines/RES23-1.0.0/docs/USAGE.md"
+    },
+    {
+      "document": "README.md",
+      "target": "history/README_20261103.md"
+    },
+    {
+      "document": "history/README.md",
+      "target": "../baselines/RES23-1.0.0/README.md"
+    },
+    {
+      "document": "history/README.md",
+      "target": "../VERSION_CATALOG.md"
+    },
+    {
+      "document": "history/README.md",
+      "target": "../version_catalog.json"
+    },
+    {
+      "document": "history/README.md",
+      "target": "../PUBLISH_MANIFEST.json"
+    },
+    {
+      "document": "history/README.md",
+      "target": "../source_archive/"
+    },
+    {
+      "document": "history/README.md",
+      "target": "README_20261103.md"
+    },
+    {
+      "document": "history/README.md",
+      "target": "../exclusion_notes.md"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/README.md",
+      "target": "../../README.md"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/README.md",
+      "target": "docs/ALGORITHM.md"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/README.md",
+      "target": "docs/USAGE.md"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/README.md",
+      "target": "docs/VALIDATION.md"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/README.md",
+      "target": "docs/SOURCE_MAP.md"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/README.md",
+      "target": "src/"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/README.md",
+      "target": "source_inventory.json"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/README.md",
+      "target": "package_manifest.json"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/README.md",
+      "target": "tools/baseline.py"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/README.md",
+      "target": "examples/dual_20260924_111500__left/"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/README.md",
+      "target": "evidence/"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/README.md",
+      "target": "environment-tested.json"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md",
+      "target": "../source_inventory.json"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md",
+      "target": "../src/RopeEdgeSuite_R19_20261110/engine.py"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md",
+      "target": "../src/RopeEdgeSuite_R1_20261107/baseline/source/LC1_locked_column_20261105_v1/"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md",
+      "target": "../src/RopeEdgeSuite_R19_20261110/tracker_sg5.py"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md",
+      "target": "../src/RopeEdgeSuite_R12_20261109/tracker_sg2.py"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md",
+      "target": "../src/RopeEdgeSuite_R15_20261109/tracker_sg3.py"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md",
+      "target": "../src/RopeEdgeSuite_R19_20261110/boundary_bg11.py"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md",
+      "target": "../src/RopeEdgeSuite_R1_20261107/transfer_engine.py"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md",
+      "target": "../src/RopeEdgeSuite_R20_20261110/groups20.py"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md",
+      "target": "../src/RopeEdgeSuite_R20_20261110/roi22.py"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md",
+      "target": "../src/RopeEdgeSuite_R20_20261110/region_fragments24.py"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md",
+      "target": "../src/RopeEdgeSuite_R20_20261110/coil_edge_axis_v4.py"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md",
+      "target": "../src/RopeEdgeSuite_R20_20261110/tangent_column.py"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md",
+      "target": "../src/RopeEdgeSuite_R20_20261110/calibrate_guard.py"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md",
+      "target": "../src/RopeEdgeSuite_R20_20261110/count20.py"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md",
+      "target": "../src/RopeEdgeSuite_R21_20261110/measurement21b.py"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md",
+      "target": "../src/RopeEdgeSuite_R21_20261110/events21b.py"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md",
+      "target": "../src/RopeEdgeSuite_R22_20261111/events22.py"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md",
+      "target": "../src/RopeEdgeSuite_R22_20261111/rotation22.py"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md",
+      "target": "../src/RopeEdgeSuite_R23_20261111/period23.py"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md",
+      "target": "../src/RopeEdgeSuite_R23_20261111/fusion23.py"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md",
+      "target": "../src/RopeEdgeSuite_R23_20261111/run23.py"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md",
+      "target": "../src/RopeEdgeSuite_R23_20261111/render23.py"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md",
+      "target": "../src/RopeEdgeSuite_R23_20261111/audit23.py"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md",
+      "target": "../evidence/R20/release_manifest.json"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md",
+      "target": "../evidence/R21/release_manifest.json"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md",
+      "target": "../evidence/R22/release_manifest.json"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/SOURCE_MAP.md",
+      "target": "../evidence/R23/release_manifest.json"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/USAGE.md",
+      "target": "../environment-tested.json"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/USAGE.md",
+      "target": "../source_inventory.json"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/VALIDATION.md",
+      "target": "../evidence/R23/regression_audit.json"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/VALIDATION.md",
+      "target": "../evidence/R23/final_verification.json"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/VALIDATION.md",
+      "target": "../evidence/frontend_packaging_check.json"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/VALIDATION.md",
+      "target": "../evidence/video_results.json"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/VALIDATION.md",
+      "target": "../evidence/R23/evaluation.json"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/VALIDATION.md",
+      "target": "../evidence/figure_provenance.json"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/VALIDATION.md",
+      "target": "../evidence/figures/111500_20.0s.jpg"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/VALIDATION.md",
+      "target": "../evidence/figures/111500_30.4s.jpg"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/VALIDATION.md",
+      "target": "../evidence/figures/all_0.jpg"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/VALIDATION.md",
+      "target": "../evidence/figures/all_1.jpg"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/VALIDATION.md",
+      "target": "../evidence/figures/all_2.jpg"
+    },
+    {
+      "document": "baselines/RES23-1.0.0/docs/VALIDATION.md",
+      "target": "../evidence/figures/all_3.jpg"
+    }
+  ]
+}

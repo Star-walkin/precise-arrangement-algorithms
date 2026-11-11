@@ -1,0 +1,15 @@
+{
+  "date_local": "2026-11-04",
+  "method_id": "IR-GRAD-S1.0.0",
+  "input_source_count": 292,
+  "entry_condition": "frozen E1 index 0, first point toward second point",
+  "pilot_003_audit": "C:\\precise_arrangement_results\\straight_gradient_20261104_v1\\pilot_003\\audit_receipt.json",
+  "pilot_003_audit_exit_code": 0,
+  "configuration_sha256": "5012158ff079297ef8f1f7c592accee56bc44a95e175330bc07ebbd54e6732c3",
+  "core_sha256": "2f2dc6d08a53a068bcefcd1f80423e84b91fee53140316f30d32414ffccbd700",
+  "runner_sha256": "3d442409184302e06f30640d4afb5bcc001b35ebfe0598d3c3f1f41032c25e91",
+  "inputs_sha256": "69f37567c378717d76a4fb660fb83891ca7af3e1d250c9e43c7065d2b8093850",
+  "pilot_revision_record": "revision_pilot003.md",
+  "no_network_labels_reserved_media_or_devices": true,
+  "decision": "Run all 292 fixed open source images without per-image parameter selection"
+}

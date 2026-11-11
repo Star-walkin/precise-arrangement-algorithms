@@ -1,0 +1,33 @@
+{
+  "cases": [
+    {
+      "free_count": 200,
+      "curve_count": 40,
+      "old_reason": "turn_localization_uncertain",
+      "new_reason": "conditional_observed_geometry_passed",
+      "valid": true,
+      "d": 720.0,
+      "uncertainty_px": 6.666666666666629
+    },
+    {
+      "free_count": 800,
+      "curve_count": 40,
+      "old_reason": "straight_path",
+      "new_reason": "conditional_observed_geometry_passed",
+      "valid": true,
+      "d": 720.0,
+      "uncertainty_px": 6.666666666666629
+    },
+    {
+      "free_count": 1600,
+      "curve_count": 40,
+      "old_reason": "straight_path",
+      "new_reason": "conditional_observed_geometry_passed",
+      "valid": true,
+      "d": 720.0,
+      "uncertainty_px": 6.666666666666629
+    }
+  ],
+  "no_fill_and_straight_and_no_connection_gates_passed": true,
+  "note": "Analytic synthetic checks validate implementation behavior, not real-video accuracy."
+}

@@ -1,0 +1,134 @@
+[
+  {
+    "case": "left111500",
+    "frame": 0,
+    "kind": "straight_free_to_F3_center_track",
+    "actual_gap_px": 434.9272874153478,
+    "S1_coverage_free": 0.5889212827988338,
+    "free_union": 0.6676384839650146,
+    "turn": "straight_path",
+    "seconds": 17.117403600132093,
+    "D4_seconds": 11.95441050012596
+  },
+  {
+    "case": "left111500",
+    "frame": 15,
+    "kind": "straight_free_to_F3_center_track",
+    "actual_gap_px": 143.99999999999986,
+    "S1_coverage_free": 0.8765432098765432,
+    "free_union": 0.9166666666666666,
+    "turn": "straight_path",
+    "seconds": 17.196425899863243,
+    "D4_seconds": 11.779842999996617
+  },
+  {
+    "case": "left111500",
+    "frame": 30,
+    "kind": "straight_free_to_F3_center_track",
+    "actual_gap_px": 225.05134788451574,
+    "S1_coverage_free": 0.5567010309278351,
+    "free_union": 0.8247422680412371,
+    "turn": "turn_localization_uncertain",
+    "seconds": 16.38491029990837,
+    "D4_seconds": 11.03259319998324
+  },
+  {
+    "case": "left111500",
+    "frame": 45,
+    "kind": "straight_free_to_F3_center_track",
+    "actual_gap_px": 138.0000000000001,
+    "S1_coverage_free": 0.759075907590759,
+    "free_union": 0.8778877887788779,
+    "turn": "straight_path",
+    "seconds": 16.284393799956888,
+    "D4_seconds": 11.025039700092748
+  },
+  {
+    "case": "left111500",
+    "frame": 60,
+    "kind": "straight_free_to_F3_center_track",
+    "actual_gap_px": 178.6832132502271,
+    "S1_coverage_free": 0.9439655172413793,
+    "free_union": 0.9482758620689655,
+    "turn": "straight_path",
+    "seconds": 16.28502229996957,
+    "D4_seconds": 10.999406900024042
+  },
+  {
+    "case": "left111500",
+    "frame": 75,
+    "kind": "free_fragment_no_resolved_connection",
+    "actual_gap_px": 84.00000000000003,
+    "S1_coverage_free": 0.9548387096774194,
+    "free_union": 1.0,
+    "turn": "straight_path",
+    "seconds": 15.67471250006929,
+    "D4_seconds": 10.6437816999387
+  },
+  {
+    "case": "right113305",
+    "frame": 240,
+    "kind": "straight_free_to_F3_center_track",
+    "actual_gap_px": 474.67515902930484,
+    "S1_coverage_free": 0.21548821548821548,
+    "free_union": 0.5858585858585859,
+    "turn": "straight_path",
+    "seconds": 18.839670300018042,
+    "D4_seconds": 12.734105600044131
+  },
+  {
+    "case": "right113305",
+    "frame": 270,
+    "kind": "free_fragment_no_resolved_connection",
+    "actual_gap_px": 0.0,
+    "S1_coverage_free": 1.0,
+    "free_union": 1.0,
+    "turn": "straight_path",
+    "seconds": 18.21622439986095,
+    "D4_seconds": 12.554028799990192
+  },
+  {
+    "case": "right113305",
+    "frame": 300,
+    "kind": "free_fragment_no_resolved_connection",
+    "actual_gap_px": 330.0000000000004,
+    "S1_coverage_free": 0.42758620689655175,
+    "free_union": 0.8344827586206897,
+    "turn": "straight_path",
+    "seconds": 17.419699999969453,
+    "D4_seconds": 11.653736099833623
+  },
+  {
+    "case": "right113305",
+    "frame": 330,
+    "kind": "free_fragment_no_resolved_connection",
+    "actual_gap_px": 383.99999999999966,
+    "S1_coverage_free": 0.425531914893617,
+    "free_union": 0.7872340425531915,
+    "turn": "straight_path",
+    "seconds": 17.300370999844745,
+    "D4_seconds": 11.278154999949038
+  },
+  {
+    "case": "right113305",
+    "frame": 360,
+    "kind": "free_fragment_no_resolved_connection",
+    "actual_gap_px": 78.00000000000001,
+    "S1_coverage_free": 1.0,
+    "free_union": 1.0,
+    "turn": "straight_path",
+    "seconds": 16.11452340008691,
+    "D4_seconds": 10.547988299978897
+  },
+  {
+    "case": "right113305",
+    "frame": 390,
+    "kind": "free_fragment_no_resolved_connection",
+    "actual_gap_px": 24.000000000000064,
+    "S1_coverage_free": 1.0,
+    "free_union": 1.0,
+    "turn": "straight_path",
+    "seconds": 16.172998500056565,
+    "D4_seconds": 10.534610599977896
+  }
+]

@@ -1,0 +1,633 @@
+{
+  "scope": "posthoc_gate_scope_audit_only_no_new_observations",
+  "original_probe_adapter_sha256": "c4d439cd38c3c6b693ef048353a8b779f9e27c104f4f068287f34cc14f86a6ef",
+  "current_adapter_sha256": "5768fb4809c43023166386f7d6e519fff91be15529ac17c3811da30da6716300",
+  "thresholds_changed": false,
+  "correction": "exclude leading input entry_condition from evidence denominator and maximum gap; its rendering remains unsupported and it adds no observed length",
+  "original_frames_jsonl_sha256": "4a52035564b525727d43f57f9af62d9d87e1d4dab729e32a6382deecce816d46",
+  "rows": [
+    {
+      "case": "left111500",
+      "frame_index": 30,
+      "original_whole_flag": false,
+      "scope_corrected_whole_flag": false,
+      "original_maximum_gap_px": 225.05134788451574,
+      "input_condition_point_count_excluded": 21,
+      "maximum_actual_gap_excluding_input_condition_px": 225.05134788451574,
+      "whole_path_support_checks": {
+        "evaluation_scope": "current_candidate_after_input_entry_condition",
+        "input_condition_point_count_excluded": 21,
+        "free": {
+          "point_count": 291,
+          "joint_fraction": 0.7903780068728522,
+          "observed_fraction": 0.7903780068728522,
+          "observed_length_original_px": 1367.9999999999995,
+          "joint_length_original_px": 1367.9999999999995,
+          "maximum_unsupported_run_original_px": 186.00000000000014
+        },
+        "transition": {
+          "point_count": 17,
+          "joint_fraction": 0.4117647058823529,
+          "observed_fraction": 0.4117647058823529,
+          "observed_length_original_px": 39.11037318824665,
+          "joint_length_original_px": 39.11037318824665,
+          "maximum_unsupported_run_original_px": 60.692505107585575
+        },
+        "surface": {
+          "point_count": 49,
+          "joint_fraction": 0.9795918367346939,
+          "observed_fraction": 0.9795918367346939,
+          "observed_length_original_px": 297.5608393766237,
+          "joint_length_original_px": 297.5608393766237,
+          "maximum_unsupported_run_original_px": 12.450014493231802
+        },
+        "genuine_H6_attached_candidate": true,
+        "maximum_unsupported_run_original_px": 225.05134788451574,
+        "maximum_allowed_unsupported_run_original_px": 92.39999999999999,
+        "branch_score_margin": 0.016033939686032284,
+        "cross_entry_score_margin": null,
+        "ambiguous": true,
+        "direction_selection_allowed": true
+      },
+      "reasons": [
+        "transition_current_joint_support_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate",
+        "H6_branch_or_A7_direction_ambiguous"
+      ],
+      "original_geometric_turn_valid": false,
+      "scope_corrected_admissible_for_d_lock": false
+    },
+    {
+      "case": "right113305",
+      "frame_index": 300,
+      "original_whole_flag": false,
+      "scope_corrected_whole_flag": false,
+      "original_maximum_gap_px": 330.00000000000034,
+      "input_condition_point_count_excluded": 20,
+      "maximum_actual_gap_excluding_input_condition_px": 330.0000000000004,
+      "whole_path_support_checks": {
+        "evaluation_scope": "current_candidate_after_input_entry_condition",
+        "input_condition_point_count_excluded": 20,
+        "free": {
+          "point_count": 290,
+          "joint_fraction": 0.4068965517241379,
+          "observed_fraction": 0.7206896551724138,
+          "observed_length_original_px": 1217.999999999999,
+          "joint_length_original_px": 666.0000000000001,
+          "maximum_unsupported_run_original_px": 330.0000000000004
+        },
+        "transition": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "surface": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "genuine_H6_attached_candidate": false,
+        "maximum_unsupported_run_original_px": 330.0000000000004,
+        "maximum_allowed_unsupported_run_original_px": 86.697,
+        "branch_score_margin": 26.089441457207244,
+        "cross_entry_score_margin": null,
+        "ambiguous": false,
+        "direction_selection_allowed": true
+      },
+      "reasons": [
+        "H6_did_not_select_an_image_eligible_legal_curve_connection",
+        "free_current_joint_support_insufficient",
+        "transition_current_joint_support_insufficient",
+        "surface_current_joint_support_insufficient",
+        "curve_current_joint_length_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "original_geometric_turn_valid": false,
+      "scope_corrected_admissible_for_d_lock": false
+    },
+    {
+      "case": "left111500",
+      "frame_index": 0,
+      "original_whole_flag": false,
+      "scope_corrected_whole_flag": false,
+      "original_maximum_gap_px": 434.92728741534796,
+      "input_condition_point_count_excluded": 21,
+      "maximum_actual_gap_excluding_input_condition_px": 434.9272874153478,
+      "whole_path_support_checks": {
+        "evaluation_scope": "current_candidate_after_input_entry_condition",
+        "input_condition_point_count_excluded": 21,
+        "free": {
+          "point_count": 343,
+          "joint_fraction": 0.6297376093294461,
+          "observed_fraction": 0.6297376093294461,
+          "observed_length_original_px": 1272.0000000000002,
+          "joint_length_original_px": 1272.0000000000002,
+          "maximum_unsupported_run_original_px": 426.0
+        },
+        "transition": {
+          "point_count": 4,
+          "joint_fraction": 1.0,
+          "observed_fraction": 1.0,
+          "observed_length_original_px": 28.875814908152556,
+          "joint_length_original_px": 28.875814908152556,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "surface": {
+          "point_count": 34,
+          "joint_fraction": 0.5588235294117647,
+          "observed_fraction": 0.5588235294117647,
+          "observed_length_original_px": 117.76708394219727,
+          "joint_length_original_px": 117.76708394219727,
+          "maximum_unsupported_run_original_px": 65.23725363938891
+        },
+        "genuine_H6_attached_candidate": true,
+        "maximum_unsupported_run_original_px": 434.9272874153478,
+        "maximum_allowed_unsupported_run_original_px": 92.4,
+        "branch_score_margin": 0.07120900796097374,
+        "cross_entry_score_margin": null,
+        "ambiguous": false,
+        "direction_selection_allowed": true
+      },
+      "reasons": [
+        "free_current_observed_fraction_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "original_geometric_turn_valid": false,
+      "scope_corrected_admissible_for_d_lock": false
+    },
+    {
+      "case": "left111500",
+      "frame_index": 15,
+      "original_whole_flag": false,
+      "scope_corrected_whole_flag": false,
+      "original_maximum_gap_px": 143.9999999999999,
+      "input_condition_point_count_excluded": 21,
+      "maximum_actual_gap_excluding_input_condition_px": 143.99999999999986,
+      "whole_path_support_checks": {
+        "evaluation_scope": "current_candidate_after_input_entry_condition",
+        "input_condition_point_count_excluded": 21,
+        "free": {
+          "point_count": 324,
+          "joint_fraction": 0.7129629629629629,
+          "observed_fraction": 0.8055555555555556,
+          "observed_length_original_px": 1542.0,
+          "joint_length_original_px": 1343.9999999999995,
+          "maximum_unsupported_run_original_px": 143.99999999999986
+        },
+        "transition": {
+          "point_count": 15,
+          "joint_fraction": 0.4666666666666667,
+          "observed_fraction": 0.4666666666666667,
+          "observed_length_original_px": 35.43954053272789,
+          "joint_length_original_px": 35.43954053272789,
+          "maximum_unsupported_run_original_px": 49.97080687757982
+        },
+        "surface": {
+          "point_count": 45,
+          "joint_fraction": 0.5777777777777777,
+          "observed_fraction": 0.5777777777777777,
+          "observed_length_original_px": 144.82150061032803,
+          "joint_length_original_px": 144.82150061032803,
+          "maximum_unsupported_run_original_px": 46.067485541604874
+        },
+        "genuine_H6_attached_candidate": true,
+        "maximum_unsupported_run_original_px": 143.99999999999986,
+        "maximum_allowed_unsupported_run_original_px": 98.89999999999999,
+        "branch_score_margin": 0.056910798672667795,
+        "cross_entry_score_margin": null,
+        "ambiguous": false,
+        "direction_selection_allowed": true
+      },
+      "reasons": [
+        "transition_current_joint_support_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "original_geometric_turn_valid": false,
+      "scope_corrected_admissible_for_d_lock": false
+    },
+    {
+      "case": "left111500",
+      "frame_index": 45,
+      "original_whole_flag": false,
+      "scope_corrected_whole_flag": false,
+      "original_maximum_gap_px": 138.00000000000009,
+      "input_condition_point_count_excluded": 20,
+      "maximum_actual_gap_excluding_input_condition_px": 138.0000000000001,
+      "whole_path_support_checks": {
+        "evaluation_scope": "current_candidate_after_input_entry_condition",
+        "input_condition_point_count_excluded": 20,
+        "free": {
+          "point_count": 303,
+          "joint_fraction": 0.7887788778877888,
+          "observed_fraction": 0.8415841584158416,
+          "observed_length_original_px": 1506.0000000000002,
+          "joint_length_original_px": 1398.0000000000005,
+          "maximum_unsupported_run_original_px": 138.0000000000001
+        },
+        "transition": {
+          "point_count": 25,
+          "joint_fraction": 0.36,
+          "observed_fraction": 0.36,
+          "observed_length_original_px": 39.22398514249733,
+          "joint_length_original_px": 39.22398514249733,
+          "maximum_unsupported_run_original_px": 112.00098773827024
+        },
+        "surface": {
+          "point_count": 41,
+          "joint_fraction": 0.8780487804878049,
+          "observed_fraction": 0.8780487804878049,
+          "observed_length_original_px": 227.47012913905144,
+          "joint_length_original_px": 227.47012913905144,
+          "maximum_unsupported_run_original_px": 30.74349827403929
+        },
+        "genuine_H6_attached_candidate": true,
+        "maximum_unsupported_run_original_px": 138.0000000000001,
+        "maximum_allowed_unsupported_run_original_px": 100.0,
+        "branch_score_margin": 0.07562786114100106,
+        "cross_entry_score_margin": null,
+        "ambiguous": false,
+        "direction_selection_allowed": true
+      },
+      "reasons": [
+        "transition_current_joint_support_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "original_geometric_turn_valid": false,
+      "scope_corrected_admissible_for_d_lock": false
+    },
+    {
+      "case": "left111500",
+      "frame_index": 60,
+      "original_whole_flag": false,
+      "scope_corrected_whole_flag": false,
+      "original_maximum_gap_px": 178.68321325022703,
+      "input_condition_point_count_excluded": 21,
+      "maximum_actual_gap_excluding_input_condition_px": 178.6832132502271,
+      "whole_path_support_checks": {
+        "evaluation_scope": "current_candidate_after_input_entry_condition",
+        "input_condition_point_count_excluded": 21,
+        "free": {
+          "point_count": 232,
+          "joint_fraction": 0.8189655172413793,
+          "observed_fraction": 0.8836206896551724,
+          "observed_length_original_px": 1212.0,
+          "joint_length_original_px": 1115.9999999999998,
+          "maximum_unsupported_run_original_px": 120.00000000000009
+        },
+        "transition": {
+          "point_count": 29,
+          "joint_fraction": 0.3448275862068966,
+          "observed_fraction": 0.3448275862068966,
+          "observed_length_original_px": 53.417020977133454,
+          "joint_length_original_px": 53.417020977133454,
+          "maximum_unsupported_run_original_px": 178.6832132502271
+        },
+        "surface": {
+          "point_count": 29,
+          "joint_fraction": 0.5172413793103449,
+          "observed_fraction": 0.5172413793103449,
+          "observed_length_original_px": 75.22146594174022,
+          "joint_length_original_px": 75.22146594174022,
+          "maximum_unsupported_run_original_px": 52.91164154775956
+        },
+        "genuine_H6_attached_candidate": true,
+        "maximum_unsupported_run_original_px": 178.6832132502271,
+        "maximum_allowed_unsupported_run_original_px": 99.9,
+        "branch_score_margin": 0.1302959733357909,
+        "cross_entry_score_margin": null,
+        "ambiguous": false,
+        "direction_selection_allowed": true
+      },
+      "reasons": [
+        "transition_current_joint_support_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "original_geometric_turn_valid": false,
+      "scope_corrected_admissible_for_d_lock": false
+    },
+    {
+      "case": "left111500",
+      "frame_index": 75,
+      "original_whole_flag": false,
+      "scope_corrected_whole_flag": false,
+      "original_maximum_gap_px": 126.00000000000003,
+      "input_condition_point_count_excluded": 21,
+      "maximum_actual_gap_excluding_input_condition_px": 84.00000000000003,
+      "whole_path_support_checks": {
+        "evaluation_scope": "current_candidate_after_input_entry_condition",
+        "input_condition_point_count_excluded": 21,
+        "free": {
+          "point_count": 155,
+          "joint_fraction": 0.7870967741935484,
+          "observed_fraction": 0.9354838709677419,
+          "observed_length_original_px": 840.0000000000002,
+          "joint_length_original_px": 684.0000000000003,
+          "maximum_unsupported_run_original_px": 84.00000000000003
+        },
+        "transition": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "surface": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "genuine_H6_attached_candidate": false,
+        "maximum_unsupported_run_original_px": 84.00000000000003,
+        "maximum_allowed_unsupported_run_original_px": 100.7,
+        "branch_score_margin": null,
+        "cross_entry_score_margin": null,
+        "ambiguous": false,
+        "direction_selection_allowed": true
+      },
+      "reasons": [
+        "H6_did_not_select_an_image_eligible_legal_curve_connection",
+        "transition_current_joint_support_insufficient",
+        "surface_current_joint_support_insufficient",
+        "curve_current_joint_length_insufficient"
+      ],
+      "original_geometric_turn_valid": false,
+      "scope_corrected_admissible_for_d_lock": false
+    },
+    {
+      "case": "right113305",
+      "frame_index": 240,
+      "original_whole_flag": false,
+      "scope_corrected_whole_flag": false,
+      "original_maximum_gap_px": 474.6751590293043,
+      "input_condition_point_count_excluded": 21,
+      "maximum_actual_gap_excluding_input_condition_px": 474.67515902930484,
+      "whole_path_support_checks": {
+        "evaluation_scope": "current_candidate_after_input_entry_condition",
+        "input_condition_point_count_excluded": 21,
+        "free": {
+          "point_count": 297,
+          "joint_fraction": 0.265993265993266,
+          "observed_fraction": 0.5656565656565656,
+          "observed_length_original_px": 977.9999999999995,
+          "joint_length_original_px": 455.99999999999943,
+          "maximum_unsupported_run_original_px": 444.00000000000034
+        },
+        "transition": {
+          "point_count": 18,
+          "joint_fraction": 0.8333333333333334,
+          "observed_fraction": 0.8333333333333334,
+          "observed_length_original_px": 116.93073329792156,
+          "joint_length_original_px": 116.93073329792156,
+          "maximum_unsupported_run_original_px": 23.50751188560355
+        },
+        "surface": {
+          "point_count": 38,
+          "joint_fraction": 0.9473684210526315,
+          "observed_fraction": 0.9473684210526315,
+          "observed_length_original_px": 213.87139024723308,
+          "joint_length_original_px": 213.87139024723308,
+          "maximum_unsupported_run_original_px": 12.410228819269879
+        },
+        "genuine_H6_attached_candidate": true,
+        "maximum_unsupported_run_original_px": 474.67515902930484,
+        "maximum_allowed_unsupported_run_original_px": 80.0,
+        "branch_score_margin": 0.09146718775311058,
+        "cross_entry_score_margin": null,
+        "ambiguous": false,
+        "direction_selection_allowed": true
+      },
+      "reasons": [
+        "free_current_joint_support_insufficient",
+        "free_current_observed_fraction_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "original_geometric_turn_valid": false,
+      "scope_corrected_admissible_for_d_lock": false
+    },
+    {
+      "case": "right113305",
+      "frame_index": 270,
+      "original_whole_flag": false,
+      "scope_corrected_whole_flag": false,
+      "original_maximum_gap_px": 119.99999999999977,
+      "input_condition_point_count_excluded": 10,
+      "maximum_actual_gap_excluding_input_condition_px": 0.0,
+      "whole_path_support_checks": {
+        "evaluation_scope": "current_candidate_after_input_entry_condition",
+        "input_condition_point_count_excluded": 10,
+        "free": {
+          "point_count": 55,
+          "joint_fraction": 0.12727272727272726,
+          "observed_fraction": 1.0,
+          "observed_length_original_px": 648.0000000000003,
+          "joint_length_original_px": 48.00000000000066,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "transition": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "surface": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "genuine_H6_attached_candidate": false,
+        "maximum_unsupported_run_original_px": 0.0,
+        "maximum_allowed_unsupported_run_original_px": 80.0,
+        "branch_score_margin": null,
+        "cross_entry_score_margin": null,
+        "ambiguous": false,
+        "direction_selection_allowed": true
+      },
+      "reasons": [
+        "H6_did_not_select_an_image_eligible_legal_curve_connection",
+        "free_current_joint_support_insufficient",
+        "transition_current_joint_support_insufficient",
+        "surface_current_joint_support_insufficient",
+        "curve_current_joint_length_insufficient"
+      ],
+      "original_geometric_turn_valid": false,
+      "scope_corrected_admissible_for_d_lock": false
+    },
+    {
+      "case": "right113305",
+      "frame_index": 330,
+      "original_whole_flag": false,
+      "scope_corrected_whole_flag": false,
+      "original_maximum_gap_px": 383.9999999999997,
+      "input_condition_point_count_excluded": 11,
+      "maximum_actual_gap_excluding_input_condition_px": 383.99999999999966,
+      "whole_path_support_checks": {
+        "evaluation_scope": "current_candidate_after_input_entry_condition",
+        "input_condition_point_count_excluded": 11,
+        "free": {
+          "point_count": 141,
+          "joint_fraction": 0.4397163120567376,
+          "observed_fraction": 0.7021276595744681,
+          "observed_length_original_px": 1115.9999999999993,
+          "joint_length_original_px": 684.0,
+          "maximum_unsupported_run_original_px": 383.99999999999966
+        },
+        "transition": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "surface": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "genuine_H6_attached_candidate": false,
+        "maximum_unsupported_run_original_px": 383.99999999999966,
+        "maximum_allowed_unsupported_run_original_px": 84.60562500000002,
+        "branch_score_margin": 24.046505902149494,
+        "cross_entry_score_margin": null,
+        "ambiguous": false,
+        "direction_selection_allowed": true
+      },
+      "reasons": [
+        "H6_did_not_select_an_image_eligible_legal_curve_connection",
+        "free_current_joint_support_insufficient",
+        "transition_current_joint_support_insufficient",
+        "surface_current_joint_support_insufficient",
+        "curve_current_joint_length_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "original_geometric_turn_valid": false,
+      "scope_corrected_admissible_for_d_lock": false
+    },
+    {
+      "case": "right113305",
+      "frame_index": 360,
+      "original_whole_flag": false,
+      "scope_corrected_whole_flag": false,
+      "original_maximum_gap_px": 119.99999999999996,
+      "input_condition_point_count_excluded": 20,
+      "maximum_actual_gap_excluding_input_condition_px": 78.00000000000001,
+      "whole_path_support_checks": {
+        "evaluation_scope": "current_candidate_after_input_entry_condition",
+        "input_condition_point_count_excluded": 20,
+        "free": {
+          "point_count": 100,
+          "joint_fraction": 0.03,
+          "observed_fraction": 0.75,
+          "observed_length_original_px": 390.00000000000017,
+          "joint_length_original_px": 12.000000000000139,
+          "maximum_unsupported_run_original_px": 78.00000000000001
+        },
+        "transition": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "surface": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "genuine_H6_attached_candidate": false,
+        "maximum_unsupported_run_original_px": 78.00000000000001,
+        "maximum_allowed_unsupported_run_original_px": 82.65684375000004,
+        "branch_score_margin": null,
+        "cross_entry_score_margin": null,
+        "ambiguous": false,
+        "direction_selection_allowed": true
+      },
+      "reasons": [
+        "H6_did_not_select_an_image_eligible_legal_curve_connection",
+        "free_current_joint_support_insufficient",
+        "transition_current_joint_support_insufficient",
+        "surface_current_joint_support_insufficient",
+        "curve_current_joint_length_insufficient"
+      ],
+      "original_geometric_turn_valid": false,
+      "scope_corrected_admissible_for_d_lock": false
+    },
+    {
+      "case": "right113305",
+      "frame_index": 390,
+      "original_whole_flag": false,
+      "scope_corrected_whole_flag": false,
+      "original_maximum_gap_px": 119.99999999999979,
+      "input_condition_point_count_excluded": 10,
+      "maximum_actual_gap_excluding_input_condition_px": 24.000000000000064,
+      "whole_path_support_checks": {
+        "evaluation_scope": "current_candidate_after_input_entry_condition",
+        "input_condition_point_count_excluded": 10,
+        "free": {
+          "point_count": 54,
+          "joint_fraction": 0.018518518518518517,
+          "observed_fraction": 0.9629629629629629,
+          "observed_length_original_px": 588.0000000000002,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 24.000000000000064
+        },
+        "transition": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "surface": {
+          "point_count": 0,
+          "joint_fraction": 0.0,
+          "observed_fraction": 0.0,
+          "observed_length_original_px": 0.0,
+          "joint_length_original_px": 0.0,
+          "maximum_unsupported_run_original_px": 0.0
+        },
+        "genuine_H6_attached_candidate": false,
+        "maximum_unsupported_run_original_px": 24.000000000000064,
+        "maximum_allowed_unsupported_run_original_px": 80.0,
+        "branch_score_margin": null,
+        "cross_entry_score_margin": null,
+        "ambiguous": false,
+        "direction_selection_allowed": true
+      },
+      "reasons": [
+        "H6_did_not_select_an_image_eligible_legal_curve_connection",
+        "free_current_joint_support_insufficient",
+        "transition_current_joint_support_insufficient",
+        "surface_current_joint_support_insufficient",
+        "curve_current_joint_length_insufficient"
+      ],
+      "original_geometric_turn_valid": false,
+      "scope_corrected_admissible_for_d_lock": false
+    }
+  ],
+  "whole_supported_count": 0,
+  "admissible_for_d_lock_count": 0
+}

@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-11-05T02:14:54.865171+00:00",
+  "scope": "Synthetic execution only; no accuracy or full F3 fusion claim",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.5.4",
+  "opencv": "5.0.0",
+  "cv2_file": "E:\\study\\program\\济宁\\precise_arrangement\\.venv_lc1\\Lib\\site-packages\\cv2\\__init__.py",
+  "image_shape": [
+    640,
+    960,
+    3
+  ],
+  "pitch_original_px": 20.0,
+  "coordinate_system": "input_full_image_xy",
+  "mirrored": false,
+  "models_loaded": false,
+  "research_images_read": false,
+  "cases": [
+    {
+      "name": "empty_surface",
+      "status": "executed",
+      "points": 0,
+      "tracks": 0,
+      "accepted_curves": 0,
+      "source_image_unchanged": true
+    },
+    {
+      "name": "synthetic_periodic_surface",
+      "status": "executed",
+      "points": 4912,
+      "tracks": 25,
+      "accepted_curves": 25,
+      "source_image_unchanged": true
+    }
+  ]
+}

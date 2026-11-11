@@ -1,0 +1,85 @@
+{
+  "python": "E:\\study\\program\\济宁\\precise_arrangement\\.venv_lc1\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "model_sha256": "ed4bfa12c5b3081a19d056265b053d516bdba5ec05dce658e1e32339b47fb882",
+  "source_hashes": {
+    "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\lc1_p1_adapter.py": "c4d439cd38c3c6b693ef048353a8b779f9e27c104f4f068287f34cc14f86a6ef",
+    "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\lc1_s1_adapter.py": "d8f383d6f2a4132304fd81abfaa670b8774274a2e083845d58d7e7233759a914",
+    "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\lc1_geometry.py": "5fb6b1af03be62202c3c359b0c6ff93fbe5bf46c12ce86297790b78f108bce41",
+    "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\p1_runtime\\probe_multiframe.py": "a2d3122b78a6ba5da7995c909a5a45a0265d84c9bc6039d12ccc1807662796be"
+  },
+  "plan": [
+    {
+      "case": "left111500",
+      "frame_index": 30
+    },
+    {
+      "case": "right113305",
+      "frame_index": 300
+    },
+    {
+      "case": "left111500",
+      "frame_index": 0
+    },
+    {
+      "case": "left111500",
+      "frame_index": 15
+    },
+    {
+      "case": "left111500",
+      "frame_index": 45
+    },
+    {
+      "case": "left111500",
+      "frame_index": 60
+    },
+    {
+      "case": "left111500",
+      "frame_index": 75
+    },
+    {
+      "case": "right113305",
+      "frame_index": 240
+    },
+    {
+      "case": "right113305",
+      "frame_index": 270
+    },
+    {
+      "case": "right113305",
+      "frame_index": 330
+    },
+    {
+      "case": "right113305",
+      "frame_index": 360
+    },
+    {
+      "case": "right113305",
+      "frame_index": 390
+    }
+  ],
+  "surface_mode": "entry_band_explicit_8pitch_plus2pitch_halo_different_from_full",
+  "current_image_observations_only": true,
+  "historical_target_cache_read": false,
+  "source_metadata": {
+    "right113305": {
+      "camera": "right",
+      "source_video": "E:\\study\\program\\济宁\\双相机同步\\dual_20260923_113305\\right_DA9626975.avi",
+      "pitch_px": 23.975073059453344,
+      "surface_mask_sha256": "584048926b93ed43631890ac6627fb4fb134c15d7aed0722481a602b174d7423",
+      "pitch_record_sha256": "f25328e92fbfd86318a9f5f33b020a90fec2525e807dcd1686d110046ccd4dfc",
+      "source_fps": 10.0,
+      "source_frame_count": 600
+    },
+    "left111500": {
+      "camera": "left",
+      "source_video": "E:\\study\\program\\济宁\\双相机同步\\dual_20260924_111500\\left_DA9627065.avi",
+      "pitch_px": 23.29412648284868,
+      "surface_mask_sha256": "d1ad29c3d016e2863442bcb87338067f10ec0f0706e6876c781644ae7abfcb27",
+      "pitch_record_sha256": "9c1e70656ac1e1d0e96f7cb10d83710b72c00e2944879d9f45687c85969f22c9",
+      "source_fps": 10.0,
+      "source_frame_count": 601
+    }
+  },
+  "rows": []
+}

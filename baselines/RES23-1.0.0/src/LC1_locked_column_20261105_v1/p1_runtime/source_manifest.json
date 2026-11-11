@@ -1,0 +1,91 @@
+{
+  "repository": "Star-walkin/precise-arrangement-algorithms",
+  "commit_sha": "8d30826fbef2df423ccfc56047995e6194f12b6c",
+  "versions": [
+    "IR-P1.0.0 frozen B750",
+    "IR-H6.0.0",
+    "IR-A7.0.0"
+  ],
+  "weights": {
+    "path": "E:\\study\\program\\济宁\\临时文件\\step_0750.pt",
+    "sha256": "ed4bfa12c5b3081a19d056265b053d516bdba5ec05dce658e1e32339b47fb882",
+    "bytes": 562941
+  },
+  "files": [
+    {
+      "path": "source_archive/experiments/entry_conditioned_rope_path/model.py",
+      "git_blob_sha": "2f46ed69745fdb099b44ea051c4ab1a54b120b03",
+      "source_eol": "LF"
+    },
+    {
+      "path": "source_archive/experiments/entry_conditioned_rope_path/postprocess_b_20261031_v6/common.py",
+      "git_blob_sha": "666f433859878a6484732414e21cb2514073a4ce",
+      "source_eol": "LF"
+    },
+    {
+      "path": "source_archive/experiments/entry_conditioned_rope_path/postprocess_b_20261031_v6/surface_tracks.py",
+      "git_blob_sha": "1687003f1af6b7bc9b4acfd50aa7d971ad0cad23",
+      "source_eol": "LF"
+    },
+    {
+      "path": "source_archive/experiments/entry_conditioned_rope_path/postprocess_b_20261031_v6/heat_free.py",
+      "git_blob_sha": "383740ea6e9836bcd8535e76797fd9af30a54232",
+      "source_eol": "LF"
+    },
+    {
+      "path": "source_archive/experiments/entry_conditioned_rope_path/postprocess_b_20261031_v6/topology.py",
+      "git_blob_sha": "1a7e06cff6eb2c21c86e1148d11524b10e4791fa",
+      "source_eol": "LF"
+    },
+    {
+      "path": "source_archive/experiments/entry_conditioned_rope_path/postprocess_b_20261031_v6/connect_paths.py",
+      "git_blob_sha": "ee769e714dc73e9372e44dd1dee14644b192176a",
+      "source_eol": "LF"
+    },
+    {
+      "path": "source_archive/experiments/entry_conditioned_rope_path/postprocess_b_20261031_v6/run_h6.py",
+      "git_blob_sha": "9d4df77ccbc387ff35d13487b0e243cbc5122619",
+      "source_eol": "CRLF"
+    },
+    {
+      "path": "source_archive/experiments/entry_conditioned_rope_path/postprocess_b_20261030_v2/surface_tracks.py",
+      "git_blob_sha": "fcd9be0065fea9226940f52b30b9375f506a58ba",
+      "source_eol": "LF"
+    },
+    {
+      "path": "source_archive/experiments/entry_conditioned_rope_path/postprocess_b_20261030_v2/free_candidates.py",
+      "git_blob_sha": "87d622ab3a3abc701ab36c523f79a483bc22667f",
+      "source_eol": "LF"
+    },
+    {
+      "path": "source_archive/experiments/entry_conditioned_rope_path/postprocess_b_20261030_v2/connect_paths.py",
+      "git_blob_sha": "147d35c1031ddb0cc92fd7491cec203210af4aee",
+      "source_eol": "LF"
+    },
+    {
+      "path": "source_archive/数据资产/05_派生与实验结果/camera_condition_free_straight_20261030_v7/straight_detector.py",
+      "git_blob_sha": "912338c6ea8116075647dfb1db83e709bc160baa",
+      "source_eol": "LF"
+    },
+    {
+      "path": "source_archive/数据资产/05_派生与实验结果/camera_condition_free_straight_20261030_v7/free_rope.py",
+      "git_blob_sha": "f38a6da2ed778bc4344c8c2f8ef31bc7ff7c16b8",
+      "source_eol": "LF"
+    },
+    {
+      "path": "source_archive/数据资产/05_派生与实验结果/camera_condition_free_straight_20261030_v7/free_seed_recovery.py",
+      "git_blob_sha": "f2b253d4fd642b8bf57ea9cbca2c0f3f75622135",
+      "source_eol": "LF"
+    },
+    {
+      "path": "source_archive/数据资产/05_派生与实验结果/camera_condition_free_straight_20261030_v7/strand_signature.py",
+      "git_blob_sha": "6067e1839767cd5f7fa4e76c7d813e1fe9071e63",
+      "source_eol": "LF"
+    },
+    {
+      "path": "source_archive/数据资产/05_派生与实验结果/camera_condition_incoming_rope_20261026_v2/free_refinement.py",
+      "git_blob_sha": "97c029971a4a35f7a3041b8ade3db1c355274c6f",
+      "source_eol": "LF"
+    }
+  ]
+}

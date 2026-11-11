@@ -1,0 +1,42 @@
+{
+  "name_cn": "绳缘识别系统",
+  "name_en": "Rope Edge Suite",
+  "short_name": "RES-1.0",
+  "version": "1.0.0",
+  "date": "2026-11-07",
+  "stages": [
+    "P1/B750+A7/H6 current entry/reacquisition and diagnostic curved path",
+    "S1 original core + fixed-spatial-anchor causal tracker; S2 available diagnostic branch",
+    "BG1 current yellow flange/visible coil gate",
+    "supplied 01/F3 raw observations -> BG3 point classes/continuous curves -> BG4 local recovery/count",
+    "BG4 robust causal count/short prediction + fixed-background camera continuity",
+    "ECW-3 current local free rope/visible interface + causal proximity windows"
+  ],
+  "defaults": {
+    "camera": "left",
+    "width": 4096,
+    "height": 3000,
+    "mirror": false,
+    "d_original_px": 2238.7,
+    "pitch_prior_px": 23.29412648284868,
+    "F3_processing_scale": 0.5,
+    "display_count_within": 5,
+    "ECW_enter_width": 0.6,
+    "ECW_enter_s": 0.3,
+    "ECW_hold_s": 0.4,
+    "ECW_exit_s": 0.2
+  },
+  "known_limits": [
+    "d is a provisional user-supplied calibration, not a universally transferred bend estimate",
+    "visible flange/coil interface does not establish physical metal contact",
+    "some S1/local axes require long extrapolation",
+    "P1/H6 full curved path often fails its evidence gate",
+    "neural P1 remains in the existing full system; ECW additions are traditional algorithms",
+    "absolute rope count and contact accuracy have no ground truth"
+  ],
+  "policy": "Frozen baseline is never tuned on transfer videos; runner plumbing is separately versioned and parity-tested.",
+  "reference_results": {
+    "BG4": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_boundary_BG4_local_temporal_20261107_v1\\full_003",
+    "ECW": "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_ECW_20261107_v1\\delivery"
+  }
+}

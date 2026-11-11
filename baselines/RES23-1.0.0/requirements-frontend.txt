@@ -1,0 +1,5 @@
+-r requirements.txt
+# B750 heatmap inference; CPU works. Install a matching GPU build separately
+# if needed and rerun parity checks before treating it as the same baseline.
+torch>=2.4
+

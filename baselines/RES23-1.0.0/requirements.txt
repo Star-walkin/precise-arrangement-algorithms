@@ -1,0 +1,9 @@
+# Portable regression tests and CPL1/MFT2 replay. Full tested versions are
+# recorded in environment-tested.json; no package installation is performed by
+# the frozen algorithm itself.
+numpy>=2.0
+scipy>=1.13
+opencv-python-headless>=4.10
+Pillow>=10
+imageio-ffmpeg>=0.5
+

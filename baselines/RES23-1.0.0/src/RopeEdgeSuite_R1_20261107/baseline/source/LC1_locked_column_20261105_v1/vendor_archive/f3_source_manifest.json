@@ -1,0 +1,109 @@
+{
+  "schema": "lc1_f3_minimal_vendor_restore_1",
+  "repository": "Star-walkin/precise-arrangement-algorithms",
+  "repository_commit_sha": "8d30826fbef2df423ccfc56047995e6194f12b6c",
+  "repository_tree_sha": "d91e066e3c9b3f681585f71fcb7f2b0863d1869a",
+  "version": "RB-F3.0.0",
+  "scope": "Exact archived source; independent traditional F3 observation core plus fusion/runner/evidence for provenance. Full dataset runner dependencies and historical predictions are intentionally not restored.",
+  "files": [
+    {
+      "repository_path": "source_archive/数据资产/05_派生与实验结果/camera_condition_full_surface_joint_20261028_v3/surface_observation.py",
+      "local_relative_path": "source_archive/数据资产/05_派生与实验结果/camera_condition_full_surface_joint_20261028_v3/surface_observation.py",
+      "git_blob_sha": "182973003dd8f645cda75e2b7d27d3f805a441b2",
+      "source_line_endings": "LF",
+      "source_newline_count": 122,
+      "source_final_newline": true,
+      "p1_manifest_sha256": "ba458442d41535b1c61cd1a15cfc5f11d102780f41a2abf255717e1cef7067f9"
+    },
+    {
+      "repository_path": "source_archive/数据资产/05_派生与实验结果/camera_condition_full_surface_joint_20261028_v3/surface_fusion.py",
+      "local_relative_path": "source_archive/数据资产/05_派生与实验结果/camera_condition_full_surface_joint_20261028_v3/surface_fusion.py",
+      "git_blob_sha": "459720296145c8485a40c34c9e201a9d19847148",
+      "source_line_endings": "CRLF",
+      "source_newline_count": 361,
+      "source_final_newline": true,
+      "p1_manifest_sha256": "7174e4a3bcdfb3e68b310be4947c22019d4ced8616da556ae0650c4e4c0fc461"
+    },
+    {
+      "repository_path": "source_archive/数据资产/05_派生与实验结果/camera_condition_full_surface_joint_20261028_v3/run_surface.py",
+      "local_relative_path": "source_archive/数据资产/05_派生与实验结果/camera_condition_full_surface_joint_20261028_v3/run_surface.py",
+      "git_blob_sha": "8c0b974d98af0637f13094dd05c1b6d28f75d6ce",
+      "source_line_endings": "LF",
+      "source_newline_count": 115,
+      "source_final_newline": true,
+      "p1_manifest_sha256": "09eddba1e2fe8bcf590d1b30b86722c4d77cacf65458761fd22121feb1ae0a7c"
+    },
+    {
+      "repository_path": "source_archive/数据资产/05_派生与实验结果/camera_condition_full_surface_joint_20261028_v3/surface_io.py",
+      "local_relative_path": "source_archive/数据资产/05_派生与实验结果/camera_condition_full_surface_joint_20261028_v3/surface_io.py",
+      "git_blob_sha": "77c2d1deeebdd28bd4e05db67fff39071e931e0e",
+      "source_line_endings": "LF",
+      "source_newline_count": 57,
+      "source_final_newline": true,
+      "p1_manifest_sha256": "ac7aee4a8c479a4db623a9330deb892e22f0a4431bec15fb3e7039a527aafb40"
+    },
+    {
+      "repository_path": "source_archive/数据资产/05_派生与实验结果/camera_condition_full_surface_joint_20261028_v3/protocol.json",
+      "local_relative_path": "source_archive/数据资产/05_派生与实验结果/camera_condition_full_surface_joint_20261028_v3/protocol.json",
+      "git_blob_sha": "2ead24b45a87c22a2a980a6271a2540806b31fb9",
+      "source_line_endings": "CRLF",
+      "source_newline_count": 81,
+      "source_final_newline": true,
+      "p1_manifest_sha256": "f21651fab39a6dbd0f31cb16c370de70f43d3efb61e141954b8192b69f66ccd8"
+    },
+    {
+      "repository_path": "source_archive/数据资产/05_派生与实验结果/camera_condition_full_surface_joint_20261028_v3/experiment_report.json",
+      "local_relative_path": "source_archive/数据资产/05_派生与实验结果/camera_condition_full_surface_joint_20261028_v3/experiment_report.json",
+      "git_blob_sha": "8495b773f183f1145a4d92fdf3592c76f0a69a04",
+      "source_line_endings": "CRLF",
+      "source_newline_count": 183,
+      "source_final_newline": true,
+      "p1_manifest_sha256": null
+    },
+    {
+      "repository_path": "source_archive/数据资产/05_派生与实验结果/camera_condition_seam_joint_20261028_v2/seam_observation.py",
+      "local_relative_path": "source_archive/数据资产/05_派生与实验结果/camera_condition_seam_joint_20261028_v2/seam_observation.py",
+      "git_blob_sha": "b8d5cdba17c5dcabfacf3166011f28989688449c",
+      "source_line_endings": "LF",
+      "source_newline_count": 194,
+      "source_final_newline": true,
+      "p1_manifest_sha256": "49e9dab0750fcd70d2ae332012b83e201110c19ea0ee206239bae13b71b06c85"
+    },
+    {
+      "repository_path": "source_archive/数据资产/05_派生与实验结果/camera_condition_dark_width_20261027_v4/shadow_width.py",
+      "local_relative_path": "source_archive/数据资产/05_派生与实验结果/camera_condition_dark_width_20261027_v4/shadow_width.py",
+      "git_blob_sha": "a93168eec282ad59d81317ecef3704ca916d0eea",
+      "source_line_endings": "LF",
+      "source_newline_count": 242,
+      "source_final_newline": true,
+      "p1_manifest_sha256": "c61a28ca9d6444360fe4067cd5cb25d358458af6c0ca34dd276290638a4731b6"
+    },
+    {
+      "repository_path": "source_archive/数据资产/05_派生与实验结果/camera_condition_dark_width_20261027_v4/period_guard.py",
+      "local_relative_path": "source_archive/数据资产/05_派生与实验结果/camera_condition_dark_width_20261027_v4/period_guard.py",
+      "git_blob_sha": "61b63045ccb6684d0cc35dd63bf404dbd7ba54ff",
+      "source_line_endings": "LF",
+      "source_newline_count": 269,
+      "source_final_newline": true,
+      "p1_manifest_sha256": "11766bb122904b15beaebb0aca6a6fe21504790794c73fa4c9512ba17d2962a8"
+    },
+    {
+      "repository_path": "source_archive/数据资产/05_派生与实验结果/camera_condition_dark_width_20261027_v4/shadow_tracks.py",
+      "local_relative_path": "source_archive/数据资产/05_派生与实验结果/camera_condition_dark_width_20261027_v4/shadow_tracks.py",
+      "git_blob_sha": "42884c28f3c6b6a92386b929253b857fe2a45326",
+      "source_line_endings": "LF",
+      "source_newline_count": 107,
+      "source_final_newline": true,
+      "p1_manifest_sha256": "318a81a500969be0725547789714b3e797755dda943026512f03a1ebec99f029"
+    },
+    {
+      "repository_path": "source_archive/数据资产/05_派生与实验结果/camera_condition_dark_width_20261027_v4/ribbon_curves.py",
+      "local_relative_path": "source_archive/数据资产/05_派生与实验结果/camera_condition_dark_width_20261027_v4/ribbon_curves.py",
+      "git_blob_sha": "9a8df1cfc98629089731e4ed1b3f09766cca750c",
+      "source_line_endings": "LF",
+      "source_newline_count": 373,
+      "source_final_newline": true,
+      "p1_manifest_sha256": "655afa84bab0a10038e2cf7646b6c8b97731faa83f58e6b8ee1b8e5ffc93a764"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+# Byte-for-byte frozen sources and manifests must not undergo newline rewriting.
+baselines/RES23-1.0.0/** -text
+*.png binary
+*.jpg binary
+*.pt binary
+*.npz binary
+*.gz binary

@@ -1,0 +1,393 @@
+{
+  "python": "E:\\study\\program\\济宁\\precise_arrangement\\.venv_lc1\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "model_sha256": "ed4bfa12c5b3081a19d056265b053d516bdba5ec05dce658e1e32339b47fb882",
+  "source_hashes": {
+    "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\lc1_p1_adapter.py": "c4d439cd38c3c6b693ef048353a8b779f9e27c104f4f068287f34cc14f86a6ef",
+    "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\lc1_s1_adapter.py": "d8f383d6f2a4132304fd81abfaa670b8774274a2e083845d58d7e7233759a914",
+    "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\lc1_geometry.py": "5fb6b1af03be62202c3c359b0c6ff93fbe5bf46c12ce86297790b78f108bce41",
+    "E:\\study\\program\\济宁\\precise_arrangement\\05_派生与实验结果\\05_派生与实验结果\\LC1_locked_column_20261105_v1\\p1_runtime\\probe_multiframe.py": "a2d3122b78a6ba5da7995c909a5a45a0265d84c9bc6039d12ccc1807662796be"
+  },
+  "plan": [
+    {
+      "case": "left111500",
+      "frame_index": 30
+    },
+    {
+      "case": "right113305",
+      "frame_index": 300
+    },
+    {
+      "case": "left111500",
+      "frame_index": 0
+    },
+    {
+      "case": "left111500",
+      "frame_index": 15
+    },
+    {
+      "case": "left111500",
+      "frame_index": 45
+    },
+    {
+      "case": "left111500",
+      "frame_index": 60
+    },
+    {
+      "case": "left111500",
+      "frame_index": 75
+    },
+    {
+      "case": "right113305",
+      "frame_index": 240
+    },
+    {
+      "case": "right113305",
+      "frame_index": 270
+    },
+    {
+      "case": "right113305",
+      "frame_index": 330
+    },
+    {
+      "case": "right113305",
+      "frame_index": 360
+    },
+    {
+      "case": "right113305",
+      "frame_index": 390
+    }
+  ],
+  "surface_mode": "entry_band_explicit_8pitch_plus2pitch_halo_different_from_full",
+  "current_image_observations_only": true,
+  "historical_target_cache_read": false,
+  "source_metadata": {
+    "right113305": {
+      "camera": "right",
+      "source_video": "E:\\study\\program\\济宁\\双相机同步\\dual_20260923_113305\\right_DA9626975.avi",
+      "pitch_px": 23.975073059453344,
+      "surface_mask_sha256": "584048926b93ed43631890ac6627fb4fb134c15d7aed0722481a602b174d7423",
+      "pitch_record_sha256": "f25328e92fbfd86318a9f5f33b020a90fec2525e807dcd1686d110046ccd4dfc",
+      "source_fps": 10.0,
+      "source_frame_count": 600
+    },
+    "left111500": {
+      "camera": "left",
+      "source_video": "E:\\study\\program\\济宁\\双相机同步\\dual_20260924_111500\\left_DA9627065.avi",
+      "pitch_px": 23.29412648284868,
+      "surface_mask_sha256": "d1ad29c3d016e2863442bcb87338067f10ec0f0706e6876c781644ae7abfcb27",
+      "pitch_record_sha256": "9c1e70656ac1e1d0e96f7cb10d83710b72c00e2944879d9f45687c85969f22c9",
+      "source_fps": 10.0,
+      "source_frame_count": 601
+    }
+  },
+  "rows": [
+    {
+      "case": "left111500",
+      "frame_index": 30,
+      "whole_path_candidate_supported": false,
+      "P1_status": "CURRENT_PATH_DIAGNOSTIC",
+      "selected_kind": "straight_free_to_F3_center_track",
+      "point_count": 378,
+      "maximum_unsupported_run_original_px": 225.05134788451574,
+      "S1_valid": true,
+      "S1_endpoint_original_xy": [
+        1343.9119873046875,
+        2328.3291015625
+      ],
+      "geometric_turn_valid": false,
+      "geometric_turn_x": 1834.4424591303796,
+      "turn_fit_reason": "turn_localization_uncertain",
+      "admissible_for_d_lock": false,
+      "reasons": [
+        "transition_current_joint_support_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate",
+        "H6_branch_or_A7_direction_ambiguous"
+      ],
+      "total_seconds": 16.38491029990837
+    },
+    {
+      "case": "right113305",
+      "frame_index": 300,
+      "whole_path_candidate_supported": false,
+      "P1_status": "CURRENT_PATH_DIAGNOSTIC",
+      "selected_kind": "free_fragment_no_resolved_connection",
+      "point_count": 310,
+      "maximum_unsupported_run_original_px": 330.00000000000034,
+      "S1_valid": true,
+      "S1_endpoint_original_xy": [
+        3192.548583984375,
+        1815.6561279296875
+      ],
+      "geometric_turn_valid": false,
+      "geometric_turn_x": null,
+      "turn_fit_reason": "straight_path",
+      "admissible_for_d_lock": false,
+      "reasons": [
+        "H6_did_not_select_an_image_eligible_legal_curve_connection",
+        "free_current_joint_support_insufficient",
+        "transition_current_joint_support_insufficient",
+        "surface_current_joint_support_insufficient",
+        "curve_current_joint_length_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "total_seconds": 17.419699999969453
+    },
+    {
+      "case": "left111500",
+      "frame_index": 0,
+      "whole_path_candidate_supported": false,
+      "P1_status": "CURRENT_PATH_DIAGNOSTIC",
+      "selected_kind": "straight_free_to_F3_center_track",
+      "point_count": 402,
+      "maximum_unsupported_run_original_px": 434.92728741534796,
+      "S1_valid": true,
+      "S1_endpoint_original_xy": [
+        1482.1617431640625,
+        2380.002197265625
+      ],
+      "geometric_turn_valid": false,
+      "geometric_turn_x": null,
+      "turn_fit_reason": "straight_path",
+      "admissible_for_d_lock": false,
+      "reasons": [
+        "free_current_observed_fraction_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "total_seconds": 17.117403600132093
+    },
+    {
+      "case": "left111500",
+      "frame_index": 15,
+      "whole_path_candidate_supported": false,
+      "P1_status": "CURRENT_PATH_DIAGNOSTIC",
+      "selected_kind": "straight_free_to_F3_center_track",
+      "point_count": 405,
+      "maximum_unsupported_run_original_px": 143.9999999999999,
+      "S1_valid": true,
+      "S1_endpoint_original_xy": [
+        1922.5670166015625,
+        2447.322265625
+      ],
+      "geometric_turn_valid": false,
+      "geometric_turn_x": null,
+      "turn_fit_reason": "straight_path",
+      "admissible_for_d_lock": false,
+      "reasons": [
+        "transition_current_joint_support_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "total_seconds": 17.196425899863243
+    },
+    {
+      "case": "left111500",
+      "frame_index": 45,
+      "whole_path_candidate_supported": false,
+      "P1_status": "CURRENT_PATH_DIAGNOSTIC",
+      "selected_kind": "straight_free_to_F3_center_track",
+      "point_count": 389,
+      "maximum_unsupported_run_original_px": 138.00000000000009,
+      "S1_valid": true,
+      "S1_endpoint_original_xy": [
+        1720.0411376953125,
+        2392.9501953125
+      ],
+      "geometric_turn_valid": false,
+      "geometric_turn_x": null,
+      "turn_fit_reason": "straight_path",
+      "admissible_for_d_lock": false,
+      "reasons": [
+        "transition_current_joint_support_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "total_seconds": 16.284393799956888
+    },
+    {
+      "case": "left111500",
+      "frame_index": 60,
+      "whole_path_candidate_supported": false,
+      "P1_status": "CURRENT_PATH_DIAGNOSTIC",
+      "selected_kind": "straight_free_to_F3_center_track",
+      "point_count": 311,
+      "maximum_unsupported_run_original_px": 178.68321325022703,
+      "S1_valid": true,
+      "S1_endpoint_original_xy": [
+        1799.8614501953125,
+        2382.803955078125
+      ],
+      "geometric_turn_valid": false,
+      "geometric_turn_x": null,
+      "turn_fit_reason": "straight_path",
+      "admissible_for_d_lock": false,
+      "reasons": [
+        "transition_current_joint_support_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "total_seconds": 16.28502229996957
+    },
+    {
+      "case": "left111500",
+      "frame_index": 75,
+      "whole_path_candidate_supported": false,
+      "P1_status": "CURRENT_PATH_DIAGNOSTIC",
+      "selected_kind": "free_fragment_no_resolved_connection",
+      "point_count": 176,
+      "maximum_unsupported_run_original_px": 126.00000000000003,
+      "S1_valid": true,
+      "S1_endpoint_original_xy": [
+        1959.9693603515625,
+        2409.03076171875
+      ],
+      "geometric_turn_valid": false,
+      "geometric_turn_x": null,
+      "turn_fit_reason": "straight_path",
+      "admissible_for_d_lock": false,
+      "reasons": [
+        "H6_did_not_select_an_image_eligible_legal_curve_connection",
+        "transition_current_joint_support_insufficient",
+        "surface_current_joint_support_insufficient",
+        "curve_current_joint_length_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "total_seconds": 15.67471250006929
+    },
+    {
+      "case": "right113305",
+      "frame_index": 240,
+      "whole_path_candidate_supported": false,
+      "P1_status": "CURRENT_PATH_DIAGNOSTIC",
+      "selected_kind": "straight_free_to_F3_center_track",
+      "point_count": 374,
+      "maximum_unsupported_run_original_px": 474.6751590293043,
+      "S1_valid": true,
+      "S1_endpoint_original_xy": [
+        3211.0498046875,
+        1859.054931640625
+      ],
+      "geometric_turn_valid": false,
+      "geometric_turn_x": null,
+      "turn_fit_reason": "straight_path",
+      "admissible_for_d_lock": false,
+      "reasons": [
+        "free_current_joint_support_insufficient",
+        "free_current_observed_fraction_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "total_seconds": 18.839670300018042
+    },
+    {
+      "case": "right113305",
+      "frame_index": 270,
+      "whole_path_candidate_supported": false,
+      "P1_status": "CURRENT_PATH_DIAGNOSTIC",
+      "selected_kind": "free_fragment_no_resolved_connection",
+      "point_count": 65,
+      "maximum_unsupported_run_original_px": 119.99999999999977,
+      "S1_valid": true,
+      "S1_endpoint_original_xy": [
+        3201.34814453125,
+        1837.958251953125
+      ],
+      "geometric_turn_valid": false,
+      "geometric_turn_x": null,
+      "turn_fit_reason": "straight_path",
+      "admissible_for_d_lock": false,
+      "reasons": [
+        "H6_did_not_select_an_image_eligible_legal_curve_connection",
+        "free_current_joint_support_insufficient",
+        "transition_current_joint_support_insufficient",
+        "surface_current_joint_support_insufficient",
+        "curve_current_joint_length_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "total_seconds": 18.21622439986095
+    },
+    {
+      "case": "right113305",
+      "frame_index": 330,
+      "whole_path_candidate_supported": false,
+      "P1_status": "CURRENT_PATH_DIAGNOSTIC",
+      "selected_kind": "free_fragment_no_resolved_connection",
+      "point_count": 152,
+      "maximum_unsupported_run_original_px": 383.9999999999997,
+      "S1_valid": true,
+      "S1_endpoint_original_xy": [
+        3188.3955078125,
+        1796.59228515625
+      ],
+      "geometric_turn_valid": false,
+      "geometric_turn_x": null,
+      "turn_fit_reason": "straight_path",
+      "admissible_for_d_lock": false,
+      "reasons": [
+        "H6_did_not_select_an_image_eligible_legal_curve_connection",
+        "free_current_joint_support_insufficient",
+        "transition_current_joint_support_insufficient",
+        "surface_current_joint_support_insufficient",
+        "curve_current_joint_length_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "total_seconds": 17.300370999844745
+    },
+    {
+      "case": "right113305",
+      "frame_index": 360,
+      "whole_path_candidate_supported": false,
+      "P1_status": "CURRENT_PATH_DIAGNOSTIC",
+      "selected_kind": "free_fragment_no_resolved_connection",
+      "point_count": 120,
+      "maximum_unsupported_run_original_px": 119.99999999999996,
+      "S1_valid": true,
+      "S1_endpoint_original_xy": [
+        3196.02392578125,
+        1779.575927734375
+      ],
+      "geometric_turn_valid": false,
+      "geometric_turn_x": null,
+      "turn_fit_reason": "straight_path",
+      "admissible_for_d_lock": false,
+      "reasons": [
+        "H6_did_not_select_an_image_eligible_legal_curve_connection",
+        "free_current_joint_support_insufficient",
+        "transition_current_joint_support_insufficient",
+        "surface_current_joint_support_insufficient",
+        "free_current_observed_fraction_insufficient",
+        "curve_current_joint_length_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "total_seconds": 16.11452340008691
+    },
+    {
+      "case": "right113305",
+      "frame_index": 390,
+      "whole_path_candidate_supported": false,
+      "P1_status": "CURRENT_PATH_DIAGNOSTIC",
+      "selected_kind": "free_fragment_no_resolved_connection",
+      "point_count": 64,
+      "maximum_unsupported_run_original_px": 119.99999999999979,
+      "S1_valid": true,
+      "S1_endpoint_original_xy": [
+        3187.64404296875,
+        1761.602294921875
+      ],
+      "geometric_turn_valid": false,
+      "geometric_turn_x": null,
+      "turn_fit_reason": "straight_path",
+      "admissible_for_d_lock": false,
+      "reasons": [
+        "H6_did_not_select_an_image_eligible_legal_curve_connection",
+        "free_current_joint_support_insufficient",
+        "transition_current_joint_support_insufficient",
+        "surface_current_joint_support_insufficient",
+        "curve_current_joint_length_insufficient",
+        "unsupported_path_gap_exceeds_LC1_gate"
+      ],
+      "total_seconds": 16.172998500056565
+    }
+  ],
+  "runtime_completed": true,
+  "whole_supported_frame_count": 0,
+  "admissible_turn_count": 0,
+  "failures": 0,
+  "frames_jsonl_sha256": "4a52035564b525727d43f57f9af62d9d87e1d4dab729e32a6382deecce816d46"
+}
